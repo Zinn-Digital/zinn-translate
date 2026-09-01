@@ -1,0 +1,67 @@
+# Copyright (C) 2026 Neil Lock — CEO, Zinn Digital® Ltd
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Zinn® Translate 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/zinn-translate\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-01T11:27:35+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: zinn-translate\n"
+
+#. Plugin Name of the plugin
+#: zinn-translate.php
+#: includes/class-zinn-translate-settings.php:94
+#: includes/class-zinn-translate-settings.php:95
+#: includes/class-zinn-translate-settings.php:167
+msgid "Zinn® Translate"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: zinn-translate.php
+msgid "https://zinndigital.com"
+msgstr ""
+
+#. Description of the plugin
+#: zinn-translate.php
+msgid "Serves this site in every language Zinn Digital® has translated it into, on its own web addresses, with correct hreflang tags. Translation happens on Zinn Digital®; this plugin renders it."
+msgstr ""
+
+#. Author of the plugin
+#: zinn-translate.php
+msgid "Neil Lock — CEO, Zinn Digital® Ltd"
+msgstr ""
+
+#: includes/class-zinn-translate-settings.php:170
+msgid "Your site is translated by Zinn Digital®. Choose the languages to publish, and each one is served on its own web address with the right hreflang tags."
+msgstr ""
+
+#: includes/class-zinn-translate-settings.php:180
+msgid "Site ID"
+msgstr ""
+
+#: includes/class-zinn-translate-settings.php:183
+msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
+msgstr ""
+
+#: includes/class-zinn-translate-settings.php:187
+msgid "Read token"
+msgstr ""
+
+#: includes/class-zinn-translate-settings.php:190
+msgid "Read-only. It can fetch this site's translations and nothing else."
+msgstr ""
+
+#: includes/class-zinn-translate-settings.php:194
+msgid "Languages to publish"
+msgstr ""
+
+#: includes/class-zinn-translate-settings.php:197
+msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
+msgstr ""
