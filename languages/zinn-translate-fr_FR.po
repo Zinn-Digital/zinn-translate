@@ -1,18 +1,13 @@
-# Copyright (C) 2026 Neil Lock — CEO, Zinn Digital® Ltd
-# This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Zinn® Translate 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/zinn-translate\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Project-Id-Version: zinn-translate\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-09-02T07:25:53+00:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.12.0\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=3; plural=(((((((0 == 0)) && ((((n == 0)) == 0))) && (((n % 1000000) == 0))) && ((0 == 0))) || ((((0 >= 0 && 0 <= 5)) == 0))) ? 1 : ((n == 0) || (n == 1)) ? 0 : 2);\n"
 "X-Domain: zinn-translate\n"
+"X-Generator: scripts/wp-i18n-translate.py\n"
 
 #. Plugin Name of the plugin
 #: zinn-translate.php
@@ -20,97 +15,97 @@ msgstr ""
 #: includes/class-zinn-translate-settings.php:95
 #: includes/class-zinn-translate-settings.php:167
 msgid "Zinn® Translate"
-msgstr ""
+msgstr "Zinn® Translate"
 
 #. Plugin URI of the plugin
 #: zinn-translate.php
 msgid "https://zinndigital.com/wordpress-plugins/zinn-translate"
-msgstr ""
+msgstr "https://zinndigital.com/wordpress-plugins/zinn-translate"
 
 #. Description of the plugin
 #: zinn-translate.php
 msgid "Serves this site in every language Zinn Digital® has translated it into, on its own web addresses, with correct hreflang tags. Translation happens on Zinn Digital®; this plugin renders it."
-msgstr ""
+msgstr "Diffuse ce site dans toutes les langues dans lesquelles Zinn Digital® l'a traduit, sur ses propres adresses web, avec des balises hreflang correctes. La traduction s'effectue sur Zinn Digital® ; ce plugin l'affiche."
 
 #. Author of the plugin
 #: zinn-translate.php
 msgid "Neil Lock — CEO, Zinn Digital® Ltd"
-msgstr ""
+msgstr "Neil Lock — CEO, Zinn Digital® Ltd"
 
 #. Author URI of the plugin
 #: zinn-translate.php
 msgid "https://zinndigital.com"
-msgstr ""
+msgstr "https://zinndigital.com"
 
 #. translators: %s: the Zinn Digital trade mark, which is not translated.
 #: includes/class-zinn-translate-promo.php:241
 #: includes/class-zinn-translate-promo.php:299
 #, php-format
 msgid "%s — guides and services"
-msgstr ""
+msgstr "%s — guides et services"
 
 #: includes/class-zinn-translate-promo.php:256
 msgid "User guides"
-msgstr ""
+msgstr "Guides d'utilisation"
 
 #. translators: %s: this plugin's name, e.g. "Zinn® Cache".
 #: includes/class-zinn-translate-promo.php:306
 #, php-format
 msgid "Read the %s user guide"
-msgstr ""
+msgstr "Lire le guide utilisateur %s"
 
 #: includes/class-zinn-translate-promo.php:314
 msgid "Hide this"
-msgstr ""
+msgstr "Masquer ceci"
 
 #: includes/class-zinn-translate-promo.php:374
 msgid "Zinn® hosting for WordPress"
-msgstr ""
+msgstr "Hébergement Zinn® pour WordPress"
 
 #: includes/class-zinn-translate-promo.php:375
 msgid "LiteSpeed, daily backups, free migration and a control panel built for people who run more than one site."
-msgstr ""
+msgstr "LiteSpeed, sauvegardes quotidiennes, migration gratuite et un panneau de configuration conçu pour les personnes qui gèrent plus d'un site."
 
 #: includes/class-zinn-translate-promo.php:381
 msgid "The Zinn® marketplace"
-msgstr ""
+msgstr "Le marché Zinn®"
 
 #: includes/class-zinn-translate-promo.php:382
 msgid "Buy and sell established sites, domains and link placements, with the money held safely until both sides are happy."
-msgstr ""
+msgstr "Achetez et vendez des sites établis, des noms de domaine et des emplacements de liens, les fonds étant conservés en toute sécurité jusqu'à ce que les deux parties soient satisfaites."
 
 #: includes/class-zinn-translate-promo.php:429
 msgid "Zinn Hub® — hire people who do this for a living"
-msgstr ""
+msgstr "Zinn Hub® — engagez des professionnels pour le faire"
 
 #: includes/class-zinn-translate-promo.php:430
 msgid "Our global freelance marketplace: browse over 10,000 ready-made services from writers, designers, developers and SEOs, or post a project and let them bid."
-msgstr ""
+msgstr "Notre place de marché mondiale de freelances : parcourez plus de 10 000 services prêts à l'emploi proposés par des rédacteurs, des graphistes, des développeurs et des experts en référencement, ou publiez un projet et laissez-les faire leurs offres."
 
 #: includes/class-zinn-translate-settings.php:170
 msgid "Your site is translated by Zinn Digital®. Choose the languages to publish, and each one is served on its own web address with the right hreflang tags."
-msgstr ""
+msgstr "Votre site est traduit par Zinn Digital®. Choisissez les langues à publier, et chacune d'elles est diffusée sur sa propre adresse web avec les balises hreflang appropriées."
 
 #: includes/class-zinn-translate-settings.php:180
 msgid "Site ID"
-msgstr ""
+msgstr "Identifiant du site"
 
 #: includes/class-zinn-translate-settings.php:183
 msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
-msgstr ""
+msgstr "Depuis votre tableau de bord Zinn Digital®, dans l'onglet Traduction de ce site."
 
 #: includes/class-zinn-translate-settings.php:187
 msgid "Read-only token"
-msgstr ""
+msgstr "Jeton en lecture seule"
 
 #: includes/class-zinn-translate-settings.php:190
 msgid "Read-only. It can fetch this site's translations and nothing else."
-msgstr ""
+msgstr "En lecture seule. Il peut uniquement récupérer les traductions de ce site, et rien d'autre."
 
 #: includes/class-zinn-translate-settings.php:194
 msgid "Languages to publish"
-msgstr ""
+msgstr "Langues à publier"
 
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
-msgstr ""
+msgstr "Séparées par des virgules, par exemple : fr, de, es. Laissez vide pour n'en publier aucune."

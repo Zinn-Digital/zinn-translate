@@ -1,0 +1,111 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: zinn-translate\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: my_MM\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Domain: zinn-translate\n"
+"X-Generator: scripts/wp-i18n-translate.py\n"
+
+#. Plugin Name of the plugin
+#: zinn-translate.php
+#: includes/class-zinn-translate-settings.php:94
+#: includes/class-zinn-translate-settings.php:95
+#: includes/class-zinn-translate-settings.php:167
+msgid "Zinn® Translate"
+msgstr "Zinn® Translate"
+
+#. Plugin URI of the plugin
+#: zinn-translate.php
+msgid "https://zinndigital.com/wordpress-plugins/zinn-translate"
+msgstr "https://zinndigital.com/wordpress-plugins/zinn-translate"
+
+#. Description of the plugin
+#: zinn-translate.php
+msgid "Serves this site in every language Zinn Digital® has translated it into, on its own web addresses, with correct hreflang tags. Translation happens on Zinn Digital®; this plugin renders it."
+msgstr "Zinn Digital® မှ ဘာသာပြန်ဆိုထားသော ဘာသာစကားတိုင်းဖြင့် ဤဆိုက်ကို ၎င်း၏ကိုယ်ပိုင် ဝဘ်လိပ်စာများတွင် မှန်ကန်သော hreflang တဂ်များဖြင့် လွှင့်တင်ပေးပါသည်။ ဘာသာပြန်ဆိုမှုကို Zinn Digital® တွင် လုပ်ဆောင်ပြီး ဤပလပ်အင်က ၎င်းကို ဖော်ပြပေးပါသည်။"
+
+#. Author of the plugin
+#: zinn-translate.php
+msgid "Neil Lock — CEO, Zinn Digital® Ltd"
+msgstr "Neil Lock — CEO, Zinn Digital® Ltd"
+
+#. Author URI of the plugin
+#: zinn-translate.php
+msgid "https://zinndigital.com"
+msgstr "https://zinndigital.com"
+
+#. translators: %s: the Zinn Digital trade mark, which is not translated.
+#: includes/class-zinn-translate-promo.php:241
+#: includes/class-zinn-translate-promo.php:299
+#, php-format
+msgid "%s — guides and services"
+msgstr "%s — လမ်းညွှန်များနှင့် ဝန်ဆောင်မှုများ"
+
+#: includes/class-zinn-translate-promo.php:256
+msgid "User guides"
+msgstr "သုံးစွဲသူ လမ်းညွှန်များ"
+
+#. translators: %s: this plugin's name, e.g. "Zinn® Cache".
+#: includes/class-zinn-translate-promo.php:306
+#, php-format
+msgid "Read the %s user guide"
+msgstr "%s အသုံးပြုသူ လမ်းညွှန်ကို ဖတ်ပါ"
+
+#: includes/class-zinn-translate-promo.php:314
+msgid "Hide this"
+msgstr "ဤအရာကို ဝှက်ထားပါ"
+
+#: includes/class-zinn-translate-promo.php:374
+msgid "Zinn® hosting for WordPress"
+msgstr "WordPress အတွက် Zinn® hosting"
+
+#: includes/class-zinn-translate-promo.php:375
+msgid "LiteSpeed, daily backups, free migration and a control panel built for people who run more than one site."
+msgstr "LiteSpeed၊ နေ့စဉ် အရန်သိမ်းဆည်းမှုများ၊ အခမဲ့ ဒေတာပြောင်းရွှေ့ပေးမှုနှင့် ဝဘ်ဆိုက်တစ်ခုထက်ပို၍ စီမံခန့်ခွဲသူများအတွက် သီးသန့်ပြုလုပ်ထားသော ထိန်းချုပ်မှုပန်နယ်။"
+
+#: includes/class-zinn-translate-promo.php:381
+msgid "The Zinn® marketplace"
+msgstr "Zinn® စျေးကွက်"
+
+#: includes/class-zinn-translate-promo.php:382
+msgid "Buy and sell established sites, domains and link placements, with the money held safely until both sides are happy."
+msgstr "တည်ထောင်ပြီးသားဝဘ်ဆိုက်များ၊ ဒိုမိန်းများနှင့် လင့်ခ်ချိတ်ထားမှုများကို နှစ်ဖက်စလုံး ကျေနပ်သည်အထိ ငွေကြေးကို လုံခြုံစွာသိမ်းဆည်းထားပြီး ဝယ်ယူရောင်းချပါ။"
+
+#: includes/class-zinn-translate-promo.php:429
+msgid "Zinn Hub® — hire people who do this for a living"
+msgstr "Zinn Hub® — ဤအလုပ်ကို အသက်မွေးဝမ်းကြောင်းအဖြစ် လုပ်ကိုင်နေသူများကို ငှားရမ်းပါ"
+
+#: includes/class-zinn-translate-promo.php:430
+msgid "Our global freelance marketplace: browse over 10,000 ready-made services from writers, designers, developers and SEOs, or post a project and let them bid."
+msgstr "ကျွန်ုပ်တို့၏ ကမ္ဘာလုံးဆိုင်ရာ ဖရီးလန်းဈေးကွက် - စာရေးဆရာများ၊ ဒီဇိုင်နာများ၊ ဒက်ဗလော့ပါများနှင့် SEO ကျွမ်းကျင်သူများ၏ အဆင်သင့်ပြင်ဆင်ထားသော ဝန်ဆောင်မှု ပေါင်း ၁၀,၀၀၀ ကျော်ကို ဝင်ရောက်ကြည့်ရှုပါ သို့မဟုတ် ပရောဂျက်တစ်ခု တင်၍ ၎င်းတို့ကို လေလံဆွဲခွင့်ပြုလိုက်ပါ။"
+
+#: includes/class-zinn-translate-settings.php:170
+msgid "Your site is translated by Zinn Digital®. Choose the languages to publish, and each one is served on its own web address with the right hreflang tags."
+msgstr "သင့်ဆိုက်ကို Zinn Digital® ဖြင့် ဘာသာပြန်ဆိုထားသည်။ ထုတ်ဝေမည့် ဘာသာစကားများကို ရွေးချယ်ပါ၊ တစ်ခုစီကို သင့်လျော်သော hreflang တက်ဂ်များပါရှိသည့် ၎င်းတို့၏ကိုယ်ပိုင် ဝဘ်လိပ်စာတွင် ဝန်ဆောင်မှုပေးမည်ဖြစ်သည်။"
+
+#: includes/class-zinn-translate-settings.php:180
+msgid "Site ID"
+msgstr "ဆိုက် ID"
+
+#: includes/class-zinn-translate-settings.php:183
+msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
+msgstr "သင့်၏ Zinn Digital® ဒက်ရှ်ဘုတ်မှ၊ ဤဆိုဒ်၏ ဘာသာပြန်ဆိုမှု တက်ဘ်တွင်။"
+
+#: includes/class-zinn-translate-settings.php:187
+msgid "Read-only token"
+msgstr "ဖတ်ရန်သာရသော တိုကင်"
+
+#: includes/class-zinn-translate-settings.php:190
+msgid "Read-only. It can fetch this site's translations and nothing else."
+msgstr "ဖတ်ရန်သာ။ ဤဆိုက်၏ ဘာသာပြန်ဆိုချက်များကိုသာ ရယူနိုင်ပြီး အခြားမည်သည့်အရာကိုမျှ မလုပ်ဆောင်နိုင်ပါ။"
+
+#: includes/class-zinn-translate-settings.php:194
+msgid "Languages to publish"
+msgstr "ထုတ်ဝေရန် ဘာသာစကားများ"
+
+#: includes/class-zinn-translate-settings.php:197
+msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
+msgstr "ပာတ်ဝှက်ပြိး ကော်မာဖြင့် ခြားပါ၊ ဥပမာ- fr, de, es။ မည်သည်ကိုမျှ ထုတ်ဝေလိုခြင်း မရှိပါက အလွတ်ထားပါ။"

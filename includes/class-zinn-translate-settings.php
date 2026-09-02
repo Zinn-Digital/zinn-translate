@@ -184,7 +184,7 @@ class Zinn_Translate_Settings {
 						</td>
 					</tr>
 					<tr>
-						<th scope="row"><label for="zinn_translate_token"><?php esc_html_e( 'Read token', 'zinn-translate' ); ?></label></th>
+						<th scope="row"><label for="zinn_translate_token"><?php esc_html_e( 'Read-only token', 'zinn-translate' ); ?></label></th>
 						<td>
 							<input name="<?php echo esc_attr( self::OPTION_TOKEN ); ?>" id="zinn_translate_token" type="password" class="regular-text" value="<?php echo esc_attr( $this->token() ); ?>" autocomplete="off" />
 							<p class="description"><?php esc_html_e( 'Read-only. It can fetch this site\'s translations and nothing else.', 'zinn-translate' ); ?></p>
@@ -200,6 +200,13 @@ class Zinn_Translate_Settings {
 				</table>
 				<?php submit_button(); ?>
 			</form>
+			<?php
+			// ⛔⛔ AT THE BOTTOM OF THE SCREEN, INSIDE `.wrap`, BELOW THE CONTROLS — NEVER ABOVE
+			// THEM. Somebody who opened a settings screen came to change a setting. A promotion
+			// that pushes the thing they came for below the fold is the "disruptive upselling"
+			// a WordPress.org reviewer rejects, and it would deserve it.
+			Zinn_Translate_Promo::render_panel();
+			?>
 		</div>
 		<?php
 	}

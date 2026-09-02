@@ -1,0 +1,111 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: zinn-translate\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: bn_BD\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Domain: zinn-translate\n"
+"X-Generator: scripts/wp-i18n-translate.py\n"
+
+#. Plugin Name of the plugin
+#: zinn-translate.php
+#: includes/class-zinn-translate-settings.php:94
+#: includes/class-zinn-translate-settings.php:95
+#: includes/class-zinn-translate-settings.php:167
+msgid "Zinn® Translate"
+msgstr "Zinn® Translate"
+
+#. Plugin URI of the plugin
+#: zinn-translate.php
+msgid "https://zinndigital.com/wordpress-plugins/zinn-translate"
+msgstr "https://zinndigital.com/wordpress-plugins/zinn-translate"
+
+#. Description of the plugin
+#: zinn-translate.php
+msgid "Serves this site in every language Zinn Digital® has translated it into, on its own web addresses, with correct hreflang tags. Translation happens on Zinn Digital®; this plugin renders it."
+msgstr "Zinn Digital® যে সমস্ত ভাষায় এই সাইটটি অনুবাদ করেছে, সঠিক hreflang ট্যাগ সহ এর নিজস্ব ওয়েব ঠিকানায় সেই ভাষাগুলোতে সাইটটি পরিবেশন করে। অনুবাদ Zinn Digital®-এ সম্পন্ন হয়; এই প্লাগইনটি কেবল তা রেন্ডার করে।"
+
+#. Author of the plugin
+#: zinn-translate.php
+msgid "Neil Lock — CEO, Zinn Digital® Ltd"
+msgstr "Neil Lock — CEO, Zinn Digital® Ltd"
+
+#. Author URI of the plugin
+#: zinn-translate.php
+msgid "https://zinndigital.com"
+msgstr "https://zinndigital.com"
+
+#. translators: %s: the Zinn Digital trade mark, which is not translated.
+#: includes/class-zinn-translate-promo.php:241
+#: includes/class-zinn-translate-promo.php:299
+#, php-format
+msgid "%s — guides and services"
+msgstr "%s — নির্দেশিকা এবং পরিষেবাগুলি"
+
+#: includes/class-zinn-translate-promo.php:256
+msgid "User guides"
+msgstr "ব্যবহারকারী নির্দেশিকা"
+
+#. translators: %s: this plugin's name, e.g. "Zinn® Cache".
+#: includes/class-zinn-translate-promo.php:306
+#, php-format
+msgid "Read the %s user guide"
+msgstr "%s ব্যবহারকারী নির্দেশিকা পড়ুন"
+
+#: includes/class-zinn-translate-promo.php:314
+msgid "Hide this"
+msgstr "এটি লুকান"
+
+#: includes/class-zinn-translate-promo.php:374
+msgid "Zinn® hosting for WordPress"
+msgstr "WordPress-এর জন্য Zinn® হোস্টিং"
+
+#: includes/class-zinn-translate-promo.php:375
+msgid "LiteSpeed, daily backups, free migration and a control panel built for people who run more than one site."
+msgstr "LiteSpeed, দৈনিক ব্যাকআপ, ফ্রি মাইগ্রেশন এবং একসাথে একাধিক সাইট পরিচালনা করেন এমন ব্যক্তিদের জন্য তৈরি একটি কন্ট্রোল প্যানেল।"
+
+#: includes/class-zinn-translate-promo.php:381
+msgid "The Zinn® marketplace"
+msgstr "Zinn® মার্কেটপ্লেস"
+
+#: includes/class-zinn-translate-promo.php:382
+msgid "Buy and sell established sites, domains and link placements, with the money held safely until both sides are happy."
+msgstr "উভয়পক্ষ সন্তুষ্ট না হওয়া পর্যন্ত অর্থ নিরাপদে রেখে, প্রতিষ্ঠিত সাইট, ডোমেইন এবং লিঙ্ক প্লেসমেন্ট কেনা-বেচা করুন।"
+
+#: includes/class-zinn-translate-promo.php:429
+msgid "Zinn Hub® — hire people who do this for a living"
+msgstr "Zinn Hub® — এমন লোকেদের নিয়োগ করুন যারা এটি পেশা হিসেবে করেন"
+
+#: includes/class-zinn-translate-promo.php:430
+msgid "Our global freelance marketplace: browse over 10,000 ready-made services from writers, designers, developers and SEOs, or post a project and let them bid."
+msgstr "আমাদের বৈশ্বিক ফ্রিল্যান্স মার্কেটপ্লেস: লেখক, ডিজাইনার, ডেভেলপার এবং এসইও বিশেষজ্ঞদের ১০,০০০-এর বেশি তৈরি পরিষেবা ব্রাউজ করুন, অথবা একটি প্রজেক্ট পোস্ট করুন এবং তাদের বিড করতে দিন।"
+
+#: includes/class-zinn-translate-settings.php:170
+msgid "Your site is translated by Zinn Digital®. Choose the languages to publish, and each one is served on its own web address with the right hreflang tags."
+msgstr "আপনার সাইটটি Zinn Digital® দ্বারা অনূদিত হয়। প্রকাশের জন্য ভাষাগুলি বেছে নিন, এবং প্রতিটি সঠিক hreflang ট্যাগ সহ তার নিজস্ব ওয়েব ঠিকানায় পরিবেশিত হয়।"
+
+#: includes/class-zinn-translate-settings.php:180
+msgid "Site ID"
+msgstr "সাইট আইডি"
+
+#: includes/class-zinn-translate-settings.php:183
+msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
+msgstr "আপনার Zinn Digital® ড্যাশবোর্ড থেকে, এই সাইটের Translation ট্যাবে।"
+
+#: includes/class-zinn-translate-settings.php:187
+msgid "Read-only token"
+msgstr "শুধু পঠনযোগ্য টোকেন"
+
+#: includes/class-zinn-translate-settings.php:190
+msgid "Read-only. It can fetch this site's translations and nothing else."
+msgstr "শুধুমাত্র পঠনযোগ্য। এটি এই সাইটের অনুবাদগুলি আনতে পারে এবং অন্য কিছু নয়।"
+
+#: includes/class-zinn-translate-settings.php:194
+msgid "Languages to publish"
+msgstr "প্রকাশ করার জন্য ভাষাগুলো"
+
+#: includes/class-zinn-translate-settings.php:197
+msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
+msgstr "কমা দিয়ে আলাদা করুন, যেমন: fr, de, es। কোনোটি প্রকাশ না করতে চাইলে ফাঁকা রাখুন।"
