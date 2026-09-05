@@ -7,7 +7,7 @@ Tags: translation, multilingual, seo, hreflang, localization
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -110,6 +110,9 @@ The translated addresses stop being served and your site returns to what it was.
 Yes. Each language is a distinct URL, so a page cache stores them separately with no configuration.
 
 == Changelog ==
+
+= 1.1.0 =
+* Added the Zinn® panel: links to Zinn Digital® hosting, the Zinn® marketplace, Zinn Hub® and this plugin's user guide, from inside the WordPress admin.
 
 = 1.0.0 =
 * First release.
