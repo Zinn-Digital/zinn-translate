@@ -109,3 +109,11 @@ msgstr "发布语言"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "逗号分隔，例如：fr, de, es。留空则不发布。"
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "请参阅 Zinn Digital® 发行说明。"
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "已下载的更新未能通过完整性检查，因此未进行安装。"

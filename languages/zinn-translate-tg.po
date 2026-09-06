@@ -109,3 +109,11 @@ msgstr "Забоonҳо барои интишор"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "Бо вергул ҷудо карда шудааст, масалан: fr, de, es. Барои нашр накардани ҳеҷ кадом онро холӣ гузоред."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "Эълонҳои нашри Zinn Digital®-ро бинед."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "Азнавкарии зеркашишуда аз санҷиши бехатарӣ гузашта натавонист ва насб карда нашуд."

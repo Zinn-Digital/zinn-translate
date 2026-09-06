@@ -109,3 +109,11 @@ msgstr "Dərc ediləcək dillər"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "Vergüllə ayrılmış, məsələn: fr, de, es. Heç birini dərc etməmək üçün boş buraxın."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "Zinn Digital® buraxılış qeydlərinə baxın."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "Yüklənmiş yeniləmə bütövlük yoxlamasından keçmədi və quraşdırılmadı."

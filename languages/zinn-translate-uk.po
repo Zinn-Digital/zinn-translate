@@ -109,3 +109,11 @@ msgstr "Мови для публікації"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "Через кому, наприклад: fr, de, es. Залиште порожнім, щоб не публікувати жодної."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "Перегляньте нотатки про випуск Zinn Digital®."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "Завантажене оновлення не пройшло перевірку цілісності та не було встановлене."

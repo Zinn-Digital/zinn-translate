@@ -109,3 +109,11 @@ msgstr "Awọn ede lati tẹjade"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "Àwọn tí a fi àmì ìsọ̀rọ̀ comma yà sọ́tọ̀, fún àpẹẹrẹ: fr, de, es. Fi sílẹ̀ láìsí nǹkankan láti má ṣe tẹ̀ jáde kankan."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "Wo awọn akọsilẹ ifilọlẹ Zinn Digital®."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "Ìgbàlàwé tí a ṣe àgbéjọ rẹ̀ kùnà àyẹ̀wò òtítọ́ rẹ̀, a kò sì fi sílẹ̀."

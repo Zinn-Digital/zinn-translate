@@ -109,3 +109,11 @@ msgstr "ພາສາທີ່ຕ້ອງເຜີຍແຜ່"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "ແຍກກັນດ້ວຍຈຸດ, ຕົວຢ່າງ: fr, de, es. ປະໄວ້ຕັ້ງຊື່ວ່າງໄວ້ເພື່ອບໍ່ເຜີຍແຜ່ອັນໃດເລີຍ."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "ເບິ່ງບັນທຶກການປ່ອຍເວີຊັນຂອງ Zinn Digital®."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "ການອັບເດດທີ່ດາວໂຫຼດມາບໍ່ຜ່ານການກວດສອບຄວາມຖືກຕ້ອງ ແລະ ບໍ່ໄດ້ຖືກຕິດຕັ້ງ."

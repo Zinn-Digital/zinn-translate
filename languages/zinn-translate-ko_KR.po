@@ -109,3 +109,11 @@ msgstr "게시할 언어"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "쉼표로 구분하십시오(예: fr, de, es). 발행하지 않으려면 비워 두십시오."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "Zinn Digital® 릴리스 노트를 확인하세요."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "다운로드된 업데이트의 무결성 검사에 실패하여 설치되지 않았습니다."

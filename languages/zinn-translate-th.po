@@ -109,3 +109,11 @@ msgstr "ภาษาที่ต้องการเผยแพร่"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "คั่นด้วยเครื่องหมายจุลภาค เช่น: fr, de, es เว้นว่างไว้หากไม่ต้องการเผยแพร่ใดๆ"
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "ดูบันทึกประจำรุ่นของ Zinn Digital®"
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "การดาวน์โหลดอัปเดตไม่ผ่านการตรวจสอบความสมบูรณ์และจึงไม่ได้ติดตั้ง"

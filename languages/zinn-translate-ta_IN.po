@@ -109,3 +109,11 @@ msgstr "வெளியிட வேண்டிய மொழிகள்"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "கால்புள்ளிகளால் பிரிக்கப்பட்டவை, உதாரணமாக: fr, de, es. எதையும் வெளியிடாமல் விட காலியாக வைக்கவும்."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "Zinn Digital® வெளியீட்டு குறிப்புகளைப் பார்க்கவும்."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "பதிவிறக்கம் செய்யப்பட்ட புதுப்பிப்பு அதன் ஒருமைமைச் சோதனையில் தோல்வியுற்றது மற்றும் நிறுவப்படவில்லை."

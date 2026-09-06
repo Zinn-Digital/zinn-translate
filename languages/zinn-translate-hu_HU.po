@@ -109,3 +109,11 @@ msgstr "Közzéteendő nyelvek"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "Vesszővel elválasztva, például: fr, de, es. Hagyja üresen, ha nem szeretne egyet sem közzétenni."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "Tekintse meg a Zinn Digital® kiadási megjegyzéseit."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "A letöltött frissítés integritási ellenőrzése sikertelen volt, így nem lett a rendszerre telepítve."

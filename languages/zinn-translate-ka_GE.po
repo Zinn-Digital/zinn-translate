@@ -109,3 +109,11 @@ msgstr "გასაჯაროებელი ენები"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "მძიმით გამოყოფილი, მაგალითად: fr, de, es. დატოვეთ ცარიელი, რომ არ გამოაქვეყნოთ არცერთი."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "იხილეთ Zinn Digital®-ის გამოშვების შენიშვნები."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "ჩამოტვირთული განახლება ვერ გაიარა მთლიანობის შემოწმება და არ დაინსტალირდა."

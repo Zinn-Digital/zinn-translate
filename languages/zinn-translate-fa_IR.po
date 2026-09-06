@@ -109,3 +109,11 @@ msgstr "زبان‌های قابل انتشار"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "جدا شده با کاما، برای مثال: fr, de, es. برای منتشر نکردن هیچ‌کدام، آن را خالی بگذارید."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "یادداشت‌های انتشار Zinn Digital® را مشاهده کنید."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "بررسی صحت به‌روزرسانی بارگیری‌شده با شکست مواجه شد و نصب نگردید."

@@ -109,3 +109,11 @@ msgstr "د خپرولو لپاره ژبې"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "د کاما په واسطه جلا شوي، د بېلګې په توګه: fr, de, es. د هېڅ یو د خپرولو لپاره تش یې پرېږدئ."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "د Zinn Digital® د خپرولو یادښتونه وګورئ."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "د ډاونلوډ شوي تازه معلوماتو د روغتیا معاینه ناکامه شوه او ونه لګول شول."

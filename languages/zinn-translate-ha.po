@@ -109,3 +109,11 @@ msgstr "Harsunan da za a buga"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "Wanda aka raba da kwamomi, misali: fr, de, es. Bar shi babu komai don kada a buga ko daya."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "Duba bayanan fitowar Zinn Digital®."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "Sabuntawar da aka sauke ta gaza gwajin inganci kuma ba a sanya ta ba."

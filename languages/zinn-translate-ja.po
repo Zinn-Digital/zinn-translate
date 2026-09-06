@@ -109,3 +109,11 @@ msgstr "公開する言語"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "カンマ区切り（例: fr, de, es）。何も公開しない場合は空白のままにします。"
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "Zinn Digital® のリリースノートをご覧ください。"
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "ダウンロードしたアップデートの整合性チェックに失敗したため、インストールされませんでした。"

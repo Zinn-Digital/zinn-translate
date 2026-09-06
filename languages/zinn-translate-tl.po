@@ -109,3 +109,11 @@ msgstr "Mga wikang ilalathala"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "Pinaghiwalay ng kuwit, halimbawa: fr, de, es. Panatilihing blangko upang huwag mag-publish ng anuman."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "Tingnan ang mga tala sa paglabas ng Zinn Digital®."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "Ang na-download na update ay nabigo sa pagsusuri ng integridad at hindi na-install."

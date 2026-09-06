@@ -109,3 +109,11 @@ msgstr "प्रसिद्ध करण्यासाठी भाषा"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "स्वल्पविरामाने वेगळे केलेले, उदाहरणार्थ: fr, de, es. काहीही प्रकाशित न करण्यासाठी रिकामे सोडा."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "Zinn Digital® च्या रिलीझ नोट्स पहा."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "डाउनलोड केलेल्या अपडेटची अखंडता चाचणी (इंटीग्रिटी चेक) अयशस्वी झाली आणि ते इन्स्टॉल केले गेले नाही."

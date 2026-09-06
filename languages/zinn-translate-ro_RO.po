@@ -109,3 +109,11 @@ msgstr "Limbi de publicat"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "Separate prin virgulă, de exemplu: fr, de, es. Lăsați gol pentru a nu publica niciuna."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "Consultați notele de lansare Zinn Digital®."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "Actualizarea descărcată a eșuat la verificarea integrității și nu a fost instalată."

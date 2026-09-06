@@ -109,3 +109,11 @@ msgstr "Luuqadaha la daabacayo"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "Kala sooc xarfo hakad, tusaale ahaan: fr, de, es. Iskaga tag meel madhan si aadan midna u daabicin."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "Fiiri qoraallada sii-daynta ee Zinn Digital®."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "Cusboonaysiintii la soo dejiyey ayaa ku guuldareysatay baaritaanka hufnaanta waxaana la rakibay."

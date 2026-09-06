@@ -109,3 +109,11 @@ msgstr "Te publiceren talen"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "Kommagescheiden, bijvoorbeeld: fr, de, es. Laat leeg om er geen te publiceren."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "Bekijk de releaseopmerkingen van Zinn Digital®."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "De gedownloade update is niet door de integriteitscontrole gekomen en is niet geïnstalleerd."

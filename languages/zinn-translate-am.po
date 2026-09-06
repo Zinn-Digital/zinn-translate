@@ -109,3 +109,11 @@ msgstr "ሊታተሙ የሚገቡ ቋንቋዎች"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "በኮማ የተለዩ፣ ለምሳሌ፦ fr, de, es። ማንም እንዳይታተም ባዶ ይተዉት።"
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "የZinn Digital® መልቀቂያ ማስታወሻዎችን ይመልከቱ።"
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "የወረደው ማሻሻያ የታማኝነት ማረጋገጫውን ማለፍ አልቻለም እና አልተጫነም።"

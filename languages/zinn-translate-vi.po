@@ -109,3 +109,11 @@ msgstr "Các ngôn ngữ xuất bản"
 #: includes/class-zinn-translate-settings.php:197
 msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
 msgstr "Phân tách bằng dấu phẩy, ví dụ: fr, de, es. Để trống nếu không muốn xuất bản gì."
+
+#: includes/class-zinn-translate-updater.php:233
+msgid "See the Zinn Digital® release notes."
+msgstr "Xem ghi chú phát hành Zinn Digital®."
+
+#: includes/class-zinn-translate-updater.php:288
+msgid "The downloaded update failed its integrity check and was not installed."
+msgstr "Bản cập nhật đã tải xuống không vượt qua được kiểm tra tính toàn vẹn và không được cài đặt."
