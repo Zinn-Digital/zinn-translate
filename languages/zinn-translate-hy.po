@@ -11,9 +11,7 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: zinn-translate.php
-#: includes/class-zinn-translate-settings.php:94
-#: includes/class-zinn-translate-settings.php:95
-#: includes/class-zinn-translate-settings.php:167
+#: includes/class-zinn-translate-admin.php:706
 msgid "Zinn® Translate"
 msgstr "Zinn® Translate"
 
@@ -24,8 +22,8 @@ msgstr "https://zinndigital.com/wordpress-plugins/zinn-translate"
 
 #. Description of the plugin
 #: zinn-translate.php
-msgid "Serves this site in every language Zinn Digital® has translated it into, on its own web addresses, with correct hreflang tags. Translation happens on Zinn Digital®; this plugin renders it."
-msgstr "Սպասարկում է այս կայքը յուրաքանչյուր լեզվով, որով Zinn Digital®-ը թարգմանել է այն, իր սեփական վեբ հասցեներով, ճիշտ hreflang պիտակներով: Թարգմանությունը կատարվում է Zinn Digital®-ում. այս հավելվածն այն ցուցադրում է:"
+msgid "Publishes this site in every language you choose, on its own web addresses, with translated slugs, metadata, menus, WooCommerce products, hreflang, per-language sitemaps and llms.txt. Translate with your Zinn Digital® plan or with your own provider key."
+msgstr "Հրապարակում է այս կայքը ձեր ընտրած յուրաքանչյուր լեզվով՝ իր սեփական վեբ-հասցեներում, թարգմանված slug-երով, մետատվյալներով, ճաշացանկերով, WooCommerce ապրանքներով, hreflang-ով, ըստ լեզուների կայքի քարտեզներով (sitemaps) և llms.txt-ով: Թարգմանեք ձեր Zinn Digital® պլանով կամ ձեր մատակարարի անհատական բանալիով (provider key):"
 
 #. Author of the plugin
 #: zinn-translate.php
@@ -36,6 +34,325 @@ msgstr "Neil Lock — CEO, Zinn Digital® Ltd"
 #: zinn-translate.php
 msgid "https://zinndigital.com"
 msgstr "https://zinndigital.com"
+
+#: includes/class-zinn-translate-admin.php:62
+#: includes/class-zinn-translate-admin.php:632
+#: includes/class-zinn-translate-admin.php:633
+msgid "Translate"
+msgstr "Թարգմանել"
+
+#: includes/class-zinn-translate-admin.php:76
+#: includes/class-zinn-translate-admin.php:767
+msgid "Manual overrides"
+msgstr "Ձեռքով վերասահմանումներ"
+
+#: includes/class-zinn-translate-admin.php:81
+#: includes/class-zinn-translate-admin.php:769
+msgid "Sitemaps and URLs"
+msgstr "Կայքերի քարտեզներ և URL-ներ"
+
+#: includes/class-zinn-translate-admin.php:111
+msgid "General"
+msgstr "Ընդհանուր"
+
+#: includes/class-zinn-translate-admin.php:116
+msgid "Who pays for the translation"
+msgstr "Ում կողմից է վճարվում թարգմանությունը"
+
+#: includes/class-zinn-translate-admin.php:117
+msgid "Either your Zinn Digital® plan, or an API key of your own. There is no free tier — somebody pays a provider for every word."
+msgstr "Կամ ձեր Zinn Digital® պլանը, կամ ձեր սեփական API բանալին: Անվճար մակարդակ չկա. մեկը վճարում է մատակարարին յուրաքանչյուր բառի համար:"
+
+#: includes/class-zinn-translate-admin.php:120
+#: includes/class-zinn-translate-admin.php:721
+msgid "My Zinn Digital® plan"
+msgstr "Իմ Zinn Digital® պլանը"
+
+#: includes/class-zinn-translate-admin.php:121
+#: includes/class-zinn-translate-admin.php:722
+msgid "My own provider key"
+msgstr "Իմ սեփական մատակարարի բանալին"
+
+#: includes/class-zinn-translate-admin.php:128
+#: includes/class-zinn-translate-admin.php:726
+msgid "Site ID"
+msgstr "Կայքի ID"
+
+#: includes/class-zinn-translate-admin.php:129
+msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
+msgstr "Ձեր Zinn Digital® վահանակից, այս կայքի Թարգմանություն ներդիրում:"
+
+#: includes/class-zinn-translate-admin.php:136
+#: includes/class-zinn-translate-admin.php:730
+msgid "Site token"
+msgstr "Կայքի թոքեն"
+
+#: includes/class-zinn-translate-admin.php:144
+#: includes/class-zinn-translate-admin.php:734
+msgid "Provider"
+msgstr "Մատակարար"
+
+#: includes/class-zinn-translate-admin.php:154
+#: includes/class-zinn-translate-admin.php:744
+msgid "API key"
+msgstr "API բանալի"
+
+#: includes/class-zinn-translate-admin.php:155
+msgid "Your key, billed to you by the provider. It is stored on this site and sent only to them."
+msgstr "Ձեր բանալին, որի դիմաց վճարումը գանձվում է ձեր մատակարարի կողմից: Այն պահվում է այս կայքում և ուղարկվում միայն նրանց:"
+
+#: includes/class-zinn-translate-admin.php:163
+msgid "Model"
+msgstr "Մոդել"
+
+#: includes/class-zinn-translate-admin.php:164
+msgid "Leave empty for the cheapest model that does the job well."
+msgstr "Թողեք դատարկ ամենաէժան մոդելի համար, որը լավ է կատարում իր գործը:"
+
+#: includes/class-zinn-translate-admin.php:171
+msgid "This site is written in"
+msgstr "Այս կայքը գրված է"
+
+#: includes/class-zinn-translate-admin.php:172
+msgid "Leave empty to use the site language from WordPress settings."
+msgstr "Թողեք դատարկ՝ WordPress կարգավորումների կայքի լեզուն օգտագործելու համար:"
+
+#: includes/class-zinn-translate-admin.php:180
+#: includes/class-zinn-translate-admin.php:748
+msgid "Languages to publish"
+msgstr "Հրապարակվող լեզուներ"
+
+#: includes/class-zinn-translate-admin.php:181
+msgid "Each one gets its own web addresses and its own sitemap. Publish only the languages you want indexed."
+msgstr "Յուրաքանչյուրն ստանում է սեփական վեբ հասցեն և սեփական քարտեզը: Հրապարակեք միայն այն լեզուները, որոնք ցանկանում եք ինդեքսավորել:"
+
+#: includes/class-zinn-translate-admin.php:188
+msgid "Translate automatically when I publish or update"
+msgstr "Թարգմանել ավտոմատ կերպով, երբ հրապարակում կամ թարմացնում եմ"
+
+#: includes/class-zinn-translate-admin.php:189
+msgid "Editing a page marks its translations out of date and they are remade in the background. Editing without changing any words costs nothing."
+msgstr "Էջի խմբագրումը նշում է դրա թարգմանությունները որպես հնացած, և դրանք վերստեղծվում են հետին պլանում։ Առանց որևէ բառ փոխելու խմբագրումն անվճար է։"
+
+#: includes/class-zinn-translate-admin.php:196
+msgid "What gets translated"
+msgstr "Ինչն է թարգմանվում"
+
+#: includes/class-zinn-translate-admin.php:201
+msgid "Post types"
+msgstr "Գրառումների տեսակներ"
+
+#: includes/class-zinn-translate-admin.php:209
+msgid "Translate the web addresses too"
+msgstr "Թարգմանեք նաև վեբ հասցեները"
+
+#: includes/class-zinn-translate-admin.php:210
+msgid "French visitors get /fr/a-propos/ rather than /fr/about/. The untranslated address keeps working and redirects, so nothing that was indexed breaks."
+msgstr "Ֆրանսերեն այցելուները ստանում են /fr/a-propos/՝ /fr/about/-ի փոխարեն։ Չթարգմանված հասցեն շարունակում է աշխատել և վերահղում է, ուստի ինդեքսավորված որևէ բան չի կոտրվում:"
+
+#: includes/class-zinn-translate-admin.php:217
+msgid "Translate SEO titles, descriptions and image alt text"
+msgstr "Թարգմանել SEO վերնագրերը, նկարագրությունները և պատկերների այլընտրանքային տեքստը"
+
+#: includes/class-zinn-translate-admin.php:224
+msgid "Translate categories and tags"
+msgstr "Թարգմանել կատեգորիաներն ու պիտակները"
+
+#: includes/class-zinn-translate-admin.php:231
+msgid "Translate navigation menus"
+msgstr "Թարգմանել նավարկման ընտրացանկերը"
+
+#: includes/class-zinn-translate-admin.php:238
+msgid "Translate WooCommerce products and attributes"
+msgstr "Թարգմանել WooCommerce-ի ապրանքներն ու հատկանիշները"
+
+#: includes/class-zinn-translate-admin.php:239
+msgid "Short descriptions, purchase notes, attribute labels and variation descriptions. Prices, SKUs and stored option values are never touched."
+msgstr "Կարճ նկարագրություններ, գնման նշումներ, հատկանիշների պիտակներ և տարբերակների նկարագրություններ: Գները, SKU-ները և պահպանված տարբերակների արժեքները երբեք չեն շոշափվում:"
+
+#: includes/class-zinn-translate-admin.php:246
+msgid "SEO"
+msgstr "SEO"
+
+#: includes/class-zinn-translate-admin.php:251
+msgid "Add hreflang tags"
+msgstr "Ավելացնել hreflang պիտակներ"
+
+#: includes/class-zinn-translate-admin.php:252
+msgid "Tells search engines these pages are the same page in different languages. Leave this on unless another plugin is already doing it."
+msgstr "Որոնողական համակարգերին տեղեկացնում է, որ այս էջերը նույն էջն են տարբեր լեզուներով: Թողեք սա ակտիվ, եթե մեկ այլ փլագին արդեն չի անում դա:"
+
+#: includes/class-zinn-translate-admin.php:259
+msgid "Publish a sitemap for each language"
+msgstr "Հրապարակեք տեղեկատվական քարտեզ (sitemap) յուրաքանչյուր լեզվի համար"
+
+#: includes/class-zinn-translate-admin.php:266
+msgid "Publish llms.txt for each language"
+msgstr "Հրապարակել llms.txt յուրաքանչյուր լեզվի համար"
+
+#: includes/class-zinn-translate-admin.php:267
+msgid "A plain-text map of the site that AI answer engines read. They often cannot run JavaScript and may never fetch a sitemap."
+msgstr "Կայքի տեքստային քարտեզ, որը կարդում են արհեստական բանականության պատասխանների շարժիչները: Նրանք հաճախ չեն կարողանում գործարկել JavaScript-ը և հնարավոր է երբեք չբեռնեն տեղեկատվական քարտեզը (sitemap):"
+
+#: includes/class-zinn-translate-admin.php:274
+#: includes/class-zinn-translate-switcher.php:135
+msgid "Language switcher"
+msgstr "Լեզվի փոխարկիչ"
+
+#: includes/class-zinn-translate-admin.php:279
+#: includes/class-zinn-translate-switcher-widget.php:83
+msgid "Style"
+msgstr "Ոճ"
+
+#: includes/class-zinn-translate-admin.php:282
+msgid "Colours, spacing and corners are on the Styling tab. Place it with the block, the [zinn_language_switcher] shortcode, or a menu."
+msgstr "Գույները, միջակայքերը և անկյունները գտնվում են «Ոճավորում» ներդիրում։ Տեղադրեք այն բլոկի, [zinn_language_switcher] կարճկոդի կամ ընտրացանկի միջոցով։"
+
+#: includes/class-zinn-translate-admin.php:289
+msgid "Show only these languages"
+msgstr "Ցույց տալ միայն այս լեզուները"
+
+#: includes/class-zinn-translate-admin.php:290
+msgid "Leave empty to show every language you publish."
+msgstr "Թողեք դատարկ՝ ձեր հրապարակած բոլոր լեզուները ցույց տալու համար:"
+
+#: includes/class-zinn-translate-admin.php:297
+msgid "Name each language in its own language"
+msgstr "Յուրաքանչյուր լեզու անվանեք իր սեփական լեզվով"
+
+#: includes/class-zinn-translate-admin.php:298
+msgid "Deutsch rather than German. Somebody who cannot read the current page cannot read \"German\" either."
+msgstr "«Դոյչ» (Deutsch) և ոչ թե «գերմաներեն»: Այն անձը, Ով չի կարող կարդալ ընթացիկ էջը, չի կարող կարդալ նաև «գերմաներեն»:"
+
+#: includes/class-zinn-translate-admin.php:305
+msgid "Show flags"
+msgstr "Ցուցադրել դրոշները"
+
+#: includes/class-zinn-translate-admin.php:306
+msgid "Off by default: a language is not a country, and Arabic and Spanish have no single flag that does not exclude most of their speakers."
+msgstr "Լռելյայն անջատված է․ լեզուն երկիր չէ, և արաբերենն ու իսպաներենը չունեն որևէ միակ դրոշ, որը չի բացառի իրենց խոսողների մեծ մասին։"
+
+#: includes/class-zinn-translate-admin.php:313
+msgid "Include the language being read"
+msgstr "Ներառել կարդացվող լեզուն"
+
+#: includes/class-zinn-translate-admin.php:320
+msgid "Include the original language"
+msgstr "Ներառել բնօրինակ լեզուն"
+
+#: includes/class-zinn-translate-admin.php:327
+msgid "Add it to this menu"
+msgstr "Ավելացրեք այս ընտրացանկին"
+
+#: includes/class-zinn-translate-admin.php:328
+msgid "Only the menu you name here. Nothing is added to any other menu on the site."
+msgstr "Միայն այն ընտրացանկը, որը նշում եք այստեղ: Ոչինչ չի ավելացվում կայքի որևէ այլ ընտրացանկին:"
+
+#: includes/class-zinn-translate-admin.php:378
+msgid "Accent"
+msgstr "Շեշտադրում"
+
+#: includes/class-zinn-translate-admin.php:382
+msgid "Background"
+msgstr "Ֆոն"
+
+#: includes/class-zinn-translate-admin.php:386
+msgid "Text"
+msgstr "Տեքստ"
+
+#: includes/class-zinn-translate-admin.php:390
+msgid "Corner radius"
+msgstr "Անկյունների կլորացում"
+
+#: includes/class-zinn-translate-admin.php:394
+msgid "Spacing"
+msgstr "Միջակայք"
+
+#: includes/class-zinn-translate-admin.php:398
+msgid "Text size"
+msgstr "Տեքստի չափը"
+
+#: includes/class-zinn-translate-admin.php:425
+msgid "Do not add it to a menu"
+msgstr "Մի ավելացրեք այն ընտրացանկին"
+
+#: includes/class-zinn-translate-admin.php:480
+msgid "Edit any translation here. An edited translation is kept exactly as you wrote it and is never overwritten when the page is translated again."
+msgstr "Խմբագրեք ցանկացած թարգմանություն այստեղ։ Խմբագրված թարգմանությունը պահպանվում է ճիշտ այնպես, ինչպես դուք գրել եք, և երբեք չի վերագրառվում, երբ էջը կրկին թարգմանվում է։"
+
+#: includes/class-zinn-translate-admin.php:501
+msgid "Every language"
+msgstr "Յուրաքանչյուր լեզու"
+
+#: includes/class-zinn-translate-admin.php:508
+msgid "Search translations"
+msgstr "Որոնել թարգմանությունները"
+
+#: includes/class-zinn-translate-admin.php:509
+msgid "Filter"
+msgstr "Ֆիլտրել"
+
+#: includes/class-zinn-translate-admin.php:514
+msgid "Content"
+msgstr "Բովանդակություն"
+
+#: includes/class-zinn-translate-admin.php:515
+msgid "Language"
+msgstr "Լեզու"
+
+#: includes/class-zinn-translate-admin.php:516
+msgid "Translation"
+msgstr "Թարգմանություն"
+
+#: includes/class-zinn-translate-admin.php:517
+msgid "Status"
+msgstr "Կարգավիճակ"
+
+#: includes/class-zinn-translate-admin.php:518
+#: includes/class-zinn-translate-admin.php:537
+msgid "Save"
+msgstr "Պահպանել"
+
+#: includes/class-zinn-translate-admin.php:523
+msgid "Nothing translated yet. Publish a language and translation starts in the background."
+msgstr "Ոչինչ թարգմանված չէ: Հրապարակեք լեզուն, և թարգմանությունը կսկսվի հետին պլանում:"
+
+#: includes/class-zinn-translate-admin.php:556
+msgid "These addresses are live. Open any of them to check it, and submit the sitemap index to Google Search Console."
+msgstr "Այս հասցեները ակտիվ են: Բացեք դրանցից որևէ մեկը ստուգելու համար և ուղարկեք քարտեզի ինդեքսը Google Search Console:"
+
+#: includes/class-zinn-translate-admin.php:577
+msgid "You are not allowed to edit translations on this site."
+msgstr "Դուք իրավունք չունեք խմբագրելու թարգմանությունները այս կայքում:"
+
+#: includes/class-zinn-translate-admin.php:605
+msgid "Edited by you — kept"
+msgstr "Խմբագրվել է ձեր կողմից՝ պահպանված"
+
+#: includes/class-zinn-translate-admin.php:607
+msgid "Source changed — will be redone"
+msgstr "Աղբյուրը փոխվել է. կկատարվի նորից"
+
+#: includes/class-zinn-translate-admin.php:609
+msgid "Up to date"
+msgstr "Թարմացված է"
+
+#: includes/class-zinn-translate-admin.php:621
+#: includes/class-zinn-translate-admin.php:622
+msgid "Zinn®"
+msgstr "Zinn®"
+
+#: includes/class-zinn-translate-admin.php:719
+msgid "Who pays"
+msgstr "Ով է վճարում"
+
+#: includes/class-zinn-translate-admin.php:751
+msgid "Comma separated, for example: fr, de, ar"
+msgstr "Ստորակետով բաժանված, օրինակ՝ fr, de, ar"
+
+#: includes/class-zinn-translate-admin.php:755
+msgid "Switcher style"
+msgstr "Փոխարկիչի ոճ"
 
 #. translators: %s: the Zinn Digital trade mark, which is not translated.
 #: includes/class-zinn-translate-promo.php:241
@@ -82,33 +399,152 @@ msgstr "Zinn Hub® — վարձեք մարդիկ, ովքեր դրանով են �
 msgid "Our global freelance marketplace: browse over 10,000 ready-made services from writers, designers, developers and SEOs, or post a project and let them bid."
 msgstr "Մեր գլոբալ ֆրիլանսերների շուկան. դիտեք ավելի քան 10,000 պատրաստի ծառայություններ գրողներից, դիզայներներից, ծրագրավորողներից և SEO մասնագետներից կամ տեղադրեք նախագիծ և թույլ տվեք նրանց առաջարկներ ներկայացնել:"
 
-#: includes/class-zinn-translate-settings.php:170
-msgid "Your site is translated by Zinn Digital®. Choose the languages to publish, and each one is served on its own web address with the right hreflang tags."
-msgstr "Ձեր կայքը թարգմանվում է Zinn Digital®-ի կողմից։ Ընտրեք հրապարակման լեզուները, և դրանցից յուրաքանչյուրը կսպասարկվի իր սեփական վեբ հասցեով՝ ճիշտ hreflang թեգերով:"
+#: includes/class-zinn-translate-prompt.php:211
+msgid "The API key was rejected. Check that it is still valid and has translation access, then save it again."
+msgstr "API բանալին մերժվել է: Ստուգեք, որ այն դեռևս վավեր է և ունի թարգմանության հասանելիություն, այնուհետև նորից պահպանեք այն:"
 
-#: includes/class-zinn-translate-settings.php:180
-msgid "Site ID"
-msgstr "Կայքի ID"
+#: includes/class-zinn-translate-prompt.php:218
+msgid "The provider refused on billing or quota. Nothing was translated. Check the balance and limits on your account with them."
+msgstr "Մատակարարը մերժեց վճարման կամ քվոտայի պատճառով: Ոչինչ չի թարգմանվել: Ստուգեք ձեր հաշվի մնացորդն ու սահմանաչափերը նրանց մոտ:"
 
-#: includes/class-zinn-translate-settings.php:183
-msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
-msgstr "Ձեր Zinn Digital® վահանակից, այս կայքի Թարգմանություն ներդիրում:"
+#: includes/class-zinn-translate-prompt.php:225
+msgid "The translation provider is having a problem at their end. Nothing was translated or charged, and it will try again on the next pass."
+msgstr "Թարգմանական մատակարարի կողմից խնդիր է առաջացել: Ոչինչ չի թարգմանվել կամ գանձվել, և այն կկրկնվի հաջորդ փորձի ժամանակ:"
 
-#: includes/class-zinn-translate-settings.php:187
-msgid "Read-only token"
-msgstr "Միայն կարդալու համար նախատեսված թոքեն"
+#: includes/class-zinn-translate-prompt.php:231
+msgid "The translation request failed and we could not tell why. Nothing was saved."
+msgstr "Թարգմանության հարցումը ձախողվեց, և հնարավոր չեղավ պարզել պատճառը։ Ոչինչ չի պահպանվել:"
 
-#: includes/class-zinn-translate-settings.php:190
-msgid "Read-only. It can fetch this site's translations and nothing else."
-msgstr "Միայն կարդալու համար։ Այն կարող է բեռնել այս կայքի թարգմանությունները և ոչ ավելին:"
+#: includes/class-zinn-translate-sitemap.php:130
+msgid "Sitemap index"
+msgstr "Կայքի քարտեզի ինդեքս"
 
-#: includes/class-zinn-translate-settings.php:194
-msgid "Languages to publish"
-msgstr "Հրապարակվող լեզուներ"
+#. translators: %s: a language name, for example "French".
+#: includes/class-zinn-translate-sitemap.php:134
+#, php-format
+msgid "%s sitemap"
+msgstr "%s կայքի քարտեզ"
 
-#: includes/class-zinn-translate-settings.php:197
-msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
-msgstr "Ստորակետներով բաժանված, օրինակ՝ fr, de, es: Թողեք դատարկ՝ ոչ մեկը չհրապարակելու համար:"
+#: includes/class-zinn-translate-sitemap.php:138
+msgid "LLM content map"
+msgstr "LLM բովանդակության քարտեզ"
+
+#. translators: %s: a language name, for example "French".
+#: includes/class-zinn-translate-sitemap.php:141
+#, php-format
+msgid "%s LLM content map"
+msgstr "%s LLM բովանդակության քարտեզ"
+
+#: includes/class-zinn-translate-status.php:96
+msgid "Languages published"
+msgstr "Հրապարակված լեզուներ"
+
+#: includes/class-zinn-translate-status.php:100
+msgid "Site language"
+msgstr "Կայքի լեզու"
+
+#: includes/class-zinn-translate-status.php:106
+msgid "SEO plugin"
+msgstr "SEO հավելված"
+
+#: includes/class-zinn-translate-status.php:134
+msgid "No translation provider is set up yet."
+msgstr "Թարգմանության որևէ մատակարար դեռևս կարգավորված չէ:"
+
+#: includes/class-zinn-translate-status.php:135
+msgid "Paste an API key from your chosen provider, or connect the site to a Zinn Digital® account, and translation starts on the next pass."
+msgstr "Տեղադրեք API բանալի ձեր ընտրված մատակարարից կամ միացրեք կայքը Zinn Digital® հաշվին, և թարգմանությունը կսկսվի հաջորդ անցումով:"
+
+#. translators: %s: a translation provider's name, for example "DeepL".
+#: includes/class-zinn-translate-status.php:144
+#, php-format
+msgid "Translating with your own %s key."
+msgstr "Թարգմանություն ձեր սեփական %s բանալիով:"
+
+#: includes/class-zinn-translate-status.php:147
+msgid "This site is not connected to a Zinn Digital® account, which is fine — your provider bills you directly."
+msgstr "Այս կայքը միացված չէ Zinn Digital® հաշվի, ինչը նորմալ է. ձեր մատակարարն ուղղակիորեն է գանձում ձեզ:"
+
+#: includes/class-zinn-translate-status.php:156
+msgid "Not connected to Zinn Digital® yet."
+msgstr "Դեռևս կցված չէ Zinn Digital®-ին:"
+
+#: includes/class-zinn-translate-status.php:157
+msgid "Add this site's ID and token from your Zinn Digital® dashboard, or switch to your own provider key to run without an account."
+msgstr "Ավելացրեք այս կայքի ID-ն և թոքենը ձեր Zinn Digital® վահանակից, կամ անցեք ձեր սեփական մատակարարի բանալուն՝ առանց հաշվի աշխատելու համար։"
+
+#: includes/class-zinn-translate-status.php:164
+msgid "Connected to Zinn Digital®."
+msgstr "Միացված է Zinn Digital®-ին:"
+
+#: includes/class-zinn-translate-status.php:179
+msgid "The translation provider is having a problem."
+msgstr "Թարգմանական ծառայության հետ կապված խնդիր կա:"
+
+#: includes/class-zinn-translate-status.php:181
+msgid "Translation is paused — your provider needs attention."
+msgstr "Թարգմանությունը դադարեցված է. ձեր մատակարարը ուշադրության կարիք ունի:"
+
+#: includes/class-zinn-translate-status.php:183
+msgid "Translation has not been set up yet."
+msgstr "Թարգմանությունը դեռևս կարգավորված չէ։"
+
+#: includes/class-zinn-translate-status.php:188
+msgid "Something went wrong at our end."
+msgstr "Մեր կողմից ինչ-որ բան սխալ գնաց։"
+
+#: includes/class-zinn-translate-status.php:200
+msgid "Check their status page"
+msgstr "Ստուգեք նրանց կարգավիճակի էջը"
+
+#: includes/class-zinn-translate-status.php:201
+msgid "Fix this on your account"
+msgstr "Շտկեք սա ձեր հաշվում"
+
+#: includes/class-zinn-translate-switcher-widget.php:30
+msgid "Zinn® language switcher"
+msgstr "Zinn® լեզվի փոխարկիչ"
+
+#: includes/class-zinn-translate-switcher-widget.php:31
+#: includes/class-zinn-translate-switcher.php:138
+msgid "Let visitors read this page in another language."
+msgstr "Թույլ տվեք այցելուներին կարդալ այս էջը այլ լեզվով։"
+
+#: includes/class-zinn-translate-switcher-widget.php:79
+msgid "Title"
+msgstr "Վերնագիր"
+
+#: includes/class-zinn-translate-switcher-widget.php:85
+msgid "Use the plugin setting"
+msgstr "Օգտագործել պլագինի կարգավորումը"
+
+#: includes/class-zinn-translate-switcher.php:45
+msgid "Dropdown"
+msgstr "Բացվող ցանկ"
+
+#: includes/class-zinn-translate-switcher.php:46
+msgid "Inline list"
+msgstr "Ներմակուցված ցանկ"
+
+#: includes/class-zinn-translate-switcher.php:47
+msgid "Pills"
+msgstr "Պլանշետներ"
+
+#: includes/class-zinn-translate-switcher.php:48
+msgid "Minimal text"
+msgstr "Նվազագույն տեքստ"
+
+#: includes/class-zinn-translate-switcher.php:49
+msgid "Flags and names"
+msgstr "Դրոշներ և անուններ"
+
+#: includes/class-zinn-translate-switcher.php:50
+msgid "Stacked list"
+msgstr "Կույտով ցուցակ"
+
+#: includes/class-zinn-translate-switcher.php:285
+msgid "Choose a language"
+msgstr "Ընտրեք լեզուն"
 
 #: includes/class-zinn-translate-updater.php:233
 msgid "See the Zinn Digital® release notes."
@@ -117,3 +553,69 @@ msgstr "Տեսե՛ք Zinn Digital®-ի թողարկման նշումները:"
 #: includes/class-zinn-translate-updater.php:288
 msgid "The downloaded update failed its integrity check and was not installed."
 msgstr "Ներբեռնված թարմացումը չի անցել ամբողջականության ստուգումը և չի տեղադրվել։"
+
+#: includes/providers/class-zinn-translate-provider-deepl.php:157
+msgid "No DeepL API key is saved, so there is nothing to translate with."
+msgstr "DeepL API-ի որևէ բանալի պահպանված չե, ուստի թարգմանելու համար որևէ բան չկա:"
+
+#. translators: %s: a language name, for example "Swahili".
+#: includes/providers/class-zinn-translate-provider-deepl.php:165
+#, php-format
+msgid "DeepL does not translate into %s. Choose Google Gemini or OpenAI for this language, or connect the site to Zinn Digital®."
+msgstr "DeepL-ը չի թարգմանում %s լեզվով։ Ընտրեք Google Gemini-ն կամ OpenAI-ն այս լեզվի համար կամ միացրեք կայքը Zinn Digital®-ին:"
+
+#: includes/providers/class-zinn-translate-provider-deepl.php:207
+msgid "DeepL could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
+msgstr "DeepL-ին հնարավոր չեղավ միանալ: Ոչինչ չի թարգմանվել և գումար չի գանձվել. այն կփորձի կրկին հաջորդ փորձի ժամանակ:"
+
+#: includes/providers/class-zinn-translate-provider-deepl.php:219
+msgid "Your DeepL character quota is used up for this period. Translation resumes when it resets, or when you raise the limit on your DeepL account."
+msgstr "Այս ժամանակահատվածի համար նախատեսված DeepL-ի նիշերի ձեր քվոտան սպառվել է։ Թարգմանությունը կվերսկսվի, երբ այն զրոյացվի կամ երբ դուք բարձրացնեք սահմանաչափը ձեր DeepL հաշվում։"
+
+#: includes/providers/class-zinn-translate-provider-deepl.php:229
+msgid "DeepL answered with something we could not read. Nothing was saved."
+msgstr "DeepL-ը պատասխանեց այնպիսի բանով, որը մենք չկարողացանք կարդալ: Ոչինչ չի պահպանվել:"
+
+#: includes/providers/class-zinn-translate-provider-gemini.php:107
+msgid "No Google Gemini API key is saved, so there is nothing to translate with."
+msgstr "Google Gemini API բանալի պահված չէ, ուստի թարգմանելու համար որևէ բան չկա։"
+
+#: includes/providers/class-zinn-translate-provider-gemini.php:155
+msgid "Google Gemini could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
+msgstr "Հնարավոր չեղավ կապ հաստատել Google Gemini-ի հետ։ Ոչինչ չի թարգմանվել և գումար չի գանձվել. համակարգը նորից կփորձի հաջորդ փուլում:"
+
+#: includes/providers/class-zinn-translate-provider-openai.php:103
+msgid "No OpenAI API key is saved, so there is nothing to translate with."
+msgstr "OpenAI API բանալի պահպանված չէ, ուստի թարգմանելու բան չկա:"
+
+#: includes/providers/class-zinn-translate-provider-openai.php:139
+msgid "OpenAI could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
+msgstr "Հնարավոր չեղավ կապ հաստատել OpenAI-ի հետ: Ոչինչ չի թարգմանվել և գումար չի գանձվել. այն կփորձի նորից հաջորդ անցման ժամանակ:"
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:102
+msgid "This site is not connected to Zinn Digital®, so there is nothing to collect. Add the Site ID and token, or switch to your own provider key."
+msgstr "Այս կայքը կապված չէ Zinn Digital®-ի հետ, ուստի հավաքելու ոչինչ չկա։ Ավելացրեք Կայքի ID-ն և թոքենը կամ անցեք ձեր սեփական մատակարարի բանալուն:"
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:135
+msgid "This site is not connected to Zinn Digital®."
+msgstr "Այս կայքը կապված չէ Zinn Digital®-ի հետ:"
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:153
+msgid "Zinn Digital® could not be reached. Nothing was sent; it will try again on the next pass."
+msgstr "Zinn Digital®-ին հնարավոր չեղավ միանալ: Ոչինչ չուղարկվեց. այն կկրկնի փորձը հաջորդ անգամ:"
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:169
+msgid "Translation is paused on this site. Check the account is up to date on your Zinn Digital® dashboard."
+msgstr "Թարգմանությունը դադարեցված է այս կայքում: Ստուգեք, որ հաշիվը թարմացված է ձեր Zinn Digital® վահանակում:"
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:176
+msgid "Zinn Digital® rejected this site's token. Copy it again from the site's Translation tab on your dashboard."
+msgstr "Zinn Digital®-ը մերժել է այս կայքի թոքենը: Կրկին պատճենեք այն ձեր վահանակի «Translation» ներդիրից:"
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:207
+msgid "Zinn Digital® could not be reached. Your site keeps serving the translations it already has."
+msgstr "Zinn Digital®-ին հնարավոր չեղավ միանալ: Ձեր կայքը շարունակում է մատուցել արդեն ունեցած թարգմանությունները:"
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:219
+msgid "Zinn Digital® answered with something we could not read. Your site keeps serving the translations it already has."
+msgstr "Zinn Digital®-ը պատասխանեց մի բանով, որը մենք չկարողացանք կարդալ: Ձեր կայքը շարունակում է մատուցել արդեն ունեցած թարգմանությունները:"

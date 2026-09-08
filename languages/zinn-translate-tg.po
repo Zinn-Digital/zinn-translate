@@ -11,9 +11,7 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: zinn-translate.php
-#: includes/class-zinn-translate-settings.php:94
-#: includes/class-zinn-translate-settings.php:95
-#: includes/class-zinn-translate-settings.php:167
+#: includes/class-zinn-translate-admin.php:706
 msgid "Zinn® Translate"
 msgstr "Zinn® Translate"
 
@@ -24,8 +22,8 @@ msgstr "https://zinndigital.com/wordpress-plugins/zinn-translate"
 
 #. Description of the plugin
 #: zinn-translate.php
-msgid "Serves this site in every language Zinn Digital® has translated it into, on its own web addresses, with correct hreflang tags. Translation happens on Zinn Digital®; this plugin renders it."
-msgstr "Ин сомонаро бо ҳар забоне, ки Zinn Digital® тарҷума кардааст, дар суроғаҳои веби худаш бо тегҳои дурусти hreflang пешниҳод мекунад. Тарҷума дар Zinn Digital® сурат мегирад; ин плагин онро намоиш медиҳад."
+msgid "Publishes this site in every language you choose, on its own web addresses, with translated slugs, metadata, menus, WooCommerce products, hreflang, per-language sitemaps and llms.txt. Translate with your Zinn Digital® plan or with your own provider key."
+msgstr "Ин сайтта ба ҳар забони интихобкардаи шумо дар суроғаҳои веби худ, бо қисмҳои тарҷумашудаи суроғаҳо, метадода, менюҳо, маҳсулоти WooCommerce, hreflang, харитаҳои сайт барои ҳар забон ва llms.txt нашр мекунад. Бо нақшаи Zinn Digital® ё бо калиди провайдери худ тарҷума кунед."
 
 #. Author of the plugin
 #: zinn-translate.php
@@ -36,6 +34,325 @@ msgstr "Neil Lock — CEO, Zinn Digital® Ltd"
 #: zinn-translate.php
 msgid "https://zinndigital.com"
 msgstr "https://zinndigital.com"
+
+#: includes/class-zinn-translate-admin.php:62
+#: includes/class-zinn-translate-admin.php:632
+#: includes/class-zinn-translate-admin.php:633
+msgid "Translate"
+msgstr "Тарҷума кардан"
+
+#: includes/class-zinn-translate-admin.php:76
+#: includes/class-zinn-translate-admin.php:767
+msgid "Manual overrides"
+msgstr "Ивазкунии дастӣ"
+
+#: includes/class-zinn-translate-admin.php:81
+#: includes/class-zinn-translate-admin.php:769
+msgid "Sitemaps and URLs"
+msgstr "Харитаҳои сайт ва URL-ҳо"
+
+#: includes/class-zinn-translate-admin.php:111
+msgid "General"
+msgstr "Аслӣ"
+
+#: includes/class-zinn-translate-admin.php:116
+msgid "Who pays for the translation"
+msgstr "Тарҷумаро кӣ пардохт мекунад"
+
+#: includes/class-zinn-translate-admin.php:117
+msgid "Either your Zinn Digital® plan, or an API key of your own. There is no free tier — somebody pays a provider for every word."
+msgstr "Ё нақшаи Zinn Digital®-и шумо ва ё калиди API-и шахсии шумо. Сатҳи ройгон вуҷуд надорад — касе барои ҳар як калима ба провайдер пардохт мекунад."
+
+#: includes/class-zinn-translate-admin.php:120
+#: includes/class-zinn-translate-admin.php:721
+msgid "My Zinn Digital® plan"
+msgstr "Нақшаи Zinn Digital®-и ман"
+
+#: includes/class-zinn-translate-admin.php:121
+#: includes/class-zinn-translate-admin.php:722
+msgid "My own provider key"
+msgstr "Калиди провайдери худам"
+
+#: includes/class-zinn-translate-admin.php:128
+#: includes/class-zinn-translate-admin.php:726
+msgid "Site ID"
+msgstr "ID-и сомона"
+
+#: includes/class-zinn-translate-admin.php:129
+msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
+msgstr "Аз панели идоракунии Zinn Digital®-и худ, дар ҷадвали Тарҷумаи ин сайт."
+
+#: includes/class-zinn-translate-admin.php:136
+#: includes/class-zinn-translate-admin.php:730
+msgid "Site token"
+msgstr "Нишони сайт"
+
+#: includes/class-zinn-translate-admin.php:144
+#: includes/class-zinn-translate-admin.php:734
+msgid "Provider"
+msgstr "Провайдер"
+
+#: includes/class-zinn-translate-admin.php:154
+#: includes/class-zinn-translate-admin.php:744
+msgid "API key"
+msgstr "Калиди API"
+
+#: includes/class-zinn-translate-admin.php:155
+msgid "Your key, billed to you by the provider. It is stored on this site and sent only to them."
+msgstr "Калиди шумо, ки аз ҷониби провайдер ба шумо ҳисоб карда мешавад. Он дар ин сайт маҳфуз буда, танҳо ба онҳо фиристода мешавад."
+
+#: includes/class-zinn-translate-admin.php:163
+msgid "Model"
+msgstr "Модел"
+
+#: includes/class-zinn-translate-admin.php:164
+msgid "Leave empty for the cheapest model that does the job well."
+msgstr "Барои модели арзонтарине, ки корро хуб иҷро мекунад, холӣ гузоред."
+
+#: includes/class-zinn-translate-admin.php:171
+msgid "This site is written in"
+msgstr "Ин сайт бо забони зерин навишта шудааст:"
+
+#: includes/class-zinn-translate-admin.php:172
+msgid "Leave empty to use the site language from WordPress settings."
+msgstr "Барои истифодаи забони сомона аз танзимоти WordPress, онро холии холӣ гузоред."
+
+#: includes/class-zinn-translate-admin.php:180
+#: includes/class-zinn-translate-admin.php:748
+msgid "Languages to publish"
+msgstr "Забоonҳо барои интишор"
+
+#: includes/class-zinn-translate-admin.php:181
+msgid "Each one gets its own web addresses and its own sitemap. Publish only the languages you want indexed."
+msgstr "Ҳар кадом суроғаҳои веби худ ва харитаи сомонаи худро мегирад. Танҳо забонҳоеро нашр кунед, ки мехоҳед индексатсия шаванд."
+
+#: includes/class-zinn-translate-admin.php:188
+msgid "Translate automatically when I publish or update"
+msgstr "Ҳангоми нашр ё навсозӣ ба таври худкор тарҷума кунед"
+
+#: includes/class-zinn-translate-admin.php:189
+msgid "Editing a page marks its translations out of date and they are remade in the background. Editing without changing any words costs nothing."
+msgstr "Вироиши саҳифа тарҷумаҳои онро куҳнашуда ҳисоб мекунад ва онҳо дар замина аз нав сохта мешаванд. Вироиш бидуни тағйир додани ягон калима ҳеҷ арзише надорад."
+
+#: includes/class-zinn-translate-admin.php:196
+msgid "What gets translated"
+msgstr "Он чӣ тарҷума мешавад"
+
+#: includes/class-zinn-translate-admin.php:201
+msgid "Post types"
+msgstr "Намудҳои интишор"
+
+#: includes/class-zinn-translate-admin.php:209
+msgid "Translate the web addresses too"
+msgstr "Суроғаҳои вебро низ тарҷума кунед"
+
+#: includes/class-zinn-translate-admin.php:210
+msgid "French visitors get /fr/a-propos/ rather than /fr/about/. The untranslated address keeps working and redirects, so nothing that was indexed breaks."
+msgstr "Боздидкунандагони фаронсавӣ ба ҷои /fr/about/ саҳифаи /fr/a-propos/-ро мегиранд. Суроғаи тарҷуманашуда кор мекунад ва равонакунии мустақим (редирект) иҷро мекунад, аз ин рӯ ягон чизи индексатсияшуда вайрон намешавад."
+
+#: includes/class-zinn-translate-admin.php:217
+msgid "Translate SEO titles, descriptions and image alt text"
+msgstr "Сарлавҳаҳои SEO, тавсифҳо ва матни алтернативии тасвирҳоро тарҷума кунед"
+
+#: includes/class-zinn-translate-admin.php:224
+msgid "Translate categories and tags"
+msgstr "Тарҷумаи категорияҳо ва барчаспҳо"
+
+#: includes/class-zinn-translate-admin.php:231
+msgid "Translate navigation menus"
+msgstr "Тарҷумаи менюҳои навигатсионӣ"
+
+#: includes/class-zinn-translate-admin.php:238
+msgid "Translate WooCommerce products and attributes"
+msgstr "Маҳсулот ва хусусиятҳои WooCommerce-ро тарҷума кунед"
+
+#: includes/class-zinn-translate-admin.php:239
+msgid "Short descriptions, purchase notes, attribute labels and variation descriptions. Prices, SKUs and stored option values are never touched."
+msgstr "Тавсифҳои кӯтоҳ, ёддоштҳои харид, барчаспҳои атрибутҳо ва тавсифҳои вариантҳо. Нархҳо, SKU-ҳо ва қиматҳои имконоти захирашуда ҳеҷ гоҳ тағйир дода намешаванд."
+
+#: includes/class-zinn-translate-admin.php:246
+msgid "SEO"
+msgstr "SEO"
+
+#: includes/class-zinn-translate-admin.php:251
+msgid "Add hreflang tags"
+msgstr "Илова кардани тегҳои hreflang"
+
+#: includes/class-zinn-translate-admin.php:252
+msgid "Tells search engines these pages are the same page in different languages. Leave this on unless another plugin is already doing it."
+msgstr "Ба муҳарrikҳои ҷустуҷӯ мегӯяд, ки ин саҳифаҳо як саҳифа бо забонҳои гуногун мебошанд. Инро фаъол нигоҳ доред, магар ин ки плагини дигаре ин корро аллакай иҷро карда истода бошад."
+
+#: includes/class-zinn-translate-admin.php:259
+msgid "Publish a sitemap for each language"
+msgstr "Барои ҳар як забон харитаи сомона (sitemap) нашр кунед"
+
+#: includes/class-zinn-translate-admin.php:266
+msgid "Publish llms.txt for each language"
+msgstr "llms.txt-ро барои ҳар як забон нашр кунед"
+
+#: includes/class-zinn-translate-admin.php:267
+msgid "A plain-text map of the site that AI answer engines read. They often cannot run JavaScript and may never fetch a sitemap."
+msgstr "Харитаи матнии сомона, ки муҳаррикони ҷавоби сунъӣ онҳоро мехонанд. Онҳо аксар вақт JavaScript-ро иҷро карда наметавонанд ва шояд ҳеҷ гоҳ харитаи сомонаро бор накунанд."
+
+#: includes/class-zinn-translate-admin.php:274
+#: includes/class-zinn-translate-switcher.php:135
+msgid "Language switcher"
+msgstr "Ивагардони забон"
+
+#: includes/class-zinn-translate-admin.php:279
+#: includes/class-zinn-translate-switcher-widget.php:83
+msgid "Style"
+msgstr "Услуб"
+
+#: includes/class-zinn-translate-admin.php:282
+msgid "Colours, spacing and corners are on the Styling tab. Place it with the block, the [zinn_language_switcher] shortcode, or a menu."
+msgstr "Рнгҳо, фосилаҳо ва кунҷҳо дар варақаи услуб ҳастанд. Онро бо блок, шорткоди [zinn_language_switcher] ё феҳрист ҷойгир кунед."
+
+#: includes/class-zinn-translate-admin.php:289
+msgid "Show only these languages"
+msgstr "Танҳо ҳамин забонҳо нишон дода шаванд"
+
+#: includes/class-zinn-translate-admin.php:290
+msgid "Leave empty to show every language you publish."
+msgstr "Барои намоиш додани ҳар забоне, ки нашр мекунед, холӣ гузоред."
+
+#: includes/class-zinn-translate-admin.php:297
+msgid "Name each language in its own language"
+msgstr "Ҳар як забонро бо забони худ номбар кунед"
+
+#: includes/class-zinn-translate-admin.php:298
+msgid "Deutsch rather than German. Somebody who cannot read the current page cannot read \"German\" either."
+msgstr "Deutsch ба ҷои German. Шахсе, ки саҳифаи ҷориро хонда наметавонад, \"German\"-ро ҳам хонда наметавонад."
+
+#: includes/class-zinn-translate-admin.php:305
+msgid "Show flags"
+msgstr "Намоиши парчамҳо"
+
+#: includes/class-zinn-translate-admin.php:306
+msgid "Off by default: a language is not a country, and Arabic and Spanish have no single flag that does not exclude most of their speakers."
+msgstr "Пешфарз хомӯш аст: забон кишвар нест ва арабӣ ва испанӣ ягон парчами ягонае надоранд, ки аксарияти суханварони онҳоро истисно накунад."
+
+#: includes/class-zinn-translate-admin.php:313
+msgid "Include the language being read"
+msgstr "Забони хондашавандаро дохил кунед"
+
+#: includes/class-zinn-translate-admin.php:320
+msgid "Include the original language"
+msgstr "Забони аслиро дохил кунед"
+
+#: includes/class-zinn-translate-admin.php:327
+msgid "Add it to this menu"
+msgstr "Онро ба ин меню илова кунед"
+
+#: includes/class-zinn-translate-admin.php:328
+msgid "Only the menu you name here. Nothing is added to any other menu on the site."
+msgstr "Танҳо менюе, ки дар ин ҷо номбар мекунед. Ба ҳеҷ гуна менюи дигари сайт чизе илова карда намешавад."
+
+#: includes/class-zinn-translate-admin.php:378
+msgid "Accent"
+msgstr "Ранггирии хос"
+
+#: includes/class-zinn-translate-admin.php:382
+msgid "Background"
+msgstr "Замина"
+
+#: includes/class-zinn-translate-admin.php:386
+msgid "Text"
+msgstr "Мӯҳтаво"
+
+#: includes/class-zinn-translate-admin.php:390
+msgid "Corner radius"
+msgstr "Радиуси кунҷҳо"
+
+#: includes/class-zinn-translate-admin.php:394
+msgid "Spacing"
+msgstr "Фосиласозӣ"
+
+#: includes/class-zinn-translate-admin.php:398
+msgid "Text size"
+msgstr "Андозаи матн"
+
+#: includes/class-zinn-translate-admin.php:425
+msgid "Do not add it to a menu"
+msgstr "Онро ба меню илова накунед"
+
+#: includes/class-zinn-translate-admin.php:480
+msgid "Edit any translation here. An edited translation is kept exactly as you wrote it and is never overwritten when the page is translated again."
+msgstr "Ҳар гуна тарҷумаро дар ин ҷо таҳрир кунед. Тарҷумаи таҳриршуда ба ҳамон сурате, ки шумо навиштед, нигоҳ дошта мешавад ва ҳангоми бори дигар тарҷума шудани саҳифа ҳеҷ гоҳ аз нав навишта намешавад."
+
+#: includes/class-zinn-translate-admin.php:501
+msgid "Every language"
+msgstr "Ҳамаи забонҳо"
+
+#: includes/class-zinn-translate-admin.php:508
+msgid "Search translations"
+msgstr "Ҷустуҷӯи тарҷумаҳо"
+
+#: includes/class-zinn-translate-admin.php:509
+msgid "Filter"
+msgstr "Филтр"
+
+#: includes/class-zinn-translate-admin.php:514
+msgid "Content"
+msgstr "Мундариҷа"
+
+#: includes/class-zinn-translate-admin.php:515
+msgid "Language"
+msgstr "Забон"
+
+#: includes/class-zinn-translate-admin.php:516
+msgid "Translation"
+msgstr "Тарҷума"
+
+#: includes/class-zinn-translate-admin.php:517
+msgid "Status"
+msgstr "Ҳолат"
+
+#: includes/class-zinn-translate-admin.php:518
+#: includes/class-zinn-translate-admin.php:537
+msgid "Save"
+msgstr "Захира кардан"
+
+#: includes/class-zinn-translate-admin.php:523
+msgid "Nothing translated yet. Publish a language and translation starts in the background."
+msgstr "Ҳанӯз чизе тарҷума нашудааст. Забонеро нашр кунед ва тарҷума дар замина оғоз мешавад."
+
+#: includes/class-zinn-translate-admin.php:556
+msgid "These addresses are live. Open any of them to check it, and submit the sitemap index to Google Search Console."
+msgstr "Ин суроғаҳо фаъол ҳастанд. Яке аз онҳоро барои санҷиш кушоед ва индекси нақшаи сомонаро ба Google Search Console пешниҳод кунед."
+
+#: includes/class-zinn-translate-admin.php:577
+msgid "You are not allowed to edit translations on this site."
+msgstr "Шумо ҳуқуқ надоред, ки тарҷумаҳоро дар ин сайт таҳрир кунед."
+
+#: includes/class-zinn-translate-admin.php:605
+msgid "Edited by you — kept"
+msgstr "Таҳрири шумо — нигоҳ дошта шуд"
+
+#: includes/class-zinn-translate-admin.php:607
+msgid "Source changed — will be redone"
+msgstr "Сарчашма тағйир ёфт — аз нав иҷро карда мешавад"
+
+#: includes/class-zinn-translate-admin.php:609
+msgid "Up to date"
+msgstr "Нвсодиҳӣ (Ҳозир)"
+
+#: includes/class-zinn-translate-admin.php:621
+#: includes/class-zinn-translate-admin.php:622
+msgid "Zinn®"
+msgstr "Zinn®"
+
+#: includes/class-zinn-translate-admin.php:719
+msgid "Who pays"
+msgstr "Кӣ пардохт мекунад"
+
+#: includes/class-zinn-translate-admin.php:751
+msgid "Comma separated, for example: fr, de, ar"
+msgstr "Бо vergul ҷудошуда, масалан: fr, de, ar"
+
+#: includes/class-zinn-translate-admin.php:755
+msgid "Switcher style"
+msgstr "Услуби ивазкунанда"
 
 #. translators: %s: the Zinn Digital trade mark, which is not translated.
 #: includes/class-zinn-translate-promo.php:241
@@ -82,33 +399,152 @@ msgstr "Zinn Hub® — мутахассисони касбиро ба кор к�
 msgid "Our global freelance marketplace: browse over 10,000 ready-made services from writers, designers, developers and SEOs, or post a project and let them bid."
 msgstr "Бозори ҷаҳонии фрилансери мо: зиёда аз 10,000 хидмати омодаро аз нависандагон, тарроҳон, таҳиягарон ва мутахассисони SEO пайдо кунед ё лоиҳаеро нашр кунед ва бигузор онҳо пешниҳоди нарх кунанд."
 
-#: includes/class-zinn-translate-settings.php:170
-msgid "Your site is translated by Zinn Digital®. Choose the languages to publish, and each one is served on its own web address with the right hreflang tags."
-msgstr "Сайти шумо тавассути Zinn Digital® тарҷума мешавад. Забонҳоро барои нашр интихоб кунед ва ҳар кадоми онҳо бо суроғаи веби худ ва тегҳои дурусти hreflang пешниҳод карда мешаванд."
+#: includes/class-zinn-translate-prompt.php:211
+msgid "The API key was rejected. Check that it is still valid and has translation access, then save it again."
+msgstr "Калиди API рад карда шуд. Санҷед, ки он ҳанӯз ҳам эътибор дорад ва ба тарҷума дастрасӣ дорад, сипас онро дубора захира кунед."
 
-#: includes/class-zinn-translate-settings.php:180
-msgid "Site ID"
-msgstr "ID-и сомона"
+#: includes/class-zinn-translate-prompt.php:218
+msgid "The provider refused on billing or quota. Nothing was translated. Check the balance and limits on your account with them."
+msgstr "Таъминкунанда аз сабаби ҳисобдорӣ ё квота рад кард. Чизе тарҷума нашуд. Баланс ва лимити ҳисоби худро дар назди онҳо санҷед."
 
-#: includes/class-zinn-translate-settings.php:183
-msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
-msgstr "Аз панели идоракунии Zinn Digital®-и худ, дар ҷадвали Тарҷумаи ин сайт."
+#: includes/class-zinn-translate-prompt.php:225
+msgid "The translation provider is having a problem at their end. Nothing was translated or charged, and it will try again on the next pass."
+msgstr "Провайдери тарҷумоти дар охири худ мушкилӣ дорад. Ҳеҷ чиз тарҷума ё ҳисоб карда нашудааст ва он дар марҳилаи навбатӣ дубора кӯшиш хоҳад кард."
 
-#: includes/class-zinn-translate-settings.php:187
-msgid "Read-only token"
-msgstr "Токени танҳо хонданӣ"
+#: includes/class-zinn-translate-prompt.php:231
+msgid "The translation request failed and we could not tell why. Nothing was saved."
+msgstr "Дархости тарҷума қатъ шуд ва мо сабаби онро муайян карда натавонистеъд. Ҳеҷ чиз захира нашуд."
 
-#: includes/class-zinn-translate-settings.php:190
-msgid "Read-only. It can fetch this site's translations and nothing else."
-msgstr "Фақат барои хондан. Он метавонад тарҷумаҳои ин сомонаро дастрас кунад ва чизи дигаре не."
+#: includes/class-zinn-translate-sitemap.php:130
+msgid "Sitemap index"
+msgstr "Индекси харитаи сайт"
 
-#: includes/class-zinn-translate-settings.php:194
-msgid "Languages to publish"
-msgstr "Забоonҳо барои интишор"
+#. translators: %s: a language name, for example "French".
+#: includes/class-zinn-translate-sitemap.php:134
+#, php-format
+msgid "%s sitemap"
+msgstr "%s харитаи сайт"
 
-#: includes/class-zinn-translate-settings.php:197
-msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
-msgstr "Бо вергул ҷудо карда шудааст, масалан: fr, de, es. Барои нашр накардани ҳеҷ кадом онро холӣ гузоред."
+#: includes/class-zinn-translate-sitemap.php:138
+msgid "LLM content map"
+msgstr "Харитаи мундариҷаи LLM"
+
+#. translators: %s: a language name, for example "French".
+#: includes/class-zinn-translate-sitemap.php:141
+#, php-format
+msgid "%s LLM content map"
+msgstr "Харитаи мундариҷаи LLM-и %s"
+
+#: includes/class-zinn-translate-status.php:96
+msgid "Languages published"
+msgstr "Забонҳои нашршуда"
+
+#: includes/class-zinn-translate-status.php:100
+msgid "Site language"
+msgstr "Забони сайт"
+
+#: includes/class-zinn-translate-status.php:106
+msgid "SEO plugin"
+msgstr "Плагини SEO"
+
+#: includes/class-zinn-translate-status.php:134
+msgid "No translation provider is set up yet."
+msgstr "То ҳанӯз ягон провайдери тарҷума танзим нашудааст."
+
+#: includes/class-zinn-translate-status.php:135
+msgid "Paste an API key from your chosen provider, or connect the site to a Zinn Digital® account, and translation starts on the next pass."
+msgstr "Калиди API-ро аз провайдери интихобкардаи худ гузоред ё сайттро ба ҳисоби Zinn Digital® пайваст кунед ва тарҷума дар гузариши навбатӣ оғоз мешавад."
+
+#. translators: %s: a translation provider's name, for example "DeepL".
+#: includes/class-zinn-translate-status.php:144
+#, php-format
+msgid "Translating with your own %s key."
+msgstr "Tarҷuma бо калиди %s-и шахсии шумо."
+
+#: includes/class-zinn-translate-status.php:147
+msgid "This site is not connected to a Zinn Digital® account, which is fine — your provider bills you directly."
+msgstr "Ин сайт ба ҳисоби Zinn Digital® пайваст нест, ки ин мушкиле надорад — провайдери шумо аз шумо бевосита маблағ ситод мекунад."
+
+#: includes/class-zinn-translate-status.php:156
+msgid "Not connected to Zinn Digital® yet."
+msgstr "Ҳанӯз ба Zinn Digital® пайваст нашудааст."
+
+#: includes/class-zinn-translate-status.php:157
+msgid "Add this site's ID and token from your Zinn Digital® dashboard, or switch to your own provider key to run without an account."
+msgstr "ID ва токени ин сайтрро аз панели идораи Zinn Digital®-и худ илова кунед ё барои кор кардан бе ҳисоб ба калиди провайдери шахсии худ гузаред."
+
+#: includes/class-zinn-translate-status.php:164
+msgid "Connected to Zinn Digital®."
+msgstr "Ба Zinn Digital® пайваст шуд."
+
+#: includes/class-zinn-translate-status.php:179
+msgid "The translation provider is having a problem."
+msgstr "Пешниҳодкунандаи тарҷума мушкилӣ дорад."
+
+#: includes/class-zinn-translate-status.php:181
+msgid "Translation is paused — your provider needs attention."
+msgstr "Тарҷума таваққуф карда шуд — провайдери шумо ба диққат ниёз дорад."
+
+#: includes/class-zinn-translate-status.php:183
+msgid "Translation has not been set up yet."
+msgstr "Тарҷума ҳанӯз танзим нашудааст."
+
+#: includes/class-zinn-translate-status.php:188
+msgid "Something went wrong at our end."
+msgstr "Дар тарафи мо хатогӣ рух дод."
+
+#: includes/class-zinn-translate-status.php:200
+msgid "Check their status page"
+msgstr "Саҳифаи вазъи онҳоро санҷед"
+
+#: includes/class-zinn-translate-status.php:201
+msgid "Fix this on your account"
+msgstr "Инро дар ҳисоби худ ислоҳ кунед"
+
+#: includes/class-zinn-translate-switcher-widget.php:30
+msgid "Zinn® language switcher"
+msgstr "Ивазкунандаи забони Zinn®"
+
+#: includes/class-zinn-translate-switcher-widget.php:31
+#: includes/class-zinn-translate-switcher.php:138
+msgid "Let visitors read this page in another language."
+msgstr "Бигузор боздидкунандагон ин саҳифаро ба забони дигар хонанд."
+
+#: includes/class-zinn-translate-switcher-widget.php:79
+msgid "Title"
+msgstr "Сарлавҳа"
+
+#: includes/class-zinn-translate-switcher-widget.php:85
+msgid "Use the plugin setting"
+msgstr "Истифодаи танзимоти плагин"
+
+#: includes/class-zinn-translate-switcher.php:45
+msgid "Dropdown"
+msgstr "Феҳrисти афтанда"
+
+#: includes/class-zinn-translate-switcher.php:46
+msgid "Inline list"
+msgstr "Рӯйхати дарунсохт"
+
+#: includes/class-zinn-translate-switcher.php:47
+msgid "Pills"
+msgstr "Ҳабҳо"
+
+#: includes/class-zinn-translate-switcher.php:48
+msgid "Minimal text"
+msgstr "Matni minimalӣ"
+
+#: includes/class-zinn-translate-switcher.php:49
+msgid "Flags and names"
+msgstr "Парчамҳо ва номҳо"
+
+#: includes/class-zinn-translate-switcher.php:50
+msgid "Stacked list"
+msgstr "Рӯйхати қабат-қабат"
+
+#: includes/class-zinn-translate-switcher.php:285
+msgid "Choose a language"
+msgstr "Интихоби забон"
 
 #: includes/class-zinn-translate-updater.php:233
 msgid "See the Zinn Digital® release notes."
@@ -117,3 +553,69 @@ msgstr "Эълонҳои нашри Zinn Digital®-ро бинед."
 #: includes/class-zinn-translate-updater.php:288
 msgid "The downloaded update failed its integrity check and was not installed."
 msgstr "Азнавкарии зеркашишуда аз санҷиши бехатарӣ гузашта натавонист ва насб карда нашуд."
+
+#: includes/providers/class-zinn-translate-provider-deepl.php:157
+msgid "No DeepL API key is saved, so there is nothing to translate with."
+msgstr "Ягон калиди API-и DeepL захира нашудааст, бинобар ин чизе барои тарҷума кардан вуҷуд надорад."
+
+#. translators: %s: a language name, for example "Swahili".
+#: includes/providers/class-zinn-translate-provider-deepl.php:165
+#, php-format
+msgid "DeepL does not translate into %s. Choose Google Gemini or OpenAI for this language, or connect the site to Zinn Digital®."
+msgstr "DeepL ба %s тарҷума намекунад. Барои ин забон Google Gemini ё OpenAI-ро интихоб кунед ё сайтҳоро ба Zinn Digital® пайваст кунед."
+
+#: includes/providers/class-zinn-translate-provider-deepl.php:207
+msgid "DeepL could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
+msgstr "DeepL дастнорас буд. Ҳеҷ чиз тарҷума нашуд ва ҳеҷ маблағ ситонида нашуд; он дар кӯшиши навбатӣ аз нав кӯшиш мекунад."
+
+#: includes/providers/class-zinn-translate-provider-deepl.php:219
+msgid "Your DeepL character quota is used up for this period. Translation resumes when it resets, or when you raise the limit on your DeepL account."
+msgstr "Квотаи аломатҳои DeepL-и шумо барои ин давра истифода шудааст. Тарҷума ҳангоми аз нав танзим шудани он ё ҳангоми баланд бардоштани маҳдудият дар ҳисоби DeepL-и шумо дубора оғоз мешавад."
+
+#: includes/providers/class-zinn-translate-provider-deepl.php:229
+msgid "DeepL answered with something we could not read. Nothing was saved."
+msgstr "DeepL бо чизе ҷавоб дод, ки мо онро хонда натавонистем. Ҳеҷ чиз захира нашуд."
+
+#: includes/providers/class-zinn-translate-provider-gemini.php:107
+msgid "No Google Gemini API key is saved, so there is nothing to translate with."
+msgstr "Ягон калиди API-и Google Gemini захира нашудааст, бинобар ин чизе барои тарҷума вуҷуд надорад."
+
+#: includes/providers/class-zinn-translate-provider-gemini.php:155
+msgid "Google Gemini could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
+msgstr "Ба Google Gemini дастрасӣ пайдо карда нашуд. Ҳеҷ чиз тарҷума нашуд ва ҳеҷ маблағе ситонида нашуд; он дар гузари навбатӣ дубора кӯшиш хоҳад кард."
+
+#: includes/providers/class-zinn-translate-provider-openai.php:103
+msgid "No OpenAI API key is saved, so there is nothing to translate with."
+msgstr "Ягон калиди API OpenAI захира нашудааст, бинобар ин ягон чиз барои тарҷума вуҷуд надорад."
+
+#: includes/providers/class-zinn-translate-provider-openai.php:139
+msgid "OpenAI could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
+msgstr "Бо OpenAI тамос гирифтан имконнопазир буд. Ҳеҷ чиз тарҷума нашуд ва ҳеҷ маблағ ситонида нашуд; кӯшиши баъдӣ дар марҳилаи оянда анҷом дода мешавад."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:102
+msgid "This site is not connected to Zinn Digital®, so there is nothing to collect. Add the Site ID and token, or switch to your own provider key."
+msgstr "Ин сайт ба Zinn Digital® пайваст нест, аз ин рӯ ягон чиз барои ҷамъоварӣ вуҷуд надорад. ID-и сайт ва токенро илова кунед ё ба калиди провайдери худ гузаред."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:135
+msgid "This site is not connected to Zinn Digital®."
+msgstr "Ин сайт ба Zinn Digital® пайваст нест."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:153
+msgid "Zinn Digital® could not be reached. Nothing was sent; it will try again on the next pass."
+msgstr "Пайвастшавӣ бо Zinn Digital® имконнопазир буд. Ҳеҷ чиз фиристода нашуд; кӯшиши навбатӣ дар марҳилаи оянда анҷом дода мешавад."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:169
+msgid "Translation is paused on this site. Check the account is up to date on your Zinn Digital® dashboard."
+msgstr "Тарҷума дар ин сайт муваққатан боздошта шудааст. Бозрасӣ кунед, ки ҳисоб дар панели идоракунии Zinn Digital®-и шумо нав карда шудааст."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:176
+msgid "Zinn Digital® rejected this site's token. Copy it again from the site's Translation tab on your dashboard."
+msgstr "Zinn Digital® токени ин сайткуниро рад кард. Онро бори дигар аз варақаи тарҷумаи сайт дар панели идоракунии худ нусхабардорӣ кунед."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:207
+msgid "Zinn Digital® could not be reached. Your site keeps serving the translations it already has."
+msgstr "Болои Zinn Digital® дастрасӣ пайдо карда нашуд. Сайти шумо тарҷумаҳои аллакай доштаашро пешниҳод кардан мегирад."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:219
+msgid "Zinn Digital® answered with something we could not read. Your site keeps serving the translations it already has."
+msgstr "Zinn Digital® бо чизе ҷавоб дод, ки мо онро хонда натавонистем. Сомонаи шумо тарҷумаҳои аллакай доштаашро пешниҳод кардан мегирад."

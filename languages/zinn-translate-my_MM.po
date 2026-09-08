@@ -11,9 +11,7 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: zinn-translate.php
-#: includes/class-zinn-translate-settings.php:94
-#: includes/class-zinn-translate-settings.php:95
-#: includes/class-zinn-translate-settings.php:167
+#: includes/class-zinn-translate-admin.php:706
 msgid "Zinn® Translate"
 msgstr "Zinn® Translate"
 
@@ -24,8 +22,8 @@ msgstr "https://zinndigital.com/wordpress-plugins/zinn-translate"
 
 #. Description of the plugin
 #: zinn-translate.php
-msgid "Serves this site in every language Zinn Digital® has translated it into, on its own web addresses, with correct hreflang tags. Translation happens on Zinn Digital®; this plugin renders it."
-msgstr "Zinn Digital® မှ ဘာသာပြန်ဆိုထားသော ဘာသာစကားတိုင်းဖြင့် ဤဆိုက်ကို ၎င်း၏ကိုယ်ပိုင် ဝဘ်လိပ်စာများတွင် မှန်ကန်သော hreflang တဂ်များဖြင့် လွှင့်တင်ပေးပါသည်။ ဘာသာပြန်ဆိုမှုကို Zinn Digital® တွင် လုပ်ဆောင်ပြီး ဤပလပ်အင်က ၎င်းကို ဖော်ပြပေးပါသည်။"
+msgid "Publishes this site in every language you choose, on its own web addresses, with translated slugs, metadata, menus, WooCommerce products, hreflang, per-language sitemaps and llms.txt. Translate with your Zinn Digital® plan or with your own provider key."
+msgstr "ဤဆိုဒ်ကို သင်ရွေးချယ်သော ဘာသာစကားတိုင်းတွင် ၎င်း၏ကိုယ်ပိုင်ဝဘ်လိပ်စာများဖြင့်၊ ဘာသာပြန်ထားသော စလပ်များ၊ မီတာဒေတာ၊ မီနူးများ၊ WooCommerce ထုတ်ကုန်များ၊ hreflang၊ ဘာသာစကားအလိုက် ဆိုက်မြေပုံများနှင့် llms.txt တို့နှင့်အတူ ထုတ်ဝေပါသည်။ သင့်၏ Zinn Digital® ပလန်ဖြင့်ဖြစ်စေ သို့မဟုတ် သင့်ကိုယ်ပိုင် ပံ့ပိုးပေးသူ့သော့ (provider key) ဖြင့်ဖြစ်စေ ဘာသာပြန်ပါ။"
 
 #. Author of the plugin
 #: zinn-translate.php
@@ -36,6 +34,325 @@ msgstr "Neil Lock — CEO, Zinn Digital® Ltd"
 #: zinn-translate.php
 msgid "https://zinndigital.com"
 msgstr "https://zinndigital.com"
+
+#: includes/class-zinn-translate-admin.php:62
+#: includes/class-zinn-translate-admin.php:632
+#: includes/class-zinn-translate-admin.php:633
+msgid "Translate"
+msgstr "ဘာသာပြန်ရန်"
+
+#: includes/class-zinn-translate-admin.php:76
+#: includes/class-zinn-translate-admin.php:767
+msgid "Manual overrides"
+msgstr "လက်စွဲ အထက်ကျော်လွန်မှုများ"
+
+#: includes/class-zinn-translate-admin.php:81
+#: includes/class-zinn-translate-admin.php:769
+msgid "Sitemaps and URLs"
+msgstr "ဆိုဒ်မြေပုံများနှင့် URL များ"
+
+#: includes/class-zinn-translate-admin.php:111
+msgid "General"
+msgstr "အထွေထွေ"
+
+#: includes/class-zinn-translate-admin.php:116
+msgid "Who pays for the translation"
+msgstr "ဘာသာပြန်ခအတွက် မည်သူက ပေးချေမည်နည်း"
+
+#: includes/class-zinn-translate-admin.php:117
+msgid "Either your Zinn Digital® plan, or an API key of your own. There is no free tier — somebody pays a provider for every word."
+msgstr "သင့်၏ Zinn Digital® အစီအစဉ် သို့မဟုတ် သင့်ကိုယ်ပိုင် API သော့တစ်ခု။ အခမဲ့အလွှာ မရှိပါ — စကားလုံးတိုင်းအတွက် တစ်စုံတစ်ဦးက ဝန်ဆောင်မှုပေးသူကို ပေးချေရပါသည်။"
+
+#: includes/class-zinn-translate-admin.php:120
+#: includes/class-zinn-translate-admin.php:721
+msgid "My Zinn Digital® plan"
+msgstr "ကျွန်ုပ်၏ Zinn Digital® ပလန်"
+
+#: includes/class-zinn-translate-admin.php:121
+#: includes/class-zinn-translate-admin.php:722
+msgid "My own provider key"
+msgstr "ကျွန်ုပ်၏ ကိုယ်ပိုင် ပံ့ပိုးပေးသူ သော့ချက်"
+
+#: includes/class-zinn-translate-admin.php:128
+#: includes/class-zinn-translate-admin.php:726
+msgid "Site ID"
+msgstr "ဆိုက် ID"
+
+#: includes/class-zinn-translate-admin.php:129
+msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
+msgstr "သင့်၏ Zinn Digital® ဒက်ရှ်ဘုတ်မှ၊ ဤဆိုဒ်၏ ဘာသာပြန်ဆိုမှု တက်ဘ်တွင်။"
+
+#: includes/class-zinn-translate-admin.php:136
+#: includes/class-zinn-translate-admin.php:730
+msgid "Site token"
+msgstr "ဆိုက် တိုကင်"
+
+#: includes/class-zinn-translate-admin.php:144
+#: includes/class-zinn-translate-admin.php:734
+msgid "Provider"
+msgstr "ဝန်ဆောင်မှုပေးသူ"
+
+#: includes/class-zinn-translate-admin.php:154
+#: includes/class-zinn-translate-admin.php:744
+msgid "API key"
+msgstr "API သော့ချက်"
+
+#: includes/class-zinn-translate-admin.php:155
+msgid "Your key, billed to you by the provider. It is stored on this site and sent only to them."
+msgstr "သင့်၏သော့ကို ဝန်ဆောင်မှုပေးသူက သင့်ထံသို့ ဘေလ်ပို့မည်ဖြစ်သည်။ ၎င်းကို ဤဆိုက်တွင် သိမ်းဆည်းထားပြီး ၎င်းတို့ထံသာ ပို့ပေးမည်ဖြစ်သည်။"
+
+#: includes/class-zinn-translate-admin.php:163
+msgid "Model"
+msgstr "ပုံစံ"
+
+#: includes/class-zinn-translate-admin.php:164
+msgid "Leave empty for the cheapest model that does the job well."
+msgstr "လုပ်ငန်းအတွက် အသင့်တော်ဆုံး အသက်သာဆုံး မော်ဒယ်အတွက် အလွတ်ထားပါ။"
+
+#: includes/class-zinn-translate-admin.php:171
+msgid "This site is written in"
+msgstr "ဤဆိုဒ်ကို ဤဘာသာစကားဖြင့် ရေးသားထားသည် -"
+
+#: includes/class-zinn-translate-admin.php:172
+msgid "Leave empty to use the site language from WordPress settings."
+msgstr "WordPress ဆက်တင်များမှ ဆိုက်ဘာသာစကားကို အသုံးပြုရန်အတွက် အလွတ်ထားပါ။"
+
+#: includes/class-zinn-translate-admin.php:180
+#: includes/class-zinn-translate-admin.php:748
+msgid "Languages to publish"
+msgstr "ထုတ်ဝေရန် ဘာသာစကားများ"
+
+#: includes/class-zinn-translate-admin.php:181
+msgid "Each one gets its own web addresses and its own sitemap. Publish only the languages you want indexed."
+msgstr "တစ်ခုစီတွင် ၎င်း၏ကိုယ်ပိုင်ဝဘ်လိပ်စာနှင့် ဆိုက်မြေပုံ (sitemap) တို့ ရှိကြသည်။ သင့်အနေဖြင့် အညွှန်းသွင်းလိုသော ဘာသာစကားများကိုသာ ထုတ်ဝေပါ။"
+
+#: includes/class-zinn-translate-admin.php:188
+msgid "Translate automatically when I publish or update"
+msgstr "ငါထုတ်ဝေသည် သို့မဟုတ် အပ်ဒိတ်လုပ်သည့်အခါ အလိုအလျောက် ဘာသာပြန်ပါ"
+
+#: includes/class-zinn-translate-admin.php:189
+msgid "Editing a page marks its translations out of date and they are remade in the background. Editing without changing any words costs nothing."
+msgstr "စာမျက်နှာတစ်ခုကို တည်းဖြတ်ခြင်းက ၎င်း၏ဘာသာပြန်ဆိုချက်များကို ခေတ်မမီတော့ကြောင်း အမှတ်အသားပြုပြီး နောက်ခံတွင် ၎င်းတို့ကို ပြန်လည်လုပ်ဆောင်ပါသည်။ မည်သည့်စကားလုံးမျှ မပြောင်းလဲဘဲ တည်းဖြတ်ခြင်းအတွက် ကုန်ကျစရိတ် မရှိပါ။"
+
+#: includes/class-zinn-translate-admin.php:196
+msgid "What gets translated"
+msgstr "ဘာသာပြန်ဆိုမည့်အရာများ"
+
+#: includes/class-zinn-translate-admin.php:201
+msgid "Post types"
+msgstr "ပို့စ်အမျိုးအစားများ"
+
+#: includes/class-zinn-translate-admin.php:209
+msgid "Translate the web addresses too"
+msgstr "ဝဘ်လိပ်စာများကိုပါ ဘာသာပြန်ပါ"
+
+#: includes/class-zinn-translate-admin.php:210
+msgid "French visitors get /fr/a-propos/ rather than /fr/about/. The untranslated address keeps working and redirects, so nothing that was indexed breaks."
+msgstr "ပြင်သစ်ဧည့်သည်များသည် /fr/about/ အစား /fr/a-propos/ ကို ရရှိကြသည်။ ဘာသာမပြန်ရသေးသော လိပ်စာသည် ဆက်လက်အလုပ်လုပ်ပြီး လမ်းကြောင်းပြောင်းပေးသောကြောင့် အညွှန်းသွင်းထားပြီးသား မည်သည့်အရာမျှ ပျက်စီးမည်မဟုတ်ပါ။"
+
+#: includes/class-zinn-translate-admin.php:217
+msgid "Translate SEO titles, descriptions and image alt text"
+msgstr "SEO ခေါင်းစဉ်များ၊ ဖော်ပြချက်များနှင့် ရုပ်ပုံ အစားထိုးစာသား (alt text) များကို ဘာသာပြန်ပါ"
+
+#: includes/class-zinn-translate-admin.php:224
+msgid "Translate categories and tags"
+msgstr "အမျိုးအစားများနှင့် တဂ်များကို ဘာသာပြန်ပါ"
+
+#: includes/class-zinn-translate-admin.php:231
+msgid "Translate navigation menus"
+msgstr "လမ်းညွှန်မီနူးများကို ဘာသာပြန်ပါ"
+
+#: includes/class-zinn-translate-admin.php:238
+msgid "Translate WooCommerce products and attributes"
+msgstr "WooCommerce ထုတ်ကုန်များနှင့် ရုပ်လုံးသွင်ပြင်များကို ဘာသာပြန်ပါ"
+
+#: includes/class-zinn-translate-admin.php:239
+msgid "Short descriptions, purchase notes, attribute labels and variation descriptions. Prices, SKUs and stored option values are never touched."
+msgstr "အတိုစား ဖော်ပြချက်များ၊ ဝယ်ယူမှု မှတ်စုများ၊ ရည်ညွှန်းချက် အညွှန်းများနှင့် ကွဲပြားမှု ဖော်ပြချက်များ။ ဈေးနှုန်းများ၊ SKU များ နှင့် သိမ်းဆည်းထားသော ရွေးချယ်မှု တန်ဖိုးများကို မည်သည့်အခါမျှ မထိတွေ့ပါ။"
+
+#: includes/class-zinn-translate-admin.php:246
+msgid "SEO"
+msgstr "SEO"
+
+#: includes/class-zinn-translate-admin.php:251
+msgid "Add hreflang tags"
+msgstr "hreflang တဂ်များကို ထည့်ရန်"
+
+#: includes/class-zinn-translate-admin.php:252
+msgid "Tells search engines these pages are the same page in different languages. Leave this on unless another plugin is already doing it."
+msgstr "ရှာဖွေရေးအင်ဂျင်များကို ဤစာမျက်နှာများသည် ဘာသာစကားအမျိုးမျိုးဖြင့် ရေးသားထားသော တူညီသည့်စာမျက်နှာများဖြစ်ကြောင်း အသိပေးသည်။ အခြား ပလပ်အင်တစ်ခုက ၎င်းကို လုပ်ဆောင်နေခြင်းမရှိပါက ဤအရာကို ဖွင့်ထားပါ။"
+
+#: includes/class-zinn-translate-admin.php:259
+msgid "Publish a sitemap for each language"
+msgstr "ဘာသာစကားတစ်ခုချင်းစီအတွက် ဆိုက်ပ်မက် (sitemap) တစ်ခုကို ထုတ်ဝေပါ"
+
+#: includes/class-zinn-translate-admin.php:266
+msgid "Publish llms.txt for each language"
+msgstr "ဘာသာစကားတစ်ခုချင်းစီအတွက် llms.txt ကို ထုတ်ဝေပါ"
+
+#: includes/class-zinn-translate-admin.php:267
+msgid "A plain-text map of the site that AI answer engines read. They often cannot run JavaScript and may never fetch a sitemap."
+msgstr "AI ဖြေဆိုရေးအင်ဂျင်များ ဖတ်ရှုသည့် သာမန်စာသားဆိုက်ပထဝီမြေပုံ။ ၎င်းတို့သည် JavaScript ကို မလည်ပတ်နိုင်ကြပါ၊ ဆိုက်မြေပုံကိုလည်း ဘယ်သောအခါမျှ ရယူနိုင်မည်မဟုတ်ပေ။"
+
+#: includes/class-zinn-translate-admin.php:274
+#: includes/class-zinn-translate-switcher.php:135
+msgid "Language switcher"
+msgstr "ဘာသာစကားပြောင်းစက်"
+
+#: includes/class-zinn-translate-admin.php:279
+#: includes/class-zinn-translate-switcher-widget.php:83
+msgid "Style"
+msgstr "စတိုင်လ်"
+
+#: includes/class-zinn-translate-admin.php:282
+msgid "Colours, spacing and corners are on the Styling tab. Place it with the block, the [zinn_language_switcher] shortcode, or a menu."
+msgstr "အရောင်များ၊ ခြားနားမှုများနှင့် ထောင့်များကို ဒီဇိုင်းပြင်ဆင်မှု (Styling) တက်ဘ်တွင် တွေ့နိုင်ပါသည်။ ၎င်းကို ဘလောက်၊ [zinn_language_switcher] ရှော့ကုဒ် သို့မဟုတ် မမီနူးဖြင့် နေရာချပါ။"
+
+#: includes/class-zinn-translate-admin.php:289
+msgid "Show only these languages"
+msgstr "ဤဘာသာစကားများကိုသာ ပြသပါ"
+
+#: includes/class-zinn-translate-admin.php:290
+msgid "Leave empty to show every language you publish."
+msgstr "သင်ထုတ်ဝေသည့် ဘာသာစကားအားလုံးကို ပြသရန်အတွက် ကွက်လပ်ထားခဲ့ပါ။"
+
+#: includes/class-zinn-translate-admin.php:297
+msgid "Name each language in its own language"
+msgstr "ဘာသာစကားတိုင်းကို ၎င်းတို့၏ ကိုယ်ပိုင်ဘာသာစကားဖြင့် အမည်ပေးပါ"
+
+#: includes/class-zinn-translate-admin.php:298
+msgid "Deutsch rather than German. Somebody who cannot read the current page cannot read \"German\" either."
+msgstr "ဂျာမန် (German) အစား Deutsch။ လက်ရှိစာမျက်နှာကို မဖတ်နိုင်သူတစ်ဦးသည် \"German\" ကိုလည်း ဖတ်နိုင်မည်မဟုတ်ပါ။"
+
+#: includes/class-zinn-translate-admin.php:305
+msgid "Show flags"
+msgstr "အလံများကို ပြသရန်"
+
+#: includes/class-zinn-translate-admin.php:306
+msgid "Off by default: a language is not a country, and Arabic and Spanish have no single flag that does not exclude most of their speakers."
+msgstr "မူလအားဖြင့် ပိတ်ထားသည်- ဘာသာစကားသည် နိုင်ငံတစ်ခု မဟုတ်ပါ၊ အာရဗီနှင့် စပိန်ဘာသာစကားများတွင် ၎င်းတို့ကို ပြောဆိုသူအများစုကို ချန်လှပ်မထားသော တစ်ခုတည်းသော အလံ မရှိပါ။"
+
+#: includes/class-zinn-translate-admin.php:313
+msgid "Include the language being read"
+msgstr "ဖတ်ရှုနေသည့် ဘာသာစကားကို ထည့်သွင်းပါ"
+
+#: includes/class-zinn-translate-admin.php:320
+msgid "Include the original language"
+msgstr "မူရင်းဘာသာစကားကို ထည့်သွင်းပါ"
+
+#: includes/class-zinn-translate-admin.php:327
+msgid "Add it to this menu"
+msgstr "ဤမီနူးသို့ ထည့်ပါ"
+
+#: includes/class-zinn-translate-admin.php:328
+msgid "Only the menu you name here. Nothing is added to any other menu on the site."
+msgstr "ဤနေရာတွင်သင်အမည်ပေးထားသော မီနူးသာ ဖြစ်သည်။ ဆိုက်ပေါ်ရှိ အခြား မီနူးများတွင် မည်သည့်အရာမျှ ထည့်သွင်းမည်မဟုတ်ပါ။"
+
+#: includes/class-zinn-translate-admin.php:378
+msgid "Accent"
+msgstr "အသံထွက်ဝဏ္ဏ"
+
+#: includes/class-zinn-translate-admin.php:382
+msgid "Background"
+msgstr "နောက်ခံ"
+
+#: includes/class-zinn-translate-admin.php:386
+msgid "Text"
+msgstr "စာသား"
+
+#: includes/class-zinn-translate-admin.php:390
+msgid "Corner radius"
+msgstr "ထောင့်အဝိုင်းစက်ပတ်လည်အချင်း"
+
+#: includes/class-zinn-translate-admin.php:394
+msgid "Spacing"
+msgstr "ခြားနားမှု ပမာဏ"
+
+#: includes/class-zinn-translate-admin.php:398
+msgid "Text size"
+msgstr "စာသား အတိုင်းအဆ"
+
+#: includes/class-zinn-translate-admin.php:425
+msgid "Do not add it to a menu"
+msgstr "မီနူးတစ်ခုသို့ မထည့်ပါနှင့်"
+
+#: includes/class-zinn-translate-admin.php:480
+msgid "Edit any translation here. An edited translation is kept exactly as you wrote it and is never overwritten when the page is translated again."
+msgstr "ဤနေရာတွင် မည်သည့်ဘာသာပြန်ဆိုမှုကိုမဆို တည်းဖြတ်ပါ။ တည်းဖြတ်ထားသော ဘာသာပြန်ဆိုမှုကို သင်ရေးသားသည့်အတိုင်း တိကျစွာ သိမ်းဆည်းထားမည်ဖြစ်ပြီး စာမျက်နှာကို နောက်တစ်ကြိမ် ဘာသာပြန်သည့်အခါ မည်သည့်အခါမျှ အစားထိုး overwritten လုပ်မည်မဟုတ်ပါ။"
+
+#: includes/class-zinn-translate-admin.php:501
+msgid "Every language"
+msgstr "ဘာသာစကားတိုင်း"
+
+#: includes/class-zinn-translate-admin.php:508
+msgid "Search translations"
+msgstr "ဘာသာပြန်ချက်များကို ရှာဖွေပါ"
+
+#: includes/class-zinn-translate-admin.php:509
+msgid "Filter"
+msgstr "စစ်ထုတ်ရန်"
+
+#: includes/class-zinn-translate-admin.php:514
+msgid "Content"
+msgstr "အကြောင်းအရာ"
+
+#: includes/class-zinn-translate-admin.php:515
+msgid "Language"
+msgstr "ဘာသာစကား"
+
+#: includes/class-zinn-translate-admin.php:516
+msgid "Translation"
+msgstr "ဘာသာပြန်ဆိုချက်"
+
+#: includes/class-zinn-translate-admin.php:517
+msgid "Status"
+msgstr "အခြေအနေ"
+
+#: includes/class-zinn-translate-admin.php:518
+#: includes/class-zinn-translate-admin.php:537
+msgid "Save"
+msgstr "သိမ်းဆည်းရန်"
+
+#: includes/class-zinn-translate-admin.php:523
+msgid "Nothing translated yet. Publish a language and translation starts in the background."
+msgstr "ဘာသာပြန်ဆိုထားခြင်း မရှိသေးပါ။ ဘာသာစကားတစ်ခုကို ထုတ်ဝေလိုက်ပါက နောက်ခံတွင် ဘာသာပြန်ခြင်း စတင်ပါမည်။"
+
+#: includes/class-zinn-translate-admin.php:556
+msgid "These addresses are live. Open any of them to check it, and submit the sitemap index to Google Search Console."
+msgstr "ဤလိပ်စာများသည် တိုက်ရိုက်အလုပ်လုပ်နေပါသည်။ ၎င်းတို့ကို စစ်ဆေးရန် တစ်ခုခုကို ဖွင့်ပြီး sitemap index ကို Google Search Console သို့ တင်သွင်းပါ။"
+
+#: includes/class-zinn-translate-admin.php:577
+msgid "You are not allowed to edit translations on this site."
+msgstr "ဤဆိုက်တွင် ဘာသာပြန်ဆိုချက်များကို ပြင်ဆင်ခွင့်မရှိပါ။"
+
+#: includes/class-zinn-translate-admin.php:605
+msgid "Edited by you — kept"
+msgstr "သင့်ဘက်မှ တည်းဖြတ်ပြီး — ထိန်းသိမ်းထားသည်"
+
+#: includes/class-zinn-translate-admin.php:607
+msgid "Source changed — will be redone"
+msgstr "ရင်းမြစ် ပြောင်းလဲသွားပြီ — ပြန်လုပ်ပါမည်"
+
+#: includes/class-zinn-translate-admin.php:609
+msgid "Up to date"
+msgstr "နောက်ဆုံးပေါ်ဖြစ်နေသည်"
+
+#: includes/class-zinn-translate-admin.php:621
+#: includes/class-zinn-translate-admin.php:622
+msgid "Zinn®"
+msgstr "Zinn®"
+
+#: includes/class-zinn-translate-admin.php:719
+msgid "Who pays"
+msgstr "မည်သူက ပေးချေမည်နည်း"
+
+#: includes/class-zinn-translate-admin.php:751
+msgid "Comma separated, for example: fr, de, ar"
+msgstr "ကော်မာဖြင့် ခြားထားသည်၊ ဥပမာ- fr, de, ar"
+
+#: includes/class-zinn-translate-admin.php:755
+msgid "Switcher style"
+msgstr "Switcher ပုံစံ"
 
 #. translators: %s: the Zinn Digital trade mark, which is not translated.
 #: includes/class-zinn-translate-promo.php:241
@@ -82,33 +399,152 @@ msgstr "Zinn Hub® — ဤအလုပ်ကို အသက်မွေးဝ�
 msgid "Our global freelance marketplace: browse over 10,000 ready-made services from writers, designers, developers and SEOs, or post a project and let them bid."
 msgstr "ကျွန်ုပ်တို့၏ ကမ္ဘာလုံးဆိုင်ရာ ဖရီးလန်းဈေးကွက် - စာရေးဆရာများ၊ ဒီဇိုင်နာများ၊ ဒက်ဗလော့ပါများနှင့် SEO ကျွမ်းကျင်သူများ၏ အဆင်သင့်ပြင်ဆင်ထားသော ဝန်ဆောင်မှု ပေါင်း ၁၀,၀၀၀ ကျော်ကို ဝင်ရောက်ကြည့်ရှုပါ သို့မဟုတ် ပရောဂျက်တစ်ခု တင်၍ ၎င်းတို့ကို လေလံဆွဲခွင့်ပြုလိုက်ပါ။"
 
-#: includes/class-zinn-translate-settings.php:170
-msgid "Your site is translated by Zinn Digital®. Choose the languages to publish, and each one is served on its own web address with the right hreflang tags."
-msgstr "သင့်ဆိုက်ကို Zinn Digital® ဖြင့် ဘာသာပြန်ဆိုထားသည်။ ထုတ်ဝေမည့် ဘာသာစကားများကို ရွေးချယ်ပါ၊ တစ်ခုစီကို သင့်လျော်သော hreflang တက်ဂ်များပါရှိသည့် ၎င်းတို့၏ကိုယ်ပိုင် ဝဘ်လိပ်စာတွင် ဝန်ဆောင်မှုပေးမည်ဖြစ်သည်။"
+#: includes/class-zinn-translate-prompt.php:211
+msgid "The API key was rejected. Check that it is still valid and has translation access, then save it again."
+msgstr "API သော့ကို ငြင်းပယ်ခဲ့သည်။ ၎င်းသည် ဆက်လက် အကျုံးဝင်ပြီး ဘာသာပြန်ဆိုခွင့် ရှိမရှိ စစ်ဆေးပါ၊ ထို့နောက် ၎င်းကို ထပ်မံ သိမ်းဆည်းပါ။"
 
-#: includes/class-zinn-translate-settings.php:180
-msgid "Site ID"
-msgstr "ဆိုက် ID"
+#: includes/class-zinn-translate-prompt.php:218
+msgid "The provider refused on billing or quota. Nothing was translated. Check the balance and limits on your account with them."
+msgstr "ဝန်ဆောင်မှုပေးသူသည် ငွေပေးချေမှု သို့မဟုတ် ခွဲတမ်းကြောင့် ငြင်းဆိုခဲ့သည်။ ဘာသာပြန်ဆိုမှု မရှိပါ။ ၎င်းတို့နှင့် သင့်အကောင့်ရှိ လက်ကျန်ငွေနှင့် ကန့်သတ်ချက်များကို စစ်ဆေးပါ။"
 
-#: includes/class-zinn-translate-settings.php:183
-msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
-msgstr "သင့်၏ Zinn Digital® ဒက်ရှ်ဘုတ်မှ၊ ဤဆိုဒ်၏ ဘာသာပြန်ဆိုမှု တက်ဘ်တွင်။"
+#: includes/class-zinn-translate-prompt.php:225
+msgid "The translation provider is having a problem at their end. Nothing was translated or charged, and it will try again on the next pass."
+msgstr "ဘာသာပြန်ဆိုရေးဝန်ဆောင်မှုပေးသူဘက်တွင် ပြဿနာအချို့ရှိနေပါသည်။ မည်သည့်အရာမျှ ဘာသာပြန်ဆိုခြင်း သို့မဟုတ် အခကြေးငွေကောက်ခံခြင်း မရှိခဲ့ပါ၊ နောက်တစ်ကြိမ်လုပ်ဆောင်မှုတွင် ၎င်းက ထပ်မံကြိုးစားပါမည်။"
 
-#: includes/class-zinn-translate-settings.php:187
-msgid "Read-only token"
-msgstr "ဖတ်ရန်သာရသော တိုကင်"
+#: includes/class-zinn-translate-prompt.php:231
+msgid "The translation request failed and we could not tell why. Nothing was saved."
+msgstr "ဘာသာပြန်ဆိုမှု တောင်းဆိုချက် မအောင်မြင်ခဲ့ပါ၊ အကြောင်းရင်းကိုလည်း မသိရှိရပါ။ မည်သည့်အရာမျှ သိမ်းဆည်းမထားပါ။"
 
-#: includes/class-zinn-translate-settings.php:190
-msgid "Read-only. It can fetch this site's translations and nothing else."
-msgstr "ဖတ်ရန်သာ။ ဤဆိုက်၏ ဘာသာပြန်ဆိုချက်များကိုသာ ရယူနိုင်ပြီး အခြားမည်သည့်အရာကိုမျှ မလုပ်ဆောင်နိုင်ပါ။"
+#: includes/class-zinn-translate-sitemap.php:130
+msgid "Sitemap index"
+msgstr "ဆိုက်ပ်မက် အညွှန်း"
 
-#: includes/class-zinn-translate-settings.php:194
-msgid "Languages to publish"
-msgstr "ထုတ်ဝေရန် ဘာသာစကားများ"
+#. translators: %s: a language name, for example "French".
+#: includes/class-zinn-translate-sitemap.php:134
+#, php-format
+msgid "%s sitemap"
+msgstr "%s ဆိုက်မြေပုံ"
 
-#: includes/class-zinn-translate-settings.php:197
-msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
-msgstr "ပာတ်ဝှက်ပြိး ကော်မာဖြင့် ခြားပါ၊ ဥပမာ- fr, de, es။ မည်သည်ကိုမျှ ထုတ်ဝေလိုခြင်း မရှိပါက အလွတ်ထားပါ။"
+#: includes/class-zinn-translate-sitemap.php:138
+msgid "LLM content map"
+msgstr "LLM အကြောင်းအရာ မြေပုံ"
+
+#. translators: %s: a language name, for example "French".
+#: includes/class-zinn-translate-sitemap.php:141
+#, php-format
+msgid "%s LLM content map"
+msgstr "%s LLM အကြောင်းအရာ မြေပုံ"
+
+#: includes/class-zinn-translate-status.php:96
+msgid "Languages published"
+msgstr "ထုတ်ဝေပြီးသော ဘာသာစကားများ"
+
+#: includes/class-zinn-translate-status.php:100
+msgid "Site language"
+msgstr "ဆိုဒ်ဘာသာစကား"
+
+#: includes/class-zinn-translate-status.php:106
+msgid "SEO plugin"
+msgstr "SEO ပလပ်အင်"
+
+#: includes/class-zinn-translate-status.php:134
+msgid "No translation provider is set up yet."
+msgstr "ဘာသာပြန်ဆိုပေးသူ ပံ့ပိုးပေးသူကို ယခုထိ မသတ်မှတ်ရသေးပါ။"
+
+#: includes/class-zinn-translate-status.php:135
+msgid "Paste an API key from your chosen provider, or connect the site to a Zinn Digital® account, and translation starts on the next pass."
+msgstr "သင်ရွေးချယ်ထားသော ပံ့ပိုးပေးသူထံမှ API သော့တစ်ခုကို ကူးထည့်ပါ သို့မဟုတ် ဆိုက်ကို Zinn Digital® အကောင့်တစ်ခုသို့ ချိတ်ဆက်ပါ၊ သို့ဆိုလျှင် နောက်တစ်ကြိမ်တွင် ဘာသာပြန်ခြင်း စတင်ပါမည်။"
+
+#. translators: %s: a translation provider's name, for example "DeepL".
+#: includes/class-zinn-translate-status.php:144
+#, php-format
+msgid "Translating with your own %s key."
+msgstr "သင့်ကိုယ်ပိုင် %s သော့ချက်ဖြင့် ဘာသာပြန်ဆိုနေပါသည်။"
+
+#: includes/class-zinn-translate-status.php:147
+msgid "This site is not connected to a Zinn Digital® account, which is fine — your provider bills you directly."
+msgstr "ဤဆိုက်သည် Zinn Digital® အကောင့်တစ်ခုနှင့် ချိတ်ဆက်ထားခြင်းမရှိပါ၊ ပြဿနာမရှိပါ — သင့်ဝန်ဆောင်မှုပေးသူက သင့်ထံသို့ တိုက်ရိုက်ဘေလ်ပို့ပေးပါမည်။"
+
+#: includes/class-zinn-translate-status.php:156
+msgid "Not connected to Zinn Digital® yet."
+msgstr "Zinn Digital® နှင့် မချိတ်ဆက်ရသေးပါ။"
+
+#: includes/class-zinn-translate-status.php:157
+msgid "Add this site's ID and token from your Zinn Digital® dashboard, or switch to your own provider key to run without an account."
+msgstr "Zinn Digital® ဒက်ရှ်ဘုတ်မှ ဤဆိုက်၏ ID နှင့် တိုကင်ကို ထည့်ပါ၊ သို့မဟုတ် အကောင့်မပါဘဲ လုပ်ဆောင်ရန် သင်၏ကိုယ်ပိုင် ပံ့ပိုးပေးသူ သော့ချက်သို့ ပြောင်းပါ။"
+
+#: includes/class-zinn-translate-status.php:164
+msgid "Connected to Zinn Digital®."
+msgstr "Zinn Digital® သို့ ချိတ်ဆက်ပြီးပါပြီ။"
+
+#: includes/class-zinn-translate-status.php:179
+msgid "The translation provider is having a problem."
+msgstr "ဘာသာပြန်ပေးသည့်ဝန်ဆောင်မှုတွင် ပြဿနာတစ်ခုရှိနေပါသည်။"
+
+#: includes/class-zinn-translate-status.php:181
+msgid "Translation is paused — your provider needs attention."
+msgstr "ဘာသာပြန်ဆိုမှုကို ခေတ္တရပ်ထားသည် - သင့်ဝန်ဆောင်မှုပေးသူကို အာရုံစိုက်ရန် လိုအပ်ပါသည်။"
+
+#: includes/class-zinn-translate-status.php:183
+msgid "Translation has not been set up yet."
+msgstr "ဘာသာပြန်ဆိုမှုကို မသတ်မှတ်ရသေးပါ။"
+
+#: includes/class-zinn-translate-status.php:188
+msgid "Something went wrong at our end."
+msgstr "ကျွန်ုပ်တို့ဘက်တွင် တစ်စုံတစ်ရာ မှားယွင်းသွားပါသည်။"
+
+#: includes/class-zinn-translate-status.php:200
+msgid "Check their status page"
+msgstr "၎င်းတို့၏ အခြေအနေစာမျက်နှာကို စစ်ဆေးပါ"
+
+#: includes/class-zinn-translate-status.php:201
+msgid "Fix this on your account"
+msgstr "သင့်အကောင့်တွင် ဤအရာကို ပြင်ဆင်ပါ"
+
+#: includes/class-zinn-translate-switcher-widget.php:30
+msgid "Zinn® language switcher"
+msgstr "Zinn® ဘာသာစကားပြောင်းစက်"
+
+#: includes/class-zinn-translate-switcher-widget.php:31
+#: includes/class-zinn-translate-switcher.php:138
+msgid "Let visitors read this page in another language."
+msgstr "ဧည့်သည်များကို ဤစာမျက်နှာကို အခြားဘာသာစကားဖြင့် ဖတ်ရှုခွင့်ပြုပါ။"
+
+#: includes/class-zinn-translate-switcher-widget.php:79
+msgid "Title"
+msgstr "ခေါင်းစဉ်"
+
+#: includes/class-zinn-translate-switcher-widget.php:85
+msgid "Use the plugin setting"
+msgstr "ပလပ်အင် ဆက်တင်ကို အသုံးပြုပါ"
+
+#: includes/class-zinn-translate-switcher.php:45
+msgid "Dropdown"
+msgstr "ဒေါင်းဒေါင်းမား"
+
+#: includes/class-zinn-translate-switcher.php:46
+msgid "Inline list"
+msgstr "အထဲတွင်ထည့်သွင်းထားသော စာရင်း"
+
+#: includes/class-zinn-translate-switcher.php:47
+msgid "Pills"
+msgstr "ဆေးလုံးများ"
+
+#: includes/class-zinn-translate-switcher.php:48
+msgid "Minimal text"
+msgstr "အနည်းဆုံး စာသား"
+
+#: includes/class-zinn-translate-switcher.php:49
+msgid "Flags and names"
+msgstr "အလံများနှင့် အမည်များ"
+
+#: includes/class-zinn-translate-switcher.php:50
+msgid "Stacked list"
+msgstr "ထပ်ဆင့်စာရင်း"
+
+#: includes/class-zinn-translate-switcher.php:285
+msgid "Choose a language"
+msgstr "ဘာသာစကားကို ရွေးချယ်ပါ"
 
 #: includes/class-zinn-translate-updater.php:233
 msgid "See the Zinn Digital® release notes."
@@ -117,3 +553,69 @@ msgstr "Zinn Digital® ၏ ထုတ်ဝေမှု မှတ်စုမျ�
 #: includes/class-zinn-translate-updater.php:288
 msgid "The downloaded update failed its integrity check and was not installed."
 msgstr "ဒေါင်းလုပ်လုပ်ထားသော အပ်ဒိတ်သည် ၎င်း၏ ခိုင်မာမှုစစ်ဆေးမှုကို မအောင်မြင်ခဲ့ပါ၊ ထို့ကြောင့် ထည့်သွင်းခြင်း မပြုလုပ်ခဲ့ပါ။"
+
+#: includes/providers/class-zinn-translate-provider-deepl.php:157
+msgid "No DeepL API key is saved, so there is nothing to translate with."
+msgstr "DeepL API သော့ချက်ကို သိမ်းဆည်းထားခြင်း မရှိပါ၊ ထို့ကြောင့် ဘာသာပြန်ရန် မရှိပါ။"
+
+#. translators: %s: a language name, for example "Swahili".
+#: includes/providers/class-zinn-translate-provider-deepl.php:165
+#, php-format
+msgid "DeepL does not translate into %s. Choose Google Gemini or OpenAI for this language, or connect the site to Zinn Digital®."
+msgstr "DeepL သည် %s သို့ ဘာသာမပြန်ပါ။ ဤဘာသာစကားအတွက် Google Gemini သို့မဟုတ် OpenAI ကို ရွေးချယ်ပါ၊ သို့မဟုတ် ဆိုက်ကို Zinn Digital® နှင့် ချိတ်ဆက်ပါ။"
+
+#: includes/providers/class-zinn-translate-provider-deepl.php:207
+msgid "DeepL could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
+msgstr "DeepL သို့ ဆက်သွယ်၍မရပါ။ ဘာသာပြန်ဆိုမှု မရှိသေးဘဲ အခကြေးငွေလည်း ကောက်ခံမည်မဟုတ်ပါ။ နောက်တစ်ကြိမ် ကြိုးစားမည်ဖြစ်သည်။"
+
+#: includes/providers/class-zinn-translate-provider-deepl.php:219
+msgid "Your DeepL character quota is used up for this period. Translation resumes when it resets, or when you raise the limit on your DeepL account."
+msgstr "DeepL ၏ ဤကာလအတွက် စာလုံးခွဲတမ်း ကုန်သွားပါပြီ။ ၎င်းကို ပြန်လည်စတင်သည့်အခါ သို့မဟုတ် သင့် DeepL အကောင့်ရှိ ကန့်သတ်ချက်ကို တိုးမြှင့်သည့်အခါ ဘာသာပြန်ခြင်း ပြန်လည်စတင်ပါမည်။"
+
+#: includes/providers/class-zinn-translate-provider-deepl.php:229
+msgid "DeepL answered with something we could not read. Nothing was saved."
+msgstr "DeepL သည် ကျွန်ုပ်တို့ ဖတ်မရနိုင်သော အဖြေတစ်ခုကို ပေးပို့ခဲ့သည်။ မည်သည့်အရာမျှ သိမ်းဆည်းမထားပါ။"
+
+#: includes/providers/class-zinn-translate-provider-gemini.php:107
+msgid "No Google Gemini API key is saved, so there is nothing to translate with."
+msgstr "Google Gemini API key တစ်ခုမှ သိမ်းဆည်းထားခြင်း မရှိပါ၊ ထို့ကြောင့် ဘာသာပြန်ဆိုရန် မရှိပါ။"
+
+#: includes/providers/class-zinn-translate-provider-gemini.php:155
+msgid "Google Gemini could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
+msgstr "Google Gemini သို့ ဆက်သွယ်၍မရပါ။ မည်သည့်အရာမျှ ဘာသာပြန်ဆိုခြင်းမရှိသလို ကောက်ခံခြင်းလည်း မရှိပါ။ နောက်တစ်ကြိမ် ကြိုးစားရာတွင် ၎င်းသည် ထပ်မံကြိုးစားပါမည်။"
+
+#: includes/providers/class-zinn-translate-provider-openai.php:103
+msgid "No OpenAI API key is saved, so there is nothing to translate with."
+msgstr "OpenAI API သော့ချက်ကို သိမ်းဆည်းထားခြင်း မရှိပါ၊ ထို့ကြောင့် ဘာသာပြန်ရန် မရှိပါ။"
+
+#: includes/providers/class-zinn-translate-provider-openai.php:139
+msgid "OpenAI could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
+msgstr "OpenAI ကို ဆက်သွယ်၍မရပါ။ ဘာသာပြန်ဆိုမှု တစ်စုံတစ်ရာ မရှိခဲ့သလို အခကြေးငွေလည်း ကောက်ခံခဲ့ခြင်း မရှိပါ။ နောက်တစ်ကြိမ် လုပ်ဆောင်သည့်အခါတွင် ၎င်းက ထပ်မံကြိုးစားပါမည်။"
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:102
+msgid "This site is not connected to Zinn Digital®, so there is nothing to collect. Add the Site ID and token, or switch to your own provider key."
+msgstr "ဤဆိုက်သည် Zinn Digital® နှင့် မချိတ်ဆက်ထားပါ၊ ထို့ကြောင့် စုဆောင်းရန် မည်သည့်အရာမျှ မရှိပါ။ ဆိုက် ID နှင့် တိုကင်ကို ထည့်ပါ၊ သို့မဟုတ် သင်၏ကိုယ်ပိုင် ပံ့ပိုးပေးသူသော့သို့ ပြောင်းပါ။"
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:135
+msgid "This site is not connected to Zinn Digital®."
+msgstr "ဤဆိုက်သည် Zinn Digital® နှင့် မချိတ်ဆက်ပါ။"
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:153
+msgid "Zinn Digital® could not be reached. Nothing was sent; it will try again on the next pass."
+msgstr "Zinn Digital® သို့ ဆက်သွယ်၍မရပါ။ မည်သည့်အရာမျှ ပို့မထားပါ၊ နောက်တစ်ကြိမ် ကြိုးစားပါမည်။"
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:169
+msgid "Translation is paused on this site. Check the account is up to date on your Zinn Digital® dashboard."
+msgstr "ဤဆိုက်တွင် ဘာသာပြန်ဆိုခြင်း ရပ်တန့်နေပါသည်။ Zinn Digital® ဒက်ရှ်ဘုတ်တွင် အကောင့် လက်ကျန်ရှင်းတမ်း နောက်ဆုံးပေါ်ဖြစ်ကြောင်း စစ်ဆေးပါ။"
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:176
+msgid "Zinn Digital® rejected this site's token. Copy it again from the site's Translation tab on your dashboard."
+msgstr "Zinn Digital® က ဤဆိုက်၏ တိုကင်ကို ငြင်းပယ်ခဲ့သည်။ သင့်ဒက်ရှ်ဘုတ်ပေါ်ရှိ ဆိုက်၏ \"ဘာသာပြန်ဆိုချက်\" တက်ဘ်မှ ၎င်းကို နောက်တစ်ကြိမ် ကူးယူပါ။"
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:207
+msgid "Zinn Digital® could not be reached. Your site keeps serving the translations it already has."
+msgstr "Zinn Digital® သို့ ဆက်သွယ်၍မရပါ။ သင်၏ဆိုက်သည် ၎င်းတွင်ရှိပြီးသား ဘာသာပြန်ချက်များကို ဆက်လက်ဝန်ဆောင်မှုပေးနေပါသည်။"
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:219
+msgid "Zinn Digital® answered with something we could not read. Your site keeps serving the translations it already has."
+msgstr "Zinn Digital® သည် ကျွန်ုပ်တို့ ဖတ်မရသည့် အရာဖြင့် တုံ့ပြန်ခဲ့သည်။ သင့်ဆိုက်သည် ၎င်းတွင်ရှိပြီးသား ဘာသာပြန်ဆိုချက်များကို ဆက်လက် ဝန်ဆောင်မှုပေးနေသည်။"

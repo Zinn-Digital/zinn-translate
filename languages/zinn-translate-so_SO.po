@@ -11,9 +11,7 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: zinn-translate.php
-#: includes/class-zinn-translate-settings.php:94
-#: includes/class-zinn-translate-settings.php:95
-#: includes/class-zinn-translate-settings.php:167
+#: includes/class-zinn-translate-admin.php:706
 msgid "Zinn® Translate"
 msgstr "Zinn® Translate"
 
@@ -24,8 +22,8 @@ msgstr "https://zinndigital.com/wordpress-plugins/zinn-translate"
 
 #. Description of the plugin
 #: zinn-translate.php
-msgid "Serves this site in every language Zinn Digital® has translated it into, on its own web addresses, with correct hreflang tags. Translation happens on Zinn Digital®; this plugin renders it."
-msgstr "Wuxuu bixiyaa boggan kasta oo ka mid ah luqadaha uu Zinn Digital® u turjumay, ciwaannadiisa shabakadda, oo leh calaamadaha hreflang ee saxda ah. Turjumaaddu waxay ka dhacdaa Zinn Digital®; korantadan (plugin) ayaa soo bandhigeysa."
+msgid "Publishes this site in every language you choose, on its own web addresses, with translated slugs, metadata, menus, WooCommerce products, hreflang, per-language sitemaps and llms.txt. Translate with your Zinn Digital® plan or with your own provider key."
+msgstr "Wuxuu boggan ku daabacaa luqad kasta oo aad doorato, ciwaannada mareegaha ee u gaarka ah, oo wata slug-yada la turjumay, metadata, liiska xulashada, alaabta WooCommerce, hreflang, sitemap-yada luqad kasta ah iyo llms.txt. Ku turjun qorshahaaga Zinn Digital® ama furahaaga bixiyaha."
 
 #. Author of the plugin
 #: zinn-translate.php
@@ -36,6 +34,325 @@ msgstr "Neil Lock — CEO, Zinn Digital® Ltd"
 #: zinn-translate.php
 msgid "https://zinndigital.com"
 msgstr "https://zinndigital.com"
+
+#: includes/class-zinn-translate-admin.php:62
+#: includes/class-zinn-translate-admin.php:632
+#: includes/class-zinn-translate-admin.php:633
+msgid "Translate"
+msgstr "Turjun"
+
+#: includes/class-zinn-translate-admin.php:76
+#: includes/class-zinn-translate-admin.php:767
+msgid "Manual overrides"
+msgstr "Kacsashooyinka gacanta"
+
+#: includes/class-zinn-translate-admin.php:81
+#: includes/class-zinn-translate-admin.php:769
+msgid "Sitemaps and URLs"
+msgstr "Khariidadaha bogagga iyo URLs"
+
+#: includes/class-zinn-translate-admin.php:111
+msgid "General"
+msgstr "Guud ahaan"
+
+#: includes/class-zinn-translate-admin.php:116
+msgid "Who pays for the translation"
+msgstr "Yaa bixiya kharashka turjumaadda"
+
+#: includes/class-zinn-translate-admin.php:117
+msgid "Either your Zinn Digital® plan, or an API key of your own. There is no free tier — somebody pays a provider for every word."
+msgstr "Mid kasta oo ka mid ah qorshahaaga Zinn Digital®, ama furahaaga API gaarka ah. Ma jiro heer bilaash ah — qof ayaa bixiya lacagta bixiyaha eray kasta."
+
+#: includes/class-zinn-translate-admin.php:120
+#: includes/class-zinn-translate-admin.php:721
+msgid "My Zinn Digital® plan"
+msgstr "Qorshahayga Zinn Digital®"
+
+#: includes/class-zinn-translate-admin.php:121
+#: includes/class-zinn-translate-admin.php:722
+msgid "My own provider key"
+msgstr "Furaha key-ga bixiyaha aniga leh"
+
+#: includes/class-zinn-translate-admin.php:128
+#: includes/class-zinn-translate-admin.php:726
+msgid "Site ID"
+msgstr "Goobaha ID"
+
+#: includes/class-zinn-translate-admin.php:129
+msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
+msgstr "Laga soo bilaabo sabuuraddaada Zinn Digital®, tab-ka Turjumaadda ee bishan."
+
+#: includes/class-zinn-translate-admin.php:136
+#: includes/class-zinn-translate-admin.php:730
+msgid "Site token"
+msgstr "Astaan ​​goobta"
+
+#: includes/class-zinn-translate-admin.php:144
+#: includes/class-zinn-translate-admin.php:734
+msgid "Provider"
+msgstr "Bixiyaha"
+
+#: includes/class-zinn-translate-admin.php:154
+#: includes/class-zinn-translate-admin.php:744
+msgid "API key"
+msgstr "Furaha API"
+
+#: includes/class-zinn-translate-admin.php:155
+msgid "Your key, billed to you by the provider. It is stored on this site and sent only to them."
+msgstr "Furahaaga, kaas oo bixiyahaagu kugu billaynayo. Waxa lagu kaydiyaa boggan waxaana loo diraa iyaga keliya."
+
+#: includes/class-zinn-translate-admin.php:163
+msgid "Model"
+msgstr "Habka"
+
+#: includes/class-zinn-translate-admin.php:164
+msgid "Leave empty for the cheapest model that does the job well."
+msgstr "Si aad u hesho nooca ugu jaban ee shaqada si fiican u qabta, meesha bannaan kaga tag."
+
+#: includes/class-zinn-translate-admin.php:171
+msgid "This site is written in"
+msgstr "Boggan waxaa ku qoran"
+
+#: includes/class-zinn-translate-admin.php:172
+msgid "Leave empty to use the site language from WordPress settings."
+msgstr "Ka tag faaruq si aad u isticmaasho luqadda mareegta ee ka timid dejinta WordPress."
+
+#: includes/class-zinn-translate-admin.php:180
+#: includes/class-zinn-translate-admin.php:748
+msgid "Languages to publish"
+msgstr "Luuqadaha la daabacayo"
+
+#: includes/class-zinn-translate-admin.php:181
+msgid "Each one gets its own web addresses and its own sitemap. Publish only the languages you want indexed."
+msgstr "Mid kastaa wuxuu helayaa cinwaankiisa shabakadda iyo khariidaddiisa shabakadda. Daabac kaliya luqadaha aad rabto in la indeks gareeyo."
+
+#: includes/class-zinn-translate-admin.php:188
+msgid "Translate automatically when I publish or update"
+msgstr "Turjun si otomaat ah marka aan daabaco ama cusboonaysiiyo"
+
+#: includes/class-zinn-translate-admin.php:189
+msgid "Editing a page marks its translations out of date and they are remade in the background. Editing without changing any words costs nothing."
+msgstr "Tifatirka boggu wuxuu calaamadeynayaa turjumaadaheeda kuwo duugowday waxaana dib loogu sameeyaa asalka. Tifatirka adiga oo aan wax eray ah bedelin wax kharash ah ma laha."
+
+#: includes/class-zinn-translate-admin.php:196
+msgid "What gets translated"
+msgstr "Waxa la turjumo"
+
+#: includes/class-zinn-translate-admin.php:201
+msgid "Post types"
+msgstr "Noocyada qoraalka"
+
+#: includes/class-zinn-translate-admin.php:209
+msgid "Translate the web addresses too"
+msgstr "Cinwaanada shabakadda sidoo kale tarjuma"
+
+#: includes/class-zinn-translate-admin.php:210
+msgid "French visitors get /fr/a-propos/ rather than /fr/about/. The untranslated address keeps working and redirects, so nothing that was indexed breaks."
+msgstr "Booqdayeyaasha Faransiisku waxay helayaan /fr/a-propos/ halkii ay ka heli lahaayeen /fr/about/. Cinwaanka aan la turjumin waa uu sii shaqaynayaa oo wuxuu sameeyaa hagid, sidaa darteed wax walba oo la indexing gareeyay ma jabayaan."
+
+#: includes/class-zinn-translate-admin.php:217
+msgid "Translate SEO titles, descriptions and image alt text"
+msgstr "Turjun cinwaannada SEO-ga, sharraxaadaha iyo qoraalka beddelka sawirka (alt text)"
+
+#: includes/class-zinn-translate-admin.php:224
+msgid "Translate categories and tags"
+msgstr "Turjun qaybaha iyo sumadaha"
+
+#: includes/class-zinn-translate-admin.php:231
+msgid "Translate navigation menus"
+msgstr "Turjun menu-yada navigation-ka"
+
+#: includes/class-zinn-translate-admin.php:238
+msgid "Translate WooCommerce products and attributes"
+msgstr "Turjumi alaabta iyo sifooyinka WooCommerce"
+
+#: includes/class-zinn-translate-admin.php:239
+msgid "Short descriptions, purchase notes, attribute labels and variation descriptions. Prices, SKUs and stored option values are never touched."
+msgstr "Sharaxaadaha gaaban, qoraalada iibsashada, calaamadaha sifooyinka, iyo sharaxaadaha kala duwanaanshaha. Qiimaha, SKU-yada iyo qiyamka ikhtiyaarka ah ee la kaydiyay weligood lama taabto."
+
+#: includes/class-zinn-translate-admin.php:246
+msgid "SEO"
+msgstr "SEO"
+
+#: includes/class-zinn-translate-admin.php:251
+msgid "Add hreflang tags"
+msgstr "Ku dar calaamadaha hreflang"
+
+#: includes/class-zinn-translate-admin.php:252
+msgid "Tells search engines these pages are the same page in different languages. Leave this on unless another plugin is already doing it."
+msgstr "Waxay u sheegtaa mashiinnada raadinta in bogaggani ay yihiin isku bog oo luqado kala duwan ah. Daar tan illaa iyo inta uu plugin kale hore u samaynayo."
+
+#: includes/class-zinn-translate-admin.php:259
+msgid "Publish a sitemap for each language"
+msgstr "Daabaco khariidadda mareegaha ee luqad kasta"
+
+#: includes/class-zinn-translate-admin.php:266
+msgid "Publish llms.txt for each language"
+msgstr "Daabac llms.txt luqad kasta"
+
+#: includes/class-zinn-translate-admin.php:267
+msgid "A plain-text map of the site that AI answer engines read. They often cannot run JavaScript and may never fetch a sitemap."
+msgstr "Khariidadda qoraal-gacmeedka ah ee goobta taas oo ay akhriyaan mashiinnada jawaabaha ee AI. Inta badan ma wadi karaan JavaScript waxaana laga yaabaa inaysan waligood soo qaadan khariidadda goobta (sitemap)."
+
+#: includes/class-zinn-translate-admin.php:274
+#: includes/class-zinn-translate-switcher.php:135
+msgid "Language switcher"
+msgstr "Beddelaha luqadda"
+
+#: includes/class-zinn-translate-admin.php:279
+#: includes/class-zinn-translate-switcher-widget.php:83
+msgid "Style"
+msgstr "Habka"
+
+#: includes/class-zinn-translate-admin.php:282
+msgid "Colours, spacing and corners are on the Styling tab. Place it with the block, the [zinn_language_switcher] shortcode, or a menu."
+msgstr "Midabada, bannaaneynta iyo geesaha waxay ku jiraan tabka Habaynta (Styling). Ku rid block-ka, [zinn_language_switcher] shortcode, ama menu."
+
+#: includes/class-zinn-translate-admin.php:289
+msgid "Show only these languages"
+msgstr "Muuji kaliya luqadahan"
+
+#: includes/class-zinn-translate-admin.php:290
+msgid "Leave empty to show every language you publish."
+msgstr "Ka tag madhan si aad u tusto luqad kasta oo aad daabacdo."
+
+#: includes/class-zinn-translate-admin.php:297
+msgid "Name each language in its own language"
+msgstr "Luqad kasta ugu magacow luqaddeeda"
+
+#: includes/class-zinn-translate-admin.php:298
+msgid "Deutsch rather than German. Somebody who cannot read the current page cannot read \"German\" either."
+msgstr "Deutsch halkii ay ahaan lahayd German. Qof aan akhrisan karin bogga hadda socda ma akhrisan karo \"German\" sidoo kale."
+
+#: includes/class-zinn-translate-admin.php:305
+msgid "Show flags"
+msgstr "Tus calammada"
+
+#: includes/class-zinn-translate-admin.php:306
+msgid "Off by default: a language is not a country, and Arabic and Spanish have no single flag that does not exclude most of their speakers."
+msgstr "Waa damisan yahay asal ahaan: luqad ma aha waddan, Carabi iyo Isbaanish ma laha hal calan oo aan ka reebin inta badan dadka ku hadla."
+
+#: includes/class-zinn-translate-admin.php:313
+msgid "Include the language being read"
+msgstr "Ku dar luqadda la akhrinayo"
+
+#: includes/class-zinn-translate-admin.php:320
+msgid "Include the original language"
+msgstr "Ku dar luqaddii asal ahayd"
+
+#: includes/class-zinn-translate-admin.php:327
+msgid "Add it to this menu"
+msgstr "Ku dar liiskan"
+
+#: includes/class-zinn-translate-admin.php:328
+msgid "Only the menu you name here. Nothing is added to any other menu on the site."
+msgstr "Kaliya menu-ga aad halkan ku magacowdo. Wax aan ahayn ayaa lagu darayaa menu kasta oo kale oo ku yaal bogga."
+
+#: includes/class-zinn-translate-admin.php:378
+msgid "Accent"
+msgstr "Accent"
+
+#: includes/class-zinn-translate-admin.php:382
+msgid "Background"
+msgstr "Asalra"
+
+#: includes/class-zinn-translate-admin.php:386
+msgid "Text"
+msgstr "Qoraal"
+
+#: includes/class-zinn-translate-admin.php:390
+msgid "Corner radius"
+msgstr "Geeska wareegga"
+
+#: includes/class-zinn-translate-admin.php:394
+msgid "Spacing"
+msgstr "Masaafada"
+
+#: includes/class-zinn-translate-admin.php:398
+msgid "Text size"
+msgstr "Cabbirka qoraalka"
+
+#: includes/class-zinn-translate-admin.php:425
+msgid "Do not add it to a menu"
+msgstr "Ha ku darin liiska muujinta"
+
+#: includes/class-zinn-translate-admin.php:480
+msgid "Edit any translation here. An edited translation is kept exactly as you wrote it and is never overwritten when the page is translated again."
+msgstr "Halkan ku tasi sax kasta oo turjumaad ah. Turjumaad la saxay waxaa loo hayaa sida aad u qortay oo kale soona mar dambe lama dul qoro marka bogga dib loo turjumo."
+
+#: includes/class-zinn-translate-admin.php:501
+msgid "Every language"
+msgstr "Kasta oo ka mid ah luqadaha"
+
+#: includes/class-zinn-translate-admin.php:508
+msgid "Search translations"
+msgstr "Raadi tarjumaadaha"
+
+#: includes/class-zinn-translate-admin.php:509
+msgid "Filter"
+msgstr "Sifee"
+
+#: includes/class-zinn-translate-admin.php:514
+msgid "Content"
+msgstr "Wax ka kooban"
+
+#: includes/class-zinn-translate-admin.php:515
+msgid "Language"
+msgstr "Luqadda"
+
+#: includes/class-zinn-translate-admin.php:516
+msgid "Translation"
+msgstr "Turjumaad"
+
+#: includes/class-zinn-translate-admin.php:517
+msgid "Status"
+msgstr "Xaaladda"
+
+#: includes/class-zinn-translate-admin.php:518
+#: includes/class-zinn-translate-admin.php:537
+msgid "Save"
+msgstr "Kaydi"
+
+#: includes/class-zinn-translate-admin.php:523
+msgid "Nothing translated yet. Publish a language and translation starts in the background."
+msgstr "Wax tarjuman ah oo la helay ma jiraan. Daabac luqad oo tarjumontu waxay ka bilaabanaysaa gadaal (background)."
+
+#: includes/class-zinn-translate-admin.php:556
+msgid "These addresses are live. Open any of them to check it, and submit the sitemap index to Google Search Console."
+msgstr "Ciwaanradani waa kuwo toos ah. Fur midkood in kasta oo aad hubiso, oo u gudbi tusmada khariidadda goobta Google Search Console."
+
+#: includes/class-zinn-translate-admin.php:577
+msgid "You are not allowed to edit translations on this site."
+msgstr "Looma ogola inaad wax ka beddesho turjumaadaha boggan."
+
+#: includes/class-zinn-translate-admin.php:605
+msgid "Edited by you — kept"
+msgstr "Waxaa tafatiray adiga — la haystay"
+
+#: includes/class-zinn-translate-admin.php:607
+msgid "Source changed — will be redone"
+msgstr "Isha waa la beddelay - waa la dib u samayn doonaa"
+
+#: includes/class-zinn-translate-admin.php:609
+msgid "Up to date"
+msgstr "Casriyay"
+
+#: includes/class-zinn-translate-admin.php:621
+#: includes/class-zinn-translate-admin.php:622
+msgid "Zinn®"
+msgstr "Zinn®"
+
+#: includes/class-zinn-translate-admin.php:719
+msgid "Who pays"
+msgstr "Yaa bixiya"
+
+#: includes/class-zinn-translate-admin.php:751
+msgid "Comma separated, for example: fr, de, ar"
+msgstr "Comma separated, tusaale ahaan: fr, de, ar"
+
+#: includes/class-zinn-translate-admin.php:755
+msgid "Switcher style"
+msgstr "Habka beddelaha"
 
 #. translators: %s: the Zinn Digital trade mark, which is not translated.
 #: includes/class-zinn-translate-promo.php:241
@@ -82,33 +399,152 @@ msgstr "Zinn Hub® — kireyso dadkan u shaqaysta xirfad ahaan"
 msgid "Our global freelance marketplace: browse over 10,000 ready-made services from writers, designers, developers and SEOs, or post a project and let them bid."
 msgstr "Suuqa kala iibsiga ee xorta ah ee caalamiga ah: ka dhex raadi in ka badan 10,000 adeeg oo diyaar ah oo ka yimid qorayaasha, naqshadeeyayaasha, horumariyeyaasha iyo khuburada SEO, ama soo dhig mashruuc oo u ogolow inay ku tartamaan."
 
-#: includes/class-zinn-translate-settings.php:170
-msgid "Your site is translated by Zinn Digital®. Choose the languages to publish, and each one is served on its own web address with the right hreflang tags."
-msgstr "Boggaaga waxaa turjumay Zinn Digital®. Dooro luuqadaha la daabacayo, mid walxana waxaa lagu bixiyaa ciwaankeeda shabakadeed iyada oo wadata calaamadaha hreflang ee saxda ah."
+#: includes/class-zinn-translate-prompt.php:211
+msgid "The API key was rejected. Check that it is still valid and has translation access, then save it again."
+msgstr "Furaha API waa la diiday. Hubi inuu weli shaqeynayo oo uu leeyahay ogolaanshaha tarjumaadda, kadibna dib u kaydi."
 
-#: includes/class-zinn-translate-settings.php:180
-msgid "Site ID"
-msgstr "Goobaha ID"
+#: includes/class-zinn-translate-prompt.php:218
+msgid "The provider refused on billing or quota. Nothing was translated. Check the balance and limits on your account with them."
+msgstr "Bixiyaha ayaa diiday biilasha ama xaddiga. Wax lama turjumin. Ka hubi hadhaaga iyo xadka koontadaada iyaga."
 
-#: includes/class-zinn-translate-settings.php:183
-msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
-msgstr "Laga soo bilaabo sabuuraddaada Zinn Digital®, tab-ka Turjumaadda ee bishan."
+#: includes/class-zinn-translate-prompt.php:225
+msgid "The translation provider is having a problem at their end. Nothing was translated or charged, and it will try again on the next pass."
+msgstr "Bixiyaha turjumaaddu wuxuu dhibaato ku qaba dhiniciisa. Wax lama turjumin sidoo kale lacag lagama jarin, waxaana la isku dayi doonaa markale marba marka xigta."
 
-#: includes/class-zinn-translate-settings.php:187
-msgid "Read-only token"
-msgstr "Astaan akhris-kaliya ah"
+#: includes/class-zinn-translate-prompt.php:231
+msgid "The translation request failed and we could not tell why. Nothing was saved."
+msgstr "Codsiga turjumiddu wuu guuldarraystay mana aanu garan karin sababta. Waxba lama kaydin."
 
-#: includes/class-zinn-translate-settings.php:190
-msgid "Read-only. It can fetch this site's translations and nothing else."
-msgstr "Akhris keliya. Waxay soo qaadan kartaa turjumaadaha boggan oo keliya wax kale ma aha."
+#: includes/class-zinn-translate-sitemap.php:130
+msgid "Sitemap index"
+msgstr "Tusaha degelka"
 
-#: includes/class-zinn-translate-settings.php:194
-msgid "Languages to publish"
-msgstr "Luuqadaha la daabacayo"
+#. translators: %s: a language name, for example "French".
+#: includes/class-zinn-translate-sitemap.php:134
+#, php-format
+msgid "%s sitemap"
+msgstr "%s khariidadda mareegta"
 
-#: includes/class-zinn-translate-settings.php:197
-msgid "Comma separated, for example: fr, de, es. Leave empty to publish none."
-msgstr "Kala sooc xarfo hakad, tusaale ahaan: fr, de, es. Iskaga tag meel madhan si aadan midna u daabicin."
+#: includes/class-zinn-translate-sitemap.php:138
+msgid "LLM content map"
+msgstr "Khariidadda nuxurka LLM"
+
+#. translators: %s: a language name, for example "French".
+#: includes/class-zinn-translate-sitemap.php:141
+#, php-format
+msgid "%s LLM content map"
+msgstr "%s Khariidadda nuxurka LLM"
+
+#: includes/class-zinn-translate-status.php:96
+msgid "Languages published"
+msgstr "Luuqadaha la daabacay"
+
+#: includes/class-zinn-translate-status.php:100
+msgid "Site language"
+msgstr "Luqadda bogga"
+
+#: includes/class-zinn-translate-status.php:106
+msgid "SEO plugin"
+msgstr "Soodhweeyaha SEO"
+
+#: includes/class-zinn-translate-status.php:134
+msgid "No translation provider is set up yet."
+msgstr "Weli lama dejin wax bixiyaha turjumaadda."
+
+#: includes/class-zinn-translate-status.php:135
+msgid "Paste an API key from your chosen provider, or connect the site to a Zinn Digital® account, and translation starts on the next pass."
+msgstr "Geli furaha API ee bixiyaha aad dooratay, ama ku xidh bogga koontada Zinn Digital®, oo turjumaaddu waxay bilaabanaysaa wareegga xiga."
+
+#. translators: %s: a translation provider's name, for example "DeepL".
+#: includes/class-zinn-translate-status.php:144
+#, php-format
+msgid "Translating with your own %s key."
+msgstr "Turjumidda adigoo isticmaalaya furahaaga %s."
+
+#: includes/class-zinn-translate-status.php:147
+msgid "This site is not connected to a Zinn Digital® account, which is fine — your provider bills you directly."
+msgstr "Boggan kuma xidhna koontada Zinn Digital®, taas oo fiican - bixiyahaagu si toos ah ayuu kaaga soo bill-gareeyaa."
+
+#: includes/class-zinn-translate-status.php:156
+msgid "Not connected to Zinn Digital® yet."
+msgstr "Weliba kuma xidhna Zinn Digital®."
+
+#: includes/class-zinn-translate-status.php:157
+msgid "Add this site's ID and token from your Zinn Digital® dashboard, or switch to your own provider key to run without an account."
+msgstr "Ku dar aqoonsiga iyo sumadda boggan ee laga helo golahaaga kontoroolka ee Zinn Digital®, ama u beddel furahaaga bixiyaha adiga kuu gaar ah si aad u shaqeyso adigoo aan lahayn akoon."
+
+#: includes/class-zinn-translate-status.php:164
+msgid "Connected to Zinn Digital®."
+msgstr "Waxaa ku xiran Zinn Digital®."
+
+#: includes/class-zinn-translate-status.php:179
+msgid "The translation provider is having a problem."
+msgstr "Bixiyaha turjumaaddu wuxuu qabaa dhibaato."
+
+#: includes/class-zinn-translate-status.php:181
+msgid "Translation is paused — your provider needs attention."
+msgstr "Turjumaaddu way hakatay — bixiyahaaga ayaa u baahan in la eego."
+
+#: includes/class-zinn-translate-status.php:183
+msgid "Translation has not been set up yet."
+msgstr "Tarjumaadda lama dejinin weli."
+
+#: includes/class-zinn-translate-status.php:188
+msgid "Something went wrong at our end."
+msgstr "Wax khaldan ayaa ka dhacay dhinaceenna."
+
+#: includes/class-zinn-translate-status.php:200
+msgid "Check their status page"
+msgstr "Hubi boggoodooda xaaladda"
+
+#: includes/class-zinn-translate-status.php:201
+msgid "Fix this on your account"
+msgstr "Tan ku hagaaji akoonkaaga"
+
+#: includes/class-zinn-translate-switcher-widget.php:30
+msgid "Zinn® language switcher"
+msgstr "Zinn® luqadaha beddeleha"
+
+#: includes/class-zinn-translate-switcher-widget.php:31
+#: includes/class-zinn-translate-switcher.php:138
+msgid "Let visitors read this page in another language."
+msgstr "U ogolow booqdayeyaashu inay boggan ku akhriyaan luqad kale."
+
+#: includes/class-zinn-translate-switcher-widget.php:79
+msgid "Title"
+msgstr "Ciwaan"
+
+#: includes/class-zinn-translate-switcher-widget.php:85
+msgid "Use the plugin setting"
+msgstr "Isticmaal habaynta furaha"
+
+#: includes/class-zinn-translate-switcher.php:45
+msgid "Dropdown"
+msgstr "Soojeedinta hoos-u-dhaca"
+
+#: includes/class-zinn-translate-switcher.php:46
+msgid "Inline list"
+msgstr "Liiska dhex-dhiska ah"
+
+#: includes/class-zinn-translate-switcher.php:47
+msgid "Pills"
+msgstr "Kiniiniyada"
+
+#: includes/class-zinn-translate-switcher.php:48
+msgid "Minimal text"
+msgstr "Qoraal yar"
+
+#: includes/class-zinn-translate-switcher.php:49
+msgid "Flags and names"
+msgstr "Calanka iyo magacyada"
+
+#: includes/class-zinn-translate-switcher.php:50
+msgid "Stacked list"
+msgstr "Liiska la dul-saaray"
+
+#: includes/class-zinn-translate-switcher.php:285
+msgid "Choose a language"
+msgstr "Dooro luuqad"
 
 #: includes/class-zinn-translate-updater.php:233
 msgid "See the Zinn Digital® release notes."
@@ -117,3 +553,69 @@ msgstr "Fiiri qoraallada sii-daynta ee Zinn Digital®."
 #: includes/class-zinn-translate-updater.php:288
 msgid "The downloaded update failed its integrity check and was not installed."
 msgstr "Cusboonaysiintii la soo dejiyey ayaa ku guuldareysatay baaritaanka hufnaanta waxaana la rakibay."
+
+#: includes/providers/class-zinn-translate-provider-deepl.php:157
+msgid "No DeepL API key is saved, so there is nothing to translate with."
+msgstr "Ma jiro DeepL API key ah oo la keydiyay, markaa ma jiro wax lagu turjumo."
+
+#. translators: %s: a language name, for example "Swahili".
+#: includes/providers/class-zinn-translate-provider-deepl.php:165
+#, php-format
+msgid "DeepL does not translate into %s. Choose Google Gemini or OpenAI for this language, or connect the site to Zinn Digital®."
+msgstr "DeepL uma turjumto %s. Dooro Google Gemini ё OpenAI luqaddan, ama ku xidh bogga Zinn Digital®."
+
+#: includes/providers/class-zinn-translate-provider-deepl.php:207
+msgid "DeepL could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
+msgstr "DeepL lama gaari karin. Wax tarjumaad ah lama samayn wax lacag ahna lagama jarin; waxay isku dayi doontaa mar labaad mararka xiga."
+
+#: includes/providers/class-zinn-translate-provider-deepl.php:219
+msgid "Your DeepL character quota is used up for this period. Translation resumes when it resets, or when you raise the limit on your DeepL account."
+msgstr "DeepL xarfahaaga loo qoondeeyay ayaa ka dhammaaday muddadan. Turjumaaddu waxay dib u bilaaban doontaa marka la cusboonaysiiyo, ama marka aad kordhiso xadka koontadaada DeepL."
+
+#: includes/providers/class-zinn-translate-provider-deepl.php:229
+msgid "DeepL answered with something we could not read. Nothing was saved."
+msgstr "DeepL waxay ku jawaabtay shay aan akhriyi karaynay. Wax lama kaydin."
+
+#: includes/providers/class-zinn-translate-provider-gemini.php:107
+msgid "No Google Gemini API key is saved, so there is nothing to translate with."
+msgstr "Ma jiro wax furaha API ee Google Gemini ah oo la keydiyay, markaa ma jirto wax lagu turjumo."
+
+#: includes/providers/class-zinn-translate-provider-gemini.php:155
+msgid "Google Gemini could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
+msgstr "Google Gemini waa la gaari waayay. Wax tarjumaad ah lama samayn wax lacag ahna lama qaadin; waxay isku dayi doontaa mar labaad mararka xiga."
+
+#: includes/providers/class-zinn-translate-provider-openai.php:103
+msgid "No OpenAI API key is saved, so there is nothing to translate with."
+msgstr "Ma jiro fure OpenAI API ah oo la kaydiyay, markaa ma jiro wax lagu turjumo."
+
+#: includes/providers/class-zinn-translate-provider-openai.php:139
+msgid "OpenAI could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
+msgstr "OpenAI lama soo xiriiri karo. Wax tarjumaad ah lama samayn wax kharash ahna lagama jarin; waxay isku dayi doontaa mar labaad wareegga xiga."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:102
+msgid "This site is not connected to Zinn Digital®, so there is nothing to collect. Add the Site ID and token, or switch to your own provider key."
+msgstr "Boggan kuma xirna Zinn Digital®, markaas ma jiraan wax la ururiyo. Ku dar aqoonsiga Mareegta (Site ID) iyo calaamadda (token), ama u beddel furahaaga bixiyahaaga."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:135
+msgid "This site is not connected to Zinn Digital®."
+msgstr "Webkaani kuma xirna Zinn Digital®."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:153
+msgid "Zinn Digital® could not be reached. Nothing was sent; it will try again on the next pass."
+msgstr "Zinn Digital® lama gaari karin. Waxba lama dirin; waxay isku dayi doontaa mar labaad mararka xiga."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:169
+msgid "Translation is paused on this site. Check the account is up to date on your Zinn Digital® dashboard."
+msgstr "Turjumaaddu waa ay hakin tahay bishan. Hubi in koontadaadu ay tahay mid casri ah oo ku taal golahaaga maamulka ee Zinn Digital®."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:176
+msgid "Zinn Digital® rejected this site's token. Copy it again from the site's Translation tab on your dashboard."
+msgstr "Zinn Digital® waxay diiday summada boggan. Ka soo guuri mar kale tab-ka Turjumaada ee bogga laga helo dashboard-kaaga."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:207
+msgid "Zinn Digital® could not be reached. Your site keeps serving the translations it already has."
+msgstr "Zinn Digital® lama gaari karo. Mareegahaagu wuxuu sii wadaa bixinta turjumaadaha uu hore u haystay."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:219
+msgid "Zinn Digital® answered with something we could not read. Your site keeps serving the translations it already has."
+msgstr "Zinn Digital® waxay ku jawaabtay shay aan akhriyi kari weynay. Boggaagu wuxuu sii wadaa bixinta turjumaadaha uu horay u haystay."

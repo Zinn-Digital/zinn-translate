@@ -1,0 +1,146 @@
+/*
+ * The language switcher's component styles.
+ *
+ * ⛔⛔ LOGICAL PROPERTIES ONLY (CLAUDE.md §2.7). Not one `left`, `right`, `margin-left` or
+ * `padding-right` appears in this file, and that is the whole of the switcher's RTL support:
+ * `margin-inline-start` resolves to the left edge in French and the right edge in Arabic,
+ * from the same rule. A mirrored stylesheet would be a second file to keep in step, and the
+ * one that fell behind would be the Arabic one, which nobody on the team reads.
+ *
+ * ⛔ Every colour and measurement is a `var()` with a fallback. The shared preset mechanism
+ * prints the custom properties for whichever preset the customer chose; the fallbacks are
+ * what render if it does not, so the switcher is never unstyled.
+ */
+
+.zinn-switcher {
+	font-size: var(--zinn-switcher-font-size, 0.9rem);
+	line-height: 1.4;
+}
+
+.zinn-switcher__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--zinn-switcher-gap, 0.5rem);
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.zinn-switcher__link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4em;
+	padding-block: 0.3em;
+	padding-inline: 0.7em;
+	border-radius: var(--zinn-switcher-radius, 6px);
+	background: var(--zinn-switcher-surface, transparent);
+	color: var(--zinn-switcher-text, inherit);
+	text-decoration: none;
+	border: 1px solid transparent;
+}
+
+.zinn-switcher__link:hover,
+.zinn-switcher__link:focus-visible {
+	border-color: var(--zinn-switcher-accent, currentColor);
+	color: var(--zinn-switcher-accent, inherit);
+}
+
+/* ⛔ A visible focus ring, not `outline: none`. Somebody navigating a site by keyboard in a
+   language they cannot read needs to see where they are more than anyone. */
+.zinn-switcher__link:focus-visible {
+	outline: 2px solid var(--zinn-switcher-accent, currentColor);
+	outline-offset: 2px;
+}
+
+.zinn-switcher__item.is-current .zinn-switcher__link {
+	font-weight: 600;
+	color: var(--zinn-switcher-accent, inherit);
+	border-color: var(--zinn-switcher-accent, currentColor);
+}
+
+.zinn-switcher__flag {
+	font-size: 1.1em;
+	line-height: 1;
+}
+
+/* ── Presets ─────────────────────────────────────────────────────────────────────── */
+
+.zinn-switcher--dropdown .zinn-switcher__list {
+	flex-direction: column;
+	position: absolute;
+	z-index: 20;
+	display: none;
+	min-inline-size: 10rem;
+	padding-block: 0.3rem;
+	border: 1px solid var(--zinn-switcher-accent, currentColor);
+	border-radius: var(--zinn-switcher-radius, 6px);
+	background: var(--zinn-switcher-surface, #fff);
+}
+
+/* ⛔ CSS-only disclosure, on `:hover` AND `:focus-within`. A dropdown that opens only on
+   hover cannot be reached from a keyboard at all, and a switcher a keyboard user cannot open
+   is a switcher that excludes exactly the visitors most likely to need it. */
+.zinn-switcher--dropdown:hover .zinn-switcher__list,
+.zinn-switcher--dropdown:focus-within .zinn-switcher__list {
+	display: flex;
+}
+
+.zinn-switcher--dropdown .zinn-switcher__item.is-current {
+	position: static;
+}
+
+.zinn-switcher--dropdown .zinn-switcher__item.is-current .zinn-switcher__link {
+	position: relative;
+}
+
+.zinn-switcher--inline .zinn-switcher__list {
+	flex-direction: row;
+	align-items: center;
+}
+
+.zinn-switcher--pill .zinn-switcher__link {
+	border-radius: var(--zinn-switcher-radius, 999px);
+	background: var(--zinn-switcher-surface, #eef2ff);
+	border-color: transparent;
+}
+
+.zinn-switcher--minimal .zinn-switcher__link {
+	padding-inline: 0;
+	background: none;
+	border: 0;
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+}
+
+.zinn-switcher--flags .zinn-switcher__link {
+	border: 1px solid color-mix(in srgb, var(--zinn-switcher-accent, #1d4ed8) 25%, transparent);
+}
+
+.zinn-switcher--sidebar .zinn-switcher__list {
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.zinn-switcher--sidebar .zinn-switcher__link {
+	justify-content: flex-start;
+	padding-inline-start: 0;
+}
+
+/* ⛔ The dropdown is a hover-and-focus disclosure, which is fine with a pointer and awkward
+   on a touch screen where there is no hover. Below the small breakpoint it flattens into the
+   inline list, so a phone visitor gets a control they can actually operate. */
+@media (max-width: 600px) {
+	.zinn-switcher--dropdown .zinn-switcher__list {
+		position: static;
+		display: flex;
+		flex-direction: row;
+		border: 0;
+		background: none;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.zinn-switcher__link {
+		transition: color 120ms ease, border-color 120ms ease;
+	}
+}

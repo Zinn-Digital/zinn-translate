@@ -2,8 +2,8 @@
 /**
  * Plugin Name:       Zinn® Translate
  * Plugin URI:        https://zinndigital.com/wordpress-plugins/zinn-translate
- * Description:       Serves this site in every language Zinn Digital® has translated it into, on its own web addresses, with correct hreflang tags. Translation happens on Zinn Digital®; this plugin renders it.
- * Version:           1.1.2
+ * Description:       Publishes this site in every language you choose, on its own web addresses, with translated slugs, metadata, menus, WooCommerce products, hreflang, per-language sitemaps and llms.txt. Translate with your Zinn Digital® plan or with your own provider key.
+ * Version:           2.0.0
  * Requires at least: 6.6
  * Requires PHP:      8.2
  * Author:            Neil Lock — CEO, Zinn Digital® Ltd
@@ -22,17 +22,28 @@
  * reported 99% complete. A translation that no page renders is not a feature; it is a row.
  * So the product is not finished by translating a customer's site. It is finished here.
  *
- * ⛔ WHAT THIS PLUGIN DOES NOT DO, deliberately:
+ * ── HOW IT WORKS, in five lines, because "where do the translations happen?" is the first
+ *    question anybody asks and the answer was never written down (docs/553 §1) ───────────
  *
- * - It does not translate. Not one word is generated on the customer's server; it fetches
- *   finished text from Zinn Digital® and renders it. A site that cannot reach us shows its
- *   own original content, unchanged, which is the correct failure.
- * - It does not WRITE to the database. No duplicated posts, no shadow post type, no taxonomy.
- *   Translations are applied at render time through core filters, so deactivating the plugin
- *   returns the site to exactly what it was with nothing to clean up — and a customer who
- *   stops paying loses the translated URLs, never their own content.
- * - It exposes no REST route and no shortcode. A plugin that opens a route is a new attack
- *   surface on every site it is installed on, for a capability we do not need.
+ * 1. A COLLECTOR walks this site and lists every translatable string — posts, pages, terms,
+ *    menus, image alt text, SEO metadata, WooCommerce products and attributes, slugs.
+ * 2. A PROVIDER turns those strings into another language. Either Zinn Digital® (billed to
+ *    the site's own Site Translation plan) or a key the site owner pastes in (billed to
+ *    them by Google, DeepL or OpenAI). ⚖️ Owner ruling 2026-09-08: we never absorb the cost.
+ * 3. A STORE keeps the results in one table on this site, with the hash of the source they
+ *    were made from and whether a human has edited them.
+ * 4. A ROUTER serves `/fr/a-propos/` from the same post as `/about/` — no duplicated posts.
+ * 5. A RENDERER swaps the words at render time. Nothing about the site's own content moves.
+ *
+ * ⛔ WHAT THIS PLUGIN STILL DOES NOT DO, deliberately:
+ *
+ * - It does not duplicate content. No shadow posts, no shadow taxonomy, no second copy of
+ *   anything the customer wrote. Deactivating it returns the site to exactly what it was,
+ *   and a customer who stops paying loses translated URLs, never their own words.
+ * - It exposes no REST route. A plugin that opens one is a new attack surface on every site
+ *   it is installed on, for a capability this does not need.
+ * - It never sends a customer's content anywhere they did not configure. With no provider
+ *   set up it collects nothing, sends nothing, and says so on its own screen.
  */
 
 declare( strict_types = 1 );
@@ -41,15 +52,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'ZINN_TRANSLATE_VERSION', '1.1.2' );
+define( 'ZINN_TRANSLATE_VERSION', '2.0.0' );
 define( 'ZINN_TRANSLATE_FILE', __FILE__ );
 
 /**
- * Where the bundle is fetched from.
+ * Where a connected site talks to Zinn Digital®.
  *
  * ⛔ Filterable so a staging site can point at `api.dev.zinndigital.com`, but it defaults to
  * production and is never read from the database — a compromised option must not be able to
- * redirect a site's rendered content to somebody else's server.
+ * redirect a site's content to somebody else's server.
  *
  * @return string Absolute URL with no trailing slash.
  */
@@ -62,10 +73,45 @@ function zinn_translate_api_base(): string {
 	return (string) apply_filters( 'zinn_translate_api_base', 'https://api.zinndigital.com' );
 }
 
-require_once __DIR__ . '/includes/class-zinn-translate-settings.php';
-require_once __DIR__ . '/includes/class-zinn-translate-client.php';
+/**
+ * Make one string safe for a `text/plain` response body.
+ *
+ * ⛔ `esc_html()` is the wrong tool for a file that is not HTML: it turns `&` into `&amp;`
+ * in a document whose readers are answer engines reading plain text. What "safe" means here
+ * is no markup and no control characters, which is what this does.
+ *
+ * @param string $text The text to emit.
+ * @return string The text, safe for a plain-text body.
+ */
+function zinn_translate_plain( string $text ): string {
+	$text = wp_strip_all_tags( html_entity_decode( $text, ENT_QUOTES | ENT_HTML5, 'UTF-8' ) );
+	return (string) preg_replace( '/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/u', '', $text );
+}
+
+require_once __DIR__ . '/includes/class-zinn-translate-locales.php';
+require_once __DIR__ . '/includes/class-zinn-translate-options.php';
+require_once __DIR__ . '/includes/class-zinn-translate-store.php';
+require_once __DIR__ . '/includes/class-zinn-translate-prompt.php';
+require_once __DIR__ . '/includes/providers/interface-zinn-translate-provider.php';
+require_once __DIR__ . '/includes/providers/class-zinn-translate-provider-error.php';
+require_once __DIR__ . '/includes/providers/class-zinn-translate-provider-zinn.php';
+require_once __DIR__ . '/includes/providers/class-zinn-translate-provider-gemini.php';
+require_once __DIR__ . '/includes/providers/class-zinn-translate-provider-deepl.php';
+require_once __DIR__ . '/includes/providers/class-zinn-translate-provider-openai.php';
+require_once __DIR__ . '/includes/providers/class-zinn-translate-provider-factory.php';
+require_once __DIR__ . '/includes/class-zinn-translate-status.php';
+require_once __DIR__ . '/includes/class-zinn-translate-seo.php';
+require_once __DIR__ . '/includes/class-zinn-translate-woocommerce.php';
+require_once __DIR__ . '/includes/class-zinn-translate-collector.php';
+require_once __DIR__ . '/includes/class-zinn-translate-locale-switch.php';
 require_once __DIR__ . '/includes/class-zinn-translate-router.php';
 require_once __DIR__ . '/includes/class-zinn-translate-renderer.php';
+require_once __DIR__ . '/includes/class-zinn-translate-switcher.php';
+require_once __DIR__ . '/includes/class-zinn-translate-switcher-widget.php';
+require_once __DIR__ . '/includes/class-zinn-translate-sitemap.php';
+require_once __DIR__ . '/includes/class-zinn-translate-queue.php';
+require_once __DIR__ . '/includes/class-zinn-translate-admin.php';
+require_once __DIR__ . '/includes/class-zinn-translate-cli.php';
 require_once __DIR__ . '/includes/class-zinn-translate-updater.php'; // Generated by wp/bin/build-updater.php.
 
 /**
@@ -74,39 +120,58 @@ require_once __DIR__ . '/includes/class-zinn-translate-updater.php'; // Generate
  * ⛔ The router hooks `init` at priority 1 because it registers rewrite rules, which must be
  * in place before WordPress parses the request. The renderer hooks much later — it only ever
  * filters output.
+ *
+ * ⛔ `maybe_install()` runs here rather than only on activation. A plugin updated by an
+ * automatic background update, by WP-CLI or by copying files over never re-runs its
+ * activation hook, so a schema change that only ran there would leave a working site one
+ * version behind with no error until a query hit a column that is not there.
+ *
+ * @return void
  */
 function zinn_translate_boot(): void {
-	( new Zinn_Translate_Settings() )->hooks();
+	Zinn_Translate_Store::maybe_install();
+	( new Zinn_Translate_Admin() )->hooks();
+	( new Zinn_Translate_Locale_Switch() )->hooks();
 	( new Zinn_Translate_Router() )->hooks();
 	( new Zinn_Translate_Renderer() )->hooks();
+	( new Zinn_Translate_SEO() )->hooks();
+	( new Zinn_Translate_Switcher() )->hooks();
+	( new Zinn_Translate_Sitemap() )->hooks();
+	( new Zinn_Translate_WooCommerce() )->hooks();
+	( new Zinn_Translate_Queue() )->hooks();
 	( new Zinn_Translate_Updater( ZINN_TRANSLATE_FILE, ZINN_TRANSLATE_VERSION ) )->register();
+	Zinn_Translate_CLI::register();
 }
 add_action( 'plugins_loaded', 'zinn_translate_boot' );
 
 /**
- * Flush rewrite rules on activation and deactivation.
+ * Create the table and the rewrite rules on activation.
  *
- * ⛔ Both, and this is not symmetry for its own sake. Leaving the rules behind on
- * deactivation leaves `/fr/about/` resolving to a 404 handler that no longer exists, so a
- * customer who deactivates the plugin gets broken URLs instead of their old site back — and
- * those URLs are indexed by then.
+ * @return void
  */
 function zinn_translate_activate(): void {
+	Zinn_Translate_Store::install();
 	( new Zinn_Translate_Router() )->register_rules();
+	( new Zinn_Translate_Sitemap() )->register_rules();
 	flush_rewrite_rules();
 }
 register_activation_hook( __FILE__, 'zinn_translate_activate' );
 
 /**
- * Drop the locale rewrite rules when the plugin is switched off.
+ * Drop the locale rewrite rules and the schedule when the plugin is switched off.
  *
  * ⛔ Deliberately symmetric with activation. Leaving the rules behind leaves `/fr/about/`
  * resolving to a handler that no longer exists, so a customer who deactivates gets broken
  * URLs instead of their old site back — and by then those URLs are indexed.
  *
+ * ⛔ The TABLE is NOT dropped here. Deactivating a plugin to test something must not destroy
+ * every translation the site has paid for; that belongs in `uninstall.php`, which is the
+ * action a customer takes when they mean it.
+ *
  * @return void
  */
 function zinn_translate_deactivate(): void {
+	Zinn_Translate_Queue::unschedule();
 	flush_rewrite_rules();
 }
 register_deactivation_hook( __FILE__, 'zinn_translate_deactivate' );

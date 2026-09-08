@@ -1,6 +1,6 @@
 # Zinn® Translate
 
-Serve your site in every language Zinn Digital® has translated it into, each on its own web address, with correct hreflang tags.
+Publish your site in 58 languages on their own web addresses, with translated slugs, metadata, menus, WooCommerce products, hreflang and per-language sitemaps.
 
 Built and maintained by **Neil Lock — CEO, Zinn Digital® Ltd** — https://zinndigital.com
 
@@ -15,7 +15,7 @@ Both are the same file. The download page is the canonical one: it is served fro
 
 | | |
 |---|---|
-| Version | `1.1.2` |
+| Version | `2.0.0` |
 | Requires WordPress | 6.6 or later |
 | Tested up to | WordPress **7.1** |
 | Requires PHP | 8.2 or later |
