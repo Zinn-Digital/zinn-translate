@@ -159,5 +159,8 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 
 == Upgrade Notice ==
 
+= 2.2.0 =
+Fixes the OpenGraph title and description shared to Facebook, LinkedIn and X: a page with its own OpenGraph title was having the SEO title shared instead. Also shows variation descriptions and custom attribute values in the visitor's language, and translates WooCommerce products by default on new sites. Your existing settings are unchanged.
+
 = 2.0.0 =
 Adds translated slugs, metadata, menus and WooCommerce, a language switcher, manual overrides, per-language sitemaps, and the option to translate with your own provider key instead of a Zinn Digital® plan. Your existing settings are carried over.
