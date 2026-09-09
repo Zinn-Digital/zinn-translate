@@ -11,7 +11,6 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: zinn-translate.php
-#: includes/class-zinn-translate-admin.php:706
 msgid "Zinn® Translate"
 msgstr "Zinn® Translate"
 
@@ -35,324 +34,541 @@ msgstr "Neil Lock — CEO, Zinn Digital® Ltd"
 msgid "https://zinndigital.com"
 msgstr "https://zinndigital.com"
 
-#: includes/class-zinn-translate-admin.php:62
-#: includes/class-zinn-translate-admin.php:632
-#: includes/class-zinn-translate-admin.php:633
+#: includes/class-zinn-translate-admin-fields.php:575
+msgid "Stored. Type a new value to replace it."
+msgstr "Αποθηκεύτηκε. Πληκτρολογήστε μια νέα τιμή για να την αντικαταστήσετε."
+
+#: includes/class-zinn-translate-admin-fields.php:635
+msgid "Filter this list…"
+msgstr "Φιλτράρισμα αυτής της λίστας…"
+
+#: includes/class-zinn-translate-admin-fields.php:636
+msgid "Filter this list"
+msgstr "Φίλτρο αυτής της λίστας"
+
+#: includes/class-zinn-translate-admin-fields.php:652
+msgid "Nothing matches that filter."
+msgstr "Δεν ταιριάζει τίποτα με αυτό το φίλτρο."
+
+#: includes/class-zinn-translate-admin-fields.php:683
+msgid "Add a row"
+msgstr "Προσθήκη γραμμής"
+
+#: includes/class-zinn-translate-admin-fields.php:720
+msgid "Remove this row"
+msgstr "Κατάργηση αυτής της γραμμής"
+
+#: includes/class-zinn-translate-admin-fields.php:720
+msgid "Remove"
+msgstr "Αφαίρεση"
+
+#: includes/class-zinn-translate-admin-ui.php:264
+#: includes/class-zinn-translate-admin-ui.php:265
+#: includes/class-zinn-translate-admin-ui.php:335
+msgid "Zinn Digital®"
+msgstr "Zinn Digital®"
+
+#: includes/class-zinn-translate-admin-ui.php:278
+msgid "Zinn Digital® — overview"
+msgstr "Zinn Digital® — επισκόπηση"
+
+#: includes/class-zinn-translate-admin-ui.php:279
+msgid "Overview"
+msgstr "Επισκόπηση"
+
+#: includes/class-zinn-translate-admin-ui.php:336
+msgid "Every Zinn® plugin on this site, and whether it is working."
+msgstr "Κάθε πρόσθετο Zinn® σε αυτόν τον ιστότοπο, και αν λειτουργεί."
+
+#: includes/class-zinn-translate-admin-ui.php:352
+msgid "No connection is needed for this plugin."
+msgstr "Δεν απαιτείται σύνδεση για αυτό το πρόσθετο."
+
+#: includes/class-zinn-translate-admin-ui.php:357
+msgid "Open settings"
+msgstr "Άνοιγμα ρυθμίσεων"
+
+#: includes/class-zinn-translate-admin-ui.php:685
+#: includes/class-zinn-translate-admin-ui.php:1248
+msgid "You do not have permission to change these settings."
+msgstr "Δεν έχετε δικαίωμα να αλλάξετε αυτές τις ρυθμίσεις."
+
+#: includes/class-zinn-translate-admin-ui.php:715
+msgid "Settings sections"
+msgstr "Ενότητες ρυθμίσεων"
+
+#: includes/class-zinn-translate-admin-ui.php:788
+msgid "Support"
+msgstr "Υποστήριξη"
+
+#: includes/class-zinn-translate-admin-ui.php:846
+msgid "Save changes"
+msgstr "Αποθήκευση αλλαγών"
+
+#: includes/class-zinn-translate-admin-ui.php:875
+msgid "Tools"
+msgstr "Εργαλεία"
+
+#: includes/class-zinn-translate-admin-ui.php:890
+msgid "Export settings"
+msgstr "Εξαγωγή ρυθμίσεων"
+
+#: includes/class-zinn-translate-admin-ui.php:893
+msgid "Reset to defaults"
+msgstr "Επαναφορά στις προεπιλογές"
+
+#: includes/class-zinn-translate-admin-ui.php:894
+msgid "This puts every setting on this plugin back to its default. Continue?"
+msgstr "Αυτό θα επαναφέρει όλες τις ρυθμίσεις αυτού του πρόσθετου στην προεπιλεγμένη κατάστασή τους. Να συνεχιστεί;"
+
+#: includes/class-zinn-translate-admin-ui.php:901
+msgid "Diagnostics for support"
+msgstr "Διαγνωστικά υποστήριξης"
+
+#: includes/class-zinn-translate-admin-ui.php:910
+msgid "Import a settings file"
+msgstr "Εισαγωγή αρχείου ρυθμίσεων"
+
+#: includes/class-zinn-translate-admin-ui.php:912
+msgid "Import"
+msgstr "Εισαγωγή"
+
+#: includes/class-zinn-translate-admin-ui.php:914
+msgid "Exported files never contain passwords, tokens or API keys — you will need to enter those again on the new site."
+msgstr "Τα εξαγόμενα αρχεία δεν περιέχουν ποτέ κωδικούς πρόσβασης, διακριτικά (tokens) ή κλειδιά API· θα χρειαστεί να τα εισαγάγετε ξανά στη νέα τοποθεσία."
+
+#: includes/class-zinn-translate-admin-ui.php:1013
+msgid "Settings saved."
+msgstr "Οι ρυθμίσεις αποθηκεύτηκαν."
+
+#: includes/class-zinn-translate-admin-ui.php:1060
+msgid "Every setting on this plugin is back to its default."
+msgstr "Όλες οι ρυθμίσεις σε αυτό το πρόσθετο έχουν επανέλθει στις προεπιλογές τους."
+
+#: includes/class-zinn-translate-admin-ui.php:1103
+msgid "Done."
+msgstr "Ολοκληρώθηκε."
+
+#: includes/class-zinn-translate-admin-ui.php:1107
+msgid "That action is not available."
+msgstr "Αυτή η ενέργεια δεν είναι διαθέσιμη."
+
+#: includes/class-zinn-translate-admin-ui.php:1174
+msgid "That file could not be read. Choose a settings file exported from a Zinn® plugin."
+msgstr "Αυτό το αρχείο δεν μπόρεσε να διαβαστεί. Επιλέξτε ένα αρχείο ρυθμίσεων που έχει εξαχθεί από πρόσθετο του Zinn®."
+
+#: includes/class-zinn-translate-admin-ui.php:1182
+msgid "That file is too large to be a settings export."
+msgstr "Αυτό το αρχείο είναι πολύ μεγάλο για να είναι εξαγωγή ρυθμίσεων."
+
+#: includes/class-zinn-translate-admin-ui.php:1195
+msgid "That file is not a Zinn® settings export."
+msgstr "Αυτό το αρχείο δεν είναι εξαγωγή ρυθμίσεων του Zinn®."
+
+#. translators: %s: the plugin slug the file was exported from.
+#: includes/class-zinn-translate-admin-ui.php:1203
+#, php-format
+msgid "That file was exported from a different plugin (%s), so importing it here would store settings this plugin does not understand."
+msgstr "Αυτό το αρχείο εξήχθη από διαφορετικό πρόσθετο (%s), επομένως η εισαγωγή του εδώ θα αποθηκεύσει ρυθμίσεις που αυτό το πρόσθετο δεν κατανοεί."
+
+#. translators: %d: how many settings were imported.
+#: includes/class-zinn-translate-admin-ui.php:1233
+#, php-format
+msgid "%d setting imported. Passwords and API keys are never in an export, so enter those again."
+msgid_plural "%d settings imported. Passwords and API keys are never in an export, so enter those again."
+msgstr[0] "Εισήχθη %d ρύθμιση. Οι κωδικοί πρόσβασης και τα κλειδιά API δεν περιλαμβάνονται ποτέ σε μια εξαγωγή, γι' αυτό καταχωρίστε τα ξανά."
+msgstr[1] "Εισήχθησαν %d ρυθμίσεις. Οι κωδικοί πρόσβασης και τα κλειδιά API δεν περιλαμβάνονται ποτέ σε μια εξαγωγή, γι' αυτό καταχωρίστε τα ξανά."
+
+#: includes/class-zinn-translate-admin.php:65
 msgid "Translate"
 msgstr "Μετάφραση"
 
-#: includes/class-zinn-translate-admin.php:76
-#: includes/class-zinn-translate-admin.php:767
+#: includes/class-zinn-translate-admin.php:79
 msgid "Manual overrides"
 msgstr "Χειροκίνητες παρακάμψεις"
 
-#: includes/class-zinn-translate-admin.php:81
-#: includes/class-zinn-translate-admin.php:769
+#: includes/class-zinn-translate-admin.php:84
 msgid "Sitemaps and URLs"
 msgstr "Χάρτες ιστότοπου και διεύθυνσεις URL"
 
-#: includes/class-zinn-translate-admin.php:111
+#: includes/class-zinn-translate-admin.php:114
 msgid "General"
 msgstr "Γενικά"
 
-#: includes/class-zinn-translate-admin.php:116
+#: includes/class-zinn-translate-admin.php:119
 msgid "Who pays for the translation"
 msgstr "Πιος πληρώνει για τη μετάφραση"
 
-#: includes/class-zinn-translate-admin.php:117
+#: includes/class-zinn-translate-admin.php:120
 msgid "Either your Zinn Digital® plan, or an API key of your own. There is no free tier — somebody pays a provider for every word."
 msgstr "Είτε το πρόγραμμά σας στη Zinn Digital®, είτε ένα δικό σας κλειδί API. Δεν υπάρχει δωρεάν πακέτο — κάποιος πληρώνει έναν πάροχο για κάθε λέξη."
 
-#: includes/class-zinn-translate-admin.php:120
-#: includes/class-zinn-translate-admin.php:721
+#: includes/class-zinn-translate-admin.php:123
 msgid "My Zinn Digital® plan"
 msgstr "Το πρόγραμμά μου στη Zinn Digital®"
 
-#: includes/class-zinn-translate-admin.php:121
-#: includes/class-zinn-translate-admin.php:722
+#: includes/class-zinn-translate-admin.php:124
 msgid "My own provider key"
 msgstr "Το δικό μου κλειδί παρόχου"
 
-#: includes/class-zinn-translate-admin.php:128
-#: includes/class-zinn-translate-admin.php:726
+#: includes/class-zinn-translate-admin.php:131
 msgid "Site ID"
 msgstr "ID ιστοτόπου"
 
-#: includes/class-zinn-translate-admin.php:129
+#: includes/class-zinn-translate-admin.php:132
 msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
 msgstr "Από τον πίνακα ελέγχου σας στη Zinn Digital®, στην καρτέλα Μετάφραση αυτού του ιστότοπου."
 
-#: includes/class-zinn-translate-admin.php:136
-#: includes/class-zinn-translate-admin.php:730
+#: includes/class-zinn-translate-admin.php:139
 msgid "Site token"
 msgstr "Διακριτικό ιστότοπου"
 
-#: includes/class-zinn-translate-admin.php:144
-#: includes/class-zinn-translate-admin.php:734
+#: includes/class-zinn-translate-admin.php:147
 msgid "Provider"
 msgstr "Προμηθευτής"
 
-#: includes/class-zinn-translate-admin.php:154
-#: includes/class-zinn-translate-admin.php:744
+#: includes/class-zinn-translate-admin.php:157
 msgid "API key"
 msgstr "Κλειδί API"
 
-#: includes/class-zinn-translate-admin.php:155
+#: includes/class-zinn-translate-admin.php:158
 msgid "Your key, billed to you by the provider. It is stored on this site and sent only to them."
 msgstr "Το κλειδί σας, το οποίο χρεώνεται από τον πάροχο. Αποθηκεύεται σε αυτόν τον ιστότοπο και αποστέλλεται αποκλειστικά σε αυτόν."
 
-#: includes/class-zinn-translate-admin.php:163
+#: includes/class-zinn-translate-admin.php:166
 msgid "Model"
 msgstr "Μοντέλο"
 
-#: includes/class-zinn-translate-admin.php:164
+#: includes/class-zinn-translate-admin.php:167
 msgid "Leave empty for the cheapest model that does the job well."
 msgstr "Αφήστε το κενό για το φθηνότερο μοντέλο που κάνει καλά τη δουλειά."
 
-#: includes/class-zinn-translate-admin.php:171
+#: includes/class-zinn-translate-admin.php:174
 msgid "This site is written in"
 msgstr "Αυτός ο ιστότοπος είναι γραμμένος στα"
 
-#: includes/class-zinn-translate-admin.php:172
+#: includes/class-zinn-translate-admin.php:175
 msgid "Leave empty to use the site language from WordPress settings."
 msgstr "Αφήστε το κενό για να χρησιμοποιήσετε τη γλώσσα του ιστότοπου από τις ρυθμίσεις του WordPress."
 
-#: includes/class-zinn-translate-admin.php:180
-#: includes/class-zinn-translate-admin.php:748
+#: includes/class-zinn-translate-admin.php:183
 msgid "Languages to publish"
 msgstr "Γλώσσες προς δημοσίευση"
 
-#: includes/class-zinn-translate-admin.php:181
+#: includes/class-zinn-translate-admin.php:184
 msgid "Each one gets its own web addresses and its own sitemap. Publish only the languages you want indexed."
 msgstr "Κάθε μία αποκτά τις δικές της διευθύνσεις ιστού και τον δικό της χάρτη ιστότοπου. Δημοσιεύστε μόνο τις γλώσσες που θέλετε να ευρετηριαστούν."
 
-#: includes/class-zinn-translate-admin.php:188
+#: includes/class-zinn-translate-admin.php:191
 msgid "Translate automatically when I publish or update"
 msgstr "Αυτόματη μετάφραση κατά τη δημοσίευση ή την ενημέρωση"
 
-#: includes/class-zinn-translate-admin.php:189
+#: includes/class-zinn-translate-admin.php:192
 msgid "Editing a page marks its translations out of date and they are remade in the background. Editing without changing any words costs nothing."
 msgstr "Η επεξεργασία μιας σελίδας επισημαίνει τις μεταφράσεις της ως παλιές και αυτές αναδημιουργούνται στο παρασκήνιο. Η επεξεργασία χωρίς την αλλαγή λέξεων δεν κοστίζει τίποτα."
 
-#: includes/class-zinn-translate-admin.php:196
+#: includes/class-zinn-translate-admin.php:199
 msgid "What gets translated"
 msgstr "Τι μεταφράζεται"
 
-#: includes/class-zinn-translate-admin.php:201
+#: includes/class-zinn-translate-admin.php:204
 msgid "Post types"
 msgstr "Τύποι δημοσιεύσεων"
 
-#: includes/class-zinn-translate-admin.php:209
+#: includes/class-zinn-translate-admin.php:212
 msgid "Translate the web addresses too"
 msgstr "Μεταφράστε και τις διευθύνσεις ιστού"
 
-#: includes/class-zinn-translate-admin.php:210
+#: includes/class-zinn-translate-admin.php:213
 msgid "French visitors get /fr/a-propos/ rather than /fr/about/. The untranslated address keeps working and redirects, so nothing that was indexed breaks."
 msgstr "Οι Γάλλοι επισκέπτες μεταφέρονται στη διεύθυνση /fr/a-propos/ αντί για τη /fr/about/. Η αμετάφραστη διεύθυνση συνεχίζει να λειτουργεί και πραγματοποιεί ανακατεύθυνση, επομένως τίποτα από ό,τι είχε ευρετηριαστεί δεν χάνεται."
 
-#: includes/class-zinn-translate-admin.php:217
+#: includes/class-zinn-translate-admin.php:220
 msgid "Translate SEO titles, descriptions and image alt text"
 msgstr "Μεταφράστε τίτλους SEO, περιγραφές και εναλλακτικό κείμενο εικόνας"
 
-#: includes/class-zinn-translate-admin.php:224
+#: includes/class-zinn-translate-admin.php:227
 msgid "Translate categories and tags"
 msgstr "Μετάφραση κατηγοριών και ετικετών"
 
-#: includes/class-zinn-translate-admin.php:231
+#: includes/class-zinn-translate-admin.php:234
 msgid "Translate navigation menus"
 msgstr "Μετάφραση μενού πλοήγησης"
 
-#: includes/class-zinn-translate-admin.php:238
+#: includes/class-zinn-translate-admin.php:241
 msgid "Translate WooCommerce products and attributes"
 msgstr "Μεταφράστε προϊόντα και ιδιότητες του WooCommerce"
 
-#: includes/class-zinn-translate-admin.php:239
+#: includes/class-zinn-translate-admin.php:242
 msgid "Short descriptions, purchase notes, attribute labels and variation descriptions. Prices, SKUs and stored option values are never touched."
 msgstr "Σύντομες περιγραφές, σημειώσεις αγοράς, ετικέτες χαρακτηριστικών και περιγραφές παραλλαγών. Οι τιμές, οι κωδικοί SKU και οι αποθηκευμένες τιμές επιλογών δεν επηρεάζονται ποτέ."
 
-#: includes/class-zinn-translate-admin.php:246
+#: includes/class-zinn-translate-admin.php:249
 msgid "SEO"
 msgstr "SEO"
 
-#: includes/class-zinn-translate-admin.php:251
+#: includes/class-zinn-translate-admin.php:254
 msgid "Add hreflang tags"
 msgstr "Προσθήκη ετικετών hreflang"
 
-#: includes/class-zinn-translate-admin.php:252
+#: includes/class-zinn-translate-admin.php:255
 msgid "Tells search engines these pages are the same page in different languages. Leave this on unless another plugin is already doing it."
 msgstr "Ενημερώνει τις μηχανές αναζήτησης ότι αυτές οι σελίδες είναι η ίδια σελίδα σε διαφορετικές γλώσσες. Αφήστε το ενεργό εκτός αν κάποιο άλλο πρόσθετο το κάνει ήδη."
 
-#: includes/class-zinn-translate-admin.php:259
+#: includes/class-zinn-translate-admin.php:262
 msgid "Publish a sitemap for each language"
 msgstr "Δημοσίευση χάρτη ιστότοπου για κάθε γλώσσα"
 
-#: includes/class-zinn-translate-admin.php:266
+#: includes/class-zinn-translate-admin.php:269
 msgid "Publish llms.txt for each language"
 msgstr "Δημοσίευση llms.txt για κάθε γλώσσα"
 
-#: includes/class-zinn-translate-admin.php:267
+#: includes/class-zinn-translate-admin.php:270
 msgid "A plain-text map of the site that AI answer engines read. They often cannot run JavaScript and may never fetch a sitemap."
 msgstr "Ένας χάρτης ιστοτόπου σε απλό κείμενο τον οποίο διαβάζουν οι μηχανές απαντήσεων τεχνητής νοημοσύνης. Συχνά δεν μπορούν να εκτελέσουν JavaScript και ενδέχεται να μην ανακτήσουν ποτέ sitemap."
 
-#: includes/class-zinn-translate-admin.php:274
+#: includes/class-zinn-translate-admin.php:277
 #: includes/class-zinn-translate-switcher.php:135
 msgid "Language switcher"
 msgstr "Εναλλαγή γλώσσας"
 
-#: includes/class-zinn-translate-admin.php:279
+#: includes/class-zinn-translate-admin.php:282
 #: includes/class-zinn-translate-switcher-widget.php:83
 msgid "Style"
 msgstr "Στυλ"
 
-#: includes/class-zinn-translate-admin.php:282
+#: includes/class-zinn-translate-admin.php:285
 msgid "Colours, spacing and corners are on the Styling tab. Place it with the block, the [zinn_language_switcher] shortcode, or a menu."
 msgstr "Τα χρώματα, τα διαστήματα και οι γωνίες βρίσκονται στην καρτέλα Στυλ. Τοποθετήστε το με το μπλοκ, το shortcode [zinn_language_switcher] ή ένα μενού."
 
-#: includes/class-zinn-translate-admin.php:289
+#: includes/class-zinn-translate-admin.php:292
 msgid "Show only these languages"
 msgstr "Εμφάνιση μόνο αυτών των γλωσσών"
 
-#: includes/class-zinn-translate-admin.php:290
+#: includes/class-zinn-translate-admin.php:293
 msgid "Leave empty to show every language you publish."
 msgstr "Αφήστε το κενό για να εμφανιστούν όλες οι γλώσσες που δημοσιεύετε."
 
-#: includes/class-zinn-translate-admin.php:297
+#: includes/class-zinn-translate-admin.php:300
 msgid "Name each language in its own language"
 msgstr "Ονομάστε κάθε γλώσσα στη δική της γλώσσα"
 
-#: includes/class-zinn-translate-admin.php:298
+#: includes/class-zinn-translate-admin.php:301
 msgid "Deutsch rather than German. Somebody who cannot read the current page cannot read \"German\" either."
 msgstr "Deutsch αντί για Γερμανικά. Κάποιος που δεν μπορεί να διαβάσει την τρέχουσα σελίδα δεν μπορεί να διαβάσει ούτε «German»."
 
-#: includes/class-zinn-translate-admin.php:305
+#: includes/class-zinn-translate-admin.php:308
 msgid "Show flags"
 msgstr "Εμφάνιση σημαιών"
 
-#: includes/class-zinn-translate-admin.php:306
+#: includes/class-zinn-translate-admin.php:309
 msgid "Off by default: a language is not a country, and Arabic and Spanish have no single flag that does not exclude most of their speakers."
 msgstr "Απενεργοποιημένο από προεπιλογή: μια γλώσσα δεν είναι χώρα, και τα αραβικά και τα ισπανικά δεν έχουν ούτε μία σημαία που να μην αποκλείει τους περισσότερους ομιλητές τους."
 
-#: includes/class-zinn-translate-admin.php:313
+#: includes/class-zinn-translate-admin.php:316
 msgid "Include the language being read"
 msgstr "Συμπερίληψη της γλώσσας που διαβάζεται"
 
-#: includes/class-zinn-translate-admin.php:320
+#: includes/class-zinn-translate-admin.php:323
 msgid "Include the original language"
 msgstr "Συμπερίληψη της πρωτότυπης γλώσσας"
 
-#: includes/class-zinn-translate-admin.php:327
+#: includes/class-zinn-translate-admin.php:330
 msgid "Add it to this menu"
 msgstr "Προσθήκη σε αυτό το μενού"
 
-#: includes/class-zinn-translate-admin.php:328
+#: includes/class-zinn-translate-admin.php:331
 msgid "Only the menu you name here. Nothing is added to any other menu on the site."
 msgstr "Μόνο το μενού που ορίζετε εδώ. Τίποτα δεν προστίθεται σε κανένα άλλο μενού στον ιστότοπο."
 
-#: includes/class-zinn-translate-admin.php:378
+#: includes/class-zinn-translate-admin.php:381
 msgid "Accent"
 msgstr "Προφορά"
 
-#: includes/class-zinn-translate-admin.php:382
+#: includes/class-zinn-translate-admin.php:385
 msgid "Background"
 msgstr "Φόντο"
 
-#: includes/class-zinn-translate-admin.php:386
+#: includes/class-zinn-translate-admin.php:389
 msgid "Text"
 msgstr "Κείμενο"
 
-#: includes/class-zinn-translate-admin.php:390
+#: includes/class-zinn-translate-admin.php:393
 msgid "Corner radius"
 msgstr "Ακτίνα γωνίας"
 
-#: includes/class-zinn-translate-admin.php:394
+#: includes/class-zinn-translate-admin.php:397
 msgid "Spacing"
 msgstr "Διάκενο"
 
-#: includes/class-zinn-translate-admin.php:398
+#: includes/class-zinn-translate-admin.php:401
 msgid "Text size"
 msgstr "Μέγεθος κειμένου"
 
-#: includes/class-zinn-translate-admin.php:425
+#: includes/class-zinn-translate-admin.php:428
 msgid "Do not add it to a menu"
 msgstr "Μην το προσθέσετε σε μενού"
 
-#: includes/class-zinn-translate-admin.php:480
+#: includes/class-zinn-translate-admin.php:483
 msgid "Edit any translation here. An edited translation is kept exactly as you wrote it and is never overwritten when the page is translated again."
 msgstr "Επεξεργαστείτε οποιαδήποτε μετάφραση εδώ. Μια επεξεργασμένη μετάφραση διατηρείται ακριβώς όπως τη γράψατε και δεν αντικαθιστάται ποτέ όταν η σελίδα μεταφράζεται ξανά."
 
-#: includes/class-zinn-translate-admin.php:501
+#: includes/class-zinn-translate-admin.php:504
 msgid "Every language"
 msgstr "Κάθε γλώσσα"
 
-#: includes/class-zinn-translate-admin.php:508
+#: includes/class-zinn-translate-admin.php:511
 msgid "Search translations"
 msgstr "Αναζήτηση μεταφράσεων"
 
-#: includes/class-zinn-translate-admin.php:509
+#: includes/class-zinn-translate-admin.php:512
 msgid "Filter"
 msgstr "Φίλτρο"
 
-#: includes/class-zinn-translate-admin.php:514
+#: includes/class-zinn-translate-admin.php:517
 msgid "Content"
 msgstr "Περιεχόμενο"
 
-#: includes/class-zinn-translate-admin.php:515
+#: includes/class-zinn-translate-admin.php:518
 msgid "Language"
 msgstr "Γλώσσα"
 
-#: includes/class-zinn-translate-admin.php:516
+#: includes/class-zinn-translate-admin.php:519
 msgid "Translation"
 msgstr "Μετάφραση"
 
-#: includes/class-zinn-translate-admin.php:517
+#: includes/class-zinn-translate-admin.php:520
 msgid "Status"
 msgstr "Κατάσταση"
 
-#: includes/class-zinn-translate-admin.php:518
-#: includes/class-zinn-translate-admin.php:537
+#: includes/class-zinn-translate-admin.php:521
+#: includes/class-zinn-translate-admin.php:540
 msgid "Save"
 msgstr "Αποθήκευση"
 
-#: includes/class-zinn-translate-admin.php:523
+#: includes/class-zinn-translate-admin.php:526
 msgid "Nothing translated yet. Publish a language and translation starts in the background."
 msgstr "Δεν έχει μεταφραστεί τίποτα ακόμη. Δημοσιεύστε μια γλώσσα και η μετάφραση θα ξεκινήσει στο παρασκήνιο."
 
-#: includes/class-zinn-translate-admin.php:556
+#: includes/class-zinn-translate-admin.php:559
 msgid "These addresses are live. Open any of them to check it, and submit the sitemap index to Google Search Console."
 msgstr "Αυτές οι διευθύνσεις είναι ενεργές. Ανοίξτε οποιαδήποτε από αυτές για να την ελέγξετε και υποβάλετε το ευρετήριο χάρτη ιστότοπου στο Google Search Console."
 
-#: includes/class-zinn-translate-admin.php:577
+#: includes/class-zinn-translate-admin.php:580
 msgid "You are not allowed to edit translations on this site."
 msgstr "Δεν επιτρέπεται να επεξεργαστείτε μεταφράσεις σε αυτόν τον ιστότοπο."
 
-#: includes/class-zinn-translate-admin.php:605
+#: includes/class-zinn-translate-admin.php:608
 msgid "Edited by you — kept"
 msgstr "Επεξεργάστηκε από εσάς — διατηρήθηκε"
 
-#: includes/class-zinn-translate-admin.php:607
+#: includes/class-zinn-translate-admin.php:610
 msgid "Source changed — will be redone"
 msgstr "Η πηγή άλλαξε — θα ξαναγίνει"
 
-#: includes/class-zinn-translate-admin.php:609
+#: includes/class-zinn-translate-admin.php:612
 msgid "Up to date"
 msgstr "Ενημερωμένο"
 
-#: includes/class-zinn-translate-admin.php:621
-#: includes/class-zinn-translate-admin.php:622
-msgid "Zinn®"
-msgstr "Zinn®"
+#: includes/class-zinn-translate-connection.php:58
+msgid "Connected"
+msgstr "Συνδεδεμένο"
 
-#: includes/class-zinn-translate-admin.php:719
-msgid "Who pays"
-msgstr "Ποιος πληρώνει"
+#: includes/class-zinn-translate-connection.php:60
+msgid "Connecting…"
+msgstr "Σύνδεση…"
 
-#: includes/class-zinn-translate-admin.php:751
-msgid "Comma separated, for example: fr, de, ar"
-msgstr "Με κόμμα, για παράδειγμα: fr, de, ar"
+#: includes/class-zinn-translate-connection.php:62
+msgid "Connected, but something needs attention"
+msgstr "Συνδεδεμένο, αλλά απαιτείται προσοχή σε κάτι"
 
-#: includes/class-zinn-translate-admin.php:755
-msgid "Switcher style"
-msgstr "Στυλ εναλλαγής"
+#: includes/class-zinn-translate-connection.php:64
+msgid "Not connected"
+msgstr "Δεν συνδέθηκε"
+
+#: includes/class-zinn-translate-connection.php:66
+msgid "Running on your own account"
+msgstr "Εκτέλεση στον λογαριασμό σας"
+
+#: includes/class-zinn-translate-connection.php:68
+msgid "We could not check this"
+msgstr "Δεν ήταν δυνατός ο έλεγχος αυτού"
+
+#: includes/class-zinn-translate-connection.php:93
+msgid "This plugin did not say why. Send a diagnostics report and we will look."
+msgstr "Αυτό το πρόσθετο δεν ανέφερε τον λόγο. Στείλτε μια αναφορά διαγνωστικών και θα το εξετάσουμε."
+
+#: includes/class-zinn-translate-connection.php:161
+msgid "Connection status"
+msgstr "Κατάσταση σύνδεσης"
+
+#. translators: %s: a human-readable interval such as "5 minutes".
+#: includes/class-zinn-translate-connection.php:189
+#, php-format
+msgid "Last checked %s ago."
+msgstr "Ο τελευταίος έλεγχος έγινε πριν από %s."
+
+#: includes/class-zinn-translate-connection.php:251
+msgid "(opens in a new tab)"
+msgstr "(ανοίγει σε νέα καρτέλα)"
+
+#: includes/class-zinn-translate-diagnostics.php:199
+msgid "Send this to Zinn® support"
+msgstr "Αποστολή στην υποστήριξη της Zinn®"
+
+#: includes/class-zinn-translate-diagnostics.php:201
+msgid "This is exactly what will be sent — nothing else, and nothing hidden. Your passwords, tokens and API keys are not in it."
+msgstr "Αυτό ακριβώς θα αποσταλεί — τίποτα άλλο και τίποτα κρυφό. Οι κωδικοί πρόσβασης, τα διακριτικά (tokens) και τα κλειδιά API σας δεν περιλαμβάνονται σε αυτό."
+
+#: includes/class-zinn-translate-diagnostics.php:204
+msgid "The diagnostics report that will be sent"
+msgstr "Η διαγνωστική αναφορά που θα αποσταλεί"
+
+#: includes/class-zinn-translate-diagnostics.php:207
+msgid "Copy to clipboard"
+msgstr "Αντιγραφή στο πρόχειρο"
+
+#: includes/class-zinn-translate-diagnostics.php:214
+msgid "Send this report to Zinn® support"
+msgstr "Στείλτε αυτήν την αναφορά στην υποστήριξη της Zinn®"
+
+#: includes/class-zinn-translate-diagnostics.php:216
+msgid "We open a support ticket for you and reply by email. If you would rather not send it, copy it above and paste it into a ticket yourself."
+msgstr "Ανοίγουμε ένα δελτίο υποστήριξης για εσάς και απαντούμε μέσω email. Εάν προτιμάτε να μην το στείλετε, αντιγράφοντάς το παραπάνω, επικολλάτε το μόνοι σας σε ένα δελτίο υποστήριξης."
+
+#: includes/class-zinn-translate-diagnostics.php:228
+msgid "Copied"
+msgstr "Αντιγράφηκε"
+
+#. translators: %s: the transport error reported by WordPress.
+#: includes/class-zinn-translate-diagnostics.php:274
+#, php-format
+msgid "We could not reach Zinn Digital® from this server (%s). Copy the report above and open a ticket instead — nothing about your settings is wrong."
+msgstr "Δεν ήταν δυνατή η επικοινωνία με το Zinn Digital® από αυτόν τον διακομιστή (%s). Αντιγράψτε την παραπάνω αναφορά και ανοίξτε ένα εισιτήριο — δεν υπάρχει κανένα πρόβλημα με τις ρυθμίσεις σας."
+
+#: includes/class-zinn-translate-diagnostics.php:288
+msgid "Sent. Zinn® support has your report and will reply by email."
+msgstr "Η υποστήριξη της Zinn® έλαβε την αναφορά σας και θα σας απαντήσει μέσω email."
+
+#. translators: %s: the support reference for the report just sent.
+#: includes/class-zinn-translate-diagnostics.php:291
+#, php-format
+msgid "Sent. Zinn® support has your report — reference %s — and will reply by email."
+msgstr "Η υποστήριξη της Zinn® έλαβε την αναφορά σας — αριθμός αναφοράς %s — και θα απαντήσει μέσω email."
+
+#: includes/class-zinn-translate-diagnostics.php:300
+msgid "You have sent several reports in a short time. Wait a few minutes and try again — the earlier ones did arrive."
+msgstr "Έχετε στείλει αρκετές αναφορές σε σύντομο χρονικό διάστημα. Περιμένετε λίγα λεπτά και δοκιμάστε ξανά — οι προηγούμενες έχουν παραληφθεί."
+
+#: includes/class-zinn-translate-diagnostics.php:307
+msgid "Zinn Digital® could not accept the report just now — that is our end, not yours. Try again shortly, or copy the report above into a ticket."
+msgstr "Το Zinn Digital® δεν μπόρεσε να αποδεχτεί την αναφορά αυτή τη στιγμή — αυτό οφείλεται σε εμάς, όχι σε εσάς. Δοκιμάστε ξανά σύντομα ή αντιγράψτε την παραπάνω αναφορά σε ένα ticket."
+
+#. translators: %d: the HTTP status code the server returned.
+#: includes/class-zinn-translate-diagnostics.php:315
+#, php-format
+msgid "The report was refused (HTTP %d). Copy it above and open a ticket, quoting that number."
+msgstr "Η αναφορά απορρίφθηκε (HTTP %d). Αντιγράψτε την παραπάνω και ανοίξτε ένα εισιτήριο, αναφέροντας αυτόν τον αριθμό."
 
 #. translators: %s: the Zinn Digital trade mark, which is not translated.
 #: includes/class-zinn-translate-promo.php:241
@@ -415,22 +631,22 @@ msgstr "Ο πάροχος μετάφρασης αντιμετωπίζει κάπ
 msgid "The translation request failed and we could not tell why. Nothing was saved."
 msgstr "Το αίτημα μετάφρασης απέτυχε και δεν κατέστη δυνατό να προσδιοριστεί ο λόγος. Δεν αποθηκεύτηκε τίποτα."
 
-#: includes/class-zinn-translate-sitemap.php:130
+#: includes/class-zinn-translate-sitemap.php:139
 msgid "Sitemap index"
 msgstr "Ερετηριό χάρτη ιστότοπου"
 
 #. translators: %s: a language name, for example "French".
-#: includes/class-zinn-translate-sitemap.php:134
+#: includes/class-zinn-translate-sitemap.php:143
 #, php-format
 msgid "%s sitemap"
 msgstr "Χάρτης ιστότοπου %s"
 
-#: includes/class-zinn-translate-sitemap.php:138
+#: includes/class-zinn-translate-sitemap.php:147
 msgid "LLM content map"
 msgstr "Χάρτης περιεχομένου LLM"
 
 #. translators: %s: a language name, for example "French".
-#: includes/class-zinn-translate-sitemap.php:141
+#: includes/class-zinn-translate-sitemap.php:150
 #, php-format
 msgid "%s LLM content map"
 msgstr "%s Χάρτης περιεχομένου LLM"
@@ -500,6 +716,22 @@ msgstr "Ελέγξτε τη σελίδα κατάστασής τους"
 #: includes/class-zinn-translate-status.php:201
 msgid "Fix this on your account"
 msgstr "Ε διορθώστε αυτό στον λογαριασμό σας"
+
+#: includes/class-zinn-translate-style-presets.php:109
+msgid "Style preset"
+msgstr "Πρότυπο στυλ"
+
+#: includes/class-zinn-translate-style-presets.php:110
+msgid "A starting point. Anything below overrides it."
+msgstr "Ένα σημείο εκκίνησης. Οτιδήποτε βρίσκεται παρακάτω το αντικαθιστά."
+
+#: includes/class-zinn-translate-style-presets.php:117
+msgid "Use my own colours and sizes"
+msgstr "Χρήση των δικών μου χρωμάτων και μεγεθών"
+
+#: includes/class-zinn-translate-style-presets.php:118
+msgid "Leave this off and the preset is used exactly as it is."
+msgstr "Αφήστε το απενεργοποιημένο και η προεπιλογή θα χρησιμοποιηθεί ακριβώς όπως είναι."
 
 #: includes/class-zinn-translate-switcher-widget.php:30
 msgid "Zinn® language switcher"

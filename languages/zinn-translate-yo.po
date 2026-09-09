@@ -11,7 +11,6 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: zinn-translate.php
-#: includes/class-zinn-translate-admin.php:706
 msgid "Zinn® Translate"
 msgstr "Zinn® Translate"
 
@@ -35,325 +34,541 @@ msgstr "Neil Lock — CEO, Zinn Digital® Ltd"
 msgid "https://zinndigital.com"
 msgstr "https://zinndigital.com"
 
-#: includes/class-zinn-translate-admin.php:62
-#: includes/class-zinn-translate-admin.php:632
-#: includes/class-zinn-translate-admin.php:633
+#: includes/class-zinn-translate-admin-fields.php:575
+msgid "Stored. Type a new value to replace it."
+msgstr "A ti fipamọ́. Tẹ iye titun kan lati rọpo rẹ."
+
+#: includes/class-zinn-translate-admin-fields.php:635
+msgid "Filter this list…"
+msgstr "Ṣe àlẹmọ àkójọ yìí…"
+
+#: includes/class-zinn-translate-admin-fields.php:636
+msgid "Filter this list"
+msgstr "Ṣe àlẹmọ àkójọ yìí"
+
+#: includes/class-zinn-translate-admin-fields.php:652
+msgid "Nothing matches that filter."
+msgstr "Ko si ohun ti o ba àlẹmọ yẹn mu."
+
+#: includes/class-zinn-translate-admin-fields.php:683
+msgid "Add a row"
+msgstr "Fi ìlà kan kún un"
+
+#: includes/class-zinn-translate-admin-fields.php:720
+msgid "Remove this row"
+msgstr "Yọ ila yii kuro"
+
+#: includes/class-zinn-translate-admin-fields.php:720
+msgid "Remove"
+msgstr "Yọ kuro"
+
+#: includes/class-zinn-translate-admin-ui.php:264
+#: includes/class-zinn-translate-admin-ui.php:265
+#: includes/class-zinn-translate-admin-ui.php:335
+msgid "Zinn Digital®"
+msgstr "Zinn Digital®"
+
+#: includes/class-zinn-translate-admin-ui.php:278
+msgid "Zinn Digital® — overview"
+msgstr "Zinn Digital® — àkópọ̀"
+
+#: includes/class-zinn-translate-admin-ui.php:279
+msgid "Overview"
+msgstr "Àkópọ̀"
+
+#: includes/class-zinn-translate-admin-ui.php:336
+msgid "Every Zinn® plugin on this site, and whether it is working."
+msgstr "Gbogbo plugin Zinn® lori aaye yii, ati boya o n ṣiṣẹ."
+
+#: includes/class-zinn-translate-admin-ui.php:352
+msgid "No connection is needed for this plugin."
+msgstr "Ko si asopọ ti o nilo fun plugin yii."
+
+#: includes/class-zinn-translate-admin-ui.php:357
+msgid "Open settings"
+msgstr "Ṣí ètò"
+
+#: includes/class-zinn-translate-admin-ui.php:685
+#: includes/class-zinn-translate-admin-ui.php:1248
+msgid "You do not have permission to change these settings."
+msgstr "O ko ni igbanilaaye lati yi awọn eto wọnyi pada."
+
+#: includes/class-zinn-translate-admin-ui.php:715
+msgid "Settings sections"
+msgstr "Àwọn ẹ̀ka ètò"
+
+#: includes/class-zinn-translate-admin-ui.php:788
+msgid "Support"
+msgstr "Ìtìlẹ̀yìn"
+
+#: includes/class-zinn-translate-admin-ui.php:846
+msgid "Save changes"
+msgstr "Fi àwọn àtúnṣe pamọ́"
+
+#: includes/class-zinn-translate-admin-ui.php:875
+msgid "Tools"
+msgstr "Àwọn irinṣẹ"
+
+#: includes/class-zinn-translate-admin-ui.php:890
+msgid "Export settings"
+msgstr "Agbewọle awọn eto"
+
+#: includes/class-zinn-translate-admin-ui.php:893
+msgid "Reset to defaults"
+msgstr "Tún sí aiyipada"
+
+#: includes/class-zinn-translate-admin-ui.php:894
+msgid "This puts every setting on this plugin back to its default. Continue?"
+msgstr "Èyí yóò mú gbogbo ètò inú plọ́ọ̀gìn yìí padà sí ipò àkọ́kọ́ wọn. Ṣé o fẹ́ tẹ̀ síwájú?"
+
+#: includes/class-zinn-translate-admin-ui.php:901
+msgid "Diagnostics for support"
+msgstr "Àwọn ohun ìdánwò fún ìtìlẹ́yìn"
+
+#: includes/class-zinn-translate-admin-ui.php:910
+msgid "Import a settings file"
+msgstr "Gbe faili àwọn êtò wọlé"
+
+#: includes/class-zinn-translate-admin-ui.php:912
+msgid "Import"
+msgstr "Wọlé"
+
+#: includes/class-zinn-translate-admin-ui.php:914
+msgid "Exported files never contain passwords, tokens or API keys — you will need to enter those again on the new site."
+msgstr "Awọn faili ti a gbe wọ jade kò ní àwọn ọrọ aṣínírìí, àwọn àmì ìdánimọ̀ tabi àwọn bọ́tìnnì API rárá - o yoo nilo lati tun tẹ awọn wọnyẹn sii lori aaye tuntun naa."
+
+#: includes/class-zinn-translate-admin-ui.php:1013
+msgid "Settings saved."
+msgstr "A ti fi àwọn ẹ̀rọ ìṣètò pamọ́."
+
+#: includes/class-zinn-translate-admin-ui.php:1060
+msgid "Every setting on this plugin is back to its default."
+msgstr "Gbogbo ètò lórí plọọgìì yìí ti padà sí ipò àkọ́kọ́ rẹ̀."
+
+#: includes/class-zinn-translate-admin-ui.php:1103
+msgid "Done."
+msgstr "O ti se."
+
+#: includes/class-zinn-translate-admin-ui.php:1107
+msgid "That action is not available."
+msgstr "Iṣẹ yẹn ko si."
+
+#: includes/class-zinn-translate-admin-ui.php:1174
+msgid "That file could not be read. Choose a settings file exported from a Zinn® plugin."
+msgstr "A kò le ka fáìlì yẹn. Yan fáìlì ètò tí a gbe wọṣẹ láti inú plọọgìni Zinn®."
+
+#: includes/class-zinn-translate-admin-ui.php:1182
+msgid "That file is too large to be a settings export."
+msgstr "Fáìlì yẹn tóbi jù láti jẹ́ ìṣàgbéjáde àwọn ètò."
+
+#: includes/class-zinn-translate-admin-ui.php:1195
+msgid "That file is not a Zinn® settings export."
+msgstr "Fáìlì yẹn kọ́ jẹ́ ìfiránṣẹ́ ètò Zinn®."
+
+#. translators: %s: the plugin slug the file was exported from.
+#: includes/class-zinn-translate-admin-ui.php:1203
+#, php-format
+msgid "That file was exported from a different plugin (%s), so importing it here would store settings this plugin does not understand."
+msgstr "A fi fáìlì yẹn sọjade láti inú fífúnni (plugin) mìíràn (%s), nitorinaa títẹ́ sí ibi yẹn yoo fipamọ́ awọn ètò tí fífúnni yii kò mọ̀."
+
+#. translators: %d: how many settings were imported.
+#: includes/class-zinn-translate-admin-ui.php:1233
+#, php-format
+msgid "%d setting imported. Passwords and API keys are never in an export, so enter those again."
+msgid_plural "%d settings imported. Passwords and API keys are never in an export, so enter those again."
+msgstr[0] "%d ètò ti wọlé. Awọn ọrọ igbaniوە ati awọn bọtini API ko si ninu igbejade, nitorina tẹ awọn wọnyẹn lẹẹkansi."
+
+#: includes/class-zinn-translate-admin.php:65
 msgid "Translate"
 msgstr "Tumọ si"
 
-#: includes/class-zinn-translate-admin.php:76
-#: includes/class-zinn-translate-admin.php:767
+#: includes/class-zinn-translate-admin.php:79
 msgid "Manual overrides"
 msgstr "Àwọn àtúnṣe ọwọ́"
 
-#: includes/class-zinn-translate-admin.php:81
-#: includes/class-zinn-translate-admin.php:769
+#: includes/class-zinn-translate-admin.php:84
 msgid "Sitemaps and URLs"
 msgstr "Àwọn sitemap àti àwọn URL"
 
 #. zinn-i18n: not translated — NeedsHumanTranslationError: yo translation contains 'Gbogbogbo', a token that repeats its own opening — the shape of `revrevendeur` for `r
-#: includes/class-zinn-translate-admin.php:111
+#: includes/class-zinn-translate-admin.php:114
 msgid "General"
 msgstr ""
 
-#: includes/class-zinn-translate-admin.php:116
+#: includes/class-zinn-translate-admin.php:119
 msgid "Who pays for the translation"
 msgstr "Ta lo n sanwo fún ìtumọ̀ náà"
 
-#: includes/class-zinn-translate-admin.php:117
+#: includes/class-zinn-translate-admin.php:120
 msgid "Either your Zinn Digital® plan, or an API key of your own. There is no free tier — somebody pays a provider for every word."
 msgstr "Tabili Zinn Digital® rẹ, tabi bọtini API tirẹ. Ko si ipele ọfẹ — ẹnikan n sanwo fun olupese fun gbogbo ọrọ."
 
-#: includes/class-zinn-translate-admin.php:120
-#: includes/class-zinn-translate-admin.php:721
+#: includes/class-zinn-translate-admin.php:123
 msgid "My Zinn Digital® plan"
 msgstr "Eto Zinn Digital® mi"
 
-#: includes/class-zinn-translate-admin.php:121
-#: includes/class-zinn-translate-admin.php:722
+#: includes/class-zinn-translate-admin.php:124
 msgid "My own provider key"
 msgstr "Bọtínì àṣírí ti mi"
 
-#: includes/class-zinn-translate-admin.php:128
-#: includes/class-zinn-translate-admin.php:726
+#: includes/class-zinn-translate-admin.php:131
 msgid "Site ID"
 msgstr "Àmì Ìdánimọ̀ Ojula"
 
-#: includes/class-zinn-translate-admin.php:129
+#: includes/class-zinn-translate-admin.php:132
 msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
 msgstr "Lati ori daṣibọọdu Zinn Digital® rẹ, lori taabu Itumọ ti aaye yii."
 
-#: includes/class-zinn-translate-admin.php:136
-#: includes/class-zinn-translate-admin.php:730
+#: includes/class-zinn-translate-admin.php:139
 msgid "Site token"
 msgstr "Àmì ojula"
 
-#: includes/class-zinn-translate-admin.php:144
-#: includes/class-zinn-translate-admin.php:734
+#: includes/class-zinn-translate-admin.php:147
 msgid "Provider"
 msgstr "Olupese"
 
-#: includes/class-zinn-translate-admin.php:154
-#: includes/class-zinn-translate-admin.php:744
+#: includes/class-zinn-translate-admin.php:157
 msgid "API key"
 msgstr "Bọtìnì API"
 
-#: includes/class-zinn-translate-admin.php:155
+#: includes/class-zinn-translate-admin.php:158
 msgid "Your key, billed to you by the provider. It is stored on this site and sent only to them."
 msgstr "Bọtìni rẹ, tí olùpèsè náà gba owó rẹ̀ lọ́wọ́ rẹ. Ó wa ní ìpamọ́ sori ojú abẹ́ ayélujára yìí wọ́n sì ń rán an sí wọn nìkan."
 
-#: includes/class-zinn-translate-admin.php:163
+#: includes/class-zinn-translate-admin.php:166
 msgid "Model"
 msgstr "Àpẹẹrẹ"
 
-#: includes/class-zinn-translate-admin.php:164
+#: includes/class-zinn-translate-admin.php:167
 msgid "Leave empty for the cheapest model that does the job well."
 msgstr "Fi sílẹ̀ fún àwọn ohun èlò tí kò gbowó lórí tí ó sì ń ṣiṣẹ́ dáadáa."
 
-#: includes/class-zinn-translate-admin.php:171
+#: includes/class-zinn-translate-admin.php:174
 msgid "This site is written in"
 msgstr "Aaye yii ni a kọ si"
 
-#: includes/class-zinn-translate-admin.php:172
+#: includes/class-zinn-translate-admin.php:175
 msgid "Leave empty to use the site language from WordPress settings."
 msgstr "Fi o fo si oju ogbofo lati lo ede aaye lati awọn eto WordPress."
 
-#: includes/class-zinn-translate-admin.php:180
-#: includes/class-zinn-translate-admin.php:748
+#: includes/class-zinn-translate-admin.php:183
 msgid "Languages to publish"
 msgstr "Awọn ede lati tẹjade"
 
-#: includes/class-zinn-translate-admin.php:181
+#: includes/class-zinn-translate-admin.php:184
 msgid "Each one gets its own web addresses and its own sitemap. Publish only the languages you want indexed."
 msgstr "Olúkúlùkù ní àwọn àdírẹ́sì wẹ́bù tirẹ̀ àti maapu ojú-ewé tirẹ̀. Jẹ́ kí a tẹ̀jáde àwọn èdè tí o fẹ́ kí wọ́n wà nínú atọ́ka nìkan."
 
-#: includes/class-zinn-translate-admin.php:188
+#: includes/class-zinn-translate-admin.php:191
 msgid "Translate automatically when I publish or update"
 msgstr "Máa túnra rẹ̀ ṣe láìnírò lẹ́ẹ̀kan sí i nígbà tí mo bá gbé e jáde tàbí tí mo bá ṣe é sí tuntun"
 
-#: includes/class-zinn-translate-admin.php:189
+#: includes/class-zinn-translate-admin.php:192
 msgid "Editing a page marks its translations out of date and they are remade in the background. Editing without changing any words costs nothing."
 msgstr "Ṣíṣe àtúnṣe ojú-ewé kan sàmí sí àwọn ìtumọ̀ rẹ̀ pé wọn kò lọ́wọ́ lọ́wọ́ mọ́ wọ́n sì ń tún wọn ṣe ní ẹ̀yìn. Ṣíṣe àtúnṣe láìyí ohùn kan pa dà kò ní owó kankan."
 
-#: includes/class-zinn-translate-admin.php:196
+#: includes/class-zinn-translate-admin.php:199
 msgid "What gets translated"
 msgstr "Ohun tí a ń túmọ̀"
 
-#: includes/class-zinn-translate-admin.php:201
+#: includes/class-zinn-translate-admin.php:204
 msgid "Post types"
 msgstr "Àwọn irú ìfiṣé sílẹ̀"
 
-#: includes/class-zinn-translate-admin.php:209
+#: includes/class-zinn-translate-admin.php:212
 msgid "Translate the web addresses too"
 msgstr "Tún ṣe ìtumọ̀ àwọn àdírẹ́sì wẹ́bù náà pẹ̀lú"
 
-#: includes/class-zinn-translate-admin.php:210
+#: includes/class-zinn-translate-admin.php:213
 msgid "French visitors get /fr/a-propos/ rather than /fr/about/. The untranslated address keeps working and redirects, so nothing that was indexed breaks."
 msgstr "Àwọn àlejò Faransé rí /fr/a-propos/ dípò /fr/about/. Àdírẹsì tí kò ní ìtumọ̀ náà máa ń bá a lọ láti máa ṣiṣẹ́, ó sì máa ń tún ọ̀nà ṣe, nítorí náà kò sí ohun tó ti wà nínú atọ́ka tó máa bàjẹ́."
 
-#: includes/class-zinn-translate-admin.php:217
+#: includes/class-zinn-translate-admin.php:220
 msgid "Translate SEO titles, descriptions and image alt text"
 msgstr "Ṣe agbeyẹwo awọn akọle SEO, awọn apejuwe ati ọrọ alt aworan"
 
-#: includes/class-zinn-translate-admin.php:224
+#: includes/class-zinn-translate-admin.php:227
 msgid "Translate categories and tags"
 msgstr "Túmọ̀ àwọn ẹ̀ka àti àwọn tágì"
 
-#: includes/class-zinn-translate-admin.php:231
+#: includes/class-zinn-translate-admin.php:234
 msgid "Translate navigation menus"
 msgstr "Tumọ awọn akojọ aṣayan lilọ kiri"
 
-#: includes/class-zinn-translate-admin.php:238
+#: includes/class-zinn-translate-admin.php:241
 msgid "Translate WooCommerce products and attributes"
 msgstr "Ṣe ìtumọ̀ àwọn ọjà ati àwọn àbùdá WooCommerce"
 
-#: includes/class-zinn-translate-admin.php:239
+#: includes/class-zinn-translate-admin.php:242
 msgid "Short descriptions, purchase notes, attribute labels and variation descriptions. Prices, SKUs and stored option values are never touched."
 msgstr "Àwọn àpèjúwe kúkúrú, àwọn àkọsílẹ̀ rrà, àwọn àmì ànímọ́ àti àwọn àpèjúwe ìyàtọ̀. A kì í fọwọ́ kàn ìnáwo, SKUs àti àwọn iye àṣàyàn tí a ti kó pamọ́ rárá."
 
-#: includes/class-zinn-translate-admin.php:246
+#: includes/class-zinn-translate-admin.php:249
 msgid "SEO"
 msgstr "SEO"
 
-#: includes/class-zinn-translate-admin.php:251
+#: includes/class-zinn-translate-admin.php:254
 msgid "Add hreflang tags"
 msgstr "Fi awọn taabu hreflang kun"
 
-#: includes/class-zinn-translate-admin.php:252
+#: includes/class-zinn-translate-admin.php:255
 msgid "Tells search engines these pages are the same page in different languages. Leave this on unless another plugin is already doing it."
 msgstr "Ó sọ fún àwọn ẹ̀rọ àwárí pé àwọn ojú ìwé yìí jẹ́ ojú ìwé kan náà ní àwọn èdè ọ̀tọ̀ọ̀tọ̀. Fi èyí sílẹ̀ àfi tí àlékún míràn bá ti ń ṣe é tẹ́lẹ̀."
 
-#: includes/class-zinn-translate-admin.php:259
+#: includes/class-zinn-translate-admin.php:262
 msgid "Publish a sitemap for each language"
 msgstr "Tẹ sitemap jade fun èdè kọọkan"
 
-#: includes/class-zinn-translate-admin.php:266
+#: includes/class-zinn-translate-admin.php:269
 msgid "Publish llms.txt for each language"
 msgstr "Gbe llms.txt jade fún èdè kọ̀ọ̀kan"
 
-#: includes/class-zinn-translate-admin.php:267
+#: includes/class-zinn-translate-admin.php:270
 msgid "A plain-text map of the site that AI answer engines read. They often cannot run JavaScript and may never fetch a sitemap."
 msgstr "Maapu pẹlẹ aniyan ti aaye naa ti awọn êngini idahun AI ka. Wọn ki le ma fi bẹẹ ranṣẹ JavaScript ati pe o le ma gba sitemap lailai."
 
-#: includes/class-zinn-translate-admin.php:274
+#: includes/class-zinn-translate-admin.php:277
 #: includes/class-zinn-translate-switcher.php:135
 msgid "Language switcher"
 msgstr "Olùyípadà èdè"
 
-#: includes/class-zinn-translate-admin.php:279
+#: includes/class-zinn-translate-admin.php:282
 #: includes/class-zinn-translate-switcher-widget.php:83
 msgid "Style"
 msgstr "Ara"
 
-#: includes/class-zinn-translate-admin.php:282
+#: includes/class-zinn-translate-admin.php:285
 msgid "Colours, spacing and corners are on the Styling tab. Place it with the block, the [zinn_language_switcher] shortcode, or a menu."
 msgstr "Àwọn àwọ̀, ààyè àti àwọn kọ̀ńńdà wà lórí àmúyẹ Ọ̀ṣọ́. Bó pẹ̀lú búlọ́ọ̀kì náà, shortcode [zinn_language_switcher], tàbí àtòjọ aṣàyàn."
 
-#: includes/class-zinn-translate-admin.php:289
+#: includes/class-zinn-translate-admin.php:292
 msgid "Show only these languages"
 msgstr "Ṣe afihan awọn ede wọnyi nikan"
 
-#: includes/class-zinn-translate-admin.php:290
+#: includes/class-zinn-translate-admin.php:293
 msgid "Leave empty to show every language you publish."
 msgstr "Fi iṣofo lati fi gbogbo ede ti o tẹjade han."
 
-#: includes/class-zinn-translate-admin.php:297
+#: includes/class-zinn-translate-admin.php:300
 msgid "Name each language in its own language"
 msgstr "Sọ orúkọ èdè kọ̀ọ̀kan ní èdè rẹ̀"
 
-#: includes/class-zinn-translate-admin.php:298
+#: includes/class-zinn-translate-admin.php:301
 msgid "Deutsch rather than German. Somebody who cannot read the current page cannot read \"German\" either."
 msgstr "Deutsch dipọ̀ mọ́ German. Ẹni tí kò lè ka ojú ewé yìí kò lè ka \"German\" náà."
 
-#: includes/class-zinn-translate-admin.php:305
+#: includes/class-zinn-translate-admin.php:308
 msgid "Show flags"
 msgstr "Fi awọn àbámọ̀ hàn"
 
-#: includes/class-zinn-translate-admin.php:306
+#: includes/class-zinn-translate-admin.php:309
 msgid "Off by default: a language is not a country, and Arabic and Spanish have no single flag that does not exclude most of their speakers."
 msgstr "Pa kuro nipinlẹ: èdè kii ṣe orilẹ-ede, ati pe Arabic ati Spanish ko ni asia kan kan ti kii yọ ọpọlọpọ awọn agbọrọsọ wọn kuro."
 
-#: includes/class-zinn-translate-admin.php:313
+#: includes/class-zinn-translate-admin.php:316
 msgid "Include the language being read"
 msgstr "Fi ede ti a n ka ninu un kun"
 
-#: includes/class-zinn-translate-admin.php:320
+#: includes/class-zinn-translate-admin.php:323
 msgid "Include the original language"
 msgstr "Fi ede atilẹba kun un"
 
-#: includes/class-zinn-translate-admin.php:327
+#: includes/class-zinn-translate-admin.php:330
 msgid "Add it to this menu"
 msgstr "Fi kún àkójọ àṣàyàn yìí"
 
-#: includes/class-zinn-translate-admin.php:328
+#: includes/class-zinn-translate-admin.php:331
 msgid "Only the menu you name here. Nothing is added to any other menu on the site."
 msgstr "Nikan ni akojọ aṣayan ti o sọ nibi. Ko si nkan ti a fi kun si eyikeyi akojọ aṣayan miiran lori aaye naa."
 
-#: includes/class-zinn-translate-admin.php:378
+#: includes/class-zinn-translate-admin.php:381
 msgid "Accent"
 msgstr "Ohùn èdè"
 
-#: includes/class-zinn-translate-admin.php:382
+#: includes/class-zinn-translate-admin.php:385
 msgid "Background"
 msgstr "Ẹ̀yìn"
 
-#: includes/class-zinn-translate-admin.php:386
+#: includes/class-zinn-translate-admin.php:389
 msgid "Text"
 msgstr "Ọrọ"
 
-#: includes/class-zinn-translate-admin.php:390
+#: includes/class-zinn-translate-admin.php:393
 msgid "Corner radius"
 msgstr "Búburú igun"
 
-#: includes/class-zinn-translate-admin.php:394
+#: includes/class-zinn-translate-admin.php:397
 msgid "Spacing"
 msgstr "Ààyè Àlàfo"
 
-#: includes/class-zinn-translate-admin.php:398
+#: includes/class-zinn-translate-admin.php:401
 msgid "Text size"
 msgstr "Iwọn ọrọ"
 
-#: includes/class-zinn-translate-admin.php:425
+#: includes/class-zinn-translate-admin.php:428
 msgid "Do not add it to a menu"
 msgstr "Má fi kún àkójọ àṣàyàn kan"
 
-#: includes/class-zinn-translate-admin.php:480
+#: includes/class-zinn-translate-admin.php:483
 msgid "Edit any translation here. An edited translation is kept exactly as you wrote it and is never overwritten when the page is translated again."
 msgstr "Ṣatunkọ eyikeyi ìtumọ nibi. A máa ń tọ́jú ìtumọ̀ tí a ti ṣatunkọ rẹ gẹ́gẹ́ gangan bí o ṣe kọ ọ́, a ò sì ní kọ ẹ̀dà lórí rẹ̀ rò pé a tún tú ojú ewé náà."
 
-#: includes/class-zinn-translate-admin.php:501
+#: includes/class-zinn-translate-admin.php:504
 msgid "Every language"
 msgstr "Gbogbo ede"
 
-#: includes/class-zinn-translate-admin.php:508
+#: includes/class-zinn-translate-admin.php:511
 msgid "Search translations"
 msgstr "Wá awọn ìtumọ̀"
 
-#: includes/class-zinn-translate-admin.php:509
+#: includes/class-zinn-translate-admin.php:512
 msgid "Filter"
 msgstr "Sẹ́lẹ̀"
 
-#: includes/class-zinn-translate-admin.php:514
+#: includes/class-zinn-translate-admin.php:517
 msgid "Content"
 msgstr "Akoonu"
 
-#: includes/class-zinn-translate-admin.php:515
+#: includes/class-zinn-translate-admin.php:518
 msgid "Language"
 msgstr "Èdè"
 
-#: includes/class-zinn-translate-admin.php:516
+#: includes/class-zinn-translate-admin.php:519
 msgid "Translation"
 msgstr "Ìtumọ̀"
 
-#: includes/class-zinn-translate-admin.php:517
+#: includes/class-zinn-translate-admin.php:520
 msgid "Status"
 msgstr "Ipò"
 
-#: includes/class-zinn-translate-admin.php:518
-#: includes/class-zinn-translate-admin.php:537
+#: includes/class-zinn-translate-admin.php:521
+#: includes/class-zinn-translate-admin.php:540
 msgid "Save"
 msgstr "Fi pamọ́"
 
-#: includes/class-zinn-translate-admin.php:523
+#: includes/class-zinn-translate-admin.php:526
 msgid "Nothing translated yet. Publish a language and translation starts in the background."
 msgstr "Kò sí ohun tí a ti tú sí èdè mìíràn. Ṣe àtẹ̀jáde èdè kan, ìtumọ̀ yóò sì bẹ̀rẹ̀ lẹ́yìn-ọ̀-iṣẹ́."
 
-#: includes/class-zinn-translate-admin.php:556
+#: includes/class-zinn-translate-admin.php:559
 msgid "These addresses are live. Open any of them to check it, and submit the sitemap index to Google Search Console."
 msgstr "Awọn adirẹsi wọnyi wa L'ori afẹfẹ. Ṣii eyikeyi ninu wọn lati ṣayẹwo rẹ, ki o si fi atọka sitemap silẹ si Google Search Console."
 
-#: includes/class-zinn-translate-admin.php:577
+#: includes/class-zinn-translate-admin.php:580
 msgid "You are not allowed to edit translations on this site."
 msgstr "A kò gba ọ láyè láti ṣàtúnṣe àwọn ìtumọ̀ lórí ojú ojuewé yìí."
 
-#: includes/class-zinn-translate-admin.php:605
+#: includes/class-zinn-translate-admin.php:608
 msgid "Edited by you — kept"
 msgstr "Ṣíṣe àtúnṣe látọwọ́ rẹ — a pa mọ́"
 
-#: includes/class-zinn-translate-admin.php:607
+#: includes/class-zinn-translate-admin.php:610
 msgid "Source changed — will be redone"
 msgstr "Orísí ti yí padà — ao tun ṣe é"
 
-#: includes/class-zinn-translate-admin.php:609
+#: includes/class-zinn-translate-admin.php:612
 msgid "Up to date"
 msgstr "Wọn wà lójú àmọ́"
 
-#: includes/class-zinn-translate-admin.php:621
-#: includes/class-zinn-translate-admin.php:622
-msgid "Zinn®"
-msgstr "Zinn®"
+#: includes/class-zinn-translate-connection.php:58
+msgid "Connected"
+msgstr "Ti sopọ"
 
-#: includes/class-zinn-translate-admin.php:719
-msgid "Who pays"
-msgstr "Ta ni o sanwo"
+#: includes/class-zinn-translate-connection.php:60
+msgid "Connecting…"
+msgstr "Ń sopọ̀ lọ́wọ́ lọ́wọ́…"
 
-#: includes/class-zinn-translate-admin.php:751
-msgid "Comma separated, for example: fr, de, ar"
-msgstr "Tí a pín pẹ̀lú ìkọ̀wé àmì ìsọ̀rọ̀ comma, fún àpẹẹrẹ: fr, de, ar"
+#: includes/class-zinn-translate-connection.php:62
+msgid "Connected, but something needs attention"
+msgstr "Ti sopọ, ṣugbọn nkan kan nilo akiyesi"
 
-#: includes/class-zinn-translate-admin.php:755
-msgid "Switcher style"
-msgstr "Àṣà aṣàlejì"
+#: includes/class-zinn-translate-connection.php:64
+msgid "Not connected"
+msgstr "Kò sopọ̀"
+
+#: includes/class-zinn-translate-connection.php:66
+msgid "Running on your own account"
+msgstr "Nípa ṣíṣe lórí àkántì tirẹ̀"
+
+#: includes/class-zinn-translate-connection.php:68
+msgid "We could not check this"
+msgstr "A kò lè ṣàyẹ̀wò èyí"
+
+#: includes/class-zinn-translate-connection.php:93
+msgid "This plugin did not say why. Send a diagnostics report and we will look."
+msgstr "Fliigi yii ko sọ idi rẹ. Fi ijabọ iwadii ranṣẹ si wa a o si ṣayẹwo rẹ."
+
+#: includes/class-zinn-translate-connection.php:161
+msgid "Connection status"
+msgstr "Ipo asopọ"
+
+#. translators: %s: a human-readable interval such as "5 minutes".
+#: includes/class-zinn-translate-connection.php:189
+#, php-format
+msgid "Last checked %s ago."
+msgstr "A yẹ fi ojú wo ìgbẹ̀yìn ni %s sẹ́yìn."
+
+#: includes/class-zinn-translate-connection.php:251
+msgid "(opens in a new tab)"
+msgstr "(ó ń ṣí sí taabu tuntun)"
+
+#: includes/class-zinn-translate-diagnostics.php:199
+msgid "Send this to Zinn® support"
+msgstr "Fi èṣán yìí ránṣẹ́ sí ìtìlẹ́yìn Zinn®"
+
+#: includes/class-zinn-translate-diagnostics.php:201
+msgid "This is exactly what will be sent — nothing else, and nothing hidden. Your passwords, tokens and API keys are not in it."
+msgstr "Èyí gan-an ni ohun tí a ó fi ránṣẹ́ — kò sí ohun mìíràn, kò sì sí ohun tí ó sinmi. Àwọn ọrọ̀ aṣínà rẹ, àwọn àmì ìdánimọ̀ (tokens) àti àwọn bọ́tìnnì API rẹ kò sí nínú rẹ̀."
+
+#: includes/class-zinn-translate-diagnostics.php:204
+msgid "The diagnostics report that will be sent"
+msgstr "Ìròyìn àyẹ̀wò tí a ó fi ránṣẹ́"
+
+#: includes/class-zinn-translate-diagnostics.php:207
+msgid "Copy to clipboard"
+msgstr "Ṣe àakọ sí pẹpẹ ìkojọpọ"
+
+#: includes/class-zinn-translate-diagnostics.php:214
+msgid "Send this report to Zinn® support"
+msgstr "Fi ìròyìn yìí ránṣẹ́ sí àtìlẹ́yìn Zinn®"
+
+#: includes/class-zinn-translate-diagnostics.php:216
+msgid "We open a support ticket for you and reply by email. If you would rather not send it, copy it above and paste it into a ticket yourself."
+msgstr "A ṣí tíkẹ́tì àtìlẹ́yìn fún ọ, a sì dáhùn nípasẹ̀ ímeèlì. Bí o kò bá fẹ́ fi ránṣẹ́, da ẹ̀dà rẹ̀ sọ́kàn òkè kí o sì lẹ̀ mọ́ inú tíkẹ́tì fúnra rẹ."
+
+#: includes/class-zinn-translate-diagnostics.php:228
+msgid "Copied"
+msgstr "Ti daakọ"
+
+#. translators: %s: the transport error reported by WordPress.
+#: includes/class-zinn-translate-diagnostics.php:274
+#, php-format
+msgid "We could not reach Zinn Digital® from this server (%s). Copy the report above and open a ticket instead — nothing about your settings is wrong."
+msgstr "A ko le de ọdọ Zinn Digital® lati sevha yii (%s). Da iroyin oke kọ silẹ ki o si ṣii tikẹti kan dipo — ko si ohun ti ko tọ si awọn eto rẹ."
+
+#: includes/class-zinn-translate-diagnostics.php:288
+msgid "Sent. Zinn® support has your report and will reply by email."
+msgstr "Atilẹyin Zinn® ti gba ijabọ rẹ yoo si dahun nipasẹ imeeli."
+
+#. translators: %s: the support reference for the report just sent.
+#: includes/class-zinn-translate-diagnostics.php:291
+#, php-format
+msgid "Sent. Zinn® support has your report — reference %s — and will reply by email."
+msgstr "Àtìlẹyìn Zinn® ní ìròyìn rẹ — àmì ìtọ́kasí %s — yóò sì dáhùn nípasẹ̀ ímeèlì."
+
+#: includes/class-zinn-translate-diagnostics.php:300
+msgid "You have sent several reports in a short time. Wait a few minutes and try again — the earlier ones did arrive."
+msgstr "O ti rán ọ̀pọ̀lọpọ̀ ìjábọ̀ lọ láàárín àkókò kúkúrú. Dúró fún ìṣẹ́jú díẹ̀ kí o sì tún gbiyanju rẹ̀ lẹ́ẹ̀kan sí i — àwọn tó ṣáájú ti dé déédé."
+
+#: includes/class-zinn-translate-diagnostics.php:307
+msgid "Zinn Digital® could not accept the report just now — that is our end, not yours. Try again shortly, or copy the report above into a ticket."
+msgstr "Zinn Digital® ko le gba ijabọ naa ni bayi — iyẹn jẹ apakan wa, kii ṣe tirẹ. Gbiyanju lẹẹkan si laipẹ, tabi daakọ ijabọ ti o wa loke sinu tikẹti kan."
+
+#. translators: %d: the HTTP status code the server returned.
+#: includes/class-zinn-translate-diagnostics.php:315
+#, php-format
+msgid "The report was refused (HTTP %d). Copy it above and open a ticket, quoting that number."
+msgstr "Wọ́n kọ̀ ọ̀rọ̀ ìjábọ̀ náà (HTTP %d). Ṣe àwòkọ rẹ̀ sókè kí o sì ṣí tikẹ́tì kan, kí o sì fún wa ní nọ́mbà yẹn."
 
 #. translators: %s: the Zinn Digital trade mark, which is not translated.
 #: includes/class-zinn-translate-promo.php:241
@@ -416,22 +631,22 @@ msgstr "Olupese ìtumọ̀ náà ní ìṣòro ní apá wọn. Kò sí ohun tí 
 msgid "The translation request failed and we could not tell why. Nothing was saved."
 msgstr "Ìbéèrè ìtúmọ̀ náà kùnà, a sì kọ́ láti mọ ìdí tí ó fi rí bẹ́ẹ̀. Kò sí ohun tí a fipamọ́."
 
-#: includes/class-zinn-translate-sitemap.php:130
+#: includes/class-zinn-translate-sitemap.php:139
 msgid "Sitemap index"
 msgstr "Atọka sitemap"
 
 #. translators: %s: a language name, for example "French".
-#: includes/class-zinn-translate-sitemap.php:134
+#: includes/class-zinn-translate-sitemap.php:143
 #, php-format
 msgid "%s sitemap"
 msgstr "%s sitemap"
 
-#: includes/class-zinn-translate-sitemap.php:138
+#: includes/class-zinn-translate-sitemap.php:147
 msgid "LLM content map"
 msgstr "Àwòrán àkóópọ̀ LLM"
 
 #. translators: %s: a language name, for example "French".
-#: includes/class-zinn-translate-sitemap.php:141
+#: includes/class-zinn-translate-sitemap.php:150
 #, php-format
 msgid "%s LLM content map"
 msgstr "%s Mápì àkóովá LLM"
@@ -501,6 +716,22 @@ msgstr "Ṣẹ̀wò ojú ìwé ipò wọn"
 #: includes/class-zinn-translate-status.php:201
 msgid "Fix this on your account"
 msgstr "Ṣe àtúnṣe èyí lórí àkáǹtì rẹ"
+
+#: includes/class-zinn-translate-style-presets.php:109
+msgid "Style preset"
+msgstr "Àṣàyàn àwòṣe ìrísí"
+
+#: includes/class-zinn-translate-style-presets.php:110
+msgid "A starting point. Anything below overrides it."
+msgstr "Ibẹrẹ kan. Ohunkohun ti o wa ni isalẹ bori rẹ."
+
+#: includes/class-zinn-translate-style-presets.php:117
+msgid "Use my own colours and sizes"
+msgstr "Lo awon awco ati iwọn temi"
+
+#: includes/class-zinn-translate-style-presets.php:118
+msgid "Leave this off and the preset is used exactly as it is."
+msgstr "Fi eyi silẹ ki a si lo asayan naa gẹgẹ bi o ṣe wa gangan."
 
 #: includes/class-zinn-translate-switcher-widget.php:30
 msgid "Zinn® language switcher"

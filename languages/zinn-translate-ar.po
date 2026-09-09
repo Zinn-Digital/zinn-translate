@@ -11,7 +11,6 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: zinn-translate.php
-#: includes/class-zinn-translate-admin.php:706
 msgid "Zinn® Translate"
 msgstr "Zinn® Translate"
 
@@ -35,324 +34,545 @@ msgstr "Neil Lock — CEO, Zinn Digital® Ltd"
 msgid "https://zinndigital.com"
 msgstr "https://zinndigital.com"
 
-#: includes/class-zinn-translate-admin.php:62
-#: includes/class-zinn-translate-admin.php:632
-#: includes/class-zinn-translate-admin.php:633
+#: includes/class-zinn-translate-admin-fields.php:575
+msgid "Stored. Type a new value to replace it."
+msgstr "تم الحفظ. اكتب قيمة جديدة استبدالاً بها."
+
+#: includes/class-zinn-translate-admin-fields.php:635
+msgid "Filter this list…"
+msgstr "تصفية هذه القائمة..."
+
+#: includes/class-zinn-translate-admin-fields.php:636
+msgid "Filter this list"
+msgstr "تصفية هذه القائمة"
+
+#: includes/class-zinn-translate-admin-fields.php:652
+msgid "Nothing matches that filter."
+msgstr "لا يوجد ما يطابق هذا التصفية."
+
+#: includes/class-zinn-translate-admin-fields.php:683
+msgid "Add a row"
+msgstr "إضافة صف"
+
+#: includes/class-zinn-translate-admin-fields.php:720
+msgid "Remove this row"
+msgstr "إزالة هذا الصف"
+
+#: includes/class-zinn-translate-admin-fields.php:720
+msgid "Remove"
+msgstr "إزالة"
+
+#: includes/class-zinn-translate-admin-ui.php:264
+#: includes/class-zinn-translate-admin-ui.php:265
+#: includes/class-zinn-translate-admin-ui.php:335
+msgid "Zinn Digital®"
+msgstr "Zinn Digital®"
+
+#: includes/class-zinn-translate-admin-ui.php:278
+msgid "Zinn Digital® — overview"
+msgstr "Zinn Digital® — نظرة عامة"
+
+#: includes/class-zinn-translate-admin-ui.php:279
+msgid "Overview"
+msgstr "نظرة عامة"
+
+#: includes/class-zinn-translate-admin-ui.php:336
+msgid "Every Zinn® plugin on this site, and whether it is working."
+msgstr "كل ملحق Zinn® على هذا الموقع، وما إذا كان يعمل."
+
+#: includes/class-zinn-translate-admin-ui.php:352
+msgid "No connection is needed for this plugin."
+msgstr "لا حاجة للاتصال بهذا الملحق."
+
+#: includes/class-zinn-translate-admin-ui.php:357
+msgid "Open settings"
+msgstr "فتح الإعدادات"
+
+#: includes/class-zinn-translate-admin-ui.php:685
+#: includes/class-zinn-translate-admin-ui.php:1248
+msgid "You do not have permission to change these settings."
+msgstr "ليس لديك إذن لتغيير هذه الإعدادات."
+
+#: includes/class-zinn-translate-admin-ui.php:715
+msgid "Settings sections"
+msgstr "أقسام الإعدادات"
+
+#: includes/class-zinn-translate-admin-ui.php:788
+msgid "Support"
+msgstr "الدعم"
+
+#: includes/class-zinn-translate-admin-ui.php:846
+msgid "Save changes"
+msgstr "حفظ التغييرات"
+
+#: includes/class-zinn-translate-admin-ui.php:875
+msgid "Tools"
+msgstr "أدوات"
+
+#: includes/class-zinn-translate-admin-ui.php:890
+msgid "Export settings"
+msgstr "تصدير الإعدادات"
+
+#: includes/class-zinn-translate-admin-ui.php:893
+msgid "Reset to defaults"
+msgstr "إعادة تعيين إلى الوضع الافتراضي"
+
+#: includes/class-zinn-translate-admin-ui.php:894
+msgid "This puts every setting on this plugin back to its default. Continue?"
+msgstr "سيؤدي هذا إلى إعادة جميع إعدادات هذا الملحق إلى وضعها الافتراضي. هل تريد المتابعة؟"
+
+#: includes/class-zinn-translate-admin-ui.php:901
+msgid "Diagnostics for support"
+msgstr "تشخيصات للدعم"
+
+#: includes/class-zinn-translate-admin-ui.php:910
+msgid "Import a settings file"
+msgstr "استيراد ملف إعدادات"
+
+#: includes/class-zinn-translate-admin-ui.php:912
+msgid "Import"
+msgstr "استيراد"
+
+#: includes/class-zinn-translate-admin-ui.php:914
+msgid "Exported files never contain passwords, tokens or API keys — you will need to enter those again on the new site."
+msgstr "لا تحتوي الملفات المُصدَّرة مطلقاً على كلمات مرور أو رموز مميزة أو مفاتيح واجهة برمجة تطبيقات (API)؛ لذا ستحتاج إلى إدخالها مجدداً على الموقع الجديد."
+
+#: includes/class-zinn-translate-admin-ui.php:1013
+msgid "Settings saved."
+msgstr "تم حفظ الإعدادات."
+
+#: includes/class-zinn-translate-admin-ui.php:1060
+msgid "Every setting on this plugin is back to its default."
+msgstr "تمت إعادة تعيين كل إعداد في هذا المكون الإضافي إلى وضعه الافتراضي."
+
+#: includes/class-zinn-translate-admin-ui.php:1103
+msgid "Done."
+msgstr "تم."
+
+#: includes/class-zinn-translate-admin-ui.php:1107
+msgid "That action is not available."
+msgstr "هذا الإجراء غير متاح."
+
+#: includes/class-zinn-translate-admin-ui.php:1174
+msgid "That file could not be read. Choose a settings file exported from a Zinn® plugin."
+msgstr "تعذر قراءة هذا الملف. اختر ملف إعدادات مُصدَّراً من مكون إضافي لـ Zinn®."
+
+#: includes/class-zinn-translate-admin-ui.php:1182
+msgid "That file is too large to be a settings export."
+msgstr "هذا الملف أكبر من أن يكون تصدير إعدادات."
+
+#: includes/class-zinn-translate-admin-ui.php:1195
+msgid "That file is not a Zinn® settings export."
+msgstr "هذا الملف ليس تصدير إعدادات Zinn®."
+
+#. translators: %s: the plugin slug the file was exported from.
+#: includes/class-zinn-translate-admin-ui.php:1203
+#, php-format
+msgid "That file was exported from a different plugin (%s), so importing it here would store settings this plugin does not understand."
+msgstr "تم تصدير هذا الملف من إضافة مختلفة (%s)، لذا فإن استيراده هنا سيؤدي إلى تخزين إعدادات لا تفهمها هذه الإضافة."
+
+#. translators: %d: how many settings were imported.
+#: includes/class-zinn-translate-admin-ui.php:1233
+#, php-format
+msgid "%d setting imported. Passwords and API keys are never in an export, so enter those again."
+msgid_plural "%d settings imported. Passwords and API keys are never in an export, so enter those again."
+msgstr[0] "تم استيراد %d إعداد. لا يتم تضمين كلمات المرور ومفاتيح واجهة برمجة التطبيقات (API) في أي عملية تصدير، لذا يرجى إدخالها مرة أخرى."
+msgstr[1] "تم استيراد %d من الإعدادات. لا تتضمن الملفات المُصدّرة كلمات المرور ومفاتيح واجهة برمجة التطبيقات (API)، لذا يُرجى إدخالها مجددًا."
+msgstr[2] "تم استيراد %d من الإعدادات. لا تتضمن الملفات المُصدّرة كلمات المرور ومفاتيح واجهة برمجة التطبيقات (API)، لذا يُرجى إدخالها مجددًا."
+msgstr[3] "تم استيراد %d من الإعدادات. لا تتضمن الملفات المُصدّرة كلمات المرور ومفاتيح واجهة برمجة التطبيقات (API)، لذا يُرجى إدخالها مجددًا."
+msgstr[4] "تم استيراد %d من الإعدادات. لا تتضمن الملفات المُصدّرة كلمات المرور ومفاتيح واجهة برمجة التطبيقات (API)، لذا يُرجى إدخالها مجددًا."
+msgstr[5] "تم استيراد %d من الإعدادات. لا تتضمن الملفات المُصدّرة كلمات المرور ومفاتيح واجهة برمجة التطبيقات (API)، لذا يُرجى إدخالها مجددًا."
+
+#: includes/class-zinn-translate-admin.php:65
 msgid "Translate"
 msgstr "ترجمة"
 
-#: includes/class-zinn-translate-admin.php:76
-#: includes/class-zinn-translate-admin.php:767
+#: includes/class-zinn-translate-admin.php:79
 msgid "Manual overrides"
 msgstr "تجاوزات يدوية"
 
-#: includes/class-zinn-translate-admin.php:81
-#: includes/class-zinn-translate-admin.php:769
+#: includes/class-zinn-translate-admin.php:84
 msgid "Sitemaps and URLs"
 msgstr "خرائط الموقع وعناوين URL"
 
-#: includes/class-zinn-translate-admin.php:111
+#: includes/class-zinn-translate-admin.php:114
 msgid "General"
 msgstr "عام"
 
-#: includes/class-zinn-translate-admin.php:116
+#: includes/class-zinn-translate-admin.php:119
 msgid "Who pays for the translation"
 msgstr "من يدفع تكاليف الترجمة"
 
-#: includes/class-zinn-translate-admin.php:117
+#: includes/class-zinn-translate-admin.php:120
 msgid "Either your Zinn Digital® plan, or an API key of your own. There is no free tier — somebody pays a provider for every word."
 msgstr "إما خطة Zinn Digital® الخاصة بك، أو مفتاح API خاص بك. لا توجد باقة مجانية — فشخص ما يدفع لمزود الخدمة مقابل كل كلمة."
 
-#: includes/class-zinn-translate-admin.php:120
-#: includes/class-zinn-translate-admin.php:721
+#: includes/class-zinn-translate-admin.php:123
 msgid "My Zinn Digital® plan"
 msgstr "خطة Zinn Digital® الخاصة بي"
 
-#: includes/class-zinn-translate-admin.php:121
-#: includes/class-zinn-translate-admin.php:722
+#: includes/class-zinn-translate-admin.php:124
 msgid "My own provider key"
 msgstr "مفتاح الموفر الخاص بي"
 
-#: includes/class-zinn-translate-admin.php:128
-#: includes/class-zinn-translate-admin.php:726
+#: includes/class-zinn-translate-admin.php:131
 msgid "Site ID"
 msgstr "معرف الموقع"
 
-#: includes/class-zinn-translate-admin.php:129
+#: includes/class-zinn-translate-admin.php:132
 msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
 msgstr "من لوحة تحكم Zinn Digital® الخاصة بك، في علامة تبويب \"الترجمة\" الخاصة بهذا الموقع."
 
-#: includes/class-zinn-translate-admin.php:136
-#: includes/class-zinn-translate-admin.php:730
+#: includes/class-zinn-translate-admin.php:139
 msgid "Site token"
 msgstr "رمز الموقع"
 
-#: includes/class-zinn-translate-admin.php:144
-#: includes/class-zinn-translate-admin.php:734
+#: includes/class-zinn-translate-admin.php:147
 msgid "Provider"
 msgstr "المزود"
 
-#: includes/class-zinn-translate-admin.php:154
-#: includes/class-zinn-translate-admin.php:744
+#: includes/class-zinn-translate-admin.php:157
 msgid "API key"
 msgstr "مفتاح واجهة برمجة التطبيقات"
 
-#: includes/class-zinn-translate-admin.php:155
+#: includes/class-zinn-translate-admin.php:158
 msgid "Your key, billed to you by the provider. It is stored on this site and sent only to them."
 msgstr "مفتاحك، تتم فوترته لك من قِبل المزود. يتم تخزينه على هذا الموقع وإرساله إليهم فقط."
 
-#: includes/class-zinn-translate-admin.php:163
+#: includes/class-zinn-translate-admin.php:166
 msgid "Model"
 msgstr "النموذج"
 
-#: includes/class-zinn-translate-admin.php:164
+#: includes/class-zinn-translate-admin.php:167
 msgid "Leave empty for the cheapest model that does the job well."
 msgstr "اتركه فارغاً للحصول على النموذج الأرخص الذي يؤدي الغرض بشكل جيد."
 
-#: includes/class-zinn-translate-admin.php:171
+#: includes/class-zinn-translate-admin.php:174
 msgid "This site is written in"
 msgstr "هذا الموقع مكتوب بـ"
 
-#: includes/class-zinn-translate-admin.php:172
+#: includes/class-zinn-translate-admin.php:175
 msgid "Leave empty to use the site language from WordPress settings."
 msgstr "اترك الحقل فارغاً لاستخدام لغة الموقع من إعدادات WordPress."
 
-#: includes/class-zinn-translate-admin.php:180
-#: includes/class-zinn-translate-admin.php:748
+#: includes/class-zinn-translate-admin.php:183
 msgid "Languages to publish"
 msgstr "لغات للنشر"
 
-#: includes/class-zinn-translate-admin.php:181
+#: includes/class-zinn-translate-admin.php:184
 msgid "Each one gets its own web addresses and its own sitemap. Publish only the languages you want indexed."
 msgstr "يحصل كل منها على عناوين ويب خاصة به وخريطة موقع خاصة به. انشر فقط اللغات التي تريد أرشفتها."
 
-#: includes/class-zinn-translate-admin.php:188
+#: includes/class-zinn-translate-admin.php:191
 msgid "Translate automatically when I publish or update"
 msgstr "الترجمة تلقائياً عند النشر أو التحديث"
 
-#: includes/class-zinn-translate-admin.php:189
+#: includes/class-zinn-translate-admin.php:192
 msgid "Editing a page marks its translations out of date and they are remade in the background. Editing without changing any words costs nothing."
 msgstr "تعديل الصفحة يجعل ترجماتها غير محدثة ويتم إعادة إنشائها في الخلفية. التعديل دون تغيير أي كلمات لا يكلف شيئاً."
 
-#: includes/class-zinn-translate-admin.php:196
+#: includes/class-zinn-translate-admin.php:199
 msgid "What gets translated"
 msgstr "ما يتم ترجمته"
 
-#: includes/class-zinn-translate-admin.php:201
+#: includes/class-zinn-translate-admin.php:204
 msgid "Post types"
 msgstr "أنواع المشاركات"
 
-#: includes/class-zinn-translate-admin.php:209
+#: includes/class-zinn-translate-admin.php:212
 msgid "Translate the web addresses too"
 msgstr "ترجم عناوين الويب أيضاً"
 
-#: includes/class-zinn-translate-admin.php:210
+#: includes/class-zinn-translate-admin.php:213
 msgid "French visitors get /fr/a-propos/ rather than /fr/about/. The untranslated address keeps working and redirects, so nothing that was indexed breaks."
 msgstr "يحصل الزوار الفرنسيون على /fr/a-propos/ بدلاً من /fr/about/. يستمر العنوان غير المترجم في العمل وإعادة التوجيه، لذلك لن يتعطل أي شيء تمت فهرسته."
 
-#: includes/class-zinn-translate-admin.php:217
+#: includes/class-zinn-translate-admin.php:220
 msgid "Translate SEO titles, descriptions and image alt text"
 msgstr "ترجم عنوان descriptions ووصف محركات البحث والنصوص البديلة للصور"
 
-#: includes/class-zinn-translate-admin.php:224
+#: includes/class-zinn-translate-admin.php:227
 msgid "Translate categories and tags"
 msgstr "ترجمة الفئات والوسوم"
 
-#: includes/class-zinn-translate-admin.php:231
+#: includes/class-zinn-translate-admin.php:234
 msgid "Translate navigation menus"
 msgstr "ترجمة قوائم التنقل"
 
-#: includes/class-zinn-translate-admin.php:238
+#: includes/class-zinn-translate-admin.php:241
 msgid "Translate WooCommerce products and attributes"
 msgstr "ترجمة منتجات وسمات WooCommerce"
 
-#: includes/class-zinn-translate-admin.php:239
+#: includes/class-zinn-translate-admin.php:242
 msgid "Short descriptions, purchase notes, attribute labels and variation descriptions. Prices, SKUs and stored option values are never touched."
 msgstr "الأوصاف القصيرة، وملاحظات الشراء، وتسميات السمات، وأوصاف الاختلافات. لا يتم المساس مطلقاً بالأسعار، ووحدات حفظ Stock Keeping Units (SKUs)، وقيم الخيارات المخزنة."
 
-#: includes/class-zinn-translate-admin.php:246
+#: includes/class-zinn-translate-admin.php:249
 msgid "SEO"
 msgstr "تحسين محركات البحث"
 
-#: includes/class-zinn-translate-admin.php:251
+#: includes/class-zinn-translate-admin.php:254
 msgid "Add hreflang tags"
 msgstr "إضافة وسوم hreflang"
 
-#: includes/class-zinn-translate-admin.php:252
+#: includes/class-zinn-translate-admin.php:255
 msgid "Tells search engines these pages are the same page in different languages. Leave this on unless another plugin is already doing it."
 msgstr "يخبر محركات البحث أن هذه الصفحات هي نفسها بلغات مختلفة. اترك هذا الخيار مفعلًا ما لم يكن هناك ملحق آخر يقوم بذلك بالفعل."
 
-#: includes/class-zinn-translate-admin.php:259
+#: includes/class-zinn-translate-admin.php:262
 msgid "Publish a sitemap for each language"
 msgstr "انشر خريطة موقع لكل لغة"
 
-#: includes/class-zinn-translate-admin.php:266
+#: includes/class-zinn-translate-admin.php:269
 msgid "Publish llms.txt for each language"
 msgstr "نشر ملف llms.txt لكل لغة"
 
-#: includes/class-zinn-translate-admin.php:267
+#: includes/class-zinn-translate-admin.php:270
 msgid "A plain-text map of the site that AI answer engines read. They often cannot run JavaScript and may never fetch a sitemap."
 msgstr "خريطة موقع بنص عادٍ تقرؤها محركات الإجابة القائمة على الذكاء الاصطناعي. وغالباً ما تعجز عن تشغيل جافاسكريبت (JavaScript) وقد لا تجلب خريطة موقع أبداً."
 
-#: includes/class-zinn-translate-admin.php:274
+#: includes/class-zinn-translate-admin.php:277
 #: includes/class-zinn-translate-switcher.php:135
 msgid "Language switcher"
 msgstr "محول اللغات"
 
-#: includes/class-zinn-translate-admin.php:279
+#: includes/class-zinn-translate-admin.php:282
 #: includes/class-zinn-translate-switcher-widget.php:83
 msgid "Style"
 msgstr "التصميم"
 
-#: includes/class-zinn-translate-admin.php:282
+#: includes/class-zinn-translate-admin.php:285
 msgid "Colours, spacing and corners are on the Styling tab. Place it with the block, the [zinn_language_switcher] shortcode, or a menu."
 msgstr "توجد الألوان والمسافات والزوايا في علامة التبويب \"التصميم\". ضعها مع الكتلة أو باستخدام الرمز القصي [zinn_language_switcher] أو في القائمة."
 
-#: includes/class-zinn-translate-admin.php:289
+#: includes/class-zinn-translate-admin.php:292
 msgid "Show only these languages"
 msgstr "إظهار هذه اللغات فقط"
 
-#: includes/class-zinn-translate-admin.php:290
+#: includes/class-zinn-translate-admin.php:293
 msgid "Leave empty to show every language you publish."
 msgstr "اتركه فارغاً لعرض كل لغة تنشرها."
 
-#: includes/class-zinn-translate-admin.php:297
+#: includes/class-zinn-translate-admin.php:300
 msgid "Name each language in its own language"
 msgstr "سمِّ كل لغة بلغتها الخاصة"
 
-#: includes/class-zinn-translate-admin.php:298
+#: includes/class-zinn-translate-admin.php:301
 msgid "Deutsch rather than German. Somebody who cannot read the current page cannot read \"German\" either."
 msgstr "الألمانية بدلاً من German. الشخص الذي لا يستطيع قراءة الصفحة الحالية لا يستطيع قراءة \"German\" أيضاً."
 
-#: includes/class-zinn-translate-admin.php:305
+#: includes/class-zinn-translate-admin.php:308
 msgid "Show flags"
 msgstr "إظهار الأعلام"
 
-#: includes/class-zinn-translate-admin.php:306
+#: includes/class-zinn-translate-admin.php:309
 msgid "Off by default: a language is not a country, and Arabic and Spanish have no single flag that does not exclude most of their speakers."
 msgstr "معطل افتراضياً: اللغة ليست دولة، وليس للغة العربية أو الإسبانية علم واحد لا يستبعد معظم المتحدثين بهما."
 
-#: includes/class-zinn-translate-admin.php:313
+#: includes/class-zinn-translate-admin.php:316
 msgid "Include the language being read"
 msgstr "تضمين اللغة التي تتم قراءتها"
 
-#: includes/class-zinn-translate-admin.php:320
+#: includes/class-zinn-translate-admin.php:323
 msgid "Include the original language"
 msgstr "تضمين اللغة الأصلية"
 
-#: includes/class-zinn-translate-admin.php:327
+#: includes/class-zinn-translate-admin.php:330
 msgid "Add it to this menu"
 msgstr "أضفه إلى هذه القائمة"
 
-#: includes/class-zinn-translate-admin.php:328
+#: includes/class-zinn-translate-admin.php:331
 msgid "Only the menu you name here. Nothing is added to any other menu on the site."
 msgstr "فقط القائمة التي تحددها هنا. لا يتم إضافتها إلى أي قائمة أخرى في الموقع."
 
-#: includes/class-zinn-translate-admin.php:378
+#: includes/class-zinn-translate-admin.php:381
 msgid "Accent"
 msgstr "اللغة المفضلة"
 
-#: includes/class-zinn-translate-admin.php:382
+#: includes/class-zinn-translate-admin.php:385
 msgid "Background"
 msgstr "الخلفية"
 
-#: includes/class-zinn-translate-admin.php:386
+#: includes/class-zinn-translate-admin.php:389
 msgid "Text"
 msgstr "النص"
 
-#: includes/class-zinn-translate-admin.php:390
+#: includes/class-zinn-translate-admin.php:393
 msgid "Corner radius"
 msgstr "نصف قطر الزاوية"
 
-#: includes/class-zinn-translate-admin.php:394
+#: includes/class-zinn-translate-admin.php:397
 msgid "Spacing"
 msgstr "تباعد"
 
-#: includes/class-zinn-translate-admin.php:398
+#: includes/class-zinn-translate-admin.php:401
 msgid "Text size"
 msgstr "حجم النص"
 
-#: includes/class-zinn-translate-admin.php:425
+#: includes/class-zinn-translate-admin.php:428
 msgid "Do not add it to a menu"
 msgstr "لا تقم بإضافته إلى القائمة"
 
-#: includes/class-zinn-translate-admin.php:480
+#: includes/class-zinn-translate-admin.php:483
 msgid "Edit any translation here. An edited translation is kept exactly as you wrote it and is never overwritten when the page is translated again."
 msgstr "قم بتعديل أي ترجمة هنا. يتم الاحتفاظ بالترجمة المعدلة تماماً كما كتبتها ولا يتم الكتابة فوقها أبدًا عند ترجمة الصفحة مرة أخرى."
 
-#: includes/class-zinn-translate-admin.php:501
+#: includes/class-zinn-translate-admin.php:504
 msgid "Every language"
 msgstr "كل لغة"
 
-#: includes/class-zinn-translate-admin.php:508
+#: includes/class-zinn-translate-admin.php:511
 msgid "Search translations"
 msgstr "بحث عن الترجمات"
 
-#: includes/class-zinn-translate-admin.php:509
+#: includes/class-zinn-translate-admin.php:512
 msgid "Filter"
 msgstr "تصفية"
 
-#: includes/class-zinn-translate-admin.php:514
+#: includes/class-zinn-translate-admin.php:517
 msgid "Content"
 msgstr "المحتوى"
 
-#: includes/class-zinn-translate-admin.php:515
+#: includes/class-zinn-translate-admin.php:518
 msgid "Language"
 msgstr "اللغة"
 
-#: includes/class-zinn-translate-admin.php:516
+#: includes/class-zinn-translate-admin.php:519
 msgid "Translation"
 msgstr "الترجمة"
 
-#: includes/class-zinn-translate-admin.php:517
+#: includes/class-zinn-translate-admin.php:520
 msgid "Status"
 msgstr "الحالة"
 
-#: includes/class-zinn-translate-admin.php:518
-#: includes/class-zinn-translate-admin.php:537
+#: includes/class-zinn-translate-admin.php:521
+#: includes/class-zinn-translate-admin.php:540
 msgid "Save"
 msgstr "حفظ"
 
-#: includes/class-zinn-translate-admin.php:523
+#: includes/class-zinn-translate-admin.php:526
 msgid "Nothing translated yet. Publish a language and translation starts in the background."
 msgstr "لم يتم ترجمة أي شيء بعد. انشر لغةً وستبدأ الترجمة في الخلفية."
 
-#: includes/class-zinn-translate-admin.php:556
+#: includes/class-zinn-translate-admin.php:559
 msgid "These addresses are live. Open any of them to check it, and submit the sitemap index to Google Search Console."
 msgstr "هذه عناوين نشطة. افتح أي منها للتحقق منها، وأرسل فهرس خريطة الموقع إلى Google Search Console."
 
-#: includes/class-zinn-translate-admin.php:577
+#: includes/class-zinn-translate-admin.php:580
 msgid "You are not allowed to edit translations on this site."
 msgstr "لا يُسمح لك بتعديل الترجمات على هذا الموقع."
 
-#: includes/class-zinn-translate-admin.php:605
+#: includes/class-zinn-translate-admin.php:608
 msgid "Edited by you — kept"
 msgstr "قام تعديلها من قبلك — تم الاحتفاظ بها"
 
-#: includes/class-zinn-translate-admin.php:607
+#: includes/class-zinn-translate-admin.php:610
 msgid "Source changed — will be redone"
 msgstr "تم تغيير المصدر — سيتم إعادته"
 
-#: includes/class-zinn-translate-admin.php:609
+#: includes/class-zinn-translate-admin.php:612
 msgid "Up to date"
 msgstr "محدّث"
 
-#: includes/class-zinn-translate-admin.php:621
-#: includes/class-zinn-translate-admin.php:622
-msgid "Zinn®"
-msgstr "Zinn®"
+#: includes/class-zinn-translate-connection.php:58
+msgid "Connected"
+msgstr "متصل"
 
-#: includes/class-zinn-translate-admin.php:719
-msgid "Who pays"
-msgstr "من يدفع"
+#: includes/class-zinn-translate-connection.php:60
+msgid "Connecting…"
+msgstr "جاري الاتصال..."
 
-#: includes/class-zinn-translate-admin.php:751
-msgid "Comma separated, for example: fr, de, ar"
-msgstr "مفصولة بفواصل، على سبيل المثال: fr, de, ar"
+#: includes/class-zinn-translate-connection.php:62
+msgid "Connected, but something needs attention"
+msgstr "متصل، ولكن هناك ما يتطلب الانتباه"
 
-#: includes/class-zinn-translate-admin.php:755
-msgid "Switcher style"
-msgstr "نمط المبدل"
+#: includes/class-zinn-translate-connection.php:64
+msgid "Not connected"
+msgstr "غير متصل"
+
+#: includes/class-zinn-translate-connection.php:66
+msgid "Running on your own account"
+msgstr "العمل على حسابك الخاص"
+
+#: includes/class-zinn-translate-connection.php:68
+msgid "We could not check this"
+msgstr "تعذر علينا التحقق من ذلك"
+
+#: includes/class-zinn-translate-connection.php:93
+msgid "This plugin did not say why. Send a diagnostics report and we will look."
+msgstr "لم يوضح هذا الملحق السبب. أرسل تقرير تشخيص وسنقوم بمراجعته."
+
+#: includes/class-zinn-translate-connection.php:161
+msgid "Connection status"
+msgstr "حالة الاتصال"
+
+#. translators: %s: a human-readable interval such as "5 minutes".
+#: includes/class-zinn-translate-connection.php:189
+#, php-format
+msgid "Last checked %s ago."
+msgstr "آخر فحص قبل %s."
+
+#: includes/class-zinn-translate-connection.php:251
+msgid "(opens in a new tab)"
+msgstr "(يفتح في علامة تبويب جديدة)"
+
+#: includes/class-zinn-translate-diagnostics.php:199
+msgid "Send this to Zinn® support"
+msgstr "أرسل هذا إلى دعم Zinn®"
+
+#: includes/class-zinn-translate-diagnostics.php:201
+msgid "This is exactly what will be sent — nothing else, and nothing hidden. Your passwords, tokens and API keys are not in it."
+msgstr "هذا تماماً ما سيتم إرساله — لا شيء غيره، ولا شيء مخفياً. كلمات المرور والرموز ومفاتيح واجهة البرمجة التطبيقية (API keys) الخاصة بك ليست متضمنة فيه."
+
+#: includes/class-zinn-translate-diagnostics.php:204
+msgid "The diagnostics report that will be sent"
+msgstr "تقرير التشخيص الذي سيتم إرساله"
+
+#: includes/class-zinn-translate-diagnostics.php:207
+msgid "Copy to clipboard"
+msgstr "نسخ إلى الحافظة"
+
+#: includes/class-zinn-translate-diagnostics.php:214
+msgid "Send this report to Zinn® support"
+msgstr "أرسل هذا التقرير إلى دعم Zinn®"
+
+#: includes/class-zinn-translate-diagnostics.php:216
+msgid "We open a support ticket for you and reply by email. If you would rather not send it, copy it above and paste it into a ticket yourself."
+msgstr "نفتح لك تذكرة دعم ونرد عليك عبر البريد الإلكتروني. إذا كنت تفضل عدم إرسالها، فقم بنسخها أعلاه ولصقها في تذكرة بنفسك."
+
+#: includes/class-zinn-translate-diagnostics.php:228
+msgid "Copied"
+msgstr "تم النسخ"
+
+#. translators: %s: the transport error reported by WordPress.
+#: includes/class-zinn-translate-diagnostics.php:274
+#, php-format
+msgid "We could not reach Zinn Digital® from this server (%s). Copy the report above and open a ticket instead — nothing about your settings is wrong."
+msgstr "تعذر علينا الوصول إلى Zinn Digital® من هذا الخادم (%s). انسخ التقرير أعلاه وافتح تذكرة بدلاً من ذلك — فليس هناك أي خطأ في إعداداتك."
+
+#: includes/class-zinn-translate-diagnostics.php:288
+msgid "Sent. Zinn® support has your report and will reply by email."
+msgstr "لقد تلقى دعم Zinn® بلاغك وسيقوم بالرد عبر البريد الإلكتروني."
+
+#. translators: %s: the support reference for the report just sent.
+#: includes/class-zinn-translate-diagnostics.php:291
+#, php-format
+msgid "Sent. Zinn® support has your report — reference %s — and will reply by email."
+msgstr "تلقى دعم Zinn® بلاغكم — الرقم المرجعي %s — وسيتم الرد عبر البريد الإلكتروني."
+
+#: includes/class-zinn-translate-diagnostics.php:300
+msgid "You have sent several reports in a short time. Wait a few minutes and try again — the earlier ones did arrive."
+msgstr "لقد أرسلت عدة تقارير في وقت قصير. انتظر بضع دقائق و حاول مرة أخرى فقد وصلتك التقارير السابقة."
+
+#: includes/class-zinn-translate-diagnostics.php:307
+msgid "Zinn Digital® could not accept the report just now — that is our end, not yours. Try again shortly, or copy the report above into a ticket."
+msgstr "تعذر على Zinn Digital® قبول التقرير في الوقت الحالي - المشكلة من جانبنا وليست من جانبك. حاول مرة أخرى قريباً، أو انسخ التقرير أعلاه في تذكرة دعم."
+
+#. translators: %d: the HTTP status code the server returned.
+#: includes/class-zinn-translate-diagnostics.php:315
+#, php-format
+msgid "The report was refused (HTTP %d). Copy it above and open a ticket, quoting that number."
+msgstr "تم رفض التقرير (HTTP %d). انسخه أعلاه وافتح تذكرة، مع ذكر هذا الرقم."
 
 #. translators: %s: the Zinn Digital trade mark, which is not translated.
 #: includes/class-zinn-translate-promo.php:241
@@ -415,22 +635,22 @@ msgstr "يعاني مزود الترجمة من مشكلة من جانبه. لم
 msgid "The translation request failed and we could not tell why. Nothing was saved."
 msgstr "فشل طلب الترجمة ولم نتمكن من معرفة السبب. لم يتم حفظ أي شيء."
 
-#: includes/class-zinn-translate-sitemap.php:130
+#: includes/class-zinn-translate-sitemap.php:139
 msgid "Sitemap index"
 msgstr "فهرس خريطة الموقع"
 
 #. translators: %s: a language name, for example "French".
-#: includes/class-zinn-translate-sitemap.php:134
+#: includes/class-zinn-translate-sitemap.php:143
 #, php-format
 msgid "%s sitemap"
 msgstr "%s خريطة الموقع"
 
-#: includes/class-zinn-translate-sitemap.php:138
+#: includes/class-zinn-translate-sitemap.php:147
 msgid "LLM content map"
 msgstr "خريطة محتوى الذكاء الاصطناعي"
 
 #. translators: %s: a language name, for example "French".
-#: includes/class-zinn-translate-sitemap.php:141
+#: includes/class-zinn-translate-sitemap.php:150
 #, php-format
 msgid "%s LLM content map"
 msgstr "%s خريطة محتوى LLM"
@@ -500,6 +720,22 @@ msgstr "تحقق من صفحة حالتهم"
 #: includes/class-zinn-translate-status.php:201
 msgid "Fix this on your account"
 msgstr "أصلح هذا في حسابك"
+
+#: includes/class-zinn-translate-style-presets.php:109
+msgid "Style preset"
+msgstr "نمط مسبق الإعداد"
+
+#: includes/class-zinn-translate-style-presets.php:110
+msgid "A starting point. Anything below overrides it."
+msgstr "نقطة بداية. أي شيء أسفلها يلغيها."
+
+#: includes/class-zinn-translate-style-presets.php:117
+msgid "Use my own colours and sizes"
+msgstr "استخدم ألواني ومقاساتي الخاصة"
+
+#: includes/class-zinn-translate-style-presets.php:118
+msgid "Leave this off and the preset is used exactly as it is."
+msgstr "اترك هذا خافتاً وسيتم استخدام الإعداد المسبق كما هو تماماً."
 
 #: includes/class-zinn-translate-switcher-widget.php:30
 msgid "Zinn® language switcher"

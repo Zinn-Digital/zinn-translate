@@ -11,7 +11,6 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: zinn-translate.php
-#: includes/class-zinn-translate-admin.php:706
 msgid "Zinn® Translate"
 msgstr "Zinn® Translate"
 
@@ -35,324 +34,541 @@ msgstr "Neil Lock — CEO, Zinn Digital® Ltd"
 msgid "https://zinndigital.com"
 msgstr "https://zinndigital.com"
 
-#: includes/class-zinn-translate-admin.php:62
-#: includes/class-zinn-translate-admin.php:632
-#: includes/class-zinn-translate-admin.php:633
+#: includes/class-zinn-translate-admin-fields.php:575
+msgid "Stored. Type a new value to replace it."
+msgstr "சேமிக்கப்பட்டது. அதை மாற்ற புதிய மதிப்பை உள்ளிடவும்."
+
+#: includes/class-zinn-translate-admin-fields.php:635
+msgid "Filter this list…"
+msgstr "இந்த பட்டியலை வடிகட்டவும்..."
+
+#: includes/class-zinn-translate-admin-fields.php:636
+msgid "Filter this list"
+msgstr "இந்த பட்டியலை வடிகட்டவும்"
+
+#: includes/class-zinn-translate-admin-fields.php:652
+msgid "Nothing matches that filter."
+msgstr "அந்த வடிப்பானுக்கு எதுவும் பொருந்தவில்லை."
+
+#: includes/class-zinn-translate-admin-fields.php:683
+msgid "Add a row"
+msgstr "ஒரு வரியைச் சேர்"
+
+#: includes/class-zinn-translate-admin-fields.php:720
+msgid "Remove this row"
+msgstr "இந்த வரிசையை அகற்று"
+
+#: includes/class-zinn-translate-admin-fields.php:720
+msgid "Remove"
+msgstr "நீக்கு"
+
+#: includes/class-zinn-translate-admin-ui.php:264
+#: includes/class-zinn-translate-admin-ui.php:265
+#: includes/class-zinn-translate-admin-ui.php:335
+msgid "Zinn Digital®"
+msgstr "Zinn Digital®"
+
+#: includes/class-zinn-translate-admin-ui.php:278
+msgid "Zinn Digital® — overview"
+msgstr "Zinn Digital® — கண்ணோட்டம்"
+
+#: includes/class-zinn-translate-admin-ui.php:279
+msgid "Overview"
+msgstr "கண்ணோட்டம்"
+
+#: includes/class-zinn-translate-admin-ui.php:336
+msgid "Every Zinn® plugin on this site, and whether it is working."
+msgstr "இந்தத் தளத்தில் உள்ள ஒவ்வொரு Zinn® செருகுநிரலும், அது இயங்குகிறதா இல்லையா என்பதும்."
+
+#: includes/class-zinn-translate-admin-ui.php:352
+msgid "No connection is needed for this plugin."
+msgstr "இந்த செருகுநிரலுக்கு எந்த இணைப்பும் தேவையில்லை."
+
+#: includes/class-zinn-translate-admin-ui.php:357
+msgid "Open settings"
+msgstr "அமைப்புகளைத் திறக்கவும்"
+
+#: includes/class-zinn-translate-admin-ui.php:685
+#: includes/class-zinn-translate-admin-ui.php:1248
+msgid "You do not have permission to change these settings."
+msgstr "இந்த அமைப்புகளை மாற்றுவதற்கு உங்களுக்கு அனுமதி இல்லை."
+
+#: includes/class-zinn-translate-admin-ui.php:715
+msgid "Settings sections"
+msgstr "அமைப்புப் பிரிவுகள்"
+
+#: includes/class-zinn-translate-admin-ui.php:788
+msgid "Support"
+msgstr "ஆதரவு"
+
+#: includes/class-zinn-translate-admin-ui.php:846
+msgid "Save changes"
+msgstr "மாற்றங்களைச் சேமிக்கவும்"
+
+#: includes/class-zinn-translate-admin-ui.php:875
+msgid "Tools"
+msgstr "கருவிகள்"
+
+#: includes/class-zinn-translate-admin-ui.php:890
+msgid "Export settings"
+msgstr "அமைப்புகளை ஏற்றுமதி செய்க"
+
+#: includes/class-zinn-translate-admin-ui.php:893
+msgid "Reset to defaults"
+msgstr "இயல்புநிலைகளுக்கு மீட்டமைக்கவும்"
+
+#: includes/class-zinn-translate-admin-ui.php:894
+msgid "This puts every setting on this plugin back to its default. Continue?"
+msgstr "இது இந்த செருகுநிரலின் ஒவ்வொரு அமைப்பையும் அதன் இயல்புநிலைக்குத் திரும்பச் செய்யும். தொடரவா?"
+
+#: includes/class-zinn-translate-admin-ui.php:901
+msgid "Diagnostics for support"
+msgstr "ஆதரவுக்கான கண்டறிதல்கள்"
+
+#: includes/class-zinn-translate-admin-ui.php:910
+msgid "Import a settings file"
+msgstr "அமைப்புகள் கோப்பை இறக்குமதி செய்"
+
+#: includes/class-zinn-translate-admin-ui.php:912
+msgid "Import"
+msgstr "இறக்குமதி செய்"
+
+#: includes/class-zinn-translate-admin-ui.php:914
+msgid "Exported files never contain passwords, tokens or API keys — you will need to enter those again on the new site."
+msgstr "ஏற்றுமதி செய்யப்பட்ட கோப்புகளில் கடவுச்சொற்கள், டோக்கன்கள் அல்லது API விசைகள் எப்போதுமே இருக்காது — புதிய தளத்தில் அவற்றை நீங்கள் மீண்டும் உள்ளிட வேண்டும்."
+
+#: includes/class-zinn-translate-admin-ui.php:1013
+msgid "Settings saved."
+msgstr "அமைப்புகள் சேமிக்கப்பட்டன."
+
+#: includes/class-zinn-translate-admin-ui.php:1060
+msgid "Every setting on this plugin is back to its default."
+msgstr "இந்த செருகுநிறைவில் உள்ள அனைத்து அமைப்புகளும் அவற்றின் இயல்புநிலைக்குத் திரும்பியுள்ளன."
+
+#: includes/class-zinn-translate-admin-ui.php:1103
+msgid "Done."
+msgstr "முடிந்தது."
+
+#: includes/class-zinn-translate-admin-ui.php:1107
+msgid "That action is not available."
+msgstr "அந்தச் செயல்பாடு கிடைக்கவில்லை."
+
+#: includes/class-zinn-translate-admin-ui.php:1174
+msgid "That file could not be read. Choose a settings file exported from a Zinn® plugin."
+msgstr "அந்த கோப்பைப் படிக்க முடியவில்லை. Zinn® செருகுநிரலிலிருந்து ஏற்றுமதி செய்யப்பட்ட அமைப்புகள் கோப்பைத் தேர்ந்தெடுக்கவும்."
+
+#: includes/class-zinn-translate-admin-ui.php:1182
+msgid "That file is too large to be a settings export."
+msgstr "அந்தக் கோப்பு அமைப்புகளின் ஏற்றுமதிக்கு மிகவும் பெரியது."
+
+#: includes/class-zinn-translate-admin-ui.php:1195
+msgid "That file is not a Zinn® settings export."
+msgstr "அந்தக் கோப்பு Zinn® அமைப்புகளின் ஏற்றுமதி அல்ல."
+
+#. translators: %s: the plugin slug the file was exported from.
+#: includes/class-zinn-translate-admin-ui.php:1203
+#, php-format
+msgid "That file was exported from a different plugin (%s), so importing it here would store settings this plugin does not understand."
+msgstr "அந்தக் கோப்பு வேறொரு செருகுநிரலிலிருந்து (%s) ஏற்றுமதி செய்யப்பட்டது, எனவே அதை இங்கே இறக்குமதி செய்வது இந்த செருகுநிரலுக்குப் புரியாத அமைப்புகளைச் சேமிக்கும்."
+
+#. translators: %d: how many settings were imported.
+#: includes/class-zinn-translate-admin-ui.php:1233
+#, php-format
+msgid "%d setting imported. Passwords and API keys are never in an export, so enter those again."
+msgid_plural "%d settings imported. Passwords and API keys are never in an export, so enter those again."
+msgstr[0] "%d அமைப்பு இறக்குமதி செய்யப்பட்டது. கடவுச்சொற்கள் மற்றும் API விசைகள் ஒருபோதும் ஏற்றுமதியில் இருக்காது, எனவே அவற்றை மீண்டும் உள்ளிடவும்."
+msgstr[1] "%d அமைப்புகள் இறக்குமதி செய்யப்பட்டன. கடவுச்சொற்களும் API சாவிகளும் ஒருபோதும் ஏற்றுமதியில் இருக்காது, எனவே அவற்றை மீண்டும் உள்ளிடவும்."
+
+#: includes/class-zinn-translate-admin.php:65
 msgid "Translate"
 msgstr "மொழிபெயர்க்கவும்"
 
-#: includes/class-zinn-translate-admin.php:76
-#: includes/class-zinn-translate-admin.php:767
+#: includes/class-zinn-translate-admin.php:79
 msgid "Manual overrides"
 msgstr "கைமுறை மீறல்கள்"
 
-#: includes/class-zinn-translate-admin.php:81
-#: includes/class-zinn-translate-admin.php:769
+#: includes/class-zinn-translate-admin.php:84
 msgid "Sitemaps and URLs"
 msgstr "தள வரைபடங்களும் URLகளும்"
 
-#: includes/class-zinn-translate-admin.php:111
+#: includes/class-zinn-translate-admin.php:114
 msgid "General"
 msgstr "பொதுவானவை"
 
-#: includes/class-zinn-translate-admin.php:116
+#: includes/class-zinn-translate-admin.php:119
 msgid "Who pays for the translation"
 msgstr "மொழிபெயர்ப்புக்கு யாார் பணம் செலுத்துவது"
 
-#: includes/class-zinn-translate-admin.php:117
+#: includes/class-zinn-translate-admin.php:120
 msgid "Either your Zinn Digital® plan, or an API key of your own. There is no free tier — somebody pays a provider for every word."
 msgstr "உங்கள் Zinn Digital® திட்டம் அல்லது உங்களுடைய சொந்த API விசை. இலவச அடுக்கு எதுவும் இல்லை — ஒவ்வொரு வார்த்தைக்கும் ஒரு வழங்குநருக்கு யாராவது கட்டணம் செலுத்த வேண்டும்."
 
-#: includes/class-zinn-translate-admin.php:120
-#: includes/class-zinn-translate-admin.php:721
+#: includes/class-zinn-translate-admin.php:123
 msgid "My Zinn Digital® plan"
 msgstr "எனது Zinn Digital® திட்டம்"
 
-#: includes/class-zinn-translate-admin.php:121
-#: includes/class-zinn-translate-admin.php:722
+#: includes/class-zinn-translate-admin.php:124
 msgid "My own provider key"
 msgstr "எனது சொந்த வழங்குநர் விசை"
 
-#: includes/class-zinn-translate-admin.php:128
-#: includes/class-zinn-translate-admin.php:726
+#: includes/class-zinn-translate-admin.php:131
 msgid "Site ID"
 msgstr "தளம் ஐடி"
 
-#: includes/class-zinn-translate-admin.php:129
+#: includes/class-zinn-translate-admin.php:132
 msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
 msgstr "உங்கள் Zinn Digital® டாஷ்போர்டில், இந்தத் தளத்தின் மொழிபெயர்ப்பு தாவலில்."
 
-#: includes/class-zinn-translate-admin.php:136
-#: includes/class-zinn-translate-admin.php:730
+#: includes/class-zinn-translate-admin.php:139
 msgid "Site token"
 msgstr "தள டோக்கன்"
 
-#: includes/class-zinn-translate-admin.php:144
-#: includes/class-zinn-translate-admin.php:734
+#: includes/class-zinn-translate-admin.php:147
 msgid "Provider"
 msgstr "வழங்குநர்"
 
-#: includes/class-zinn-translate-admin.php:154
-#: includes/class-zinn-translate-admin.php:744
+#: includes/class-zinn-translate-admin.php:157
 msgid "API key"
 msgstr "API விசை"
 
-#: includes/class-zinn-translate-admin.php:155
+#: includes/class-zinn-translate-admin.php:158
 msgid "Your key, billed to you by the provider. It is stored on this site and sent only to them."
 msgstr "உங்கள் விநியோகஸ்தரால் உங்களுக்குப் பற்று வைக்கப்படும் உங்கள் திறவுகோல். இது இந்தத் தளத்தில் சேமிக்கப்பட்டு அவர்களுக்கு மட்டுமே அனுப்பப்படும்."
 
-#: includes/class-zinn-translate-admin.php:163
+#: includes/class-zinn-translate-admin.php:166
 msgid "Model"
 msgstr "மாதிரி"
 
-#: includes/class-zinn-translate-admin.php:164
+#: includes/class-zinn-translate-admin.php:167
 msgid "Leave empty for the cheapest model that does the job well."
 msgstr "வேலையைச் சரியாகச் செய்யும் மிகவும் மலிவான மாடலுக்கு காலியாக விடவும்."
 
-#: includes/class-zinn-translate-admin.php:171
+#: includes/class-zinn-translate-admin.php:174
 msgid "This site is written in"
 msgstr "இந்தத் தளம் எழுதப்பட்ட மொழி"
 
-#: includes/class-zinn-translate-admin.php:172
+#: includes/class-zinn-translate-admin.php:175
 msgid "Leave empty to use the site language from WordPress settings."
 msgstr "WordPress அமைப்புகளst உள்ள தளத்தின் மொழியைப் பயன்படுத்த காலியாக விட்டுவிடவும்."
 
-#: includes/class-zinn-translate-admin.php:180
-#: includes/class-zinn-translate-admin.php:748
+#: includes/class-zinn-translate-admin.php:183
 msgid "Languages to publish"
 msgstr "வெளியிட வேண்டிய மொழிகள்"
 
-#: includes/class-zinn-translate-admin.php:181
+#: includes/class-zinn-translate-admin.php:184
 msgid "Each one gets its own web addresses and its own sitemap. Publish only the languages you want indexed."
 msgstr "ஒவ்வொன்றுக்கும் அதன் சொந்த வலை முகவரிகளும் அதன் சொந்த தள வரைபடமும் கிடைக்கும். நீங்கள் குறியிடப்பட விரும்பும் மொழிகளை மட்டும் வெளியிடவும்."
 
-#: includes/class-zinn-translate-admin.php:188
+#: includes/class-zinn-translate-admin.php:191
 msgid "Translate automatically when I publish or update"
 msgstr "நான் வெளியிடும்போது அல்லது புதுப்பிக்கும்போது தானாகவே மொழிபெயர்க்கவும்"
 
-#: includes/class-zinn-translate-admin.php:189
+#: includes/class-zinn-translate-admin.php:192
 msgid "Editing a page marks its translations out of date and they are remade in the background. Editing without changing any words costs nothing."
 msgstr "ஒரு பக்கத்தைத் திருத்துவது அதன் மொழிபெயர்ப்புகளை காலாவதியானதாகக் குறிக்கும் மற்றும் அவை பின்னணியில் மீண்டும் உருவாக்கப்படும். சொற்களை மாற்றாமல் திருத்துவது எந்தச் செலவும் இல்லை."
 
-#: includes/class-zinn-translate-admin.php:196
+#: includes/class-zinn-translate-admin.php:199
 msgid "What gets translated"
 msgstr "எது மொழிபெயர்க்கப்படுகிறது"
 
-#: includes/class-zinn-translate-admin.php:201
+#: includes/class-zinn-translate-admin.php:204
 msgid "Post types"
 msgstr "பதிவு வகைகள்"
 
-#: includes/class-zinn-translate-admin.php:209
+#: includes/class-zinn-translate-admin.php:212
 msgid "Translate the web addresses too"
 msgstr "வலை முகவரிகளையும் மொழிபெயர்க்கவும்"
 
-#: includes/class-zinn-translate-admin.php:210
+#: includes/class-zinn-translate-admin.php:213
 msgid "French visitors get /fr/a-propos/ rather than /fr/about/. The untranslated address keeps working and redirects, so nothing that was indexed breaks."
 msgstr "பிரெஞ்சு பார்வையாளர்கள் /fr/about/ என்பதற்குப் பதிலாக /fr/a-propos/ ஐப் பெறுகின்றன. மொழிபெயர்க்கப்படாத முகவரி தொடர்ந்து செயல்படும் மற்றும் திசைதிருப்பப்படும், எனவே குறியிடப்பட்ட எதுவும் உடைந்து போகாது."
 
-#: includes/class-zinn-translate-admin.php:217
+#: includes/class-zinn-translate-admin.php:220
 msgid "Translate SEO titles, descriptions and image alt text"
 msgstr "SEO தலைப்புகள், விளக்கங்கள் மற்றும் பட ஆல்ட் உரையை (alt text) மொழிபெயர்க்கவும்"
 
-#: includes/class-zinn-translate-admin.php:224
+#: includes/class-zinn-translate-admin.php:227
 msgid "Translate categories and tags"
 msgstr "பகுப்புகள் மற்றும் குறிச்சொற்களை மொழிபெயர்"
 
-#: includes/class-zinn-translate-admin.php:231
+#: includes/class-zinn-translate-admin.php:234
 msgid "Translate navigation menus"
 msgstr "வழிசெலுத்தல் மெனுக்களை மொழிபெயர்க்கவும்"
 
-#: includes/class-zinn-translate-admin.php:238
+#: includes/class-zinn-translate-admin.php:241
 msgid "Translate WooCommerce products and attributes"
 msgstr "WooCommerce தயாரிப்புகளையும் பண்புகளையும் மொழிபெயர்க்கவும்"
 
-#: includes/class-zinn-translate-admin.php:239
+#: includes/class-zinn-translate-admin.php:242
 msgid "Short descriptions, purchase notes, attribute labels and variation descriptions. Prices, SKUs and stored option values are never touched."
 msgstr "குறும் விளக்கங்கள், வாங்கும் குறிப்புகள், பண்புக் குறிச்சொற்கள் மற்றும் மாறுபாடு விளக்கங்கள். விலைகள், SKUகள் மற்றும் சேமிக்கப்பட்ட விருப்ப மதிப்புகள் ஒருபோதும் தொடப்படாது."
 
-#: includes/class-zinn-translate-admin.php:246
+#: includes/class-zinn-translate-admin.php:249
 msgid "SEO"
 msgstr "SEO"
 
-#: includes/class-zinn-translate-admin.php:251
+#: includes/class-zinn-translate-admin.php:254
 msgid "Add hreflang tags"
 msgstr "hreflang குறிச்சொற்களைச் சேர்"
 
-#: includes/class-zinn-translate-admin.php:252
+#: includes/class-zinn-translate-admin.php:255
 msgid "Tells search engines these pages are the same page in different languages. Leave this on unless another plugin is already doing it."
 msgstr "தேடு பொறிகளுக்கு இந்தப் பக்கங்கள் வெவ்வேறு மொழிகளில் உள்ள ஒரே பக்கங்கள் என்பதை இது தெரிவிக்கிறது. மற்றொரு செருகுநிரல் ஏற்கனவே இதைச் செய்யவில்லை என்றால், இதை இயக்கத்தில் விடவும்."
 
-#: includes/class-zinn-translate-admin.php:259
+#: includes/class-zinn-translate-admin.php:262
 msgid "Publish a sitemap for each language"
 msgstr "ஒவ்வொரு மொழிக்கும் ஒரு தளவரைபடத்தை (sitemap) வெளியிடவும்"
 
-#: includes/class-zinn-translate-admin.php:266
+#: includes/class-zinn-translate-admin.php:269
 msgid "Publish llms.txt for each language"
 msgstr "ஒவ்வொரு மொழிக்கும் llms.txt கோப்பை வெளியிடவும்"
 
-#: includes/class-zinn-translate-admin.php:267
+#: includes/class-zinn-translate-admin.php:270
 msgid "A plain-text map of the site that AI answer engines read. They often cannot run JavaScript and may never fetch a sitemap."
 msgstr "AI பதில் பொறிகள் படிக்கும் தளத்தின் எளிய உரை வரைபடம். அவை பெரும்பாலும் ஜாவாஸ்கிரிப்டை இயக்க முடியாது மற்றும் தளவரைபடத்தை ஒருபோதும் பெறாமல் போகலாம்."
 
-#: includes/class-zinn-translate-admin.php:274
+#: includes/class-zinn-translate-admin.php:277
 #: includes/class-zinn-translate-switcher.php:135
 msgid "Language switcher"
 msgstr "மொழி மாற்றி"
 
-#: includes/class-zinn-translate-admin.php:279
+#: includes/class-zinn-translate-admin.php:282
 #: includes/class-zinn-translate-switcher-widget.php:83
 msgid "Style"
 msgstr "பாணி"
 
-#: includes/class-zinn-translate-admin.php:282
+#: includes/class-zinn-translate-admin.php:285
 msgid "Colours, spacing and corners are on the Styling tab. Place it with the block, the [zinn_language_switcher] shortcode, or a menu."
 msgstr "வண்ணங்கள், இடைவெளி மற்றும் மூலைகள் ஆகியவை Styling தாவலில் உள்ளன. தொகுதி, [zinn_language_switcher] ஷார்ட்கோட் அல்லது மெனு மூலம் அதை வைக்கவும்."
 
-#: includes/class-zinn-translate-admin.php:289
+#: includes/class-zinn-translate-admin.php:292
 msgid "Show only these languages"
 msgstr "இந்த மொழிகளை மட்டும் காட்டுங்கள்"
 
-#: includes/class-zinn-translate-admin.php:290
+#: includes/class-zinn-translate-admin.php:293
 msgid "Leave empty to show every language you publish."
 msgstr "நீங்கள் வெளியிடும் ஒவ்வொரு மொழியையும் காட்ட காலியாக விடவும்."
 
-#: includes/class-zinn-translate-admin.php:297
+#: includes/class-zinn-translate-admin.php:300
 msgid "Name each language in its own language"
 msgstr "ஒவ்வொரு மொழியையும் அதன் சொந்த மொழியிலேயே பெயரிடவும்"
 
-#: includes/class-zinn-translate-admin.php:298
+#: includes/class-zinn-translate-admin.php:301
 msgid "Deutsch rather than German. Somebody who cannot read the current page cannot read \"German\" either."
 msgstr "ஜெர்மன் என்பதற்கு பதிலாக டாய்ச். தற்போதைய பக்கத்தைப் படிக்க முடியாத எவராலும் \"ஜெர்மன்\" என்பதையும் படிக்க முடியாது."
 
-#: includes/class-zinn-translate-admin.php:305
+#: includes/class-zinn-translate-admin.php:308
 msgid "Show flags"
 msgstr "கொடிளைக் காட்டுங்கள்"
 
-#: includes/class-zinn-translate-admin.php:306
+#: includes/class-zinn-translate-admin.php:309
 msgid "Off by default: a language is not a country, and Arabic and Spanish have no single flag that does not exclude most of their speakers."
 msgstr "இயல்பாகவே அணைக்கப்பட்டுள்ளது: ஒரு மொழி என்பது ஒரு நாடு அல்ல, மேலும் அரபு மற்றும் ஸ்பானிஷ் மொழிகளுக்கு அவற்றின் பெரும்பான்மையான பேசுபவர்களை விலக்காத ஒற்றைக் கொடி எதுவும் இல்லை."
 
-#: includes/class-zinn-translate-admin.php:313
+#: includes/class-zinn-translate-admin.php:316
 msgid "Include the language being read"
 msgstr "படிக்கப்படும் மொழியைச் சேர்க்கவும்"
 
-#: includes/class-zinn-translate-admin.php:320
+#: includes/class-zinn-translate-admin.php:323
 msgid "Include the original language"
 msgstr "அசல் மொழியைச் சேருங்கள்"
 
-#: includes/class-zinn-translate-admin.php:327
+#: includes/class-zinn-translate-admin.php:330
 msgid "Add it to this menu"
 msgstr "இந்த மெனுவில் இதைச் சேர்க்கவும்"
 
-#: includes/class-zinn-translate-admin.php:328
+#: includes/class-zinn-translate-admin.php:331
 msgid "Only the menu you name here. Nothing is added to any other menu on the site."
 msgstr "நீங்கள் இங்கு பெயரிடும் பட்டி மட்டுமே. தளத்தில் உள்ள வேறு எந்த பட்டியிலும் எதுவும் சேர்க்கப்படாது."
 
-#: includes/class-zinn-translate-admin.php:378
+#: includes/class-zinn-translate-admin.php:381
 msgid "Accent"
 msgstr "வண்ணக் கூறு"
 
-#: includes/class-zinn-translate-admin.php:382
+#: includes/class-zinn-translate-admin.php:385
 msgid "Background"
 msgstr "பின்புலம்"
 
-#: includes/class-zinn-translate-admin.php:386
+#: includes/class-zinn-translate-admin.php:389
 msgid "Text"
 msgstr "உரை"
 
-#: includes/class-zinn-translate-admin.php:390
+#: includes/class-zinn-translate-admin.php:393
 msgid "Corner radius"
 msgstr "மூலை ஆரம்"
 
-#: includes/class-zinn-translate-admin.php:394
+#: includes/class-zinn-translate-admin.php:397
 msgid "Spacing"
 msgstr "இடைவெளி"
 
-#: includes/class-zinn-translate-admin.php:398
+#: includes/class-zinn-translate-admin.php:401
 msgid "Text size"
 msgstr "உரை அளவு"
 
-#: includes/class-zinn-translate-admin.php:425
+#: includes/class-zinn-translate-admin.php:428
 msgid "Do not add it to a menu"
 msgstr "மெனுவில் அதைச் சேர்க்க வேண்டாம்"
 
-#: includes/class-zinn-translate-admin.php:480
+#: includes/class-zinn-translate-admin.php:483
 msgid "Edit any translation here. An edited translation is kept exactly as you wrote it and is never overwritten when the page is translated again."
 msgstr "இங்கே எந்தவொரு மொழிபெயர்ப்பையும் திருத்திக் கொள்ளலாம். நீங்கள் திருத்திய மொழிபெயர்ப்பு நீங்கள் எழுதியபடியே பாதுகாக்கப்படும், மேலும் பக்கம் மீண்டும் மொழிபெயர்க்கப்படும்போது அது எப்போதுமே மேலெழுதப்படாது."
 
-#: includes/class-zinn-translate-admin.php:501
+#: includes/class-zinn-translate-admin.php:504
 msgid "Every language"
 msgstr "ஒவ்வொரு மொழியும்"
 
-#: includes/class-zinn-translate-admin.php:508
+#: includes/class-zinn-translate-admin.php:511
 msgid "Search translations"
 msgstr "மொழிபெயர்ப்புகளைத் தேடுங்கள்"
 
-#: includes/class-zinn-translate-admin.php:509
+#: includes/class-zinn-translate-admin.php:512
 msgid "Filter"
 msgstr "வடிகட்டு"
 
-#: includes/class-zinn-translate-admin.php:514
+#: includes/class-zinn-translate-admin.php:517
 msgid "Content"
 msgstr "உள்ளடக்கம்"
 
-#: includes/class-zinn-translate-admin.php:515
+#: includes/class-zinn-translate-admin.php:518
 msgid "Language"
 msgstr "மொழி"
 
-#: includes/class-zinn-translate-admin.php:516
+#: includes/class-zinn-translate-admin.php:519
 msgid "Translation"
 msgstr "மொழிபெயர்ப்பு"
 
-#: includes/class-zinn-translate-admin.php:517
+#: includes/class-zinn-translate-admin.php:520
 msgid "Status"
 msgstr "நிலை"
 
-#: includes/class-zinn-translate-admin.php:518
-#: includes/class-zinn-translate-admin.php:537
+#: includes/class-zinn-translate-admin.php:521
+#: includes/class-zinn-translate-admin.php:540
 msgid "Save"
 msgstr "சேமி"
 
-#: includes/class-zinn-translate-admin.php:523
+#: includes/class-zinn-translate-admin.php:526
 msgid "Nothing translated yet. Publish a language and translation starts in the background."
 msgstr "எதுவும் இன்னும் மொழிபெயர்க்கப்படவில்லை. ஒரு மொழியை வெளியிடவும், பின்புலத்தில் மொழிபெயர்ப்பு தொடங்கும்."
 
-#: includes/class-zinn-translate-admin.php:556
+#: includes/class-zinn-translate-admin.php:559
 msgid "These addresses are live. Open any of them to check it, and submit the sitemap index to Google Search Console."
 msgstr "இந்த முகவரிகள் நேரலைகளில் உள்ளன. அவற்றைச் சரிபார்க்க ஏதேனும் ஒன்றைத் திறந்து, சைட்மேப் இண்டெக்ஸை Google Search Console-க்குச் சமர்ப்பிக்கவும்."
 
-#: includes/class-zinn-translate-admin.php:577
+#: includes/class-zinn-translate-admin.php:580
 msgid "You are not allowed to edit translations on this site."
 msgstr "இந்தத் தளத்தில் மொழிபெயர்ப்புகளைத் திருத்த உங்களுக்கு அனுமதி இல்லை."
 
-#: includes/class-zinn-translate-admin.php:605
+#: includes/class-zinn-translate-admin.php:608
 msgid "Edited by you — kept"
 msgstr "உங்களால் திருத்தப்பட்டது — தக்கவைக்கப்பட்டது"
 
-#: includes/class-zinn-translate-admin.php:607
+#: includes/class-zinn-translate-admin.php:610
 msgid "Source changed — will be redone"
 msgstr "மூலம் மாற்றப்பட்டது — மீண்டும் செய்யப்படும்"
 
-#: includes/class-zinn-translate-admin.php:609
+#: includes/class-zinn-translate-admin.php:612
 msgid "Up to date"
 msgstr "புதுப்பிக்கப்பட்டது"
 
-#: includes/class-zinn-translate-admin.php:621
-#: includes/class-zinn-translate-admin.php:622
-msgid "Zinn®"
-msgstr "Zinn®"
+#: includes/class-zinn-translate-connection.php:58
+msgid "Connected"
+msgstr "இணைக்கப்பட்டுள்ளது"
 
-#: includes/class-zinn-translate-admin.php:719
-msgid "Who pays"
-msgstr "யார் செலுத்துகிறார்கள்"
+#: includes/class-zinn-translate-connection.php:60
+msgid "Connecting…"
+msgstr "இணைக்கிறது…"
 
-#: includes/class-zinn-translate-admin.php:751
-msgid "Comma separated, for example: fr, de, ar"
-msgstr "கமா (Comma) மூலம் பிரிக்கப்பட்டவை, உதாரணமாக: fr, de, ar"
+#: includes/class-zinn-translate-connection.php:62
+msgid "Connected, but something needs attention"
+msgstr "இணைக்கப்பட்டுள்ளது, ஆனால் எதையோ கவனிக்க வேண்டும்"
 
-#: includes/class-zinn-translate-admin.php:755
-msgid "Switcher style"
-msgstr "ஸ்விட்சர் நடை"
+#: includes/class-zinn-translate-connection.php:64
+msgid "Not connected"
+msgstr "இணைக்கப்படவில்லை"
+
+#: includes/class-zinn-translate-connection.php:66
+msgid "Running on your own account"
+msgstr "உங்கள் சொந்தக் கணக்கில் இயங்குகிறது"
+
+#: includes/class-zinn-translate-connection.php:68
+msgid "We could not check this"
+msgstr "இதைச் சரிபார்க்க முடியவில்லை"
+
+#: includes/class-zinn-translate-connection.php:93
+msgid "This plugin did not say why. Send a diagnostics report and we will look."
+msgstr "இந்த செருகுநிறைக்கான காரணம் தெரிவிக்கப்படவில்லை. கண்டறிதல் அறிக்கையை அனுப்பவும், நாங்கள் பரிசீலிக்கிறோம்."
+
+#: includes/class-zinn-translate-connection.php:161
+msgid "Connection status"
+msgstr "இணைப்பு நிலை"
+
+#. translators: %s: a human-readable interval such as "5 minutes".
+#: includes/class-zinn-translate-connection.php:189
+#, php-format
+msgid "Last checked %s ago."
+msgstr "கடைசியாக %s முன்பு சரிபார்க்கப்பட்டது."
+
+#: includes/class-zinn-translate-connection.php:251
+msgid "(opens in a new tab)"
+msgstr "(புதிய தாவலில் திறக்கும்)"
+
+#: includes/class-zinn-translate-diagnostics.php:199
+msgid "Send this to Zinn® support"
+msgstr "Zinn® ஆதரவுப் பிரிவுக்கு இதை அனுப்பவும்"
+
+#: includes/class-zinn-translate-diagnostics.php:201
+msgid "This is exactly what will be sent — nothing else, and nothing hidden. Your passwords, tokens and API keys are not in it."
+msgstr "இதுதான் சரியாக அனுப்பப்படும் — வேறு எதுவும் இல்லை, மறைக்கப்பட்டதும் இல்லை. உங்கள் கடவுச்சொற்கள், டோக்கன்கள் மற்றும் API விசைகள் இதில் இல்லை."
+
+#: includes/class-zinn-translate-diagnostics.php:204
+msgid "The diagnostics report that will be sent"
+msgstr "அனுப்பப்படும் கண்டறிதல் அறிக்கை"
+
+#: includes/class-zinn-translate-diagnostics.php:207
+msgid "Copy to clipboard"
+msgstr "கிளிப்போர்டுக்கு நகலெடு"
+
+#: includes/class-zinn-translate-diagnostics.php:214
+msgid "Send this report to Zinn® support"
+msgstr "இந்த அறிக்கையை Zinn® ஆதரவுக்கு அனுப்பவும்"
+
+#: includes/class-zinn-translate-diagnostics.php:216
+msgid "We open a support ticket for you and reply by email. If you would rather not send it, copy it above and paste it into a ticket yourself."
+msgstr "நாங்கள் உங்களுக்காக ஒரு ஆதரவுச் சீட்டைத் திறந்து மின்னஞ்சல் மூலம் பதிலளிப்போம். இதை அனுப்ப விரும்பவில்லை என்றால், மேலே உள்ளதை நகலெடுத்து நீங்களே ஒரு சீட்டில் ஒட்டவும்."
+
+#: includes/class-zinn-translate-diagnostics.php:228
+msgid "Copied"
+msgstr "நகலெடுக்கப்பட்டது"
+
+#. translators: %s: the transport error reported by WordPress.
+#: includes/class-zinn-translate-diagnostics.php:274
+#, php-format
+msgid "We could not reach Zinn Digital® from this server (%s). Copy the report above and open a ticket instead — nothing about your settings is wrong."
+msgstr "இந்தச் சேவையகத்திலிருந்து (%s) Zinn Digital®-ஐ எங்களால் அடைய முடியவில்லை. மேலே உள்ள அறிக்கையை நகலெடுத்து அதற்குப் பதிலாக ஒரு டிக்கைத் திறக்கவும் — உங்கள் அமைப்புகளில் எதுவும் தவறில்லை."
+
+#: includes/class-zinn-translate-diagnostics.php:288
+msgid "Sent. Zinn® support has your report and will reply by email."
+msgstr "Sent. Zinn® ஆதரவு உங்கள் அறிக்கையைப் பெற்றுள்ளது, மேலும் மின்னஞ்சல் மூலம் பதிலளிக்கும்."
+
+#. translators: %s: the support reference for the report just sent.
+#: includes/class-zinn-translate-diagnostics.php:291
+#, php-format
+msgid "Sent. Zinn® support has your report — reference %s — and will reply by email."
+msgstr "Zinn® ஆதரவு உங்கள் அறிக்கையைப் பெற்றுள்ளது — குறிப்பு %s — மற்றும் மின்னஞ்சல் மூலம் பதிலளிக்கும்."
+
+#: includes/class-zinn-translate-diagnostics.php:300
+msgid "You have sent several reports in a short time. Wait a few minutes and try again — the earlier ones did arrive."
+msgstr "நீங்கள் குறுகிய காலத்தில் பல அறிக்கைகளை அனுப்பியுள்ளீர்கள். சில நிமிடங்கள் காத்திருந்து மீண்டும் முயற்சிக்கவும் — முந்தையவை வந்து சேர்ந்துவிட்டன."
+
+#: includes/class-zinn-translate-diagnostics.php:307
+msgid "Zinn Digital® could not accept the report just now — that is our end, not yours. Try again shortly, or copy the report above into a ticket."
+msgstr "Zinn Digital® தற்சமயம் அறிக்கையை ஏற்றுக்கொள்ள முடியவில்லை — இது உங்கள் முனையிலிருந்து அல்ல, எங்கள் முனையிலிருந்து ஏற்பட்ட பிழை. சிறிது நேரத்திற்குப் பிறகு மீண்டும் முயற்சிக்கவும், அல்லது மேற்கண்ட அறிக்கையை ஒரு டிக்கெட்டில் நகலெடுக்கவும்."
+
+#. translators: %d: the HTTP status code the server returned.
+#: includes/class-zinn-translate-diagnostics.php:315
+#, php-format
+msgid "The report was refused (HTTP %d). Copy it above and open a ticket, quoting that number."
+msgstr "அறிக்கை மறுக்கப்பட்டது (HTTP %d). அதை மேலே நகலெடுத்து, அந்த எண்ணைக் குறிப்பிட்டு ஒரு டிக்கெட் திறக்கவும்."
 
 #. translators: %s: the Zinn Digital trade mark, which is not translated.
 #: includes/class-zinn-translate-promo.php:241
@@ -415,22 +631,22 @@ msgstr "மொழிபெயர்ப்பு வழங்குநர் த�
 msgid "The translation request failed and we could not tell why. Nothing was saved."
 msgstr "மொழிபெயர்ப்பு கோரிக்கை தோல்வியடைந்தது, அதற்கான காரணத்தை எங்களால் கண்டறிய முடியவில்லை. எதுவும் சேமிக்கப்படவில்லை."
 
-#: includes/class-zinn-translate-sitemap.php:130
+#: includes/class-zinn-translate-sitemap.php:139
 msgid "Sitemap index"
 msgstr "தள வரைபட அட்டவணை"
 
 #. translators: %s: a language name, for example "French".
-#: includes/class-zinn-translate-sitemap.php:134
+#: includes/class-zinn-translate-sitemap.php:143
 #, php-format
 msgid "%s sitemap"
 msgstr "%s தளவரைபடம்"
 
-#: includes/class-zinn-translate-sitemap.php:138
+#: includes/class-zinn-translate-sitemap.php:147
 msgid "LLM content map"
 msgstr "LLM உள்ளடக்க வரைபடம்"
 
 #. translators: %s: a language name, for example "French".
-#: includes/class-zinn-translate-sitemap.php:141
+#: includes/class-zinn-translate-sitemap.php:150
 #, php-format
 msgid "%s LLM content map"
 msgstr "%s LLM உள்ளடக்க வரைபடம்"
@@ -500,6 +716,22 @@ msgstr "அவர்களின் நிலை பக்கத்தைச் 
 #: includes/class-zinn-translate-status.php:201
 msgid "Fix this on your account"
 msgstr "உங்கள் கணக்கில் இதைச் சரிசெய்யவும்"
+
+#: includes/class-zinn-translate-style-presets.php:109
+msgid "Style preset"
+msgstr "பாணி முன்னமைவு"
+
+#: includes/class-zinn-translate-style-presets.php:110
+msgid "A starting point. Anything below overrides it."
+msgstr "ஒரு தொடக்கப்புள்ளி. அதற்குக் கீழே உள்ளவை எதையும் மேலெழுதுகின்றன."
+
+#: includes/class-zinn-translate-style-presets.php:117
+msgid "Use my own colours and sizes"
+msgstr "எனது சொந்த நிறங்கள் மற்றும் அளவுகளைப் பயன்படுத்தவும்"
+
+#: includes/class-zinn-translate-style-presets.php:118
+msgid "Leave this off and the preset is used exactly as it is."
+msgstr "இதை முடக்கி விடவும், மேலும் முன்னமைவு அது இருக்கும் நிலையிலேயே அப்படியே பயன்படுத்தப்படும்."
 
 #: includes/class-zinn-translate-switcher-widget.php:30
 msgid "Zinn® language switcher"

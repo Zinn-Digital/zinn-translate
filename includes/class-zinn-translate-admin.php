@@ -19,11 +19,13 @@ if ( ! defined( 'ABSPATH' ) ) {
  * are all shared across every Zinn® plugin, so a fix to any of them lands everywhere at
  * once. A second framework here would be a second set of escaping bugs to find.
  *
- * ⛔ The `else` branch below is a deliberate, temporary bridge and is owned jointly with
- * W41-Q: it registers the SAME parent menu, the SAME page slug and the SAME option array as
- * the framework will, so a site configured through it is configured for the framework too.
- * Whichever of the two branches lands on `main` second deletes the other. It exists because
- * a plugin whose settings screen has not shipped yet is a plugin a customer cannot use.
+ * ⭐ There WAS a temporary bridge here — an `else` branch registering the same parent menu,
+ * page slug and option array as the framework, so a site configured through it was configured
+ * for the framework too. It existed because a plugin whose settings screen has not shipped
+ * yet is a plugin a customer cannot use, and it was owned jointly with W41-Q on the agreement
+ * that whichever branch reached `main` second would delete the other. W41-O landed first, so
+ * W41-Q deleted it in the same change that renders this plugin's framework classes — which is
+ * where the deletion belongs, next to the thing that makes it correct.
  */
 final class Zinn_Translate_Admin {
 
@@ -40,12 +42,13 @@ final class Zinn_Translate_Admin {
 	 * @return void
 	 */
 	public function hooks(): void {
-		if ( class_exists( 'Zinn_Translate_Admin_UI' ) ) {
-			add_action( 'init', array( $this, 'register_with_framework' ), 5 );
-		} else {
-			add_action( 'admin_menu', array( $this, 'register_bridge_menu' ), 20 );
-			add_action( 'admin_init', array( $this, 'register_bridge_settings' ) );
-		}
+		// ⛔ Unconditional. The `class_exists` guard and its bridge screen were a deliberate,
+		// jointly-owned temporary: W41-O shipped a plugin whose framework had not landed yet,
+		// on the agreement that whichever branch reached `main` second deleted the other.
+		// `Zinn_Translate_Admin_UI` is now a generated file in this plugin's own tree
+		// (`wp/bin/build-admin-ui.php`), so the guard could only ever answer true — and a
+		// guard that cannot fail is a branch nobody will ever test again.
+		add_action( 'init', array( $this, 'register_with_framework' ), 5 );
 		add_action( 'admin_post_zinn_translate_override', array( $this, 'save_override' ) );
 		add_filter( 'zinn_diagnostics', array( $this, 'diagnostics' ) );
 	}
@@ -608,168 +611,5 @@ final class Zinn_Translate_Admin {
 			default:
 				return __( 'Up to date', 'zinn-translate' );
 		}
-	}
-
-	/**
-	 * The bridge menu, used only until the shared framework lands.
-	 *
-	 * @return void
-	 */
-	public function register_bridge_menu(): void {
-		if ( ! menu_page_url( self::PARENT, false ) ) {
-			add_menu_page(
-				__( 'Zinn®', 'zinn-translate' ),
-				__( 'Zinn®', 'zinn-translate' ),
-				'manage_options',
-				self::PARENT,
-				array( $this, 'render_bridge' ),
-				'dashicons-translation',
-				58
-			);
-		}
-		add_submenu_page(
-			self::PARENT,
-			__( 'Translate', 'zinn-translate' ),
-			__( 'Translate', 'zinn-translate' ),
-			'manage_options',
-			self::PAGE,
-			array( $this, 'render_bridge' )
-		);
-	}
-
-	/**
-	 * Register the option so `options.php` will accept a save from the bridge screen.
-	 *
-	 * @return void
-	 */
-	public function register_bridge_settings(): void {
-		register_setting(
-			'zinn_translate',
-			Zinn_Translate_Options::OPTION,
-			array(
-				'type'              => 'array',
-				'sanitize_callback' => array( $this, 'sanitize_bridge' ),
-				'default'           => array(),
-			)
-		);
-	}
-
-	/**
-	 * Sanitise a save from the bridge screen.
-	 *
-	 * ⛔ Every value is coerced against the DEFAULTS' own types rather than trusted, and an
-	 * unknown key is dropped. `register_setting` does not validate anything on its own — the
-	 * callback is the whole of the validation, and an array option with no callback is a way
-	 * to write arbitrary data into `wp_options`.
-	 *
-	 * @param mixed $value The submitted value.
-	 * @return array<string, mixed> The settings to store.
-	 */
-	public function sanitize_bridge( $value ): array {
-		$submitted = is_array( $value ) ? $value : array();
-		$clean     = array();
-		foreach ( Zinn_Translate_Options::defaults() as $key => $default ) {
-			if ( ! array_key_exists( $key, $submitted ) ) {
-				$clean[ $key ] = is_bool( $default ) ? false : $default;
-				continue;
-			}
-			$raw = $submitted[ $key ];
-			if ( is_bool( $default ) ) {
-				$clean[ $key ] = (bool) $raw;
-			} elseif ( is_array( $default ) ) {
-				$list          = is_array( $raw ) ? $raw : explode( ',', (string) $raw );
-				$clean[ $key ] = array_values( array_filter( array_map( 'sanitize_key', array_map( 'trim', array_map( 'strval', $list ) ) ) ) );
-			} elseif ( is_int( $default ) ) {
-				$clean[ $key ] = (int) $raw;
-			} else {
-				$clean[ $key ] = sanitize_text_field( (string) $raw );
-			}
-		}
-		Zinn_Translate_Options::flush();
-		return $clean;
-	}
-
-	/**
-	 * The bridge screen.
-	 *
-	 * @return void
-	 */
-	public function render_bridge(): void {
-		if ( ! current_user_can( 'manage_options' ) ) {
-			return;
-		}
-		$status = Zinn_Translate_Status::status();
-		$values = Zinn_Translate_Options::all();
-		$option = Zinn_Translate_Options::OPTION;
-		?>
-		<div class="wrap">
-			<h1><?php esc_html_e( 'Zinn® Translate', 'zinn-translate' ); ?></h1>
-			<div class="notice notice-info inline">
-				<p>
-					<strong><?php echo esc_html( (string) $status['summary'] ); ?></strong>
-					<?php if ( isset( $status['reason'] ) ) : ?>
-						<br /><?php echo esc_html( (string) $status['reason'] ); ?>
-					<?php endif; ?>
-				</p>
-			</div>
-			<form action="options.php" method="post">
-				<?php settings_fields( 'zinn_translate' ); ?>
-				<table class="form-table" role="presentation">
-					<tr>
-						<th scope="row"><?php esc_html_e( 'Who pays', 'zinn-translate' ); ?></th>
-						<td>
-							<label><input type="radio" name="<?php echo esc_attr( $option ); ?>[mode]" value="zinn" <?php checked( 'zinn', $values['mode'] ); ?> /> <?php esc_html_e( 'My Zinn Digital® plan', 'zinn-translate' ); ?></label><br />
-							<label><input type="radio" name="<?php echo esc_attr( $option ); ?>[mode]" value="byo" <?php checked( 'byo', $values['mode'] ); ?> /> <?php esc_html_e( 'My own provider key', 'zinn-translate' ); ?></label>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row"><label for="zinn_site_id"><?php esc_html_e( 'Site ID', 'zinn-translate' ); ?></label></th>
-						<td><input id="zinn_site_id" class="regular-text" type="text" name="<?php echo esc_attr( $option ); ?>[site_id]" value="<?php echo esc_attr( (string) $values['site_id'] ); ?>" /></td>
-					</tr>
-					<tr>
-						<th scope="row"><label for="zinn_token"><?php esc_html_e( 'Site token', 'zinn-translate' ); ?></label></th>
-						<td><input id="zinn_token" class="regular-text" type="password" autocomplete="off" name="<?php echo esc_attr( $option ); ?>[token]" value="<?php echo esc_attr( (string) $values['token'] ); ?>" /></td>
-					</tr>
-					<tr>
-						<th scope="row"><label for="zinn_provider"><?php esc_html_e( 'Provider', 'zinn-translate' ); ?></label></th>
-						<td>
-							<select id="zinn_provider" name="<?php echo esc_attr( $option ); ?>[provider]">
-								<?php foreach ( Zinn_Translate_Provider_Factory::choices() as $id => $label ) : ?>
-									<option value="<?php echo esc_attr( $id ); ?>" <?php selected( $id, $values['provider'] ); ?>><?php echo esc_html( $label ); ?></option>
-								<?php endforeach; ?>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row"><label for="zinn_key"><?php esc_html_e( 'API key', 'zinn-translate' ); ?></label></th>
-						<td><input id="zinn_key" class="regular-text" type="password" autocomplete="off" name="<?php echo esc_attr( $option ); ?>[provider_key]" value="<?php echo esc_attr( (string) $values['provider_key'] ); ?>" /></td>
-					</tr>
-					<tr>
-						<th scope="row"><label for="zinn_locales"><?php esc_html_e( 'Languages to publish', 'zinn-translate' ); ?></label></th>
-						<td>
-							<input id="zinn_locales" class="regular-text" type="text" name="<?php echo esc_attr( $option ); ?>[locales]" value="<?php echo esc_attr( implode( ', ', Zinn_Translate_Options::locales() ) ); ?>" />
-							<p class="description"><?php esc_html_e( 'Comma separated, for example: fr, de, ar', 'zinn-translate' ); ?></p>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row"><label for="zinn_preset"><?php esc_html_e( 'Switcher style', 'zinn-translate' ); ?></label></th>
-						<td>
-							<select id="zinn_preset" name="<?php echo esc_attr( $option ); ?>[switcher_preset]">
-								<?php foreach ( Zinn_Translate_Switcher::presets() as $id => $label ) : ?>
-									<option value="<?php echo esc_attr( $id ); ?>" <?php selected( $id, $values['switcher_preset'] ); ?>><?php echo esc_html( $label ); ?></option>
-								<?php endforeach; ?>
-							</select>
-						</td>
-					</tr>
-				</table>
-				<?php submit_button(); ?>
-			</form>
-			<h2><?php esc_html_e( 'Manual overrides', 'zinn-translate' ); ?></h2>
-			<?php $this->render_overrides(); ?>
-			<h2><?php esc_html_e( 'Sitemaps and URLs', 'zinn-translate' ); ?></h2>
-			<?php $this->render_urls(); ?>
-			<?php Zinn_Translate_Promo::render_panel(); ?>
-		</div>
-		<?php
 	}
 }

@@ -11,7 +11,6 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: zinn-translate.php
-#: includes/class-zinn-translate-admin.php:706
 msgid "Zinn® Translate"
 msgstr "Zinn® Translate"
 
@@ -35,324 +34,541 @@ msgstr "Neil Lock — CEO, Zinn Digital® Ltd"
 msgid "https://zinndigital.com"
 msgstr "https://zinndigital.com"
 
-#: includes/class-zinn-translate-admin.php:62
-#: includes/class-zinn-translate-admin.php:632
-#: includes/class-zinn-translate-admin.php:633
+#: includes/class-zinn-translate-admin-fields.php:575
+msgid "Stored. Type a new value to replace it."
+msgstr "સંગ્રહિત. તેને બદલવા માટે નવું મૂલ્ય ટાઇપ કરો."
+
+#: includes/class-zinn-translate-admin-fields.php:635
+msgid "Filter this list…"
+msgstr "આ યાદી ફિલ્ટર કરો…"
+
+#: includes/class-zinn-translate-admin-fields.php:636
+msgid "Filter this list"
+msgstr "આ યાદી ફિલ્ટર કરો"
+
+#: includes/class-zinn-translate-admin-fields.php:652
+msgid "Nothing matches that filter."
+msgstr "તે ફિલ્ટર સાથે કંઈપણ મેળ ખાતું નથી."
+
+#: includes/class-zinn-translate-admin-fields.php:683
+msgid "Add a row"
+msgstr "એક પંક્તિ ઉમેરો"
+
+#: includes/class-zinn-translate-admin-fields.php:720
+msgid "Remove this row"
+msgstr "આ હરોળ દૂર કરો"
+
+#: includes/class-zinn-translate-admin-fields.php:720
+msgid "Remove"
+msgstr "દૂર કરો"
+
+#: includes/class-zinn-translate-admin-ui.php:264
+#: includes/class-zinn-translate-admin-ui.php:265
+#: includes/class-zinn-translate-admin-ui.php:335
+msgid "Zinn Digital®"
+msgstr "Zinn Digital®"
+
+#: includes/class-zinn-translate-admin-ui.php:278
+msgid "Zinn Digital® — overview"
+msgstr "Zinn Digital® — અવલોકન"
+
+#: includes/class-zinn-translate-admin-ui.php:279
+msgid "Overview"
+msgstr "ઝાંખી"
+
+#: includes/class-zinn-translate-admin-ui.php:336
+msgid "Every Zinn® plugin on this site, and whether it is working."
+msgstr "આ સાઈટ પરનું દરેક Zinn® પ્લગઇન અને તે કામ કરી રહ્યું છે કે નહીં."
+
+#: includes/class-zinn-translate-admin-ui.php:352
+msgid "No connection is needed for this plugin."
+msgstr "આ પ્લગઇન માટે કોઈ કનેક્શનની જરૂર નથી."
+
+#: includes/class-zinn-translate-admin-ui.php:357
+msgid "Open settings"
+msgstr "સેટિંગ્સ ખોલો"
+
+#: includes/class-zinn-translate-admin-ui.php:685
+#: includes/class-zinn-translate-admin-ui.php:1248
+msgid "You do not have permission to change these settings."
+msgstr "તમને આ સેટિંગ્સ બદલવાની પરવાનગી નથી."
+
+#: includes/class-zinn-translate-admin-ui.php:715
+msgid "Settings sections"
+msgstr "સેટિંગ્સ વિભાગો"
+
+#: includes/class-zinn-translate-admin-ui.php:788
+msgid "Support"
+msgstr "સપોર્ટ"
+
+#: includes/class-zinn-translate-admin-ui.php:846
+msgid "Save changes"
+msgstr "ફેરફારો સાચવો"
+
+#: includes/class-zinn-translate-admin-ui.php:875
+msgid "Tools"
+msgstr "સાધનો"
+
+#: includes/class-zinn-translate-admin-ui.php:890
+msgid "Export settings"
+msgstr "સેટિંગ્સ નિકાસ કરો"
+
+#: includes/class-zinn-translate-admin-ui.php:893
+msgid "Reset to defaults"
+msgstr "મૂળ સેટિંગ્સ પર રીસેટ કરો"
+
+#: includes/class-zinn-translate-admin-ui.php:894
+msgid "This puts every setting on this plugin back to its default. Continue?"
+msgstr "આ આ પ્લગઇનની દરેક સેટિંગને તેના ડિફૉલ્ટ પર પાછી લાવશે. ચાલુ રાખવું છે?"
+
+#: includes/class-zinn-translate-admin-ui.php:901
+msgid "Diagnostics for support"
+msgstr "સપોર્ટ માટે ડાયગ્નોસ્ટિક્સ"
+
+#: includes/class-zinn-translate-admin-ui.php:910
+msgid "Import a settings file"
+msgstr "સેટિંગ્સ ફાઇલ આયાત કરો"
+
+#: includes/class-zinn-translate-admin-ui.php:912
+msgid "Import"
+msgstr "આયાત કરો"
+
+#: includes/class-zinn-translate-admin-ui.php:914
+msgid "Exported files never contain passwords, tokens or API keys — you will need to enter those again on the new site."
+msgstr "નિકાસ કરેલી ફાઇલોમાં ક્યારેય પાસવર્ડ્સ, ટોકન્સ કે API કી હોતી નથી — તમારે નવી સાઇટ પર તેને ફરીથી દાખલ કરવી પડશે."
+
+#: includes/class-zinn-translate-admin-ui.php:1013
+msgid "Settings saved."
+msgstr "સેટિંગ્સ સાચવવામાં આવી છે."
+
+#: includes/class-zinn-translate-admin-ui.php:1060
+msgid "Every setting on this plugin is back to its default."
+msgstr "આ પ્લગઇનની દરેક સેટિંગ તેના ડિફોલ્ટ પર પાછી ગઈ છે."
+
+#: includes/class-zinn-translate-admin-ui.php:1103
+msgid "Done."
+msgstr "પૂર્ણ થયું."
+
+#: includes/class-zinn-translate-admin-ui.php:1107
+msgid "That action is not available."
+msgstr "તે ક્રિયા ઉપલબ્ધ નથી."
+
+#: includes/class-zinn-translate-admin-ui.php:1174
+msgid "That file could not be read. Choose a settings file exported from a Zinn® plugin."
+msgstr "તે ફાઇલ વાંચી શકાઈ નહીં. Zinn® પ્લગઇનમાંથી નિકાસ કરેલી સેટિંગ્સ ફાઇલ પસંદ કરો."
+
+#: includes/class-zinn-translate-admin-ui.php:1182
+msgid "That file is too large to be a settings export."
+msgstr "તે ફાઇલ સેટિંગ્સ નિકાસ માટે ખૂબ મોટી છે."
+
+#: includes/class-zinn-translate-admin-ui.php:1195
+msgid "That file is not a Zinn® settings export."
+msgstr "તે ફાઇલ Zinn® સેટિંગ્સ નિકાસ નથી."
+
+#. translators: %s: the plugin slug the file was exported from.
+#: includes/class-zinn-translate-admin-ui.php:1203
+#, php-format
+msgid "That file was exported from a different plugin (%s), so importing it here would store settings this plugin does not understand."
+msgstr "તે ફાઇલ અલગ પ્લગઇન (%s) માંથી એક્સપોર્ટ કરવામાં આવી હતી, તેથી તેને અહીં ઇમ્પોર્ટ કરવાથી એવી સેટિંગ્સ સ્ટોર થશે જે આ પ્લગઇન સમજી શકતું નથી."
+
+#. translators: %d: how many settings were imported.
+#: includes/class-zinn-translate-admin-ui.php:1233
+#, php-format
+msgid "%d setting imported. Passwords and API keys are never in an export, so enter those again."
+msgid_plural "%d settings imported. Passwords and API keys are never in an export, so enter those again."
+msgstr[0] "%d સેટિંગ આયાત કરવામાં આવી છે. નિકાસમાં ક્યારેય પાસવર્ડ્સ અને API કી હોતી નથી, તેથી તેમને ફરીથી દાખલ કરો."
+msgstr[1] "%d સેટિંગ્સ આયાત કરવામાં આવ્યા. પાસવર્ડ્સ અને API કીઝ ક્યારેય એક્સપોર્ટમાં હોતા નથી, તેથી તેમને ફરીથી દાખલ કરો."
+
+#: includes/class-zinn-translate-admin.php:65
 msgid "Translate"
 msgstr "અનુવાદ કરો"
 
-#: includes/class-zinn-translate-admin.php:76
-#: includes/class-zinn-translate-admin.php:767
+#: includes/class-zinn-translate-admin.php:79
 msgid "Manual overrides"
 msgstr "મેન્યુઅલ ઓવરરાઇડ્સ"
 
-#: includes/class-zinn-translate-admin.php:81
-#: includes/class-zinn-translate-admin.php:769
+#: includes/class-zinn-translate-admin.php:84
 msgid "Sitemaps and URLs"
 msgstr "સાઇટમેપ્સ અને URLs"
 
-#: includes/class-zinn-translate-admin.php:111
+#: includes/class-zinn-translate-admin.php:114
 msgid "General"
 msgstr "સામન્ય"
 
-#: includes/class-zinn-translate-admin.php:116
+#: includes/class-zinn-translate-admin.php:119
 msgid "Who pays for the translation"
 msgstr "અનુવાદ કોણ ચૂકવે છે"
 
-#: includes/class-zinn-translate-admin.php:117
+#: includes/class-zinn-translate-admin.php:120
 msgid "Either your Zinn Digital® plan, or an API key of your own. There is no free tier — somebody pays a provider for every word."
 msgstr "તમારી Zinn Digital® પ્લાન, અથવા તમારી પોતાની API કી. કોઈ મફત ટાયર નથી — દરેક શબ્દ માટે કોઈક પ્રોવાઇડરને ચૂકવણી કરે છે."
 
-#: includes/class-zinn-translate-admin.php:120
-#: includes/class-zinn-translate-admin.php:721
+#: includes/class-zinn-translate-admin.php:123
 msgid "My Zinn Digital® plan"
 msgstr "મારી Zinn Digital® પ્લાન"
 
-#: includes/class-zinn-translate-admin.php:121
-#: includes/class-zinn-translate-admin.php:722
+#: includes/class-zinn-translate-admin.php:124
 msgid "My own provider key"
 msgstr "મારી પોતાની પ્રદાતા કી"
 
-#: includes/class-zinn-translate-admin.php:128
-#: includes/class-zinn-translate-admin.php:726
+#: includes/class-zinn-translate-admin.php:131
 msgid "Site ID"
 msgstr "સાઇટ આઈડી"
 
-#: includes/class-zinn-translate-admin.php:129
+#: includes/class-zinn-translate-admin.php:132
 msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
 msgstr "તમારા Zinn Digital® ડેશબોર્ડ પરથી, આ સાઇટના અનુવાદ ટેબ પર."
 
-#: includes/class-zinn-translate-admin.php:136
-#: includes/class-zinn-translate-admin.php:730
+#: includes/class-zinn-translate-admin.php:139
 msgid "Site token"
 msgstr "સાઇટ ટોકન"
 
-#: includes/class-zinn-translate-admin.php:144
-#: includes/class-zinn-translate-admin.php:734
+#: includes/class-zinn-translate-admin.php:147
 msgid "Provider"
 msgstr "પ્રદાતા"
 
-#: includes/class-zinn-translate-admin.php:154
-#: includes/class-zinn-translate-admin.php:744
+#: includes/class-zinn-translate-admin.php:157
 msgid "API key"
 msgstr "એપીઆઈ કી"
 
-#: includes/class-zinn-translate-admin.php:155
+#: includes/class-zinn-translate-admin.php:158
 msgid "Your key, billed to you by the provider. It is stored on this site and sent only to them."
 msgstr "તમારી કી, જે પ્રદાતા દ્વારા તમને બિલ કરવામાં આવે છે. તે આ સાઇટ પર સંગ્રહિત છે અને ફક્ત તેમને જ મોકલવામાં આવે છે."
 
-#: includes/class-zinn-translate-admin.php:163
+#: includes/class-zinn-translate-admin.php:166
 msgid "Model"
 msgstr "મોડેલ"
 
-#: includes/class-zinn-translate-admin.php:164
+#: includes/class-zinn-translate-admin.php:167
 msgid "Leave empty for the cheapest model that does the job well."
 msgstr "જે મોડેલ સારી રીતે કામ કરે તેમાં સૌથી સસ્તું મેળવવા માટે ખાલી રાખો."
 
-#: includes/class-zinn-translate-admin.php:171
+#: includes/class-zinn-translate-admin.php:174
 msgid "This site is written in"
 msgstr "આ સાઇટ આ ભાષામાં લખાયેલી છે"
 
-#: includes/class-zinn-translate-admin.php:172
+#: includes/class-zinn-translate-admin.php:175
 msgid "Leave empty to use the site language from WordPress settings."
 msgstr "WordPress સેટિંગ્સમાંથી સાઇટ ભાષા વાપરવા માટે ખાલી છોડો."
 
-#: includes/class-zinn-translate-admin.php:180
-#: includes/class-zinn-translate-admin.php:748
+#: includes/class-zinn-translate-admin.php:183
 msgid "Languages to publish"
 msgstr "પ્રકાશિત કરવા માટેની ભાષાઓ"
 
-#: includes/class-zinn-translate-admin.php:181
+#: includes/class-zinn-translate-admin.php:184
 msgid "Each one gets its own web addresses and its own sitemap. Publish only the languages you want indexed."
 msgstr "દરેકને પોતાના વેબ એડ્રેસ અને પોતાની સાઇટમેપ મળે છે. ફક્ત તમે જે ભાષાઓ ઇન્ડેક્સ કરાવવા માંગતા હોવ તે જ પ્રકાશિત કરો."
 
-#: includes/class-zinn-translate-admin.php:188
+#: includes/class-zinn-translate-admin.php:191
 msgid "Translate automatically when I publish or update"
 msgstr "જ્યારે હું પ્રકાશિત કરું અથવા અપડેટ કરું ત્યારે આપમેળે ભાષાંતર કરો"
 
-#: includes/class-zinn-translate-admin.php:189
+#: includes/class-zinn-translate-admin.php:192
 msgid "Editing a page marks its translations out of date and they are remade in the background. Editing without changing any words costs nothing."
 msgstr "કોઈ પેજમાં ફેરફાર કરવાથી તેના ભાષાંતરો જૂના થઈ જાય છે અને તે બેકગ્રાઉન્ડમાં ફરીથી બનાવવામાં આવે છે. કોઈપણ શબ્દ બદલ્યા વિના ફેરફાર કરવાથી કોઈ ખર્ચ થતો નથી."
 
-#: includes/class-zinn-translate-admin.php:196
+#: includes/class-zinn-translate-admin.php:199
 msgid "What gets translated"
 msgstr "શું અનુવાદિત થાય છે"
 
-#: includes/class-zinn-translate-admin.php:201
+#: includes/class-zinn-translate-admin.php:204
 msgid "Post types"
 msgstr "પોસ્ટના પ્રકારો"
 
-#: includes/class-zinn-translate-admin.php:209
+#: includes/class-zinn-translate-admin.php:212
 msgid "Translate the web addresses too"
 msgstr "વેબ સરનામાઓ પણ અનુવાદિત કરો"
 
-#: includes/class-zinn-translate-admin.php:210
+#: includes/class-zinn-translate-admin.php:213
 msgid "French visitors get /fr/a-propos/ rather than /fr/about/. The untranslated address keeps working and redirects, so nothing that was indexed breaks."
 msgstr "ફ્રેન્ચ મુલાકાતીઓને /fr/about/ ને બદલે /fr/a-propos/ મળે છે. ન અનુવાદિત સરનામું કામ કરતું રહે છે અને રીડાયરેક્ટ થાય છે, તેથી ઇન્ડેક્સ થયેલું કંઈપણ તૂટતું નથી."
 
-#: includes/class-zinn-translate-admin.php:217
+#: includes/class-zinn-translate-admin.php:220
 msgid "Translate SEO titles, descriptions and image alt text"
 msgstr "SEO શીર્ષકો, વર્ણનો અને છબી alt ટેક્સ્ટનું ભાષાંતર કરો"
 
-#: includes/class-zinn-translate-admin.php:224
+#: includes/class-zinn-translate-admin.php:227
 msgid "Translate categories and tags"
 msgstr "શ્રેણીઓ અને ટૅગ્સનો અનુવાદ કરો"
 
-#: includes/class-zinn-translate-admin.php:231
+#: includes/class-zinn-translate-admin.php:234
 msgid "Translate navigation menus"
 msgstr "નેવિગેશન મેનૂઝનું ભાષાંતર કરો"
 
-#: includes/class-zinn-translate-admin.php:238
+#: includes/class-zinn-translate-admin.php:241
 msgid "Translate WooCommerce products and attributes"
 msgstr "WooCommerce ઉત્પાદનો અને વિશેષતાઓનો અનુવાદ કરો"
 
-#: includes/class-zinn-translate-admin.php:239
+#: includes/class-zinn-translate-admin.php:242
 msgid "Short descriptions, purchase notes, attribute labels and variation descriptions. Prices, SKUs and stored option values are never touched."
 msgstr "ટૂંકા વર્ણનો, ખરીદી નોંધો, વિશેષતા લેબલ્સ અને વિવિધતા વર્ણનો. કિંમતો, SKU અને સંગ્રહિત વિકલ્પ મૂલ્યોને ક્યારેય સ્પર્શવામાં આવતો નથી."
 
-#: includes/class-zinn-translate-admin.php:246
+#: includes/class-zinn-translate-admin.php:249
 msgid "SEO"
 msgstr "SEO"
 
-#: includes/class-zinn-translate-admin.php:251
+#: includes/class-zinn-translate-admin.php:254
 msgid "Add hreflang tags"
 msgstr "hreflang ટૅગ્સ ઉમેરો"
 
-#: includes/class-zinn-translate-admin.php:252
+#: includes/class-zinn-translate-admin.php:255
 msgid "Tells search engines these pages are the same page in different languages. Leave this on unless another plugin is already doing it."
 msgstr "સર્ચ એન્જિનને જણાવે છે કે આ પૃષ્ઠો વિવિધ ભાષાઓમાં સમાન પૃષ્ઠ છે. જો બીજું કોઈ પ્લગઇન પહેલેથી જ આ કરી રહ્યું ન હોય તો તેને ચાલુ રાખો."
 
-#: includes/class-zinn-translate-admin.php:259
+#: includes/class-zinn-translate-admin.php:262
 msgid "Publish a sitemap for each language"
 msgstr "દરેક ભાષા માટે સાઇટમેપ પ્રકાશિત કરો"
 
-#: includes/class-zinn-translate-admin.php:266
+#: includes/class-zinn-translate-admin.php:269
 msgid "Publish llms.txt for each language"
 msgstr "દરેક ભાષા માટે llms.txt પ્રકાશિત કરો"
 
-#: includes/class-zinn-translate-admin.php:267
+#: includes/class-zinn-translate-admin.php:270
 msgid "A plain-text map of the site that AI answer engines read. They often cannot run JavaScript and may never fetch a sitemap."
 msgstr "એક સાદી-ટેક્સ્ટ સાઇટ મેપ જેને AI આન્સર એન્જિન વાંચે છે. તેઓ ઘણીવાર જાવાસ્ક્રિપ્ટ ચલાવી શકતા નથી અને કદાચ ક્યારેય સાઇટમેપ ફેચ નહીં કરે."
 
-#: includes/class-zinn-translate-admin.php:274
+#: includes/class-zinn-translate-admin.php:277
 #: includes/class-zinn-translate-switcher.php:135
 msgid "Language switcher"
 msgstr "ભાષા સ્વિચર"
 
-#: includes/class-zinn-translate-admin.php:279
+#: includes/class-zinn-translate-admin.php:282
 #: includes/class-zinn-translate-switcher-widget.php:83
 msgid "Style"
 msgstr "શૈલી"
 
-#: includes/class-zinn-translate-admin.php:282
+#: includes/class-zinn-translate-admin.php:285
 msgid "Colours, spacing and corners are on the Styling tab. Place it with the block, the [zinn_language_switcher] shortcode, or a menu."
 msgstr "રંગો, જગ્યા અને ખૂણાઓ સ્ટાઇલિંગ ટેબ પર છે. તેને બ્લોક, [zinn_language_switcher] શોર્ટકોડ અથવા મેનૂ સાથે મૂકો."
 
-#: includes/class-zinn-translate-admin.php:289
+#: includes/class-zinn-translate-admin.php:292
 msgid "Show only these languages"
 msgstr "ફક્ત આ જ ભાષાઓ દર્શાવો"
 
-#: includes/class-zinn-translate-admin.php:290
+#: includes/class-zinn-translate-admin.php:293
 msgid "Leave empty to show every language you publish."
 msgstr "તમે પ્રકાશિત કરો છો તે દરેક ભાષા બતાવવા માટે ખાલી છોડો."
 
-#: includes/class-zinn-translate-admin.php:297
+#: includes/class-zinn-translate-admin.php:300
 msgid "Name each language in its own language"
 msgstr "દરેક ભાષાને તેની પોતાની ભાષામાં નામ આપો"
 
-#: includes/class-zinn-translate-admin.php:298
+#: includes/class-zinn-translate-admin.php:301
 msgid "Deutsch rather than German. Somebody who cannot read the current page cannot read \"German\" either."
 msgstr "જર્મન કરતાં ડૉઇચ (Deutsch). હાલનું પૃષ્ઠ વાંચી શકનાર વ્યક્તિ \"German\" પણ વાંચી શકતી નથી."
 
-#: includes/class-zinn-translate-admin.php:305
+#: includes/class-zinn-translate-admin.php:308
 msgid "Show flags"
 msgstr "ફ્લેગ્સ બતાવો"
 
-#: includes/class-zinn-translate-admin.php:306
+#: includes/class-zinn-translate-admin.php:309
 msgid "Off by default: a language is not a country, and Arabic and Spanish have no single flag that does not exclude most of their speakers."
 msgstr "મૂળભૂત રીતે બંધ: ભાષા એ કોઈ દેશ નથી, અને અરબી અને સ્પેનિશ પાસે એવો કોઈ એક પણ ધ્વજ નથી જે તેમના મોટાભાગના વક્તાઓને બાકાત ન રાખતો હોય."
 
-#: includes/class-zinn-translate-admin.php:313
+#: includes/class-zinn-translate-admin.php:316
 msgid "Include the language being read"
 msgstr "વાંચવામાં આવી રહી છે તે ભાષાનો સમાવેશ કરો"
 
-#: includes/class-zinn-translate-admin.php:320
+#: includes/class-zinn-translate-admin.php:323
 msgid "Include the original language"
 msgstr "મૂળ ભાષા શામેલ કરો"
 
-#: includes/class-zinn-translate-admin.php:327
+#: includes/class-zinn-translate-admin.php:330
 msgid "Add it to this menu"
 msgstr "આને આ મેનુમાં ઉમેરો"
 
-#: includes/class-zinn-translate-admin.php:328
+#: includes/class-zinn-translate-admin.php:331
 msgid "Only the menu you name here. Nothing is added to any other menu on the site."
 msgstr "અહીં તમે જે મેનૂનું નામ આપો છો તે જ. સાઇટ પરના અન્ય કોઈપણ મેનૂમાં કંઈપણ ઉમેરવામાં આવતું નથી."
 
-#: includes/class-zinn-translate-admin.php:378
+#: includes/class-zinn-translate-admin.php:381
 msgid "Accent"
 msgstr "એસેન્ટ"
 
-#: includes/class-zinn-translate-admin.php:382
+#: includes/class-zinn-translate-admin.php:385
 msgid "Background"
 msgstr "બેકગ્રાઉન્ડ"
 
-#: includes/class-zinn-translate-admin.php:386
+#: includes/class-zinn-translate-admin.php:389
 msgid "Text"
 msgstr "ટેક્સ્ટ"
 
-#: includes/class-zinn-translate-admin.php:390
+#: includes/class-zinn-translate-admin.php:393
 msgid "Corner radius"
 msgstr "કોર્નર રેડિયસ"
 
-#: includes/class-zinn-translate-admin.php:394
+#: includes/class-zinn-translate-admin.php:397
 msgid "Spacing"
 msgstr "હવેલીઓ"
 
-#: includes/class-zinn-translate-admin.php:398
+#: includes/class-zinn-translate-admin.php:401
 msgid "Text size"
 msgstr "લખાણનું કદ"
 
-#: includes/class-zinn-translate-admin.php:425
+#: includes/class-zinn-translate-admin.php:428
 msgid "Do not add it to a menu"
 msgstr "તેને કોઈ મેનૂમાં ઉમેરશો નહીં"
 
-#: includes/class-zinn-translate-admin.php:480
+#: includes/class-zinn-translate-admin.php:483
 msgid "Edit any translation here. An edited translation is kept exactly as you wrote it and is never overwritten when the page is translated again."
 msgstr "અહીં કોઈપણ ભાષાંતર સંપાદિત કરો. સંપાદિત કરેલું ભાષાંતર તમે લખ્યું છે તેમ જ જાળવી રાખવામાં આવે છે અને જ્યારે પૃષ્ઠનું ભાષાંતર ફરીથી કરવામાં આવે ત્યારે ક્યારેય ઓવરરાઇટ થતું નથી."
 
-#: includes/class-zinn-translate-admin.php:501
+#: includes/class-zinn-translate-admin.php:504
 msgid "Every language"
 msgstr "દરેક ભાષા"
 
-#: includes/class-zinn-translate-admin.php:508
+#: includes/class-zinn-translate-admin.php:511
 msgid "Search translations"
 msgstr "અનુવાદ શોધો"
 
-#: includes/class-zinn-translate-admin.php:509
+#: includes/class-zinn-translate-admin.php:512
 msgid "Filter"
 msgstr "ફિલ્ટર કરો"
 
-#: includes/class-zinn-translate-admin.php:514
+#: includes/class-zinn-translate-admin.php:517
 msgid "Content"
 msgstr "સામગ્રી"
 
-#: includes/class-zinn-translate-admin.php:515
+#: includes/class-zinn-translate-admin.php:518
 msgid "Language"
 msgstr "ભાષા"
 
-#: includes/class-zinn-translate-admin.php:516
+#: includes/class-zinn-translate-admin.php:519
 msgid "Translation"
 msgstr "અનુવાદ"
 
-#: includes/class-zinn-translate-admin.php:517
+#: includes/class-zinn-translate-admin.php:520
 msgid "Status"
 msgstr "સ્થિતિ"
 
-#: includes/class-zinn-translate-admin.php:518
-#: includes/class-zinn-translate-admin.php:537
+#: includes/class-zinn-translate-admin.php:521
+#: includes/class-zinn-translate-admin.php:540
 msgid "Save"
 msgstr "સાચવો"
 
-#: includes/class-zinn-translate-admin.php:523
+#: includes/class-zinn-translate-admin.php:526
 msgid "Nothing translated yet. Publish a language and translation starts in the background."
 msgstr "હજુ સુધી કોઈ અનુવાદ થયો નથી. કોઈ ભાષા પ્રકાશિત કરો અને પૃષ્ઠભૂમિમાં અનુવાદ શરૂ થાય છે."
 
-#: includes/class-zinn-translate-admin.php:556
+#: includes/class-zinn-translate-admin.php:559
 msgid "These addresses are live. Open any of them to check it, and submit the sitemap index to Google Search Console."
 msgstr "આ સરનામાંઓ લાઇવ છે. તેને ચકાસવા માટે તેમાંથી કોઈપણ ખોલો, અને sitemap index ને Google Search Console પર સબમિટ કરો."
 
-#: includes/class-zinn-translate-admin.php:577
+#: includes/class-zinn-translate-admin.php:580
 msgid "You are not allowed to edit translations on this site."
 msgstr "તમને આ સાઈટ પર અનુવાદો સંપાદિત કરવાની મંજૂરી નથી."
 
-#: includes/class-zinn-translate-admin.php:605
+#: includes/class-zinn-translate-admin.php:608
 msgid "Edited by you — kept"
 msgstr "તમારા દ્વારા સંપાદિત — સાચવેલ"
 
-#: includes/class-zinn-translate-admin.php:607
+#: includes/class-zinn-translate-admin.php:610
 msgid "Source changed — will be redone"
 msgstr "સ્રોત બદલાયો છે — ફરીથી કરવામાં આવશે"
 
-#: includes/class-zinn-translate-admin.php:609
+#: includes/class-zinn-translate-admin.php:612
 msgid "Up to date"
 msgstr "અપ ટુ ડેટ"
 
-#: includes/class-zinn-translate-admin.php:621
-#: includes/class-zinn-translate-admin.php:622
-msgid "Zinn®"
-msgstr "Zinn®"
+#: includes/class-zinn-translate-connection.php:58
+msgid "Connected"
+msgstr "કનેક્ટ થયેલ છે"
 
-#: includes/class-zinn-translate-admin.php:719
-msgid "Who pays"
-msgstr "કોણ ચૂકવે છે"
+#: includes/class-zinn-translate-connection.php:60
+msgid "Connecting…"
+msgstr "કનેક્ટ થઈ રહ્યું છે…"
 
-#: includes/class-zinn-translate-admin.php:751
-msgid "Comma separated, for example: fr, de, ar"
-msgstr "અલ્પવિરામથી અલગ કરેલ, ઉદાહરણ તરીકે: fr, de, ar"
+#: includes/class-zinn-translate-connection.php:62
+msgid "Connected, but something needs attention"
+msgstr "કનેક્ટેડ છે, પરંતુ કંઈક પર ધ્યાન આપવાની જરૂર છે"
 
-#: includes/class-zinn-translate-admin.php:755
-msgid "Switcher style"
-msgstr "સ્વિચર શૈલી"
+#: includes/class-zinn-translate-connection.php:64
+msgid "Not connected"
+msgstr "કનેક્ટ નથી થયું"
+
+#: includes/class-zinn-translate-connection.php:66
+msgid "Running on your own account"
+msgstr "તમારા પોતાના એકાઉન્ટ પર ચાલી રહ્યું છે"
+
+#: includes/class-zinn-translate-connection.php:68
+msgid "We could not check this"
+msgstr "અમે આ તપાસી શક્યા નહીં"
+
+#: includes/class-zinn-translate-connection.php:93
+msgid "This plugin did not say why. Send a diagnostics report and we will look."
+msgstr "આ પ્લગઇને કારણ જણાવ્યું નથી. ડાયગ્નોસ્ટિક્સ રિપોર્ટ મોકલો અને અમે તપાસ કરીશું."
+
+#: includes/class-zinn-translate-connection.php:161
+msgid "Connection status"
+msgstr "કનેક્શન સ્થિતિ"
+
+#. translators: %s: a human-readable interval such as "5 minutes".
+#: includes/class-zinn-translate-connection.php:189
+#, php-format
+msgid "Last checked %s ago."
+msgstr "છેલ્લે %s પહેલાં તપાસ્યું હતું."
+
+#: includes/class-zinn-translate-connection.php:251
+msgid "(opens in a new tab)"
+msgstr "(ન ëtબમાં ખુલે છે)"
+
+#: includes/class-zinn-translate-diagnostics.php:199
+msgid "Send this to Zinn® support"
+msgstr "Zinn® સપોર્ટ પર આ મોકલો"
+
+#: includes/class-zinn-translate-diagnostics.php:201
+msgid "This is exactly what will be sent — nothing else, and nothing hidden. Your passwords, tokens and API keys are not in it."
+msgstr "આ બરાબર તે જ છે જે મોકલવામાં આવશે — બીજું કંઈ નહીં, અને કંઈપણ છુપાયેલું નથી. તમારા પાસવર્ડ્સ, ટોકન્સ અને API કી તેમાં નથી."
+
+#: includes/class-zinn-translate-diagnostics.php:204
+msgid "The diagnostics report that will be sent"
+msgstr "ડાયગ્નોસ્ટિક્સ રિપોર્ટ જે મોકલવામાં આવશે"
+
+#: includes/class-zinn-translate-diagnostics.php:207
+msgid "Copy to clipboard"
+msgstr "ક્લિપબોર્ડ પર કૉપિ કરો"
+
+#: includes/class-zinn-translate-diagnostics.php:214
+msgid "Send this report to Zinn® support"
+msgstr "આ રિપોર્ટ Zinn® સપોર્ટને મોકલો"
+
+#: includes/class-zinn-translate-diagnostics.php:216
+msgid "We open a support ticket for you and reply by email. If you would rather not send it, copy it above and paste it into a ticket yourself."
+msgstr "અમે તમારા માટે એક સપોર્ટ ટિકિટ ખોલીએ છીએ અને ઇમેઇલ દ્વારા જવાબ આપીએ છીએ. જો તમે તેને મોકલવા માંગતા ન હોવ, તો તેને ઉપરથી કૉપિ કરો અને જાતે જ ટિકિટમાં પેસ્ટ કરો."
+
+#: includes/class-zinn-translate-diagnostics.php:228
+msgid "Copied"
+msgstr "কপি કર્યું છે"
+
+#. translators: %s: the transport error reported by WordPress.
+#: includes/class-zinn-translate-diagnostics.php:274
+#, php-format
+msgid "We could not reach Zinn Digital® from this server (%s). Copy the report above and open a ticket instead — nothing about your settings is wrong."
+msgstr "અમે આ સર્વર (%s) પરથી Zinn Digital® સુધી પહોંચી શક્યા નથી. ઉપરનો રિપોર્ટ કૉપી કરો અને તેના બદલે ટિકિટ ખોલો — તમારી સેટિંગ્સમાં કંઈપણ ખોટું નથી."
+
+#: includes/class-zinn-translate-diagnostics.php:288
+msgid "Sent. Zinn® support has your report and will reply by email."
+msgstr "Zinn® સપોર્ટને તમારો રિપોર્ટ મળી ગયો છે અને તેઓ ઇમેઇલ દ્વારા જવાબ આપશે."
+
+#. translators: %s: the support reference for the report just sent.
+#: includes/class-zinn-translate-diagnostics.php:291
+#, php-format
+msgid "Sent. Zinn® support has your report — reference %s — and will reply by email."
+msgstr "Sent. Zinn® support તમારો અહેવાલ મળી ગયો છે — સંદર્ભ %s — અને ઇમેઇલ દ્વારા જવાબ આપશે."
+
+#: includes/class-zinn-translate-diagnostics.php:300
+msgid "You have sent several reports in a short time. Wait a few minutes and try again — the earlier ones did arrive."
+msgstr "તમે ટૂંકા સમયમાં ઘણા અહેવાલો મોકલ્યા છે. થોડી મિનિટો રાહ જુઓ અને ફરી પ્રયાસ કરો — અગાઉના અહેવાલો પહોંચી ગયા છે."
+
+#: includes/class-zinn-translate-diagnostics.php:307
+msgid "Zinn Digital® could not accept the report just now — that is our end, not yours. Try again shortly, or copy the report above into a ticket."
+msgstr "Zinn Digital® આ સમયે રિપોર્ટ સ્વીકારી શક્યું નહીં — તે અમારી બાજુની સમસ્યા છે, તમારી નહીં. થોડીવાર પછી ફરી પ્રયાસ કરો અથવા ઉપરનો રિપોર્ટ ટિકિટમાં કૉપિ કરો."
+
+#. translators: %d: the HTTP status code the server returned.
+#: includes/class-zinn-translate-diagnostics.php:315
+#, php-format
+msgid "The report was refused (HTTP %d). Copy it above and open a ticket, quoting that number."
+msgstr "રિપોર્ટ અસ્વીકાર કરવામાં આવ્યો (HTTP %d). તેને ઉપરથી કૉપિ કરો અને તે નંબર ટાંકીને ટિકિટ ખોલો."
 
 #. translators: %s: the Zinn Digital trade mark, which is not translated.
 #: includes/class-zinn-translate-promo.php:241
@@ -415,22 +631,22 @@ msgstr "અનુવાદ પ્રદાતાના છેડેથી સમ
 msgid "The translation request failed and we could not tell why. Nothing was saved."
 msgstr "અનુવાદ વિનંતી નિષ્ફળ ગઈ અને તેનું કારણ જાણી શકાયું નથી. કંઈપણ સાચવવામાં આવ્યું નથી."
 
-#: includes/class-zinn-translate-sitemap.php:130
+#: includes/class-zinn-translate-sitemap.php:139
 msgid "Sitemap index"
 msgstr "સાઇટમેપ ઇન્ડેક્સ"
 
 #. translators: %s: a language name, for example "French".
-#: includes/class-zinn-translate-sitemap.php:134
+#: includes/class-zinn-translate-sitemap.php:143
 #, php-format
 msgid "%s sitemap"
 msgstr "%s સાઇટમેપ"
 
-#: includes/class-zinn-translate-sitemap.php:138
+#: includes/class-zinn-translate-sitemap.php:147
 msgid "LLM content map"
 msgstr "LLM કન્ટેન્ટ નૅપ"
 
 #. translators: %s: a language name, for example "French".
-#: includes/class-zinn-translate-sitemap.php:141
+#: includes/class-zinn-translate-sitemap.php:150
 #, php-format
 msgid "%s LLM content map"
 msgstr "%s LLM કન્ટેન્ટ મેપ"
@@ -500,6 +716,22 @@ msgstr "તેમનું સ્ટેટસ પેજ તપાસો"
 #: includes/class-zinn-translate-status.php:201
 msgid "Fix this on your account"
 msgstr "તમારા ખાતામાં આ સુધારો"
+
+#: includes/class-zinn-translate-style-presets.php:109
+msgid "Style preset"
+msgstr "શૈલી પ્રીસેટ"
+
+#: includes/class-zinn-translate-style-presets.php:110
+msgid "A starting point. Anything below overrides it."
+msgstr "એક પ્રારંભિક બિંદુ. તેની નીચેની કોઈપણ વસ્તુ તેને રદ કરે છે."
+
+#: includes/class-zinn-translate-style-presets.php:117
+msgid "Use my own colours and sizes"
+msgstr "મારા પોતાના રંગો અને માપો વાપરો"
+
+#: includes/class-zinn-translate-style-presets.php:118
+msgid "Leave this off and the preset is used exactly as it is."
+msgstr "આને બંધ રાખો અને પ્રીસેટનો ઉપયોગ બરાબર તે જ રીતે થાય છે."
 
 #: includes/class-zinn-translate-switcher-widget.php:30
 msgid "Zinn® language switcher"

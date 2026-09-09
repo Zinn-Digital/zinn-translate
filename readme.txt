@@ -7,7 +7,7 @@ Tags: translation, multilingual, seo, hreflang, woocommerce
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 2.0.0
+Stable tag: 2.1.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -82,6 +82,12 @@ This plugin sends the text of your site to a translation provider **that you cho
 
 **No visitor data, analytics, personal data or order data is transmitted.** What is sent is the published content of your site, which is already public, plus the credential you saved for the provider you chose.
 
+* **Support diagnostics (only when you press send).** If you ask us for help, the plugin can send
+  a support report to `https://api.zinndigital.com/v1/connector/diagnostics`. **You are shown the
+  exact payload first, already redacted, and nothing leaves your site until you press send.**
+  Credentials are excluded by declaration rather than by matching key names, and render as
+  `[not sent — credential]`. The plugin never sends this on its own initiative.
+
 == What this plugin stores on your site ==
 
 One database table, `{prefix}zinn_translations`, holding one row per translated string: which content it belongs to, which language, the translation, a hash of the source it was made from, and whether you edited it by hand. It also stores your settings, including the API credential you saved.
@@ -122,6 +128,12 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 4. Per-language sitemaps and `llms.txt` addresses, with links to check them.
 
 == Changelog ==
+
+= 2.1.1 =
+* Fixed a fatal error on activation: the settings screen's class was never loaded, which took the site down on the front end and in wp-admin.
+
+= 2.1.0 =
+* Real settings, real styling and a real connection status, on the shared Zinn® plugin framework.
 
 = 2.0.0 =
 * Translated URL slugs, with permanent redirects from the untranslated address and from any slug a re-translation supersedes.
