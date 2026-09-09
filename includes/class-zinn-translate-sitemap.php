@@ -306,10 +306,20 @@ final class Zinn_Translate_Sitemap {
 	 * @return array<int, array{ref: string, path: string, title: string, body: string, modified: string}> The entries.
 	 */
 	private static function entries(): array {
-		$types   = Zinn_Translate_Options::get( 'post_types', array( 'post', 'page' ) );
+		// ⛔ The SAME list the collector walks, through the same accessor. A sitemap built
+		// from a different set of post types either advertises URLs whose pages were never
+		// translated, or omits pages that were — and both are told to a crawler as fact.
+		// ⛔⛔ And an EMPTY list means no entries, never a fallback. `WP_Query` treats an empty
+		// `post_type` as `post`, so passing one through would put untranslated posts into a
+		// translated sitemap — the plugin telling a crawler, as fact, that pages exist in a
+		// language nobody bought.
+		$types = Zinn_Translate_Options::post_types();
+		if ( array() === $types ) {
+			return array();
+		}
 		$query   = new WP_Query(
 			array(
-				'post_type'              => is_array( $types ) ? array_values( array_map( 'strval', $types ) ) : array( 'post', 'page' ),
+				'post_type'              => $types,
 				'post_status'            => 'publish',
 				'posts_per_page'         => self::MAX_URLS,
 				'orderby'                => 'modified',

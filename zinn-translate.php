@@ -3,7 +3,7 @@
  * Plugin Name:       Zinn® Translate
  * Plugin URI:        https://zinndigital.com/wordpress-plugins/zinn-translate
  * Description:       Publishes this site in every language you choose, on its own web addresses, with translated slugs, metadata, menus, WooCommerce products, hreflang, per-language sitemaps and llms.txt. Translate with your Zinn Digital® plan or with your own provider key.
- * Version:           2.1.1
+ * Version:           2.2.0
  * Requires at least: 6.6
  * Requires PHP:      8.2
  * Author:            Neil Lock — CEO, Zinn Digital® Ltd
@@ -52,7 +52,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'ZINN_TRANSLATE_VERSION', '2.1.1' );
+define( 'ZINN_TRANSLATE_VERSION', '2.2.0' );
 define( 'ZINN_TRANSLATE_FILE', __FILE__ );
 
 /**

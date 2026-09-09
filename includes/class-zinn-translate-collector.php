@@ -116,8 +116,8 @@ final class Zinn_Translate_Collector {
 	 * @return array<int, array<string, mixed>> Documents.
 	 */
 	private static function posts( int $limit ): array {
-		$types = Zinn_Translate_Options::get( 'post_types', array( 'post', 'page' ) );
-		if ( ! is_array( $types ) || array() === $types ) {
+		$types = Zinn_Translate_Options::post_types();
+		if ( array() === $types ) {
 			return array();
 		}
 		// ⛔ Published only. A draft is not on the site, so translating it spends the
@@ -125,7 +125,7 @@ final class Zinn_Translate_Collector {
 		// binned would then need retiring, which is a second cost for the same mistake.
 		$query     = new WP_Query(
 			array(
-				'post_type'              => array_values( array_map( 'strval', $types ) ),
+				'post_type'              => $types,
 				'post_status'            => 'publish',
 				'posts_per_page'         => max( 1, $limit ),
 				'orderby'                => 'modified',

@@ -7,7 +7,7 @@ Tags: translation, multilingual, seo, hreflang, woocommerce
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 2.1.1
+Stable tag: 2.2.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -128,6 +128,12 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 4. Per-language sitemaps and `llms.txt` addresses, with links to check them.
 
 == Changelog ==
+
+= 2.2.0 =
+* Fixed: your OpenGraph title and description are now translated as themselves. A page with an OpenGraph title different from its SEO title had the SEO title shared to Facebook, LinkedIn and X instead — translated, and not what you wrote.
+* Fixed: variation descriptions are shown in the visitor's language. They were being translated and stored, and the shopper still saw the original text under the variation picker.
+* Fixed: custom product attribute values are shown in the visitor's language, so "Material: Oak, Walnut" no longer answers a translated question in the original language.
+* New sites now translate WooCommerce products by default, alongside posts and pages. A site that had already chosen its post types keeps exactly what it chose.
 
 = 2.1.1 =
 * Fixed a fatal error on activation: the settings screen's class was never loaded, which took the site down on the front end and in wp-admin.

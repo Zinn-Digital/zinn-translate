@@ -203,7 +203,11 @@ final class Zinn_Translate_Admin {
 						'type'     => 'multiselect',
 						'label'    => __( 'Post types', 'zinn-translate' ),
 						'choices'  => self::post_type_choices(),
-						'default'  => array( 'post', 'page' ),
+						// ⛔⛔ NOT a literal. This field's default is what `Admin_UI::all()`
+						// fills an unsaved site with, and it therefore OVERRIDES
+						// `Options::defaults()` on every install — so a literal here is not a
+						// duplicate of the default, it IS the default, silently.
+						'default'  => Zinn_Translate_Options::default_post_types(),
 						'sanitize' => 'key',
 					),
 					array(

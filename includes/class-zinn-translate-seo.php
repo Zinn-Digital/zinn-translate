@@ -50,10 +50,17 @@ final class Zinn_Translate_SEO {
 		if ( 'yoast' === $which ) {
 			add_filter( 'wpseo_title', array( $this, 'meta_title' ), 20 );
 			add_filter( 'wpseo_metadesc', array( $this, 'meta_description' ), 20 );
-			add_filter( 'wpseo_opengraph_title', array( $this, 'meta_title' ), 20 );
-			add_filter( 'wpseo_opengraph_desc', array( $this, 'meta_description' ), 20 );
-			add_filter( 'wpseo_twitter_title', array( $this, 'meta_title' ), 20 );
-			add_filter( 'wpseo_twitter_description', array( $this, 'meta_description' ), 20 );
+			add_filter( 'wpseo_opengraph_title', array( $this, 'og_title' ), 20 );
+			add_filter( 'wpseo_opengraph_desc', array( $this, 'og_description' ), 20 );
+			// ⭐ Twitter takes the OpenGraph text too, because Yoast's OWN fallback chain is
+			// twitter → opengraph → SEO title. A post with an OpenGraph title and no Twitter
+			// title arrives here holding the OpenGraph text, so swapping it for the
+			// translated SEO title replaced one string with the translation of a different
+			// one. (`_yoast_wpseo_twitter-title` is deliberately not collected: a fourth
+			// title per post is a fourth string to buy in 57 languages, and on real installs
+			// it is either unset or a copy of the OpenGraph one — §2.45.)
+			add_filter( 'wpseo_twitter_title', array( $this, 'og_title' ), 20 );
+			add_filter( 'wpseo_twitter_description', array( $this, 'og_description' ), 20 );
 			add_filter( 'wpseo_canonical', array( $this, 'canonical' ), 20 );
 			// ⛔ Yoast builds its own sitemap. Ours is registered under a different name and
 			// its index is linked from robots.txt, so the two coexist rather than compete.
@@ -63,8 +70,8 @@ final class Zinn_Translate_SEO {
 		if ( 'rankmath' === $which ) {
 			add_filter( 'rank_math/frontend/title', array( $this, 'meta_title' ), 20 );
 			add_filter( 'rank_math/frontend/description', array( $this, 'meta_description' ), 20 );
-			add_filter( 'rank_math/opengraph/facebook/og_title', array( $this, 'meta_title' ), 20 );
-			add_filter( 'rank_math/opengraph/facebook/og_description', array( $this, 'meta_description' ), 20 );
+			add_filter( 'rank_math/opengraph/facebook/og_title', array( $this, 'og_title' ), 20 );
+			add_filter( 'rank_math/opengraph/facebook/og_description', array( $this, 'og_description' ), 20 );
 			add_filter( 'rank_math/frontend/canonical', array( $this, 'canonical' ), 20 );
 		}
 
@@ -72,13 +79,24 @@ final class Zinn_Translate_SEO {
 			add_filter( 'aioseo_title', array( $this, 'meta_title' ), 20 );
 			add_filter( 'aioseo_description', array( $this, 'meta_description' ), 20 );
 			add_filter( 'aioseo_canonical_url', array( $this, 'canonical' ), 20 );
+			// ⛔⛔ AIOSEO DELIBERATELY GETS NO OPENGRAPH FILTER, and the reason is the same
+			// one that makes `meta_keys()` empty for it: its per-post data lives in AIOSEO's
+			// own table, so there is no `og_title` to collect and nothing to put back. A
+			// filter here could only ever render the SEO title into the OpenGraph tag —
+			// which is precisely the defect the three branches above were just fixed for, so
+			// adding one would re-create it under a different plugin's name.
+			// ⚠️ What an AIOSEO site therefore gets: its OpenGraph title and description stay
+			// in the source language while the page itself is translated. That is a named
+			// gap, not an oversight, and closing it means reading AIOSEO's table — a lane
+			// that needs a real AIOSEO install to verify against, which this one did not
+			// have. Nothing here guesses at a filter name we could not run.
 		}
 
 		if ( 'seopress' === $which ) {
 			add_filter( 'seopress_titles_the_title', array( $this, 'meta_title' ), 20 );
 			add_filter( 'seopress_titles_desc', array( $this, 'meta_description' ), 20 );
-			add_filter( 'seopress_social_og_title', array( $this, 'meta_title' ), 20 );
-			add_filter( 'seopress_social_og_desc', array( $this, 'meta_description' ), 20 );
+			add_filter( 'seopress_social_og_title', array( $this, 'og_title' ), 20 );
+			add_filter( 'seopress_social_og_desc', array( $this, 'og_description' ), 20 );
 			add_filter( 'seopress_canonical', array( $this, 'canonical' ), 20 );
 		}
 
@@ -226,6 +244,40 @@ final class Zinn_Translate_SEO {
 	}
 
 	/**
+	 * Translate a rendered OpenGraph title.
+	 *
+	 * ⛔⛔ **THIS CALLBACK EXISTS BECAUSE ITS ABSENCE WAS A LIVE CONTENT DEFECT, NOT MERELY A
+	 * MISSING FEATURE.** Every OpenGraph filter on every provider used to be bound to
+	 * `meta_title`, so a post whose author had written a *different* OpenGraph title — which
+	 * is the entire reason that field exists — had its `og:title` replaced with the
+	 * translated SEO title. The tag was present, it was in the right language, and it said
+	 * something the author never wrote. An absence check cannot see that state: the only
+	 * thing wrong with it is which of two translations it is.
+	 *
+	 * ⭐ The fallback to `meta_title` is deliberate and is the correct behaviour, not a
+	 * leftover. Most posts have no separate OpenGraph title, so both the SEO plugin and this
+	 * plugin fall back the same way — the plugin renders its SEO title into `og:title`, and
+	 * we translate it as one. What changed is that the fallback now happens only when there
+	 * is genuinely no OpenGraph translation to use.
+	 *
+	 * @param string $title The OpenGraph title the SEO plugin built.
+	 * @return string The translated title, or the original.
+	 */
+	public function og_title( $title ): string {
+		return $this->swap_first( (string) $title, 'og_title', 'meta_title' );
+	}
+
+	/**
+	 * Translate a rendered OpenGraph description, on the same terms.
+	 *
+	 * @param string $description The OpenGraph description the SEO plugin built.
+	 * @return string The translated description, or the original.
+	 */
+	public function og_description( $description ): string {
+		return $this->swap_first( (string) $description, 'og_description', 'meta_description' );
+	}
+
+	/**
 	 * Point a canonical URL at this request's own locale.
 	 *
 	 * ⛔⛔ **A translated page's canonical must be ITSELF, never the source page.** Pointing
@@ -369,6 +421,28 @@ final class Zinn_Translate_SEO {
 	 */
 	private function swap( string $original, string $field ): string {
 		$translated = Zinn_Translate_Renderer::lookup( $this->current_ref(), $field );
+		return null === $translated ? $original : $translated;
+	}
+
+	/**
+	 * Swap for the first of two fields we have a translation for.
+	 *
+	 * ⛔ The fallback is tried only when the preferred field is genuinely ABSENT — never
+	 * when it is present and empty, because `lookup()` already collapses those two into
+	 * null on purpose. Falling back on a real empty translation would put the SEO title
+	 * into a tag the author had deliberately blanked.
+	 *
+	 * @param string $original The value the SEO plugin produced.
+	 * @param string $field    The field that should answer.
+	 * @param string $fallback The field to use when it does not.
+	 * @return string The translation, or the original.
+	 */
+	private function swap_first( string $original, string $field, string $fallback ): string {
+		$ref        = $this->current_ref();
+		$translated = Zinn_Translate_Renderer::lookup( $ref, $field );
+		if ( null === $translated ) {
+			$translated = Zinn_Translate_Renderer::lookup( $ref, $fallback );
+		}
 		return null === $translated ? $original : $translated;
 	}
 

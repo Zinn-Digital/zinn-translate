@@ -91,7 +91,7 @@ final class Zinn_Translate_Options {
 			'translate_terms'       => true,
 			'translate_menus'       => true,
 			'translate_woo'         => true,
-			'post_types'            => array( 'post', 'page' ),
+			'post_types'            => self::default_post_types(),
 			// ── When it happens ───────────────────────────────────────────────────
 			'auto_translate'        => true,
 			'batch_size'            => 20,
@@ -107,6 +107,42 @@ final class Zinn_Translate_Options {
 			'switcher_show_current' => true,
 			'switcher_show_source'  => true,
 		);
+	}
+
+	/**
+	 * The post types a site translates unless its owner says otherwise.
+	 *
+	 * ⛔⛔ **DEFINED HERE AND NOWHERE ELSE, AND THAT IS THE POINT RATHER THAN TIDINESS.**
+	 * This list used to be written out in four files — `defaults()`, the settings field, the
+	 * collector's fallback and the sitemap's — and the one in the SETTINGS FIELD silently won
+	 * on every site: `Zinn_Translate_Admin_UI::all()` fills any unsaved key from the field's
+	 * own declared default, and `all()` merges `defaults()` *underneath* that. So changing
+	 * the default here alone changed nothing a customer could see (§2.45).
+	 *
+	 * ⛔ `product` is in the list because `translate_woo` defaults on. Without it a stock
+	 * install collected a product's short description, purchase note, attributes and
+	 * variation descriptions and left its NAME, description, excerpt, slug and SEO fields in
+	 * the source language — the half-translated shop this plugin's WooCommerce class exists
+	 * to prevent. The post type is registered by WooCommerce, so on a site without it the
+	 * name is simply an entry `WP_Query` matches nothing for, which costs nothing.
+	 *
+	 * @return string[] Post type names.
+	 */
+	public static function default_post_types(): array {
+		return array( 'post', 'page', 'product' );
+	}
+
+	/**
+	 * The post types this site translates.
+	 *
+	 * @return string[] Post type names, defaulted and coerced.
+	 */
+	public static function post_types(): array {
+		$types = self::get( 'post_types', self::default_post_types() );
+		if ( ! is_array( $types ) || array() === $types ) {
+			return array();
+		}
+		return array_values( array_map( 'strval', $types ) );
 	}
 
 	/**
