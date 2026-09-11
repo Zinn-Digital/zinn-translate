@@ -7,7 +7,7 @@ Tags: translation, multilingual, seo, hreflang, woocommerce
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 2.2.0
+Stable tag: 2.2.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -129,6 +129,9 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 
 == Changelog ==
 
+= 2.2.1 =
+* Fixed a fatal error when opening or saving the settings screen on a site that updated to 2.2.0 before 13:44 UTC on 9 September 2026. Three classes the screen uses were shipped in that build but never loaded. Sites that installed 2.2.0 later already had the fix; this release makes sure every site gets it.
+
 = 2.2.0 =
 * Fixed: your OpenGraph title and description are now translated as themselves. A page with an OpenGraph title different from its SEO title had the SEO title shared to Facebook, LinkedIn and X instead — translated, and not what you wrote.
 * Fixed: variation descriptions are shown in the visitor's language. They were being translated and stored, and the shopper still saw the original text under the variation picker.
@@ -158,6 +161,9 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 * Rendering of translated titles, bodies and excerpts with locale-prefixed URLs and hreflang.
 
 == Upgrade Notice ==
+
+= 2.2.1 =
+Fixes a fatal error on the settings screen for sites that took the first 2.2.0 build. Nothing else changes and your settings are kept.
 
 = 2.2.0 =
 Fixes the OpenGraph title and description shared to Facebook, LinkedIn and X: a page with its own OpenGraph title was having the SEO title shared instead. Also shows variation descriptions and custom attribute values in the visitor's language, and translates WooCommerce products by default on new sites. Your existing settings are unchanged.
