@@ -32,6 +32,7 @@ final class Zinn_Translate_Provider_OpenAI implements Zinn_Translate_Provider {
 
 	private const DEFAULT_MODEL = 'gpt-4.1-mini';
 
+	// phpcs:ignore PluginCheck.CodeAnalysis.AIProvider.DirectIntegration -- The customer's OWN provider key is the product (bring your own key): the site owner chose this vendor and pays it directly. The WordPress AI Client exists only from WordPress 7.0 and this plugin supports 6.6.
 	private const DEFAULT_BASE = 'https://api.openai.com/v1';
 
 	/**

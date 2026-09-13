@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Zinn® Translate 2.2.1\n"
+"Project-Id-Version: Zinn® Translate 2.2.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/zinn-translate\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-09-11T18:09:29+00:00\n"
+"POT-Creation-Date: 2026-09-13T00:37:45+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: zinn-translate\n"
@@ -813,19 +813,19 @@ msgstr ""
 msgid "DeepL answered with something we could not read. Nothing was saved."
 msgstr ""
 
-#: includes/providers/class-zinn-translate-provider-gemini.php:107
+#: includes/providers/class-zinn-translate-provider-gemini.php:108
 msgid "No Google Gemini API key is saved, so there is nothing to translate with."
 msgstr ""
 
-#: includes/providers/class-zinn-translate-provider-gemini.php:155
+#: includes/providers/class-zinn-translate-provider-gemini.php:156
 msgid "Google Gemini could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
 msgstr ""
 
-#: includes/providers/class-zinn-translate-provider-openai.php:103
+#: includes/providers/class-zinn-translate-provider-openai.php:104
 msgid "No OpenAI API key is saved, so there is nothing to translate with."
 msgstr ""
 
-#: includes/providers/class-zinn-translate-provider-openai.php:139
+#: includes/providers/class-zinn-translate-provider-openai.php:140
 msgid "OpenAI could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
 msgstr ""
 

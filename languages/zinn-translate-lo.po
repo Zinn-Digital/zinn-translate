@@ -278,10 +278,10 @@ msgstr "ປະເພດໂພສ"
 msgid "Translate the web addresses too"
 msgstr "ແປທີ່ຢູ່ເວັບໄຊຄືກັນ"
 
-#. zinn-i18n: not translated — TranslationRejectedError: lo translation has Thai characters welded INSIDE a word, with lo's own script on both sides and no space betwe
+#. zinn-i18n: human translation — the machine translator refused this string
 #: includes/class-zinn-translate-admin.php:213
 msgid "French visitors get /fr/a-propos/ rather than /fr/about/. The untranslated address keeps working and redirects, so nothing that was indexed breaks."
-msgstr ""
+msgstr "ຜູ້ເຂົ້າຊົມພາສາຝຣັ່ງຈະໄດ້ຮັບ /fr/a-propos/ ແທນ /fr/about/. ທີ່ຢູ່ທີ່ບໍ່ໄດ້ແປຍັງໃຊ້ງານໄດ້ ແລະ ຈະສົ່ງຕໍ່ໄປຫາທີ່ຢູ່ໃໝ່, ດັ່ງນັ້ນສິ່ງທີ່ຖືກບັນທຶກໃນດັດຊະນີແລ້ວຈະບໍ່ເສຍຫາຍ."
 
 #: includes/class-zinn-translate-admin.php:220
 msgid "Translate SEO titles, descriptions and image alt text"

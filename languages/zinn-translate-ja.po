@@ -20,10 +20,10 @@ msgid "https://zinndigital.com/wordpress-plugins/zinn-translate"
 msgstr "https://zinndigital.com/wordpress-plugins/zinn-translate"
 
 #. Description of the plugin
-#. zinn-i18n: not translated — MalformedMarkError: [ja] the translation INVENTED a registered mark: ['選択したすべての言語で、それぞれ独自のウェブアドレス、翻訳されたスラッグ、メタデータ、メニュー、WooCommerce
+#. zinn-i18n: human translation — the machine translator refused this string
 #: zinn-translate.php
 msgid "Publishes this site in every language you choose, on its own web addresses, with translated slugs, metadata, menus, WooCommerce products, hreflang, per-language sitemaps and llms.txt. Translate with your Zinn Digital® plan or with your own provider key."
-msgstr ""
+msgstr "このサイトを、選択したすべての言語で、それぞれ独自のウェブアドレスで公開します。スラッグ、メタデータ、メニュー、WooCommerce 商品、hreflang、言語別サイトマップ、llms.txt にも対応します。翻訳には Zinn Digital® プラン、またはご自身のプロバイダーキーを使用できます。"
 
 #. Author of the plugin
 #: zinn-translate.php

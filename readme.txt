@@ -7,11 +7,11 @@ Tags: translation, multilingual, seo, hreflang, woocommerce
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 2.2.1
+Stable tag: 2.2.2
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Publish your site in 58 languages on their own web addresses, with translated slugs, metadata, menus, WooCommerce products, hreflang and per-language sitemaps.
+Publish your site in 58 languages on their own web addresses, with translated slugs, metadata, menus, WooCommerce products, hreflang and sitemaps.
 
 == Description ==
 
@@ -129,6 +129,11 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 
 == Changelog ==
 
+= 2.2.2 =
+* Translations: every string this plugin's admin shows is now translated in every bundled language. A few strings the machine translator refused were shipping in English; they are now translated by hand.
+* The Japanese plugin description is translated.
+* Every query against the plugin's translation table binds the table name as an identifier.
+
 = 2.2.1 =
 * Fixed a fatal error when opening or saving the settings screen on a site that updated to 2.2.0 before 13:44 UTC on 9 September 2026. Three classes the screen uses were shipped in that build but never loaded. Sites that installed 2.2.0 later already had the fix; this release makes sure every site gets it.
 
@@ -166,7 +171,7 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 Fixes a fatal error on the settings screen for sites that took the first 2.2.0 build. Nothing else changes and your settings are kept.
 
 = 2.2.0 =
-Fixes the OpenGraph title and description shared to Facebook, LinkedIn and X: a page with its own OpenGraph title was having the SEO title shared instead. Also shows variation descriptions and custom attribute values in the visitor's language, and translates WooCommerce products by default on new sites. Your existing settings are unchanged.
+Shares the right OpenGraph title and description to Facebook, LinkedIn and X, shows variation descriptions and custom attribute values in the visitor's language, and translates WooCommerce products by default on new sites. Your settings are unchanged.
 
 = 2.0.0 =
 Adds translated slugs, metadata, menus and WooCommerce, a language switcher, manual overrides, per-language sitemaps, and the option to translate with your own provider key instead of a Zinn Digital® plan. Your existing settings are carried over.

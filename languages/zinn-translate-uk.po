@@ -280,10 +280,10 @@ msgstr "Типи публікацій"
 msgid "Translate the web addresses too"
 msgstr "Перекладіть також веб-адреси"
 
-#. zinn-i18n: not translated — NeedsHumanTranslationError: uk translation contains 'відвідувачі', a token that repeats its own opening — the shape of `revrevendeur` for
+#. zinn-i18n: human translation — the machine translator refused this string
 #: includes/class-zinn-translate-admin.php:213
 msgid "French visitors get /fr/a-propos/ rather than /fr/about/. The untranslated address keeps working and redirects, so nothing that was indexed breaks."
-msgstr ""
+msgstr "Відвідувачі французькою отримують /fr/a-propos/ замість /fr/about/. Неперекладена адреса й далі працює та переспрямовує, тож нічого з уже проіндексованого не ламається."
 
 #: includes/class-zinn-translate-admin.php:220
 msgid "Translate SEO titles, descriptions and image alt text"
@@ -739,11 +739,11 @@ msgstr "Залиште це вимкненим, і попереднє налаш
 msgid "Zinn® language switcher"
 msgstr "Мовний перемикач Zinn®"
 
-#. zinn-i18n: not translated — NeedsHumanTranslationError: uk translation contains 'відвідувачам', a token that repeats its own opening — the shape of `revrevendeur` for
+#. zinn-i18n: human translation — the machine translator refused this string
 #: includes/class-zinn-translate-switcher-widget.php:31
 #: includes/class-zinn-translate-switcher.php:138
 msgid "Let visitors read this page in another language."
-msgstr ""
+msgstr "Дозвольте відвідувачам читати цю сторінку іншою мовою."
 
 #: includes/class-zinn-translate-switcher-widget.php:79
 msgid "Title"

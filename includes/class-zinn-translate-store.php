@@ -158,8 +158,8 @@ final class Zinn_Translate_Store {
 	public static function drop(): void {
 		global $wpdb;
 		$table = self::table();
-		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- The table name is built from $wpdb->prefix and a literal; it cannot be parameterised and contains no user input.
-		$wpdb->query( "DROP TABLE IF EXISTS {$table}" );
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.DirectDatabaseQuery.SchemaChange -- Uninstall removes the plugin-owned table it created; there is no core API for dropping a table.
+		$wpdb->query( $wpdb->prepare( 'DROP TABLE IF EXISTS %i', $table ) );
 		delete_option( self::SCHEMA_OPTION );
 	}
 
@@ -213,11 +213,11 @@ final class Zinn_Translate_Store {
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Plugin-owned table; there is no core API for it. The read path caches in for_locale().
 		$wpdb->query(
 			$wpdb->prepare(
-				// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- Table name from $wpdb->prefix.
-				"INSERT INTO {$table} (object_ref, field, locale, text, source_hash, status, updated_at)
+				'INSERT INTO %i (object_ref, field, locale, text, source_hash, status, updated_at)
 				 VALUES (%s, %s, %s, %s, %s, %s, %s)
 				 ON DUPLICATE KEY UPDATE text = VALUES(text), source_hash = VALUES(source_hash),
-				 status = VALUES(status), updated_at = VALUES(updated_at)",
+				 status = VALUES(status), updated_at = VALUES(updated_at)',
+				$table,
 				$object_ref,
 				$field,
 				$locale,
@@ -266,10 +266,10 @@ final class Zinn_Translate_Store {
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Plugin-owned table; a write.
 		$wpdb->query(
 			$wpdb->prepare(
-				// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- Table name from $wpdb->prefix.
-				"INSERT INTO {$table} (object_ref, field, locale, text, source_hash, status, updated_at)
+				"INSERT INTO %i (object_ref, field, locale, text, source_hash, status, updated_at)
 				 VALUES (%s, %s, %s, %s, '', %s, %s)
 				 ON DUPLICATE KEY UPDATE text = VALUES(text), updated_at = VALUES(updated_at)",
+				$table,
 				$object_ref,
 				self::FIELD_SLUG_HISTORY,
 				$locale,
@@ -294,9 +294,9 @@ final class Zinn_Translate_Store {
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Plugin-owned table; single-row admin read.
 		$row = $wpdb->get_row(
 			$wpdb->prepare(
-				// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- Table name from $wpdb->prefix.
-				"SELECT text, source_hash, status FROM {$table}
-				 WHERE object_ref = %s AND field = %s AND locale = %s",
+				'SELECT text, source_hash, status FROM %i
+				 WHERE object_ref = %s AND field = %s AND locale = %s',
+				$table,
 				$object_ref,
 				$field,
 				$locale
@@ -332,13 +332,13 @@ final class Zinn_Translate_Store {
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Plugin-owned table; the result IS the cache being populated on the next line.
 		$rows = $wpdb->get_results(
 			$wpdb->prepare(
-				// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- Table name from $wpdb->prefix.
-				"SELECT object_ref, field, text FROM {$table} WHERE locale = %s AND text <> ''",
+				"SELECT object_ref, field, text FROM %i WHERE locale = %s AND text <> ''",
+				$table,
 				$locale
 			),
 			ARRAY_A
 		);
-		$out = array();
+		$out  = array();
 		foreach ( (array) $rows as $row ) {
 			$out[ (string) $row['object_ref'] ][ (string) $row['field'] ] = (string) $row['text'];
 		}
@@ -376,12 +376,16 @@ final class Zinn_Translate_Store {
 		}
 		global $wpdb;
 		$table = self::table();
-		$sql   = "SELECT source_hash, text FROM {$table}
-			 WHERE locale = %s AND source_hash <> '' AND text <> ''";
-		// phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared, WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- Prefixed table name plus one bound value.
-		$prepared = $wpdb->prepare( $sql, $locale );
-		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.PreparedSQL.NotPrepared -- Plugin-owned table; the result IS the cache being populated below.
-		$rows = $wpdb->get_results( $prepared, ARRAY_A );
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Plugin-owned table; the result IS the cache being populated below.
+		$rows = $wpdb->get_results(
+			$wpdb->prepare(
+				"SELECT source_hash, text FROM %i
+				 WHERE locale = %s AND source_hash <> '' AND text <> ''",
+				$table,
+				$locale
+			),
+			ARRAY_A
+		);
 		$out  = array();
 		foreach ( (array) $rows as $row ) {
 			$out[ (string) $row['source_hash'] ] = (string) $row['text'];
@@ -408,9 +412,9 @@ final class Zinn_Translate_Store {
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Plugin-owned table; a write.
 		$count = $wpdb->query(
 			$wpdb->prepare(
-				// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- Table name from $wpdb->prefix.
-				"UPDATE {$table} SET status = %s WHERE object_ref = %s AND field = %s
-				 AND source_hash <> %s AND status <> %s",
+				'UPDATE %i SET status = %s WHERE object_ref = %s AND field = %s
+				 AND source_hash <> %s AND status <> %s',
+				$table,
 				self::STATUS_STALE,
 				$object_ref,
 				$field,
@@ -447,11 +451,17 @@ final class Zinn_Translate_Store {
 		// ⛔ The IN() list is a generated run of `%s` placeholders and NOTHING else — every
 		// value is bound by `prepare()`. The count comes from `count( $keep_refs )` and the
 		// arguments from the same array, so the two cannot disagree.
-		$sql = "DELETE FROM {$table} WHERE object_ref NOT IN ({$placeholders})";
-		// phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared, WordPress.DB.PreparedSQL.InterpolatedNotPrepared, WordPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare -- As above: the statement is a prefixed table name plus generated `%s` placeholders, and every value is bound here.
-		$prepared = $wpdb->prepare( $sql, ...array_values( $keep_refs ) );
-		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.PreparedSQL.NotPrepared -- Plugin-owned table; the argument is the prepared statement from the line above.
-		$count = $wpdb->query( $prepared );
+		// ⭐ The table is bound as an identifier (`%i`) rather than interpolated, so the only
+		// thing spliced into the statement is the run of `%s` built above.
+		// phpcs:disable WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.PreparedSQL.InterpolatedNotPrepared, WordPress.DB.PreparedSQLPlaceholders.ReplacementsWrongNumber -- Plugin-owned table; `$placeholders` is a generated run of `%s` and every value is spread into prepare(), which the sniff cannot count.
+		$count = $wpdb->query(
+			$wpdb->prepare(
+				"DELETE FROM %i WHERE object_ref NOT IN ({$placeholders})",
+				$table,
+				...array_values( $keep_refs )
+			)
+		);
+		// phpcs:enable
 		self::flush_cache();
 		return (int) $count;
 	}
@@ -468,8 +478,8 @@ final class Zinn_Translate_Store {
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Plugin-owned table; a write.
 		$count = $wpdb->query(
 			$wpdb->prepare(
-				// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- Table name from $wpdb->prefix.
-				"DELETE FROM {$table} WHERE object_ref = %s",
+				'DELETE FROM %i WHERE object_ref = %s',
+				$table,
 				$object_ref
 			)
 		);
@@ -493,16 +503,15 @@ final class Zinn_Translate_Store {
 		if ( '' === $locale ) {
 			// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Plugin-owned table; an admin screen read.
 			$rows = $wpdb->get_results(
-				// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- Table name from $wpdb->prefix; no user input.
-				"SELECT status, COUNT(*) AS total FROM {$table} GROUP BY status",
+				$wpdb->prepare( 'SELECT status, COUNT(*) AS total FROM %i GROUP BY status', $table ),
 				ARRAY_A
 			);
 		} else {
 			// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Plugin-owned table; an admin screen read.
 			$rows = $wpdb->get_results(
 				$wpdb->prepare(
-					// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- Table name from $wpdb->prefix.
-					"SELECT status, COUNT(*) AS total FROM {$table} WHERE locale = %s GROUP BY status",
+					'SELECT status, COUNT(*) AS total FROM %i WHERE locale = %s GROUP BY status',
+					$table,
 					$locale
 				),
 				ARRAY_A
@@ -530,31 +539,29 @@ final class Zinn_Translate_Store {
 	 */
 	public static function browse( string $locale, string $search, int $limit, int $offset ): array {
 		global $wpdb;
-		$table  = self::table();
-		$where  = array( '1=1' );
-		$params = array();
-		if ( '' !== $locale ) {
-			$where[]  = 'locale = %s';
-			$params[] = $locale;
-		}
-		if ( '' !== $search ) {
-			$where[]  = '(object_ref LIKE %s OR text LIKE %s)';
-			$like     = '%' . $wpdb->esc_like( $search ) . '%';
-			$params[] = $like;
-			$params[] = $like;
-		}
-		$params[] = max( 1, $limit );
-		$params[] = max( 0, $offset );
-		$clause   = implode( ' AND ', $where );
-		// ⛔ `$clause` is built from string LITERALS in this function and placeholders only —
-		// no caller input reaches it. The values are appended to `$params` in the same order
-		// the placeholders were added, which is why the two are built side by side above.
-		$sql = "SELECT object_ref, field, locale, text, status FROM {$table}
-			 WHERE {$clause} ORDER BY updated_at DESC LIMIT %d OFFSET %d";
-		// phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared, WordPress.DB.PreparedSQL.InterpolatedNotPrepared, WordPress.DB.PreparedSQLPlaceholders.ReplacementsWrongNumber -- As above: the WHERE clause is literals and placeholders only, and every value is bound here.
-		$prepared = $wpdb->prepare( $sql, ...$params );
-		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.PreparedSQL.NotPrepared -- Plugin-owned table; the argument is the prepared statement from the line above.
-		$rows = $wpdb->get_results( $prepared, ARRAY_A );
+		$table = self::table();
+		$like  = '' === $search ? '' : '%' . $wpdb->esc_like( $search ) . '%';
+		// ⭐ ONE literal statement: an empty filter disables its own condition (`%s = ''`), so no
+		// SQL is assembled from pieces and every value is bound. MySQL folds the constant test
+		// before planning, so a real locale still uses the index.
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Plugin-owned table; an admin screen read.
+		$rows = $wpdb->get_results(
+			$wpdb->prepare(
+				"SELECT object_ref, field, locale, text, status FROM %i
+				 WHERE ( %s = '' OR locale = %s )
+				 AND ( %s = '' OR object_ref LIKE %s OR text LIKE %s )
+				 ORDER BY updated_at DESC LIMIT %d OFFSET %d",
+				$table,
+				$locale,
+				$locale,
+				$like,
+				$like,
+				$like,
+				max( 1, $limit ),
+				max( 0, $offset )
+			),
+			ARRAY_A
+		);
 		return array_map(
 			static function ( $row ): array {
 				return array_map( 'strval', (array) $row );

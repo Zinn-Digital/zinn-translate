@@ -447,7 +447,7 @@ msgstr "រក្សាទុក"
 
 #: includes/class-zinn-translate-admin.php:526
 msgid "Nothing translated yet. Publish a language and translation starts in the background."
-msgstr "មិនទាន់មានការបកប្រែទេ។ បោះពុម្ពផ្សាយភាសា១ ហើយការបកប្រែនឹងចាប់ផ្តើមនៅផ្ទៃខាងក្រោយ។"
+msgstr "មិនទាន់មានការបកប្រែទេ។ បោះពុម្ពផ្សាយភាសាមួយ ហើយការបកប្រែនឹងចាប់ផ្តើមនៅផ្ទៃខាងក្រោយ។"
 
 #: includes/class-zinn-translate-admin.php:559
 msgid "These addresses are live. Open any of them to check it, and submit the sitemap index to Google Search Console."

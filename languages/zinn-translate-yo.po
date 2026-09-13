@@ -190,10 +190,10 @@ msgstr "Àwọn àtúnṣe ọwọ́"
 msgid "Sitemaps and URLs"
 msgstr "Àwọn sitemap àti àwọn URL"
 
-#. zinn-i18n: not translated — NeedsHumanTranslationError: yo translation contains 'Gbogbogbo', a token that repeats its own opening — the shape of `revrevendeur` for `r
+#. zinn-i18n: human translation — the machine translator refused this string
 #: includes/class-zinn-translate-admin.php:114
 msgid "General"
-msgstr ""
+msgstr "Gbogbogbò"
 
 #: includes/class-zinn-translate-admin.php:119
 msgid "Who pays for the translation"
