@@ -7,7 +7,7 @@ Tags: translation, multilingual, seo, hreflang, woocommerce
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 2.2.3
+Stable tag: 2.2.4
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -128,6 +128,9 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 4. Per-language sitemaps and `llms.txt` addresses, with links to check them.
 
 == Changelog ==
+
+= 2.2.4 =
+* In a right-to-left admin language, the Zinn Digital® menu entry showed its trademark symbol on the wrong side of the name. The name is now isolated so it reads correctly in Arabic, Hebrew, Persian, Pashto and Urdu.
 
 = 2.2.3 =
 * The admin screens' styles and scripts are now enqueued through WordPress rather than printed into the page, so they can be dequeued, deferred or optimised by your site like any other asset — and they still work on a site whose security policy forbids inline code.
