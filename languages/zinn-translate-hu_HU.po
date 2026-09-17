@@ -34,145 +34,149 @@ msgstr "Neil Lock — CEO, Zinn Digital® Ltd"
 msgid "https://zinndigital.com"
 msgstr "https://zinndigital.com"
 
-#: includes/class-zinn-translate-admin-fields.php:575
+#: includes/class-zinn-translate-admin-fields.php:580
 msgid "Stored. Type a new value to replace it."
 msgstr "Mentve. Írjon be egy új értéket a cseréhez."
 
-#: includes/class-zinn-translate-admin-fields.php:635
+#: includes/class-zinn-translate-admin-fields.php:640
 msgid "Filter this list…"
 msgstr "Lista szűrése…"
 
-#: includes/class-zinn-translate-admin-fields.php:636
+#: includes/class-zinn-translate-admin-fields.php:641
 msgid "Filter this list"
 msgstr "Lista szűrése"
 
-#: includes/class-zinn-translate-admin-fields.php:652
+#: includes/class-zinn-translate-admin-fields.php:657
 msgid "Nothing matches that filter."
 msgstr "Nincs találat erre a szűrőre."
 
-#: includes/class-zinn-translate-admin-fields.php:683
+#: includes/class-zinn-translate-admin-fields.php:688
 msgid "Add a row"
 msgstr "Sor hozzáadása"
 
-#: includes/class-zinn-translate-admin-fields.php:720
+#: includes/class-zinn-translate-admin-fields.php:725
 msgid "Remove this row"
 msgstr "Sor eltávolítása"
 
-#: includes/class-zinn-translate-admin-fields.php:720
+#: includes/class-zinn-translate-admin-fields.php:725
 msgid "Remove"
 msgstr "Törlés"
 
-#: includes/class-zinn-translate-admin-ui.php:264
-#: includes/class-zinn-translate-admin-ui.php:265
-#: includes/class-zinn-translate-admin-ui.php:335
+#: includes/class-zinn-translate-admin-ui.php:280
+#: includes/class-zinn-translate-admin-ui.php:281
+#: includes/class-zinn-translate-admin-ui.php:421
 msgid "Zinn Digital®"
 msgstr "Zinn Digital®"
 
-#: includes/class-zinn-translate-admin-ui.php:278
+#: includes/class-zinn-translate-admin-ui.php:294
 msgid "Zinn Digital® — overview"
 msgstr "Zinn Digital® – áttekintés"
 
-#: includes/class-zinn-translate-admin-ui.php:279
+#: includes/class-zinn-translate-admin-ui.php:295
 msgid "Overview"
 msgstr "Áttekintés"
 
-#: includes/class-zinn-translate-admin-ui.php:336
+#: includes/class-zinn-translate-admin-ui.php:383
+msgid "Copied"
+msgstr "Másolva"
+
+#: includes/class-zinn-translate-admin-ui.php:422
 msgid "Every Zinn® plugin on this site, and whether it is working."
 msgstr "Minden Zinn® bővítmény ezen a webhelyen, és hogy működik-e."
 
-#: includes/class-zinn-translate-admin-ui.php:352
+#: includes/class-zinn-translate-admin-ui.php:437
 msgid "No connection is needed for this plugin."
 msgstr "Ehhez a bővítményhez nincs szükség kapcsolatra."
 
-#: includes/class-zinn-translate-admin-ui.php:357
+#: includes/class-zinn-translate-admin-ui.php:442
 msgid "Open settings"
 msgstr "Beállítások megnyitása"
 
-#: includes/class-zinn-translate-admin-ui.php:685
-#: includes/class-zinn-translate-admin-ui.php:1248
+#: includes/class-zinn-translate-admin-ui.php:770
+#: includes/class-zinn-translate-admin-ui.php:1331
 msgid "You do not have permission to change these settings."
 msgstr "Nincs jogosultsága a beállítások módosításához."
 
-#: includes/class-zinn-translate-admin-ui.php:715
+#: includes/class-zinn-translate-admin-ui.php:799
 msgid "Settings sections"
 msgstr "Beállítások szakaszai"
 
-#: includes/class-zinn-translate-admin-ui.php:788
+#: includes/class-zinn-translate-admin-ui.php:871
 msgid "Support"
 msgstr "Támogatás"
 
-#: includes/class-zinn-translate-admin-ui.php:846
+#: includes/class-zinn-translate-admin-ui.php:929
 msgid "Save changes"
 msgstr "Változtatások mentése"
 
-#: includes/class-zinn-translate-admin-ui.php:875
+#: includes/class-zinn-translate-admin-ui.php:958
 msgid "Tools"
 msgstr "Eszközök"
 
-#: includes/class-zinn-translate-admin-ui.php:890
+#: includes/class-zinn-translate-admin-ui.php:973
 msgid "Export settings"
 msgstr "Beállítások exportálása"
 
-#: includes/class-zinn-translate-admin-ui.php:893
+#: includes/class-zinn-translate-admin-ui.php:976
 msgid "Reset to defaults"
 msgstr "Alapértelmezések visszaállítása"
 
-#: includes/class-zinn-translate-admin-ui.php:894
+#: includes/class-zinn-translate-admin-ui.php:977
 msgid "This puts every setting on this plugin back to its default. Continue?"
 msgstr "Ez visszaállítja a bővítmény összes beállítását az alapértelmezettre. Folytatja?"
 
-#: includes/class-zinn-translate-admin-ui.php:901
+#: includes/class-zinn-translate-admin-ui.php:984
 msgid "Diagnostics for support"
 msgstr "Diagnosztika az ügyfélszolgálat számára"
 
-#: includes/class-zinn-translate-admin-ui.php:910
+#: includes/class-zinn-translate-admin-ui.php:993
 msgid "Import a settings file"
 msgstr "Beállításfájl importálása"
 
-#: includes/class-zinn-translate-admin-ui.php:912
+#: includes/class-zinn-translate-admin-ui.php:995
 msgid "Import"
 msgstr "Importálás"
 
-#: includes/class-zinn-translate-admin-ui.php:914
+#: includes/class-zinn-translate-admin-ui.php:997
 msgid "Exported files never contain passwords, tokens or API keys — you will need to enter those again on the new site."
 msgstr "Az exportált fájlok soha nem tartalmaznak jelszavakat, tokeneket vagy API-kulcsokat – ezeket az új oldalon újra meg kell adnia."
 
-#: includes/class-zinn-translate-admin-ui.php:1013
+#: includes/class-zinn-translate-admin-ui.php:1096
 msgid "Settings saved."
 msgstr "Beállítások elmentve."
 
-#: includes/class-zinn-translate-admin-ui.php:1060
+#: includes/class-zinn-translate-admin-ui.php:1143
 msgid "Every setting on this plugin is back to its default."
 msgstr "Ennek a bővítménynek minden beállítása visszatért az alapértelmezettre."
 
-#: includes/class-zinn-translate-admin-ui.php:1103
+#: includes/class-zinn-translate-admin-ui.php:1186
 msgid "Done."
 msgstr "Kész."
 
-#: includes/class-zinn-translate-admin-ui.php:1107
+#: includes/class-zinn-translate-admin-ui.php:1190
 msgid "That action is not available."
 msgstr "Az a művelet nem érhető el."
 
-#: includes/class-zinn-translate-admin-ui.php:1174
+#: includes/class-zinn-translate-admin-ui.php:1257
 msgid "That file could not be read. Choose a settings file exported from a Zinn® plugin."
 msgstr "Az a fájl nem olvasható. Válasszon ki egy beállításfájlt, amelyet egy Zinn® bővítmény exportált."
 
-#: includes/class-zinn-translate-admin-ui.php:1182
+#: includes/class-zinn-translate-admin-ui.php:1265
 msgid "That file is too large to be a settings export."
 msgstr "Az a fájl túl nagy ahhoz, hogy beállítások exportálása legyen."
 
-#: includes/class-zinn-translate-admin-ui.php:1195
+#: includes/class-zinn-translate-admin-ui.php:1278
 msgid "That file is not a Zinn® settings export."
 msgstr "Az a fájl nem egy Zinn® beállítás-export."
 
 #. translators: %s: the plugin slug the file was exported from.
-#: includes/class-zinn-translate-admin-ui.php:1203
+#: includes/class-zinn-translate-admin-ui.php:1286
 #, php-format
 msgid "That file was exported from a different plugin (%s), so importing it here would store settings this plugin does not understand."
 msgstr "Az a fájl egy másik bővítményből (%s) lett exportálva, így az ide történő importálás olyan beállításokat mentne el, amelyeket ez a bővítmény nem ismer."
 
 #. translators: %d: how many settings were imported.
-#: includes/class-zinn-translate-admin-ui.php:1233
+#: includes/class-zinn-translate-admin-ui.php:1316
 #, php-format
 msgid "%d setting imported. Passwords and API keys are never in an export, so enter those again."
 msgid_plural "%d settings imported. Passwords and API keys are never in an export, so enter those again."
@@ -223,250 +227,270 @@ msgstr "A Zinn Digital® vezérlőpultjáról, ezen webhely Fordítás lapján."
 msgid "Site token"
 msgstr "Oldaltoken"
 
-#: includes/class-zinn-translate-admin.php:147
+#: includes/class-zinn-translate-admin.php:142
+msgid "An API key from your Zinn Digital® dashboard, on its API keys page. Give it the sites.view and sites.translation.manage permissions."
+msgstr "Egy API-kulcs a Zinn Digital® vezérlőpultjáról, az API-kulcsok oldaláról. Adja meg neki a sites.view és sites.translation.manage jogosultságokat."
+
+#: includes/class-zinn-translate-admin.php:150
 msgid "Provider"
 msgstr "Szolgáltató"
 
-#: includes/class-zinn-translate-admin.php:157
+#: includes/class-zinn-translate-admin.php:160
 msgid "API key"
 msgstr "API-kulcs"
 
-#: includes/class-zinn-translate-admin.php:158
+#: includes/class-zinn-translate-admin.php:161
 msgid "Your key, billed to you by the provider. It is stored on this site and sent only to them."
 msgstr "Az Ön kulcsa, amelyet a szolgáltató számláz Önnek. Ezen a webhelyen tároljuk, és csak neki küldjük el."
 
-#: includes/class-zinn-translate-admin.php:166
+#: includes/class-zinn-translate-admin.php:169
 msgid "Model"
 msgstr "Modell"
 
-#: includes/class-zinn-translate-admin.php:167
+#: includes/class-zinn-translate-admin.php:170
 msgid "Leave empty for the cheapest model that does the job well."
 msgstr "Hagyja üresen a legolcsóbb, de a feladatot jól ellátó modellhez."
 
-#: includes/class-zinn-translate-admin.php:174
+#: includes/class-zinn-translate-admin.php:177
 msgid "This site is written in"
 msgstr "Ez a webhely a következő nyelven íródott:"
 
-#: includes/class-zinn-translate-admin.php:175
+#: includes/class-zinn-translate-admin.php:178
 msgid "Leave empty to use the site language from WordPress settings."
 msgstr "Hagyja üresen, hogy a WordPress beállításaiban megadott oldallyelvet használja."
 
-#: includes/class-zinn-translate-admin.php:183
+#: includes/class-zinn-translate-admin.php:189
 msgid "Languages to publish"
 msgstr "Közzéteendő nyelvek"
 
-#: includes/class-zinn-translate-admin.php:184
+#: includes/class-zinn-translate-admin.php:190
 msgid "Each one gets its own web addresses and its own sitemap. Publish only the languages you want indexed."
 msgstr "Mindegyik saját webcímmel és saját oldaltérképpel rendelkezik. Csak azokat a nyelveket tegye közzé, amelyeket indexeltetni szeretne."
 
-#: includes/class-zinn-translate-admin.php:191
+#: includes/class-zinn-translate-admin.php:206
 msgid "Translate automatically when I publish or update"
 msgstr "Automatikus fordítás közzétételkor vagy frissítéskor"
 
-#: includes/class-zinn-translate-admin.php:192
+#: includes/class-zinn-translate-admin.php:207
 msgid "Editing a page marks its translations out of date and they are remade in the background. Editing without changing any words costs nothing."
 msgstr "Egy oldal szerkesztése elavulttá teszi a fordításait, amelyek a háttérben frissülnek. A szavak módosítása nélküli szerkesztés ingyenes."
 
-#: includes/class-zinn-translate-admin.php:199
+#: includes/class-zinn-translate-admin.php:214
 msgid "What gets translated"
 msgstr "Mi kerül lefordításra"
 
-#: includes/class-zinn-translate-admin.php:204
+#: includes/class-zinn-translate-admin.php:219
 msgid "Post types"
 msgstr "Bejegyzéstípusok"
 
-#: includes/class-zinn-translate-admin.php:212
+#: includes/class-zinn-translate-admin.php:232
 msgid "Translate the web addresses too"
 msgstr "Fordítsa le a webcímeket is"
 
-#: includes/class-zinn-translate-admin.php:213
+#: includes/class-zinn-translate-admin.php:233
 msgid "French visitors get /fr/a-propos/ rather than /fr/about/. The untranslated address keeps working and redirects, so nothing that was indexed breaks."
 msgstr "A francia látogatók a /fr/about/ helyett a /fr/a-propos/ címet kapják. A lefordítatlan cím továbbra is működik és átirányít, így semmi sem romlik el, ami indexelve volt."
 
-#: includes/class-zinn-translate-admin.php:220
+#: includes/class-zinn-translate-admin.php:240
 msgid "Translate SEO titles, descriptions and image alt text"
 msgstr "SEO-címek, leírások és képek alt szövegeinek fordítása"
 
-#: includes/class-zinn-translate-admin.php:227
+#: includes/class-zinn-translate-admin.php:247
 msgid "Translate categories and tags"
 msgstr "Kategóriák és címkék fordítása"
 
-#: includes/class-zinn-translate-admin.php:234
+#: includes/class-zinn-translate-admin.php:254
 msgid "Translate navigation menus"
 msgstr "Navigációs menük fordítása"
 
-#: includes/class-zinn-translate-admin.php:241
+#: includes/class-zinn-translate-admin.php:261
 msgid "Translate WooCommerce products and attributes"
 msgstr "WooCommerce termékek és attribútumok fordítása"
 
-#: includes/class-zinn-translate-admin.php:242
+#: includes/class-zinn-translate-admin.php:262
 msgid "Short descriptions, purchase notes, attribute labels and variation descriptions. Prices, SKUs and stored option values are never touched."
 msgstr "Rövid leírások, vásárlási jegyzetek, attribútumcímkék és változatleírások. Az árakat, a cikkszámokat és a tárolt opcióértékeket soha nem módosítjuk."
 
-#: includes/class-zinn-translate-admin.php:249
+#: includes/class-zinn-translate-admin.php:269
 msgid "SEO"
 msgstr "SEO"
 
-#: includes/class-zinn-translate-admin.php:254
+#: includes/class-zinn-translate-admin.php:274
 msgid "Add hreflang tags"
 msgstr "Hreflang-címkék hozzáadása"
 
-#: includes/class-zinn-translate-admin.php:255
+#: includes/class-zinn-translate-admin.php:275
 msgid "Tells search engines these pages are the same page in different languages. Leave this on unless another plugin is already doing it."
 msgstr "Megmondja a keresőmotoroknak, hogy ezek az oldalak ugyanannak az oldalnak a különböző nyelvű változatai. Hagyja bekapcsolva, hacsak egy másik bővítmény ezt már nem végzi el."
 
-#: includes/class-zinn-translate-admin.php:262
+#: includes/class-zinn-translate-admin.php:282
 msgid "Publish a sitemap for each language"
 msgstr "Hozzon létre webhelytérképet minden egyes nyelvhez"
 
-#: includes/class-zinn-translate-admin.php:269
+#: includes/class-zinn-translate-admin.php:289
 msgid "Publish llms.txt for each language"
 msgstr "llms.txt közzététele minden egyes nyelvhez"
 
-#: includes/class-zinn-translate-admin.php:270
+#: includes/class-zinn-translate-admin.php:290
 msgid "A plain-text map of the site that AI answer engines read. They often cannot run JavaScript and may never fetch a sitemap."
 msgstr "A webhely egyszerű szöveges térképe, amelyet a mesterséges intelligencián alapuló válaszadó motorok olvasnak. Gyakran nem tudják futtatni a JavaScriptet, és előfordulhat, hogy soha nem kérnek le webhelytérképet."
 
-#: includes/class-zinn-translate-admin.php:277
+#: includes/class-zinn-translate-admin.php:297
 #: includes/class-zinn-translate-switcher.php:135
 msgid "Language switcher"
 msgstr "Nyelvváltó"
 
-#: includes/class-zinn-translate-admin.php:282
+#: includes/class-zinn-translate-admin.php:302
 #: includes/class-zinn-translate-switcher-widget.php:83
 msgid "Style"
 msgstr "Stílus"
 
-#: includes/class-zinn-translate-admin.php:285
+#: includes/class-zinn-translate-admin.php:305
 msgid "Colours, spacing and corners are on the Styling tab. Place it with the block, the [zinn_language_switcher] shortcode, or a menu."
 msgstr "A színek, a térközök és a sarkok a Stílus lapon találhatók. Helyezze el a blokkal, a [zinn_language_switcher] rövidkóddal vagy egy menüvel."
 
-#: includes/class-zinn-translate-admin.php:292
+#: includes/class-zinn-translate-admin.php:312
 msgid "Show only these languages"
 msgstr "Csak ezen nyelvek megjelenítése"
 
-#: includes/class-zinn-translate-admin.php:293
+#: includes/class-zinn-translate-admin.php:313
 msgid "Leave empty to show every language you publish."
 msgstr "Hagyja üresen, hogy az összes közzétett nyelvet megjelenítse."
 
-#: includes/class-zinn-translate-admin.php:300
+#: includes/class-zinn-translate-admin.php:319
 msgid "Name each language in its own language"
 msgstr "Nevezze meg az egyes nyelveket a saját nyelvükön"
 
-#: includes/class-zinn-translate-admin.php:301
+#: includes/class-zinn-translate-admin.php:320
 msgid "Deutsch rather than German. Somebody who cannot read the current page cannot read \"German\" either."
 msgstr "Deutsch, ne pedig German. Aki nem tudja elolvasni az aktuális oldalt, az a „German” szót sem tudja elolvasni."
 
-#: includes/class-zinn-translate-admin.php:308
+#: includes/class-zinn-translate-admin.php:327
 msgid "Show flags"
 msgstr "Zászlók megjelenítése"
 
-#: includes/class-zinn-translate-admin.php:309
+#: includes/class-zinn-translate-admin.php:328
 msgid "Off by default: a language is not a country, and Arabic and Spanish have no single flag that does not exclude most of their speakers."
 msgstr "Alapértelmezés szerint kikapcsolva: a nyelv nem ország, az arabnak és a spanyolnak pedig nincs olyan egyetlen zászlója, amely ne zárná ki a beszélők többségét."
 
-#: includes/class-zinn-translate-admin.php:316
+#: includes/class-zinn-translate-admin.php:335
 msgid "Include the language being read"
 msgstr "Illessze be az olvasott nyelvet"
 
-#: includes/class-zinn-translate-admin.php:323
+#: includes/class-zinn-translate-admin.php:342
 msgid "Include the original language"
 msgstr "Eredeti nyelv belefoglalása"
 
-#: includes/class-zinn-translate-admin.php:330
+#: includes/class-zinn-translate-admin.php:349
 msgid "Add it to this menu"
 msgstr "Hozzáadás ehhez a menühöz"
 
-#: includes/class-zinn-translate-admin.php:331
+#: includes/class-zinn-translate-admin.php:350
 msgid "Only the menu you name here. Nothing is added to any other menu on the site."
 msgstr "Csak az itt megnevezett menü. Semmi sem adódik hozzá a webhely egyetlen más menüjéhez sem."
 
-#: includes/class-zinn-translate-admin.php:381
+#: includes/class-zinn-translate-admin.php:400
 msgid "Accent"
 msgstr "Akcentus"
 
-#: includes/class-zinn-translate-admin.php:385
+#: includes/class-zinn-translate-admin.php:404
 msgid "Background"
 msgstr "Háttér"
 
-#: includes/class-zinn-translate-admin.php:389
+#: includes/class-zinn-translate-admin.php:408
 msgid "Text"
 msgstr "Szöveg"
 
-#: includes/class-zinn-translate-admin.php:393
+#: includes/class-zinn-translate-admin.php:412
 msgid "Corner radius"
 msgstr "Sarokrádiusz"
 
-#: includes/class-zinn-translate-admin.php:397
+#: includes/class-zinn-translate-admin.php:416
 msgid "Spacing"
 msgstr "Térköz"
 
-#: includes/class-zinn-translate-admin.php:401
+#: includes/class-zinn-translate-admin.php:420
 msgid "Text size"
 msgstr "Szövegméret"
 
-#: includes/class-zinn-translate-admin.php:428
+#: includes/class-zinn-translate-admin.php:447
 msgid "Do not add it to a menu"
 msgstr "Ne adja hozzá egyetlen menühöz sem"
 
-#: includes/class-zinn-translate-admin.php:483
+#: includes/class-zinn-translate-admin.php:468
+msgid "none"
+msgstr "nincs"
+
+#. translators: %s: comma-separated language names, or "none".
+#: includes/class-zinn-translate-admin.php:471
+#, php-format
+msgid "On a Zinn Digital® plan you choose the languages to publish on this site's Translation tab in your dashboard, under \"Shown to visitors\". This site checks it every hour. Publishing now: %s."
+msgstr "Egy Zinn Digital® csomagon a kiválasztott nyelveket a webhely Fordítás lapján, a vezérlőpult „Látogatóknak megjelenítve” szakaszában teheti közzé. Ez a webhely óránként ellenőrzi. Jelenlegi közzététel: %s."
+
+#. translators: %s: comma-separated language names, or "none".
+#: includes/class-zinn-translate-admin.php:474
+#, php-format
+msgid "On a Zinn Digital® plan you choose the languages to publish on this site's Translation tab in your dashboard. This site has not read that choice yet, so it is still publishing: %s. Check the Site ID and token above."
+msgstr "Egy Zinn Digital® csomagon a webhely irányítópultjának Fordítás lapján választhatja ki a közzéteendő nyelveket. Ez a webhely még nem olvasta be ezt a beállítást, ezért továbbra is a következőket teszi közzé: %s. Ellenőrizze a fenti webhelyazonosítót és -tokent."
+
+#: includes/class-zinn-translate-admin.php:525
 msgid "Edit any translation here. An edited translation is kept exactly as you wrote it and is never overwritten when the page is translated again."
 msgstr "Itt szerkesztheti bármelyik fordítást. A szerkesztett fordítás pontosan úgy marad meg, ahogyan megírta, és soha nem íródik felül az oldal ismételt lefordításakor."
 
-#: includes/class-zinn-translate-admin.php:504
+#: includes/class-zinn-translate-admin.php:546
 msgid "Every language"
 msgstr "Minden nyelv"
 
-#: includes/class-zinn-translate-admin.php:511
+#: includes/class-zinn-translate-admin.php:553
 msgid "Search translations"
 msgstr "Fordítások keresése"
 
-#: includes/class-zinn-translate-admin.php:512
+#: includes/class-zinn-translate-admin.php:554
 msgid "Filter"
 msgstr "Szűrés"
 
-#: includes/class-zinn-translate-admin.php:517
+#: includes/class-zinn-translate-admin.php:559
 msgid "Content"
 msgstr "Tartalom"
 
-#: includes/class-zinn-translate-admin.php:518
+#: includes/class-zinn-translate-admin.php:560
 msgid "Language"
 msgstr "Nyelv"
 
-#: includes/class-zinn-translate-admin.php:519
+#: includes/class-zinn-translate-admin.php:561
 msgid "Translation"
 msgstr "Fordítás"
 
-#: includes/class-zinn-translate-admin.php:520
+#: includes/class-zinn-translate-admin.php:562
 msgid "Status"
 msgstr "Állapot"
 
-#: includes/class-zinn-translate-admin.php:521
-#: includes/class-zinn-translate-admin.php:540
+#: includes/class-zinn-translate-admin.php:563
+#: includes/class-zinn-translate-admin.php:582
 msgid "Save"
 msgstr "Mentés"
 
-#: includes/class-zinn-translate-admin.php:526
+#: includes/class-zinn-translate-admin.php:568
 msgid "Nothing translated yet. Publish a language and translation starts in the background."
 msgstr "Még nincs fordítás. Tegyen közzé egy nyelvet, és a fordítás a háttérben elindul."
 
-#: includes/class-zinn-translate-admin.php:559
+#: includes/class-zinn-translate-admin.php:601
 msgid "These addresses are live. Open any of them to check it, and submit the sitemap index to Google Search Console."
 msgstr "Ezek a címek élesek. Nyissa meg bármelyiket az ellenőrzéshez, és küldje be a webhelytérkép-indexet a Google Search Console-ba."
 
-#: includes/class-zinn-translate-admin.php:580
+#: includes/class-zinn-translate-admin.php:622
 msgid "You are not allowed to edit translations on this site."
 msgstr "Nem szerkesztheti a fordításokat ezen az oldalon."
 
-#: includes/class-zinn-translate-admin.php:608
+#: includes/class-zinn-translate-admin.php:650
 msgid "Edited by you — kept"
 msgstr "Ön által szerkesztve — megtartva"
 
-#: includes/class-zinn-translate-admin.php:610
+#: includes/class-zinn-translate-admin.php:652
 msgid "Source changed — will be redone"
 msgstr "Forrás megváltozott – újra lesz generálva"
 
-#: includes/class-zinn-translate-admin.php:612
+#: includes/class-zinn-translate-admin.php:654
 msgid "Up to date"
 msgstr "Naprakész"
 
@@ -536,36 +560,32 @@ msgstr "Küldje el ezt a jelentést a Zinn® ügyfélszolgálatnak"
 msgid "We open a support ticket for you and reply by email. If you would rather not send it, copy it above and paste it into a ticket yourself."
 msgstr "Nyitunk egy támogatási jegyet az Ön számára, és e-mailben válaszolunk. Ha inkább nem küldi el így, másolja ki a fenti szöveget, és illessze be saját maga egy jegybe."
 
-#: includes/class-zinn-translate-diagnostics.php:228
-msgid "Copied"
-msgstr "Másolva"
-
 #. translators: %s: the transport error reported by WordPress.
-#: includes/class-zinn-translate-diagnostics.php:274
+#: includes/class-zinn-translate-diagnostics.php:270
 #, php-format
 msgid "We could not reach Zinn Digital® from this server (%s). Copy the report above and open a ticket instead — nothing about your settings is wrong."
 msgstr "Nem tudtuk elérni a Zinn Digital® szolgáltatást erről a szerverről (%s). Másolja ki a fenti jelentést, és inkább nyisson meg egy hibajegyet – a beállításaival kapcsolatban semmi sincs rendben."
 
-#: includes/class-zinn-translate-diagnostics.php:288
+#: includes/class-zinn-translate-diagnostics.php:284
 msgid "Sent. Zinn® support has your report and will reply by email."
 msgstr "A Zinn® ügyfélszolgálat megkapta a jelentését, és elemben válaszol."
 
 #. translators: %s: the support reference for the report just sent.
-#: includes/class-zinn-translate-diagnostics.php:291
+#: includes/class-zinn-translate-diagnostics.php:287
 #, php-format
 msgid "Sent. Zinn® support has your report — reference %s — and will reply by email."
 msgstr "A Zinn® ügyfélszolgálat megkapta a jelentését (%s hivatkozási szám), és e-mailben fog válaszolni."
 
-#: includes/class-zinn-translate-diagnostics.php:300
+#: includes/class-zinn-translate-diagnostics.php:296
 msgid "You have sent several reports in a short time. Wait a few minutes and try again — the earlier ones did arrive."
 msgstr "Túl rövid idő alatt több jelentést küldött. Várjon néhány percet, és próbálja újra – az előzőek megérkeztek."
 
-#: includes/class-zinn-translate-diagnostics.php:307
+#: includes/class-zinn-translate-diagnostics.php:303
 msgid "Zinn Digital® could not accept the report just now — that is our end, not yours. Try again shortly, or copy the report above into a ticket."
 msgstr "A Zinn Digital® most nem tudta elfogadni a jelentést – ez a mi oldalunkon hiba, nem az önén. Próbálja meg újra rövidesen, vagy másolja be a fenti jelentést egy hibajegybe."
 
 #. translators: %d: the HTTP status code the server returned.
-#: includes/class-zinn-translate-diagnostics.php:315
+#: includes/class-zinn-translate-diagnostics.php:311
 #, php-format
 msgid "The report was refused (HTTP %d). Copy it above and open a ticket, quoting that number."
 msgstr "A jelentést elutasították (HTTP %d). Másolja ki fentebb, és nyisson meg egy hibajegyet a szám megadásával."
@@ -591,27 +611,27 @@ msgstr "Olvassa el a következő %s felhasználói útmutatót"
 msgid "Hide this"
 msgstr "Elrejtés"
 
-#: includes/class-zinn-translate-promo.php:374
+#: includes/class-zinn-translate-promo.php:424
 msgid "Zinn® hosting for WordPress"
 msgstr "Zinn® tárhely a WordPress-hez"
 
-#: includes/class-zinn-translate-promo.php:375
+#: includes/class-zinn-translate-promo.php:425
 msgid "LiteSpeed, daily backups, free migration and a control panel built for people who run more than one site."
 msgstr "LiteSpeed, napi biztonsági mentések, ingyenes migráció és egy olyan vezérlőpult, amelyet egynél több webhelyet üzemeltetők számára terveztek."
 
-#: includes/class-zinn-translate-promo.php:381
+#: includes/class-zinn-translate-promo.php:431
 msgid "The Zinn® marketplace"
 msgstr "A Zinn® piactér"
 
-#: includes/class-zinn-translate-promo.php:382
+#: includes/class-zinn-translate-promo.php:432
 msgid "Buy and sell established sites, domains and link placements, with the money held safely until both sides are happy."
 msgstr "Vásároljon és adjon el meglévő webhelyeket, domaineket és linkelhelyezéseket úgy, hogy a pénzt biztonságban tartjuk mindaddig, amíg mindkét fél elégedett nem lesz."
 
-#: includes/class-zinn-translate-promo.php:429
+#: includes/class-zinn-translate-promo.php:479
 msgid "Zinn Hub® — hire people who do this for a living"
 msgstr "Zinn Hub® — béreljen fel embereket, akik ebből élnek"
 
-#: includes/class-zinn-translate-promo.php:430
+#: includes/class-zinn-translate-promo.php:480
 msgid "Our global freelance marketplace: browse over 10,000 ready-made services from writers, designers, developers and SEOs, or post a project and let them bid."
 msgstr "Globális szabadúszó piacunk: böngésszen több mint 10 000 kész szolgáltatás között íróktól, tervezőktől, fejlesztőktől és SEO-szakemberektől, vagy tegyen közzé egy projektet, és hagyja, hogy ajánlatot tegyenek."
 
@@ -717,19 +737,19 @@ msgstr "Ellenőrizze az állapotoldalukat"
 msgid "Fix this on your account"
 msgstr "Javítsa ezt be a fiókjában"
 
-#: includes/class-zinn-translate-style-presets.php:109
+#: includes/class-zinn-translate-style-presets.php:118
 msgid "Style preset"
 msgstr "Stílusbeállítás-sablon"
 
-#: includes/class-zinn-translate-style-presets.php:110
+#: includes/class-zinn-translate-style-presets.php:119
 msgid "A starting point. Anything below overrides it."
 msgstr "Kezdőpont. Bármi, ami alatta van, felülírja azt."
 
-#: includes/class-zinn-translate-style-presets.php:117
+#: includes/class-zinn-translate-style-presets.php:126
 msgid "Use my own colours and sizes"
 msgstr "Használjam a saját színeimet és méreteimet"
 
-#: includes/class-zinn-translate-style-presets.php:118
+#: includes/class-zinn-translate-style-presets.php:127
 msgid "Leave this off and the preset is used exactly as it is."
 msgstr "Hagyja ezt kikapcsolva, és az előbeállítás pontosan úgy lesz használva, ahogy van."
 
@@ -808,19 +828,19 @@ msgstr "Ebben az időszakban elfogyott a DeepL-karakterkereted. A fordítás akk
 msgid "DeepL answered with something we could not read. Nothing was saved."
 msgstr "A DeepL olyan választ adott, amelyet nem tudtunk olvasni. Semmi sem lett elmentve."
 
-#: includes/providers/class-zinn-translate-provider-gemini.php:107
+#: includes/providers/class-zinn-translate-provider-gemini.php:108
 msgid "No Google Gemini API key is saved, so there is nothing to translate with."
 msgstr "Nincs elmentve Google Gemini API-kulcs, így nincs mivel fordítani."
 
-#: includes/providers/class-zinn-translate-provider-gemini.php:155
+#: includes/providers/class-zinn-translate-provider-gemini.php:156
 msgid "Google Gemini could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
 msgstr "A(z) Google Gemini nem érhető el. Semmi sem lett lefordítva és nem is került felszámolásra; a rendszer a következő futtatáskor újra megpróbálja."
 
-#: includes/providers/class-zinn-translate-provider-openai.php:103
+#: includes/providers/class-zinn-translate-provider-openai.php:104
 msgid "No OpenAI API key is saved, so there is nothing to translate with."
 msgstr "Nincs mentett OpenAI API kulcs, így nincs mivel fordítani."
 
-#: includes/providers/class-zinn-translate-provider-openai.php:139
+#: includes/providers/class-zinn-translate-provider-openai.php:140
 msgid "OpenAI could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
 msgstr "Az OpenAI-t nem sikerült elérni. Semmi sem lett lefordítva és semmi sem lett felszámolva; a rendszer újra megpróbálja a következő futás során."
 
@@ -829,6 +849,7 @@ msgid "This site is not connected to Zinn Digital®, so there is nothing to coll
 msgstr "Ez a webhely nem kapcsolódik a Zinn Digital® szolgáltatáshoz, így nincs mit összegyűjteni. Adja meg a webhelyazonosítót és a tokent, vagy váltson át a saját szolgáltatói kulcsára."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:135
+#: includes/providers/class-zinn-translate-provider-zinn.php:251
 msgid "This site is not connected to Zinn Digital®."
 msgstr "Ez a webhely nem kapcsolódik a Zinn Digital® vállalathoz."
 
@@ -841,8 +862,9 @@ msgid "Translation is paused on this site. Check the account is up to date on yo
 msgstr "A fordítás szünetel ezen a webhelyen. Ellenőrizze, hogy a fiókja naprakész-e a Zinn Digital® irányítópultján."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:176
-msgid "Zinn Digital® rejected this site's token. Copy it again from the site's Translation tab on your dashboard."
-msgstr "A Zinn Digital® elutasította ennek a webhelynek a tokenjét. Másolja ki újra a webhely irányítópultjának Fordítás lapjáról."
+#: includes/providers/class-zinn-translate-provider-zinn.php:275
+msgid "Zinn Digital® rejected this site's token. It must be an API key with the sites.view and sites.translation.manage permissions — create one on the API keys page of your dashboard."
+msgstr "A Zinn Digital® elutasította ennek a webhelynek a tokenjét. Ez egy API-kulcs kell, hogy legyen a sites.view és sites.translation.manage jogosultságokkal – hozzon létre egyet a vezérlőpult API-kulcsok oldalán."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:207
 msgid "Zinn Digital® could not be reached. Your site keeps serving the translations it already has."
@@ -851,3 +873,11 @@ msgstr "A Zinn Digital® elérése nem sikerült. A webhely továbbra is a már 
 #: includes/providers/class-zinn-translate-provider-zinn.php:219
 msgid "Zinn Digital® answered with something we could not read. Your site keeps serving the translations it already has."
 msgstr "A Zinn Digital® olyan választ adott, amelyet nem tudtunk olvasni. Az oldala továbbra is a már meglevő fordításokat szolgálja ki."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:267
+msgid "Zinn Digital® could not be reached. Your site keeps publishing the languages it already has."
+msgstr "A Zinn Digital® elérése nem sikerült. A webhelye továbbra is közzéteszi a már meglévő nyelveket."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:286
+msgid "Zinn Digital® answered with something we could not read. Your site keeps publishing the languages it already has."
+msgstr "A Zinn Digital® olyan választ adott, amelyet nem tudtunk elolvasni. Az Ön webhelye továbbra is a már meglévő nyelveket teszi közzé."

@@ -34,145 +34,149 @@ msgstr "Neil Lock — CEO, Zinn Digital® Ltd"
 msgid "https://zinndigital.com"
 msgstr "https://zinndigital.com"
 
-#: includes/class-zinn-translate-admin-fields.php:575
+#: includes/class-zinn-translate-admin-fields.php:580
 msgid "Stored. Type a new value to replace it."
 msgstr "An adana shi. Rubuta sabon ƙima don maye gurbin shi."
 
-#: includes/class-zinn-translate-admin-fields.php:635
+#: includes/class-zinn-translate-admin-fields.php:640
 msgid "Filter this list…"
 msgstr "Tace wannan lissafin..."
 
-#: includes/class-zinn-translate-admin-fields.php:636
+#: includes/class-zinn-translate-admin-fields.php:641
 msgid "Filter this list"
 msgstr "Tace wannan jerin"
 
-#: includes/class-zinn-translate-admin-fields.php:652
+#: includes/class-zinn-translate-admin-fields.php:657
 msgid "Nothing matches that filter."
 msgstr "Babu abin da ya dace da wannan matatar."
 
-#: includes/class-zinn-translate-admin-fields.php:683
+#: includes/class-zinn-translate-admin-fields.php:688
 msgid "Add a row"
 msgstr "Ƙara jere"
 
-#: includes/class-zinn-translate-admin-fields.php:720
+#: includes/class-zinn-translate-admin-fields.php:725
 msgid "Remove this row"
 msgstr "Cire wannan layin"
 
-#: includes/class-zinn-translate-admin-fields.php:720
+#: includes/class-zinn-translate-admin-fields.php:725
 msgid "Remove"
 msgstr "Cire"
 
-#: includes/class-zinn-translate-admin-ui.php:264
-#: includes/class-zinn-translate-admin-ui.php:265
-#: includes/class-zinn-translate-admin-ui.php:335
+#: includes/class-zinn-translate-admin-ui.php:280
+#: includes/class-zinn-translate-admin-ui.php:281
+#: includes/class-zinn-translate-admin-ui.php:421
 msgid "Zinn Digital®"
 msgstr "Zinn Digital®"
 
-#: includes/class-zinn-translate-admin-ui.php:278
+#: includes/class-zinn-translate-admin-ui.php:294
 msgid "Zinn Digital® — overview"
 msgstr "Zinn Digital® — bayyani"
 
-#: includes/class-zinn-translate-admin-ui.php:279
+#: includes/class-zinn-translate-admin-ui.php:295
 msgid "Overview"
 msgstr "Bayani Gaba Daya"
 
-#: includes/class-zinn-translate-admin-ui.php:336
+#: includes/class-zinn-translate-admin-ui.php:383
+msgid "Copied"
+msgstr "An kwafi"
+
+#: includes/class-zinn-translate-admin-ui.php:422
 msgid "Every Zinn® plugin on this site, and whether it is working."
 msgstr "Kowane plugin na Zinn® akan wannan rukunin yanar gizon, da ko yana aiki."
 
-#: includes/class-zinn-translate-admin-ui.php:352
+#: includes/class-zinn-translate-admin-ui.php:437
 msgid "No connection is needed for this plugin."
 msgstr "Babu buƙatar haɗin intanet don wannan fakitin (plugin)."
 
-#: includes/class-zinn-translate-admin-ui.php:357
+#: includes/class-zinn-translate-admin-ui.php:442
 msgid "Open settings"
 msgstr "Buɗe saituna"
 
-#: includes/class-zinn-translate-admin-ui.php:685
-#: includes/class-zinn-translate-admin-ui.php:1248
+#: includes/class-zinn-translate-admin-ui.php:770
+#: includes/class-zinn-translate-admin-ui.php:1331
 msgid "You do not have permission to change these settings."
 msgstr "Ba ka da izinin canza waɗannan saitunan."
 
-#: includes/class-zinn-translate-admin-ui.php:715
+#: includes/class-zinn-translate-admin-ui.php:799
 msgid "Settings sections"
 msgstr "Sashen saituna"
 
-#: includes/class-zinn-translate-admin-ui.php:788
+#: includes/class-zinn-translate-admin-ui.php:871
 msgid "Support"
 msgstr "Taimako"
 
-#: includes/class-zinn-translate-admin-ui.php:846
+#: includes/class-zinn-translate-admin-ui.php:929
 msgid "Save changes"
 msgstr "Ajiye canje-canje"
 
-#: includes/class-zinn-translate-admin-ui.php:875
+#: includes/class-zinn-translate-admin-ui.php:958
 msgid "Tools"
 msgstr "Kayan Aiki"
 
-#: includes/class-zinn-translate-admin-ui.php:890
+#: includes/class-zinn-translate-admin-ui.php:973
 msgid "Export settings"
 msgstr "Fitar da saituna"
 
-#: includes/class-zinn-translate-admin-ui.php:893
+#: includes/class-zinn-translate-admin-ui.php:976
 msgid "Reset to defaults"
 msgstr "Sake dawo da tsoffin tsare-tsare"
 
-#: includes/class-zinn-translate-admin-ui.php:894
+#: includes/class-zinn-translate-admin-ui.php:977
 msgid "This puts every setting on this plugin back to its default. Continue?"
 msgstr "Wannan zai dawo da duk wani tsari a kan wannan plugin zuwa ga asalin saitinsa. A ci gaba?"
 
-#: includes/class-zinn-translate-admin-ui.php:901
+#: includes/class-zinn-translate-admin-ui.php:984
 msgid "Diagnostics for support"
 msgstr "Nazari don tallafi"
 
-#: includes/class-zinn-translate-admin-ui.php:910
+#: includes/class-zinn-translate-admin-ui.php:993
 msgid "Import a settings file"
 msgstr "Shigo da fayil ɗin saiti"
 
-#: includes/class-zinn-translate-admin-ui.php:912
+#: includes/class-zinn-translate-admin-ui.php:995
 msgid "Import"
 msgstr "Shigo da shi"
 
-#: includes/class-zinn-translate-admin-ui.php:914
+#: includes/class-zinn-translate-admin-ui.php:997
 msgid "Exported files never contain passwords, tokens or API keys — you will need to enter those again on the new site."
 msgstr "Fayilolin da aka fitar ba sa ƙunshe da kalmomin sirri, alamomi ko maɓallan API ba — za ku buƙaci shigar da su sake a sabon shafin."
 
-#: includes/class-zinn-translate-admin-ui.php:1013
+#: includes/class-zinn-translate-admin-ui.php:1096
 msgid "Settings saved."
 msgstr "An adana saitunan."
 
-#: includes/class-zinn-translate-admin-ui.php:1060
+#: includes/class-zinn-translate-admin-ui.php:1143
 msgid "Every setting on this plugin is back to its default."
 msgstr "Kowane saitawa a kan wannan plugin ya koma tsohon tsarin sa."
 
-#: includes/class-zinn-translate-admin-ui.php:1103
+#: includes/class-zinn-translate-admin-ui.php:1186
 msgid "Done."
 msgstr "An gama."
 
-#: includes/class-zinn-translate-admin-ui.php:1107
+#: includes/class-zinn-translate-admin-ui.php:1190
 msgid "That action is not available."
 msgstr "Ba a samun wannan matakin."
 
-#: includes/class-zinn-translate-admin-ui.php:1174
+#: includes/class-zinn-translate-admin-ui.php:1257
 msgid "That file could not be read. Choose a settings file exported from a Zinn® plugin."
 msgstr "Ba a iya karanta wannan fayil ɗin ba. Zaɓi fayil ɗin saituna da aka fitar daga wani kari na Zinn®."
 
-#: includes/class-zinn-translate-admin-ui.php:1182
+#: includes/class-zinn-translate-admin-ui.php:1265
 msgid "That file is too large to be a settings export."
 msgstr "Waccan fayil ya yi girma sosai don ya zama fitar da saituna."
 
-#: includes/class-zinn-translate-admin-ui.php:1195
+#: includes/class-zinn-translate-admin-ui.php:1278
 msgid "That file is not a Zinn® settings export."
 msgstr "Wannan fayil ɗin ba fitarwa ba ce ta saitunan Zinn®."
 
 #. translators: %s: the plugin slug the file was exported from.
-#: includes/class-zinn-translate-admin-ui.php:1203
+#: includes/class-zinn-translate-admin-ui.php:1286
 #, php-format
 msgid "That file was exported from a different plugin (%s), so importing it here would store settings this plugin does not understand."
 msgstr "An fitar da wannan fayil ɗin ne daga wani plugin (%s) daban, don haka shigo da shi nan zai adana saitunan da wannan plugin ɗin ba ya fahimta."
 
 #. translators: %d: how many settings were imported.
-#: includes/class-zinn-translate-admin-ui.php:1233
+#: includes/class-zinn-translate-admin-ui.php:1316
 #, php-format
 msgid "%d setting imported. Passwords and API keys are never in an export, so enter those again."
 msgid_plural "%d settings imported. Passwords and API keys are never in an export, so enter those again."
@@ -223,250 +227,270 @@ msgstr "Daga kan allon kula na Zinn Digital®, a shafin fassara na wannan rukuni
 msgid "Site token"
 msgstr "Alamar yanar gizo"
 
-#: includes/class-zinn-translate-admin.php:147
+#: includes/class-zinn-translate-admin.php:142
+msgid "An API key from your Zinn Digital® dashboard, on its API keys page. Give it the sites.view and sites.translation.manage permissions."
+msgstr "Wani mabuɗin API daga allon sarrafa ku na Zinn Digital®, a shafinsa na maɓallan API. Ba shi izinin sites.view da sites.translation.manage."
+
+#: includes/class-zinn-translate-admin.php:150
 msgid "Provider"
 msgstr "Mai ba da sabis"
 
-#: includes/class-zinn-translate-admin.php:157
+#: includes/class-zinn-translate-admin.php:160
 msgid "API key"
 msgstr "Mabuɗin API"
 
-#: includes/class-zinn-translate-admin.php:158
+#: includes/class-zinn-translate-admin.php:161
 msgid "Your key, billed to you by the provider. It is stored on this site and sent only to them."
 msgstr "Makullin ka, wanda mai ba da sabis ɗin ke cire maka kuɗi a kansa. Ana adana shi a wannan rukunin yanar gizon kuma ana aika shi zuwa gare su kawai."
 
-#: includes/class-zinn-translate-admin.php:166
+#: includes/class-zinn-translate-admin.php:169
 msgid "Model"
 msgstr "Samfuri"
 
-#: includes/class-zinn-translate-admin.php:167
+#: includes/class-zinn-translate-admin.php:170
 msgid "Leave empty for the cheapest model that does the job well."
 msgstr "Bar shi a fanko don samun mafi arha samfurin da zai yi aikin yadda ya kamata."
 
-#: includes/class-zinn-translate-admin.php:174
+#: includes/class-zinn-translate-admin.php:177
 msgid "This site is written in"
 msgstr "An rubuta wannan shafin a cikin"
 
-#: includes/class-zinn-translate-admin.php:175
+#: includes/class-zinn-translate-admin.php:178
 msgid "Leave empty to use the site language from WordPress settings."
 msgstr "Bar shi a bude don amfani da yaren shafin daga saitunan WordPress."
 
-#: includes/class-zinn-translate-admin.php:183
+#: includes/class-zinn-translate-admin.php:189
 msgid "Languages to publish"
 msgstr "Harsunan da za a buga"
 
-#: includes/class-zinn-translate-admin.php:184
+#: includes/class-zinn-translate-admin.php:190
 msgid "Each one gets its own web addresses and its own sitemap. Publish only the languages you want indexed."
 msgstr "Kowanne yana da nasa adiresoshin yanar gizo da kuma nata taswirar shafin. Buga kawai harsunan da kake son a sanya su cikin jerin sunaye."
 
-#: includes/class-zinn-translate-admin.php:191
+#: includes/class-zinn-translate-admin.php:206
 msgid "Translate automatically when I publish or update"
 msgstr "Fassara ta atomatik lokacin da na buga ko sabuntawa"
 
-#: includes/class-zinn-translate-admin.php:192
+#: includes/class-zinn-translate-admin.php:207
 msgid "Editing a page marks its translations out of date and they are remade in the background. Editing without changing any words costs nothing."
 msgstr "Gyara shafi yana sa fassararsa ta zama ta tsohon lokaci kuma ana sake su a bango. Gyara ba tare da canza ko kalma daya ba baya biyan komai."
 
-#: includes/class-zinn-translate-admin.php:199
+#: includes/class-zinn-translate-admin.php:214
 msgid "What gets translated"
 msgstr "Abin da za a fassara"
 
-#: includes/class-zinn-translate-admin.php:204
+#: includes/class-zinn-translate-admin.php:219
 msgid "Post types"
 msgstr "Nau'ukan rubutu"
 
-#: includes/class-zinn-translate-admin.php:212
+#: includes/class-zinn-translate-admin.php:232
 msgid "Translate the web addresses too"
 msgstr "Fassara adreshoshin yanar gizo ma"
 
-#: includes/class-zinn-translate-admin.php:213
+#: includes/class-zinn-translate-admin.php:233
 msgid "French visitors get /fr/a-propos/ rather than /fr/about/. The untranslated address keeps working and redirects, so nothing that was indexed breaks."
 msgstr "Baƙi daga Faransa suna samun /fr/a-propos/ maimakon /fr/about/. Adireshin da ba a fassara ba yana ci gaba da aiki kuma yana turawa, don haka babu wani abin da aka tsara da ya lalace."
 
-#: includes/class-zinn-translate-admin.php:220
+#: includes/class-zinn-translate-admin.php:240
 msgid "Translate SEO titles, descriptions and image alt text"
 msgstr "Fassara taken SEO, bayani, da hoton alt rubutu"
 
-#: includes/class-zinn-translate-admin.php:227
+#: includes/class-zinn-translate-admin.php:247
 msgid "Translate categories and tags"
 msgstr "Fassara rabe-rabe da alamomi"
 
-#: includes/class-zinn-translate-admin.php:234
+#: includes/class-zinn-translate-admin.php:254
 msgid "Translate navigation menus"
 msgstr "Fassara menu na kewayawa"
 
-#: includes/class-zinn-translate-admin.php:241
+#: includes/class-zinn-translate-admin.php:261
 msgid "Translate WooCommerce products and attributes"
 msgstr "Fassara samfuran WooCommerce da siffofi"
 
-#: includes/class-zinn-translate-admin.php:242
+#: includes/class-zinn-translate-admin.php:262
 msgid "Short descriptions, purchase notes, attribute labels and variation descriptions. Prices, SKUs and stored option values are never touched."
 msgstr "Takaitattun bayani, bayanan siyayya, lakabin siffofi da bayanin bambance-bambance. Ba a taba farashi, SKUs da kuma adana zaɓuɓɓukan da aka adana ba."
 
-#: includes/class-zinn-translate-admin.php:249
+#: includes/class-zinn-translate-admin.php:269
 msgid "SEO"
 msgstr "SEO"
 
-#: includes/class-zinn-translate-admin.php:254
+#: includes/class-zinn-translate-admin.php:274
 msgid "Add hreflang tags"
 msgstr "Ƙara alamomin hreflang"
 
-#: includes/class-zinn-translate-admin.php:255
+#: includes/class-zinn-translate-admin.php:275
 msgid "Tells search engines these pages are the same page in different languages. Leave this on unless another plugin is already doing it."
 msgstr "Yana gaya wa injunan bincike cewa waɗannan shafuka ɗaya ne a cikin yaruka daban-daban. Bar wannan a kunne sai dai idan wani ƙarin shiri (plugin) yana yin hakan tun riga."
 
-#: includes/class-zinn-translate-admin.php:262
+#: includes/class-zinn-translate-admin.php:282
 msgid "Publish a sitemap for each language"
 msgstr "Bugaci da sitemap ga kowane harshe"
 
-#: includes/class-zinn-translate-admin.php:269
+#: includes/class-zinn-translate-admin.php:289
 msgid "Publish llms.txt for each language"
 msgstr "Bugisa llms.txt ga kowace harshe"
 
-#: includes/class-zinn-translate-admin.php:270
+#: includes/class-zinn-translate-admin.php:290
 msgid "A plain-text map of the site that AI answer engines read. They often cannot run JavaScript and may never fetch a sitemap."
 msgstr "Taswirar shafin da ta ƙunshi rubutu kaɗai wacce injinan amsa na AI ke karantawa. Sau da yawa ba za su iya aiwatar da JavaScript ba kuma ƙila ba za su taɓa ɗauko taswirar shafin ba."
 
-#: includes/class-zinn-translate-admin.php:277
+#: includes/class-zinn-translate-admin.php:297
 #: includes/class-zinn-translate-switcher.php:135
 msgid "Language switcher"
 msgstr "Mai sauya harshe"
 
-#: includes/class-zinn-translate-admin.php:282
+#: includes/class-zinn-translate-admin.php:302
 #: includes/class-zinn-translate-switcher-widget.php:83
 msgid "Style"
 msgstr "Salo"
 
-#: includes/class-zinn-translate-admin.php:285
+#: includes/class-zinn-translate-admin.php:305
 msgid "Colours, spacing and corners are on the Styling tab. Place it with the block, the [zinn_language_switcher] shortcode, or a menu."
 msgstr "Launin, tazara da kusurwoyi suna kan shafin salo (Styling). Saka shi tare da bulo, gajeren lamba (shortcode) na [zinn_language_switcher], ko kuma jeren zaɓi (menu)."
 
-#: includes/class-zinn-translate-admin.php:292
+#: includes/class-zinn-translate-admin.php:312
 msgid "Show only these languages"
 msgstr "Nuna waɗannan harsuna kaɗai"
 
-#: includes/class-zinn-translate-admin.php:293
+#: includes/class-zinn-translate-admin.php:313
 msgid "Leave empty to show every language you publish."
 msgstr "Bar shi ba komai domin nuna kowane harshe da ka wallafa."
 
-#: includes/class-zinn-translate-admin.php:300
+#: includes/class-zinn-translate-admin.php:319
 msgid "Name each language in its own language"
 msgstr "Sanya kowane harshe da yarensa"
 
-#: includes/class-zinn-translate-admin.php:301
+#: includes/class-zinn-translate-admin.php:320
 msgid "Deutsch rather than German. Somebody who cannot read the current page cannot read \"German\" either."
 msgstr "Deutsch maimakon German. Wani wanda ba zai iya karanta shafin yanzu ba ba zai iya karanta \"German\" ba ma."
 
-#: includes/class-zinn-translate-admin.php:308
+#: includes/class-zinn-translate-admin.php:327
 msgid "Show flags"
 msgstr "Nuna tutoci"
 
-#: includes/class-zinn-translate-admin.php:309
+#: includes/class-zinn-translate-admin.php:328
 msgid "Off by default: a language is not a country, and Arabic and Spanish have no single flag that does not exclude most of their speakers."
 msgstr "A kashe yake a asali: harshe ba ƙasa ba ne, kuma Larabci da Sifaniyanci ba su da tuta guda ɗaya wadda ba za ta cire yawancin masu magana da su ba."
 
-#: includes/class-zinn-translate-admin.php:316
+#: includes/class-zinn-translate-admin.php:335
 msgid "Include the language being read"
 msgstr "Haɗa da harshen da ake karantawa"
 
-#: includes/class-zinn-translate-admin.php:323
+#: includes/class-zinn-translate-admin.php:342
 msgid "Include the original language"
 msgstr "Haɗa da asalin harshen"
 
-#: includes/class-zinn-translate-admin.php:330
+#: includes/class-zinn-translate-admin.php:349
 msgid "Add it to this menu"
 msgstr "Ƙara shi zuwa wannan menu ɗin"
 
-#: includes/class-zinn-translate-admin.php:331
+#: includes/class-zinn-translate-admin.php:350
 msgid "Only the menu you name here. Nothing is added to any other menu on the site."
 msgstr "Menun da ka sanya a nan kawai. Ba a ƙara komai zuwa wani menu a shafin ba."
 
-#: includes/class-zinn-translate-admin.php:381
+#: includes/class-zinn-translate-admin.php:400
 msgid "Accent"
 msgstr "Accent"
 
-#: includes/class-zinn-translate-admin.php:385
+#: includes/class-zinn-translate-admin.php:404
 msgid "Background"
 msgstr "Fage"
 
-#: includes/class-zinn-translate-admin.php:389
+#: includes/class-zinn-translate-admin.php:408
 msgid "Text"
 msgstr "Rubutu"
 
-#: includes/class-zinn-translate-admin.php:393
+#: includes/class-zinn-translate-admin.php:412
 msgid "Corner radius"
 msgstr "Radius na kusurwa"
 
-#: includes/class-zinn-translate-admin.php:397
+#: includes/class-zinn-translate-admin.php:416
 msgid "Spacing"
 msgstr "Sarari tsakanin layuka"
 
-#: includes/class-zinn-translate-admin.php:401
+#: includes/class-zinn-translate-admin.php:420
 msgid "Text size"
 msgstr "Girman rubutu"
 
-#: includes/class-zinn-translate-admin.php:428
+#: includes/class-zinn-translate-admin.php:447
 msgid "Do not add it to a menu"
 msgstr "Kada ka ƙara shi a cikin menu"
 
-#: includes/class-zinn-translate-admin.php:483
+#: includes/class-zinn-translate-admin.php:468
+msgid "none"
+msgstr "babu"
+
+#. translators: %s: comma-separated language names, or "none".
+#: includes/class-zinn-translate-admin.php:471
+#, php-format
+msgid "On a Zinn Digital® plan you choose the languages to publish on this site's Translation tab in your dashboard, under \"Shown to visitors\". This site checks it every hour. Publishing now: %s."
+msgstr "A kan tsarin Zinn Digital® kana zaɓar harsunan da za ka wallafa a kan shafin fassara na wannan shafin a cikin madanninka na gudanarwa, a ƙarƙashin \"An nuna wa baƙi\". Wannan shafin yana bincika shi kowane awa ɗaya. Ana wallafawa yanzu: %s."
+
+#. translators: %s: comma-separated language names, or "none".
+#: includes/class-zinn-translate-admin.php:474
+#, php-format
+msgid "On a Zinn Digital® plan you choose the languages to publish on this site's Translation tab in your dashboard. This site has not read that choice yet, so it is still publishing: %s. Check the Site ID and token above."
+msgstr "A kan tsarin Zinn Digital® kana zaɓar harsunan da za a wallafa a shafin fassara na wannan rukunin yanar gizo a cikin allon sarrafawa. Wannan rukunin yanar gizon bai karanta zaɓin nan ba tukuna, don haka yana ci gaba da wallafawa: %s. Duba ID ɗin Rukunin Yanar Gizo da alamar da ke sama."
+
+#: includes/class-zinn-translate-admin.php:525
 msgid "Edit any translation here. An edited translation is kept exactly as you wrote it and is never overwritten when the page is translated again."
 msgstr "Gyara kowane fassara a nan. Ana ajiye fassarar da aka gyara kamar yadda ka rubuta ta kuma ba a taba share ta lokacin da aka sake fassara shafin ba."
 
-#: includes/class-zinn-translate-admin.php:504
+#: includes/class-zinn-translate-admin.php:546
 msgid "Every language"
 msgstr "Kowane harshe"
 
-#: includes/class-zinn-translate-admin.php:511
+#: includes/class-zinn-translate-admin.php:553
 msgid "Search translations"
 msgstr "Bincika fassara"
 
-#: includes/class-zinn-translate-admin.php:512
+#: includes/class-zinn-translate-admin.php:554
 msgid "Filter"
 msgstr "Tace"
 
-#: includes/class-zinn-translate-admin.php:517
+#: includes/class-zinn-translate-admin.php:559
 msgid "Content"
 msgstr "Abubuwan ciki"
 
-#: includes/class-zinn-translate-admin.php:518
+#: includes/class-zinn-translate-admin.php:560
 msgid "Language"
 msgstr "Harshe"
 
-#: includes/class-zinn-translate-admin.php:519
+#: includes/class-zinn-translate-admin.php:561
 msgid "Translation"
 msgstr "Fassarar"
 
-#: includes/class-zinn-translate-admin.php:520
+#: includes/class-zinn-translate-admin.php:562
 msgid "Status"
 msgstr "Matsayi"
 
-#: includes/class-zinn-translate-admin.php:521
-#: includes/class-zinn-translate-admin.php:540
+#: includes/class-zinn-translate-admin.php:563
+#: includes/class-zinn-translate-admin.php:582
 msgid "Save"
 msgstr "Ajiye"
 
-#: includes/class-zinn-translate-admin.php:526
+#: includes/class-zinn-translate-admin.php:568
 msgid "Nothing translated yet. Publish a language and translation starts in the background."
 msgstr "Ba a fassara komai ba tukuna. Yi wallafa yare kuma fassara za ta fara a bango."
 
-#: includes/class-zinn-translate-admin.php:559
+#: includes/class-zinn-translate-admin.php:601
 msgid "These addresses are live. Open any of them to check it, and submit the sitemap index to Google Search Console."
 msgstr "Waɗannan adiresoshin suna raye. Buɗe kowanne daga cikinsu don bincika shi, kuma ka gabatar da fihirisar sitemap zuwa Google."
 
-#: includes/class-zinn-translate-admin.php:580
+#: includes/class-zinn-translate-admin.php:622
 msgid "You are not allowed to edit translations on this site."
 msgstr "Ba a ba ka izinin gyara fassarori a wannan shafin ba."
 
-#: includes/class-zinn-translate-admin.php:608
+#: includes/class-zinn-translate-admin.php:650
 msgid "Edited by you — kept"
 msgstr "Wanda kuka gyara — an adana"
 
-#: includes/class-zinn-translate-admin.php:610
+#: includes/class-zinn-translate-admin.php:652
 msgid "Source changed — will be redone"
 msgstr "An canza asali — za a sake shi"
 
-#: includes/class-zinn-translate-admin.php:612
+#: includes/class-zinn-translate-admin.php:654
 msgid "Up to date"
 msgstr "An sabunta"
 
@@ -536,36 +560,32 @@ msgstr "Aika da wannan rahoton ga tallafin Zinn®"
 msgid "We open a support ticket for you and reply by email. If you would rather not send it, copy it above and paste it into a ticket yourself."
 msgstr "Mun buɗe tikitin goyon baya don ku kuma mun ba da amsa ta imel. Idan kun fi son kada ku aika da shi, kwafi shi a sama kuma ku liƙa shi a cikin tikiti da kanku."
 
-#: includes/class-zinn-translate-diagnostics.php:228
-msgid "Copied"
-msgstr "An kwafi"
-
 #. translators: %s: the transport error reported by WordPress.
-#: includes/class-zinn-translate-diagnostics.php:274
+#: includes/class-zinn-translate-diagnostics.php:270
 #, php-format
 msgid "We could not reach Zinn Digital® from this server (%s). Copy the report above and open a ticket instead — nothing about your settings is wrong."
 msgstr "Ba mu iya isa ga Zinn Digital® ba daga wannan uwar garken (%s). Kwafi rahoton da ke sama sannan ka buɗe tikiti maimakon haka — babu abin da ya lalace game da saitunanka."
 
-#: includes/class-zinn-translate-diagnostics.php:288
+#: includes/class-zinn-translate-diagnostics.php:284
 msgid "Sent. Zinn® support has your report and will reply by email."
 msgstr "An tura. Taimakon Zinn® yana da rahotonku kuma zai ba da amsa ta imel."
 
 #. translators: %s: the support reference for the report just sent.
-#: includes/class-zinn-translate-diagnostics.php:291
+#: includes/class-zinn-translate-diagnostics.php:287
 #, php-format
 msgid "Sent. Zinn® support has your report — reference %s — and will reply by email."
 msgstr "Taimakon Zinn® ya karɓi rahotonku — lambar tunani %s — kuma zai ba da amsa ta imel."
 
-#: includes/class-zinn-translate-diagnostics.php:300
+#: includes/class-zinn-translate-diagnostics.php:296
 msgid "You have sent several reports in a short time. Wait a few minutes and try again — the earlier ones did arrive."
 msgstr "Kun aika da yawa a cikin kankanin lokaci. Jira na ‘yan mintuna sannan ku sake gwadawa — an karɓi na da suka gabata."
 
-#: includes/class-zinn-translate-diagnostics.php:307
+#: includes/class-zinn-translate-diagnostics.php:303
 msgid "Zinn Digital® could not accept the report just now — that is our end, not yours. Try again shortly, or copy the report above into a ticket."
 msgstr "Zinn Digital® ta kasa karɓar rahoton a yanzu — wannan kuskurenmu ne, ba naku ba. Sake gwadawa nan ba da jimawa ba, ko kuma ku kwafe rahoton da ke sama zuwa cikin tikiti."
 
 #. translators: %d: the HTTP status code the server returned.
-#: includes/class-zinn-translate-diagnostics.php:315
+#: includes/class-zinn-translate-diagnostics.php:311
 #, php-format
 msgid "The report was refused (HTTP %d). Copy it above and open a ticket, quoting that number."
 msgstr "An ƙi amincewa da rahoton (HTTP %d). Kwafi shi a sama sannan ka buɗe tikiti, tare da ambaton wannan lamba."
@@ -591,27 +611,27 @@ msgstr "Karanta jagorar mai amfani ta %s"
 msgid "Hide this"
 msgstr "Boye da wannan"
 
-#: includes/class-zinn-translate-promo.php:374
+#: includes/class-zinn-translate-promo.php:424
 msgid "Zinn® hosting for WordPress"
 msgstr "Zinn® hosting don WordPress"
 
-#: includes/class-zinn-translate-promo.php:375
+#: includes/class-zinn-translate-promo.php:425
 msgid "LiteSpeed, daily backups, free migration and a control panel built for people who run more than one site."
 msgstr "LiteSpeed, goyan bayan kullum, ƙaura kyauta da kuma allon sarrafawa da aka gina don mutanen da ke gudanar da shafuka fiye da ɗaya."
 
-#: includes/class-zinn-translate-promo.php:381
+#: includes/class-zinn-translate-promo.php:431
 msgid "The Zinn® marketplace"
 msgstr "Kasuwancin Zinn®"
 
-#: includes/class-zinn-translate-promo.php:382
+#: includes/class-zinn-translate-promo.php:432
 msgid "Buy and sell established sites, domains and link placements, with the money held safely until both sides are happy."
 msgstr "Sayen da siyar da ingantattun shafuka, yankuna, da wuraren sanya hanyoyin sadarwa, tare da ajiyar kudi cikin aminci har sai bangarorin biyu sun gamsu."
 
-#: includes/class-zinn-translate-promo.php:429
+#: includes/class-zinn-translate-promo.php:479
 msgid "Zinn Hub® — hire people who do this for a living"
 msgstr "Zinn Hub® — hayar mutanen da ke yin wannan a matsayin sana'a"
 
-#: includes/class-zinn-translate-promo.php:430
+#: includes/class-zinn-translate-promo.php:480
 msgid "Our global freelance marketplace: browse over 10,000 ready-made services from writers, designers, developers and SEOs, or post a project and let them bid."
 msgstr "Kasuwar 'yan kwangila ta duniya: bincika fiye da ayyuka 10,000 da aka riga aka shirya daga marubuta, masu zanen kaya, masu haɓakawa da ƙwararrun SEO, ko kuma sanya aiki kuma ku bar su su yi gwanjo."
 
@@ -717,19 +737,19 @@ msgstr "Bincika shafin yanayin su"
 msgid "Fix this on your account"
 msgstr "Gyara wannan a kan asusunka"
 
-#: includes/class-zinn-translate-style-presets.php:109
+#: includes/class-zinn-translate-style-presets.php:118
 msgid "Style preset"
 msgstr "Salon salo"
 
-#: includes/class-zinn-translate-style-presets.php:110
+#: includes/class-zinn-translate-style-presets.php:119
 msgid "A starting point. Anything below overrides it."
 msgstr "Wani wurin farawa. Duk wani abu da ke ƙasa yana shige masa gaba."
 
-#: includes/class-zinn-translate-style-presets.php:117
+#: includes/class-zinn-translate-style-presets.php:126
 msgid "Use my own colours and sizes"
 msgstr "Yi amfani da launuka da girman nawa na kaina"
 
-#: includes/class-zinn-translate-style-presets.php:118
+#: includes/class-zinn-translate-style-presets.php:127
 msgid "Leave this off and the preset is used exactly as it is."
 msgstr "Bar wannan a kashe kuma ana amfani da tsarin da aka riga aka saita yadda yake."
 
@@ -808,19 +828,19 @@ msgstr "An ƙare kaso na harafin DeepL ɗinka na wannan lokacin. Fassarar za ta 
 msgid "DeepL answered with something we could not read. Nothing was saved."
 msgstr "DeepL ya ba da amsar da ba za mu iya karanta wa ba. Ba a adana komai ba."
 
-#: includes/providers/class-zinn-translate-provider-gemini.php:107
+#: includes/providers/class-zinn-translate-provider-gemini.php:108
 msgid "No Google Gemini API key is saved, so there is nothing to translate with."
 msgstr "Ba a adana maɓallin Google Gemini API ba, don haka babu abin da za a fassara da shi."
 
-#: includes/providers/class-zinn-translate-provider-gemini.php:155
+#: includes/providers/class-zinn-translate-provider-gemini.php:156
 msgid "Google Gemini could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
 msgstr "Ba a iya isa ga Google Gemini ba. Ba a fassara komai ba kuma ba a caje komai ba; zai sake gwadawa a karo na gaba."
 
-#: includes/providers/class-zinn-translate-provider-openai.php:103
+#: includes/providers/class-zinn-translate-provider-openai.php:104
 msgid "No OpenAI API key is saved, so there is nothing to translate with."
 msgstr "Ba a adana maɓallin OpenAI API ba, don haka babu abin da za a fassara da shi."
 
-#: includes/providers/class-zinn-translate-provider-openai.php:139
+#: includes/providers/class-zinn-translate-provider-openai.php:140
 msgid "OpenAI could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
 msgstr "Ba a iya tuntuɓar OpenAI ba. Ba a fassara komai ba kuma ba a caje komai ba; za a sake gwadawa a karo na gaba."
 
@@ -829,6 +849,7 @@ msgid "This site is not connected to Zinn Digital®, so there is nothing to coll
 msgstr "Wannan shafin ba a haɗa shi da Zinn Digital® ba, don haka babu abin da za a tattara. Ƙara ID na Shafi da token, ko canza zuwa maɓallin mai ba da sabis naka."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:135
+#: includes/providers/class-zinn-translate-provider-zinn.php:251
 msgid "This site is not connected to Zinn Digital®."
 msgstr "Ba a haɗa wannan shafin da Zinn Digital® ba."
 
@@ -841,8 +862,9 @@ msgid "Translation is paused on this site. Check the account is up to date on yo
 msgstr "An Dakatar da fassara a wannan shafin. Tabbatar cewa asusun yana kan lokaci a kan allon sarrafa ku na Zinn Digital®."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:176
-msgid "Zinn Digital® rejected this site's token. Copy it again from the site's Translation tab on your dashboard."
-msgstr "Zinn Digital® ta ƙi yarda da alamar wannan shafin. Kwafi ta sake daga shafin Fassarar (Translation) a kan madubin sarrafa ka (dashboard)."
+#: includes/providers/class-zinn-translate-provider-zinn.php:275
+msgid "Zinn Digital® rejected this site's token. It must be an API key with the sites.view and sites.translation.manage permissions — create one on the API keys page of your dashboard."
+msgstr "Zinn Digital® ya ki amincewa da token na wannan shafin. Dole ne ya zama API key tare da izinin sites.view da sites.translation.manage — ka ƙirƙiri ɗaya a shafin API keys na allon sarrafawa naka."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:207
 msgid "Zinn Digital® could not be reached. Your site keeps serving the translations it already has."
@@ -851,3 +873,11 @@ msgstr "Ba a iya tuntuɓar Zinn Digital® ba. Shafinka na ci gaba da ba da fassa
 #: includes/providers/class-zinn-translate-provider-zinn.php:219
 msgid "Zinn Digital® answered with something we could not read. Your site keeps serving the translations it already has."
 msgstr "Zinn Digital® ya mayar da martani da wani abu da ba za mu iya karantawa ba. Shafinka na ci gaba da ba da fassarorin da yake da su tun da farko."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:267
+msgid "Zinn Digital® could not be reached. Your site keeps publishing the languages it already has."
+msgstr "Ba a iya tuntuɓar Zinn Digital® ba. Shafinka na ci gaba da wallafa harsunan da yake da su tun da farko."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:286
+msgid "Zinn Digital® answered with something we could not read. Your site keeps publishing the languages it already has."
+msgstr "Zinn Digital® ta amsa da wani abu da ba za mu iya karantawa ba. Shafinka na ci gaba da buga harsunan da yake da su tun da farko."

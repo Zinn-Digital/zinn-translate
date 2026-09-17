@@ -202,7 +202,10 @@ final class Zinn_Translate_Queue {
 		Zinn_Translate_Locale_Switch::ensure_component_packs();
 		$inventory = Zinn_Translate_Collector::inventory();
 		$retired   = Zinn_Translate_Store::retire_absent( Zinn_Translate_Collector::refs( $inventory ) );
-		$pushed    = 0;
+		// ⭐ The published set follows the dashboard; refreshed here, on the hourly pass, so a
+		// language switched on there gets its web addresses within the hour (D26950).
+		Zinn_Translate_Served::sync();
+		$pushed = 0;
 		if ( 'byo' !== Zinn_Translate_Options::text( 'mode' ) && Zinn_Translate_Options::is_connected() ) {
 			try {
 				$result = Zinn_Translate_Provider_Factory::zinn()->submit( $inventory );

@@ -248,10 +248,18 @@ final class Zinn_Translate_Options {
 	 * tree for a language we cannot translate is a set of thin duplicate pages announced to
 	 * crawlers as canonical alternates.
 	 *
+	 * ⛔⛔ **On a Zinn Digital® plan, the DASHBOARD decides (D26430, D26950).** A connected site
+	 * publishes the languages its owner switched on under "Shown to visitors" on the site's
+	 * Translation tab, as last fetched by `Zinn_Translate_Served`. Until that has been fetched
+	 * once for this site id, the languages chosen on this screen are used — "never asked" is
+	 * not "asked, and the answer was none" (§2.44). With your own provider key there is no
+	 * dashboard, and this screen decides.
+	 *
 	 * @return string[] Language codes, in registry order, never including the source.
 	 */
 	public static function locales(): array {
-		$raw = self::get( 'locales', array() );
+		$followed = class_exists( 'Zinn_Translate_Served' ) ? Zinn_Translate_Served::locales() : null;
+		$raw      = null !== $followed ? $followed : self::get( 'locales', array() );
 		if ( is_string( $raw ) ) {
 			$raw = explode( ',', $raw );
 		}

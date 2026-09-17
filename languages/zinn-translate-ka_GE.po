@@ -34,145 +34,149 @@ msgstr "Neil Lock — CEO, Zinn Digital® Ltd"
 msgid "https://zinndigital.com"
 msgstr "https://zinndigital.com"
 
-#: includes/class-zinn-translate-admin-fields.php:575
+#: includes/class-zinn-translate-admin-fields.php:580
 msgid "Stored. Type a new value to replace it."
 msgstr "შენახულია. ჩაწერეთ ახალი მნიშვნელობა მის ჩასანაცვლებლად."
 
-#: includes/class-zinn-translate-admin-fields.php:635
+#: includes/class-zinn-translate-admin-fields.php:640
 msgid "Filter this list…"
 msgstr "ამ სიის ფილტრაცია…"
 
-#: includes/class-zinn-translate-admin-fields.php:636
+#: includes/class-zinn-translate-admin-fields.php:641
 msgid "Filter this list"
 msgstr "ამ სიის ფილტრაცია"
 
-#: includes/class-zinn-translate-admin-fields.php:652
+#: includes/class-zinn-translate-admin-fields.php:657
 msgid "Nothing matches that filter."
 msgstr "ამ ფილტრს არაფერი შეესაბამება."
 
-#: includes/class-zinn-translate-admin-fields.php:683
+#: includes/class-zinn-translate-admin-fields.php:688
 msgid "Add a row"
 msgstr "სტრიქონის დამატება"
 
-#: includes/class-zinn-translate-admin-fields.php:720
+#: includes/class-zinn-translate-admin-fields.php:725
 msgid "Remove this row"
 msgstr "ამ რიგის წაშლა"
 
-#: includes/class-zinn-translate-admin-fields.php:720
+#: includes/class-zinn-translate-admin-fields.php:725
 msgid "Remove"
 msgstr "წაშლა"
 
-#: includes/class-zinn-translate-admin-ui.php:264
-#: includes/class-zinn-translate-admin-ui.php:265
-#: includes/class-zinn-translate-admin-ui.php:335
+#: includes/class-zinn-translate-admin-ui.php:280
+#: includes/class-zinn-translate-admin-ui.php:281
+#: includes/class-zinn-translate-admin-ui.php:421
 msgid "Zinn Digital®"
 msgstr "Zinn Digital®"
 
-#: includes/class-zinn-translate-admin-ui.php:278
+#: includes/class-zinn-translate-admin-ui.php:294
 msgid "Zinn Digital® — overview"
 msgstr "Zinn Digital® — მიმოხილვა"
 
-#: includes/class-zinn-translate-admin-ui.php:279
+#: includes/class-zinn-translate-admin-ui.php:295
 msgid "Overview"
 msgstr "მიმოხილვა"
 
-#: includes/class-zinn-translate-admin-ui.php:336
+#: includes/class-zinn-translate-admin-ui.php:383
+msgid "Copied"
+msgstr "კოპირებულია"
+
+#: includes/class-zinn-translate-admin-ui.php:422
 msgid "Every Zinn® plugin on this site, and whether it is working."
 msgstr "ამ საიტზე არსებული ყველა Zinn® პლაგინი და მუშაობს თუ არა ის."
 
-#: includes/class-zinn-translate-admin-ui.php:352
+#: includes/class-zinn-translate-admin-ui.php:437
 msgid "No connection is needed for this plugin."
 msgstr "ამ მოდულისთვის კავშირი საჭირო არ არის."
 
-#: includes/class-zinn-translate-admin-ui.php:357
+#: includes/class-zinn-translate-admin-ui.php:442
 msgid "Open settings"
 msgstr "პარამეტრების გახსნა"
 
-#: includes/class-zinn-translate-admin-ui.php:685
-#: includes/class-zinn-translate-admin-ui.php:1248
+#: includes/class-zinn-translate-admin-ui.php:770
+#: includes/class-zinn-translate-admin-ui.php:1331
 msgid "You do not have permission to change these settings."
 msgstr "ამ პარამეტრების შესაცვლელად ნებართვა არ გაქვთ."
 
-#: includes/class-zinn-translate-admin-ui.php:715
+#: includes/class-zinn-translate-admin-ui.php:799
 msgid "Settings sections"
 msgstr "პარამეტრების განყოფილებები"
 
-#: includes/class-zinn-translate-admin-ui.php:788
+#: includes/class-zinn-translate-admin-ui.php:871
 msgid "Support"
 msgstr "მხარდაჭერა"
 
-#: includes/class-zinn-translate-admin-ui.php:846
+#: includes/class-zinn-translate-admin-ui.php:929
 msgid "Save changes"
 msgstr "ცვლილებების შენახვა"
 
-#: includes/class-zinn-translate-admin-ui.php:875
+#: includes/class-zinn-translate-admin-ui.php:958
 msgid "Tools"
 msgstr "ხსაწყობები"
 
-#: includes/class-zinn-translate-admin-ui.php:890
+#: includes/class-zinn-translate-admin-ui.php:973
 msgid "Export settings"
 msgstr "პარამეტრების ექსპორტი"
 
-#: includes/class-zinn-translate-admin-ui.php:893
+#: includes/class-zinn-translate-admin-ui.php:976
 msgid "Reset to defaults"
 msgstr "საწყის პარამეტრებზე დაბრუნება"
 
-#: includes/class-zinn-translate-admin-ui.php:894
+#: includes/class-zinn-translate-admin-ui.php:977
 msgid "This puts every setting on this plugin back to its default. Continue?"
 msgstr "ეს დააბრუნებს ამ პლაგინის ყველა პარამეტრს საწყის მდგომარეობაში. გსურთ გაგრძელება?"
 
-#: includes/class-zinn-translate-admin-ui.php:901
+#: includes/class-zinn-translate-admin-ui.php:984
 msgid "Diagnostics for support"
 msgstr "დიაგნოსტიკა მხარდაჭერისთვის"
 
-#: includes/class-zinn-translate-admin-ui.php:910
+#: includes/class-zinn-translate-admin-ui.php:993
 msgid "Import a settings file"
 msgstr "პარამეტრების ფაილის იმპორტი"
 
-#: includes/class-zinn-translate-admin-ui.php:912
+#: includes/class-zinn-translate-admin-ui.php:995
 msgid "Import"
 msgstr "შემოტანა"
 
-#: includes/class-zinn-translate-admin-ui.php:914
+#: includes/class-zinn-translate-admin-ui.php:997
 msgid "Exported files never contain passwords, tokens or API keys — you will need to enter those again on the new site."
 msgstr "ექსპორტირებული ფაილები არასდროს შეიცავს პაროლებს, ტოკენებს ან API გასაღებებს — მათი ხელახლა შეყვანა ახალ საიტზე მოგიწევთ."
 
-#: includes/class-zinn-translate-admin-ui.php:1013
+#: includes/class-zinn-translate-admin-ui.php:1096
 msgid "Settings saved."
 msgstr "პარამეტრები შენახულია."
 
-#: includes/class-zinn-translate-admin-ui.php:1060
+#: includes/class-zinn-translate-admin-ui.php:1143
 msgid "Every setting on this plugin is back to its default."
 msgstr "ამ პლაგინის ყველა პარამეტრი დაუბრუნდა საწყის მნიშვნელობას."
 
-#: includes/class-zinn-translate-admin-ui.php:1103
+#: includes/class-zinn-translate-admin-ui.php:1186
 msgid "Done."
 msgstr "დასრულდა."
 
-#: includes/class-zinn-translate-admin-ui.php:1107
+#: includes/class-zinn-translate-admin-ui.php:1190
 msgid "That action is not available."
 msgstr "ეს ქმედება მიუწვდომელია."
 
-#: includes/class-zinn-translate-admin-ui.php:1174
+#: includes/class-zinn-translate-admin-ui.php:1257
 msgid "That file could not be read. Choose a settings file exported from a Zinn® plugin."
 msgstr "ამ ფაილის წაკითხვა ვერ მოხერხდა. აირჩიეთ Zinn® მოდულიდან ექსპორტირებული პარამეტრების ფაილი."
 
-#: includes/class-zinn-translate-admin-ui.php:1182
+#: includes/class-zinn-translate-admin-ui.php:1265
 msgid "That file is too large to be a settings export."
 msgstr "ეს ფაილი ძალიან დიდია პარამეტრების ექსპორტისთვის."
 
-#: includes/class-zinn-translate-admin-ui.php:1195
+#: includes/class-zinn-translate-admin-ui.php:1278
 msgid "That file is not a Zinn® settings export."
 msgstr "ეს ფაილი არ არის Zinn® პარამეტრების ექსპორტი."
 
 #. translators: %s: the plugin slug the file was exported from.
-#: includes/class-zinn-translate-admin-ui.php:1203
+#: includes/class-zinn-translate-admin-ui.php:1286
 #, php-format
 msgid "That file was exported from a different plugin (%s), so importing it here would store settings this plugin does not understand."
 msgstr "ეს ფაილი ექსპორტირებულია სხვა მოდულიდან (%s), ამიტომ მისი აქ იმპორტი შეინახავს პარამეტრებს, რომლებსაც ეს მოდული ვერ იცნობს."
 
 #. translators: %d: how many settings were imported.
-#: includes/class-zinn-translate-admin-ui.php:1233
+#: includes/class-zinn-translate-admin-ui.php:1316
 #, php-format
 msgid "%d setting imported. Passwords and API keys are never in an export, so enter those again."
 msgid_plural "%d settings imported. Passwords and API keys are never in an export, so enter those again."
@@ -223,250 +227,270 @@ msgstr "თქვენი Zinn Digital® სამართავიდან, 
 msgid "Site token"
 msgstr "საიტის ტოკენი"
 
-#: includes/class-zinn-translate-admin.php:147
+#: includes/class-zinn-translate-admin.php:142
+msgid "An API key from your Zinn Digital® dashboard, on its API keys page. Give it the sites.view and sites.translation.manage permissions."
+msgstr "თქვენი Zinn Digital® სამართავი პანელიდან, API გასაღებების გვერდიდან აღებული API გასაღები. მიანიჭეთ მას sites.view და sites.translation.manage უფლებები."
+
+#: includes/class-zinn-translate-admin.php:150
 msgid "Provider"
 msgstr "პროვაიდერი"
 
-#: includes/class-zinn-translate-admin.php:157
+#: includes/class-zinn-translate-admin.php:160
 msgid "API key"
 msgstr "API გასაღები"
 
-#: includes/class-zinn-translate-admin.php:158
+#: includes/class-zinn-translate-admin.php:161
 msgid "Your key, billed to you by the provider. It is stored on this site and sent only to them."
 msgstr "თქვენი გასაღები, რომელსაც პროვაიდერი გიწერთ ინვოისში. ის ინახება ამ საიტზე და იგზავნება მხოლოდ მათთან."
 
-#: includes/class-zinn-translate-admin.php:166
+#: includes/class-zinn-translate-admin.php:169
 msgid "Model"
 msgstr "მოდელი"
 
-#: includes/class-zinn-translate-admin.php:167
+#: includes/class-zinn-translate-admin.php:170
 msgid "Leave empty for the cheapest model that does the job well."
 msgstr "დატოვეთ ცარიელი იმ ყველაზე იაფფასიანი მოდელისთვის, რომელიც საქმეს კარგად ასრულებს."
 
-#: includes/class-zinn-translate-admin.php:174
+#: includes/class-zinn-translate-admin.php:177
 msgid "This site is written in"
 msgstr "ეს საიტი დაწერილია"
 
-#: includes/class-zinn-translate-admin.php:175
+#: includes/class-zinn-translate-admin.php:178
 msgid "Leave empty to use the site language from WordPress settings."
 msgstr "დატოვეთ ცარიელი WordPress პარამეტრებიდან საიტის ენის გამოსაყენებლად."
 
-#: includes/class-zinn-translate-admin.php:183
+#: includes/class-zinn-translate-admin.php:189
 msgid "Languages to publish"
 msgstr "გასაჯაროებელი ენები"
 
-#: includes/class-zinn-translate-admin.php:184
+#: includes/class-zinn-translate-admin.php:190
 msgid "Each one gets its own web addresses and its own sitemap. Publish only the languages you want indexed."
 msgstr "თითოეულს აქვს საკუთარი ვებმისამართი და საკუთარი საიტის რუკა. გამოაქვეყნეთ მხოლოდ ის ენები, რომელთა ინდექსირებაც გსურთ."
 
-#: includes/class-zinn-translate-admin.php:191
+#: includes/class-zinn-translate-admin.php:206
 msgid "Translate automatically when I publish or update"
 msgstr "ავტომატურად თარგმნე გამოქვეყნებისას ან განახლებისას"
 
-#: includes/class-zinn-translate-admin.php:192
+#: includes/class-zinn-translate-admin.php:207
 msgid "Editing a page marks its translations out of date and they are remade in the background. Editing without changing any words costs nothing."
 msgstr "გვერდის რედაქტირება მის თარგმანებს მოძველებულად აცხადებს და ისინი ფონურ რეჟიმში განახლდება. სიტყვების შეცვლის გარეშე რედაქტირება არაფერი ღირს."
 
-#: includes/class-zinn-translate-admin.php:199
+#: includes/class-zinn-translate-admin.php:214
 msgid "What gets translated"
 msgstr "რა ითარგმნება"
 
-#: includes/class-zinn-translate-admin.php:204
+#: includes/class-zinn-translate-admin.php:219
 msgid "Post types"
 msgstr "პოსტის ტიპები"
 
-#: includes/class-zinn-translate-admin.php:212
+#: includes/class-zinn-translate-admin.php:232
 msgid "Translate the web addresses too"
 msgstr "ვებ-მისამართებიც თარგმნეთ"
 
-#: includes/class-zinn-translate-admin.php:213
+#: includes/class-zinn-translate-admin.php:233
 msgid "French visitors get /fr/a-propos/ rather than /fr/about/. The untranslated address keeps working and redirects, so nothing that was indexed breaks."
 msgstr "ფრანგი ვიზიტორები /fr/about/-ის ნაცვლად ღებულობენ /fr/a-propos/-ს. გადაუთარგმნელი მისამართი აგრძელებს მუშაობას და აკეთებს გადამისამართებას, ამიტომ ინდექსირებული არაფერი ფუჭდება."
 
-#: includes/class-zinn-translate-admin.php:220
+#: includes/class-zinn-translate-admin.php:240
 msgid "Translate SEO titles, descriptions and image alt text"
 msgstr "სოც. ქსელის სათაურების, აღწერებისა და სურათების ალტერნატიული ტექსტის თარგმნა"
 
-#: includes/class-zinn-translate-admin.php:227
+#: includes/class-zinn-translate-admin.php:247
 msgid "Translate categories and tags"
 msgstr "კატეგორიებისა და ტეგების თარგმნა"
 
-#: includes/class-zinn-translate-admin.php:234
+#: includes/class-zinn-translate-admin.php:254
 msgid "Translate navigation menus"
 msgstr "ნავიგაციის მენიუების თარგმნა"
 
-#: includes/class-zinn-translate-admin.php:241
+#: includes/class-zinn-translate-admin.php:261
 msgid "Translate WooCommerce products and attributes"
 msgstr "WooCommerce პროდუქტებისა და ატრიბუტების თარგმნა"
 
-#: includes/class-zinn-translate-admin.php:242
+#: includes/class-zinn-translate-admin.php:262
 msgid "Short descriptions, purchase notes, attribute labels and variation descriptions. Prices, SKUs and stored option values are never touched."
 msgstr "მოკლე აღწერილობები, შეძენის შენიშვნები, ატრიბუტების ეტიკეტები და ვარიაციების აღწერები. ფასები, SKU-ები და შენახული ოფციის მნიშვნელობები უცვლელი რჩება."
 
-#: includes/class-zinn-translate-admin.php:249
+#: includes/class-zinn-translate-admin.php:269
 msgid "SEO"
 msgstr "SEO"
 
-#: includes/class-zinn-translate-admin.php:254
+#: includes/class-zinn-translate-admin.php:274
 msgid "Add hreflang tags"
 msgstr "hreflang ტეგების დამატება"
 
-#: includes/class-zinn-translate-admin.php:255
+#: includes/class-zinn-translate-admin.php:275
 msgid "Tells search engines these pages are the same page in different languages. Leave this on unless another plugin is already doing it."
 msgstr "საძიებო სისტემებს ეუბნება, რომ ეს გვერდები სხვადასხვა ენაზე არსებული ერთი და იგივე გვერდია. ჩართული დატოვეთ, თუ სხვა პლაგინი ამას უკვე არ აკეთებს."
 
-#: includes/class-zinn-translate-admin.php:262
+#: includes/class-zinn-translate-admin.php:282
 msgid "Publish a sitemap for each language"
 msgstr "გამოაქვეყნეთ საიტის რუკა თითოეული ენისთვის"
 
-#: includes/class-zinn-translate-admin.php:269
+#: includes/class-zinn-translate-admin.php:289
 msgid "Publish llms.txt for each language"
 msgstr "თითოეული ენისთვის გამოაქვეყნეთ llms.txt"
 
-#: includes/class-zinn-translate-admin.php:270
+#: includes/class-zinn-translate-admin.php:290
 msgid "A plain-text map of the site that AI answer engines read. They often cannot run JavaScript and may never fetch a sitemap."
 msgstr "საიტის უბრალო ტექსტური რუკა, რომელსაც ხელოვნური ინტელექტის პასუხის ძრავები კითხულობენ. ისინი ხშირად ვერ უშვებენ JavaScript-ს და შესაძლოა, არასდროს ჩამოტვირთონ საიტის რუკა."
 
-#: includes/class-zinn-translate-admin.php:277
+#: includes/class-zinn-translate-admin.php:297
 #: includes/class-zinn-translate-switcher.php:135
 msgid "Language switcher"
 msgstr "ენების გადამრთველი"
 
-#: includes/class-zinn-translate-admin.php:282
+#: includes/class-zinn-translate-admin.php:302
 #: includes/class-zinn-translate-switcher-widget.php:83
 msgid "Style"
 msgstr "სტილი"
 
-#: includes/class-zinn-translate-admin.php:285
+#: includes/class-zinn-translate-admin.php:305
 msgid "Colours, spacing and corners are on the Styling tab. Place it with the block, the [zinn_language_switcher] shortcode, or a menu."
 msgstr "ფერთა გამა, დაშორებები და კუთხეები სტილის ჩანართზეა. განათავსეთ იგი ბლოკით, [zinn_language_switcher] შორთქოდით ან მენიუთი."
 
-#: includes/class-zinn-translate-admin.php:292
+#: includes/class-zinn-translate-admin.php:312
 msgid "Show only these languages"
 msgstr "მხოლოდ ამ ენების ჩვენება"
 
-#: includes/class-zinn-translate-admin.php:293
+#: includes/class-zinn-translate-admin.php:313
 msgid "Leave empty to show every language you publish."
 msgstr "დატოვეთ ცარიელი, რომ აიჩვენოს ყველა ენა, რომელზეც აქვეყნებთ."
 
-#: includes/class-zinn-translate-admin.php:300
+#: includes/class-zinn-translate-admin.php:319
 msgid "Name each language in its own language"
 msgstr "თითოეული ენა მის საკუთარ ენაზე დაასახელეთ"
 
-#: includes/class-zinn-translate-admin.php:301
+#: includes/class-zinn-translate-admin.php:320
 msgid "Deutsch rather than German. Somebody who cannot read the current page cannot read \"German\" either."
 msgstr "Deutsch და არა German. ის, ვინც მიმდინარე გვერდს ვერ კითხულობს, ვერც \"German\"-ს წაიკითხავს."
 
-#: includes/class-zinn-translate-admin.php:308
+#: includes/class-zinn-translate-admin.php:327
 msgid "Show flags"
 msgstr "დროშების ჩვენება"
 
-#: includes/class-zinn-translate-admin.php:309
+#: includes/class-zinn-translate-admin.php:328
 msgid "Off by default: a language is not a country, and Arabic and Spanish have no single flag that does not exclude most of their speakers."
 msgstr "ნაგულისხმევად გამორთულია: ენა არ არის ქვეყანა, ხოლო არაბულ და ესპანურ ენებს არ აქვთ ერთიანი დროშა, რომელიც არ გამორიცხავს მათზე მოლაპარაკეთა უმრავლესობას."
 
-#: includes/class-zinn-translate-admin.php:316
+#: includes/class-zinn-translate-admin.php:335
 msgid "Include the language being read"
 msgstr "წასაკითხი ენის ჩართვა"
 
-#: includes/class-zinn-translate-admin.php:323
+#: includes/class-zinn-translate-admin.php:342
 msgid "Include the original language"
 msgstr "ორიგინალი ენის ჩართვა"
 
-#: includes/class-zinn-translate-admin.php:330
+#: includes/class-zinn-translate-admin.php:349
 msgid "Add it to this menu"
 msgstr "დაამატეთ ეს მენიუში"
 
-#: includes/class-zinn-translate-admin.php:331
+#: includes/class-zinn-translate-admin.php:350
 msgid "Only the menu you name here. Nothing is added to any other menu on the site."
 msgstr "მხოლოდ აქ მითითებული მენიუ. საიტის სხვა არცერთ მენიუში არაფერი ემატება."
 
-#: includes/class-zinn-translate-admin.php:381
+#: includes/class-zinn-translate-admin.php:400
 msgid "Accent"
 msgstr "აქცენტი"
 
-#: includes/class-zinn-translate-admin.php:385
+#: includes/class-zinn-translate-admin.php:404
 msgid "Background"
 msgstr "ფონური"
 
-#: includes/class-zinn-translate-admin.php:389
+#: includes/class-zinn-translate-admin.php:408
 msgid "Text"
 msgstr "ტექსტი"
 
-#: includes/class-zinn-translate-admin.php:393
+#: includes/class-zinn-translate-admin.php:412
 msgid "Corner radius"
 msgstr "კუთხის რადიუსი"
 
-#: includes/class-zinn-translate-admin.php:397
+#: includes/class-zinn-translate-admin.php:416
 msgid "Spacing"
 msgstr "დაშორება"
 
-#: includes/class-zinn-translate-admin.php:401
+#: includes/class-zinn-translate-admin.php:420
 msgid "Text size"
 msgstr "ტექსტის ზომა"
 
-#: includes/class-zinn-translate-admin.php:428
+#: includes/class-zinn-translate-admin.php:447
 msgid "Do not add it to a menu"
 msgstr "არ დაამატოთ მენიუში"
 
-#: includes/class-zinn-translate-admin.php:483
+#: includes/class-zinn-translate-admin.php:468
+msgid "none"
+msgstr "არცერთი"
+
+#. translators: %s: comma-separated language names, or "none".
+#: includes/class-zinn-translate-admin.php:471
+#, php-format
+msgid "On a Zinn Digital® plan you choose the languages to publish on this site's Translation tab in your dashboard, under \"Shown to visitors\". This site checks it every hour. Publishing now: %s."
+msgstr "Zinn Digital® გეგმაზე თქვენ ირჩევთ ენებს ამ საიტის გამოსაქვეყნებლად თქვენი სამართავი პანელის „Translation“ ჩანართში, სექციაში „Shown to visitors“. ეს საიტი მას საათობრივად ამოწმებს. ახლა ქვეყნდება: %s."
+
+#. translators: %s: comma-separated language names, or "none".
+#: includes/class-zinn-translate-admin.php:474
+#, php-format
+msgid "On a Zinn Digital® plan you choose the languages to publish on this site's Translation tab in your dashboard. This site has not read that choice yet, so it is still publishing: %s. Check the Site ID and token above."
+msgstr "Zinn Digital® გეგმაზე თქვენ ირჩევთ ენებს ამ საიტის გამოსაქვეყნებლად თქვენი სამართავი პანელის „Translation“ ჩანართში. ამ საიტს ეს არჩევანი ჯერ არ წაუკითხავს, ​​ამიტომ ის კვლავ აქვეყნებს: %s. შეამოწმეთ ზემოთ მოცემული საიტის ID და ტოკენი."
+
+#: includes/class-zinn-translate-admin.php:525
 msgid "Edit any translation here. An edited translation is kept exactly as you wrote it and is never overwritten when the page is translated again."
 msgstr "შეასწორეთ ნებისმიერი თარგმანი აქ. შემოწმებული თარგმანი ზუსტად ისე ინახება, როგორც თქვენ დაწერეთ და არასოდეს გადაიფარება გვერდის თავიდან თარგმნისას."
 
-#: includes/class-zinn-translate-admin.php:504
+#: includes/class-zinn-translate-admin.php:546
 msgid "Every language"
 msgstr "ყველა ენა"
 
-#: includes/class-zinn-translate-admin.php:511
+#: includes/class-zinn-translate-admin.php:553
 msgid "Search translations"
 msgstr "თარგმანების ძიება"
 
-#: includes/class-zinn-translate-admin.php:512
+#: includes/class-zinn-translate-admin.php:554
 msgid "Filter"
 msgstr "ფილტრი"
 
-#: includes/class-zinn-translate-admin.php:517
+#: includes/class-zinn-translate-admin.php:559
 msgid "Content"
 msgstr "შიგთავსი"
 
-#: includes/class-zinn-translate-admin.php:518
+#: includes/class-zinn-translate-admin.php:560
 msgid "Language"
 msgstr "ენა"
 
-#: includes/class-zinn-translate-admin.php:519
+#: includes/class-zinn-translate-admin.php:561
 msgid "Translation"
 msgstr "თარგმანი"
 
-#: includes/class-zinn-translate-admin.php:520
+#: includes/class-zinn-translate-admin.php:562
 msgid "Status"
 msgstr "სტატუსი"
 
-#: includes/class-zinn-translate-admin.php:521
-#: includes/class-zinn-translate-admin.php:540
+#: includes/class-zinn-translate-admin.php:563
+#: includes/class-zinn-translate-admin.php:582
 msgid "Save"
 msgstr "შენახვა"
 
-#: includes/class-zinn-translate-admin.php:526
+#: includes/class-zinn-translate-admin.php:568
 msgid "Nothing translated yet. Publish a language and translation starts in the background."
 msgstr "არაფერია ნათარგმნი. გამოაქვეყნეთ ენა და თარგმანი ფონურ რეჟიმში დაიწყება."
 
-#: includes/class-zinn-translate-admin.php:559
+#: includes/class-zinn-translate-admin.php:601
 msgid "These addresses are live. Open any of them to check it, and submit the sitemap index to Google Search Console."
 msgstr "ეს მისამართები აქტიურია. გახსენით ნებისმიერი მათგანი შესამოწმებლად და წარადგინეთ საიტის რუკის ინდექსი Google Search Console-ში."
 
-#: includes/class-zinn-translate-admin.php:580
+#: includes/class-zinn-translate-admin.php:622
 msgid "You are not allowed to edit translations on this site."
 msgstr "თქვენ არ გაქვთ ამ საიტზე თარგმანების რედაქტირების უფლება."
 
-#: includes/class-zinn-translate-admin.php:608
+#: includes/class-zinn-translate-admin.php:650
 msgid "Edited by you — kept"
 msgstr "თქვენ მიერ რედაქტირებული — შენარჩუნებულია"
 
-#: includes/class-zinn-translate-admin.php:610
+#: includes/class-zinn-translate-admin.php:652
 msgid "Source changed — will be redone"
 msgstr "წყარო შეიცვალა — თავიდან გაკეთდება"
 
-#: includes/class-zinn-translate-admin.php:612
+#: includes/class-zinn-translate-admin.php:654
 msgid "Up to date"
 msgstr "განახლებულია"
 
@@ -536,36 +560,32 @@ msgstr "გაუგზავნეთ ეს ანგარიში Zinn®-�
 msgid "We open a support ticket for you and reply by email. If you would rather not send it, copy it above and paste it into a ticket yourself."
 msgstr "ჩვენ ვხსნით მხარდაჭერის თთიქეთს თქვენთვის და გპასუხობთ ელფოსტით. თუ გირჩევნიათ, რომ არ გამოგზავნოთ, დააკოპირეთ ზემოთ და თავად ჩასვით თიქეთში."
 
-#: includes/class-zinn-translate-diagnostics.php:228
-msgid "Copied"
-msgstr "კოპირებულია"
-
 #. translators: %s: the transport error reported by WordPress.
-#: includes/class-zinn-translate-diagnostics.php:274
+#: includes/class-zinn-translate-diagnostics.php:270
 #, php-format
 msgid "We could not reach Zinn Digital® from this server (%s). Copy the report above and open a ticket instead — nothing about your settings is wrong."
 msgstr "ამ სერვერიდან (%s) Zinn Digital®-თან დაკავშირება ვერ მოხერხდა. გადაიღეთ ზემოთ მოცემული ანგარიში და მის ნაცვლად გახსენით თიქეთი — თქვენს პარამეტრებში ყველაფერი რიგზეა."
 
-#: includes/class-zinn-translate-diagnostics.php:288
+#: includes/class-zinn-translate-diagnostics.php:284
 msgid "Sent. Zinn® support has your report and will reply by email."
 msgstr "გაგზავნილია. Zinn® მხარდაჭერის ჯგუფმა მიიღო თქვენი მოხსენება და ელფოსტით გიპასუხებთ."
 
 #. translators: %s: the support reference for the report just sent.
-#: includes/class-zinn-translate-diagnostics.php:291
+#: includes/class-zinn-translate-diagnostics.php:287
 #, php-format
 msgid "Sent. Zinn® support has your report — reference %s — and will reply by email."
 msgstr "გაგზავნილია. Zinn® მხარდაჭერის ჯგუფმა მიიღო თქვენი შეტყობინება — მითითება %s — და ელფოსტით გიპასუხებთ."
 
-#: includes/class-zinn-translate-diagnostics.php:300
+#: includes/class-zinn-translate-diagnostics.php:296
 msgid "You have sent several reports in a short time. Wait a few minutes and try again — the earlier ones did arrive."
 msgstr "თქვენ მოკლე დროში რამდენიმე ანგარიში გაგზავნეთ. დაიცადეთ რამდენიმე წუთი და სცადეთ თავიდან — წინა შეტყობინებები უკვე მივიდა."
 
-#: includes/class-zinn-translate-diagnostics.php:307
+#: includes/class-zinn-translate-diagnostics.php:303
 msgid "Zinn Digital® could not accept the report just now — that is our end, not yours. Try again shortly, or copy the report above into a ticket."
 msgstr "Zinn Digital®-მა ვერ მიიღო ანგარიში ამ წუთში — ეს ჩვენი ბრალია და არა თქვენი. სცადეთ თავიდან მალე ან დააკოპირეთ ზემოთ მოცემული ანგარიში თაიქეთში."
 
 #. translators: %d: the HTTP status code the server returned.
-#: includes/class-zinn-translate-diagnostics.php:315
+#: includes/class-zinn-translate-diagnostics.php:311
 #, php-format
 msgid "The report was refused (HTTP %d). Copy it above and open a ticket, quoting that number."
 msgstr "ანგარიში უარყოფილია (HTTP %d). დააკოპირეთ იგი ზემოთ და გახსენით თიქეთი, მიუთითეთ ეს ნომერი."
@@ -591,27 +611,27 @@ msgstr "წაიკითხეთ %s მომხმარებლის ს�
 msgid "Hide this"
 msgstr "დამალვა"
 
-#: includes/class-zinn-translate-promo.php:374
+#: includes/class-zinn-translate-promo.php:424
 msgid "Zinn® hosting for WordPress"
 msgstr "Zinn® ჰოსტინგი WordPress-ისთვის"
 
-#: includes/class-zinn-translate-promo.php:375
+#: includes/class-zinn-translate-promo.php:425
 msgid "LiteSpeed, daily backups, free migration and a control panel built for people who run more than one site."
 msgstr "LiteSpeed, ყოველდღიური სარეზერვო ასლები, უფასო მიგრაცია და მართვის პანელი, რომელიც შექმნილია მათთვის, ვინც ერთზე მეტ საიტს მართავს."
 
-#: includes/class-zinn-translate-promo.php:381
+#: includes/class-zinn-translate-promo.php:431
 msgid "The Zinn® marketplace"
 msgstr "Zinn® ბაზარი"
 
-#: includes/class-zinn-translate-promo.php:382
+#: includes/class-zinn-translate-promo.php:432
 msgid "Buy and sell established sites, domains and link placements, with the money held safely until both sides are happy."
 msgstr "იყიდეთ და გაყიდეთ არსებული საიტები, დომენები და ბმულების განთავსება უსაფრთხოდ შენახული თანხით, სანამ ორივე მხარე კმაყოფილი არ იქნება."
 
-#: includes/class-zinn-translate-promo.php:429
+#: includes/class-zinn-translate-promo.php:479
 msgid "Zinn Hub® — hire people who do this for a living"
 msgstr "Zinn Hub® — დაიქირავეთ პროფესიონალები"
 
-#: includes/class-zinn-translate-promo.php:430
+#: includes/class-zinn-translate-promo.php:480
 msgid "Our global freelance marketplace: browse over 10,000 ready-made services from writers, designers, developers and SEOs, or post a project and let them bid."
 msgstr "ჩვენი გლობალური ფრილანსერების ბაზარი: დაათვალიერეთ მწერლების, დიზაინერების, დეველოპერებისა და SEO სპეციალისტების 10 000-ზე მეტი მზა სერვისი, ან გამოაქვეყნეთ პროექტი და მისცეს მათ განაცხადის შეტანის საშუალება."
 
@@ -717,19 +737,19 @@ msgstr "შეამოწმეთ მათი სტატუსის გვ
 msgid "Fix this on your account"
 msgstr "გასწორება თქვენს ანგარიშზე"
 
-#: includes/class-zinn-translate-style-presets.php:109
+#: includes/class-zinn-translate-style-presets.php:118
 msgid "Style preset"
 msgstr "სტილის წინასწარი პარამეტრი"
 
-#: includes/class-zinn-translate-style-presets.php:110
+#: includes/class-zinn-translate-style-presets.php:119
 msgid "A starting point. Anything below overrides it."
 msgstr "საწყისი წერტილი. მის ქვემოთ არსებული ყველაფერი გადაფარავს მას."
 
-#: includes/class-zinn-translate-style-presets.php:117
+#: includes/class-zinn-translate-style-presets.php:126
 msgid "Use my own colours and sizes"
 msgstr "გამოიყენეთ ჩემი საკუთari ფერები და ზომები"
 
-#: includes/class-zinn-translate-style-presets.php:118
+#: includes/class-zinn-translate-style-presets.php:127
 msgid "Leave this off and the preset is used exactly as it is."
 msgstr "ეს გამორთეთ და წინასწარი პარამეტრი გამოყენებული იქნება ზუსტად ისე, როგორც არის."
 
@@ -808,19 +828,19 @@ msgstr "ამ პერიოდისთვის თქვენი DeepL-ი
 msgid "DeepL answered with something we could not read. Nothing was saved."
 msgstr "DeepL-მა ისეთი პასუხი დააბრუნა, რომლის წაკითხვაც ვერ შევძელით. არაფერი შეინახა."
 
-#: includes/providers/class-zinn-translate-provider-gemini.php:107
+#: includes/providers/class-zinn-translate-provider-gemini.php:108
 msgid "No Google Gemini API key is saved, so there is nothing to translate with."
 msgstr "შენახული Google Gemini API გასაღები არ არის, ამიტომ სათარგმნი არაფერია."
 
-#: includes/providers/class-zinn-translate-provider-gemini.php:155
+#: includes/providers/class-zinn-translate-provider-gemini.php:156
 msgid "Google Gemini could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
 msgstr "Google Gemini-სთან დაკავშირება ვერ მოხერხდა. არაფერი თარგმნილა და თანხა არ ჩამოჭრილია; სისტემა ხელახლა სცდის შემდეგ ეტაპზე."
 
-#: includes/providers/class-zinn-translate-provider-openai.php:103
+#: includes/providers/class-zinn-translate-provider-openai.php:104
 msgid "No OpenAI API key is saved, so there is nothing to translate with."
 msgstr "OpenAI API გასაღები არ არის შენახული, ამიტომ სათარგმნი არაფერია."
 
-#: includes/providers/class-zinn-translate-provider-openai.php:139
+#: includes/providers/class-zinn-translate-provider-openai.php:140
 msgid "OpenAI could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
 msgstr "OpenAI-სთან დაკავშირება ვერ მოხერხდა. არაფერი თარგმნილა და თანხა არ ჩამოჭრილია; სისტემა ხელახლა სცდის შემდეგ ჯერზე."
 
@@ -829,6 +849,7 @@ msgid "This site is not connected to Zinn Digital®, so there is nothing to coll
 msgstr "ეს საიტი არ არის დაკავშირებული Zinn Digital®-თან, ამიტომ შესაგროვებელი არაფერია. დაამატეთ საიტის ID და ტოკენი, ან გადართეთ თქვენს საკუთარ პროვაიდერის გასაღებზე."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:135
+#: includes/providers/class-zinn-translate-provider-zinn.php:251
 msgid "This site is not connected to Zinn Digital®."
 msgstr "ეს საიტი არ არის დაკავშირებული Zinn Digital®-თან."
 
@@ -841,8 +862,9 @@ msgid "Translation is paused on this site. Check the account is up to date on yo
 msgstr "ამ საიტზე თარგმნა შეჩერებულია. შეამოწმეთ, რომ ანგარიში აქტიურია თქვენს Zinn Digital® სამართავ პანელში."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:176
-msgid "Zinn Digital® rejected this site's token. Copy it again from the site's Translation tab on your dashboard."
-msgstr "Zinn Digital®-მა უარყო ამ საიტის ტოკენი. კვლავ დააკოპირეთ იგი თქვენი სამართავი პანელის საიტის თარგმანის ჩანართიდან."
+#: includes/providers/class-zinn-translate-provider-zinn.php:275
+msgid "Zinn Digital® rejected this site's token. It must be an API key with the sites.view and sites.translation.manage permissions — create one on the API keys page of your dashboard."
+msgstr "Zinn Digital®-მა უარყო ამ საიტის ტოკენი. ის უნდა იყოს API გასაღები sites.view და sites.translation.manage ნებართვებით — შექმენით იგი თქვენი სამართავი პანელის API გასაღებების გვერდზე."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:207
 msgid "Zinn Digital® could not be reached. Your site keeps serving the translations it already has."
@@ -851,3 +873,11 @@ msgstr "Zinn Digital®-თან დაკავშირება ვერ მ
 #: includes/providers/class-zinn-translate-provider-zinn.php:219
 msgid "Zinn Digital® answered with something we could not read. Your site keeps serving the translations it already has."
 msgstr "Zinn Digital®-მა ისეთი პასუხი გასცა, რომლის წაკითხვაც ვერ შევძლებთ. თქვენი საიტი კვლავ აგრძელებს უკვე არსებული თარგმანების მიწოდებას."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:267
+msgid "Zinn Digital® could not be reached. Your site keeps publishing the languages it already has."
+msgstr "Zinn Digital®-თან დაკავშირება ვერ მოხერხდა. თქვენი საიტი აგრძელებს უკვე არსებული ენების გამოქვეყნებას."
+
+#: includes/providers/class-zinn-translate-provider-zinn.php:286
+msgid "Zinn Digital® answered with something we could not read. Your site keeps publishing the languages it already has."
+msgstr "Zinn Digital®-მა გასცა პასუხი, რომლის წაკითხვაც ვერ შევძელით. თქვენი საიტი აგრძელებს იმ ენების გამოქვეყნებას, რომლებიც უკვე აქვს."

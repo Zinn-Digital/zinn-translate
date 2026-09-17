@@ -134,12 +134,15 @@ final class Zinn_Translate_Admin {
 						'sanitize'    => 'text',
 					),
 					array(
-						'key'      => 'token',
-						'type'     => 'password',
-						'label'    => __( 'Site token', 'zinn-translate' ),
-						'secret'   => true,
-						'show_if'  => array( 'mode' => 'zinn' ),
-						'sanitize' => 'text',
+						'key'         => 'token',
+						'type'        => 'password',
+						'label'       => __( 'Site token', 'zinn-translate' ),
+						// ⛔ D26432: nothing anywhere said what this token IS, so a customer
+						// following the dashboard could not connect. It is a dashboard API key.
+						'description' => __( 'An API key from your Zinn Digital® dashboard, on its API keys page. Give it the sites.view and sites.translation.manage permissions.', 'zinn-translate' ),
+						'secret'      => true,
+						'show_if'     => array( 'mode' => 'zinn' ),
+						'sanitize'    => 'text',
 					),
 					array(
 						'key'      => 'provider',
@@ -186,6 +189,16 @@ final class Zinn_Translate_Admin {
 						'label'       => __( 'Languages to publish', 'zinn-translate' ),
 						'description' => __( 'Each one gets its own web addresses and its own sitemap. Publish only the languages you want indexed.', 'zinn-translate' ),
 						'choices'     => $languages,
+						// ⛔⛔ D26950: on a Zinn Digital® plan the dashboard decides, so this picker
+						// would be a control that does nothing. The notice below replaces it.
+						'show_if'     => array( 'mode' => 'byo' ),
+					),
+					array(
+						'key'     => 'locales_from_dashboard',
+						'type'    => 'notice',
+						'kind'    => 'info',
+						'label'   => self::dashboard_locales_notice(),
+						'show_if' => array( 'mode' => 'zinn' ),
 					),
 					array(
 						'key'         => 'auto_translate',
@@ -436,6 +449,29 @@ final class Zinn_Translate_Admin {
 			$out[ (string) $location ] = (string) $label;
 		}
 		return $out;
+	}
+
+	/**
+	 * The sentence that replaces the language picker on a Zinn Digital® plan.
+	 *
+	 * ⛔ It says which source is in force RIGHT NOW. Before the first answer from the dashboard
+	 * this site still publishes what was chosen here, and saying "chosen on your dashboard"
+	 * then would describe a state that does not exist yet (§2.44).
+	 *
+	 * @return string Escaped-at-render copy for a `notice` field.
+	 */
+	private static function dashboard_locales_notice(): string {
+		$names = array();
+		foreach ( Zinn_Translate_Options::locales() as $code ) {
+			$names[] = Zinn_Translate_Locales::name( $code );
+		}
+		$list = array() === $names ? __( 'none', 'zinn-translate' ) : implode( ', ', $names );
+		if ( null !== Zinn_Translate_Served::locales() ) {
+			/* translators: %s: comma-separated language names, or "none". */
+			return sprintf( __( 'On a Zinn Digital® plan you choose the languages to publish on this site\'s Translation tab in your dashboard, under "Shown to visitors". This site checks it every hour. Publishing now: %s.', 'zinn-translate' ), $list );
+		}
+		/* translators: %s: comma-separated language names, or "none". */
+		return sprintf( __( 'On a Zinn Digital® plan you choose the languages to publish on this site\'s Translation tab in your dashboard. This site has not read that choice yet, so it is still publishing: %s. Check the Site ID and token above.', 'zinn-translate' ), $list );
 	}
 
 	/**

@@ -173,8 +173,8 @@ final class Zinn_Translate_Provider_Zinn implements Zinn_Translate_Provider {
 		if ( 401 === $code || 403 === $code ) {
 			throw new Zinn_Translate_Provider_Error(
 				Zinn_Translate_Provider_Error::CREDENTIAL,
-				__( 'Zinn Digital® rejected this site\'s token. Copy it again from the site\'s Translation tab on your dashboard.', 'zinn-translate' ),
-				'https://app.zinndigital.com/'
+				__( 'Zinn Digital® rejected this site\'s token. It must be an API key with the sites.view and sites.translation.manage permissions — create one on the API keys page of your dashboard.', 'zinn-translate' ),
+				'https://app.zinndigital.com/api-keys'
 			);
 		}
 		if ( $code < 200 || $code >= 300 ) {
@@ -227,6 +227,69 @@ final class Zinn_Translate_Provider_Zinn implements Zinn_Translate_Provider {
 			$documents[ (string) $document['document'] ] = array_map( 'strval', $document['fields'] );
 		}
 		return $documents;
+	}
+
+	/**
+	 * The languages the customer chose to publish on this site's dashboard Translation tab.
+	 *
+	 * ⛔⛔ **This is the read that makes the dashboard true (D26430, D26950).** The dashboard
+	 * saved a list and told the customer *"your site is serving those languages now"*, while
+	 * this plugin published only its own local option and never asked. It asks here — from
+	 * the hourly sweep and when the connection is saved, never during a page load.
+	 *
+	 * ⛔ Every failure THROWS rather than answering `array()`. An empty list is a real answer
+	 * — *publish nothing* — and a caller that stored a failed request as one would take every
+	 * translated URL off a live site because a network blinked (§2.44).
+	 *
+	 * @return array{state: string, locales: string[]} The state and the language codes.
+	 * @throws Zinn_Translate_Provider_Error When the engine could not be reached or refused.
+	 */
+	public function served(): array {
+		if ( ! $this->ready() ) {
+			throw new Zinn_Translate_Provider_Error(
+				Zinn_Translate_Provider_Error::REFUSED,
+				__( 'This site is not connected to Zinn Digital®.', 'zinn-translate' )
+			);
+		}
+		$response = wp_remote_get(
+			$this->endpoint( 'translation/served' ),
+			array(
+				'timeout' => 15,
+				'headers' => array(
+					'Authorization' => 'Bearer ' . $this->token,
+					'Accept'        => 'application/json',
+				),
+			)
+		);
+		if ( is_wp_error( $response ) ) {
+			throw new Zinn_Translate_Provider_Error(
+				Zinn_Translate_Provider_Error::OUTAGE,
+				__( 'Zinn Digital® could not be reached. Your site keeps publishing the languages it already has.', 'zinn-translate' ),
+				'https://status.zinndigital.com/'
+			);
+		}
+		$code = (int) wp_remote_retrieve_response_code( $response );
+		if ( 401 === $code || 403 === $code ) {
+			throw new Zinn_Translate_Provider_Error(
+				Zinn_Translate_Provider_Error::CREDENTIAL,
+				__( 'Zinn Digital® rejected this site\'s token. It must be an API key with the sites.view and sites.translation.manage permissions — create one on the API keys page of your dashboard.', 'zinn-translate' ),
+				'https://app.zinndigital.com/api-keys'
+			);
+		}
+		if ( $code < 200 || $code >= 300 ) {
+			Zinn_Translate_Prompt::assert_ok( $code, '', 'https://app.zinndigital.com/billing', 'https://status.zinndigital.com/' );
+		}
+		$body = json_decode( (string) wp_remote_retrieve_body( $response ), true );
+		if ( ! is_array( $body ) || ! isset( $body['served_locales'] ) || ! is_array( $body['served_locales'] ) ) {
+			throw new Zinn_Translate_Provider_Error(
+				Zinn_Translate_Provider_Error::UNKNOWN,
+				__( 'Zinn Digital® answered with something we could not read. Your site keeps publishing the languages it already has.', 'zinn-translate' )
+			);
+		}
+		return array(
+			'state'   => isset( $body['state'] ) ? (string) $body['state'] : '',
+			'locales' => array_values( array_map( 'strval', $body['served_locales'] ) ),
+		);
 	}
 
 	/**

@@ -7,7 +7,7 @@ Tags: translation, multilingual, seo, hreflang, woocommerce
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 2.2.5
+Stable tag: 2.2.6
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -128,6 +128,11 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 4. Per-language sitemaps and `llms.txt` addresses, with links to check them.
 
 == Changelog ==
+
+= 2.2.6 =
+* Changed: on a Zinn Digital® plan, the languages this site publishes are now the ones you switch on under "Shown to visitors" on the site's Translation tab in your dashboard. The site checks that choice every hour, straight after you save the Site ID and token, and when you open these settings. Until it has read the choice once, it keeps publishing the languages chosen on this screen. With your own provider key, you still choose the languages here.
+* Fixed: the dashboard's language choice was saved but never used, so switching a language on or off there changed nothing on the site.
+* Fixed: the "Site token" setting now says what it is — an API key from your dashboard's API keys page, with the sites.view and sites.translation.manage permissions — and a rejected token says the same.
 
 = 2.2.5 =
 * Fixed: on a site configured through the settings screen, the plugin behaved as if it had never been set up — no language addresses, no hreflang, and a status card saying "Not connected" beside the saved Site ID and token. Settings read very early in a page load, before the settings screen had registered, were the defaults, and they were then kept for the rest of that page load. They are now read from what you saved.
