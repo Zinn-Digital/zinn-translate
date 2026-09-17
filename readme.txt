@@ -7,7 +7,7 @@ Tags: translation, multilingual, seo, hreflang, woocommerce
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 2.2.4
+Stable tag: 2.2.5
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -129,6 +129,12 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 
 == Changelog ==
 
+= 2.2.5 =
+* Fixed: on a site configured through the settings screen, the plugin behaved as if it had never been set up — no language addresses, no hreflang, and a status card saying "Not connected" beside the saved Site ID and token. Settings read very early in a page load, before the settings screen had registered, were the defaults, and they were then kept for the rest of that page load. They are now read from what you saved.
+* Fixed: "Languages to publish", the language switcher's language list and "Post types" could not be saved — saving the screen stored none of them, so no language was published and, after one save, no content was collected for translation.
+* Fixed: a language published on the settings screen now gets its web addresses straight away. Previously its pages answered "not found" until the plugin was reactivated or the site's permalinks were saved.
+* Fixed: a translated address in a language that does not use the Latin alphabet — Japanese, Chinese, Arabic, Hindi, Thai and others — now opens the page it names. It previously redirected to the site's front page, and on those pages the "other languages" links and the search-engine language annotations pointed at the front page rather than at the same page in each language.
+
 = 2.2.4 =
 * In a right-to-left admin language, the Zinn Digital® menu entry showed its trademark symbol on the wrong side of the name. The name is now isolated so it reads correctly in Arabic, Hebrew, Persian, Pashto and Urdu.
 
@@ -172,6 +178,9 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 * Rendering of translated titles, bodies and excerpts with locale-prefixed URLs and hreflang.
 
 == Upgrade Notice ==
+
+= 2.2.5 =
+If you set the plugin up on its settings screen and no translated pages appeared, this makes them appear. Your settings are kept.
 
 = 2.2.1 =
 Fixes a fatal error on the settings screen for sites that took the first 2.2.0 build. Nothing else changes and your settings are kept.

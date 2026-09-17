@@ -83,11 +83,12 @@ final class Zinn_Translate_Locale_Switch {
 	 * @return string A language code we publish, or an empty string.
 	 */
 	private static function requested_code(): string {
-		$raw   = isset( $_SERVER['REQUEST_URI'] )
-			? sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) )
-			: '';
-		$path  = (string) wp_parse_url( $raw, PHP_URL_PATH );
-		$first = strtolower( (string) strtok( ltrim( $path, '/' ), '/' ) );
+		// ⛔ Through the router's own reader, not a second copy of it. Only the FIRST segment
+		// is read here, which is always an ASCII language code, so this line survived D26435
+		// unharmed — and that is exactly why it had to change: the idiom it carried
+		// (`sanitize_text_field()` on a URL) deletes every percent-encoded octet, and the next
+		// person to copy a working line copies the trap with it.
+		$first = strtolower( (string) strtok( ltrim( Zinn_Translate_Router::request_path(), '/' ), '/' ) );
 		if ( '' === $first ) {
 			return '';
 		}

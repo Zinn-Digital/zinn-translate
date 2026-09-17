@@ -188,7 +188,19 @@ final class Zinn_Translate_Options {
 			return self::$cache;
 		}
 		$stored = array();
-		if ( class_exists( 'Zinn_Translate_Admin_UI' ) && method_exists( 'Zinn_Translate_Admin_UI', 'all' ) ) {
+		// ⛔⛤ **LOADED IS NOT REGISTERED (D26433).** The framework class exists from the moment
+		// its file is required, but its config is set on `init` priority 5 — and the router
+		// registers its rewrite rules on `init` priority 1. Asked in that window, the framework
+		// answers `[]` by design, and this method used to MEMOISE the defaults it merged over
+		// that `[]` for the rest of the request: no site ID, no token, no published languages,
+		// and the WordPress locale as the source. So every site configured through the settings
+		// screen got no language URLs at all, and its own status card said "Not connected"
+		// beside a form showing the saved values. Before the framework is ready, read the SAME
+		// option it would read, and do not memoise — the next call after `init` 5 re-reads.
+		$framework_ready = class_exists( 'Zinn_Translate_Admin_UI' )
+			&& method_exists( 'Zinn_Translate_Admin_UI', 'is_ready' )
+			&& (bool) call_user_func( array( 'Zinn_Translate_Admin_UI', 'is_ready' ) );
+		if ( $framework_ready ) {
 			$framework = call_user_func( array( 'Zinn_Translate_Admin_UI', 'all' ) );
 			if ( is_array( $framework ) ) {
 				$stored = $framework;
@@ -212,8 +224,11 @@ final class Zinn_Translate_Options {
 			}
 		}
 
-		self::$cache = array_merge( self::defaults(), $stored );
-		return self::$cache;
+		$all = array_merge( self::defaults(), $stored );
+		if ( $framework_ready || ! class_exists( 'Zinn_Translate_Admin_UI' ) ) {
+			self::$cache = $all;
+		}
+		return $all;
 	}
 
 	/**

@@ -177,13 +177,15 @@ final class Zinn_Translate_Admin {
 						'sanitize'    => 'key',
 					),
 					array(
+						// ⛔⛤ No `'sanitize' => 'key'` (D26433): that rule is for ONE string and answers `''`
+						// for an array, so every save stored no published language at all. A multiselect's
+						// own rule, `choices`, keeps each submitted code that is one of the choices.
 						'key'         => 'locales',
 						'type'        => 'multiselect',
 						'searchable'  => true,
 						'label'       => __( 'Languages to publish', 'zinn-translate' ),
 						'description' => __( 'Each one gets its own web addresses and its own sitemap. Publish only the languages you want indexed.', 'zinn-translate' ),
 						'choices'     => $languages,
-						'sanitize'    => 'key',
 					),
 					array(
 						'key'         => 'auto_translate',
@@ -199,16 +201,17 @@ final class Zinn_Translate_Admin {
 				'title'  => __( 'What gets translated', 'zinn-translate' ),
 				'fields' => array(
 					array(
-						'key'      => 'post_types',
-						'type'     => 'multiselect',
-						'label'    => __( 'Post types', 'zinn-translate' ),
-						'choices'  => self::post_type_choices(),
+						'key'     => 'post_types',
+						'type'    => 'multiselect',
+						'label'   => __( 'Post types', 'zinn-translate' ),
+						'choices' => self::post_type_choices(),
 						// ⛔⛔ NOT a literal. This field's default is what `Admin_UI::all()`
 						// fills an unsaved site with, and it therefore OVERRIDES
 						// `Options::defaults()` on every install — so a literal here is not a
 						// duplicate of the default, it IS the default, silently.
-						'default'  => Zinn_Translate_Options::default_post_types(),
-						'sanitize' => 'key',
+						'default' => Zinn_Translate_Options::default_post_types(),
+						// ⛔ No `key` rule (D26433): it answers `''` for an array, and `post_types()` reads
+						// `''` as "translate no post type" — so one save of this tab stopped all collection.
 					),
 					array(
 						'key'         => 'translate_slugs',
@@ -296,7 +299,6 @@ final class Zinn_Translate_Admin {
 						'label'       => __( 'Show only these languages', 'zinn-translate' ),
 						'description' => __( 'Leave empty to show every language you publish.', 'zinn-translate' ),
 						'choices'     => $languages,
-						'sanitize'    => 'key',
 					),
 					array(
 						'key'         => 'switcher_native_names',

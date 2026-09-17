@@ -56,6 +56,11 @@ class Zinn_Translate_Router {
 	public function hooks(): void {
 		// Priority 1: rules must exist before WordPress parses the request.
 		add_action( 'init', array( $this, 'register_rules' ), 1 );
+		// ⛔ D26433: rules are cached in the `rewrite_rules` option and were rebuilt only on
+		// activation — so a language published on the settings screen answered 404 until
+		// something else happened to flush. A change to the published set refreshes them.
+		add_action( 'add_option_' . Zinn_Translate_Options::OPTION, array( __CLASS__, 'settings_added' ), 10, 2 );
+		add_action( 'update_option_' . Zinn_Translate_Options::OPTION, array( __CLASS__, 'settings_updated' ), 10, 2 );
 		add_filter( 'query_vars', array( $this, 'query_vars' ) );
 		add_action( 'parse_request', array( $this, 'capture' ) );
 		add_action( 'template_redirect', array( $this, 'redirect_untranslated_slug' ), 1 );
@@ -174,10 +179,28 @@ class Zinn_Translate_Router {
 		// the un-prefixed, un-translated path and restored immediately afterwards. Leaving
 		// it rewritten would hand every later consumer — canonical, pagination, an analytics
 		// plugin — a URL the visitor never asked for.
-		$original_uri           = isset( $_SERVER['REQUEST_URI'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : '';
+		//
+		// ⛔⛤ **SAVED AND RESTORED VERBATIM, AND THE `sanitize_text_field()` THIS LINE USED TO
+		// CARRY WAS D26435's SECOND HALF.** That function DELETES every percent-encoded octet
+		// (`_sanitize_text_fields()`: `while ( preg_match( '/%[a-f0-9]{2}/i' … ) )`), which is
+		// right for a form value and catastrophic for a URL — so a request for
+		// `/ja/%e3%82%b5…%b8/` was "restored" as `/ja//`, and every consumer after
+		// `parse_request` read a path with the page's name deleted from it. Measured on the
+		// running proof site: the 301 to `/ja/`, and hreflang plus the language switcher
+		// pointing every non-Latin page at the home page. ⭐ It protected nothing even in
+		// principle — the value WRITTEN is the one built from the request, and this sanitiser
+		// only ever touched the value being put BACK.
+		$has_uri = isset( $_SERVER['REQUEST_URI'] );
+		// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized,WordPress.Security.ValidatedSanitizedInput.MissingUnslash -- Saved to be put back byte-for-byte; sanitising here is the defect above and the value is never read.
+		$original_uri = $has_uri ? $_SERVER['REQUEST_URI'] : null;
+
 		$_SERVER['REQUEST_URI'] = '/' . ltrim( $source, '/' );
 		$inner->parse_request( array() );
-		$_SERVER['REQUEST_URI'] = $original_uri;
+		if ( $has_uri ) {
+			$_SERVER['REQUEST_URI'] = $original_uri;
+		} else {
+			unset( $_SERVER['REQUEST_URI'] );
+		}
 
 		$carried = $inner->query_vars;
 		unset( $carried['zinn_locale'], $carried['zinn_path'] );
@@ -234,7 +257,7 @@ class Zinn_Translate_Router {
 		}
 		$segments = array();
 		foreach ( explode( '/', trim( $path, '/' ) ) as $segment ) {
-			$segments[] = $index[ $segment ] ?? $segment;
+			$segments[] = $index[ $segment ] ?? $index[ self::slug_key( $segment ) ] ?? $segment;
 		}
 		return implode( '/', array_filter( $segments, 'strlen' ) );
 	}
@@ -255,7 +278,7 @@ class Zinn_Translate_Router {
 			$forward  = self::forward_slug_index( $locale );
 			$segments = array();
 			foreach ( explode( '/', $trimmed ) as $segment ) {
-				$segments[] = $forward[ $segment ] ?? $segment;
+				$segments[] = $forward[ $segment ] ?? $forward[ self::slug_key( $segment ) ] ?? $segment;
 			}
 			$trimmed = implode( '/', $segments );
 		}
@@ -265,6 +288,29 @@ class Zinn_Translate_Router {
 		// looks right in the source, and a crawler following it lands one hop from where it
 		// was told to go, which is the commonest reason an hreflang set is quietly ignored.
 		return user_trailingslashit( '/' . $trimmed );
+	}
+
+	/**
+	 * One spelling for a URL segment, whichever spelling arrived.
+	 *
+	 * ⛔⛤ **D26435 — A JAPANESE, CHINESE, ARABIC, HINDI OR THAI TRANSLATED SLUG RESOLVED TO
+	 * NOTHING, AND THE PAGE 301ed TO THE SITE ROOT.** The indexes below are keyed by
+	 * `sanitize_title()`, which PERCENT-ENCODES a non-Latin slug
+	 * (`毎朝…` -> `%e6%af%8e%e6%9c%9d…`), while the segment WordPress hands the router is the
+	 * decoded UTF-8. The two never matched, so the lookup fell through to the untranslated
+	 * segment, the inner query found no post, and the visitor was sent to `/ja/`.
+	 *
+	 * ⭐ Latin slugs are unaffected — which is why German read perfectly while Japanese did
+	 * not, and why this survived a three-language check (`docs/553` §11 used fr/de/ar, and
+	 * `ar` was verified through the ENGLISH path). Normalising through
+	 * `sanitize_title( rawurldecode( … ) )` is idempotent on both spellings: measured on the
+	 * running site, the encoded and decoded forms both answer with the same key.
+	 *
+	 * @param string $segment One path segment, encoded or decoded.
+	 * @return string The key both spellings share.
+	 */
+	public static function slug_key( string $segment ): string {
+		return sanitize_title( rawurldecode( $segment ) );
 	}
 
 	/**
@@ -500,13 +546,29 @@ class Zinn_Translate_Router {
 	 * @return string The request path.
 	 */
 	public static function request_path(): string {
-		// ⛔ SANITIZED, not merely unslashed. `$_SERVER['REQUEST_URI']` is attacker-controlled
-		// on every request and this value is interpolated into `href` attributes that we then
-		// announce to search engines as this page's canonical alternates.
-		$raw = isset( $_SERVER['REQUEST_URI'] )
-			? sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) )
-			: '/';
+		// ⛔ `$_SERVER['REQUEST_URI']` is attacker-controlled on every request and this value
+		// reaches `href` attributes we announce to search engines, so it is filtered — but by
+		// a WHITELIST of the characters RFC 3986 allows in a path, not by
+		// `sanitize_text_field()`.
+		//
+		// ⛔⛤ **D26435: `sanitize_text_field()` DELETES PERCENT-ENCODED OCTETS**, which is the
+		// entire spelling of a Japanese, Chinese, Arabic, Hindi or Thai slug. It read
+		// `/ja/%e3%82%b5…%b8/` as `/ja//` — so the hreflang set and the language switcher on
+		// every non-Latin page named the HOME page as that page's alternate, in every
+		// language, and the router's own redirect sent the visitor there. ⭐ Arabic survived
+		// by accident and that is why a three-language check passed: its slug carries hyphens
+		// BETWEEN the encoded words, so enough of the path was left for the comparison to
+		// agree with itself.
+		//
+		// ⭐ The whitelist is strictly stronger than what it replaces for the danger that
+		// matters here — control characters, quotes, angle brackets, backslashes and
+		// whitespace cannot survive it, so neither a header injection nor an attribute
+		// break-out can — and every consumer escapes at output (`esc_url`) anyway. The
+		// `\x80-\xFF` range keeps a client that sends raw UTF-8 rather than percent-encoding.
+		// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- Sanitised by the whitelist below; `sanitize_text_field()` destroys the value (D26435).
+		$raw = isset( $_SERVER['REQUEST_URI'] ) ? (string) wp_unslash( $_SERVER['REQUEST_URI'] ) : '/';
 		$uri = (string) wp_parse_url( $raw, PHP_URL_PATH );
+		$uri = (string) preg_replace( '#[^A-Za-z0-9%\-._~!$&\'()*+,;=:@/\x80-\xFF]#', '', $uri );
 		return '' === $uri ? '/' : '/' . ltrim( $uri, '/' );
 	}
 
@@ -522,6 +584,43 @@ class Zinn_Translate_Router {
 			$path = substr( $path, strlen( $locale ) + 1 );
 		}
 		return '' === $path ? '/' : '/' . ltrim( $path, '/' );
+	}
+
+	/**
+	 * The settings option was created: refresh the rules if it publishes any language.
+	 *
+	 * @param string $option The option name.
+	 * @param mixed  $value  The value stored.
+	 * @return void
+	 */
+	public static function settings_added( $option, $value ): void {
+		unset( $option );
+		self::settings_updated( array(), $value );
+	}
+
+	/**
+	 * The settings changed: when the published languages or slug translation changed, drop the
+	 * cached rewrite rules so WordPress rebuilds them — with this router's rules — on the next
+	 * request.
+	 *
+	 * ⛔ `delete_option( 'rewrite_rules' )` rather than `flush_rewrite_rules()` here: this runs
+	 * inside the save request, where the router registered its rules from the OLD settings at
+	 * `init`, so flushing now would rebuild the stale set. Deleting defers the rebuild to a
+	 * request that registers the new one.
+	 *
+	 * @param mixed $old_value The previous value.
+	 * @param mixed $value     The new value.
+	 * @return void
+	 */
+	public static function settings_updated( $old_value, $value ): void {
+		$before = is_array( $old_value ) ? $old_value : array();
+		$after  = is_array( $value ) ? $value : array();
+		foreach ( array( 'locales', 'translate_slugs' ) as $key ) {
+			if ( ( $before[ $key ] ?? null ) !== ( $after[ $key ] ?? null ) ) {
+				delete_option( 'rewrite_rules' );
+				return;
+			}
+		}
 	}
 
 	/**
