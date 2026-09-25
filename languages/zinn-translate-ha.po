@@ -476,7 +476,7 @@ msgstr "Ba a fassara komai ba tukuna. Yi wallafa yare kuma fassara za ta fara a 
 
 #: includes/class-zinn-translate-admin.php:601
 msgid "These addresses are live. Open any of them to check it, and submit the sitemap index to Google Search Console."
-msgstr "Waɗannan adiresoshin suna raye. Buɗe kowanne daga cikinsu don bincika shi, kuma ka gabatar da fihirisar sitemap zuwa Google."
+msgstr "Wadannan adiresoshin suna a aiki. Buɗe kowacce daga cikinsu don bincika ta, kuma ka mika fihirisar sitemap zuwa Google Search Console."
 
 #: includes/class-zinn-translate-admin.php:622
 msgid "You are not allowed to edit translations on this site."

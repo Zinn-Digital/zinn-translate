@@ -317,7 +317,7 @@ msgstr "SEO"
 
 #: includes/class-zinn-translate-admin.php:274
 msgid "Add hreflang tags"
-msgstr "ایچ ریفلینگ ٹیگز شامل کریں"
+msgstr "hreflang ٹیگز شامل کریں"
 
 #: includes/class-zinn-translate-admin.php:275
 msgid "Tells search engines these pages are the same page in different languages. Leave this on unless another plugin is already doing it."
