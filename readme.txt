@@ -5,9 +5,9 @@ Author: Neil Lock — CEO, Zinn Digital® Ltd
 Author URI: https://zinndigital.com
 Tags: translation, multilingual, seo, hreflang, woocommerce
 Requires at least: 6.6
-Tested up to: 7.1.1
+Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 2.2.7
+Stable tag: 2.2.8
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -128,6 +128,9 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 4. Per-language sitemaps and `llms.txt` addresses, with links to check them.
 
 == Changelog ==
+
+= 2.2.8 =
+* Tested up to: 7.1 — the major version only, as WordPress.org's Plugin Check requires (7.1.1 was refused as invalid_tested_upto_minor).
 
 = 2.2.7 =
 * Tested up to WordPress 7.1.1.
