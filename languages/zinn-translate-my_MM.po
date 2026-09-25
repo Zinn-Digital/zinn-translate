@@ -424,7 +424,7 @@ msgstr "မရှိပါ"
 #: includes/class-zinn-translate-admin.php:471
 #, php-format
 msgid "On a Zinn Digital® plan you choose the languages to publish on this site's Translation tab in your dashboard, under \"Shown to visitors\". This site checks it every hour. Publishing now: %s."
-msgstr "Zinn Digital® ପ୍ଲାନ୍ တွင်၊ ଆପଣଙ୍କ ଡ୍ୟାସବୋର୍ଡର \"Shown to visitors\" ଅଧୀନରେ ଥିବା ଏହି ସାଇଟ୍‌ର Translation ଟ୍ୟାବ୍‌ରେ ପ୍ରକାଶ କରିବାକୁ ଥିବା ଭାଷାଗୁଡ଼ିକୁ ଆପଣ ଚୟନ କରନ୍ତି। ଏହି ସାଇଟ୍ ଏହାକୁ ପ୍ରତି ଘଣ୍ଟାରେ ଯାଞ୍ଚ କରିଥାଏ। ବର୍ତ୍ତମାନ ପ୍ରକାଶ କରାଯାଉଛି: %s।"
+msgstr "Zinn Digital® ပလန်တစ်ခုတွင်၊ သင့်ဒက်ရှ်ဘုတ်ရှိ ဤဆိုက်၏ Translation တက်ဘ်တွင် \"Shown to visitors\" အောက်၌ ဤဆိုက်တွင် ထုတ်ဝေရန် ဘာသာစကားများကို သင်ရွေးချယ်ပါ။ ဤဆိုက်သည် ၎င်းကို တစ်နာရီလျှင်တစ်ကြိမ် စစ်ဆေးသည်။ ယခု ထုတ်ဝေနေသည်- %s။"
 
 #. translators: %s: comma-separated language names, or "none".
 #: includes/class-zinn-translate-admin.php:474

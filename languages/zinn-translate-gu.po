@@ -78,7 +78,7 @@ msgstr "ઝાંખી"
 
 #: includes/class-zinn-translate-admin-ui.php:383
 msgid "Copied"
-msgstr "কপি કર્યું છે"
+msgstr "કૉપિ કર્યું"
 
 #: includes/class-zinn-translate-admin-ui.php:422
 msgid "Every Zinn® plugin on this site, and whether it is working."

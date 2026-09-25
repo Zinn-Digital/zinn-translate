@@ -135,7 +135,7 @@ msgstr "සැකසුම් ගොනුවක් ආනයනය කරන්
 
 #: includes/class-zinn-translate-admin-ui.php:995
 msgid "Import"
-msgstr "आयात කරන්න"
+msgstr "ආනයනය කරන්න"
 
 #: includes/class-zinn-translate-admin-ui.php:997
 msgid "Exported files never contain passwords, tokens or API keys — you will need to enter those again on the new site."
@@ -155,15 +155,15 @@ msgstr "සම්පූර්ණයි."
 
 #: includes/class-zinn-translate-admin-ui.php:1190
 msgid "That action is not available."
-msgstr "그 ක්‍රියාව ලබා ගත නොහැක."
+msgstr "එම ක්‍රියාමාර්ගය ලබා ගත නොහැක."
 
 #: includes/class-zinn-translate-admin-ui.php:1257
 msgid "That file could not be read. Choose a settings file exported from a Zinn® plugin."
-msgstr "그 ගොනුව කියවිය නොහැකි විය. Zinn® ප්ලගිනකින් අපනයනය කරන ලද සැකසුම් ගොනුවක් තෝරන්න."
+msgstr "එම ගොනුව කියවිය නොහැකි විය. Zinn® ප්ලගිනකින් අපනයනය කරන ලද සැකසුම් ගොනුවක් තෝරන්න."
 
 #: includes/class-zinn-translate-admin-ui.php:1265
 msgid "That file is too large to be a settings export."
-msgstr "ఆ ගොනුව සැකසුම් අපනයනයක් සඳහා විශාල වැඩි ය."
+msgstr "එම ගොනුව සැකසුම් අපනයනයක් (settings export) සඳහා ඉතා විශාල වැඩි ය."
 
 #: includes/class-zinn-translate-admin-ui.php:1278
 msgid "That file is not a Zinn® settings export."
@@ -173,7 +173,7 @@ msgstr "එම ගොනුව Zinn® සැකසුම් අපනයනය�
 #: includes/class-zinn-translate-admin-ui.php:1286
 #, php-format
 msgid "That file was exported from a different plugin (%s), so importing it here would store settings this plugin does not understand."
-msgstr "ആ ගොනුව වෙනත් ප්ලගිනක (%s) සිට නිර්යාත කරන ලද්දකි, එබැවින් එය මෙහි ආනයනය කිරීම මඟින් මෙම ප්ලගිනට අවබෝධ කරගත නොහැකි සැකසුම් ගබඩා වනු ඇත."
+msgstr "එය වෙනත් ප්ලගිනයකින් (%s) අපනයනය කරන ලද්දකි, එබැවින් එය මෙහි ආනයනය කිරීමෙන් මෙම ප්ලගිනයට අවබෝධ නොවන සැකසුම් ගබඩා වනු ඇත."
 
 #. translators: %d: how many settings were imported.
 #: includes/class-zinn-translate-admin-ui.php:1316
@@ -367,7 +367,7 @@ msgstr "\"German\" වෙනුවට \"Deutsch\". වත්මන් පිට�
 
 #: includes/class-zinn-translate-admin.php:327
 msgid "Show flags"
-msgstr "ಧ્વജ පෙන්වන්න"
+msgstr "ධජ පෙන්වන්න"
 
 #: includes/class-zinn-translate-admin.php:328
 msgid "Off by default: a language is not a country, and Arabic and Spanish have no single flag that does not exclude most of their speakers."
@@ -435,7 +435,7 @@ msgstr "Zinn Digital® සැලැස්මක් මත ඔබ ඔබේ ඩ�
 
 #: includes/class-zinn-translate-admin.php:525
 msgid "Edit any translation here. An edited translation is kept exactly as you wrote it and is never overwritten when the page is translated again."
-msgstr "यहाँ ඕනෑම පරිවර්තනයක් සංස්කරණය කරන්න. සංස්කරණය කරන ලද පරිවර්තනයක් ඔබ ලියූ පරිදිම තබා ගන්නා අතර පිටුව නැවත පරිවර්තනය කරන විට කිසි විටෙකත් උඩින් ලියැවෙන්නේ නැත."
+msgstr "මෙම පරිවර්තනය මෙහි සංස්කරණය කරන්න. සංස්කරණය කරන ලද පරිවර්තනයක් ඔබ විසින් ලියන ලද පරිදිම තබා ගන්නා අතර පිටුව නැවත පරිවර්තනය කරන විට කිසි විටෙකත් උඩින් ලියැවී යන්නේ නැත."
 
 #: includes/class-zinn-translate-admin.php:546
 msgid "Every language"
@@ -534,7 +534,7 @@ msgstr "අවසන් වරට පරීක්ෂා කළේ %s කට ප�
 
 #: includes/class-zinn-translate-connection.php:251
 msgid "(opens in a new tab)"
-msgstr "(새 ටැබයක විවෘත වේ)"
+msgstr "(නව ටැබයක විවෘත වේ)"
 
 #: includes/class-zinn-translate-diagnostics.php:199
 msgid "Send this to Zinn® support"
@@ -609,7 +609,7 @@ msgstr "%s පරිශීලක මාර්ගෝපදේශය කියව�
 
 #: includes/class-zinn-translate-promo.php:314
 msgid "Hide this"
-msgstr "ይህ සඟවන්න"
+msgstr "මෙය සඟවන්න"
 
 #: includes/class-zinn-translate-promo.php:424
 msgid "Zinn® hosting for WordPress"

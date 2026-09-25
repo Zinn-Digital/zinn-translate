@@ -167,7 +167,7 @@ msgstr "ਉਹ ਫ਼ਾਈਲ ਸੈਟਿੰਗਜ਼ ਐਕਸਪੋਰਟ �
 
 #: includes/class-zinn-translate-admin-ui.php:1278
 msgid "That file is not a Zinn® settings export."
-msgstr "वह ਫਾਈਲ Zinn® ਸੈਟਿੰਗਜ਼ ਐਕਸਪੋਰਟ ਨਹੀਂ ਹੈ।"
+msgstr "ਉਹ ਫ਼ਾਈਲ Zinn® ਸੈਟਿੰਗਾਂ ਦਾ ਐਕਸਪੋਰਟ ਨਹੀਂ ਹੈ।"
 
 #. translators: %s: the plugin slug the file was exported from.
 #: includes/class-zinn-translate-admin-ui.php:1286
@@ -273,7 +273,7 @@ msgstr "ਜਦੋਂ ਮੈਂ ਪ੍ਰਕਾਸ਼ਤ ਜਾਂ ਅੱਪਡ�
 
 #: includes/class-zinn-translate-admin.php:207
 msgid "Editing a page marks its translations out of date and they are remade in the background. Editing without changing any words costs nothing."
-msgstr "ਕਿਸੇ ਪੇਜ ਵਿੱਚ ਸੋਧ ਕਰਨ ਨਾਲ ਇਸ ਦੇ ਅਨੁਵਾਦ ਪੁਰਾਣੇ ਹੋ ਜਾਂਦੇ ਹਨ ਅਤੇ ਇਹ ਬੈਕਗ੍ਰਾਊਂਡ ਵਿੱਚ ਦੁਬਾਰਾ ਤਿਆਰ ਕੀਤੇ ਜਾਂਦੇ ہیں۔ ਬਿਨਾਂ ਕੋਈ ਸ਼ਬਦ ਬਦਲੇ ਸੋਧ ਕਰਨ ਦੀ ਕੋਈ ਲਾਗਤ ਨਹੀਂ ਆਉਂਦੀ।"
+msgstr "ਇੱਕ ਸਫ਼ੇ ਨੂੰ ਐਡਿਟ ਕਰਨ ਨਾਲ ਉਸ ਦੇ ਅਨੁਵਾਦ ਪੁਰਾਣੇ (out of date) ਵਜੋਂ ਮਾਰਕ ਹੋ ਜਾਂਦੇ ਹਨ ਅਤੇ ਉਹ ਪਿਛੋਕੜ ਵਿੱਚ ਦੁਬਾਰਾ ਬਣਾਏ ਜਾਂਦੇ ਹਨ। ਬਿਨਾਂ ਕੋਈ ਸ਼ਬਦ ਬਦਲੇ ਐਡਿਟ ਕਰਨ 'ਤੇ ਕੋਈ ਲਾਗਤ ਨਹੀਂ ਆਉਂਦੀ।"
 
 #: includes/class-zinn-translate-admin.php:214
 msgid "What gets translated"
@@ -703,7 +703,7 @@ msgstr "ਇਹ ਸਾਈਟ Zinn Digital® ਖਾਤੇ ਨਾਲ ਜੁੜੀ �
 
 #: includes/class-zinn-translate-status.php:156
 msgid "Not connected to Zinn Digital® yet."
-msgstr "अभी ਤੱਕ Zinn Digital® ਨਾਲ ਨਹੀਂ ਜੁੜਿਆ।"
+msgstr "ਅਜੇ Zinn Digital® ਨਾਲ ਕਨੈਕਟ ਨਹੀਂ ਕੀਤਾ ਗਿਆ।"
 
 #: includes/class-zinn-translate-status.php:157
 msgid "Add this site's ID and token from your Zinn Digital® dashboard, or switch to your own provider key to run without an account."

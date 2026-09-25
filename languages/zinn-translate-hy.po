@@ -599,7 +599,7 @@ msgstr "%s — ուղեցույցներ և ծառայություններ"
 
 #: includes/class-zinn-translate-promo.php:256
 msgid "User guides"
-msgstr "Օգտատེﺭի ուղեցույցներ"
+msgstr "Օգտատիրոջ ուղեցույցներ"
 
 #. translators: %s: this plugin's name, e.g. "Zinn® Cache".
 #: includes/class-zinn-translate-promo.php:306

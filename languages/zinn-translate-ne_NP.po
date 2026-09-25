@@ -435,7 +435,7 @@ msgstr "Zinn Digital® योजनामा तपाईले आफ्नो 
 
 #: includes/class-zinn-translate-admin.php:525
 msgid "Edit any translation here. An edited translation is kept exactly as you wrote it and is never overwritten when the page is translated again."
-msgstr "यहाँ कुनै पनि अनुवाद सम्पादन गर्नुहोस्। सम्पादन गरिएको अनुवाद तपाईले लेखे जस्तै ठ ακ ठिक राखिन्छ र पृष्ठ फेरि अनुवाद गर्दा कहिल्यै ओभरराइट हुँदैन।"
+msgstr "यहाँ कुनै पनि अनुवाद सम्पादन गर्नुहोस्। सम्पादन गरिएको अनुवादलाई तपाईंले लेखेकै रूपमा राखिन्छ र पृष्ठ पुनः अनुवाद गर्दा यो कहिल्यै पनि अधिलेखन (overwritten) हुँदैन।"
 
 #: includes/class-zinn-translate-admin.php:546
 msgid "Every language"

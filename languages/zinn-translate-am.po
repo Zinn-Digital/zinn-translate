@@ -213,7 +213,7 @@ msgstr "የእኔ Zinn Digital® እቅድ"
 
 #: includes/class-zinn-translate-admin.php:124
 msgid "My own provider key"
-msgstr "իմ የራሴ አቅራቢ ቁልፍ"
+msgstr "የራሴ የአገልግሎት ሰጪ ቁልፍ"
 
 #: includes/class-zinn-translate-admin.php:131
 msgid "Site ID"
@@ -309,7 +309,7 @@ msgstr "የ WooCommerce ምርቶችን እና መለያዎችን ተርጉም"
 
 #: includes/class-zinn-translate-admin.php:262
 msgid "Short descriptions, purchase notes, attribute labels and variation descriptions. Prices, SKUs and stored option values are never touched."
-msgstr "አጭር መግለጫዎች፣ የግዢ ማስታወሻዎች፣ የባህሪ መለያዎች እና የልዩነት መግለጫዎች። ዋጋዎች፣ SKUዎች እና የተቀመጡ አማራጭ እሴቶች ποτέ አይነኩም።"
+msgstr "አጫጭር መግለጫዎች፣ የግዢ ማስታወሻዎች፣ የባህሪ መለያዎች እና የልዩነት መግለጫዎች። ዋጋዎች፣ SKUs እና የተቀመጡ የፍላጎት እሴቶች በፍጹም አይነኩም።"
 
 #: includes/class-zinn-translate-admin.php:269
 msgid "SEO"
@@ -703,7 +703,7 @@ msgstr "ይህ ድር ጣቢያ ከ Zinn Digital® መለያ ጋር የተገና
 
 #: includes/class-zinn-translate-status.php:156
 msgid "Not connected to Zinn Digital® yet."
-msgstr "טר ፡ Zinn Digital® አገናኝ የለም።"
+msgstr "ገና ከ Zinn Digital® ጋር አልተገናኘም።"
 
 #: includes/class-zinn-translate-status.php:157
 msgid "Add this site's ID and token from your Zinn Digital® dashboard, or switch to your own provider key to run without an account."
@@ -864,7 +864,7 @@ msgstr "በዚህ ድር ጣቢያ ላይ ትርጉም ቆሟል። መለያው
 #: includes/providers/class-zinn-translate-provider-zinn.php:176
 #: includes/providers/class-zinn-translate-provider-zinn.php:275
 msgid "Zinn Digital® rejected this site's token. It must be an API key with the sites.view and sites.translation.manage permissions — create one on the API keys page of your dashboard."
-msgstr "Zinn Digital® የዚህን ድር ጣቢያ 令牌 ውድቅ አድርጎታል። የ sites.view እና sites.translation.manage ፈቃዶች ያሉት የኤፒአይ ቁልፍ (API key) መሆን አለበት—በዳሽቦርድዎ የኤፒአይ ቁልፍ ገጽ ላይ ይፍጠሩ።"
+msgstr "Zinn Digital® የዚህን ጣቢያ ቶከን ውድቅ አድርጎታል። የ sites.view እና የ sites.translation.manage ፈቃዶች ያሉት ኤፒአይ (API) ቁልፍ መሆን አለበት — በዳሽቦርድዎ የ API keys ገጽ ላይ አንዱን ይፍጠሩ።"
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:207
 msgid "Zinn Digital® could not be reached. Your site keeps serving the translations it already has."

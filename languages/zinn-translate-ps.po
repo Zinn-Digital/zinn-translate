@@ -558,7 +558,7 @@ msgstr "دا راپور د Zinn® ملاتړ ته واستوئ"
 
 #: includes/class-zinn-translate-diagnostics.php:216
 msgid "We open a support ticket for you and reply by email. If you would rather not send it, copy it above and paste it into a ticket yourself."
-msgstr "우 موږ ستاسو لپاره د ملاتړ ټکټ پرانیزو او په بریښنالیک کې ځواب درکوو. که تاسو غواړئ چې هغه ونه لیږئ، پورته یې کاپي کړئ او خپله یې په یو ټکټ کې پیسټ کړئ."
+msgstr "موږ ستاسو لپاره د ملاتړ ټکټ پرانیزو او په بریښنالیک ځواب درکوو. که تاسو غواړئ چې هغه ونه لیږئ، پورتنۍ برخه کاپي کړئ او خپله یې په یو ټکټ کې پیسټ کړئ."
 
 #. translators: %s: the transport error reported by WordPress.
 #: includes/class-zinn-translate-diagnostics.php:270

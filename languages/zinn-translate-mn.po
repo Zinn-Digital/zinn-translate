@@ -167,7 +167,7 @@ msgstr "Энэ файл тохиргооны экспорт хийхэд хэт�
 
 #: includes/class-zinn-translate-admin-ui.php:1278
 msgid "That file is not a Zinn® settings export."
-msgstr "Эེр файл нь Zinn® тохиргооны экспорт биш байна."
+msgstr "Эgv файл нь Zinn® тохиргооны экспорт биш байна."
 
 #. translators: %s: the plugin slug the file was exported from.
 #: includes/class-zinn-translate-admin-ui.php:1286

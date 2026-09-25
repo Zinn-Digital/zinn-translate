@@ -86,7 +86,7 @@ msgstr "ಈ ಸೈಟ್‌ನಲ್ಲಿರುವ ಪ್ರತಿಯೊಂದ�
 
 #: includes/class-zinn-translate-admin-ui.php:437
 msgid "No connection is needed for this plugin."
-msgstr "이 ಪ್ಲಗಿನ್‌ಗಾಗಿ ಯಾವುದೇ ಸಂಪರ್ಕದ ಅಗತ್ಯವಿಲ್ಲ."
+msgstr "ಈ ಪ್ಲಗಿನ್‌ಗಾಗಿ ಯಾವುದೇ ಸಂಪರ್ಕದ ಅಗತ್ಯವಿಲ್ಲ."
 
 #: includes/class-zinn-translate-admin-ui.php:442
 msgid "Open settings"
@@ -379,7 +379,7 @@ msgstr "ಓದಲಾಗುತ್ತಿರುವ ಭಾಷೆಯನ್ನು ಸ�
 
 #: includes/class-zinn-translate-admin.php:342
 msgid "Include the original language"
-msgstr "မူਲ ಭಾಷೆಯನ್ನು ಸೇರಿಸಿ"
+msgstr "ಮೂಲ ಭಾಷೆಯನ್ನು ಸೇರಿಸಿ"
 
 #: includes/class-zinn-translate-admin.php:349
 msgid "Add it to this menu"
