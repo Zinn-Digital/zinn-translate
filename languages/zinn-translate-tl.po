@@ -336,12 +336,12 @@ msgid "A plain-text map of the site that AI answer engines read. They often cann
 msgstr "Isang plain-text na mapa ng site na binabasa ng mga AI answer engine. Kadalasan ay hindi sila makapagpatakbo ng JavaScript at posibleng hindi kailanman kumuha ng sitemap."
 
 #: includes/class-zinn-translate-admin.php:297
-#: includes/class-zinn-translate-switcher.php:135
+#: includes/class-zinn-translate-switcher.php:138
 msgid "Language switcher"
 msgstr "Tagapagpalit ng wika"
 
 #: includes/class-zinn-translate-admin.php:302
-#: includes/class-zinn-translate-switcher-widget.php:83
+#: includes/class-zinn-translate-switcher-widget.php:79
 msgid "Style"
 msgstr "Estilo"
 
@@ -758,15 +758,15 @@ msgid "Zinn® language switcher"
 msgstr "Zinn® tagapagpalit ng wika"
 
 #: includes/class-zinn-translate-switcher-widget.php:31
-#: includes/class-zinn-translate-switcher.php:138
+#: includes/class-zinn-translate-switcher.php:141
 msgid "Let visitors read this page in another language."
 msgstr "Hayaan ang mga bisita na basahin ang pahinang ito sa ibang wika."
 
-#: includes/class-zinn-translate-switcher-widget.php:79
+#: includes/class-zinn-translate-switcher-widget.php:75
 msgid "Title"
 msgstr "Pamagat"
 
-#: includes/class-zinn-translate-switcher-widget.php:85
+#: includes/class-zinn-translate-switcher-widget.php:81
 msgid "Use the plugin setting"
 msgstr "Gamitin ang setting ng plugin"
 
@@ -794,15 +794,25 @@ msgstr "Mga bandera at pangalan"
 msgid "Stacked list"
 msgstr "Magkasunod na listahan"
 
-#: includes/class-zinn-translate-switcher.php:285
+#: includes/class-zinn-translate-switcher.php:314
 msgid "Choose a language"
 msgstr "Pumili ng wika"
 
-#: includes/class-zinn-translate-updater.php:233
+#: includes/class-zinn-translate-updater.php:253
 msgid "See the Zinn Digital® release notes."
 msgstr "Tingnan ang mga tala sa paglabas ng Zinn Digital®."
 
-#: includes/class-zinn-translate-updater.php:288
+#: includes/class-zinn-translate-updater.php:302
+msgid "The Zinn® update service did not issue a download link for this update. Check that this site can reach the Zinn® platform, then try again."
+msgstr "Hindi naglabas ang serbisyo ng pag-update ng Zinn® ng link sa pag-download para sa update na ito. Suriin na maaabot ng site na ito ang platform ng Zinn®, pagkatapos ay subukang muli."
+
+#. translators: %s: the download error reported by WordPress.
+#: includes/class-zinn-translate-updater.php:316
+#, php-format
+msgid "The update could not be downloaded from the Zinn® update service (%s). Try again in a few minutes."
+msgstr "Hindi na-download ang update mula sa serbisyo ng update ng Zinn® (%s). Subukan ulit pagkalipas ng ilang minuto."
+
+#: includes/class-zinn-translate-updater.php:330
 msgid "The downloaded update failed its integrity check and was not installed."
 msgstr "Ang na-download na update ay nabigo sa pagsusuri ng integridad at hindi na-install."
 

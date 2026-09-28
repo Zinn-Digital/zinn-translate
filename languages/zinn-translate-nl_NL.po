@@ -336,12 +336,12 @@ msgid "A plain-text map of the site that AI answer engines read. They often cann
 msgstr "Een platte-tekstplattegrond van de website die door AI-antwoordengines wordt gelezen. Deze kunnen vaak geen JavaScript uitvoeren en halen mogelijk nooit een sitemap op."
 
 #: includes/class-zinn-translate-admin.php:297
-#: includes/class-zinn-translate-switcher.php:135
+#: includes/class-zinn-translate-switcher.php:138
 msgid "Language switcher"
 msgstr "Taalkiezer"
 
 #: includes/class-zinn-translate-admin.php:302
-#: includes/class-zinn-translate-switcher-widget.php:83
+#: includes/class-zinn-translate-switcher-widget.php:79
 msgid "Style"
 msgstr "Stijl"
 
@@ -758,15 +758,15 @@ msgid "Zinn® language switcher"
 msgstr "Zinn®-taalwisselaar"
 
 #: includes/class-zinn-translate-switcher-widget.php:31
-#: includes/class-zinn-translate-switcher.php:138
+#: includes/class-zinn-translate-switcher.php:141
 msgid "Let visitors read this page in another language."
 msgstr "Laat bezoekers deze pagina in een andere taal lezen."
 
-#: includes/class-zinn-translate-switcher-widget.php:79
+#: includes/class-zinn-translate-switcher-widget.php:75
 msgid "Title"
 msgstr "Titel"
 
-#: includes/class-zinn-translate-switcher-widget.php:85
+#: includes/class-zinn-translate-switcher-widget.php:81
 msgid "Use the plugin setting"
 msgstr "Gebruik de plugin-instelling"
 
@@ -794,15 +794,25 @@ msgstr "Vlaggen en namen"
 msgid "Stacked list"
 msgstr "Gestapelde lijst"
 
-#: includes/class-zinn-translate-switcher.php:285
+#: includes/class-zinn-translate-switcher.php:314
 msgid "Choose a language"
 msgstr "Kies een taal"
 
-#: includes/class-zinn-translate-updater.php:233
+#: includes/class-zinn-translate-updater.php:253
 msgid "See the Zinn Digital® release notes."
 msgstr "Bekijk de releaseopmerkingen van Zinn Digital®."
 
-#: includes/class-zinn-translate-updater.php:288
+#: includes/class-zinn-translate-updater.php:302
+msgid "The Zinn® update service did not issue a download link for this update. Check that this site can reach the Zinn® platform, then try again."
+msgstr "De Zinn®-updatefunctie heeft geen downloadlink voor deze update gegenereerd. Controleer of deze site de Zinn®-platform kan bereiken en probeer het dan opnieuw."
+
+#. translators: %s: the download error reported by WordPress.
+#: includes/class-zinn-translate-updater.php:316
+#, php-format
+msgid "The update could not be downloaded from the Zinn® update service (%s). Try again in a few minutes."
+msgstr "De update kon niet worden gedownload van de Zinn®-updateservice (%s). Probeer het over een paar minuten opnieuw."
+
+#: includes/class-zinn-translate-updater.php:330
 msgid "The downloaded update failed its integrity check and was not installed."
 msgstr "De gedownloade update is niet door de integriteitscontrole gekomen en is niet geïnstalleerd."
 

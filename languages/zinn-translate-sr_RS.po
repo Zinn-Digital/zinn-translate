@@ -337,12 +337,12 @@ msgid "A plain-text map of the site that AI answer engines read. They often cann
 msgstr "Mapa sajta u čistom tekstu koju čitaju AI mašine za odgovore. One često ne mogu da pokreću JavaScript i možda nikada neće preuzeti mapu sajta."
 
 #: includes/class-zinn-translate-admin.php:297
-#: includes/class-zinn-translate-switcher.php:135
+#: includes/class-zinn-translate-switcher.php:138
 msgid "Language switcher"
 msgstr "Jezik prekidač"
 
 #: includes/class-zinn-translate-admin.php:302
-#: includes/class-zinn-translate-switcher-widget.php:83
+#: includes/class-zinn-translate-switcher-widget.php:79
 msgid "Style"
 msgstr "Stil"
 
@@ -759,15 +759,15 @@ msgid "Zinn® language switcher"
 msgstr "Zinn® jezički prekidač"
 
 #: includes/class-zinn-translate-switcher-widget.php:31
-#: includes/class-zinn-translate-switcher.php:138
+#: includes/class-zinn-translate-switcher.php:141
 msgid "Let visitors read this page in another language."
 msgstr "Omogućite posetiocima da čitaju ovu stranicu na drugom jeziku."
 
-#: includes/class-zinn-translate-switcher-widget.php:79
+#: includes/class-zinn-translate-switcher-widget.php:75
 msgid "Title"
 msgstr "Naslov"
 
-#: includes/class-zinn-translate-switcher-widget.php:85
+#: includes/class-zinn-translate-switcher-widget.php:81
 msgid "Use the plugin setting"
 msgstr "Koristi postavku dodatka"
 
@@ -795,15 +795,25 @@ msgstr "Заставе и имена"
 msgid "Stacked list"
 msgstr "Stepenasta lista"
 
-#: includes/class-zinn-translate-switcher.php:285
+#: includes/class-zinn-translate-switcher.php:314
 msgid "Choose a language"
 msgstr "Izaberite jezik"
 
-#: includes/class-zinn-translate-updater.php:233
+#: includes/class-zinn-translate-updater.php:253
 msgid "See the Zinn Digital® release notes."
 msgstr "Pogledajte napomene o izdanju za Zinn Digital®."
 
-#: includes/class-zinn-translate-updater.php:288
+#: includes/class-zinn-translate-updater.php:302
+msgid "The Zinn® update service did not issue a download link for this update. Check that this site can reach the Zinn® platform, then try again."
+msgstr "Usluga ažuriranja Zinn® nije izdala vezu za preuzimanje za ovo ažuriranje. Proverite da li ovaj sajt može da pristupi platformi Zinn®, pa pokušajte ponovo."
+
+#. translators: %s: the download error reported by WordPress.
+#: includes/class-zinn-translate-updater.php:316
+#, php-format
+msgid "The update could not be downloaded from the Zinn® update service (%s). Try again in a few minutes."
+msgstr "Ažuriranje nije moglo da se preuzme sa Zinn® servisa za ažuriranje (%s). Pokušajte ponovo za nekoliko minuta."
+
+#: includes/class-zinn-translate-updater.php:330
 msgid "The downloaded update failed its integrity check and was not installed."
 msgstr "Preuzeto ažuriranje nije prošlo proveru integriteta i nije instalirano."
 

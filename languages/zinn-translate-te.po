@@ -336,12 +336,12 @@ msgid "A plain-text map of the site that AI answer engines read. They often cann
 msgstr "AI సమాధాన ఇంజిన్‌లు చదివే సైట్ యొక్క ప్లెయిన్-టెక్స్ట్ మ్యాప్. ఇవి తరచుగా జావాస్క్రిప్ట్‌ను రన్ చేయలేవు మరియు సైట్‌మ్యాప్‌ను ఎప్పటికీ పొందలేకపోవచ్చు."
 
 #: includes/class-zinn-translate-admin.php:297
-#: includes/class-zinn-translate-switcher.php:135
+#: includes/class-zinn-translate-switcher.php:138
 msgid "Language switcher"
 msgstr "భాషా మారకం"
 
 #: includes/class-zinn-translate-admin.php:302
-#: includes/class-zinn-translate-switcher-widget.php:83
+#: includes/class-zinn-translate-switcher-widget.php:79
 msgid "Style"
 msgstr "శైలి"
 
@@ -758,15 +758,15 @@ msgid "Zinn® language switcher"
 msgstr "Zinn® భాష మార్చునది"
 
 #: includes/class-zinn-translate-switcher-widget.php:31
-#: includes/class-zinn-translate-switcher.php:138
+#: includes/class-zinn-translate-switcher.php:141
 msgid "Let visitors read this page in another language."
 msgstr "సందర్శకులు ఈ పేజీని వేరే భాషలో చదవడానికి అనుమతించండి."
 
-#: includes/class-zinn-translate-switcher-widget.php:79
+#: includes/class-zinn-translate-switcher-widget.php:75
 msgid "Title"
 msgstr "శీర్షిక"
 
-#: includes/class-zinn-translate-switcher-widget.php:85
+#: includes/class-zinn-translate-switcher-widget.php:81
 msgid "Use the plugin setting"
 msgstr "ప్లగిన్ సెట్టింగ్‌ను ఉపయోగించండి"
 
@@ -794,15 +794,25 @@ msgstr "ఫ్లాగ్‌లు మరియు పేర్లు"
 msgid "Stacked list"
 msgstr "స్టాక్డ్ జాబితా"
 
-#: includes/class-zinn-translate-switcher.php:285
+#: includes/class-zinn-translate-switcher.php:314
 msgid "Choose a language"
 msgstr "భాషను ఎంచుకోండి"
 
-#: includes/class-zinn-translate-updater.php:233
+#: includes/class-zinn-translate-updater.php:253
 msgid "See the Zinn Digital® release notes."
 msgstr "Zinn Digital® విడుదల గమనికలను చూడండి."
 
-#: includes/class-zinn-translate-updater.php:288
+#: includes/class-zinn-translate-updater.php:302
+msgid "The Zinn® update service did not issue a download link for this update. Check that this site can reach the Zinn® platform, then try again."
+msgstr "Zinn® అప్‌డేట్ సేవ ఈ అప్‌డేట్ కోసం డౌన్‌లోడ్ లింక్‌ను జారీ చేయలేదు. ఈ సైట్ Zinn® ప్లాట్‌ఫారమ్‌ను చేరగలదని తనిఖీ చేసి, ఆపై మళ్లీ ప్రయత్నించండి."
+
+#. translators: %s: the download error reported by WordPress.
+#: includes/class-zinn-translate-updater.php:316
+#, php-format
+msgid "The update could not be downloaded from the Zinn® update service (%s). Try again in a few minutes."
+msgstr "నవీకరణను Zinn® నవీకరణ సేవ (%s) నుండి డౌన్‌లోడ్ చేయడం సాధ్యం కాలేదు. కొన్ని నిమిషాల తర్వాత మళ్లీ ప్రయత్నించండి."
+
+#: includes/class-zinn-translate-updater.php:330
 msgid "The downloaded update failed its integrity check and was not installed."
 msgstr "డౌన్‌లోడ్ చేసిన అప్‌డేట్ సమగ్రతా తనిఖీలో విఫలమైంది మరియు ఇన్‌స్టాల్ చేయబడలేదు."
 

@@ -336,12 +336,12 @@ msgid "A plain-text map of the site that AI answer engines read. They often cann
 msgstr "AI ഉത്തരം നൽകുന്ന എൻജിനുകൾ വായിക്കുന്ന സൈറ്റിന്റെ പ്ലെയിൻ-ടെക്സ്റ്റ് മാപ്പ്. അവയ്ക്ക് പലപ്പോഴും ജാവാസ്ക്രിപ്റ്റ് പ്രവർത്തിപ്പിക്കാൻ കഴിയില്ല, കൂടാതെ സൈറ്റ്‌മാപ്പ് ലഭ്യമാക്കാനും കഴിഞ്ഞേക്കില്ല."
 
 #: includes/class-zinn-translate-admin.php:297
-#: includes/class-zinn-translate-switcher.php:135
+#: includes/class-zinn-translate-switcher.php:138
 msgid "Language switcher"
 msgstr "ഭാഷാ സ്വിച്ചർ"
 
 #: includes/class-zinn-translate-admin.php:302
-#: includes/class-zinn-translate-switcher-widget.php:83
+#: includes/class-zinn-translate-switcher-widget.php:79
 msgid "Style"
 msgstr "ശൈലി"
 
@@ -758,15 +758,15 @@ msgid "Zinn® language switcher"
 msgstr "Zinn® ഭാഷ മാറ്റുന്നതിനുള്ള ഉപകരണം"
 
 #: includes/class-zinn-translate-switcher-widget.php:31
-#: includes/class-zinn-translate-switcher.php:138
+#: includes/class-zinn-translate-switcher.php:141
 msgid "Let visitors read this page in another language."
 msgstr "സന്ദർശകരെ ഈ താൾ മറ്റൊരു ഭാഷയിൽ വായിക്കാൻ അനുവദിക്കുക."
 
-#: includes/class-zinn-translate-switcher-widget.php:79
+#: includes/class-zinn-translate-switcher-widget.php:75
 msgid "Title"
 msgstr "തലക്കെട്ട്"
 
-#: includes/class-zinn-translate-switcher-widget.php:85
+#: includes/class-zinn-translate-switcher-widget.php:81
 msgid "Use the plugin setting"
 msgstr "പ്ലഗിൻ ക്രമീകരണം ഉപയോഗിക്കുക"
 
@@ -794,15 +794,25 @@ msgstr "ഫ്ലാഗുകളും പേരുകളും"
 msgid "Stacked list"
 msgstr "സ്റ്റാക്ക്ഡ് ലിസ്റ്റ്"
 
-#: includes/class-zinn-translate-switcher.php:285
+#: includes/class-zinn-translate-switcher.php:314
 msgid "Choose a language"
 msgstr "ഒരു ഭാഷ തിരഞ്ഞെടുക്കുക"
 
-#: includes/class-zinn-translate-updater.php:233
+#: includes/class-zinn-translate-updater.php:253
 msgid "See the Zinn Digital® release notes."
 msgstr "Zinn Digital® റിലീസ് കുറിപ്പുകൾ കാണുക."
 
-#: includes/class-zinn-translate-updater.php:288
+#: includes/class-zinn-translate-updater.php:302
+msgid "The Zinn® update service did not issue a download link for this update. Check that this site can reach the Zinn® platform, then try again."
+msgstr "Zinn® അപ്ഡേറ്റ് സേവനം ഈ അപ്ഡേറ്റിനായി ഡൗൺലോഡ് ലിങ്ക് നൽകിയിട്ടില്ല. ഈ സൈറ്റിന് Zinn® പ്ലാറ്റ്‌ഫോമുമായി ബന്ധപ്പെടാൻ കഴിയുമെന്ന് പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക."
+
+#. translators: %s: the download error reported by WordPress.
+#: includes/class-zinn-translate-updater.php:316
+#, php-format
+msgid "The update could not be downloaded from the Zinn® update service (%s). Try again in a few minutes."
+msgstr "അപ്‌ഡേറ്റ് Zinn® അപ്‌ഡേറ്റ് സേവനത്തിൽ നിന്ന് ഡൗൺലോഡ് ചെയ്യാനായില്ല (%s). കുറച്ച് മിനിറ്റുകൾക്ക് ശേഷം വീണ്ടും ശ്രമിക്കുക."
+
+#: includes/class-zinn-translate-updater.php:330
 msgid "The downloaded update failed its integrity check and was not installed."
 msgstr "ഡൗൺലോഡ് ചെയ്ത അപ്‌ഡേറ്റിന്റെ സമഗ്രതാ പരിശോധന പരാജയപ്പെട്ടു, അതിനാൽ അത് ഇൻസ്റ്റാൾ ചെയ്തില്ല."
 

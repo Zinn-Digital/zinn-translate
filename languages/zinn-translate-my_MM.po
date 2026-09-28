@@ -335,12 +335,12 @@ msgid "A plain-text map of the site that AI answer engines read. They often cann
 msgstr "AI ဖြေဆိုရေးအင်ဂျင်များ ဖတ်ရှုသည့် သာမန်စာသားဆိုက်ပထဝီမြေပုံ။ ၎င်းတို့သည် JavaScript ကို မလည်ပတ်နိုင်ကြပါ၊ ဆိုက်မြေပုံကိုလည်း ဘယ်သောအခါမျှ ရယူနိုင်မည်မဟုတ်ပေ။"
 
 #: includes/class-zinn-translate-admin.php:297
-#: includes/class-zinn-translate-switcher.php:135
+#: includes/class-zinn-translate-switcher.php:138
 msgid "Language switcher"
 msgstr "ဘာသာစကားပြောင်းစက်"
 
 #: includes/class-zinn-translate-admin.php:302
-#: includes/class-zinn-translate-switcher-widget.php:83
+#: includes/class-zinn-translate-switcher-widget.php:79
 msgid "Style"
 msgstr "စတိုင်လ်"
 
@@ -757,15 +757,15 @@ msgid "Zinn® language switcher"
 msgstr "Zinn® ဘာသာစကားပြောင်းစက်"
 
 #: includes/class-zinn-translate-switcher-widget.php:31
-#: includes/class-zinn-translate-switcher.php:138
+#: includes/class-zinn-translate-switcher.php:141
 msgid "Let visitors read this page in another language."
 msgstr "ဧည့်သည်များကို ဤစာမျက်နှာကို အခြားဘာသာစကားဖြင့် ဖတ်ရှုခွင့်ပြုပါ။"
 
-#: includes/class-zinn-translate-switcher-widget.php:79
+#: includes/class-zinn-translate-switcher-widget.php:75
 msgid "Title"
 msgstr "ခေါင်းစဉ်"
 
-#: includes/class-zinn-translate-switcher-widget.php:85
+#: includes/class-zinn-translate-switcher-widget.php:81
 msgid "Use the plugin setting"
 msgstr "ပလပ်အင် ဆက်တင်ကို အသုံးပြုပါ"
 
@@ -793,15 +793,25 @@ msgstr "အလံများနှင့် အမည်များ"
 msgid "Stacked list"
 msgstr "ထပ်ဆင့်စာရင်း"
 
-#: includes/class-zinn-translate-switcher.php:285
+#: includes/class-zinn-translate-switcher.php:314
 msgid "Choose a language"
 msgstr "ဘာသာစကားကို ရွေးချယ်ပါ"
 
-#: includes/class-zinn-translate-updater.php:233
+#: includes/class-zinn-translate-updater.php:253
 msgid "See the Zinn Digital® release notes."
 msgstr "Zinn Digital® ၏ ထုတ်ဝေမှု မှတ်စုများကို ကြည့်ပါ။"
 
-#: includes/class-zinn-translate-updater.php:288
+#: includes/class-zinn-translate-updater.php:302
+msgid "The Zinn® update service did not issue a download link for this update. Check that this site can reach the Zinn® platform, then try again."
+msgstr "Zinn® အပ်ဒိတ်ဝန်ဆောင်မှုသည် ဤအပ်ဒိတ်အတွက် ဒေါင်းလုပ်လင့်ခ်ကို မထုတ်ပေးခဲ့ပါ။ ဤဆိုက်သည် Zinn® ပလပ်ဖောင်းသို့ ချိတ်ဆက်နိုင်ခြင်း ရှိမရှိ စစ်ဆေးပြီးနောက် ထပ်မံကြိုးစားပါ။"
+
+#. translators: %s: the download error reported by WordPress.
+#: includes/class-zinn-translate-updater.php:316
+#, php-format
+msgid "The update could not be downloaded from the Zinn® update service (%s). Try again in a few minutes."
+msgstr "Zinn® အပ်ဒိတ်ဝန်ဆောင်မှု (%s) မှ အပ်ဒိတ်ကို ဒေါင်းလုဒ်လုပ်၍မရပါ။ မိနစ်အနည်းငယ်ကြာမှ ထပ်ကြိုးစားပါ။"
+
+#: includes/class-zinn-translate-updater.php:330
 msgid "The downloaded update failed its integrity check and was not installed."
 msgstr "ဒေါင်းလုပ်လုပ်ထားသော အပ်ဒိတ်သည် ၎င်း၏ ခိုင်မာမှုစစ်ဆေးမှုကို မအောင်မြင်ခဲ့ပါ၊ ထို့ကြောင့် ထည့်သွင်းခြင်း မပြုလုပ်ခဲ့ပါ။"
 

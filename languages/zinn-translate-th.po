@@ -335,12 +335,12 @@ msgid "A plain-text map of the site that AI answer engines read. They often cann
 msgstr "แผนผังเว็บไซต์แบบข้อความธรรมดาที่เครื่องมือตอบคำถามด้วย AI อ่าน โดยมักจะไม่สามารถรัน JavaScript ได้ และอาจไม่เคยดึงข้อมูลแผนผังเว็บไซต์เลย"
 
 #: includes/class-zinn-translate-admin.php:297
-#: includes/class-zinn-translate-switcher.php:135
+#: includes/class-zinn-translate-switcher.php:138
 msgid "Language switcher"
 msgstr "เครื่องมือสลับภาษา"
 
 #: includes/class-zinn-translate-admin.php:302
-#: includes/class-zinn-translate-switcher-widget.php:83
+#: includes/class-zinn-translate-switcher-widget.php:79
 msgid "Style"
 msgstr "รูปแบบ"
 
@@ -757,15 +757,15 @@ msgid "Zinn® language switcher"
 msgstr "เครื่องมือเปลี่ยนภาษา Zinn®"
 
 #: includes/class-zinn-translate-switcher-widget.php:31
-#: includes/class-zinn-translate-switcher.php:138
+#: includes/class-zinn-translate-switcher.php:141
 msgid "Let visitors read this page in another language."
 msgstr "ให้ผู้เยี่ยมชมอ่านหน้านี้เป็นภาษาอื่นได้"
 
-#: includes/class-zinn-translate-switcher-widget.php:79
+#: includes/class-zinn-translate-switcher-widget.php:75
 msgid "Title"
 msgstr "ชื่อเรื่อง"
 
-#: includes/class-zinn-translate-switcher-widget.php:85
+#: includes/class-zinn-translate-switcher-widget.php:81
 msgid "Use the plugin setting"
 msgstr "ใช้การตั้งค่าปลั๊กอิน"
 
@@ -793,15 +793,25 @@ msgstr "ธงและชื่อ"
 msgid "Stacked list"
 msgstr "รายการแบบซ้อน"
 
-#: includes/class-zinn-translate-switcher.php:285
+#: includes/class-zinn-translate-switcher.php:314
 msgid "Choose a language"
 msgstr "เลือกภาษา"
 
-#: includes/class-zinn-translate-updater.php:233
+#: includes/class-zinn-translate-updater.php:253
 msgid "See the Zinn Digital® release notes."
 msgstr "ดูบันทึกประจำรุ่นของ Zinn Digital®"
 
-#: includes/class-zinn-translate-updater.php:288
+#: includes/class-zinn-translate-updater.php:302
+msgid "The Zinn® update service did not issue a download link for this update. Check that this site can reach the Zinn® platform, then try again."
+msgstr "บริการอัปเดต Zinn® ไม่ได้ออกลิงก์ดาวน์โหลดสำหรับการอัปเดตนี้ โปรดตรวจสอบว่าไซต์นี้สามารถเข้าถึงแพลตฟอร์ม Zinn® ได้ จากนั้นลองอีกครั้ง"
+
+#. translators: %s: the download error reported by WordPress.
+#: includes/class-zinn-translate-updater.php:316
+#, php-format
+msgid "The update could not be downloaded from the Zinn® update service (%s). Try again in a few minutes."
+msgstr "ไม่สามารถดาวน์โหลดการอัปเดตจากบริการอัปเดตของ Zinn® ได้ (%s) โปรดลองอีกครั้งในอีกสักครู่"
+
+#: includes/class-zinn-translate-updater.php:330
 msgid "The downloaded update failed its integrity check and was not installed."
 msgstr "การดาวน์โหลดอัปเดตไม่ผ่านการตรวจสอบความสมบูรณ์และจึงไม่ได้ติดตั้ง"
 

@@ -335,12 +335,12 @@ msgid "A plain-text map of the site that AI answer engines read. They often cann
 msgstr "Peta situs teks biasa yang dibaca oleh mesin jawaban AI. Sering kali mereka tidak dapat menjalankan JavaScript dan mungkin tidak pernah mengambil peta situs."
 
 #: includes/class-zinn-translate-admin.php:297
-#: includes/class-zinn-translate-switcher.php:135
+#: includes/class-zinn-translate-switcher.php:138
 msgid "Language switcher"
 msgstr "Pengalih bahasa"
 
 #: includes/class-zinn-translate-admin.php:302
-#: includes/class-zinn-translate-switcher-widget.php:83
+#: includes/class-zinn-translate-switcher-widget.php:79
 msgid "Style"
 msgstr "Gaya"
 
@@ -757,15 +757,15 @@ msgid "Zinn® language switcher"
 msgstr "Pengalih bahasa Zinn®"
 
 #: includes/class-zinn-translate-switcher-widget.php:31
-#: includes/class-zinn-translate-switcher.php:138
+#: includes/class-zinn-translate-switcher.php:141
 msgid "Let visitors read this page in another language."
 msgstr "Izinkan pengunjung membaca halaman ini dalam bahasa lain."
 
-#: includes/class-zinn-translate-switcher-widget.php:79
+#: includes/class-zinn-translate-switcher-widget.php:75
 msgid "Title"
 msgstr "Judul"
 
-#: includes/class-zinn-translate-switcher-widget.php:85
+#: includes/class-zinn-translate-switcher-widget.php:81
 msgid "Use the plugin setting"
 msgstr "Gunakan pengaturan plugin"
 
@@ -793,15 +793,25 @@ msgstr "Bendera dan nama"
 msgid "Stacked list"
 msgstr "Daftar bertumpuk"
 
-#: includes/class-zinn-translate-switcher.php:285
+#: includes/class-zinn-translate-switcher.php:314
 msgid "Choose a language"
 msgstr "Pilih bahasa"
 
-#: includes/class-zinn-translate-updater.php:233
+#: includes/class-zinn-translate-updater.php:253
 msgid "See the Zinn Digital® release notes."
 msgstr "Lihat catatan rilis Zinn Digital®."
 
-#: includes/class-zinn-translate-updater.php:288
+#: includes/class-zinn-translate-updater.php:302
+msgid "The Zinn® update service did not issue a download link for this update. Check that this site can reach the Zinn® platform, then try again."
+msgstr "Layanan pembaruan Zinn® tidak mengeluarkan tautan unduhan untuk pembaruan ini. Periksa apakah situs ini dapat menjangkau platform Zinn®, lalu coba lagi."
+
+#. translators: %s: the download error reported by WordPress.
+#: includes/class-zinn-translate-updater.php:316
+#, php-format
+msgid "The update could not be downloaded from the Zinn® update service (%s). Try again in a few minutes."
+msgstr "Pembaruan tidak dapat diunduh dari layanan pembaruan Zinn® (%s). Coba lagi dalam beberapa menit."
+
+#: includes/class-zinn-translate-updater.php:330
 msgid "The downloaded update failed its integrity check and was not installed."
 msgstr "Pembaruan yang diunduh gagal dalam pemeriksaan integritas dan tidak diinstal."
 

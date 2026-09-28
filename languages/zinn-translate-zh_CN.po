@@ -335,12 +335,12 @@ msgid "A plain-text map of the site that AI answer engines read. They often cann
 msgstr "AI 答案引擎可读取的纯文本网站地图。它们通常无法运行 JavaScript，并且可能永远不会获取站点地图。"
 
 #: includes/class-zinn-translate-admin.php:297
-#: includes/class-zinn-translate-switcher.php:135
+#: includes/class-zinn-translate-switcher.php:138
 msgid "Language switcher"
 msgstr "语言切换器"
 
 #: includes/class-zinn-translate-admin.php:302
-#: includes/class-zinn-translate-switcher-widget.php:83
+#: includes/class-zinn-translate-switcher-widget.php:79
 msgid "Style"
 msgstr "样式"
 
@@ -757,15 +757,15 @@ msgid "Zinn® language switcher"
 msgstr "Zinn® 语言切换器"
 
 #: includes/class-zinn-translate-switcher-widget.php:31
-#: includes/class-zinn-translate-switcher.php:138
+#: includes/class-zinn-translate-switcher.php:141
 msgid "Let visitors read this page in another language."
 msgstr "让访客以其他语言阅读此页面。"
 
-#: includes/class-zinn-translate-switcher-widget.php:79
+#: includes/class-zinn-translate-switcher-widget.php:75
 msgid "Title"
 msgstr "标题"
 
-#: includes/class-zinn-translate-switcher-widget.php:85
+#: includes/class-zinn-translate-switcher-widget.php:81
 msgid "Use the plugin setting"
 msgstr "使用插件设置"
 
@@ -793,15 +793,25 @@ msgstr "标记与名称"
 msgid "Stacked list"
 msgstr "堆叠列表"
 
-#: includes/class-zinn-translate-switcher.php:285
+#: includes/class-zinn-translate-switcher.php:314
 msgid "Choose a language"
 msgstr "选择语言"
 
-#: includes/class-zinn-translate-updater.php:233
+#: includes/class-zinn-translate-updater.php:253
 msgid "See the Zinn Digital® release notes."
 msgstr "请参阅 Zinn Digital® 发行说明。"
 
-#: includes/class-zinn-translate-updater.php:288
+#: includes/class-zinn-translate-updater.php:302
+msgid "The Zinn® update service did not issue a download link for this update. Check that this site can reach the Zinn® platform, then try again."
+msgstr "Zinn® 更新服务未为此更新发布下载链接。请检查此站点是否能够连接到 Zinn® 平台，然后重试。"
+
+#. translators: %s: the download error reported by WordPress.
+#: includes/class-zinn-translate-updater.php:316
+#, php-format
+msgid "The update could not be downloaded from the Zinn® update service (%s). Try again in a few minutes."
+msgstr "无法从 Zinn® 更新服务 (%s) 下载更新。请几分钟后重试。"
+
+#: includes/class-zinn-translate-updater.php:330
 msgid "The downloaded update failed its integrity check and was not installed."
 msgstr "已下载的更新未能通过完整性检查，因此未进行安装。"
 

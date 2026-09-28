@@ -336,12 +336,12 @@ msgid "A plain-text map of the site that AI answer engines read. They often cann
 msgstr "ແຜນຜັງເວັບໄຊແບບຂໍ້ຄວາມທຳມະດາທີ່ເຄື່ອງມືຊອກຫາແບບ AI ອ່ານ. ພວກມັນມັກຈະບໍ່ສາມາດຣັນ JavaScript ໄດ້ ແລະ ອາດຈະບໍ່ເຄີຍດຶງຂໍ້ມູນແຜນຜັງເວັບໄຊເລີຍ."
 
 #: includes/class-zinn-translate-admin.php:297
-#: includes/class-zinn-translate-switcher.php:135
+#: includes/class-zinn-translate-switcher.php:138
 msgid "Language switcher"
 msgstr "ເຄື່ອງມືສະຫຼັບພາສາ"
 
 #: includes/class-zinn-translate-admin.php:302
-#: includes/class-zinn-translate-switcher-widget.php:83
+#: includes/class-zinn-translate-switcher-widget.php:79
 msgid "Style"
 msgstr "ຮູບແບບ"
 
@@ -758,15 +758,15 @@ msgid "Zinn® language switcher"
 msgstr "ເຄື່ອງປ່ຽນພາສາ Zinn®"
 
 #: includes/class-zinn-translate-switcher-widget.php:31
-#: includes/class-zinn-translate-switcher.php:138
+#: includes/class-zinn-translate-switcher.php:141
 msgid "Let visitors read this page in another language."
 msgstr "ໃຫ້ຜູ້ເຂົ້າຊົມອ່ານໜ້ານີ້ເປັນພາສາອື່ນ."
 
-#: includes/class-zinn-translate-switcher-widget.php:79
+#: includes/class-zinn-translate-switcher-widget.php:75
 msgid "Title"
 msgstr "ຫົວຂໍ້"
 
-#: includes/class-zinn-translate-switcher-widget.php:85
+#: includes/class-zinn-translate-switcher-widget.php:81
 msgid "Use the plugin setting"
 msgstr "ໃຊ້ການຕັ້ງຄ່າປລັກອິນ"
 
@@ -794,15 +794,25 @@ msgstr "ທຸງ ແລະ ຊື່"
 msgid "Stacked list"
 msgstr "ລາຍຊື່ຊ້ອນກັນ"
 
-#: includes/class-zinn-translate-switcher.php:285
+#: includes/class-zinn-translate-switcher.php:314
 msgid "Choose a language"
 msgstr "ເລືອກພາສາ"
 
-#: includes/class-zinn-translate-updater.php:233
+#: includes/class-zinn-translate-updater.php:253
 msgid "See the Zinn Digital® release notes."
 msgstr "ເບິ່ງບັນທຶກການປ່ອຍເວີຊັນຂອງ Zinn Digital®."
 
-#: includes/class-zinn-translate-updater.php:288
+#: includes/class-zinn-translate-updater.php:302
+msgid "The Zinn® update service did not issue a download link for this update. Check that this site can reach the Zinn® platform, then try again."
+msgstr "ບໍລິການອັບເດດ Zinn® ບໍ່ໄດ້ອອກລິ້ງດາວໂຫຼດສຳລັບການອັບເດດນີ້. ກະລຸນາ ກວດສອບວ່າເວັບໄຊນີ້ສາມາດເຂົ້າເຖິງແພລດຟອມ Zinn® ໄດ້ ແລ້ວລອງໃໝ່ອີກຄັ້ງ."
+
+#. translators: %s: the download error reported by WordPress.
+#: includes/class-zinn-translate-updater.php:316
+#, php-format
+msgid "The update could not be downloaded from the Zinn® update service (%s). Try again in a few minutes."
+msgstr "ບໍ່ສາມາດດາວໂຫລດການອັບເດດຈາກບໍລິການອັບເດດຂອງ Zinn® (%s) ໄດ້. ກະລຸນາລອງໃໝ່ອີກຄັ້ງໃນອີກສອງາມນາທີ."
+
+#: includes/class-zinn-translate-updater.php:330
 msgid "The downloaded update failed its integrity check and was not installed."
 msgstr "ການອັບເດດທີ່ດາວໂຫຼດມາບໍ່ຜ່ານການກວດສອບຄວາມຖືກຕ້ອງ ແລະ ບໍ່ໄດ້ຖືກຕິດຕັ້ງ."
 

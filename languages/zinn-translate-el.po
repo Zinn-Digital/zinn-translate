@@ -336,12 +336,12 @@ msgid "A plain-text map of the site that AI answer engines read. They often cann
 msgstr "Ένας χάρτης ιστοτόπου σε απλό κείμενο τον οποίο διαβάζουν οι μηχανές απαντήσεων τεχνητής νοημοσύνης. Συχνά δεν μπορούν να εκτελέσουν JavaScript και ενδέχεται να μην ανακτήσουν ποτέ sitemap."
 
 #: includes/class-zinn-translate-admin.php:297
-#: includes/class-zinn-translate-switcher.php:135
+#: includes/class-zinn-translate-switcher.php:138
 msgid "Language switcher"
 msgstr "Εναλλαγή γλώσσας"
 
 #: includes/class-zinn-translate-admin.php:302
-#: includes/class-zinn-translate-switcher-widget.php:83
+#: includes/class-zinn-translate-switcher-widget.php:79
 msgid "Style"
 msgstr "Στυλ"
 
@@ -758,15 +758,15 @@ msgid "Zinn® language switcher"
 msgstr "Εναλλαγή γλώσσας Zinn®"
 
 #: includes/class-zinn-translate-switcher-widget.php:31
-#: includes/class-zinn-translate-switcher.php:138
+#: includes/class-zinn-translate-switcher.php:141
 msgid "Let visitors read this page in another language."
 msgstr "Επιτρέψτε στους επισκέπτες να διαβάσουν αυτή τη σελίδα σε άλλη γλώσσα."
 
-#: includes/class-zinn-translate-switcher-widget.php:79
+#: includes/class-zinn-translate-switcher-widget.php:75
 msgid "Title"
 msgstr "Τίτλος"
 
-#: includes/class-zinn-translate-switcher-widget.php:85
+#: includes/class-zinn-translate-switcher-widget.php:81
 msgid "Use the plugin setting"
 msgstr "Χρήση ρύθμισης πρόσθετου"
 
@@ -794,15 +794,25 @@ msgstr "Σημαίες και ονόματα"
 msgid "Stacked list"
 msgstr "Στοιβαγμένη λίστα"
 
-#: includes/class-zinn-translate-switcher.php:285
+#: includes/class-zinn-translate-switcher.php:314
 msgid "Choose a language"
 msgstr "Επιλέξτε γλώσσα"
 
-#: includes/class-zinn-translate-updater.php:233
+#: includes/class-zinn-translate-updater.php:253
 msgid "See the Zinn Digital® release notes."
 msgstr "Δείτε τις σημειώσεις έκδοσης του Zinn Digital®."
 
-#: includes/class-zinn-translate-updater.php:288
+#: includes/class-zinn-translate-updater.php:302
+msgid "The Zinn® update service did not issue a download link for this update. Check that this site can reach the Zinn® platform, then try again."
+msgstr "Η υπηρεσία ενημέρωσης Zinn® δεν εξέδωσε σύνδεσμο λήψης για αυτήν την ενημέρωση. Βεβαιωθείτε ότι αυτός ο ιστότοπος μπορεί να συνδεθεί με την πλατφόρμα Zinn® και δοκιμάστε ξανά."
+
+#. translators: %s: the download error reported by WordPress.
+#: includes/class-zinn-translate-updater.php:316
+#, php-format
+msgid "The update could not be downloaded from the Zinn® update service (%s). Try again in a few minutes."
+msgstr "Η ενημέρωση δεν ήταν δυνατή η λήψη από την υπηρεσία ενημερώσεων Zinn® (%s). Δοκιμάστε ξανά σε λίγα λεπτά."
+
+#: includes/class-zinn-translate-updater.php:330
 msgid "The downloaded update failed its integrity check and was not installed."
 msgstr "Η λaβoύσα ενημέρωση απέτυχε στον έλεγχο ακεραιότητας και δεν εγκαταστάθηκε."
 
