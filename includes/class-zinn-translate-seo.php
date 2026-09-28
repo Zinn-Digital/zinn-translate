@@ -294,7 +294,9 @@ final class Zinn_Translate_SEO {
 		if ( '' === $locale || '' === (string) $canonical ) {
 			return (string) $canonical;
 		}
-		return Zinn_Translate_Router::localise_url( (string) $canonical, $locale );
+		// ⛔ `esc_url_raw`, not `esc_url`: this is handed to code that escapes at its own
+		// output site, and an `&#038;` here would be wrong in a REST or HTTP-header context.
+		return esc_url_raw( Zinn_Translate_Router::localise_url( (string) $canonical, $locale ) );
 	}
 
 	/**
@@ -328,7 +330,7 @@ final class Zinn_Translate_SEO {
 		}
 		$translated = Zinn_Translate_Renderer::lookup( 'attachment:' . $attachment->ID, 'alt' );
 		if ( null !== $translated ) {
-			$attr['alt'] = $translated;
+			$attr['alt'] = esc_attr( wp_strip_all_tags( $translated ) );
 		}
 		return $attr;
 	}
@@ -344,13 +346,13 @@ final class Zinn_Translate_SEO {
 		if ( isset( $parts['site'] ) ) {
 			$site = Zinn_Translate_Renderer::lookup( 'site:options', 'blogname' );
 			if ( null !== $site ) {
-				$parts['site'] = $site;
+				$parts['site'] = esc_html( wp_strip_all_tags( $site ) );
 			}
 		}
 		if ( isset( $parts['tagline'] ) ) {
 			$tagline = Zinn_Translate_Renderer::lookup( 'site:options', 'blogdescription' );
 			if ( null !== $tagline ) {
-				$parts['tagline'] = $tagline;
+				$parts['tagline'] = esc_html( wp_strip_all_tags( $tagline ) );
 			}
 		}
 		return $parts;
@@ -421,7 +423,7 @@ final class Zinn_Translate_SEO {
 	 */
 	private function swap( string $original, string $field ): string {
 		$translated = Zinn_Translate_Renderer::lookup( $this->current_ref(), $field );
-		return null === $translated ? $original : $translated;
+		return null === $translated ? $original : self::plain( $translated );
 	}
 
 	/**
@@ -443,7 +445,21 @@ final class Zinn_Translate_SEO {
 		if ( null === $translated ) {
 			$translated = Zinn_Translate_Renderer::lookup( $ref, $fallback );
 		}
-		return null === $translated ? $original : $translated;
+		return null === $translated ? $original : self::plain( $translated );
+	}
+
+	/**
+	 * A translated meta title or description, escaped before it is handed back.
+	 *
+	 * ⛔ A meta title or description is plain text, so tags are stripped and the rest is
+	 * HTML-encoded. Each SEO plugin escapes again at its own output site; `esc_html()` does
+	 * not double-encode an existing entity, so that second pass changes nothing.
+	 *
+	 * @param string $text The translation.
+	 * @return string The text, safe for a `<title>` or a `content=""` attribute.
+	 */
+	private static function plain( string $text ): string {
+		return esc_html( wp_strip_all_tags( $text ) );
 	}
 
 	/**

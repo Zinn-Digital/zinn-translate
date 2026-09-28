@@ -7,7 +7,7 @@ Tags: translation, multilingual, seo, hreflang, woocommerce
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 2.2.10
+Stable tag: 2.2.11
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -128,6 +128,11 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 4. Per-language sitemaps and `llms.txt` addresses, with links to check them.
 
 == Changelog ==
+
+= 2.2.11 =
+* Security: every translation handed back to WordPress (post, page and menu titles, excerpts, term names, the site title and tagline, SEO titles and descriptions, image alt text, WooCommerce labels and descriptions) is now escaped before it is returned.
+* Security: the design-token stylesheet validates every component id and strips anything that could close the inline style.
+* Security: the language switcher's shortcode, block, menu item and widget wrapper are escaped as they are output.
 
 = 2.2.10 =
 * Translations: a word written in the wrong alphabet (for example a Korean word inside a Malayalam sentence, or an Urdu word ending a Punjabi one) is corrected in every language that had one. Each affected string was translated again and checked.

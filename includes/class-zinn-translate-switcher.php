@@ -104,13 +104,16 @@ final class Zinn_Translate_Switcher {
 			is_array( $atts ) ? $atts : array(),
 			'zinn_language_switcher'
 		);
-		return self::render(
-			array(
-				'preset'  => (string) $atts['preset'],
-				'labels'  => (string) $atts['labels'],
-				'flags'   => '' === $atts['flags'] ? null : self::truthy( (string) $atts['flags'] ),
-				'current' => '' === $atts['current'] ? null : self::truthy( (string) $atts['current'] ),
-				'source'  => '' === $atts['source'] ? null : self::truthy( (string) $atts['source'] ),
+		// ⛔ Escaped late: a shortcode's return value is printed into the post as it is.
+		return self::escape(
+			self::render(
+				array(
+					'preset'  => (string) $atts['preset'],
+					'labels'  => (string) $atts['labels'],
+					'flags'   => '' === $atts['flags'] ? null : self::truthy( (string) $atts['flags'] ),
+					'current' => '' === $atts['current'] ? null : self::truthy( (string) $atts['current'] ),
+					'source'  => '' === $atts['source'] ? null : self::truthy( (string) $atts['source'] ),
+				)
 			)
 		);
 	}
@@ -155,7 +158,7 @@ final class Zinn_Translate_Switcher {
 	 */
 	public function render_block( $attributes ): string {
 		$attributes = (array) $attributes;
-		return self::render( array( 'preset' => (string) ( $attributes['preset'] ?? '' ) ) );
+		return self::escape( self::render( array( 'preset' => (string) ( $attributes['preset'] ?? '' ) ) ) );
 	}
 
 	/**
@@ -191,7 +194,7 @@ final class Zinn_Translate_Switcher {
 		if ( '' === $switcher ) {
 			return (string) $items;
 		}
-		return (string) $items . '<li class="menu-item zinn-switcher-menu-item">' . $switcher . '</li>';
+		return (string) $items . '<li class="menu-item zinn-switcher-menu-item">' . self::escape( $switcher ) . '</li>';
 	}
 
 	/**
@@ -251,6 +254,32 @@ final class Zinn_Translate_Switcher {
 			);
 		}
 		return $entries;
+	}
+
+	/**
+	 * The switcher's markup, escaped for output.
+	 *
+	 * ⛔ `wp_kses_post()` alone is NOT enough here: core's post allow-list has no `hreflang`
+	 * on `<a>`, so it silently strips the attribute that tells a crawler which language each
+	 * link leads to — measured on a real WordPress, three links in and none out. This is the
+	 * post allow-list plus exactly that one attribute, and nothing else.
+	 *
+	 * @param string $html The rendered switcher.
+	 * @return string
+	 */
+	public static function escape( string $html ): string {
+		return wp_kses( $html, self::allowed_html() );
+	}
+
+	/**
+	 * Core's post allow-list plus `hreflang` on `<a>` — see `escape()`.
+	 *
+	 * @return array<string, array<string, bool>>
+	 */
+	public static function allowed_html(): array {
+		$allowed      = wp_kses_allowed_html( 'post' );
+		$allowed['a'] = array_merge( (array) ( $allowed['a'] ?? array() ), array( 'hreflang' => true ) );
+		return $allowed;
 	}
 
 	/**

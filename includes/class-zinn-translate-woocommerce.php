@@ -254,7 +254,7 @@ final class Zinn_Translate_WooCommerce {
 			return (string) $label;
 		}
 		$translated = Zinn_Translate_Renderer::lookup( 'shop:attributes', 'label.' . $key );
-		return null === $translated ? (string) $label : $translated;
+		return null === $translated ? (string) $label : esc_html( wp_strip_all_tags( $translated ) );
 	}
 
 	/**
@@ -273,7 +273,7 @@ final class Zinn_Translate_WooCommerce {
 		if ( $term instanceof WP_Term ) {
 			$translated = Zinn_Translate_Renderer::lookup( 'term:' . $term->term_id, 'name' );
 			if ( null !== $translated ) {
-				return $translated;
+				return esc_html( wp_strip_all_tags( $translated ) );
 			}
 		}
 		return (string) $name;
@@ -418,7 +418,7 @@ final class Zinn_Translate_WooCommerce {
 				$translated = Zinn_Translate_Renderer::lookup( 'shop:attributes', 'label.' . $slug );
 			}
 			if ( null !== $translated ) {
-				$rows[ $key ]['label'] = $translated;
+				$rows[ $key ]['label'] = esc_html( wp_strip_all_tags( $translated ) );
 			}
 			if ( isset( $row['value'] ) && is_string( $row['value'] ) ) {
 				$rows[ $key ]['value'] = self::translated_attribute_value( $id, $slug, $row['value'], $stored );
@@ -465,14 +465,16 @@ final class Zinn_Translate_WooCommerce {
 			return $rendered;
 		}
 		$source = self::attribute_parts( $stored, $slug );
-		$parts  = array_map( 'trim', explode( '|', $translated ) );
+		// ⛔ Each part is ENCODED before it is spliced into the rendered HTML, because it
+		// replaces plain text inside markup WooCommerce has already built and escaped.
+		$parts = array_map( 'trim', explode( '|', wp_strip_all_tags( $translated ) ) );
 		if ( array() === $source || count( $source ) !== count( $parts ) ) {
 			return $rendered;
 		}
 		$replace = array();
 		foreach ( $source as $index => $original ) {
 			if ( '' !== $original && '' !== $parts[ $index ] && $original !== $parts[ $index ] ) {
-				$replace[ $original ] = $parts[ $index ];
+				$replace[ esc_html( $original ) ] = esc_html( $parts[ $index ] );
 			}
 		}
 		if ( array() === $replace ) {
@@ -527,7 +529,8 @@ final class Zinn_Translate_WooCommerce {
 			return $value;
 		}
 		$translated = Zinn_Translate_Renderer::lookup( 'product_extra:' . $id, $field );
-		return null === $translated ? $value : $translated;
+		// ⛔ A short description and a purchase note are post HTML, printed by the theme.
+		return null === $translated ? $value : wp_kses_post( $translated );
 	}
 
 	/**

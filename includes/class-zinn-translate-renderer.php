@@ -148,10 +148,44 @@ class Zinn_Translate_Renderer {
 			return (string) $title;
 		}
 		$translated = self::lookup( $post->post_type . ':' . $post->ID, 'title' );
-		// ⛔ `esc_html` is NOT applied here: `the_title` receives raw text and WordPress
-		// escapes at the output site. Escaping here would double-encode an apostrophe in
-		// every translated French title on the site.
-		return null === $translated ? (string) $title : $translated;
+		// ⛔⛔ ESCAPED HERE, BECAUSE `the_title()` ECHOES WHATEVER THIS FILTER RETURNS.
+		// WordPress.org's review of 2.2.10 (P0TDX377297HGN) required it, and it is right:
+		// the translation arrives from a remote service, and a theme printing `the_title()`
+		// does no escaping of its own. `inline_markup()` keeps the handful of inline tags a
+		// post title may legitimately carry and encodes everything else; it does not
+		// double-encode an entity, so a later `esc_html()`/`esc_attr()` at the output site
+		// leaves an apostrophe as one `&#039;`, not `&amp;#039;`.
+		return null === $translated ? (string) $title : self::inline_markup( $translated );
+	}
+
+	/**
+	 * A translated title-like string, escaped for HTML output.
+	 *
+	 * ⭐ The allow-list is the inline formatting a post title, menu label or page title can
+	 * carry in core (`<em>`, `<strong>`, …), with NO attributes — so no `href`, no `style`
+	 * and no event handler can survive it. Everything else is encoded, and a lone `&` or
+	 * `<` becomes an entity.
+	 *
+	 * @param string $text A translation to be rendered where a title goes.
+	 * @return string The text, safe to print inside an HTML element.
+	 */
+	public static function inline_markup( string $text ): string {
+		return wp_kses(
+			$text,
+			array(
+				'b'      => array(),
+				'br'     => array(),
+				'code'   => array(),
+				'em'     => array(),
+				'i'      => array(),
+				'mark'   => array(),
+				'small'  => array(),
+				'span'   => array(),
+				'strong' => array(),
+				'sub'    => array(),
+				'sup'    => array(),
+			)
+		);
 	}
 
 	/**
@@ -190,7 +224,9 @@ class Zinn_Translate_Renderer {
 			return (string) $excerpt;
 		}
 		$translated = self::lookup( $resolved->post_type . ':' . $resolved->ID, 'excerpt' );
-		return null === $translated ? (string) $excerpt : $translated;
+		// ⛔ Escaped here: `the_excerpt()` prints the filtered value, and an excerpt is a
+		// short piece of post HTML, so it gets exactly what a post body may contain.
+		return null === $translated ? (string) $excerpt : wp_kses_post( $translated );
 	}
 
 	/**
@@ -217,7 +253,10 @@ class Zinn_Translate_Renderer {
 		}
 		$translated = self::lookup( 'term:' . $term->term_id, 'name' );
 		if ( null !== $translated ) {
-			$term->name = $translated;
+			// ⛔ `esc_html`, which is the form core itself stores a term name in
+			// (`pre_term_name` runs `_wp_specialchars`), so a theme that prints `$term->name`
+			// raw gets a safe value and one that escapes again gets no double encoding.
+			$term->name = esc_html( $translated );
 		}
 		return $term;
 	}
@@ -252,7 +291,7 @@ class Zinn_Translate_Renderer {
 		// ⛔ The prefix ("Category: ") is preserved and only the NAME is replaced, because
 		// the prefix comes from WordPress's own translation of the theme and is already in
 		// the visitor's language when the site has that language pack installed.
-		return str_replace( $term->name, $translated, (string) $title );
+		return str_replace( $term->name, esc_html( $translated ), (string) $title );
 	}
 
 	/**
@@ -268,18 +307,20 @@ class Zinn_Translate_Renderer {
 			if ( ! isset( $item->ID ) ) {
 				continue;
 			}
-			$ref   = 'menu_item:' . (int) $item->ID;
+			$ref = 'menu_item:' . (int) $item->ID;
+			// ⛔ Every value escaped for where it lands: the walker prints `title` and a theme
+			// may print `description` without escaping; `attr_title` goes into an attribute.
 			$title = self::lookup( $ref, 'title' );
 			if ( null !== $title ) {
-				$item->title = $title;
+				$item->title = self::inline_markup( $title );
 			}
 			$attr = self::lookup( $ref, 'attr_title' );
 			if ( null !== $attr ) {
-				$item->attr_title = $attr;
+				$item->attr_title = esc_attr( wp_strip_all_tags( $attr ) );
 			}
 			$description = self::lookup( $ref, 'description' );
 			if ( null !== $description ) {
-				$item->description = $description;
+				$item->description = self::inline_markup( $description );
 			}
 		}
 		return (array) $items;
@@ -308,7 +349,7 @@ class Zinn_Translate_Renderer {
 		}
 		$translated = self::lookup( 'navlabel:' . sha1( $label ), 'label' );
 		if ( null !== $translated ) {
-			$block['attrs']['label'] = $translated;
+			$block['attrs']['label'] = self::inline_markup( $translated );
 		}
 		return $block;
 	}
@@ -336,7 +377,7 @@ class Zinn_Translate_Renderer {
 			}
 			$translated = self::lookup( $page->post_type . ':' . $page->ID, 'title' );
 			if ( null !== $translated ) {
-				$page->post_title = $translated;
+				$page->post_title = self::inline_markup( $translated );
 			}
 		}
 		return $pages;
@@ -350,7 +391,9 @@ class Zinn_Translate_Renderer {
 	 */
 	public function blogname( $value ): string {
 		$translated = self::lookup( 'site:options', 'blogname' );
-		return null === $translated ? (string) $value : $translated;
+		// ⛔ `esc_html`, the form core stores this option in (`sanitize_option()`), so the
+		// many themes that print `get_option( 'blogname' )` unescaped get a safe value.
+		return null === $translated ? (string) $value : esc_html( $translated );
 	}
 
 	/**
@@ -361,7 +404,7 @@ class Zinn_Translate_Renderer {
 	 */
 	public function blogdescription( $value ): string {
 		$translated = self::lookup( 'site:options', 'blogdescription' );
-		return null === $translated ? (string) $value : $translated;
+		return null === $translated ? (string) $value : esc_html( $translated );
 	}
 
 	/**

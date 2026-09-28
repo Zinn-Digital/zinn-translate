@@ -46,23 +46,19 @@ final class Zinn_Translate_Switcher_Widget extends WP_Widget {
 		if ( '' === $switcher ) {
 			return;
 		}
-		// ⛔ `$args` is theme-supplied wrapper markup that WordPress itself passes through
-		// unescaped; escaping it here would print the theme's `<div>` as visible text.
-		// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Theme-supplied wrapper markup, per the widget API contract.
-		echo $args['before_widget'] ?? '';
+		// ⛔ `$args` is theme-supplied wrapper MARKUP, so `esc_html` would print the theme's
+		// `<div>` as visible text. `wp_kses_post` keeps the markup and still escapes late.
+		echo wp_kses_post( (string) ( $args['before_widget'] ?? '' ) );
 		if ( '' !== trim( (string) ( $instance['title'] ?? '' ) ) ) {
-			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Theme-supplied wrapper markup.
-			echo $args['before_title'] ?? '';
+			echo wp_kses_post( (string) ( $args['before_title'] ?? '' ) );
 			echo esc_html( apply_filters( 'widget_title', $instance['title'] ) );
-			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Theme-supplied wrapper markup.
-			echo $args['after_title'] ?? '';
+			echo wp_kses_post( (string) ( $args['after_title'] ?? '' ) );
 		}
-		// ⛔ `wp_kses_post` rather than raw: the markup is ours and built from escaped
+		// ⛔ `wp_kses` rather than raw: the markup is ours and built from escaped
 		// values, but a widget renders on every page of the site and "it is our own markup"
 		// is the reasoning that eventually prints something that is not.
-		echo wp_kses_post( $switcher );
-		// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Theme-supplied wrapper markup.
-		echo $args['after_widget'] ?? '';
+		echo wp_kses( $switcher, Zinn_Translate_Switcher::allowed_html() );
+		echo wp_kses_post( (string) ( $args['after_widget'] ?? '' ) );
 	}
 
 	/**
