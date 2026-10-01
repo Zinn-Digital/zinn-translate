@@ -43,7 +43,10 @@ final class Zinn_Translate_Provider_Gemini implements Zinn_Translate_Provider {
 	 * default follows the cheapest measured option, never the most capable one, because the
 	 * money is somebody's and the difference on a 90,000-word site is not small.
 	 */
-	private const DEFAULT_MODEL = 'gemini-2.5-flash';
+	// ⚖️ Owner ruling 2026-10-01: ONE translation model on every path we ship — the engine's
+	// `engine/engine/i18n/translation_model.py` (a test fails if this differs). `gemini-2.5-flash`
+	// was the cheapest when written; Google now refuses the 2.5 line to new keys.
+	private const DEFAULT_MODEL = 'gemini-3.8-flash';
 
 	// phpcs:ignore PluginCheck.CodeAnalysis.AIProvider.DirectIntegration -- The customer's OWN provider key is the product (bring your own key): the site owner chose this vendor and pays it directly. The WordPress AI Client exists only from WordPress 7.0 and this plugin supports 6.6.
 	private const ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/models/';
@@ -144,6 +147,8 @@ final class Zinn_Translate_Provider_Gemini implements Zinn_Translate_Provider {
 							// proofread by its owner.
 							'temperature'      => 0,
 							'responseMimeType' => 'application/json',
+							// The cheapest thinking the 3.7/3.8 line accepts (it refuses `minimal`).
+							'thinkingConfig'   => array( 'thinkingLevel' => 'low' ),
 						),
 					)
 				),

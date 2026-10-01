@@ -7,7 +7,7 @@ Tags: translation, multilingual, seo, hreflang, woocommerce
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 2.4.0
+Stable tag: 2.4.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -128,6 +128,10 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 4. Per-language sitemaps and `llms.txt` addresses, with links to check them.
 
 == Changelog ==
+
+= 2.4.1 =
+* The Gemini provider now defaults to gemini-3.8-flash, the current Google model for translation (the older default is no longer offered to new API keys). A model you chose in Settings is unchanged.
+* Translations of this plugin itself are corrected: every locale is in its own script, with the original spacing and placeholders preserved.
 
 = 2.4.0 =
 * Smaller download: the editable translation sources (.po) are no longer shipped; WordPress only ever loads the compiled .mo and .l10n.php files, which are unchanged.
