@@ -22,7 +22,7 @@ msgstr "https://zinndigital.com/wordpress-plugins/zinn-translate"
 #. Description of the plugin
 #: zinn-translate.php
 msgid "Publishes this site in every language you choose, on its own web addresses, with translated slugs, metadata, menus, WooCommerce products, hreflang, per-language sitemaps and llms.txt. Translate with your Zinn Digital® plan or with your own provider key."
-msgstr "使用您选择的每种语言发布本网站，拥有其独立的网址，并包含已翻译的别名、元数据、菜单、WooCommerce 产品、hreflang、每种语言的站点地图以及 llms.txt。使用您的 Zinn Digital® 方案或您自己的提供商密钥进行翻译。"
+msgstr "将本网站发布为您选择的每种语言版本，使用各自的网址，并包含已翻译的别名、元数据、菜单、WooCommerce 产品、hreflang、分语言站点地图以及 llms.txt。您可以使用您的 Zinn Digital® 方案或您自己的提供商密钥进行翻译。"
 
 #. Author of the plugin
 #: zinn-translate.php
@@ -36,11 +36,11 @@ msgstr "https://zinndigital.com"
 
 #: includes/class-zinn-translate-admin-fields.php:580
 msgid "Stored. Type a new value to replace it."
-msgstr "已保存。请输入新值进行替换。"
+msgstr "已保存。请输入新值以替换它。"
 
 #: includes/class-zinn-translate-admin-fields.php:640
 msgid "Filter this list…"
-msgstr "筛选此列表……"
+msgstr "筛选此列表…"
 
 #: includes/class-zinn-translate-admin-fields.php:641
 msgid "Filter this list"
@@ -48,15 +48,15 @@ msgstr "筛选此列表"
 
 #: includes/class-zinn-translate-admin-fields.php:657
 msgid "Nothing matches that filter."
-msgstr "没有符合该筛选条件的项。"
+msgstr "没有符合该筛选条件的内容。"
 
 #: includes/class-zinn-translate-admin-fields.php:688
 msgid "Add a row"
-msgstr "添加行"
+msgstr "添加一行"
 
 #: includes/class-zinn-translate-admin-fields.php:725
 msgid "Remove this row"
-msgstr "删除此行"
+msgstr "移除此行"
 
 #: includes/class-zinn-translate-admin-fields.php:725
 msgid "Remove"
@@ -82,11 +82,11 @@ msgstr "已复制"
 
 #: includes/class-zinn-translate-admin-ui.php:422
 msgid "Every Zinn® plugin on this site, and whether it is working."
-msgstr "此网站上的每一个 Zinn® 插件，以及它是否正在运行。"
+msgstr "此站点上的每个 Zinn® 插件，以及其是否正常工作。"
 
 #: includes/class-zinn-translate-admin-ui.php:437
 msgid "No connection is needed for this plugin."
-msgstr "此插件无需连接。"
+msgstr "此插件不需要连接。"
 
 #: includes/class-zinn-translate-admin-ui.php:442
 msgid "Open settings"
@@ -99,7 +99,7 @@ msgstr "您没有权限更改这些设置。"
 
 #: includes/class-zinn-translate-admin-ui.php:799
 msgid "Settings sections"
-msgstr "设置区块"
+msgstr "设置部分"
 
 #: includes/class-zinn-translate-admin-ui.php:871
 msgid "Support"
@@ -119,15 +119,15 @@ msgstr "导出设置"
 
 #: includes/class-zinn-translate-admin-ui.php:976
 msgid "Reset to defaults"
-msgstr "恢复默认设置"
+msgstr "恢复默认值"
 
 #: includes/class-zinn-translate-admin-ui.php:977
 msgid "This puts every setting on this plugin back to its default. Continue?"
-msgstr "这会将此插件的所有设置恢复为默认值。是否继续？"
+msgstr "这将把此插件的每项设置恢复为默认值。您要继续吗？"
 
 #: includes/class-zinn-translate-admin-ui.php:984
 msgid "Diagnostics for support"
-msgstr "支持诊断"
+msgstr "支持诊断信息"
 
 #: includes/class-zinn-translate-admin-ui.php:993
 msgid "Import a settings file"
@@ -139,7 +139,7 @@ msgstr "导入"
 
 #: includes/class-zinn-translate-admin-ui.php:997
 msgid "Exported files never contain passwords, tokens or API keys — you will need to enter those again on the new site."
-msgstr "导出的文件中绝不包含密码、令牌或 API 密钥——您需要在新站点上重新输入这些信息。"
+msgstr "导出的文件绝不包含密码、令牌或 API 密钥 — 您需要在新站点上重新输入这些内容。"
 
 #: includes/class-zinn-translate-admin-ui.php:1096
 msgid "Settings saved."
@@ -147,7 +147,7 @@ msgstr "设置已保存。"
 
 #: includes/class-zinn-translate-admin-ui.php:1143
 msgid "Every setting on this plugin is back to its default."
-msgstr "此插件的所有设置已恢复为默认值。"
+msgstr "此插件的所有设置均已恢复为默认值。"
 
 #: includes/class-zinn-translate-admin-ui.php:1186
 msgid "Done."
@@ -163,7 +163,7 @@ msgstr "无法读取该文件。请选择从 Zinn® 插件导出的设置文件�
 
 #: includes/class-zinn-translate-admin-ui.php:1265
 msgid "That file is too large to be a settings export."
-msgstr "该文件太大，无法作为设置导出。"
+msgstr "该文件过大，不能作为设置导出文件。"
 
 #: includes/class-zinn-translate-admin-ui.php:1278
 msgid "That file is not a Zinn® settings export."
@@ -173,14 +173,14 @@ msgstr "该文件不是 Zinn® 设置导出文件。"
 #: includes/class-zinn-translate-admin-ui.php:1286
 #, php-format
 msgid "That file was exported from a different plugin (%s), so importing it here would store settings this plugin does not understand."
-msgstr "该文件是从另一个插件 (%s) 导出的，因此在这里导入它将存储该插件无法识别的设置。"
+msgstr "该文件是从其他插件 (%s) 导出的，因此在此处导入它将保存此插件无法识别的设置。"
 
 #. translators: %d: how many settings were imported.
 #: includes/class-zinn-translate-admin-ui.php:1316
 #, php-format
 msgid "%d setting imported. Passwords and API keys are never in an export, so enter those again."
 msgid_plural "%d settings imported. Passwords and API keys are never in an export, so enter those again."
-msgstr[0] "已导入 %d 个设置。密码和 API 密钥不会包含在导出文件中，请重新输入。"
+msgstr[0] "已导入 %d 项设置。密码和 API 密钥绝不会包含在导出文件中，因此请重新输入。"
 
 #: includes/class-zinn-translate-admin.php:65
 msgid "Translate"
@@ -192,7 +192,7 @@ msgstr "手动覆盖"
 
 #: includes/class-zinn-translate-admin.php:84
 msgid "Sitemaps and URLs"
-msgstr "站点地图和网址"
+msgstr "站点地图和 URL"
 
 #: includes/class-zinn-translate-admin.php:114
 msgid "General"
@@ -204,7 +204,7 @@ msgstr "谁来支付翻译费用"
 
 #: includes/class-zinn-translate-admin.php:120
 msgid "Either your Zinn Digital® plan, or an API key of your own. There is no free tier — somebody pays a provider for every word."
-msgstr "无论是您的 Zinn Digital® 方案，还是您自己的 API 密钥。没有免费层——每个人使用每个字都需要向提供商付费。"
+msgstr "无论是您的 Zinn Digital® 方案，还是您自备的 API 密钥。这里没有免费层级 — 每个词都有人向服务商付费。"
 
 #: includes/class-zinn-translate-admin.php:123
 msgid "My Zinn Digital® plan"
@@ -212,7 +212,7 @@ msgstr "我的 Zinn Digital® 方案"
 
 #: includes/class-zinn-translate-admin.php:124
 msgid "My own provider key"
-msgstr "我的提供商密钥"
+msgstr "我自己的提供商密钥"
 
 #: includes/class-zinn-translate-admin.php:131
 msgid "Site ID"
@@ -220,7 +220,7 @@ msgstr "站点 ID"
 
 #: includes/class-zinn-translate-admin.php:132
 msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
-msgstr "从您的 Zinn Digital® 控制面板，在此网站的“翻译”选项卡上。"
+msgstr "从您的 Zinn Digital® 仪表盘，在此站点的 Translation 选项卡中。"
 
 #: includes/class-zinn-translate-admin.php:139
 msgid "Site token"
@@ -228,11 +228,11 @@ msgstr "站点令牌"
 
 #: includes/class-zinn-translate-admin.php:142
 msgid "An API key from your Zinn Digital® dashboard, on its API keys page. Give it the sites.view and sites.translation.manage permissions."
-msgstr "来自 Zinn Digital® 仪表板上“API 密钥”页面的 API 密钥。为其授予 sites.view 和 sites.translation.manage 权限。"
+msgstr "来自您的 Zinn Digital® 仪表盘中“API 密钥”页面的 API 密钥。为其授予 sites.view 和 sites.translation.manage 权限。"
 
 #: includes/class-zinn-translate-admin.php:150
 msgid "Provider"
-msgstr "服务商"
+msgstr "提供商"
 
 #: includes/class-zinn-translate-admin.php:160
 msgid "API key"
@@ -240,19 +240,19 @@ msgstr "API 密钥"
 
 #: includes/class-zinn-translate-admin.php:161
 msgid "Your key, billed to you by the provider. It is stored on this site and sent only to them."
-msgstr "您的密钥，由提供商向您收费。它存储在本网站上，且仅发送给他们。"
+msgstr "您的密钥，由提供商向您收费。它存储在此网站上，且仅发送给他们。"
 
 #: includes/class-zinn-translate-admin.php:169
 msgid "Model"
-msgstr "模型"
+msgstr "型号"
 
 #: includes/class-zinn-translate-admin.php:170
 msgid "Leave empty for the cheapest model that does the job well."
-msgstr "留空则使用能胜任工作的最便宜模型。"
+msgstr "留空以使用能够很好完成任务的最便宜模型。"
 
 #: includes/class-zinn-translate-admin.php:177
 msgid "This site is written in"
-msgstr "本网站的语言为"
+msgstr "本站点的语言为"
 
 #: includes/class-zinn-translate-admin.php:178
 msgid "Leave empty to use the site language from WordPress settings."
@@ -260,19 +260,19 @@ msgstr "留空则使用 WordPress 设置中的站点语言。"
 
 #: includes/class-zinn-translate-admin.php:189
 msgid "Languages to publish"
-msgstr "发布语言"
+msgstr "要发布的语言"
 
 #: includes/class-zinn-translate-admin.php:190
 msgid "Each one gets its own web addresses and its own sitemap. Publish only the languages you want indexed."
-msgstr "每个站点都有自己的网址和网站地图。只发布您希望被索引的语言。"
+msgstr "每个语言都拥有各自的网址和站点地图。请仅发布您希望被索引的语言。"
 
 #: includes/class-zinn-translate-admin.php:206
 msgid "Translate automatically when I publish or update"
-msgstr "发布或更新时自动翻译"
+msgstr "在发布或更新时自动翻译"
 
 #: includes/class-zinn-translate-admin.php:207
 msgid "Editing a page marks its translations out of date and they are remade in the background. Editing without changing any words costs nothing."
-msgstr "编辑页面会将其译文标记为过期，系统将在后台重新生成。编辑但不更改任何字词不会消耗任何费用。"
+msgstr "编辑页面会将其翻译标记为已过期，并在后台重新生成。不更改任何文字的编辑不会产生任何费用。"
 
 #: includes/class-zinn-translate-admin.php:214
 msgid "What gets translated"
@@ -284,15 +284,15 @@ msgstr "文章类型"
 
 #: includes/class-zinn-translate-admin.php:232
 msgid "Translate the web addresses too"
-msgstr "请一并翻译网址"
+msgstr "同时翻译网址"
 
 #: includes/class-zinn-translate-admin.php:233
 msgid "French visitors get /fr/a-propos/ rather than /fr/about/. The untranslated address keeps working and redirects, so nothing that was indexed breaks."
-msgstr "法国访客将被引导至 /fr/a-propos/ 而不是 /fr/about/。未翻译的网址将继续有效并进行重定向，因此任何已被索引的内容都不会失效。"
+msgstr "法国访客将访问 /fr/a-propos/ 而不是 /fr/about/。未翻译的地址仍可正常访问并会自动重定向，因此已编入索引的内容均不会失效。"
 
 #: includes/class-zinn-translate-admin.php:240
 msgid "Translate SEO titles, descriptions and image alt text"
-msgstr "翻译 SEO 标题、描述和图片替代文本"
+msgstr "翻译 SEO 标题、描述和图像替代文本"
 
 #: includes/class-zinn-translate-admin.php:247
 msgid "Translate categories and tags"
@@ -308,7 +308,7 @@ msgstr "翻译 WooCommerce 产品和属性"
 
 #: includes/class-zinn-translate-admin.php:262
 msgid "Short descriptions, purchase notes, attribute labels and variation descriptions. Prices, SKUs and stored option values are never touched."
-msgstr "简短描述、购买备注、属性标签和变体描述。价格、SKU 和存储的选项值绝不会被修改。"
+msgstr "简短描述、购买须知、属性标签和变体描述。价格、SKU 及保存的选项值绝不会被修改。"
 
 #: includes/class-zinn-translate-admin.php:269
 msgid "SEO"
@@ -320,7 +320,7 @@ msgstr "添加 hreflang 标签"
 
 #: includes/class-zinn-translate-admin.php:275
 msgid "Tells search engines these pages are the same page in different languages. Leave this on unless another plugin is already doing it."
-msgstr "告诉搜索引擎这些页面是不同语言的相同页面。除非另一个插件已经在处理此功能，否则请保持开启。"
+msgstr "告知搜索引擎这些页面是同一页面的不同语言版本。除非已有其他插件在执行此操作，否则请保持开启。"
 
 #: includes/class-zinn-translate-admin.php:282
 msgid "Publish a sitemap for each language"
@@ -332,7 +332,7 @@ msgstr "为每种语言发布 llms.txt"
 
 #: includes/class-zinn-translate-admin.php:290
 msgid "A plain-text map of the site that AI answer engines read. They often cannot run JavaScript and may never fetch a sitemap."
-msgstr "AI 答案引擎可读取的纯文本网站地图。它们通常无法运行 JavaScript，并且可能永远不会获取站点地图。"
+msgstr "由人工智能回答引擎读取的纯文本站点地图。它们通常无法运行 JavaScript，并且可能永远不会获取站点地图。"
 
 #: includes/class-zinn-translate-admin.php:297
 #: includes/class-zinn-translate-switcher.php:138
@@ -346,7 +346,7 @@ msgstr "样式"
 
 #: includes/class-zinn-translate-admin.php:305
 msgid "Colours, spacing and corners are on the Styling tab. Place it with the block, the [zinn_language_switcher] shortcode, or a menu."
-msgstr "颜色、间距和圆角在“样式”选项卡中。将其与区块、[zinn_language_switcher] 简码或菜单一起放置。"
+msgstr "颜色、间距和圆角位于“样式”标签页中。您可以使用区块、[zinn_language_switcher] 简码或菜单进行放置。"
 
 #: includes/class-zinn-translate-admin.php:312
 msgid "Show only these languages"
@@ -354,43 +354,43 @@ msgstr "仅显示这些语言"
 
 #: includes/class-zinn-translate-admin.php:313
 msgid "Leave empty to show every language you publish."
-msgstr "留空则显示您发布的所有语言。"
+msgstr "留空可显示您发布的每种语言。"
 
 #: includes/class-zinn-translate-admin.php:319
 msgid "Name each language in its own language"
-msgstr "用各自的语言显示每种语言的名称"
+msgstr "用每种语言自身的语言为其命名"
 
 #: includes/class-zinn-translate-admin.php:320
 msgid "Deutsch rather than German. Somebody who cannot read the current page cannot read \"German\" either."
-msgstr "Deutsch 而不是 German。无法阅读当前页面的人也无法阅读 \"German\"。"
+msgstr "是 Deutsch 而不是 German。无法阅读当前页面的人也无法阅读“German”。"
 
 #: includes/class-zinn-translate-admin.php:327
 msgid "Show flags"
-msgstr "显示标志"
+msgstr "显示旗帜"
 
 #: includes/class-zinn-translate-admin.php:328
 msgid "Off by default: a language is not a country, and Arabic and Spanish have no single flag that does not exclude most of their speakers."
-msgstr "默认关闭：语言不等于国家，阿拉伯语和西班牙语也没有任何一面国旗能够代表其绝大多数的使用者而不产生排他性。"
+msgstr "默认关闭：语言并不代表国家，阿拉伯语和西班牙语也没有任何一面单独的旗帜能够不排除其大部分使用者。"
 
 #: includes/class-zinn-translate-admin.php:335
 msgid "Include the language being read"
-msgstr "包含正在读取的语言"
+msgstr "包含正在阅读的语言"
 
 #: includes/class-zinn-translate-admin.php:342
 msgid "Include the original language"
-msgstr "包含原文"
+msgstr "包含原始语言"
 
 #: includes/class-zinn-translate-admin.php:349
 msgid "Add it to this menu"
-msgstr "添加到此菜单"
+msgstr "将其添加到此菜单"
 
 #: includes/class-zinn-translate-admin.php:350
 msgid "Only the menu you name here. Nothing is added to any other menu on the site."
-msgstr "仅显示您在此处命名的菜单。网站上的任何其他菜单都不会添加任何内容。"
+msgstr "仅限您在此命名的菜单。不会向网站上的任何其他菜单添加任何内容。"
 
 #: includes/class-zinn-translate-admin.php:400
 msgid "Accent"
-msgstr "重音符号"
+msgstr "强调"
 
 #: includes/class-zinn-translate-admin.php:404
 msgid "Background"
@@ -424,21 +424,21 @@ msgstr "无"
 #: includes/class-zinn-translate-admin.php:471
 #, php-format
 msgid "On a Zinn Digital® plan you choose the languages to publish on this site's Translation tab in your dashboard, under \"Shown to visitors\". This site checks it every hour. Publishing now: %s."
-msgstr "在 Zinn Digital® 套餐中，您可以在控制面板的“Translation”标签页下的“Shown to visitors”中选择要在该网站上发布的语言。本网站每小时检查一次。正在发布：%s。"
+msgstr "在 Zinn Digital® 方案中，您可以在控制板中此网站的“翻译”标签页下的“向访客显示”中选择要发布的语言。本网站每小时检查一次。正在发布：%s。"
 
 #. translators: %s: comma-separated language names, or "none".
 #: includes/class-zinn-translate-admin.php:474
 #, php-format
 msgid "On a Zinn Digital® plan you choose the languages to publish on this site's Translation tab in your dashboard. This site has not read that choice yet, so it is still publishing: %s. Check the Site ID and token above."
-msgstr "在 Zinn Digital® 方案中，您可以在控制面板的本站点“翻译”选项卡中选择要发布的语言。本站点尚未读取该选择，因此目前仍发布：%s。请检查上方站点 ID 和令牌。"
+msgstr "在 Zinn Digital® 方案中，您可以在仪表盘中该站点的“翻译”选项卡上选择要发布的语言。该站点尚未读取该选择，因此仍在发布：%s。请检查上方的站点 ID 和令牌。"
 
 #: includes/class-zinn-translate-admin.php:525
 msgid "Edit any translation here. An edited translation is kept exactly as you wrote it and is never overwritten when the page is translated again."
-msgstr "在这里编辑任何翻译。编辑后的翻译会完全按照您的书写保留，在页面再次翻译时绝不会被覆盖。"
+msgstr "在此处编辑任何翻译。编辑后的翻译将完全按照您编写的内容保留，并在重新翻译页面时绝不会被覆盖。"
 
 #: includes/class-zinn-translate-admin.php:546
 msgid "Every language"
-msgstr "每种语言"
+msgstr "所有语言"
 
 #: includes/class-zinn-translate-admin.php:553
 msgid "Search translations"
@@ -471,23 +471,23 @@ msgstr "保存"
 
 #: includes/class-zinn-translate-admin.php:568
 msgid "Nothing translated yet. Publish a language and translation starts in the background."
-msgstr "尚未进行翻译。发布语言后，翻译将在后台开始。"
+msgstr "尚未翻译任何内容。发布某种语言，后台将开始进行翻译。"
 
 #: includes/class-zinn-translate-admin.php:601
 msgid "These addresses are live. Open any of them to check it, and submit the sitemap index to Google Search Console."
-msgstr "这些地址当前处于活动状态。请打开其中任意一个进行检查，并将站点地图索引提交给 Google Search Console。"
+msgstr "这些地址已生效。请打开其中任意一个进行检查，并将站点地图索引提交至 Google Search Console。"
 
 #: includes/class-zinn-translate-admin.php:622
 msgid "You are not allowed to edit translations on this site."
-msgstr "您无权在此网站上编辑翻译。"
+msgstr "您没有权限在此站点上编辑翻译。"
 
 #: includes/class-zinn-translate-admin.php:650
 msgid "Edited by you — kept"
-msgstr "您已编辑 — 保留"
+msgstr "由您编辑 — 已保留"
 
 #: includes/class-zinn-translate-admin.php:652
 msgid "Source changed — will be redone"
-msgstr "源已更改 — 将重新生成"
+msgstr "来源已更改 — 将重新执行"
 
 #: includes/class-zinn-translate-admin.php:654
 msgid "Up to date"
@@ -499,11 +499,11 @@ msgstr "已连接"
 
 #: includes/class-zinn-translate-connection.php:60
 msgid "Connecting…"
-msgstr "正在连接……"
+msgstr "正在连接…"
 
 #: includes/class-zinn-translate-connection.php:62
 msgid "Connected, but something needs attention"
-msgstr "已连接，但有需要注意的问题"
+msgstr "已连接，但有事项需要注意"
 
 #: includes/class-zinn-translate-connection.php:64
 msgid "Not connected"
@@ -515,11 +515,11 @@ msgstr "在您自己的账户上运行"
 
 #: includes/class-zinn-translate-connection.php:68
 msgid "We could not check this"
-msgstr "我们无法检查此内容"
+msgstr "我们无法检查此项"
 
 #: includes/class-zinn-translate-connection.php:93
 msgid "This plugin did not say why. Send a diagnostics report and we will look."
-msgstr "此插件未说明原因。请发送诊断报告，我们将进行查看。"
+msgstr "该插件未说明原因。请发送诊断报告，我们将进行查看。"
 
 #: includes/class-zinn-translate-connection.php:161
 msgid "Connection status"
@@ -529,23 +529,23 @@ msgstr "连接状态"
 #: includes/class-zinn-translate-connection.php:189
 #, php-format
 msgid "Last checked %s ago."
-msgstr "最后检查于 %s 前。"
+msgstr "上次检查于 %s 前。"
 
 #: includes/class-zinn-translate-connection.php:251
 msgid "(opens in a new tab)"
-msgstr "（在新标签页中打开）"
+msgstr "（在新的标签页中打开）"
 
 #: includes/class-zinn-translate-diagnostics.php:199
 msgid "Send this to Zinn® support"
-msgstr "发送至 Zinn® 支持"
+msgstr "发送此内容至 Zinn® 支持团队"
 
 #: includes/class-zinn-translate-diagnostics.php:201
 msgid "This is exactly what will be sent — nothing else, and nothing hidden. Your passwords, tokens and API keys are not in it."
-msgstr "这正是将要发送的内容——没有别的，也没有隐藏内容。您的密码、令牌和 API 密钥均不包含在其中。"
+msgstr "这正是将要发送的全部内容——没有其他内容，也没有任何隐藏信息。其中不包含您的密码、令牌和 API 密钥。"
 
 #: includes/class-zinn-translate-diagnostics.php:204
 msgid "The diagnostics report that will be sent"
-msgstr "将发送的诊断报告"
+msgstr "将要发送的诊断报告"
 
 #: includes/class-zinn-translate-diagnostics.php:207
 msgid "Copy to clipboard"
@@ -553,41 +553,41 @@ msgstr "复制到剪贴板"
 
 #: includes/class-zinn-translate-diagnostics.php:214
 msgid "Send this report to Zinn® support"
-msgstr "将此报告发送至 Zinn® 支持团队"
+msgstr "将此报告发送给 Zinn® 支持团队"
 
 #: includes/class-zinn-translate-diagnostics.php:216
 msgid "We open a support ticket for you and reply by email. If you would rather not send it, copy it above and paste it into a ticket yourself."
-msgstr "我们将为您创建一个支持工单并通过电子邮件回复。如果您不想发送，请将其复制并自行粘贴到工单中。"
+msgstr "我们将为您创建支持工单并通过电子邮件回复。如果您不希望发送，请复制上方内容并自行粘贴到工单中。"
 
 #. translators: %s: the transport error reported by WordPress.
 #: includes/class-zinn-translate-diagnostics.php:270
 #, php-format
 msgid "We could not reach Zinn Digital® from this server (%s). Copy the report above and open a ticket instead — nothing about your settings is wrong."
-msgstr "无法从此服务器 (%s) 连接到 Zinn Digital®。请复制上方的报告并提交工单 —— 您的设置没有任何问题。"
+msgstr "我们无法从此服务器（%s）连接到 Zinn Digital®。请复制上方的报告并提交工单 — 您的设置没有任何问题。"
 
 #: includes/class-zinn-translate-diagnostics.php:284
 msgid "Sent. Zinn® support has your report and will reply by email."
-msgstr "Zinn® 客服已收到您的报告，并将通过电子邮件回复。"
+msgstr "已发送。Zinn® 支持团队已收到您的报告，并将通过电子邮件回复。"
 
 #. translators: %s: the support reference for the report just sent.
 #: includes/class-zinn-translate-diagnostics.php:287
 #, php-format
 msgid "Sent. Zinn® support has your report — reference %s — and will reply by email."
-msgstr "已收到您的报告 — 编号 %s — Zinn® 支持团队将通过电子邮件回复。"
+msgstr "已发送。Zinn® 支持团队已收到您的报告 — 参考编号 %s — 并将通过电子邮件回复。"
 
 #: includes/class-zinn-translate-diagnostics.php:296
 msgid "You have sent several reports in a short time. Wait a few minutes and try again — the earlier ones did arrive."
-msgstr "您在短时间内发送了多个报告。请稍候几分钟再试——之前的报告已经送达。"
+msgstr "您在短时间内发送了多份报告。请等待几分钟后再试 — 之前的报告已成功送达。"
 
 #: includes/class-zinn-translate-diagnostics.php:303
 msgid "Zinn Digital® could not accept the report just now — that is our end, not yours. Try again shortly, or copy the report above into a ticket."
-msgstr "Zinn Digital® 刚才无法接受该报告——这是我们这边的问题，而非您的。请稍后重试，或将上面的报告复制到工单中。"
+msgstr "Zinn Digital® 刚才无法接收报告——这是我们这边的问题，而非您的问题。请稍后重试，或将上述报告复制到工单中。"
 
 #. translators: %d: the HTTP status code the server returned.
 #: includes/class-zinn-translate-diagnostics.php:311
 #, php-format
 msgid "The report was refused (HTTP %d). Copy it above and open a ticket, quoting that number."
-msgstr "报告被拒绝 (HTTP %d)。请将其复制并在上方提交工单，附上该编号。"
+msgstr "报告已被拒绝 (HTTP %d)。请复制上方内容并开立工单，同时附上该编号。"
 
 #. translators: %s: the Zinn Digital trade mark, which is not translated.
 #: includes/class-zinn-translate-promo.php:241
@@ -612,11 +612,11 @@ msgstr "隐藏此项"
 
 #: includes/class-zinn-translate-promo.php:424
 msgid "Zinn® hosting for WordPress"
-msgstr "Zinn® 的 WordPress 托管"
+msgstr "适用于 WordPress 的 Zinn® 托管"
 
 #: includes/class-zinn-translate-promo.php:425
 msgid "LiteSpeed, daily backups, free migration and a control panel built for people who run more than one site."
-msgstr "LiteSpeed、每日备份、免费迁移以及为管理多个网站的人而构建的控制面板。"
+msgstr "LiteSpeed、每日备份、免费迁移以及专为管理多个网站的用户打造的控制面板。"
 
 #: includes/class-zinn-translate-promo.php:431
 msgid "The Zinn® marketplace"
@@ -624,31 +624,31 @@ msgstr "Zinn® 市场"
 
 #: includes/class-zinn-translate-promo.php:432
 msgid "Buy and sell established sites, domains and link placements, with the money held safely until both sides are happy."
-msgstr "买卖已建成的网站、域名和外链，资金将安全托管，直到双方满意为止。"
+msgstr "买卖成熟的网站、域名和链接位置，资金将得到安全保管，直至双方均感到满意。"
 
 #: includes/class-zinn-translate-promo.php:479
 msgid "Zinn Hub® — hire people who do this for a living"
-msgstr "Zinn Hub® — 聘请以此为生的人"
+msgstr "Zinn Hub® — 聘请以此为生的专业人士"
 
 #: includes/class-zinn-translate-promo.php:480
 msgid "Our global freelance marketplace: browse over 10,000 ready-made services from writers, designers, developers and SEOs, or post a project and let them bid."
-msgstr "我们全球的自由职业者市场：浏览来自作家、设计师、开发人员和SEO专家的10,000多项现成服务，或者发布一个项目并让专家来竞标。"
+msgstr "我们的全球自由职业交易市场：浏览来自作者、设计师、开发者及 SEO 专家的 10,000 多个现成服务，或发布项目并让他们竞标。"
 
 #: includes/class-zinn-translate-prompt.php:211
 msgid "The API key was rejected. Check that it is still valid and has translation access, then save it again."
-msgstr "API 密钥已被拒绝。请检查该密钥是否仍然有效并具有翻译权限，然后重新保存。"
+msgstr "API 密钥已被拒绝。请检查该密钥是否仍然有效且拥有翻译权限，然后重新保存。"
 
 #: includes/class-zinn-translate-prompt.php:218
 msgid "The provider refused on billing or quota. Nothing was translated. Check the balance and limits on your account with them."
-msgstr "服务商因计费或配额问题拒绝了请求。未能翻译任何内容。请检查您在其账户中的余额和限制。"
+msgstr "服务商因账单或配额问题拒绝了请求。未翻译任何内容。请检查您在服务商处的账户余额和限制。"
 
 #: includes/class-zinn-translate-prompt.php:225
 msgid "The translation provider is having a problem at their end. Nothing was translated or charged, and it will try again on the next pass."
-msgstr "翻译服务商遇到了问题。本次没有进行翻译也没有扣费，系统将在下一次处理时重试。"
+msgstr "翻译服务提供商处出现问题。未进行任何翻译或扣费，将在下一次轮询时重试。"
 
 #: includes/class-zinn-translate-prompt.php:231
 msgid "The translation request failed and we could not tell why. Nothing was saved."
-msgstr "翻译请求失败，且无法得知原因。未保存任何内容。"
+msgstr "翻译请求失败，我们无法确定原因。未保存任何内容。"
 
 #: includes/class-zinn-translate-sitemap.php:139
 msgid "Sitemap index"
@@ -668,19 +668,19 @@ msgstr "LLM 内容映射"
 #: includes/class-zinn-translate-sitemap.php:150
 #, php-format
 msgid "%s LLM content map"
-msgstr "%s大语言模型内容映射"
+msgstr "%s LLM 内容映射"
 
 #: includes/class-zinn-translate-status.php:96
 msgid "Languages published"
-msgstr "已发布语言"
+msgstr "已发布的语言"
 
 #: includes/class-zinn-translate-status.php:100
 msgid "Site language"
-msgstr "网站语言"
+msgstr "站点语言"
 
 #: includes/class-zinn-translate-status.php:106
 msgid "SEO plugin"
-msgstr "SEO插件"
+msgstr "SEO 插件"
 
 #: includes/class-zinn-translate-status.php:134
 msgid "No translation provider is set up yet."
@@ -688,17 +688,17 @@ msgstr "尚未设置翻译服务提供商。"
 
 #: includes/class-zinn-translate-status.php:135
 msgid "Paste an API key from your chosen provider, or connect the site to a Zinn Digital® account, and translation starts on the next pass."
-msgstr "粘贴您所选服务商的 API 密钥，或者将网站连接到 Zinn Digital® 账户，翻译将在下一轮运行中开始。"
+msgstr "粘贴来自您所选提供商的 API 密钥，或将站点连接到 Zinn Digital® 账户，翻译将在下一次遍历时开始。"
 
 #. translators: %s: a translation provider's name, for example "DeepL".
 #: includes/class-zinn-translate-status.php:144
 #, php-format
 msgid "Translating with your own %s key."
-msgstr "使用您自己的 %s 密钥进行翻译。"
+msgstr "正在使用您自己的 %s 密钥进行翻译。"
 
 #: includes/class-zinn-translate-status.php:147
 msgid "This site is not connected to a Zinn Digital® account, which is fine — your provider bills you directly."
-msgstr "本网站未连接至 Zinn Digital® 账户，这没有关系——您的服务商会直接向您计费。"
+msgstr "此站点未连接到 Zinn Digital® 账户，这没有问题 — 您的提供商会直接向您计费。"
 
 #: includes/class-zinn-translate-status.php:156
 msgid "Not connected to Zinn Digital® yet."
@@ -706,23 +706,23 @@ msgstr "尚未连接到 Zinn Digital®。"
 
 #: includes/class-zinn-translate-status.php:157
 msgid "Add this site's ID and token from your Zinn Digital® dashboard, or switch to your own provider key to run without an account."
-msgstr "从您的 Zinn Digital® 仪表板添加此网站的 ID 和令牌，或者切换到您自己的提供商密钥以在没有账户的情况下运行。"
+msgstr "从您的 Zinn Digital® 仪表盘添加此站点的 ID 和令牌，或切换为您自己的提供商密钥以在没有账户的情况下运行。"
 
 #: includes/class-zinn-translate-status.php:164
 msgid "Connected to Zinn Digital®."
-msgstr "已连接至 Zinn Digital®。"
+msgstr "已连接到 Zinn Digital®。"
 
 #: includes/class-zinn-translate-status.php:179
 msgid "The translation provider is having a problem."
-msgstr "翻译服务遇到问题。"
+msgstr "翻译提供商遇到问题。"
 
 #: includes/class-zinn-translate-status.php:181
 msgid "Translation is paused — your provider needs attention."
-msgstr "翻译已暂停——您的提供商需要注意。"
+msgstr "翻译已暂停 — 您的服务提供商需要关注。"
 
 #: includes/class-zinn-translate-status.php:183
 msgid "Translation has not been set up yet."
-msgstr "尚未设置翻译。"
+msgstr "翻译尚未设置。"
 
 #: includes/class-zinn-translate-status.php:188
 msgid "Something went wrong at our end."
@@ -734,7 +734,7 @@ msgstr "查看其状态页面"
 
 #: includes/class-zinn-translate-status.php:201
 msgid "Fix this on your account"
-msgstr "在您的账户上修复此问题"
+msgstr "请在您的账户中修复此问题"
 
 #: includes/class-zinn-translate-style-presets.php:118
 msgid "Style preset"
@@ -742,7 +742,7 @@ msgstr "样式预设"
 
 #: includes/class-zinn-translate-style-presets.php:119
 msgid "A starting point. Anything below overrides it."
-msgstr "一个起点。其下的任何内容都会覆盖它。"
+msgstr "一个起点。下方的任何内容都会覆盖它。"
 
 #: includes/class-zinn-translate-style-presets.php:126
 msgid "Use my own colours and sizes"
@@ -750,7 +750,7 @@ msgstr "使用我自己的颜色和尺寸"
 
 #: includes/class-zinn-translate-style-presets.php:127
 msgid "Leave this off and the preset is used exactly as it is."
-msgstr "不勾选此项，预设将完全按原样使用。"
+msgstr "保持此项处于关闭状态，预设将按原样精确使用。"
 
 #: includes/class-zinn-translate-switcher-widget.php:30
 msgid "Zinn® language switcher"
@@ -759,7 +759,7 @@ msgstr "Zinn® 语言切换器"
 #: includes/class-zinn-translate-switcher-widget.php:31
 #: includes/class-zinn-translate-switcher.php:141
 msgid "Let visitors read this page in another language."
-msgstr "让访客以其他语言阅读此页面。"
+msgstr "允许访客以其他语言阅读此页面。"
 
 #: includes/class-zinn-translate-switcher-widget.php:75
 msgid "Title"
@@ -775,11 +775,11 @@ msgstr "下拉菜单"
 
 #: includes/class-zinn-translate-switcher.php:46
 msgid "Inline list"
-msgstr "内联列表"
+msgstr "行内列表"
 
 #: includes/class-zinn-translate-switcher.php:47
 msgid "Pills"
-msgstr "药丸"
+msgstr "胶囊标签"
 
 #: includes/class-zinn-translate-switcher.php:48
 msgid "Minimal text"
@@ -787,7 +787,7 @@ msgstr "极简文本"
 
 #: includes/class-zinn-translate-switcher.php:49
 msgid "Flags and names"
-msgstr "标记与名称"
+msgstr "旗帜和名称"
 
 #: includes/class-zinn-translate-switcher.php:50
 msgid "Stacked list"
@@ -799,94 +799,94 @@ msgstr "选择语言"
 
 #: includes/class-zinn-translate-updater.php:253
 msgid "See the Zinn Digital® release notes."
-msgstr "请参阅 Zinn Digital® 发行说明。"
+msgstr "查看 Zinn Digital® 发行说明。"
 
 #: includes/class-zinn-translate-updater.php:302
 msgid "The Zinn® update service did not issue a download link for this update. Check that this site can reach the Zinn® platform, then try again."
-msgstr "Zinn® 更新服务未为此更新发布下载链接。请检查此站点是否能够连接到 Zinn® 平台，然后重试。"
+msgstr "Zinn® 更新服务未提供此更新的下载链接。请检查此站点是否可以访问 Zinn® 平台，然后重试。"
 
 #. translators: %s: the download error reported by WordPress.
 #: includes/class-zinn-translate-updater.php:316
 #, php-format
 msgid "The update could not be downloaded from the Zinn® update service (%s). Try again in a few minutes."
-msgstr "无法从 Zinn® 更新服务 (%s) 下载更新。请几分钟后重试。"
+msgstr "无法从 Zinn® 更新服务（%s）下载更新。请在几分钟后重试。"
 
 #: includes/class-zinn-translate-updater.php:330
 msgid "The downloaded update failed its integrity check and was not installed."
-msgstr "已下载的更新未能通过完整性检查，因此未进行安装。"
+msgstr "下载的更新未通过完整性检查，未予安装。"
 
 #: includes/providers/class-zinn-translate-provider-deepl.php:157
 msgid "No DeepL API key is saved, so there is nothing to translate with."
-msgstr "未保存 DeepL API 密钥，因此无法进行翻译。"
+msgstr "未保存任何 DeepL API 密钥，因此无法进行翻译。"
 
 #. translators: %s: a language name, for example "Swahili".
 #: includes/providers/class-zinn-translate-provider-deepl.php:165
 #, php-format
 msgid "DeepL does not translate into %s. Choose Google Gemini or OpenAI for this language, or connect the site to Zinn Digital®."
-msgstr "DeepL 不支持翻译为 %s。请为此语言选择 Google Gemini 或 OpenAI，或将网站连接至 Zinn Digital®。"
+msgstr "DeepL 不支持翻译为%s。请为此语言选择 Google Gemini 或 OpenAI，或将网站连接到 Zinn Digital®。"
 
 #: includes/providers/class-zinn-translate-provider-deepl.php:207
 msgid "DeepL could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
-msgstr "无法连接到 DeepL。未进行任何翻译，也未收取任何费用；系统将在下次运行时重试。"
+msgstr "无法访问 DeepL。未翻译任何内容，亦未收取任何费用；将在下一次处理时重试。"
 
 #: includes/providers/class-zinn-translate-provider-deepl.php:219
 msgid "Your DeepL character quota is used up for this period. Translation resumes when it resets, or when you raise the limit on your DeepL account."
-msgstr "您的 DeepL 字符配额在此期间已用完。配额重置或您在 DeepL 账户中提高额度后，翻译将恢复。"
+msgstr "您本期的 DeepL 字符配额已用尽。重置后或在您的 DeepL 账户中提高限额后，翻译将会恢复。"
 
 #: includes/providers/class-zinn-translate-provider-deepl.php:229
 msgid "DeepL answered with something we could not read. Nothing was saved."
 msgstr "DeepL 返回了无法读取的内容。未保存任何内容。"
 
-#: includes/providers/class-zinn-translate-provider-gemini.php:108
+#: includes/providers/class-zinn-translate-provider-gemini.php:111
 msgid "No Google Gemini API key is saved, so there is nothing to translate with."
 msgstr "未保存任何 Google Gemini API 密钥，因此无法进行翻译。"
 
-#: includes/providers/class-zinn-translate-provider-gemini.php:156
+#: includes/providers/class-zinn-translate-provider-gemini.php:161
 msgid "Google Gemini could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
-msgstr "无法连接到 Google Gemini。未进行任何翻译，也未产生任何费用；系统将在下一轮重试。"
+msgstr "无法访问 Google Gemini。未翻译任何内容，亦未收取任何费用；将在下一次运行时重试。"
 
 #: includes/providers/class-zinn-translate-provider-openai.php:104
 msgid "No OpenAI API key is saved, so there is nothing to translate with."
-msgstr "未保存 OpenAI API 密钥，因此无法进行翻译。"
+msgstr "未保存任何 OpenAI API 密钥，因此无法进行翻译。"
 
 #: includes/providers/class-zinn-translate-provider-openai.php:140
 msgid "OpenAI could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
-msgstr "无法连接到 OpenAI。未进行翻译，也未产生任何费用；系统将在下一次重试。"
+msgstr "无法连接至 OpenAI。未翻译任何内容且未收取任何费用；将在下一次处理时重试。"
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:102
 msgid "This site is not connected to Zinn Digital®, so there is nothing to collect. Add the Site ID and token, or switch to your own provider key."
-msgstr "此网站未连接至 Zinn Digital®，因此无可收集的内容。请添加网站 ID 和令牌，或切换至您自己的提供商密钥。"
+msgstr "此站点未连接到 Zinn Digital®，因此没有可收集的内容。请添加站点 ID 和令牌，或切换为您自己的提供商密钥。"
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:135
 #: includes/providers/class-zinn-translate-provider-zinn.php:251
 msgid "This site is not connected to Zinn Digital®."
-msgstr "本网站与 Zinn Digital® 无关。"
+msgstr "此站点未连接到 Zinn Digital®。"
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:153
 msgid "Zinn Digital® could not be reached. Nothing was sent; it will try again on the next pass."
-msgstr "Zinn Digital® 无法访问。未发送任何内容；将在下一轮尝试中重试。"
+msgstr "无法连接到 Zinn Digital®。未发送任何内容；将在下一次运行时重试。"
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:169
 msgid "Translation is paused on this site. Check the account is up to date on your Zinn Digital® dashboard."
-msgstr "此网站的翻译已暂停。请在您的 Zinn Digital® 仪表板上检查账户是否已结清。"
+msgstr "此站点上的翻译已暂停。请在您的 Zinn Digital® 仪表盘上检查账户是否为最新状态。"
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:176
 #: includes/providers/class-zinn-translate-provider-zinn.php:275
 msgid "Zinn Digital® rejected this site's token. It must be an API key with the sites.view and sites.translation.manage permissions — create one on the API keys page of your dashboard."
-msgstr "Zinn Digital® 拒绝了此网站的令牌。它必须是具有 sites.view 和 sites.translation.manage 权限的 API 密钥——请在您的控制面板的 API 密钥页面上创建一个。"
+msgstr "Zinn Digital® 已拒绝此站点的令牌。它必须是具有 sites.view 和 sites.translation.manage 权限的 API 密钥 — 请在您仪表盘的 API 密钥页面上创建一个。"
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:207
 msgid "Zinn Digital® could not be reached. Your site keeps serving the translations it already has."
-msgstr "无法连接到 Zinn Digital®。您的网站将继续提供其现有的翻译。"
+msgstr "无法连接至 Zinn Digital®。您的网站将继续提供已有的翻译。"
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:219
 msgid "Zinn Digital® answered with something we could not read. Your site keeps serving the translations it already has."
-msgstr "Zinn Digital® 的响应无法读取。您的网站将继续提供现有的翻译。"
+msgstr "Zinn Digital® 返回了无法读取的响应。您的网站将继续提供已有的翻译。"
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:267
 msgid "Zinn Digital® could not be reached. Your site keeps publishing the languages it already has."
-msgstr "Zinn Digital® 无法访问。您的网站将继续发布其已有的语言。"
+msgstr "无法连接到 Zinn Digital®。您的网站将继续发布已有的语言。"
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:286
 msgid "Zinn Digital® answered with something we could not read. Your site keeps publishing the languages it already has."
-msgstr "Zinn Digital® 的回复无法读取。您的网站将继续发布已有的语言。"
+msgstr "Zinn Digital® 返回了我们无法读取的内容。您的网站将继续发布其已有的语言。"

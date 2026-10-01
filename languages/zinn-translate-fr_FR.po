@@ -22,7 +22,7 @@ msgstr "https://zinndigital.com/wordpress-plugins/zinn-translate"
 #. Description of the plugin
 #: zinn-translate.php
 msgid "Publishes this site in every language you choose, on its own web addresses, with translated slugs, metadata, menus, WooCommerce products, hreflang, per-language sitemaps and llms.txt. Translate with your Zinn Digital® plan or with your own provider key."
-msgstr "Publie ce site dans chaque langue de votre choix, sur ses propres adresses web, avec des slugs traduits, des métadonnées, des menus, des produits WooCommerce, des balises hreflang, des sitemaps par langue et llms.txt. Traduisez avec votre forfait Zinn Digital® ou avec votre propre clé de fournisseur."
+msgstr "Publie ce site dans chaque langue que vous choisissez, sur ses propres adresses web, avec des slugs, des métadonnées, des menus, des produits WooCommerce, hreflang, des plans de site par langue et llms.txt traduits. Traduisez avec votre forfait Zinn Digital® ou avec votre propre clé de fournisseur."
 
 #. Author of the plugin
 #: zinn-translate.php
@@ -36,11 +36,11 @@ msgstr "https://zinndigital.com"
 
 #: includes/class-zinn-translate-admin-fields.php:580
 msgid "Stored. Type a new value to replace it."
-msgstr "Enregistré. Saisissez une nouvelle valeur pour le remplacer."
+msgstr "Enregistré. Saisissez une nouvelle valeur pour la remplacer."
 
 #: includes/class-zinn-translate-admin-fields.php:640
 msgid "Filter this list…"
-msgstr "Filtrer cette liste..."
+msgstr "Filtrer cette liste…"
 
 #: includes/class-zinn-translate-admin-fields.php:641
 msgid "Filter this list"
@@ -48,7 +48,7 @@ msgstr "Filtrer cette liste"
 
 #: includes/class-zinn-translate-admin-fields.php:657
 msgid "Nothing matches that filter."
-msgstr "Aucun élément ne correspond à ce filtre."
+msgstr "Rien ne correspond à ce filtre."
 
 #: includes/class-zinn-translate-admin-fields.php:688
 msgid "Add a row"
@@ -60,7 +60,7 @@ msgstr "Supprimer cette ligne"
 
 #: includes/class-zinn-translate-admin-fields.php:725
 msgid "Remove"
-msgstr "Supprimer"
+msgstr "Retirer"
 
 #: includes/class-zinn-translate-admin-ui.php:280
 #: includes/class-zinn-translate-admin-ui.php:281
@@ -70,11 +70,11 @@ msgstr "Zinn Digital®"
 
 #: includes/class-zinn-translate-admin-ui.php:294
 msgid "Zinn Digital® — overview"
-msgstr "Zinn Digital® — aperçu"
+msgstr "Zinn Digital® — vue d’ensemble"
 
 #: includes/class-zinn-translate-admin-ui.php:295
 msgid "Overview"
-msgstr "Vue d'ensemble"
+msgstr "Vue d’ensemble"
 
 #: includes/class-zinn-translate-admin-ui.php:383
 msgid "Copied"
@@ -82,24 +82,24 @@ msgstr "Copié"
 
 #: includes/class-zinn-translate-admin-ui.php:422
 msgid "Every Zinn® plugin on this site, and whether it is working."
-msgstr "Chaque extension Zinn® sur ce site, et son état de fonctionnement."
+msgstr "Chaque extension Zinn® sur ce site, et si elle fonctionne."
 
 #: includes/class-zinn-translate-admin-ui.php:437
 msgid "No connection is needed for this plugin."
-msgstr "Aucune connexion n'est requise pour ce plugin."
+msgstr "Aucune connexion n’est requise pour cette extension."
 
 #: includes/class-zinn-translate-admin-ui.php:442
 msgid "Open settings"
-msgstr "Ouvrir les paramètres"
+msgstr "Ouvrir les réglages"
 
 #: includes/class-zinn-translate-admin-ui.php:770
 #: includes/class-zinn-translate-admin-ui.php:1331
 msgid "You do not have permission to change these settings."
-msgstr "Vous n'avez pas l'autorisation de modifier ces paramètres."
+msgstr "Vous n’avez pas la permission de modifier ces réglages."
 
 #: includes/class-zinn-translate-admin-ui.php:799
 msgid "Settings sections"
-msgstr "Sections de paramètres"
+msgstr "Sections de réglages"
 
 #: includes/class-zinn-translate-admin-ui.php:871
 msgid "Support"
@@ -115,7 +115,7 @@ msgstr "Outils"
 
 #: includes/class-zinn-translate-admin-ui.php:973
 msgid "Export settings"
-msgstr "Exporter les paramètres"
+msgstr "Exporter les réglages"
 
 #: includes/class-zinn-translate-admin-ui.php:976
 msgid "Reset to defaults"
@@ -123,7 +123,7 @@ msgstr "Rétablir les valeurs par défaut"
 
 #: includes/class-zinn-translate-admin-ui.php:977
 msgid "This puts every setting on this plugin back to its default. Continue?"
-msgstr "Ceci rétablit tous les paramètres de cette extension à leurs valeurs par défaut. Voulez-vous continuer ?"
+msgstr "Cela rétablira tous les réglages de cette extension à leurs valeurs par défaut. Souhaitez-vous continuer ?"
 
 #: includes/class-zinn-translate-admin-ui.php:984
 msgid "Diagnostics for support"
@@ -131,7 +131,7 @@ msgstr "Diagnostics pour le support"
 
 #: includes/class-zinn-translate-admin-ui.php:993
 msgid "Import a settings file"
-msgstr "Importer un fichier de paramètres"
+msgstr "Importer un fichier de réglages"
 
 #: includes/class-zinn-translate-admin-ui.php:995
 msgid "Import"
@@ -139,15 +139,15 @@ msgstr "Importer"
 
 #: includes/class-zinn-translate-admin-ui.php:997
 msgid "Exported files never contain passwords, tokens or API keys — you will need to enter those again on the new site."
-msgstr "Les fichiers exportés ne contiennent jamais de mots de passe, de jetons ou de clés API ; vous devrez les saisir à nouveau sur le nouveau site."
+msgstr "Les fichiers exportés ne contiennent jamais de mots de passe, de jetons ou de clés d’API — vous devrez les saisir à nouveau sur le nouveau site."
 
 #: includes/class-zinn-translate-admin-ui.php:1096
 msgid "Settings saved."
-msgstr "Paramètres enregistrés."
+msgstr "Réglages enregistrés."
 
 #: includes/class-zinn-translate-admin-ui.php:1143
 msgid "Every setting on this plugin is back to its default."
-msgstr "Tous les paramètres de cette extension sont revenus à leurs valeurs par défaut."
+msgstr "Tous les réglages de cette extension ont été rétablis par défaut."
 
 #: includes/class-zinn-translate-admin-ui.php:1186
 msgid "Done."
@@ -155,34 +155,34 @@ msgstr "Terminé."
 
 #: includes/class-zinn-translate-admin-ui.php:1190
 msgid "That action is not available."
-msgstr "Cette action n'est pas disponible."
+msgstr "Cette action n’est pas disponible."
 
 #: includes/class-zinn-translate-admin-ui.php:1257
 msgid "That file could not be read. Choose a settings file exported from a Zinn® plugin."
-msgstr "Impossible de lire ce fichier. Veuillez choisir un fichier de paramètres exporté à partir d'un module Zinn® plugin."
+msgstr "Ce fichier n’a pas pu être lu. Choisissez un fichier de réglages exporté depuis une extension Zinn®."
 
 #: includes/class-zinn-translate-admin-ui.php:1265
 msgid "That file is too large to be a settings export."
-msgstr "Ce fichier est trop volumineux pour être un exportation de paramètres."
+msgstr "Ce fichier est trop volumineux pour être une exportation de réglages."
 
 #: includes/class-zinn-translate-admin-ui.php:1278
 msgid "That file is not a Zinn® settings export."
-msgstr "Ce fichier n'est pas un export de paramètres Zinn®."
+msgstr "Ce fichier n'est pas une exportation de réglages Zinn®."
 
 #. translators: %s: the plugin slug the file was exported from.
 #: includes/class-zinn-translate-admin-ui.php:1286
 #, php-format
 msgid "That file was exported from a different plugin (%s), so importing it here would store settings this plugin does not understand."
-msgstr "Ce fichier a été exporté à partir d'un autre plugin (%s), son importation ici entraînerait donc l'enregistrement de paramètres que ce plugin ne prend pas en charge."
+msgstr "Ce fichier a été exporté depuis une extension différente (%s), donc l’importer ici enregistrerait des réglages que cette extension ne comprend pas."
 
 #. translators: %d: how many settings were imported.
 #: includes/class-zinn-translate-admin-ui.php:1316
 #, php-format
 msgid "%d setting imported. Passwords and API keys are never in an export, so enter those again."
 msgid_plural "%d settings imported. Passwords and API keys are never in an export, so enter those again."
-msgstr[0] "%d paramètre importé. Les mots de passe et clés API ne sont jamais inclus dans une exportation, veuillez donc les saisir à nouveau."
-msgstr[1] "%d paramètres importés. Les mots de passe et clés API ne sont jamais inclus dans une exportation, veuillez donc les saisir à nouveau."
-msgstr[2] "%d paramètres importés. Les mots de passe et clés API ne sont jamais inclus dans une exportation, veuillez donc les saisir à nouveau."
+msgstr[0] "%d réglage importé. Les mots de passe et les clés d’API ne sont jamais inclus dans un export, veuillez donc les saisir à nouveau."
+msgstr[1] "%d réglages importés. Les mots de passe et les clés d’API ne sont jamais inclus dans un export, veuillez donc les saisir à nouveau."
+msgstr[2] "%d réglages importés. Les mots de passe et les clés d’API ne sont jamais inclus dans un export, veuillez donc les saisir à nouveau."
 
 #: includes/class-zinn-translate-admin.php:65
 msgid "Translate"
@@ -194,7 +194,7 @@ msgstr "Remplacements manuels"
 
 #: includes/class-zinn-translate-admin.php:84
 msgid "Sitemaps and URLs"
-msgstr "Sitemaps et URL"
+msgstr "Plans du site et URL"
 
 #: includes/class-zinn-translate-admin.php:114
 msgid "General"
@@ -206,11 +206,11 @@ msgstr "Qui paie pour la traduction"
 
 #: includes/class-zinn-translate-admin.php:120
 msgid "Either your Zinn Digital® plan, or an API key of your own. There is no free tier — somebody pays a provider for every word."
-msgstr "Soit votre forfait Zinn Digital®, soit votre propre clé API. Il n'y a pas de formule gratuite : quelqu'un paie un fournisseur pour chaque mot."
+msgstr "Soit votre forfait Zinn Digital®, soit votre propre clé API. Il n'y a pas d'offre gratuite — quelqu'un paie un fournisseur pour chaque mot."
 
 #: includes/class-zinn-translate-admin.php:123
 msgid "My Zinn Digital® plan"
-msgstr "Mon abonnement Zinn Digital®"
+msgstr "Mon forfait Zinn Digital®"
 
 #: includes/class-zinn-translate-admin.php:124
 msgid "My own provider key"
@@ -218,11 +218,11 @@ msgstr "Ma propre clé de fournisseur"
 
 #: includes/class-zinn-translate-admin.php:131
 msgid "Site ID"
-msgstr "Identifiant du site"
+msgstr "ID du site"
 
 #: includes/class-zinn-translate-admin.php:132
 msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
-msgstr "Depuis votre tableau de bord Zinn Digital®, dans l'onglet Traduction de ce site."
+msgstr "Depuis votre tableau de bord Zinn Digital®, dans l'onglet Translation de ce site."
 
 #: includes/class-zinn-translate-admin.php:139
 msgid "Site token"
@@ -230,7 +230,7 @@ msgstr "Jeton du site"
 
 #: includes/class-zinn-translate-admin.php:142
 msgid "An API key from your Zinn Digital® dashboard, on its API keys page. Give it the sites.view and sites.translation.manage permissions."
-msgstr "Une clé d'API de votre tableau de bord Zinn Digital®, sur sa page de clés d'API. Attribuez-lui les autorisations sites.view et sites.translation.manage."
+msgstr "Une clé API issue de votre tableau de bord Zinn Digital®, sur sa page Clés API. Accordez-lui les permissions sites.view et sites.translation.manage."
 
 #: includes/class-zinn-translate-admin.php:150
 msgid "Provider"
@@ -242,7 +242,7 @@ msgstr "Clé API"
 
 #: includes/class-zinn-translate-admin.php:161
 msgid "Your key, billed to you by the provider. It is stored on this site and sent only to them."
-msgstr "Votre clé, qui vous est facturée par le fournisseur. Elle est stockée sur ce site et envoyée uniquement à celui-ci."
+msgstr "Votre clé, qui vous est facturée par le fournisseur. Elle est stockée sur ce site et envoyée uniquement à ce dernier."
 
 #: includes/class-zinn-translate-admin.php:169
 msgid "Model"
@@ -250,7 +250,7 @@ msgstr "Modèle"
 
 #: includes/class-zinn-translate-admin.php:170
 msgid "Leave empty for the cheapest model that does the job well."
-msgstr "Laissez vide pour le modèle le moins cher qui fait bien l'affaire."
+msgstr "Laissez vide pour le modèle le moins cher qui effectue bien la tâche."
 
 #: includes/class-zinn-translate-admin.php:177
 msgid "This site is written in"
@@ -258,7 +258,7 @@ msgstr "Ce site est rédigé en"
 
 #: includes/class-zinn-translate-admin.php:178
 msgid "Leave empty to use the site language from WordPress settings."
-msgstr "Laissez vide pour utiliser la langue du site définie dans les paramètres de WordPress."
+msgstr "Laissez vide pour utiliser la langue du site définie dans les réglages de WordPress."
 
 #: includes/class-zinn-translate-admin.php:189
 msgid "Languages to publish"
@@ -266,15 +266,15 @@ msgstr "Langues à publier"
 
 #: includes/class-zinn-translate-admin.php:190
 msgid "Each one gets its own web addresses and its own sitemap. Publish only the languages you want indexed."
-msgstr "Chacun dispose de ses propres adresses Web et de son propre plan de site. Ne publiez que les langues que vous souhaitez voir indexées."
+msgstr "Chacun bénéficie de ses propres adresses web et de son propre plan de site. Ne publiez que les langues que vous souhaitez indexer."
 
 #: includes/class-zinn-translate-admin.php:206
 msgid "Translate automatically when I publish or update"
-msgstr "Traduire automatiquement lors de la publication ou de la mise à jour"
+msgstr "Traduire automatiquement lorsque je publie ou mets à jour"
 
 #: includes/class-zinn-translate-admin.php:207
 msgid "Editing a page marks its translations out of date and they are remade in the background. Editing without changing any words costs nothing."
-msgstr "La modification d'une page marque ses traductions comme obsolètes et celles-ci sont régénérées en arrière-plan. Modifier une page sans changer aucun mot ne coûte rien."
+msgstr "La modification d’une page marque ses traductions comme obsolètes et elles sont recréées en arrière-plan. Modifier sans changer aucun mot ne coûte rien."
 
 #: includes/class-zinn-translate-admin.php:214
 msgid "What gets translated"
@@ -286,15 +286,15 @@ msgstr "Types de publication"
 
 #: includes/class-zinn-translate-admin.php:232
 msgid "Translate the web addresses too"
-msgstr "Traduisez les adresses web également"
+msgstr "Traduisez également les adresses web"
 
 #: includes/class-zinn-translate-admin.php:233
 msgid "French visitors get /fr/a-propos/ rather than /fr/about/. The untranslated address keeps working and redirects, so nothing that was indexed breaks."
-msgstr "Les visiteurs français obtiennent /fr/a-propos/ plutôt que /fr/about/. L'adresse non traduite continue de fonctionner et redirige, de sorte que rien de ce qui a été indexé ne se rompt."
+msgstr "Les visiteurs français obtiennent /fr/a-propos/ plutôt que /fr/about/. L'adresse non traduite continue de fonctionner et redirige, de sorte que rien de ce qui a été indexé ne soit cassé."
 
 #: includes/class-zinn-translate-admin.php:240
 msgid "Translate SEO titles, descriptions and image alt text"
-msgstr "Traduire les titres SEO, les descriptions et le texte alternatif des images"
+msgstr "Traduisez les titres SEO, les descriptions et le texte alternatif des images"
 
 #: includes/class-zinn-translate-admin.php:247
 msgid "Translate categories and tags"
@@ -306,11 +306,11 @@ msgstr "Traduire les menus de navigation"
 
 #: includes/class-zinn-translate-admin.php:261
 msgid "Translate WooCommerce products and attributes"
-msgstr "Traduire les produits et attributs WooCommerce"
+msgstr "Traduisez les produits et attributs WooCommerce"
 
 #: includes/class-zinn-translate-admin.php:262
 msgid "Short descriptions, purchase notes, attribute labels and variation descriptions. Prices, SKUs and stored option values are never touched."
-msgstr "Descriptions courtes, notes d'achat, étiquettes d'attributs et descriptions de variantes. Les prix, les SKU et les valeurs d'options enregistrées ne sont jamais modifiés."
+msgstr "Courtes descriptions, notes d'achat, libellés d'attributs et descriptions de variations. Les prix, les SKU et les valeurs d'options enregistrées ne sont jamais modifiés."
 
 #: includes/class-zinn-translate-admin.php:269
 msgid "SEO"
@@ -322,11 +322,11 @@ msgstr "Ajouter des balises hreflang"
 
 #: includes/class-zinn-translate-admin.php:275
 msgid "Tells search engines these pages are the same page in different languages. Leave this on unless another plugin is already doing it."
-msgstr "Indique aux moteurs de recherche que ces pages sont la même page dans des langues différentes. Laissez cette option activée, sauf si un autre module d'extension s'en charge déjà."
+msgstr "Indique aux moteurs de recherche que ces pages correspondent à la même page dans des langues différentes. Laissez cette option activée, à moins qu'une autre extension ne s'en charge déjà."
 
 #: includes/class-zinn-translate-admin.php:282
 msgid "Publish a sitemap for each language"
-msgstr "Publier un sitemap pour chaque langue"
+msgstr "Publiez un plan de site pour chaque langue"
 
 #: includes/class-zinn-translate-admin.php:289
 msgid "Publish llms.txt for each language"
@@ -334,7 +334,7 @@ msgstr "Publier llms.txt pour chaque langue"
 
 #: includes/class-zinn-translate-admin.php:290
 msgid "A plain-text map of the site that AI answer engines read. They often cannot run JavaScript and may never fetch a sitemap."
-msgstr "Un plan du site en texte brut que lisent les moteurs de réponse par IA. Ils ne peuvent souvent pas exécuter JavaScript et risquent de ne jamais récupérer de plan du site."
+msgstr "Un plan de site en texte brut que lisent les moteurs de réponse de l'IA. Ils ne peuvent souvent pas exécuter JavaScript et peuvent ne jamais récupérer de plan de site."
 
 #: includes/class-zinn-translate-admin.php:297
 #: includes/class-zinn-translate-switcher.php:138
@@ -348,7 +348,7 @@ msgstr "Style"
 
 #: includes/class-zinn-translate-admin.php:305
 msgid "Colours, spacing and corners are on the Styling tab. Place it with the block, the [zinn_language_switcher] shortcode, or a menu."
-msgstr "Les couleurs, les espacements et les coins se trouvent sur l'onglet Style. Placez-le avec le bloc, le code court [zinn_language_switcher] ou un menu."
+msgstr "Les couleurs, les espacements et les arrondis se trouvent dans l’onglet Style. Placez-le à l’aide du bloc, du code court [zinn_language_switcher] ou d’un menu."
 
 #: includes/class-zinn-translate-admin.php:312
 msgid "Show only these languages"
@@ -356,7 +356,7 @@ msgstr "Afficher uniquement ces langues"
 
 #: includes/class-zinn-translate-admin.php:313
 msgid "Leave empty to show every language you publish."
-msgstr "Laissez vide pour afficher toutes les langues que vous publiez."
+msgstr "Laissez vide pour afficher toutes les langues dans lesquelles vous publiez."
 
 #: includes/class-zinn-translate-admin.php:319
 msgid "Name each language in its own language"
@@ -364,7 +364,7 @@ msgstr "Nommez chaque langue dans sa propre langue"
 
 #: includes/class-zinn-translate-admin.php:320
 msgid "Deutsch rather than German. Somebody who cannot read the current page cannot read \"German\" either."
-msgstr "Deutsch plutôt que Allemand. Quelqu'un qui ne sait pas lire la page actuelle ne peut pas lire \"German\" non plus."
+msgstr "Deutsch plutôt que German. Quelqu'un qui ne peut pas lire la page actuelle ne peut pas non plus lire « German »."
 
 #: includes/class-zinn-translate-admin.php:327
 msgid "Show flags"
@@ -372,7 +372,7 @@ msgstr "Afficher les drapeaux"
 
 #: includes/class-zinn-translate-admin.php:328
 msgid "Off by default: a language is not a country, and Arabic and Spanish have no single flag that does not exclude most of their speakers."
-msgstr "Désactivé par défaut : une langue n'est pas un pays, et l'arabe ainsi que l'espagnol n'ont pas de drapeau unique qui n'exclue pas la plupart de leurs locuteurs."
+msgstr "Désactivé par défaut : une langue n'est pas un pays, et l'arabe et l'espagnol n'ont pas de drapeau unique qui n'exclue pas la plupart de leurs locuteurs."
 
 #: includes/class-zinn-translate-admin.php:335
 msgid "Include the language being read"
@@ -384,11 +384,11 @@ msgstr "Inclure la langue d'origine"
 
 #: includes/class-zinn-translate-admin.php:349
 msgid "Add it to this menu"
-msgstr "Ajouter à ce menu"
+msgstr "Ajoutez-le à ce menu"
 
 #: includes/class-zinn-translate-admin.php:350
 msgid "Only the menu you name here. Nothing is added to any other menu on the site."
-msgstr "Seul le menu que vous nommez ici. Rien n'est ajouté à un autre menu sur le site."
+msgstr "Uniquement le menu que vous nommez ici. Rien n'est ajouté aux autres menus du site."
 
 #: includes/class-zinn-translate-admin.php:400
 msgid "Accent"
@@ -416,7 +416,7 @@ msgstr "Taille du texte"
 
 #: includes/class-zinn-translate-admin.php:447
 msgid "Do not add it to a menu"
-msgstr "Ne l'ajoutez pas à un menu"
+msgstr "Ne pas l'ajouter à un menu"
 
 #: includes/class-zinn-translate-admin.php:468
 msgid "none"
@@ -426,17 +426,17 @@ msgstr "aucun"
 #: includes/class-zinn-translate-admin.php:471
 #, php-format
 msgid "On a Zinn Digital® plan you choose the languages to publish on this site's Translation tab in your dashboard, under \"Shown to visitors\". This site checks it every hour. Publishing now: %s."
-msgstr "Avec un abonnement Zinn Digital®, vous choisissez les langues à publier dans l'onglet Traduction de votre tableau de bord, sous « Affiché aux visiteurs ». Ce site effectue une vérification toutes les heures. Publication en cours : %s."
+msgstr "Avec une offre Zinn Digital®, vous choisissez les langues à publier dans l’onglet Traduction de votre tableau de bord sur ce site, sous « Shown to visitors ». Ce site effectue une vérification toutes les heures. Publication en cours : %s."
 
 #. translators: %s: comma-separated language names, or "none".
 #: includes/class-zinn-translate-admin.php:474
 #, php-format
 msgid "On a Zinn Digital® plan you choose the languages to publish on this site's Translation tab in your dashboard. This site has not read that choice yet, so it is still publishing: %s. Check the Site ID and token above."
-msgstr "Sur un abonnement Zinn Digital®, vous choisissez les langues à publier dans l'onglet Traduction du tableau de bord de ce site. Ce site n'a pas encore pris en compte ce choix, il publie donc toujours : %s. Vérifiez l'identifiant du site (Site ID) et le jeton ci-dessus."
+msgstr "Sur un forfait Zinn Digital®, vous choisissez les langues à publier dans l’onglet Traduction de ce site sur votre tableau de bord. Ce site n’a pas encore pris en compte ce choix, il publie donc toujours : %s. Vérifiez l’ID du site et le jeton ci-dessus."
 
 #: includes/class-zinn-translate-admin.php:525
 msgid "Edit any translation here. An edited translation is kept exactly as you wrote it and is never overwritten when the page is translated again."
-msgstr "Modifiez toute traduction ici. Une traduction modifiée est conservée exactement telle que vous l'avez écrite et n'est jamais écrasée lorsque la page est traduite à nouveau."
+msgstr "Modifiez n'importe quelle traduction ici. Une traduction modifiée est conservée exactement telle que vous l'avez rédigée et n'est jamais écrasée lorsque la page est traduite à nouveau."
 
 #: includes/class-zinn-translate-admin.php:546
 msgid "Every language"
@@ -464,7 +464,7 @@ msgstr "Traduction"
 
 #: includes/class-zinn-translate-admin.php:562
 msgid "Status"
-msgstr "Statut"
+msgstr "État"
 
 #: includes/class-zinn-translate-admin.php:563
 #: includes/class-zinn-translate-admin.php:582
@@ -477,11 +477,11 @@ msgstr "Rien n'a encore été traduit. Publiez une langue et la traduction comme
 
 #: includes/class-zinn-translate-admin.php:601
 msgid "These addresses are live. Open any of them to check it, and submit the sitemap index to Google Search Console."
-msgstr "Ces adresses sont actives. Ouvrez l'une d'entre elles pour la vérifier, puis soumettez l'index du sitemap à Google Search Console."
+msgstr "Ces adresses sont actives. Ouvrez l'une d'entre elles pour la vérifier, et soumettez l'index du plan de site à Google Search Console."
 
 #: includes/class-zinn-translate-admin.php:622
 msgid "You are not allowed to edit translations on this site."
-msgstr "Vous n'êtes pas autorisé à modifier les traductions sur ce site."
+msgstr "Vous n’avez pas l’autorisation de modifier les traductions sur ce site."
 
 #: includes/class-zinn-translate-admin.php:650
 msgid "Edited by you — kept"
@@ -489,7 +489,7 @@ msgstr "Modifié par vous — conservé"
 
 #: includes/class-zinn-translate-admin.php:652
 msgid "Source changed — will be redone"
-msgstr "Source modifiée — sera refaite"
+msgstr "Source modifiée — sera refait"
 
 #: includes/class-zinn-translate-admin.php:654
 msgid "Up to date"
@@ -505,7 +505,7 @@ msgstr "Connexion en cours…"
 
 #: includes/class-zinn-translate-connection.php:62
 msgid "Connected, but something needs attention"
-msgstr "Connecté, mais une intervention est requise"
+msgstr "Connecté, mais un élément requiert votre attention"
 
 #: includes/class-zinn-translate-connection.php:64
 msgid "Not connected"
@@ -513,15 +513,15 @@ msgstr "Non connecté"
 
 #: includes/class-zinn-translate-connection.php:66
 msgid "Running on your own account"
-msgstr "Exécution sur votre propre compte"
+msgstr "Fonctionne sur votre propre compte"
 
 #: includes/class-zinn-translate-connection.php:68
 msgid "We could not check this"
-msgstr "Nous n'avons pas pu vérifier ceci"
+msgstr "Nous n’avons pas pu vérifier cela"
 
 #: includes/class-zinn-translate-connection.php:93
 msgid "This plugin did not say why. Send a diagnostics report and we will look."
-msgstr "Ce plugin n'a pas indiqué la raison. Envoyez un rapport de diagnostic et nous l'examinerons."
+msgstr "Cette extension n’a pas précisé pourquoi. Envoyez un rapport de diagnostic et nous examinerons la situation."
 
 #: includes/class-zinn-translate-connection.php:161
 msgid "Connection status"
@@ -535,15 +535,15 @@ msgstr "Dernière vérification il y a %s."
 
 #: includes/class-zinn-translate-connection.php:251
 msgid "(opens in a new tab)"
-msgstr "(s'ouvre dans un nouvel onglet)"
+msgstr "(s’ouvre dans un nouvel onglet)"
 
 #: includes/class-zinn-translate-diagnostics.php:199
 msgid "Send this to Zinn® support"
-msgstr "Envoyer ceci au support de Zinn®"
+msgstr "Envoyez ceci à l’assistance Zinn®"
 
 #: includes/class-zinn-translate-diagnostics.php:201
 msgid "This is exactly what will be sent — nothing else, and nothing hidden. Your passwords, tokens and API keys are not in it."
-msgstr "C'est exactement ce qui sera envoyé — rien d'autre, et rien de masqué. Vos mots de passe, jetons et clés API n'y figurent pas."
+msgstr "C’est exactement ce qui sera envoyé — rien d’autre, et rien de masqué. Vos mots de passe, jetons et clés d’API n’y figurent pas."
 
 #: includes/class-zinn-translate-diagnostics.php:204
 msgid "The diagnostics report that will be sent"
@@ -555,41 +555,41 @@ msgstr "Copier dans le presse-papiers"
 
 #: includes/class-zinn-translate-diagnostics.php:214
 msgid "Send this report to Zinn® support"
-msgstr "Envoyer ce rapport au support Zinn®"
+msgstr "Envoyez ce rapport au support de Zinn®"
 
 #: includes/class-zinn-translate-diagnostics.php:216
 msgid "We open a support ticket for you and reply by email. If you would rather not send it, copy it above and paste it into a ticket yourself."
-msgstr "Nous ouvrons un ticket de support pour vous et vous répondons par e-mail. Si vous préférez ne pas l'envoyer, copiez-le ci-dessus et collez-le vous-même dans un ticket."
+msgstr "Nous ouvrons un ticket d'assistance pour vous et vous répondons par e-mail. Si vous préférez ne pas l'envoyer, copiez-le ci-dessus et collez-le vous-même dans un ticket."
 
 #. translators: %s: the transport error reported by WordPress.
 #: includes/class-zinn-translate-diagnostics.php:270
 #, php-format
 msgid "We could not reach Zinn Digital® from this server (%s). Copy the report above and open a ticket instead — nothing about your settings is wrong."
-msgstr "Nous n'avons pas pu joindre Zinn Digital® à partir de ce serveur (%s). Copiez le rapport ci-dessus et ouvrez plutôt un ticket — vos paramètres sont parfaitement corrects."
+msgstr "Nous n’avons pas pu joindre Zinn Digital® depuis ce serveur (%s). Veuillez copier le rapport ci-dessus et ouvrir un ticket à la place — vos réglages ne comportent aucune erreur."
 
 #: includes/class-zinn-translate-diagnostics.php:284
 msgid "Sent. Zinn® support has your report and will reply by email."
-msgstr "Le support de Zinn® a bien reçu votre rapport et vous répondra par e-mail."
+msgstr "Envoyé. L'assistance Zinn® a bien reçu votre rapport et vous répondra par e-mail."
 
 #. translators: %s: the support reference for the report just sent.
 #: includes/class-zinn-translate-diagnostics.php:287
 #, php-format
 msgid "Sent. Zinn® support has your report — reference %s — and will reply by email."
-msgstr "Le support de Zinn® a bien reçu votre rapport — référence %s — et vous répondra par e-mail."
+msgstr "Envoyé. L'assistance Zinn® a bien reçu votre rapport — référence %s — et vous répondra par e-mail."
 
 #: includes/class-zinn-translate-diagnostics.php:296
 msgid "You have sent several reports in a short time. Wait a few minutes and try again — the earlier ones did arrive."
-msgstr "Vous avez envoyé plusieurs rapports en peu de temps. Veuillez patienter quelques minutes et réessayer. Les précédents ont bien été reçus."
+msgstr "Vous avez envoyé plusieurs rapports en peu de temps. Veuillez patienter quelques minutes et réessayer — les précédents sont bien arrivés."
 
 #: includes/class-zinn-translate-diagnostics.php:303
 msgid "Zinn Digital® could not accept the report just now — that is our end, not yours. Try again shortly, or copy the report above into a ticket."
-msgstr "Zinn Digital® n'a pas pu accepter le rapport pour l'instant — c'est de notre côté, pas du vôtre. Réessayez sous peu, ou copiez le rapport ci-dessus dans un ticket."
+msgstr "Zinn Digital® n'a pas pu accepter le rapport pour l'instant — le problème vient de notre côté, pas du vôtre. Veuillez réessayer d'ici peu ou copier le rapport ci-dessus dans un ticket."
 
 #. translators: %d: the HTTP status code the server returned.
 #: includes/class-zinn-translate-diagnostics.php:311
 #, php-format
 msgid "The report was refused (HTTP %d). Copy it above and open a ticket, quoting that number."
-msgstr "Le rapport a été refusé (HTTP %d). Copiez-le ci-dessus et ouvrez un ticket en mentionnant ce numéro."
+msgstr "Le rapport a été refusé (HTTP %d). Copiez-le ci-dessus et ouvrez un ticket en indiquant ce numéro."
 
 #. translators: %s: the Zinn Digital trade mark, which is not translated.
 #: includes/class-zinn-translate-promo.php:241
@@ -600,13 +600,13 @@ msgstr "%s — guides et services"
 
 #: includes/class-zinn-translate-promo.php:256
 msgid "User guides"
-msgstr "Guides d'utilisation"
+msgstr "Guides d’utilisation"
 
 #. translators: %s: this plugin's name, e.g. "Zinn® Cache".
 #: includes/class-zinn-translate-promo.php:306
 #, php-format
 msgid "Read the %s user guide"
-msgstr "Lire le guide utilisateur %s"
+msgstr "Lisez le guide d'utilisation de %s"
 
 #: includes/class-zinn-translate-promo.php:314
 msgid "Hide this"
@@ -618,59 +618,59 @@ msgstr "Hébergement Zinn® pour WordPress"
 
 #: includes/class-zinn-translate-promo.php:425
 msgid "LiteSpeed, daily backups, free migration and a control panel built for people who run more than one site."
-msgstr "LiteSpeed, sauvegardes quotidiennes, migration gratuite et un panneau de configuration conçu pour les personnes qui gèrent plus d'un site."
+msgstr "LiteSpeed, sauvegardes quotidiennes, migration gratuite et un panneau de contrôle conçu pour les personnes qui gèrent plusieurs sites."
 
 #: includes/class-zinn-translate-promo.php:431
 msgid "The Zinn® marketplace"
-msgstr "Le marché Zinn®"
+msgstr "La place de marché Zinn®"
 
 #: includes/class-zinn-translate-promo.php:432
 msgid "Buy and sell established sites, domains and link placements, with the money held safely until both sides are happy."
-msgstr "Achetez et vendez des sites établis, des noms de domaine et des emplacements de liens, les fonds étant conservés en toute sécurité jusqu'à ce que les deux parties soient satisfaites."
+msgstr "Achetez et vendez des sites établis, des domaines et des placements de liens, l'argent étant conservé en toute sécurité jusqu'à ce que les deux parties soient satisfaites."
 
 #: includes/class-zinn-translate-promo.php:479
 msgid "Zinn Hub® — hire people who do this for a living"
-msgstr "Zinn Hub® — engagez des professionnels pour le faire"
+msgstr "Zinn Hub® — engagez des professionnels dont c'est le métier"
 
 #: includes/class-zinn-translate-promo.php:480
 msgid "Our global freelance marketplace: browse over 10,000 ready-made services from writers, designers, developers and SEOs, or post a project and let them bid."
-msgstr "Notre place de marché mondiale de freelances : parcourez plus de 10 000 services prêts à l'emploi proposés par des rédacteurs, des graphistes, des développeurs et des experts en référencement, ou publiez un projet et laissez-les faire leurs offres."
+msgstr "Notre place de marché mondiale pour freelances : parcourez plus de 10 000 services prêts à l'emploi proposés par des rédacteurs, designers, développeurs et spécialistes SEO, ou publiez un projet et laissez-les soumissionner."
 
 #: includes/class-zinn-translate-prompt.php:211
 msgid "The API key was rejected. Check that it is still valid and has translation access, then save it again."
-msgstr "La clé d'API a été rejetée. Vérifiez qu'elle est toujours valide et dispose d'un accès à la traduction, puis enregistrez-la à nouveau."
+msgstr "La clé d’API a été rejetée. Vérifiez qu’elle est toujours valide et qu’elle dispose de l’accès à la traduction, puis enregistrez-la à nouveau."
 
 #: includes/class-zinn-translate-prompt.php:218
 msgid "The provider refused on billing or quota. Nothing was translated. Check the balance and limits on your account with them."
-msgstr "Le fournisseur a refusé en raison de la facturation ou du quota. Rien n'a été traduit. Vérifiez le solde et les limites de votre compte auprès de celui-ci."
+msgstr "Le fournisseur a refusé en raison de la facturation ou du quota. Rien n'a été traduit. Vérifiez le solde et les limites de votre compte auprès de lui."
 
 #: includes/class-zinn-translate-prompt.php:225
 msgid "The translation provider is having a problem at their end. Nothing was translated or charged, and it will try again on the next pass."
-msgstr "Le fournisseur de traduction rencontre un problème de son côté. Rien n'a été traduit ni facturé, et une nouvelle tentative aura lieu lors du prochain cycle."
+msgstr "Le fournisseur de traduction rencontre un problème de son côté. Rien n'a été traduit ni facturé, et une nouvelle tentative aura lieu lors du prochain passage."
 
 #: includes/class-zinn-translate-prompt.php:231
 msgid "The translation request failed and we could not tell why. Nothing was saved."
-msgstr "La demande de traduction a échoué et la cause n'a pas pu être déterminée. Rien n'a été enregistré."
+msgstr "La demande de traduction a échoué et nous n’avons pas pu en déterminer la cause. Rien n’a été enregistré."
 
 #: includes/class-zinn-translate-sitemap.php:139
 msgid "Sitemap index"
-msgstr "Index du plan du site"
+msgstr "Index des plans de site"
 
 #. translators: %s: a language name, for example "French".
 #: includes/class-zinn-translate-sitemap.php:143
 #, php-format
 msgid "%s sitemap"
-msgstr "plan du site %s"
+msgstr "Plan du site %s"
 
 #: includes/class-zinn-translate-sitemap.php:147
 msgid "LLM content map"
-msgstr "Plan de contenu LLM"
+msgstr "Carte de contenu LLM"
 
 #. translators: %s: a language name, for example "French".
 #: includes/class-zinn-translate-sitemap.php:150
 #, php-format
 msgid "%s LLM content map"
-msgstr "%s plan de contenu LLM"
+msgstr "Plan de contenu LLM pour %s"
 
 #: includes/class-zinn-translate-status.php:96
 msgid "Languages published"
@@ -686,11 +686,11 @@ msgstr "Extension SEO"
 
 #: includes/class-zinn-translate-status.php:134
 msgid "No translation provider is set up yet."
-msgstr "Aucun fournisseur de traduction n'est configuré pour le moment."
+msgstr "Aucun fournisseur de traduction n'est encore configuré."
 
 #: includes/class-zinn-translate-status.php:135
 msgid "Paste an API key from your chosen provider, or connect the site to a Zinn Digital® account, and translation starts on the next pass."
-msgstr "Collez une clé API de votre fournisseur choisi, ou connectez le site à un compte Zinn Digital®, et la traduction commencera lors de la prochaine passe."
+msgstr "Collez une clé API de votre fournisseur choisi ou associez le site à un compte Zinn Digital®, et la traduction commencera lors de la prochaine étape."
 
 #. translators: %s: a translation provider's name, for example "DeepL".
 #: includes/class-zinn-translate-status.php:144
@@ -700,7 +700,7 @@ msgstr "Traduction avec votre propre clé %s."
 
 #: includes/class-zinn-translate-status.php:147
 msgid "This site is not connected to a Zinn Digital® account, which is fine — your provider bills you directly."
-msgstr "Ce site n'est pas relié à un compte Zinn Digital®, ce qui est normal : votre fournisseur vous facture directement."
+msgstr "Ce site n’est pas connecté à un compte Zinn Digital®, ce qui ne pose aucun problème — votre fournisseur vous facture directement."
 
 #: includes/class-zinn-translate-status.php:156
 msgid "Not connected to Zinn Digital® yet."
@@ -708,7 +708,7 @@ msgstr "Pas encore connecté à Zinn Digital®."
 
 #: includes/class-zinn-translate-status.php:157
 msgid "Add this site's ID and token from your Zinn Digital® dashboard, or switch to your own provider key to run without an account."
-msgstr "Ajoutez l'ID et le jeton de ce site depuis votre tableau de bord Zinn Digital®, ou passez à votre propre clé de fournisseur pour l'exécuter sans compte."
+msgstr "Ajoutez l'identifiant et le jeton de ce site depuis votre tableau de bord Zinn Digital®, ou passez à votre propre clé de fournisseur pour fonctionner sans compte."
 
 #: includes/class-zinn-translate-status.php:164
 msgid "Connected to Zinn Digital®."
@@ -720,7 +720,7 @@ msgstr "Le fournisseur de traduction rencontre un problème."
 
 #: includes/class-zinn-translate-status.php:181
 msgid "Translation is paused — your provider needs attention."
-msgstr "La traduction est suspendue. Votre fournisseur requiert votre attention."
+msgstr "La traduction est en pause — votre fournisseur requiert votre attention."
 
 #: includes/class-zinn-translate-status.php:183
 msgid "Translation has not been set up yet."
@@ -728,15 +728,15 @@ msgstr "La traduction n'a pas encore été configurée."
 
 #: includes/class-zinn-translate-status.php:188
 msgid "Something went wrong at our end."
-msgstr "Une erreur est survenue de notre côté."
+msgstr "Un problème est survenu de notre côté."
 
 #: includes/class-zinn-translate-status.php:200
 msgid "Check their status page"
-msgstr "Consulter leur page d'état"
+msgstr "Consultez leur page d’état"
 
 #: includes/class-zinn-translate-status.php:201
 msgid "Fix this on your account"
-msgstr "Corriger ce problème sur votre compte"
+msgstr "Corrigez cela sur votre compte"
 
 #: includes/class-zinn-translate-style-presets.php:118
 msgid "Style preset"
@@ -744,15 +744,15 @@ msgstr "Préréglage de style"
 
 #: includes/class-zinn-translate-style-presets.php:119
 msgid "A starting point. Anything below overrides it."
-msgstr "Un point de départ. Tout ce qui se trouve ci-dessous le remplace."
+msgstr "Un point de départ. Tout ce qui suit le remplace."
 
 #: includes/class-zinn-translate-style-presets.php:126
 msgid "Use my own colours and sizes"
-msgstr "Utiliser mes propres couleurs et tailles"
+msgstr "Utilisez mes propres couleurs et tailles"
 
 #: includes/class-zinn-translate-style-presets.php:127
 msgid "Leave this off and the preset is used exactly as it is."
-msgstr "Désactivez cette option pour utiliser le préréglage tel quel."
+msgstr "Laissez cette option désactivée et le préréglage sera utilisé exactement tel quel."
 
 #: includes/class-zinn-translate-switcher-widget.php:30
 msgid "Zinn® language switcher"
@@ -769,7 +769,7 @@ msgstr "Titre"
 
 #: includes/class-zinn-translate-switcher-widget.php:81
 msgid "Use the plugin setting"
-msgstr "Utiliser le paramètre du plugin"
+msgstr "Utiliser le réglage de l’extension"
 
 #: includes/class-zinn-translate-switcher.php:45
 msgid "Dropdown"
@@ -781,7 +781,7 @@ msgstr "Liste en ligne"
 
 #: includes/class-zinn-translate-switcher.php:47
 msgid "Pills"
-msgstr "Pastilles"
+msgstr "Pilules"
 
 #: includes/class-zinn-translate-switcher.php:48
 msgid "Minimal text"
@@ -805,55 +805,55 @@ msgstr "Consultez les notes de version de Zinn Digital®."
 
 #: includes/class-zinn-translate-updater.php:302
 msgid "The Zinn® update service did not issue a download link for this update. Check that this site can reach the Zinn® platform, then try again."
-msgstr "Le service de mise à jour Zinn® n'a pas émis de lien de téléchargement pour cette mise à jour. Vérifiez que ce site peut accéder à la plateforme Zinn®, puis réessayez."
+msgstr "Le service de mise à jour Zinn® n’a pas fourni de lien de téléchargement pour cette mise à jour. Vérifiez que ce site peut accéder à la plateforme Zinn®, puis réessayez."
 
 #. translators: %s: the download error reported by WordPress.
 #: includes/class-zinn-translate-updater.php:316
 #, php-format
 msgid "The update could not be downloaded from the Zinn® update service (%s). Try again in a few minutes."
-msgstr "La mise à jour n'a pas pu être téléchargée depuis le service de mise à jour Zinn® (%s). Réessayez dans quelques minutes."
+msgstr "La mise à jour n’a pas pu être téléchargée depuis le service de mise à jour Zinn® (%s). Veuillez réessayer dans quelques minutes."
 
 #: includes/class-zinn-translate-updater.php:330
 msgid "The downloaded update failed its integrity check and was not installed."
-msgstr "La mise à jour téléchargée a échoué au contrôle d'intégrité et n'a pas été installée."
+msgstr "La mise à jour téléchargée n’a pas passé le contrôle d’intégrité et n’a pas été installée."
 
 #: includes/providers/class-zinn-translate-provider-deepl.php:157
 msgid "No DeepL API key is saved, so there is nothing to translate with."
-msgstr "Aucune clé d'API DeepL n'est enregistrée, il n'y a donc rien à traduire."
+msgstr "Aucune clé d'API DeepL n'est enregistrée, il n'y a donc rien pour traduire."
 
 #. translators: %s: a language name, for example "Swahili".
 #: includes/providers/class-zinn-translate-provider-deepl.php:165
 #, php-format
 msgid "DeepL does not translate into %s. Choose Google Gemini or OpenAI for this language, or connect the site to Zinn Digital®."
-msgstr "DeepL ne traduit pas en %s. Choisissez Google Gemini ou OpenAI pour cette langue, ou connectez le site à Zinn Digital®."
+msgstr "DeepL ne traduit pas vers %s. Choisissez Google Gemini ou OpenAI pour cette langue, ou connectez le site à Zinn Digital®."
 
 #: includes/providers/class-zinn-translate-provider-deepl.php:207
 msgid "DeepL could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
-msgstr "Impossible de joindre DeepL. Aucune traduction n'a été effectuée et aucun frais n'a été prélevé ; une nouvelle tentative aura lieu lors du prochain cycle."
+msgstr "Impossible de joindre DeepL. Rien n'a été traduit et aucun montant n'a été facturé ; une nouvelle tentative aura lieu lors du prochain passage."
 
 #: includes/providers/class-zinn-translate-provider-deepl.php:219
 msgid "Your DeepL character quota is used up for this period. Translation resumes when it resets, or when you raise the limit on your DeepL account."
-msgstr "Votre quota de caractères DeepL est épuisé pour cette période. La traduction reprendra lors de sa réinitialisation ou lorsque vous augmenterez la limite de votre compte DeepL."
+msgstr "Votre quota de caractères DeepL est épuisé pour cette période. La traduction reprendra lorsqu'il sera réinitialisé ou lorsque vous augmenterez la limite sur votre compte DeepL."
 
 #: includes/providers/class-zinn-translate-provider-deepl.php:229
 msgid "DeepL answered with something we could not read. Nothing was saved."
-msgstr "DeepL a répondu avec un contenu illisible. Rien n'a été enregistré."
+msgstr "DeepL a répondu avec un contenu illisible. Rien n’a été enregistré."
 
-#: includes/providers/class-zinn-translate-provider-gemini.php:108
+#: includes/providers/class-zinn-translate-provider-gemini.php:111
 msgid "No Google Gemini API key is saved, so there is nothing to translate with."
-msgstr "Aucune clé d'API Google Gemini n'est enregistrée, il n'y a donc rien pour effectuer la traduction."
+msgstr "Aucune clé d'API Google Gemini n'est enregistrée, il n'y a donc rien pour traduire."
 
-#: includes/providers/class-zinn-translate-provider-gemini.php:156
+#: includes/providers/class-zinn-translate-provider-gemini.php:161
 msgid "Google Gemini could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
-msgstr "Google Gemini n'a pas pu être joint. Rien n'a été traduit et aucun frais n'a été préposé ; une nouvelle tentative sera effectuée lors du prochain passage."
+msgstr "Impossible de joindre Google Gemini. Rien n'a été traduit et rien n'a été facturé ; une nouvelle tentative aura lieu lors du prochain passage."
 
 #: includes/providers/class-zinn-translate-provider-openai.php:104
 msgid "No OpenAI API key is saved, so there is nothing to translate with."
-msgstr "Aucune clé d'API OpenAI n'est enregistrée, il n'y a donc rien à traduire."
+msgstr "Aucune clé d'API OpenAI n'est enregistrée, il n'y a donc rien avec quoi traduire."
 
 #: includes/providers/class-zinn-translate-provider-openai.php:140
 msgid "OpenAI could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
-msgstr "Impossible de joindre OpenAI. Aucune traduction n'a été effectuée et aucun frais n'a été prélevé ; une nouvelle tentative aura lieu lors de la prochaine passe."
+msgstr "Impossible de joindre OpenAI. Rien n'a été traduit et rien n'a été facturé ; une nouvelle tentative aura lieu lors du prochain passage."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:102
 msgid "This site is not connected to Zinn Digital®, so there is nothing to collect. Add the Site ID and token, or switch to your own provider key."
@@ -862,11 +862,11 @@ msgstr "Ce site n'est pas connecté à Zinn Digital®, il n'y a donc rien à col
 #: includes/providers/class-zinn-translate-provider-zinn.php:135
 #: includes/providers/class-zinn-translate-provider-zinn.php:251
 msgid "This site is not connected to Zinn Digital®."
-msgstr "Ce site n'est pas lié à Zinn Digital®."
+msgstr "Ce site n’est pas connecté à Zinn Digital®."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:153
 msgid "Zinn Digital® could not be reached. Nothing was sent; it will try again on the next pass."
-msgstr "Zinn Digital® n'a pas pu être joint. Rien n'a été envoyé ; une nouvelle tentative aura lieu lors du prochain passage."
+msgstr "Impossible de joindre Zinn Digital®. Rien n'a été envoyé ; une nouvelle tentative aura lieu lors du prochain passage."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:169
 msgid "Translation is paused on this site. Check the account is up to date on your Zinn Digital® dashboard."
@@ -879,16 +879,16 @@ msgstr "Zinn Digital® a rejeté le jeton de ce site. Il doit s'agir d'une clé 
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:207
 msgid "Zinn Digital® could not be reached. Your site keeps serving the translations it already has."
-msgstr "Zinn Digital® n'a pas pu être joint. Votre site continue de diffuser les traductions dont il dispose déjà."
+msgstr "Impossible de joindre Zinn Digital®. Votre site continue de diffuser les traductions dont il dispose déjà."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:219
 msgid "Zinn Digital® answered with something we could not read. Your site keeps serving the translations it already has."
-msgstr "Zinn Digital® a répondu par quelque chose que nous n'avons pas pu lire. Votre site continue de diffuser les traductions dont il dispose déjà."
+msgstr "Zinn Digital® a répondu avec un contenu illisible. Votre site continue de fournir les traductions dont il dispose déjà."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:267
 msgid "Zinn Digital® could not be reached. Your site keeps publishing the languages it already has."
-msgstr "Zinn Digital® n'a pas pu être joint. Votre site continue de publier les langues qu'il possède déjà."
+msgstr "Impossible de joindre Zinn Digital®. Votre site continue de publier les langues dont il dispose déjà."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:286
 msgid "Zinn Digital® answered with something we could not read. Your site keeps publishing the languages it already has."
-msgstr "Zinn Digital® a répondu par quelque chose que nous n'avons pas pu lire. Votre site continue de publier les langues qu'il possède déjà."
+msgstr "Zinn Digital® a répondu avec quelque chose que nous n'avons pas pu lire. Votre site continue de publier les langues dont il dispose déjà."

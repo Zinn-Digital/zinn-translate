@@ -22,7 +22,7 @@ msgstr "https://zinndigital.com/wordpress-plugins/zinn-translate"
 #. Description of the plugin
 #: zinn-translate.php
 msgid "Publishes this site in every language you choose, on its own web addresses, with translated slugs, metadata, menus, WooCommerce products, hreflang, per-language sitemaps and llms.txt. Translate with your Zinn Digital® plan or with your own provider key."
-msgstr "Chapisha tovuti hii katika kila lugha unayochagua, kwenye anwani zake za wavuti, ikiwa na vijina vilivyotafsiriwa, metadata, menyu, bidhaa za WooCommerce, hreflang, ramani za tovuti za kila lugha na llms.txt. Tafsiri ukitumia mpango wako wa Zinn Digital® au ukitumia ufunguo wako mwenyewe wa mtoa huduma."
+msgstr "Huchapisha tovuti hii katika kila lugha unayochagua, kwenye anwani zake za wavuti, ikiwa na vipande vya URL vilivyotafsiriwa, metadata, menyu, bidhaa za WooCommerce, hreflang, ramani za tovuti kwa kila lugha na llms.txt. Tafsiri ukitumia mpango wako wa Zinn Digital® au ukitumia ufunguo wako wa mtoa huduma."
 
 #. Author of the plugin
 #: zinn-translate.php
@@ -36,7 +36,7 @@ msgstr "https://zinndigital.com"
 
 #: includes/class-zinn-translate-admin-fields.php:580
 msgid "Stored. Type a new value to replace it."
-msgstr "Imesohifadhiwa. Andika thamani mpya ili kuichukua nafasi yake."
+msgstr "Imehifadhiwa. Andika thamani mpya ili kuibadilisha."
 
 #: includes/class-zinn-translate-admin-fields.php:640
 msgid "Filter this list…"
@@ -48,15 +48,15 @@ msgstr "Chuja orodha hii"
 
 #: includes/class-zinn-translate-admin-fields.php:657
 msgid "Nothing matches that filter."
-msgstr "Hakuna linalolingana na kichujio hicho."
+msgstr "Hakuna kinacholingana na kichujio hicho."
 
 #: includes/class-zinn-translate-admin-fields.php:688
 msgid "Add a row"
-msgstr "Ongeza safu"
+msgstr "Ongeza safu mlalo"
 
 #: includes/class-zinn-translate-admin-fields.php:725
 msgid "Remove this row"
-msgstr "Ondoa safu hii"
+msgstr "Ondoa safu mlalo hii"
 
 #: includes/class-zinn-translate-admin-fields.php:725
 msgid "Remove"
@@ -78,11 +78,11 @@ msgstr "Muhtasari"
 
 #: includes/class-zinn-translate-admin-ui.php:383
 msgid "Copied"
-msgstr "Imesnakiliwa"
+msgstr "Imenakiliwa"
 
 #: includes/class-zinn-translate-admin-ui.php:422
 msgid "Every Zinn® plugin on this site, and whether it is working."
-msgstr "Kila plagi ya Zinn® kwenye tovuti hii, na kama inafanya kazi."
+msgstr "Kila programu-jalizi ya Zinn® kwenye tovuti hii, na ikiwa inafanya kazi."
 
 #: includes/class-zinn-translate-admin-ui.php:437
 msgid "No connection is needed for this plugin."
@@ -103,7 +103,7 @@ msgstr "Sehemu za mipangilio"
 
 #: includes/class-zinn-translate-admin-ui.php:871
 msgid "Support"
-msgstr "Msaada"
+msgstr "Usaidizi"
 
 #: includes/class-zinn-translate-admin-ui.php:929
 msgid "Save changes"
@@ -119,15 +119,15 @@ msgstr "Hamisha mipangilio"
 
 #: includes/class-zinn-translate-admin-ui.php:976
 msgid "Reset to defaults"
-msgstr "Weka upya kwa chaguo-msingi"
+msgstr "Weka upya kwa chaguomsingi"
 
 #: includes/class-zinn-translate-admin-ui.php:977
 msgid "This puts every setting on this plugin back to its default. Continue?"
-msgstr "Hii inarudisha kila mpangilio kwenye programu-jalizi hii katika hali yake ya awali. Uendelee?"
+msgstr "Hii itarejesha kila mpangilio kwenye programu-jalizi hii kuwa chaguomsingi. Je, ungependa kuendelea?"
 
 #: includes/class-zinn-translate-admin-ui.php:984
 msgid "Diagnostics for support"
-msgstr "Utambuzi kwa ajili ya usaidizi"
+msgstr "Uchunguzi kwa ajili ya usaidizi"
 
 #: includes/class-zinn-translate-admin-ui.php:993
 msgid "Import a settings file"
@@ -135,11 +135,11 @@ msgstr "Ingiza faili la mipangilio"
 
 #: includes/class-zinn-translate-admin-ui.php:995
 msgid "Import"
-msgstr "Ingiza"
+msgstr "Leta"
 
 #: includes/class-zinn-translate-admin-ui.php:997
 msgid "Exported files never contain passwords, tokens or API keys — you will need to enter those again on the new site."
-msgstr "Faili zilizohamishwa hazina nenosiri, tokeni au funguo za API — utahitaji kuingiza hizo tena kwenye tovuti mpya."
+msgstr "Faili zilizohamishwa hazina nywila, tokeni au funguo za API kamwe — utahitaji kuziingiza tena kwenye tovuti mpya."
 
 #: includes/class-zinn-translate-admin-ui.php:1096
 msgid "Settings saved."
@@ -147,7 +147,7 @@ msgstr "Mipangilio imehifadhiwa."
 
 #: includes/class-zinn-translate-admin-ui.php:1143
 msgid "Every setting on this plugin is back to its default."
-msgstr "Mpangilio wote kwenye programu-jalizi hii umerudi kwenye hali yake ya kwanza."
+msgstr "Kila mpangilio kwenye programu-jalizi hii umerejeshwa kwenye chaguomsingi yake."
 
 #: includes/class-zinn-translate-admin-ui.php:1186
 msgid "Done."
@@ -159,29 +159,29 @@ msgstr "Kitendo hicho hakipatikani."
 
 #: includes/class-zinn-translate-admin-ui.php:1257
 msgid "That file could not be read. Choose a settings file exported from a Zinn® plugin."
-msgstr "Faili hiyo haikuweza kusomwa. Chochagua faili ya mipangilio iliyosafirishwa kutoka kwa programu jalizi ya Zinn®."
+msgstr "Faili hiyo haikuweza kusomwa. Chagua faili ya mipangilio iliyohamishwa kutoka kwa programu-jalizi ya Zinn®."
 
 #: includes/class-zinn-translate-admin-ui.php:1265
 msgid "That file is too large to be a settings export."
-msgstr "Faili hiyo ni kubwa mno kuwa usafirishaji wa mipangilio."
+msgstr "Faili hiyo ni kubwa mno kuwa uhamishaji wa mipangilio."
 
 #: includes/class-zinn-translate-admin-ui.php:1278
 msgid "That file is not a Zinn® settings export."
-msgstr "Faili hiyo sio usafirishaji wa mipangilio ya Zinn®."
+msgstr "Faili hiyo siyo faili ya uhamishaji wa mipangilio ya Zinn®."
 
 #. translators: %s: the plugin slug the file was exported from.
 #: includes/class-zinn-translate-admin-ui.php:1286
 #, php-format
 msgid "That file was exported from a different plugin (%s), so importing it here would store settings this plugin does not understand."
-msgstr "Faili hiyo ilisafirishwa kutoka kwa programu-jalizi nyingine (%s), kwa hivyo kuileta hapa kutahifadhi mipangilio ambayo programu-jalizi hii haielewi."
+msgstr "Faili hiyo ilihamishwa kutoka kwa programu-jalizi tofauti (%s), kwa hivyo kuiingiza hapa kutahifadhi mipangilio ambayo programu-jalizi hii haielewi."
 
 #. translators: %d: how many settings were imported.
 #: includes/class-zinn-translate-admin-ui.php:1316
 #, php-format
 msgid "%d setting imported. Passwords and API keys are never in an export, so enter those again."
 msgid_plural "%d settings imported. Passwords and API keys are never in an export, so enter those again."
-msgstr[0] "Mpangilio %d umeingizwa. Manenosiri na funguo za API haziwahi kujumuishwa kwenye faili la nje, kwa hivyo weka hizo tena."
-msgstr[1] "Mipangilio %d imeletwa. Nywila na funguo za API haziingizwi kamwe kwenye faili inayouzwa nje, kwa hivyo weka hizo tena."
+msgstr[0] "Mipangilio %d imeingizwa. Manenosiri na funguo za API hazijumuishwi kamwe katika faili ya kuhamisha, kwa hivyo ziweke tena."
+msgstr[1] "Mipangilio %d imeagizwa. Manenosiri na vitufe vya API havijumuishwi kamwe katika uhamishaji, kwa hivyo viingize tena."
 
 #: includes/class-zinn-translate-admin.php:65
 msgid "Translate"
@@ -189,11 +189,11 @@ msgstr "Tafsiri"
 
 #: includes/class-zinn-translate-admin.php:79
 msgid "Manual overrides"
-msgstr "Ubadilishaji wa mikono"
+msgstr "Ubatilishaji wa mikono"
 
 #: includes/class-zinn-translate-admin.php:84
 msgid "Sitemaps and URLs"
-msgstr "Ramani za Wavuti na URL"
+msgstr "Ramani za tovuti na URL"
 
 #: includes/class-zinn-translate-admin.php:114
 msgid "General"
@@ -201,11 +201,11 @@ msgstr "Jumla"
 
 #: includes/class-zinn-translate-admin.php:119
 msgid "Who pays for the translation"
-msgstr "Nani anayelipia tafsiri"
+msgstr "Ni nani anayelipia tafsiri"
 
 #: includes/class-zinn-translate-admin.php:120
 msgid "Either your Zinn Digital® plan, or an API key of your own. There is no free tier — somebody pays a provider for every word."
-msgstr "Ama mpango wako wa Zinn Digital®, au ufunguo wako mwenyewe wa API. Hakuna kiwango cha bure — kuna mtu anayelipia mtoa huduma kwa kila neno."
+msgstr "Iwe mpango wako wa Zinn Digital®, au ufunguo wako mwenyewe wa API. Hakuna daraja la bure — kuna mtu anayemlipa mtoa huduma kwa kila neno."
 
 #: includes/class-zinn-translate-admin.php:123
 msgid "My Zinn Digital® plan"
@@ -213,7 +213,7 @@ msgstr "Mpango wangu wa Zinn Digital®"
 
 #: includes/class-zinn-translate-admin.php:124
 msgid "My own provider key"
-msgstr "Ufunguo wangu wa mtoa huduma mwenyewe"
+msgstr "Ufunguo wangu wa mtoa huduma"
 
 #: includes/class-zinn-translate-admin.php:131
 msgid "Site ID"
@@ -221,19 +221,19 @@ msgstr "Kitambulisho cha Tovuti"
 
 #: includes/class-zinn-translate-admin.php:132
 msgid "From your Zinn Digital® dashboard, on this site's Translation tab."
-msgstr "Kutoka kwenye dashibodi yako ya Zinn Digital®, kwenye kichupo cha Tafsiri cha tovuti hii."
+msgstr "Kutoka kwenye dashibodi yako ya Zinn Digital®, kwenye kichupo cha Translation cha tovuti hii."
 
 #: includes/class-zinn-translate-admin.php:139
 msgid "Site token"
-msgstr "Token ya tovuti"
+msgstr "Tokeni ya tovuti"
 
 #: includes/class-zinn-translate-admin.php:142
 msgid "An API key from your Zinn Digital® dashboard, on its API keys page. Give it the sites.view and sites.translation.manage permissions."
-msgstr "Ufunguo wa API kutoka kwenye dashibodi yako ya Zinn Digital®, kwenye ukurasa wake wa funguo za API. Upe ruhusa za sites.view na sites.translation.manage."
+msgstr "Ufunguo wa API kutoka dashibodi yako ya Zinn Digital®, kwenye ukurasa wake wa funguo za API. Upe ruhusa za sites.view na sites.translation.manage."
 
 #: includes/class-zinn-translate-admin.php:150
 msgid "Provider"
-msgstr "Mtoa Huduma"
+msgstr "Mtoa huduma"
 
 #: includes/class-zinn-translate-admin.php:160
 msgid "API key"
@@ -241,15 +241,15 @@ msgstr "Ufunguo wa API"
 
 #: includes/class-zinn-translate-admin.php:161
 msgid "Your key, billed to you by the provider. It is stored on this site and sent only to them."
-msgstr "Ufunguo wako, unaotozwa kwako na mtoa huduma. Umehifadhiwa kwenye tovuti hii na kutumwa kwao pekee."
+msgstr "Ufunguo wako, uliotozwa kwako na mtoa huduma. Umehifadhiwa kwenye tovuti hii na hutumwa kwao pekee."
 
 #: includes/class-zinn-translate-admin.php:169
 msgid "Model"
-msgstr "Mfano"
+msgstr "Muundo"
 
 #: includes/class-zinn-translate-admin.php:170
 msgid "Leave empty for the cheapest model that does the job well."
-msgstr "Acha wazi kwa ajili ya mtindo wa bei nafuu zaidi unaofanya kazi hiyo vizuri."
+msgstr "Acha wazi kwa muundo wa bei nafuu zaidi unaofanya kazi vizuri."
 
 #: includes/class-zinn-translate-admin.php:177
 msgid "This site is written in"
@@ -265,7 +265,7 @@ msgstr "Lugha za kuchapisha"
 
 #: includes/class-zinn-translate-admin.php:190
 msgid "Each one gets its own web addresses and its own sitemap. Publish only the languages you want indexed."
-msgstr "Kila moja inayo anwani zake za tovuti na ramani yake ya tovuti. Chapisha tu lugha unazotaka ziwekwe kwenye faharasa."
+msgstr "Kila moja hupata anwani zake za wavuti na ramani yake ya tovuti. Chapisha lugha zile tu unazotaka ziorodheshwe."
 
 #: includes/class-zinn-translate-admin.php:206
 msgid "Translate automatically when I publish or update"
@@ -273,7 +273,7 @@ msgstr "Tafsiri kiotomatiki ninapochapisha au kusasisha"
 
 #: includes/class-zinn-translate-admin.php:207
 msgid "Editing a page marks its translations out of date and they are remade in the background. Editing without changing any words costs nothing."
-msgstr "Kuhariri ukurasa kunaashiria tafsiri zake kuwa zimepitwa na wakati na zinatengenezwa upya nyuma ya pazia. Kuhariri bila kubadilisha maneno yoyote hakugharimu chochote."
+msgstr "Kuhariri ukurasa kunaashiria tafsiri zake kuwa zimepitwa na wakati na zinaundwa upya chinichini. Kuhariri bila kubadilisha maneno yoyote hakugharimu chochote."
 
 #: includes/class-zinn-translate-admin.php:214
 msgid "What gets translated"
@@ -289,11 +289,11 @@ msgstr "Tafsiri anwani za wavuti pia"
 
 #: includes/class-zinn-translate-admin.php:233
 msgid "French visitors get /fr/a-propos/ rather than /fr/about/. The untranslated address keeps working and redirects, so nothing that was indexed breaks."
-msgstr "Wagenzi wa Ufaransa wanapata /fr/a-propos/ badala ya /fr/about/. Anwani isiyotafsiriwa inaendelea kufanya kazi na kuelekeza upya, kwa hivyo hakuna kilichoorodheshwa kinachoharibika."
+msgstr "Wageni wa Kifaransa wanapata /fr/a-propos/ badala ya /fr/about/. Anwani ambayo haijatafsiriwa inaendelea kufanya kazi na inaelekeza kwingine, kwa hivyo hakuna chochote kilichoorodheshwa kinachoharibika."
 
 #: includes/class-zinn-translate-admin.php:240
 msgid "Translate SEO titles, descriptions and image alt text"
-msgstr "Tafsiri vichwa vya SEO, maelezo na maandishi mbadala ya picha"
+msgstr "Tafsiri vichwa vya SEO, maelezo na matini mbadala ya picha"
 
 #: includes/class-zinn-translate-admin.php:247
 msgid "Translate categories and tags"
@@ -309,7 +309,7 @@ msgstr "Tafsiri bidhaa na sifa za WooCommerce"
 
 #: includes/class-zinn-translate-admin.php:262
 msgid "Short descriptions, purchase notes, attribute labels and variation descriptions. Prices, SKUs and stored option values are never touched."
-msgstr "Maelezo mafupi, madokezo ya ununuzi, lebo za sifa na maelezo ya anuwai. Bei, SKU na thamani za chaguo zilizohifadhiwa haziguswi kamwe."
+msgstr "Maelezo mafupi, madokezo ya ununuzi, lebo za sifa na maelezo ya aina mbalimbali. Bei, SKUs na thamani za chaguo zilizohifadhiwa haziguswi kamwe."
 
 #: includes/class-zinn-translate-admin.php:269
 msgid "SEO"
@@ -321,7 +321,7 @@ msgstr "Ongeza lebo za hreflang"
 
 #: includes/class-zinn-translate-admin.php:275
 msgid "Tells search engines these pages are the same page in different languages. Leave this on unless another plugin is already doing it."
-msgstr "Inaiambia injini za utafutaji kwamba kurasa hizi ni ukurasa mmoja katika lugha tofauti. Acha hii iwe imewashwa isipokuwa kama programu-jalizi nyingine tayari inafanya hivyo."
+msgstr "Huarifu injini tafuti kwamba kurasa hizi ni ukurasa uleule katika lugha tofauti. Acha hii ikiwa imewashwa isipokuwa kama programu-jalizi nyingine tayari inafanya hivyo."
 
 #: includes/class-zinn-translate-admin.php:282
 msgid "Publish a sitemap for each language"
@@ -333,12 +333,12 @@ msgstr "Chapisha llms.txt kwa kila lugha"
 
 #: includes/class-zinn-translate-admin.php:290
 msgid "A plain-text map of the site that AI answer engines read. They often cannot run JavaScript and may never fetch a sitemap."
-msgstr "Ramani ya tovuti iliyo katika maandishi matupu ambayo injini za majibu za AI zinasoma. Mara nyingi haziwezi kuendesha JavaScript na huenda zisiwahi kuchota ramani ya tovuti."
+msgstr "Ramani ya maandishi wazi ya tovuti ambayo injini za majibu za AI husoma. Mara nyingi haziwezi kuendesha JavaScript na huenda zisiwahi kuleta ramani ya tovuti."
 
 #: includes/class-zinn-translate-admin.php:297
 #: includes/class-zinn-translate-switcher.php:138
 msgid "Language switcher"
-msgstr "Kibadilishaji lugha"
+msgstr "Kibadilisha lugha"
 
 #: includes/class-zinn-translate-admin.php:302
 #: includes/class-zinn-translate-switcher-widget.php:79
@@ -347,7 +347,7 @@ msgstr "Mtindo"
 
 #: includes/class-zinn-translate-admin.php:305
 msgid "Colours, spacing and corners are on the Styling tab. Place it with the block, the [zinn_language_switcher] shortcode, or a menu."
-msgstr "Rangi, nafasi na pembe ziko kwenye kichupo cha Mtindo. Kiweke pamoja na kizuizi, msimbo mfupi wa [zinn_language_switcher], au menyu."
+msgstr "Rangi, nafasi na pembe ziko kwenye kichupo cha Mtindo. Iweke kwa kizuizi, msimbo mfupi wa [zinn_language_switcher], au menyu."
 
 #: includes/class-zinn-translate-admin.php:312
 msgid "Show only these languages"
@@ -359,7 +359,7 @@ msgstr "Acha wazi ili kuonyesha kila lugha unayochapisha."
 
 #: includes/class-zinn-translate-admin.php:319
 msgid "Name each language in its own language"
-msgstr "Taja kila lugha katika lugha yake yenyewe"
+msgstr "Taja kila lugha kwa lugha yake yenyewe"
 
 #: includes/class-zinn-translate-admin.php:320
 msgid "Deutsch rather than German. Somebody who cannot read the current page cannot read \"German\" either."
@@ -371,11 +371,11 @@ msgstr "Onyesha bendera"
 
 #: includes/class-zinn-translate-admin.php:328
 msgid "Off by default: a language is not a country, and Arabic and Spanish have no single flag that does not exclude most of their speakers."
-msgstr "Imezimwa kwa chaguo-msingi: lugha si nchi, na Kiarabu na Kihispania havina bendera moja isiyowatenga wengi wa wazungumzaji wao."
+msgstr "Imezimwa kwa chaguo-msingi: lugha si nchi, na Kiarabu na Kihispania havina bendera moja ambayo haitengi wazungumzaji wake wengi."
 
 #: includes/class-zinn-translate-admin.php:335
 msgid "Include the language being read"
-msgstr "Jumuisha lugha inayomilikiwa"
+msgstr "Jumuisha lugha inayosomeka"
 
 #: includes/class-zinn-translate-admin.php:342
 msgid "Include the original language"
@@ -383,19 +383,19 @@ msgstr "Jumuisha lugha asili"
 
 #: includes/class-zinn-translate-admin.php:349
 msgid "Add it to this menu"
-msgstr "Ongeza kwenye menyu hii"
+msgstr "Iongeze kwenye menyu hii"
 
 #: includes/class-zinn-translate-admin.php:350
 msgid "Only the menu you name here. Nothing is added to any other menu on the site."
-msgstr "Menyu tu uliyoitaja hapa. Hakuna kinachoongezwa kwenye menyu nyingine yoyote kwenye tovuti."
+msgstr "Menyu unayoitaja hapa pekee. Hakuna kinachoongezwa kwenye menyu nyingine yoyote kwenye tovuti."
 
 #: includes/class-zinn-translate-admin.php:400
 msgid "Accent"
-msgstr "Lugha"
+msgstr "Lafudhi"
 
 #: includes/class-zinn-translate-admin.php:404
 msgid "Background"
-msgstr "Mandhari ya Nyuma"
+msgstr "Mandhari nyuma"
 
 #: includes/class-zinn-translate-admin.php:408
 msgid "Text"
@@ -403,7 +403,7 @@ msgstr "Maandishi"
 
 #: includes/class-zinn-translate-admin.php:412
 msgid "Corner radius"
-msgstr "Kipenyo cha kona"
+msgstr "Kipenyo cha pembe"
 
 #: includes/class-zinn-translate-admin.php:416
 msgid "Spacing"
@@ -415,7 +415,7 @@ msgstr "Ukubwa wa maandishi"
 
 #: includes/class-zinn-translate-admin.php:447
 msgid "Do not add it to a menu"
-msgstr "Usiiongeze kwenye menyu"
+msgstr "Usiongeze kwenye menyu"
 
 #: includes/class-zinn-translate-admin.php:468
 msgid "none"
@@ -425,17 +425,17 @@ msgstr "hakuna"
 #: includes/class-zinn-translate-admin.php:471
 #, php-format
 msgid "On a Zinn Digital® plan you choose the languages to publish on this site's Translation tab in your dashboard, under \"Shown to visitors\". This site checks it every hour. Publishing now: %s."
-msgstr "Kwenye mpango wa Zinn Digital® unachagua lugha za kuchapisha kwenye kichupo cha Tafsiri cha tovuti hii kwenye dashibodi yako, chini ya \"Inaonyeshwa kwa wageni\". Tovuti hii inaiangalia kila baada ya saa moja. Inachapisha sasa: %s."
+msgstr "Kwenye mpango wa Zinn Digital® unachagua lugha za kuchapisha kwenye kichupo cha Tafsiri cha tovuti hii kwenye dashibodi yako, chini ya \"Inaonyeshwa kwa wageni\". Tovuti hii huangalia kila saa. Inachapisha sasa: %s."
 
 #. translators: %s: comma-separated language names, or "none".
 #: includes/class-zinn-translate-admin.php:474
 #, php-format
 msgid "On a Zinn Digital® plan you choose the languages to publish on this site's Translation tab in your dashboard. This site has not read that choice yet, so it is still publishing: %s. Check the Site ID and token above."
-msgstr "Kwenye mpango wa Zinn Digital® unachagua lugha za kuchapisha kwenye kichupo cha Tafsiri cha tovuti hii kwenye dashibodi yako. Tovuti hii bado haijasoma chaguo hilo, kwa hiyo bado inachapisha: %s. Angalia Kitambulisho cha Tovuti na tokeni iliyo hapo juu."
+msgstr "Kwenye mpango wa Zinn Digital®, unachagua lugha za kuchapisha kwenye kichupo cha Tafsiri cha tovuti hii kwenye dashibodi yako. Tovuti hii bado haijasoma chaguo hilo, kwa hivyo bado inachapisha: %s. Angalia Kitambulisho cha Tovuti na tokeni hapo juu."
 
 #: includes/class-zinn-translate-admin.php:525
 msgid "Edit any translation here. An edited translation is kept exactly as you wrote it and is never overwritten when the page is translated again."
-msgstr "Hariri tafsiri yoyote hapa. Tafsiri iliyohaririwa huwekwa kama ulivyoandika na haifutwi kamwe wakati ukurasa unatafsiriwa tena."
+msgstr "Hariri tafsiri yoyote hapa. Tafsiri iliyohaririwa huwekwa sawasawa na jinsi ulivyoandika na haifutwi ukurasa unapotafsiriwa tena."
 
 #: includes/class-zinn-translate-admin.php:546
 msgid "Every language"
@@ -472,11 +472,11 @@ msgstr "Hifadhi"
 
 #: includes/class-zinn-translate-admin.php:568
 msgid "Nothing translated yet. Publish a language and translation starts in the background."
-msgstr "Hakuna kilichotafsiriwa bado. Chapisha lugha na tafsiri itaanza chinichini."
+msgstr "Bado hakuna kilichotafsiriwa. Chapisha lugha na tafsiri itaanza chinichini."
 
 #: includes/class-zinn-translate-admin.php:601
 msgid "These addresses are live. Open any of them to check it, and submit the sitemap index to Google Search Console."
-msgstr "Anwani hizi ziko hewani. Fungua mojawapo ili kuiangalia, na uwasilishe faharasa ya sitemap kwa Google Search Console."
+msgstr "Anwani hizi ziko hewani. Fungua yoyote kati yazo ili kuikagua, na uwasilishe fahirisi ya ramani ya tovuti kwenye Google Search Console."
 
 #: includes/class-zinn-translate-admin.php:622
 msgid "You are not allowed to edit translations on this site."
@@ -488,11 +488,11 @@ msgstr "Imehaririwa na wewe — imehifadhiwa"
 
 #: includes/class-zinn-translate-admin.php:652
 msgid "Source changed — will be redone"
-msgstr "Chanzo kimebadilishwa — kitafanywa upya"
+msgstr "Chanzo kimebadilika — kitarudiwa"
 
 #: includes/class-zinn-translate-admin.php:654
 msgid "Up to date"
-msgstr "Imesasishwa"
+msgstr "Ya kisasa zaidi"
 
 #: includes/class-zinn-translate-connection.php:58
 msgid "Connected"
@@ -504,7 +504,7 @@ msgstr "Inaunganisha…"
 
 #: includes/class-zinn-translate-connection.php:62
 msgid "Connected, but something needs attention"
-msgstr "Imeunganishwa, lakini kuna jambo linalohitaji uangalifu"
+msgstr "Imeunganishwa, lakini kuna jambo linalohitaji uangalizi"
 
 #: includes/class-zinn-translate-connection.php:64
 msgid "Not connected"
@@ -512,15 +512,15 @@ msgstr "Haijaunganishwa"
 
 #: includes/class-zinn-translate-connection.php:66
 msgid "Running on your own account"
-msgstr "Inafanya kazi kwenye akaunti yako mwenyewe"
+msgstr "Inatumika kwenye akaunti yako mwenyewe"
 
 #: includes/class-zinn-translate-connection.php:68
 msgid "We could not check this"
-msgstr "Hatukuweza kuangalia hili"
+msgstr "Hatuwezi kuangalia hili"
 
 #: includes/class-zinn-translate-connection.php:93
 msgid "This plugin did not say why. Send a diagnostics report and we will look."
-msgstr "Plugin hii haikusema kwanini. Tuma ripoti ya uchunguzi na tutaitazama."
+msgstr "Programu-jalizi hii haikueleza sababu. Tuma ripoti ya uchunguzi nasi tutaiangalia."
 
 #: includes/class-zinn-translate-connection.php:161
 msgid "Connection status"
@@ -530,11 +530,11 @@ msgstr "Hali ya muunganisho"
 #: includes/class-zinn-translate-connection.php:189
 #, php-format
 msgid "Last checked %s ago."
-msgstr "Mara ya mwisho kukaguliwa ilikuwa %s iliyopita."
+msgstr "Ilikaguliwa mara ya mwisho %s iliyopita."
 
 #: includes/class-zinn-translate-connection.php:251
 msgid "(opens in a new tab)"
-msgstr "(inafungua kwenye kichupo kipya)"
+msgstr "(inafunguka kwenye kichupo kipya)"
 
 #: includes/class-zinn-translate-diagnostics.php:199
 msgid "Send this to Zinn® support"
@@ -542,7 +542,7 @@ msgstr "Tuma hii kwa usaidizi wa Zinn®"
 
 #: includes/class-zinn-translate-diagnostics.php:201
 msgid "This is exactly what will be sent — nothing else, and nothing hidden. Your passwords, tokens and API keys are not in it."
-msgstr "Hivi ndivyo vitakavyotumwa hasa — hakuna kingine, wala chochote kilichofichwa. Nywila zako, tokeni na funguo za API hazimo ndani yake."
+msgstr "Hiki ndicho hasa kitakachotumwa — hakuna kingine, na hakuna chochote kilichofichwa. Manenosiri yako, tokeni na funguo za API hazimo ndani yake."
 
 #: includes/class-zinn-translate-diagnostics.php:204
 msgid "The diagnostics report that will be sent"
@@ -550,45 +550,45 @@ msgstr "Ripoti ya uchunguzi itakayotumwa"
 
 #: includes/class-zinn-translate-diagnostics.php:207
 msgid "Copy to clipboard"
-msgstr "Nakili kwenye ubao klipu"
+msgstr "Nakili kwenye ubao wa kunakili"
 
 #: includes/class-zinn-translate-diagnostics.php:214
 msgid "Send this report to Zinn® support"
-msgstr "Tuma ripoti hii kwa msaada wa Zinn®"
+msgstr "Tuma ripoti hii kwa usaidizi wa Zinn®"
 
 #: includes/class-zinn-translate-diagnostics.php:216
 msgid "We open a support ticket for you and reply by email. If you would rather not send it, copy it above and paste it into a ticket yourself."
-msgstr "Tunakufungulia tiketi ya usaidizi na kukujibu kupitia barua pepe. Ikiwa unapendelea kutoituma, ikili nakala hapo juu na uibandike kwenye tiketi wewe mwenyewe."
+msgstr "Tunakufungulia tiketi ya msaada na kujibu kwa barua pepe. Ikiwa ungependelea kutoituma, inakili hapo juu na uibandike mwenyewe kwenye tiketi."
 
 #. translators: %s: the transport error reported by WordPress.
 #: includes/class-zinn-translate-diagnostics.php:270
 #, php-format
 msgid "We could not reach Zinn Digital® from this server (%s). Copy the report above and open a ticket instead — nothing about your settings is wrong."
-msgstr "Hatukuweza kufika Zinn Digital® kutoka kwa seva hii (%s). Nakili ripoti iliyo hapo juu na ufungue tikiti badala yake — hakuna chochote kuhusu mipangilio yako kilicho kibaya."
+msgstr "Hatuwezi kufikia Zinn Digital® kutoka seva hii (%s). Nakili ripoti iliyo hapo juu na ufungue tiketi badala yake — hakuna hitilafu yoyote katika mipangilio yako."
 
 #: includes/class-zinn-translate-diagnostics.php:284
 msgid "Sent. Zinn® support has your report and will reply by email."
-msgstr "Usaidizi wa Zinn® umepokea ripoti yako na utajibu kupitia barua pepe."
+msgstr "Imetumwa. Dawati la usaidizi la Zinn® limepokea ripoti yako na litajibu kupitia barua pepe."
 
 #. translators: %s: the support reference for the report just sent.
 #: includes/class-zinn-translate-diagnostics.php:287
 #, php-format
 msgid "Sent. Zinn® support has your report — reference %s — and will reply by email."
-msgstr "Usaidizi wa Zinn® una ripoti yako — marejeleo %s — na utajibu kupitia barua pepe."
+msgstr "Imetumwa. Usaidizi wa Zinn® umepokea ripoti yako — rejeleo %s — na utajibu kupitia barua pepe."
 
 #: includes/class-zinn-translate-diagnostics.php:296
 msgid "You have sent several reports in a short time. Wait a few minutes and try again — the earlier ones did arrive."
-msgstr "Umetuma ripoti kadhaa kwa muda mfupi. Subiri dakika chache kisha ujaribu tena — zile za awali ziliwasili."
+msgstr "Umetuma ripoti kadhaa kwa muda mfupi. Subiri dakika chache kisha ujaribu tena — ripoti za awali zimefika."
 
 #: includes/class-zinn-translate-diagnostics.php:303
 msgid "Zinn Digital® could not accept the report just now — that is our end, not yours. Try again shortly, or copy the report above into a ticket."
-msgstr "Zinn Digital® haikuweza kupokea ripoti hiyo kwa sasa — hilo ni tatizo letu, si lako. Jaribu tena hivi karibuni, au nakili ripoti iliyo hapo juu kwenye tiketi."
+msgstr "Zinn Digital® haikuweza kupokea ripoti sasa hivi — hilo ni tatizo la upande wetu, si wako. Jaribu tena hivi karibuni, au nakili ripoti iliyo hapo juu kwenye tiketi."
 
 #. translators: %d: the HTTP status code the server returned.
 #: includes/class-zinn-translate-diagnostics.php:311
 #, php-format
 msgid "The report was refused (HTTP %d). Copy it above and open a ticket, quoting that number."
-msgstr "Ripoti imekataliwa (HTTP %d). Iiga hapo juu na ufungue tikiti, ukitaja nambari hiyo."
+msgstr "Ripoti imekataliwa (HTTP %d). Inakili hapo juu na ufungue tiketi, ukitaja nambari hiyo."
 
 #. translators: %s: the Zinn Digital trade mark, which is not translated.
 #: includes/class-zinn-translate-promo.php:241
@@ -599,7 +599,7 @@ msgstr "%s — miongozo na huduma"
 
 #: includes/class-zinn-translate-promo.php:256
 msgid "User guides"
-msgstr "Miongozo ya watumiaji"
+msgstr "Miongozo ya mtumiaji"
 
 #. translators: %s: this plugin's name, e.g. "Zinn® Cache".
 #: includes/class-zinn-translate-promo.php:306
@@ -613,11 +613,11 @@ msgstr "Ficha hii"
 
 #: includes/class-zinn-translate-promo.php:424
 msgid "Zinn® hosting for WordPress"
-msgstr "Hosting ya Zinn® ya WordPress"
+msgstr "Ukaribishaji wa Zinn® kwa ajili ya WordPress"
 
 #: includes/class-zinn-translate-promo.php:425
 msgid "LiteSpeed, daily backups, free migration and a control panel built for people who run more than one site."
-msgstr "LiteSpeed, nakala rudufu za kila siku, uhamiaji wa bure na kidhibiti kilichoundwa kwa ajili ya watu wanaoendesha zaidi ya tovuti moja."
+msgstr "LiteSpeed, nakala rudufu za kila siku, uhamishaji wa bila malipo na paneli dhibiti iliyoundwa kwa ajili ya watu wanaoendesha tovuti zaidi ya moja."
 
 #: includes/class-zinn-translate-promo.php:431
 msgid "The Zinn® marketplace"
@@ -625,41 +625,41 @@ msgstr "Soko la Zinn®"
 
 #: includes/class-zinn-translate-promo.php:432
 msgid "Buy and sell established sites, domains and link placements, with the money held safely until both sides are happy."
-msgstr "Nunua na uuze tovuti, vikoa na nafasi za viungo zilizowekwa, huku pesa zikiwa zimewekwa salama hadi pande zote mbili zitakapofurahi."
+msgstr "Nunua na uuze tovuti zilizothibitiwa, vikoa na uwekaji wa viungo, huku pesa zikiwekwa kwa usalama hadi pande zote mbili zitakapoidhinisha."
 
 #: includes/class-zinn-translate-promo.php:479
 msgid "Zinn Hub® — hire people who do this for a living"
-msgstr "Zinn Hub® — ajiri watu wanaofanya kazi hii kwa maisha yao"
+msgstr "Zinn Hub® — waajiri watu wanaofanya kazi hii ili kujipatia riziki"
 
 #: includes/class-zinn-translate-promo.php:480
 msgid "Our global freelance marketplace: browse over 10,000 ready-made services from writers, designers, developers and SEOs, or post a project and let them bid."
-msgstr "Soko letu la kimataifa la wafanyakazi huru: vinjari huduma zaidi ya 10,000 zilizotengenezwa tayari kutoka kwa waandishi, wabunifu, watengenezaji na wataalamu wa SEO, au chapisha mradi na uwaruhusu watoe zabuni."
+msgstr "Soko letu la kimataifa la wafanyakazi huru: vinjari zaidi ya huduma 10,000 zilizo tayari kutoka kwa waandishi, wabunifu, wasanidi programu na wataalamu wa SEO, au chapisha mradi na uwape nafasi ya kutoa zabuni."
 
 #: includes/class-zinn-translate-prompt.php:211
 msgid "The API key was rejected. Check that it is still valid and has translation access, then save it again."
-msgstr "Ufunguo wa API ukataliwa. Hakikisha kuwa bado ni halali na una idhini ya kutafsiri, kisha uhifadhi tena."
+msgstr "Ufunguo wa API umekataliwa. Hakikisha kuwa bado ni halali na una idhini ya kufikia tafsiri, kisha uhifadhi tena."
 
 #: includes/class-zinn-translate-prompt.php:218
 msgid "The provider refused on billing or quota. Nothing was translated. Check the balance and limits on your account with them."
-msgstr "Mtoa huduma alikataa kwa sababu ya malipo au kiwango kilichowekwa. Hakuna kilichotafsiriwa. Angalia salio na vikomo kwenye akaunti yako nao."
+msgstr "Mtoa huduma amekataa kwa sababu ya malipo au kiwango cha mgawo. Hakuna kilichotafsiriwa. Angalia salio na vikomo kwenye akaunti yako naye."
 
 #: includes/class-zinn-translate-prompt.php:225
 msgid "The translation provider is having a problem at their end. Nothing was translated or charged, and it will try again on the next pass."
-msgstr "Mtoa huduma wa tafsiri anapata tatizo upande wake. Hakuna kilichotafsiriwa au kutozwa ada, na itajaribu tena katika awamu inayofuata."
+msgstr "Mtoa huduma wa tafsiri ana tatizo upande wake. Hakuna kilichotafsiriwa au kutozwa, na itajaribu tena katika mzunguko unaofuata."
 
 #: includes/class-zinn-translate-prompt.php:231
 msgid "The translation request failed and we could not tell why. Nothing was saved."
-msgstr "Ombi la utafsiri limeshindwa na hatukuweza kuelewa kwa nini. Hakuna kilichohifadhiwa."
+msgstr "Ombi la tafsiri lilishindikana na hatukuweza kubaini sababu. Hakuna kilichohifadhiwa."
 
 #: includes/class-zinn-translate-sitemap.php:139
 msgid "Sitemap index"
-msgstr "Faharasa ya tovuti"
+msgstr "Kielezo cha ramani ya tovuti"
 
 #. translators: %s: a language name, for example "French".
 #: includes/class-zinn-translate-sitemap.php:143
 #, php-format
 msgid "%s sitemap"
-msgstr "%s ramani ya tovuti"
+msgstr "Ramani ya tovuti ya %s"
 
 #: includes/class-zinn-translate-sitemap.php:147
 msgid "LLM content map"
@@ -677,57 +677,57 @@ msgstr "Lugha zilizochapishwa"
 
 #: includes/class-zinn-translate-status.php:100
 msgid "Site language"
-msgstr "Lugha ya tovuti"
+msgstr "Lugha ya Tovuti"
 
 #: includes/class-zinn-translate-status.php:106
 msgid "SEO plugin"
-msgstr "Programu jalizi ya SEO"
+msgstr "Programu-jalizi ya SEO"
 
 #: includes/class-zinn-translate-status.php:134
 msgid "No translation provider is set up yet."
-msgstr "Hakuna mtoa huduma wa tafsiri aliyewekwa bado."
+msgstr "Bado hakuna mtoa huduma wa tafsiri aliyesanidiwa."
 
 #: includes/class-zinn-translate-status.php:135
 msgid "Paste an API key from your chosen provider, or connect the site to a Zinn Digital® account, and translation starts on the next pass."
-msgstr "Bandika ufunguo wa API kutoka kwa mtoa huduma uliyemchagua, au unganisha tovuti na akaunti ya Zinn Digital®, na tafsiri itaanza katika duru inayofuata."
+msgstr "Bandika ufunguo wa API kutoka kwa mtoa huduma uliyemchagua, au unganisha tovuti kwenye akaunti ya Zinn Digital®, na tafsiri itaanza kwenye mkondo unaofuata."
 
 #. translators: %s: a translation provider's name, for example "DeepL".
 #: includes/class-zinn-translate-status.php:144
 #, php-format
 msgid "Translating with your own %s key."
-msgstr "Inatafsiriwa kwa ufunguo wako mwenyewe wa %s."
+msgstr "Inatafsiri kwa kutumia ufunguo wako mwenyewe wa %s."
 
 #: includes/class-zinn-translate-status.php:147
 msgid "This site is not connected to a Zinn Digital® account, which is fine — your provider bills you directly."
-msgstr "Tovuti hii haijaunganishwa na akaunti ya Zinn Digital®, jambo ambalo ni sawa — mtoa huduma wako anakutoza moja kwa moja."
+msgstr "Tovuti hii haijaunganishwa kwenye akaunti ya Zinn Digital®, ambayo ni sawa — mtoa huduma wako anakutoza bili moja kwa moja."
 
 #: includes/class-zinn-translate-status.php:156
 msgid "Not connected to Zinn Digital® yet."
-msgstr "Bado hujaunganishwa na Zinn Digital®."
+msgstr "Bado haijaunganishwa na Zinn Digital®."
 
 #: includes/class-zinn-translate-status.php:157
 msgid "Add this site's ID and token from your Zinn Digital® dashboard, or switch to your own provider key to run without an account."
-msgstr "Ongeza kitambulisho na tokeni ya tovuti hii kutoka kwenye dashibodi yako ya Zinn Digital®, au ubadilishe hadi ufunguo wako mwenyewe wa mtoa huduma ili uendeshe bila akaunti."
+msgstr "Ongeza kitambulisho na tokeni ya tovuti hii kutoka kwenye dashibodi yako ya Zinn Digital®, au badilisha utumie ufunguo wako wa mtoa huduma ili uendeshe bila akaunti."
 
 #: includes/class-zinn-translate-status.php:164
 msgid "Connected to Zinn Digital®."
-msgstr "Imeunganishwa na Zinn Digital®."
+msgstr "Imeunganishwa kwenye Zinn Digital®."
 
 #: includes/class-zinn-translate-status.php:179
 msgid "The translation provider is having a problem."
-msgstr "Mtoa huduma wa tafsiri anapata tatizo."
+msgstr "Mtoa huduma wa tafsiri anakabiliwa na tatizo."
 
 #: includes/class-zinn-translate-status.php:181
 msgid "Translation is paused — your provider needs attention."
-msgstr "Tafsiri imesitishwa — mtoa huduma wako anahitaji uangalifu."
+msgstr "Tafsiri imesitishwa — mtoa huduma wako anahitaji kushughulikiwa."
 
 #: includes/class-zinn-translate-status.php:183
 msgid "Translation has not been set up yet."
-msgstr "Tafsiri bado haijasakinishwa."
+msgstr "Tafsiri bado haijasanidiwa."
 
 #: includes/class-zinn-translate-status.php:188
 msgid "Something went wrong at our end."
-msgstr "Kuna kitu kimeenda vibaya upande wetu."
+msgstr "Kuna hitilafu iliyotokea upande wetu."
 
 #: includes/class-zinn-translate-status.php:200
 msgid "Check their status page"
@@ -739,11 +739,11 @@ msgstr "Rekebisha hili kwenye akaunti yako"
 
 #: includes/class-zinn-translate-style-presets.php:118
 msgid "Style preset"
-msgstr "Modi ya mtindo"
+msgstr "Seti ya awali ya mtindo"
 
 #: includes/class-zinn-translate-style-presets.php:119
 msgid "A starting point. Anything below overrides it."
-msgstr "Mahali pa kuanzia. Chochote kilicho hapa chini kinabatilisha hili."
+msgstr "Hatua ya kuanzia. Chochote kilicho hapa chini kinachukua nafasi yake."
 
 #: includes/class-zinn-translate-style-presets.php:126
 msgid "Use my own colours and sizes"
@@ -751,11 +751,11 @@ msgstr "Tumia rangi na saizi zangu mwenyewe"
 
 #: includes/class-zinn-translate-style-presets.php:127
 msgid "Leave this off and the preset is used exactly as it is."
-msgstr "Acha hii ikiwa imezimwa na mpangilio wa awali utatumika jinsi ulivyo."
+msgstr "Acha hii ikiwa imezimwa na seti ya awali itatumiwa jinsi ilivyo."
 
 #: includes/class-zinn-translate-switcher-widget.php:30
 msgid "Zinn® language switcher"
-msgstr "Kibadilishaji lugha cha Zinn®"
+msgstr "Kibadilisha lugha cha Zinn®"
 
 #: includes/class-zinn-translate-switcher-widget.php:31
 #: includes/class-zinn-translate-switcher.php:141
@@ -764,19 +764,19 @@ msgstr "Ruhusu wageni wasome ukurasa huu katika lugha nyingine."
 
 #: includes/class-zinn-translate-switcher-widget.php:75
 msgid "Title"
-msgstr "Kichwa cha habari"
+msgstr "Kichwa"
 
 #: includes/class-zinn-translate-switcher-widget.php:81
 msgid "Use the plugin setting"
-msgstr "Tumia mpangilio wa programu jalizi"
+msgstr "Tumia mpangilio wa programu-jalizi"
 
 #: includes/class-zinn-translate-switcher.php:45
 msgid "Dropdown"
-msgstr "Menyu ya kuteremka"
+msgstr "Menyu kunjuzi"
 
 #: includes/class-zinn-translate-switcher.php:46
 msgid "Inline list"
-msgstr "Orodha ya mstari mmoja"
+msgstr "Orodha ya ndani ya mstari"
 
 #: includes/class-zinn-translate-switcher.php:47
 msgid "Pills"
@@ -792,7 +792,7 @@ msgstr "Bendera na majina"
 
 #: includes/class-zinn-translate-switcher.php:50
 msgid "Stacked list"
-msgstr "Orodha iliyopangwa safu wima"
+msgstr "Orodha iliyopangwa kwa tabaka"
 
 #: includes/class-zinn-translate-switcher.php:314
 msgid "Choose a language"
@@ -800,11 +800,11 @@ msgstr "Chagua lugha"
 
 #: includes/class-zinn-translate-updater.php:253
 msgid "See the Zinn Digital® release notes."
-msgstr "Tazama maelezo ya toleo la Zinn Digital®."
+msgstr "Tazama madokezo ya toleo la Zinn Digital®."
 
 #: includes/class-zinn-translate-updater.php:302
 msgid "The Zinn® update service did not issue a download link for this update. Check that this site can reach the Zinn® platform, then try again."
-msgstr "Huduma ya usasishaji ya Zinn® haikutoa kiungo cha kupakua kwa sasisho hili. Hakikisha kuwa tovuti hii inaweza kufikia jukwaa la Zinn®, kisha jaribu tena."
+msgstr "Huduma ya usasishaji ya Zinn® haikutoa kiungo cha kupakua kwa usasishaji huu. Hakikisha kuwa tovuti hii inaweza kufikia mfumo wa Zinn®, kisha ujaribu tena."
 
 #. translators: %s: the download error reported by WordPress.
 #: includes/class-zinn-translate-updater.php:316
@@ -814,49 +814,49 @@ msgstr "Sasisho halikuweza kupakuliwa kutoka kwa huduma ya sasisho ya Zinn® (%s
 
 #: includes/class-zinn-translate-updater.php:330
 msgid "The downloaded update failed its integrity check and was not installed."
-msgstr "Sasisho lililopakuliwa limeshindwa ukaguzi wa uadilifu na halijasakinishwa."
+msgstr "Sasisho lililopakuliwa limeshindwa uthibitishaji wa uadilifu na halijasakinishwa."
 
 #: includes/providers/class-zinn-translate-provider-deepl.php:157
 msgid "No DeepL API key is saved, so there is nothing to translate with."
-msgstr "Hakuna ufunguo wa DeepL API uliouhifadhi, kwa hiyo hakuna cha kutafsiri nacho."
+msgstr "Hakuna ufunguo wa API wa DeepL uliohifadhiwa, kwa hivyo hakuna kitu cha kutafsiri nacho."
 
 #. translators: %s: a language name, for example "Swahili".
 #: includes/providers/class-zinn-translate-provider-deepl.php:165
 #, php-format
 msgid "DeepL does not translate into %s. Choose Google Gemini or OpenAI for this language, or connect the site to Zinn Digital®."
-msgstr "DeepL haitafsiri katika %s. Chagua Google Gemini au OpenAI kwa lugha hii, au unganisha tovuti na Zinn Digital®."
+msgstr "DeepL haitafsiri kwa %s. Chagua Google Gemini au OpenAI kwa lugha hii, au unganisha tovuti na Zinn Digital®."
 
 #: includes/providers/class-zinn-translate-provider-deepl.php:207
 msgid "DeepL could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
-msgstr "DeepL haikuwezi kufikiwa. Hakuna kilichotafsiriwa wala hakuna kilichotozwa; kitajaribu tena katika awamu inayofuata."
+msgstr "Haikuweza kuwasiliana na DeepL. Hakuna kilichotafsiriwa na hakuna kilichotozwa; itajaribu tena katika awamu inayofuata."
 
 #: includes/providers/class-zinn-translate-provider-deepl.php:219
 msgid "Your DeepL character quota is used up for this period. Translation resumes when it resets, or when you raise the limit on your DeepL account."
-msgstr "Kiwango chako cha herufi za DeepL kimekwisha kwa kipindi hiki. Tafsiri itaanza tena kitakapowekwa upya, auakapoongeza kikomo kwenye akaunti yako ya DeepL."
+msgstr "Kiwango chako cha herufi za DeepL kimetumika chote kwa kipindi hiki. Tafsiri itaendelea kitakapowekwa upya, au utakapoongeza kikomo kwenye akaunti yako ya DeepL."
 
 #: includes/providers/class-zinn-translate-provider-deepl.php:229
 msgid "DeepL answered with something we could not read. Nothing was saved."
-msgstr "DeepL ilijibu kwa kitu ambacho hatukuweza kukisoma. Hakuna kilichohifadhiwa."
+msgstr "DeepL ilijibu kwa kitu ambacho hatukuweza kusoma. Hakuna kilichohifadhiwa."
 
-#: includes/providers/class-zinn-translate-provider-gemini.php:108
+#: includes/providers/class-zinn-translate-provider-gemini.php:111
 msgid "No Google Gemini API key is saved, so there is nothing to translate with."
-msgstr "Hakuna ufunguo wa API wa Google Gemini uliohifadhiwa, kwa hiyo hakuna kitu cha kutafsiri nacho."
+msgstr "Hakuna ufunguo wa Google Gemini API uliohifadhiwa, kwa hivyo hakuna cha kutafsiri."
 
-#: includes/providers/class-zinn-translate-provider-gemini.php:156
+#: includes/providers/class-zinn-translate-provider-gemini.php:161
 msgid "Google Gemini could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
-msgstr "Google Gemini haikuwezi kufikiwa. Hakuna kilichotafsiriwa wala kutozwa; itajaribu tena katika awamu inayofuata."
+msgstr "Haikuweza kufikia Google Gemini. Hakuna kilichotafsiriwa na hakuna kilichotozwa; itajaribu tena katika awamu inayofuata."
 
 #: includes/providers/class-zinn-translate-provider-openai.php:104
 msgid "No OpenAI API key is saved, so there is nothing to translate with."
-msgstr "Hakuna ufunguo wa OpenAI API uliowekwa, kwa hivyo hakuna cha kutafsiri nacho."
+msgstr "Hakuna ufunguo wa OpenAI API uliohifadhiwa, kwa hivyo hakuna chochote cha kutafsiri nacho."
 
 #: includes/providers/class-zinn-translate-provider-openai.php:140
 msgid "OpenAI could not be reached. Nothing was translated and nothing was charged; it will try again on the next pass."
-msgstr "OpenAI haikuwezi kufikiwa. Hakuna kilichotafsiriwa wala hakuna kilichotozwa; itajaribu tena katika awamu inayofuata."
+msgstr "OpenAI haikuweza kufikiwa. Hakuna kilichotafsiriwa na hakuna kilichotozwa; itajaribu tena katika awamu inayofuata."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:102
 msgid "This site is not connected to Zinn Digital®, so there is nothing to collect. Add the Site ID and token, or switch to your own provider key."
-msgstr "Tovuti hii haijaunganishwa na Zinn Digital®, kwa hivyo hakuna cha kukusanya. Ongeza Kitambulisho cha Tovuti na tokeni, au badilisha utumie ufunguo wako mwenyewe wa mtoa huduma."
+msgstr "Tovuti hii haijaunganishwa na Zinn Digital®, kwa hivyo hakuna cha kukusanya. Ongeza Kitambulisho cha Tovuti na tokeni, au ubadilishe utumie ufunguo wako mwenyewe wa mtoa huduma."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:135
 #: includes/providers/class-zinn-translate-provider-zinn.php:251
@@ -865,7 +865,7 @@ msgstr "Tovuti hii haijaunganishwa na Zinn Digital®."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:153
 msgid "Zinn Digital® could not be reached. Nothing was sent; it will try again on the next pass."
-msgstr "Zinn Digital® haikuwezekani kufikiwa. Hakuna kilichotumwa; itajaribu tena katika mzunguko unaofuata."
+msgstr "Haikuweza kuwasiliana na Zinn Digital®. Hakuna kilichotumwa; itajaribu tena katika awamu inayofuata."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:169
 msgid "Translation is paused on this site. Check the account is up to date on your Zinn Digital® dashboard."
@@ -874,20 +874,20 @@ msgstr "Tafsiri imesitishwa kwenye tovuti hii. Angalia kama akaunti imesasishwa 
 #: includes/providers/class-zinn-translate-provider-zinn.php:176
 #: includes/providers/class-zinn-translate-provider-zinn.php:275
 msgid "Zinn Digital® rejected this site's token. It must be an API key with the sites.view and sites.translation.manage permissions — create one on the API keys page of your dashboard."
-msgstr "Zinn Digital® ilikataa ishara ya tovuti hii. Lazima iwe ufunguo wa API ulio na ruhusa za sites.view na sites.translation.manage — unda mmoja kwenye ukurasa wa funguo za API wa dashibodi yako."
+msgstr "Zinn Digital® imekataa tokeni ya tovuti hii. Lazima iwe ufunguo wa API wenye ruhusa za sites.view na sites.translation.manage — unda moja kwenye ukurasa wa funguo za API katika dashibodi yako."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:207
 msgid "Zinn Digital® could not be reached. Your site keeps serving the translations it already has."
-msgstr "Zinn Digital® haikuwezi kufikiwa. Tovuti yako inaendelea kutoa tafsiri ambazo tayari inazo."
+msgstr "Haikuweza kufikia Zinn Digital®. Tovuti yako inaendelea kutoa tafsiri ilizonazo tayari."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:219
 msgid "Zinn Digital® answered with something we could not read. Your site keeps serving the translations it already has."
-msgstr "Zinn Digital® ilijibu kwa jibu ambalo hatukuweza kulisoma. Tovuti yako inaendelea kutoa tafsiri zake za sasa."
+msgstr "Zinn Digital® ilijibu kwa kitu ambacho hatukuweza kusoma. Tovuti yako inaendelea kutoa tafsiri ambazo tayari inazo."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:267
 msgid "Zinn Digital® could not be reached. Your site keeps publishing the languages it already has."
-msgstr "Zinn Digital® haikuwezi kufikiwa. Tovuti yako inaendelea kuchapisha lugha ambazo tayari inazo."
+msgstr "Haikuweza kufikia Zinn Digital®. Tovuti yako inaendelea kuchapisha lugha ambazo tayari inazo."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:286
 msgid "Zinn Digital® answered with something we could not read. Your site keeps publishing the languages it already has."
-msgstr "Zinn Digital® ilijibu kwa kitu ambacho hatukuweza kukisoma. Tovuti yako inaendelea kuchapisha lugha ambazo tayari inazo."
+msgstr "Zinn Digital® ilijibu kwa kitu ambacho hatukuweza kusoma. Tovuti yako inaendelea kuchapisha lugha ambazo tayari inazo."
