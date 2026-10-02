@@ -7,7 +7,7 @@ Tags: translation, multilingual, seo, hreflang, woocommerce
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 2.4.3
+Stable tag: 2.4.4
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -128,6 +128,9 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 4. Per-language sitemaps and `llms.txt` addresses, with links to check them.
 
 == Changelog ==
+
+= 2.4.4 =
+* Japanese follows the WordPress.org Japanese team's style guide: a half-width space around Latin text, half-width colons and question marks.
 
 = 2.4.3 =
 * New: two wp-config.php switches for the Zinn Digital® panel. define( 'ZINN_TRANSLATE_PROMO', false ); removes the panel (dashboard widget, settings block and footer), and define( 'ZINN_TRANSLATE_PROMO_HOSTING_URL', 'https://…' ); points its hosting offer at another https address.
