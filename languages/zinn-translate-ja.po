@@ -534,7 +534,7 @@ msgstr "最終確認: %s前"
 
 #: includes/class-zinn-translate-connection.php:251
 msgid "(opens in a new tab)"
-msgstr "（新しいタブで開きます）"
+msgstr "(新しいタブで開きます)"
 
 #: includes/class-zinn-translate-diagnostics.php:199
 msgid "Send this to Zinn® support"
@@ -564,7 +564,7 @@ msgstr "サポートチケットを作成し、メールにて返信いたしま
 #: includes/class-zinn-translate-diagnostics.php:270
 #, php-format
 msgid "We could not reach Zinn Digital® from this server (%s). Copy the report above and open a ticket instead — nothing about your settings is wrong."
-msgstr "このサーバー（%s）から Zinn Digital® に接続できませんでした。上記のレポートをコピーして、代わりにチケットを作成してください。設定に問題はありません。"
+msgstr "このサーバー (%s) から Zinn Digital® に接続できませんでした。上記のレポートをコピーして、代わりにチケットを作成してください。設定に問題はありません。"
 
 #: includes/class-zinn-translate-diagnostics.php:284
 msgid "Sent. Zinn® support has your report and will reply by email."
@@ -574,7 +574,7 @@ msgstr "送信完了。Zinn®サポートがレポートを受け取りました
 #: includes/class-zinn-translate-diagnostics.php:287
 #, php-format
 msgid "Sent. Zinn® support has your report — reference %s — and will reply by email."
-msgstr "送信しました。Zinn® サポートがレポート（参照: %s）を受け取りました。メールにて返信いたします。"
+msgstr "送信しました。Zinn® サポートがレポート (参照: %s) を受け取りました。メールにて返信いたします。"
 
 #: includes/class-zinn-translate-diagnostics.php:296
 msgid "You have sent several reports in a short time. Wait a few minutes and try again — the earlier ones did arrive."

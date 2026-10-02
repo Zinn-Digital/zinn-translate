@@ -139,7 +139,7 @@ msgstr "Importieren"
 
 #: includes/class-zinn-translate-admin-ui.php:997
 msgid "Exported files never contain passwords, tokens or API keys — you will need to enter those again on the new site."
-msgstr "Exportierte Dateien enthalten niemals Passwörter, Tokens oder API-Schlüssel – du musst diese auf der neuen Website erneut eingeben."
+msgstr "Exportierte Dateien enthalten niemals Passwörter, Tokens oder API-Schlüssel – du musst diese auf der neuen Website erneut eingeben."
 
 #: includes/class-zinn-translate-admin-ui.php:1096
 msgid "Settings saved."
@@ -205,7 +205,7 @@ msgstr "Wer bezahlt für die Übersetzung"
 
 #: includes/class-zinn-translate-admin.php:120
 msgid "Either your Zinn Digital® plan, or an API key of your own. There is no free tier — somebody pays a provider for every word."
-msgstr "Entweder dein Zinn Digital®-Tarif oder ein eigener API-Schlüssel. Es gibt keine kostenlose Stufe – irgendjemand bezahlt einen Anbieter für jedes Wort."
+msgstr "Entweder dein Zinn Digital®-Tarif oder ein eigener API-Schlüssel. Es gibt keine kostenlose Stufe – irgendjemand bezahlt einen Anbieter für jedes Wort."
 
 #: includes/class-zinn-translate-admin.php:123
 msgid "My Zinn Digital® plan"
@@ -484,11 +484,11 @@ msgstr "Du bist nicht berechtigt, Übersetzungen auf dieser Website zu bearbeite
 
 #: includes/class-zinn-translate-admin.php:650
 msgid "Edited by you — kept"
-msgstr "Von dir bearbeitet – behalten"
+msgstr "Von dir bearbeitet – behalten"
 
 #: includes/class-zinn-translate-admin.php:652
 msgid "Source changed — will be redone"
-msgstr "Quelle geändert – wird wiederholt"
+msgstr "Quelle geändert – wird wiederholt"
 
 #: includes/class-zinn-translate-admin.php:654
 msgid "Up to date"
@@ -542,7 +542,7 @@ msgstr "Sende dies an den Zinn®-Support"
 
 #: includes/class-zinn-translate-diagnostics.php:201
 msgid "This is exactly what will be sent — nothing else, and nothing hidden. Your passwords, tokens and API keys are not in it."
-msgstr "Das ist genau das, was gesendet wird – nichts anderes und nichts Verborgenes. Deine Passwörter, Tokens und API-Schlüssel sind nicht darin enthalten."
+msgstr "Das ist genau das, was gesendet wird – nichts anderes und nichts Verborgenes. Deine Passwörter, Tokens und API-Schlüssel sind nicht darin enthalten."
 
 #: includes/class-zinn-translate-diagnostics.php:204
 msgid "The diagnostics report that will be sent"
@@ -582,7 +582,7 @@ msgstr "Du hast innerhalb kurzer Zeit mehrere Berichte gesendet. Warte ein paar 
 
 #: includes/class-zinn-translate-diagnostics.php:303
 msgid "Zinn Digital® could not accept the report just now — that is our end, not yours. Try again shortly, or copy the report above into a ticket."
-msgstr "Zinn Digital® konnte den Bericht gerade nicht annehmen – das liegt an uns, nicht an dir. Versuche es gleich noch einmal oder kopiere den obigen Bericht in ein Ticket."
+msgstr "Zinn Digital® konnte den Bericht gerade nicht annehmen – das liegt an uns, nicht an dir. Versuche es gleich noch einmal oder kopiere den obigen Bericht in ein Ticket."
 
 #. translators: %d: the HTTP status code the server returned.
 #: includes/class-zinn-translate-diagnostics.php:311
@@ -591,47 +591,47 @@ msgid "The report was refused (HTTP %d). Copy it above and open a ticket, quotin
 msgstr "Der Bericht wurde abgelehnt (HTTP %d). Kopiere ihn oben und erstelle ein Ticket unter Angabe dieser Nummer."
 
 #. translators: %s: the Zinn Digital trade mark, which is not translated.
-#: includes/class-zinn-translate-promo.php:241
-#: includes/class-zinn-translate-promo.php:299
+#: includes/class-zinn-translate-promo.php:326
+#: includes/class-zinn-translate-promo.php:384
 #, php-format
 msgid "%s — guides and services"
 msgstr "%s — Anleitungen und Dienste"
 
-#: includes/class-zinn-translate-promo.php:256
+#: includes/class-zinn-translate-promo.php:341
 msgid "User guides"
 msgstr "Benutzerhandbücher"
 
 #. translators: %s: this plugin's name, e.g. "Zinn® Cache".
-#: includes/class-zinn-translate-promo.php:306
+#: includes/class-zinn-translate-promo.php:391
 #, php-format
 msgid "Read the %s user guide"
 msgstr "Lies das %s-Benutzerhandbuch"
 
-#: includes/class-zinn-translate-promo.php:314
+#: includes/class-zinn-translate-promo.php:399
 msgid "Hide this"
 msgstr "Dies ausblenden"
 
-#: includes/class-zinn-translate-promo.php:424
+#: includes/class-zinn-translate-promo.php:512
 msgid "Zinn® hosting for WordPress"
 msgstr "Zinn®-Hosting für WordPress"
 
-#: includes/class-zinn-translate-promo.php:425
+#: includes/class-zinn-translate-promo.php:513
 msgid "LiteSpeed, daily backups, free migration and a control panel built for people who run more than one site."
 msgstr "LiteSpeed, tägliche Backups, kostenlose Migration und ein Control Panel für alle, die mehr als eine Website betreiben."
 
-#: includes/class-zinn-translate-promo.php:431
+#: includes/class-zinn-translate-promo.php:519
 msgid "The Zinn® marketplace"
 msgstr "Der Zinn®-Marktplatz"
 
-#: includes/class-zinn-translate-promo.php:432
+#: includes/class-zinn-translate-promo.php:520
 msgid "Buy and sell established sites, domains and link placements, with the money held safely until both sides are happy."
-msgstr "Kaufe und verkaufe etablierte Websites, Domains und Link-Platzierungen – das Geld wird sicher verwahrt, bis beide Seiten zufrieden sind."
+msgstr "Kaufe und verkaufe etablierte Websites, Domains und Link-Platzierungen – das Geld wird sicher verwahrt, bis beide Seiten zufrieden sind."
 
-#: includes/class-zinn-translate-promo.php:479
+#: includes/class-zinn-translate-promo.php:567
 msgid "Zinn Hub® — hire people who do this for a living"
 msgstr "Zinn Hub® — heuere Leute an, die das beruflich machen"
 
-#: includes/class-zinn-translate-promo.php:480
+#: includes/class-zinn-translate-promo.php:568
 msgid "Our global freelance marketplace: browse over 10,000 ready-made services from writers, designers, developers and SEOs, or post a project and let them bid."
 msgstr "Unser globaler Freelance-Marktplatz: Durchstöbere über 10.000 fertige Dienstleistungen von Textern, Designern, Entwicklern und SEO-Experten, oder stelle ein Projekt ein und lass sie Angebote abgeben."
 
@@ -699,7 +699,7 @@ msgstr "Übersetzen mit deinem eigenen %s-Schlüssel."
 
 #: includes/class-zinn-translate-status.php:147
 msgid "This site is not connected to a Zinn Digital® account, which is fine — your provider bills you directly."
-msgstr "Diese Website ist nicht mit einem Zinn Digital®-Konto verbunden, was in Ordnung ist – dein Anbieter stellt dir direkt eine Rechnung."
+msgstr "Diese Website ist nicht mit einem Zinn Digital®-Konto verbunden, was in Ordnung ist – dein Anbieter stellt dir direkt eine Rechnung."
 
 #: includes/class-zinn-translate-status.php:156
 msgid "Not connected to Zinn Digital® yet."
@@ -874,7 +874,7 @@ msgstr "Die Übersetzung ist auf dieser Website pausiert. Überprüfe in deinem 
 #: includes/providers/class-zinn-translate-provider-zinn.php:176
 #: includes/providers/class-zinn-translate-provider-zinn.php:275
 msgid "Zinn Digital® rejected this site's token. It must be an API key with the sites.view and sites.translation.manage permissions — create one on the API keys page of your dashboard."
-msgstr "Zinn Digital® hat das Token dieser Website abgelehnt. Es muss ein API-Schlüssel mit den Berechtigungen sites.view und sites.translation.manage sein – erstelle einen auf der Seite „API-Schlüssel“ in deinem Dashboard."
+msgstr "Zinn Digital® hat das Token dieser Website abgelehnt. Es muss ein API-Schlüssel mit den Berechtigungen sites.view und sites.translation.manage sein – erstelle einen auf der Seite „API-Schlüssel“ in deinem Dashboard."
 
 #: includes/providers/class-zinn-translate-provider-zinn.php:207
 msgid "Zinn Digital® could not be reached. Your site keeps serving the translations it already has."
