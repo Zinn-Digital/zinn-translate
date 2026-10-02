@@ -364,7 +364,7 @@ msgstr "Назовите сваки језик на његовом матерњ�
 
 #: includes/class-zinn-translate-admin.php:320
 msgid "Deutsch rather than German. Somebody who cannot read the current page cannot read \"German\" either."
-msgstr "Deutsch уместо German. Неко ко не може да прочита тренутну страницу не може да прочита ни „German”."
+msgstr "Deutsch уместо German. Неко ко не може да прочита тренутну страницу не може да прочита ни „German“."
 
 #: includes/class-zinn-translate-admin.php:327
 msgid "Show flags"
@@ -426,7 +426,7 @@ msgstr "ништа"
 #: includes/class-zinn-translate-admin.php:471
 #, php-format
 msgid "On a Zinn Digital® plan you choose the languages to publish on this site's Translation tab in your dashboard, under \"Shown to visitors\". This site checks it every hour. Publishing now: %s."
-msgstr "На Zinn Digital® плану бирате језике за објављивање на картици Превод овог веб-места на вашој контролној табли, под „Приказано посетиоцима”. Ово веб-место то проверава сваког сата. Објављује се сада: %s."
+msgstr "На Zinn Digital® плану бирате језике за објављивање на картици Превод овог веб-места на вашој контролној табли, под „Приказано посетиоцима“. Ово веб-место то проверава сваког сата. Објављује се сада: %s."
 
 #. translators: %s: comma-separated language names, or "none".
 #: includes/class-zinn-translate-admin.php:474
