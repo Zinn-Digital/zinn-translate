@@ -65,8 +65,34 @@
 
 /* ── Presets ─────────────────────────────────────────────────────────────────────── */
 
+/* The dropdown's visible trigger (the list below opens from it on hover or keyboard focus). */
+.zinn-switcher--dropdown {
+	position: relative;
+	display: inline-block;
+}
+.zinn-switcher__toggle {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4em;
+	padding-block: 0.3em;
+	padding-inline: 0.7em;
+	border: 1px solid var(--zinn-switcher-accent, currentColor);
+	border-radius: var(--zinn-switcher-radius, 6px);
+	background: var(--zinn-switcher-surface, transparent);
+	color: var(--zinn-switcher-text, inherit);
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+}
+.zinn-switcher__toggle:focus-visible {
+	outline: 2px solid var(--zinn-switcher-accent, currentColor);
+	outline-offset: 2px;
+}
+
 .zinn-switcher--dropdown .zinn-switcher__list {
 	flex-direction: column;
+	inset-block-start: 100%;
+	inset-inline-start: 0;
 	position: absolute;
 	z-index: 20;
 	display: none;
@@ -130,6 +156,9 @@
    on a touch screen where there is no hover. Below the small breakpoint it flattens into the
    inline list, so a phone visitor gets a control they can actually operate. */
 @media (max-width: 600px) {
+	.zinn-switcher--dropdown .zinn-switcher__toggle {
+		display: none;
+	}
 	.zinn-switcher--dropdown .zinn-switcher__list {
 		position: static;
 		display: flex;

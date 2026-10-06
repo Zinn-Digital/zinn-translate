@@ -312,6 +312,24 @@ final class Zinn_Translate_Switcher {
 		ob_start();
 		?>
 		<nav class="<?php echo esc_attr( $classes ); ?>" aria-label="<?php esc_attr_e( 'Choose a language', 'zinn-translate' ); ?>">
+			<?php
+			// ⛔ The dropdown's list is hidden until hover or focus, so it needs something visible
+			// to hover and to focus: this button, naming the current language. Without it the
+			// default preset rendered a zero-size <nav> and NO visitor could see or reach the
+			// switcher (found 2026-10-06 while shooting the WordPress.org screenshots).
+			if ( 'dropdown' === $preset ) :
+				$current_label = '';
+				foreach ( $entries as $entry ) {
+					if ( $entry['current'] ) {
+						$current_label = (string) $entry['label'];
+					}
+				}
+				?>
+				<button type="button" class="zinn-switcher__toggle" aria-haspopup="true">
+					<span class="zinn-switcher__label"><?php echo esc_html( '' !== $current_label ? $current_label : __( 'Language', 'zinn-translate' ) ); ?></span>
+					<span class="zinn-switcher__caret" aria-hidden="true">&#9662;</span>
+				</button>
+			<?php endif; ?>
 			<ul class="zinn-switcher__list">
 				<?php foreach ( $entries as $entry ) : ?>
 					<li class="zinn-switcher__item<?php echo $entry['current'] ? ' is-current' : ''; ?>">

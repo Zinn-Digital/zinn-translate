@@ -7,7 +7,7 @@ Tags: translation, multilingual, seo, hreflang, woocommerce
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 2.4.6
+Stable tag: 2.4.7
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -128,6 +128,9 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 4. Per-language sitemaps and `llms.txt` addresses, with links to check them.
 
 == Changelog ==
+
+= 2.4.7 =
+* The Dropdown language switcher (the default style) is visible again: it now shows the current language as a button that opens the list on hover or keyboard focus; before, it showed nothing at all.
 
 = 2.4.6 =
 * Serbian: quotation marks are now „…“ throughout, as the Serbian WordPress translation team writes them.

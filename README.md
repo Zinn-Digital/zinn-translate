@@ -6,16 +6,15 @@ Built and maintained by **Neil Lock — CEO, Zinn Digital® Ltd** — https://zi
 
 ## Download
 
-- **[Download the latest version from zinndigital.com](https://zinndigital.com/wordpress-plugins)** — always current, no account needed.
-- Or take the zip from [Releases](../../releases/latest) here on GitHub.
+**[Install Zinn® Translate from WordPress.org](https://wordpress.org/plugins/zinn-translate/)** — or in wp-admin open **Plugins → Add New Plugin** and search for **Zinn® Translate**.
 
-Both are the same file. The download page is the canonical one: it is served from our own infrastructure and is what the plugin's own updater checks against.
+It is free, and it updates itself from WordPress.org like any directory plugin.
 
 ## Requirements
 
 | | |
 |---|---|
-| Version | `2.4.6` |
+| Version | `2.4.7` |
 | Requires WordPress | 6.6 or later |
 | Tested up to | WordPress **7.1** |
 | Requires PHP | 8.2 or later |
@@ -25,11 +24,10 @@ Every release is installed and activated against the current stable WordPress be
 
 ## Install
 
-1. Download the zip.
-2. In WordPress: **Plugins → Add New → Upload Plugin**, choose the zip, install.
-3. Activate.
+1. In WordPress: **Plugins → Add New Plugin**, search for **Zinn® Translate**.
+2. **Install Now**, then **Activate**.
 
-On a site we host this plugin keeps itself up to date. On your own WordPress it has no credentials for our update service and does not contact us — check back here, or watch this repository's releases.
+The listing is at https://wordpress.org/plugins/zinn-translate/. On a site we host it is already installed and kept current for you. Anywhere else it updates from WordPress.org — WordPress shows the new version on your Plugins screen.
 
 ## Our other WordPress plugins
 
