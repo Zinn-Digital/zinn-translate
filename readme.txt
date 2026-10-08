@@ -7,7 +7,7 @@ Tags: translation, multilingual, seo, hreflang, woocommerce
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 2.4.7
+Stable tag: 2.4.8
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -128,6 +128,9 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 4. Per-language sitemaps and `llms.txt` addresses, with links to check them.
 
 == Changelog ==
+
+= 2.4.8 =
+* The Zinn® panel now appears only on this plugin's own screens, never on the WordPress dashboard (WordPress.org guideline 11).
 
 = 2.4.7 =
 * The Dropdown language switcher (the default style) is visible again: it now shows the current language as a button that opens the list on hover or keyboard focus; before, it showed nothing at all.
