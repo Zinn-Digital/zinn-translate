@@ -50,6 +50,11 @@ final class Zinn_Translate_Queue {
 	 */
 	public function hooks(): void {
 		add_action( 'save_post', array( $this, 'post_saved' ), 20, 3 );
+		// R32: SEO meta written WITHOUT a post save (bulk SEO tools, imports, an AI fill that
+		// calls update_post_meta) is still a source change. Before this the field waited for
+		// the hourly sweep — and was never seen at all on a post outside the old 2,000 cap.
+		add_action( 'added_post_meta', array( $this, 'meta_saved' ), 20, 4 );
+		add_action( 'updated_post_meta', array( $this, 'meta_saved' ), 20, 4 );
 		add_action( 'deleted_post', array( $this, 'post_deleted' ), 10, 2 );
 		add_action( 'edited_term', array( $this, 'term_saved' ), 20, 3 );
 		add_action( 'created_term', array( $this, 'term_saved' ), 20, 3 );
@@ -122,6 +127,38 @@ final class Zinn_Translate_Queue {
 				Zinn_Translate_Store::mark_stale( $ref, $field, Zinn_Translate_Store::hash( (string) $text ) );
 			}
 		}
+		self::kick();
+	}
+
+	/**
+	 * An SEO meta value the collector translates was written: mark that field stale and start
+	 * a run. One cheap UPDATE — no translation in the request (same contract as post_saved()).
+	 *
+	 * @param int    $meta_id    Meta row id (unused).
+	 * @param int    $post_id    The post.
+	 * @param string $meta_key   The key written.
+	 * @param mixed  $meta_value The new value.
+	 * @return void
+	 */
+	public function meta_saved( $meta_id, $post_id, $meta_key, $meta_value = '' ): void {
+		unset( $meta_id );
+		if ( ! Zinn_Translate_Options::flag( 'auto_translate' ) || ! Zinn_Translate_Options::flag( 'translate_meta' ) ) {
+			return;
+		}
+		$field = array_search( (string) $meta_key, Zinn_Translate_SEO::meta_keys(), true );
+		if ( false === $field ) {
+			return;
+		}
+		$post = get_post( (int) $post_id );
+		if ( ! $post instanceof WP_Post || 'publish' !== $post->post_status
+			|| ! in_array( $post->post_type, Zinn_Translate_Options::post_types(), true ) ) {
+			return;
+		}
+		$text = is_scalar( $meta_value ) ? (string) $meta_value : '';
+		if ( '' === trim( $text ) ) {
+			return;
+		}
+		Zinn_Translate_Store::mark_stale( $post->post_type . ':' . $post->ID, (string) $field, Zinn_Translate_Store::hash( $text ) );
 		self::kick();
 	}
 
@@ -200,7 +237,9 @@ final class Zinn_Translate_Queue {
 		// ⛔ In the sweep, not in a render: this downloads from wordpress.org.
 		Zinn_Translate_Locale_Switch::ensure_packs();
 		Zinn_Translate_Locale_Switch::ensure_component_packs();
-		$inventory = Zinn_Translate_Collector::inventory();
+		// ⛔⛔ The WHOLE inventory (R32): a capped list is also the keep-list, and the cap used to
+		// retire every translation of every post outside the 2,000 most recently modified.
+		$inventory = Zinn_Translate_Collector::inventory( 0 );
 		$retired   = Zinn_Translate_Store::retire_absent( Zinn_Translate_Collector::refs( $inventory ) );
 		// ⭐ The published set follows the dashboard; refreshed here, on the hourly pass, so a
 		// language switched on there gets its web addresses within the hour (D26950).
@@ -208,8 +247,11 @@ final class Zinn_Translate_Queue {
 		$pushed = 0;
 		if ( 'byo' !== Zinn_Translate_Options::text( 'mode' ) && Zinn_Translate_Options::is_connected() ) {
 			try {
-				$result = Zinn_Translate_Provider_Factory::zinn()->submit( $inventory );
-				$pushed = (int) ( $result['fields_registered'] ?? 0 );
+				// The engine takes at most 2,000 documents per request: send the site in chunks.
+				foreach ( array_chunk( $inventory, 2000 ) as $chunk ) {
+					$result  = Zinn_Translate_Provider_Factory::zinn()->submit( $chunk );
+					$pushed += (int) ( $result['fields_registered'] ?? 0 );
+				}
 				Zinn_Translate_Status::clear();
 			} catch ( Zinn_Translate_Provider_Error $error ) {
 				Zinn_Translate_Status::record( $error );
@@ -238,7 +280,7 @@ final class Zinn_Translate_Queue {
 			);
 		}
 		$batch       = max( 1, (int) Zinn_Translate_Options::get( 'batch_size', 20 ) );
-		$inventory   = Zinn_Translate_Collector::inventory();
+		$inventory   = Zinn_Translate_Collector::inventory( 0 );
 		$outstanding = self::outstanding( $inventory, $locales );
 		$remaining   = 0;
 
@@ -377,7 +419,7 @@ final class Zinn_Translate_Queue {
 			return 0;
 		}
 		$total = 0;
-		foreach ( self::outstanding( Zinn_Translate_Collector::inventory(), $locales ) as $groups ) {
+		foreach ( self::outstanding( Zinn_Translate_Collector::inventory( 0 ), $locales ) as $groups ) {
 			foreach ( $groups as $items ) {
 				$total += count( $items );
 			}

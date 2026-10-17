@@ -51,7 +51,15 @@ final class Zinn_Translate_Collector {
 	/**
 	 * Every translatable document on the site.
 	 *
-	 * @param int $limit The most documents to return. The engine's ceiling is 2,000.
+	 * ⛔⛔ `0` MEANS EVERY DOCUMENT, and it is what the worker and the retirement sweep use
+	 * (R32, 2026-10-17). The old default of 2,000 — the engine's per-REQUEST ceiling — was
+	 * applied to the whole site: on a site with more posts than that, the posts outside the
+	 * 2,000 most recently MODIFIED were never translated, and the hourly sweep's
+	 * retire_absent() then DELETED their existing translations, because a capped list is
+	 * also the keep-list (§2.10). Pass a positive limit only where a caller genuinely wants
+	 * a sample; the engine submit chunks the full inventory itself.
+	 *
+	 * @param int $limit The most documents to return; 0 = all.
 	 * @return array<int, array{remote_id: string, doc_type: string, url: string, fields: array<int, array{name: string, text: string, is_html: bool, is_slug: bool}>}> The inventory.
 	 */
 	public static function inventory( int $limit = 2000 ): array {
@@ -92,7 +100,7 @@ final class Zinn_Translate_Collector {
 		 */
 		$documents = (array) apply_filters( 'zinn_translate_inventory', $documents );
 
-		return array_slice( array_values( $documents ), 0, max( 1, $limit ) );
+		return $limit > 0 ? array_slice( array_values( $documents ), 0, $limit ) : array_values( $documents );
 	}
 
 	/**
@@ -112,13 +120,44 @@ final class Zinn_Translate_Collector {
 	/**
 	 * Posts, pages and any other public post type the customer chose.
 	 *
-	 * @param int $limit The most posts to read.
+	 * @param int $limit The most posts to read; 0 = all (read in pages of 500).
 	 * @return array<int, array<string, mixed>> Documents.
 	 */
 	private static function posts( int $limit ): array {
+		if ( $limit <= 0 ) {
+			$all  = array();
+			$page = 1;
+			do {
+				$batch = self::posts_page( 500, $page );
+				$all   = array_merge( $all, $batch['documents'] );
+				++$page;
+			} while ( $batch['more'] );
+			if ( Zinn_Translate_Options::flag( 'translate_meta' ) ) {
+				$all = array_merge( $all, self::attachment_alt_text( 0 ) );
+			}
+			return $all;
+		}
+		$documents = self::posts_page( $limit, 1 )['documents'];
+		if ( Zinn_Translate_Options::flag( 'translate_meta' ) ) {
+			$documents = array_merge( $documents, self::attachment_alt_text( $limit ) );
+		}
+		return $documents;
+	}
+
+	/**
+	 * One page of published posts, as documents.
+	 *
+	 * @param int $per_page Posts per page.
+	 * @param int $page     1-based page.
+	 * @return array{documents: array<int, array<string, mixed>>, more: bool}
+	 */
+	private static function posts_page( int $per_page, int $page ): array {
 		$types = Zinn_Translate_Options::post_types();
 		if ( array() === $types ) {
-			return array();
+			return array(
+				'documents' => array(),
+				'more'      => false,
+			);
 		}
 		// ⛔ Published only. A draft is not on the site, so translating it spends the
 		// customer's allowance on words no visitor can reach — and a draft that is later
@@ -127,9 +166,10 @@ final class Zinn_Translate_Collector {
 			array(
 				'post_type'              => $types,
 				'post_status'            => 'publish',
-				'posts_per_page'         => max( 1, $limit ),
-				'orderby'                => 'modified',
-				'order'                  => 'DESC',
+				'posts_per_page'         => max( 1, $per_page ),
+				'paged'                  => max( 1, $page ),
+				'orderby'                => 'ID',
+				'order'                  => 'ASC',
 				'no_found_rows'          => true,
 				'ignore_sticky_posts'    => true,
 				'update_post_term_cache' => false,
@@ -173,10 +213,10 @@ final class Zinn_Translate_Collector {
 			);
 		}
 
-		if ( Zinn_Translate_Options::flag( 'translate_meta' ) ) {
-			$documents = array_merge( $documents, self::attachment_alt_text( $limit ) );
-		}
-		return $documents;
+		return array(
+			'documents' => $documents,
+			'more'      => count( $query->posts ) >= max( 1, $per_page ),
+		);
 	}
 
 	/**
@@ -194,7 +234,8 @@ final class Zinn_Translate_Collector {
 			array(
 				'post_type'              => 'attachment',
 				'post_status'            => 'inherit',
-				'posts_per_page'         => max( 1, min( $limit, 500 ) ),
+				'posts_per_page'         => $limit > 0 ? max( 1, min( $limit, 500 ) ) : -1,
+				'fields'                 => 'all',
 				'meta_key'               => '_wp_attachment_image_alt', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key -- The point of the query IS this key; there is no other way to ask for attachments that have alt text.
 				'no_found_rows'          => true,
 				'update_post_term_cache' => false,

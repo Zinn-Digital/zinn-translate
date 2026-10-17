@@ -82,7 +82,7 @@ final class Zinn_Translate_CLI {
 	public function inventory( $args, $assoc_args ): void {
 		unset( $args );
 		$rows = array();
-		foreach ( Zinn_Translate_Collector::inventory() as $document ) {
+		foreach ( Zinn_Translate_Collector::inventory( 0 ) as $document ) {
 			$rows[] = array(
 				'document' => (string) $document['doc_type'] . ':' . (string) $document['remote_id'],
 				'fields'   => count( (array) $document['fields'] ),
