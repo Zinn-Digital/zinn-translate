@@ -7,7 +7,7 @@ Tags: translation, multilingual, seo, hreflang, woocommerce
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 2.4.9
+Stable tag: 2.4.10
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -128,6 +128,9 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 4. Per-language sitemaps and `llms.txt` addresses, with links to check them.
 
 == Changelog ==
+
+= 2.4.10 =
+* Plural forms in every language now follow that language's own plural rules (Russian, Polish, Czech, Croatian, Serbian, Arabic, Hebrew, French and others), re-filled by the translator with a human check on the forms it could not tell apart.
 
 = 2.4.9 =
 * SEO titles and descriptions written without saving the post (bulk SEO tools, imports, AI fills) are now translated straight away, not only on the next hourly pass.
