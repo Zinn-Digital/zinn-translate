@@ -7,7 +7,7 @@ Tags: translation, multilingual, seo, hreflang, woocommerce
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 2.4.12
+Stable tag: 2.4.13
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,10 @@ A shortcode (`[zinn_language_switcher]`), a block, a widget and a nav-menu item,
 = WooCommerce =
 
 Product names, descriptions, short descriptions, purchase notes, attribute labels, attribute values and variation descriptions. Prices, SKUs and the stored option values that identify a variation are never touched — translating those would put the wrong item in a basket.
+
+= Source code =
+
+The complete source is public at https://github.com/Zinn-Digital/zinn-translate
 
 == Installation ==
 
@@ -128,6 +132,9 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 4. Per-language sitemaps and `llms.txt` addresses, with links to check them.
 
 == Changelog ==
+
+= 2.4.13 =
+* The readme links the plugin's public source repository.
 
 = 2.4.12 =
 * Shows the Zinn® Pro Membership offer in the plugin's Zinn® panel.
