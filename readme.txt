@@ -7,7 +7,7 @@ Tags: translation, multilingual, seo, hreflang, woocommerce
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 2.4.14
+Stable tag: 2.4.15
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,9 +19,18 @@ Zinn® Translate turns a WordPress site into a genuinely multilingual one. Each 
 
 It translates what a visitor actually reads, which is more than a page's body text: titles, bodies and excerpts, URL slugs, SEO titles and descriptions, OpenGraph tags, image alt text, categories and tags, navigation menus, your site title and tagline, and — on a shop — product names, descriptions, short descriptions, purchase notes, attribute labels and variation descriptions.
 
-= Where the translations happen =
+= At a glance =
 
-Two things run, and it is worth knowing which is which.
+* **58 languages**, each on its own addresses with translated URL slugs.
+* **Everything a visitor reads**: content, slugs, SEO titles and descriptions, OpenGraph, image alt text, menus, categories and tags, site title, WooCommerce products.
+* **Your choice of provider**: your Zinn Digital® plan, or your own Google Gemini, DeepL or OpenAI key.
+* **Hand edits that stick**: a corrected translation is never overwritten.
+* **SEO done for you**: reciprocal `hreflang`, per-language canonicals and sitemaps, `llms.txt`, and it works alongside Yoast SEO, Rank Math, All in One SEO and SEOPress.
+* **A language switcher** as a shortcode, block, widget or menu item, in six styles.
+* **Fast by design**: translations are read from your own database, never fetched while a visitor waits.
+* **WP-CLI**: `wp zinn-translate status`, `inventory`, `run` and `sweep`.
+
+= Where the translations happen =
 
 The **plugin** runs on your site. It lists every translatable string, stores the finished translations in one table on your own server, and swaps the words in while a page renders. It also tells WordPress which language the page is in, so your theme's and WooCommerce's own buttons — "Add to cart", "Read more" — come out in that language too, from the language packs WordPress already publishes.
 
@@ -58,6 +67,22 @@ A shortcode (`[zinn_language_switcher]`), a block, a widget and a nav-menu item,
 = WooCommerce =
 
 Product names, descriptions, short descriptions, purchase notes, attribute labels, attribute values and variation descriptions. Prices, SKUs and the stored option values that identify a variation are never touched — translating those would put the wrong item in a basket.
+
+= Compatibility =
+
+* WordPress 6.6 or later, PHP 8.2 or later.
+* Yoast SEO, Rank Math, All in One SEO and SEOPress: it filters their output rather than competing with them.
+* WooCommerce products, attributes and variations.
+* Right-to-left languages get `dir="rtl"` automatically.
+* Works with most well-built WordPress themes and plugins.
+
+= Zinn® Pro Membership =
+
+Everything described above is free and stays free. If you want more, one Zinn® Pro Membership gives you the Pro versions of Page Builder Sandwich, Tranzly™, Zinn® SEO, Zinn® Cache and Zinn® Backups, and every Pro plugin we release next, from $149 a year: https://zinndigital.com/pro-membership
+
+= Free support, 24/7 =
+
+Help is free for everyone, free and Pro alike, around the clock. Ask on this plugin's wordpress.org support forum or at https://zinndigital.com/contact and Zinn Digital® answers.
 
 = Source code =
 
@@ -100,6 +125,10 @@ Uninstalling the plugin drops that table and deletes those settings. Deactivatin
 
 == Frequently Asked Questions ==
 
+= Can I run it from the command line? =
+
+Yes. `wp zinn-translate status` shows what the site holds and what is outstanding, `inventory` lists what would be sent for translation, `run` translates everything outstanding now, and `sweep` re-reads the site, retires what has gone and sends the refreshed list to Zinn Digital®.
+
 = Does it duplicate my posts? =
 
 No. There is no second copy of anything. A translated page is your own page with the words swapped in as it renders, so your content, your permalinks and your editor are untouched.
@@ -132,6 +161,9 @@ No. With your own Google Gemini, DeepL or OpenAI key the plugin works on its own
 4. Per-language sitemaps and `llms.txt` addresses, with links to check them.
 
 == Changelog ==
+
+= 2.4.15 =
+* Improved the plugin description: free 24/7 support for everyone, the Zinn® Pro Membership, and clearer English (UK) text.
 
 = 2.4.14 =
 * The WordPress.org package no longer carries translation strings from files it does not ship.
